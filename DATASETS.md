@@ -99,18 +99,22 @@ July 1, 2023 to June 30, 2024. Grant dates within the year are not given.
   | 2023 | $311,677,347 | $481,659,666 |
   | 2024 | $164,149,781 | $138,478,131 |
 
-  Working reading: Schedule I lists cash paid in the year and Part IX records
-  the grant expense accrued when a commitment becomes payable, so a year of
-  large new commitments (FY2023) accrues more than it pays and a later year
-  (FY2024) pays out prior accruals. Grants of $5,000 or less also sit in the
-  gap. To confirm against the grants-payable note in JobsOhio's audited
-  financial statements before publication. Until confirmed, the post says
-  "grants reported on Schedule I," not "all grant spending."
-- *FY2023 row count mismatch.* The filer's own line 2 and line 3 counts sum to
-  386 (11 + 375) but the table has 315 rows. FY2024 has the same pattern (362
-  vs. 312). Other years match. Possible causes: recipients aggregated across
-  multiple grants in one row, or a count error by the preparer. To
-  investigate; the dollars are what we use and those are summed from rows.
+  Confirmed by the filer. Schedule O in the FY2022 to FY2024 returns says:
+  "The statement of functional expenses is prepared on the accrual basis of
+  accounting and Schedule I is prepared on the cash basis of accounting.
+  Accordingly, a variance exists between the amounts reported for grant
+  expense on each schedule." So Schedule I is cash paid in the year, which is
+  what the headline measures. A year of large new commitments (FY2023)
+  accrues more than it pays; a later year (FY2024) pays out prior accruals.
+  Grants of $5,000 or less also sit in the gap. The post says "grants paid,
+  as reported on Schedule I," not "all grant spending."
+- *FY2023 and FY2024 row count mismatch.* The filer's line 2 and line 3
+  counts sum to 386 (11 + 375) in FY2023 and 362 (12 + 350) in FY2024, but
+  the tables have 315 and 312 rows. Other years match. The XML has one
+  Schedule I, no attachments and no rows elsewhere, so the counts may include
+  grantees under the $5,000 floor or be a preparer's error. Unexplained; the
+  dollars are summed from the rows, which are what the return actually
+  discloses.
 - *Recipient address is not headquarters.* 84% of rows carry an Ohio address.
   This is the grantee entity's mailing address, often the Ohio plant or a
   project LLC. It must not be used as the home-state flag.
