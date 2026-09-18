@@ -84,6 +84,29 @@ object per recipient.
    finish the remaining rows from the signals at confidence `D` and say so in
    `notes`; never leave a row out.
 
+## When web search is unavailable
+
+The session's search budget may already be spent. Then work from direct
+fetches, which earlier batches found reliable:
+
+- EDGAR full-text search JSON: `https://efts.sec.gov/LATEST/search-index?q=%22COMPANY%20NAME%22&forms=10-K`
+  and company lookup `https://www.sec.gov/cgi-bin/browse-edgar?company=NAME&type=10-K&output=atom`
+  (use curl with a User-Agent that names a contact email; the fetch tool is
+  blocked by sec.gov). Read the 10-K "Human Capital" or "Employees" section.
+- JobsOhio releases: fetch `https://www.jobsohio.com/sitemap.xml`, grep for
+  the company or county, then fetch the release.
+- Google News RSS: `https://news.google.com/rss/search?q=%22COMPANY%22+Ohio`
+  (article URLs are encoded; the title and source are usually enough).
+- Wikipedia REST summary for well-known companies:
+  `https://en.wikipedia.org/api/rest_v1/page/summary/TITLE`.
+- ProPublica Nonprofit Explorer for nonprofits and governments:
+  `https://projects.propublica.org/nonprofits/organizations/EIN`.
+- The company's own site guessed from its name (`https://www.NAME.com/about`).
+- Team NEO, One Columbus, REDI Cincinnati, Dayton Development Coalition,
+  RGP Toledo and OhioSE news pages.
+If none of these settle a row, grade it `D`, pick the bucket the signals
+support, and say what you tried.
+
 ## Output
 
 Write a JSON list to the file path given, one object per input recipient,

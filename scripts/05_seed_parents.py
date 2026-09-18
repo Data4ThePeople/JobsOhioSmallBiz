@@ -25,7 +25,7 @@ HAND = ["recipient_class", "parent", "parent_hq_state", "hq_source", "emp_bucket
         "emp_source", "emp_asof", "confidence", "founded_in_ohio", "notes"]
 AUTO = ["recipient_id", "name", "ein", "city", "state", "irc_section", "total_cash", "n_rows", "years",
         "recipient_class_auto", "edgar_cik", "edgar_name", "edgar_state_inc", "edgar_hq_state",
-        "f5500_participants_2015", "f5500_participants_2019", "f5500_participants_2023", "f5500_sponsor",
+        "f5500_participants_2015", "f5500_participants_2019", "f5500_participants_2023", "f5500_sponsor", "f5500_sponsor_state",
         "metrics_company", "metrics_programs", "metrics_jobs_retained_max", "metrics_industry", "metrics_commit_total"]
 
 UNIVERSITY = re.compile(r"\b(university|college|universities)\b(?!.*\b(tees|inc)\b)", re.I)
@@ -76,6 +76,7 @@ def main():
         for y in ("2015", "2019", "2023"):
             row[f"f5500_participants_{y}"] = f.get(f"participants_{y}", "")
         row["f5500_sponsor"] = f.get("sponsor", "")
+        row["f5500_sponsor_state"] = f.get("sponsor_state", "")
         prev = old.get(r["recipient_id"], {})
         for k in HAND:
             row[k] = prev.get(k, "")
