@@ -10,7 +10,7 @@
   "emp_asof": "2023",
   "confidence": "A",
   "founded_in_ohio": "no",
-  "notes": "Behr Process Corporation (Santa Ana, CA) is the paint subsidiary of Masco Corporation (NYSE: MAS, Livonia, MI), whose 2023 10-K reports approximately 18,000 employees at December 31, 2023. The grant supported Behr's new manufacturing and distribution plant in Heath, Licking County (JobsOhio metrics: 90 new jobs, about $390 million investment, December 2022)."
+  "notes": "Behr Process Corporation (Santa Ana, CA) is the paint subsidiary of Masco Corporation (NYSE: MAS, Livonia, MI), whose 2023 10-K reports approximately 18,000 employees at December 31, 2023. The grant supported Behr's new paint plant and warehouse in Heath, Licking County, opened April 2024 (WHIZ: whiznews.com/behr-expands-with-new-plant-in-heath/; JobsOhio metrics: 90 new jobs, about $390 million, December 2022)."
  },
  {
   "recipient_id": "EIN:310804159",
@@ -49,7 +49,7 @@
   "emp_asof": "2023",
   "confidence": "D",
   "founded_in_ohio": "unknown",
-  "notes": "JobsOhio metrics list this LLC for an Ohio Site Inventory Program spec-development grant in Montgomery County (February 2023); Lau Parkway is an industrial corridor in Englewood, Ohio, and the LLC uses a Columbus address. Searched JobsOhio, Dayton Development Coalition and Dayton press feeds without finding a release naming the developer behind 'ECP', so size is a placeholder for a single-project real estate LLC."
+  "notes": "JobsOhio metrics list this LLC for an Ohio Site Inventory Program spec-development grant in Montgomery County (February 2023); Lau Parkway is an industrial corridor in Englewood, the LLC uses a Columbus address, and the Dayton Business Journal reported on March 4, 2023 a 250,000 sq ft speculative building, the first in that community in 20 years, which is likely this project. The paywalled article could not be read and no JobsOhio or Dayton Development Coalition release names the developer behind 'ECP', so size is a placeholder for a single-project real estate LLC."
  },
  {
   "recipient_id": "EIN:843555353",
@@ -97,24 +97,24 @@
   "parent_hq_state": "South Korea",
   "hq_source": "https://en.wikipedia.org/wiki/LG_Chem",
   "emp_bucket": "5000+",
-  "emp_source": "https://en.wikipedia.org/wiki/LG_Chem",
-  "emp_asof": "2022",
+  "emp_source": "https://www.lgchem.com/main/index",
+  "emp_asof": "2025",
   "confidence": "C",
   "founded_in_ohio": "no",
-  "notes": "LG Chem America, Inc. (Atlanta) is the US subsidiary of LG Chem, Ltd., Seoul, the largest Korean chemical company with 20,000+ employees (Wikipedia, 2022); JobsOhio metrics list a $1 million Economic Development Grant for 72 new jobs and $85.8 million at two new plants in Ravenna, Portage County (October 2022), covered by the Record-Courier in May 2022. The 2023 Form 5500 count of 199 participants is for the US subsidiary only."
+  "notes": "LG Chem America, Inc. (Atlanta) is the US subsidiary of LG Chem, Ltd., Seoul, whose website lists 17,389 employees (12,943 in Korea, 4,446 abroad) and Wikipedia gives 20,000+ for 2022; JobsOhio metrics list a $1 million Economic Development Grant for 72 new jobs and $85.8 million at two new LG Chem plants in Ravenna, Portage County (October 2022), which broke ground in May 2022 per the Record-Courier. The 2023 Form 5500 count of 199 participants is for the US subsidiary only."
  },
  {
   "recipient_id": "EIN:852401464",
   "recipient_class": "site_development",
-  "parent": "Mills Development (Beavercreek, OH) joint venture",
+  "parent": "Synergy & Mills Development (Beavercreek, OH)",
   "parent_hq_state": "OH",
-  "hq_source": "https://www.jobsohio.com/incentives-programs/ohio-site-inventory-program",
+  "hq_source": "https://dayton247now.com/news/local/prominent-dayton-builder-plans-two-new-office-buildings-near-wright-patt",
   "emp_bucket": "<100",
-  "emp_source": "https://www.jobsohio.com/incentives-programs/ohio-site-inventory-program",
-  "emp_asof": "2023",
-  "confidence": "D",
+  "emp_source": "https://dayton247now.com/news/local/prominent-dayton-builder-plans-two-new-office-buildings-near-wright-patt",
+  "emp_asof": "2024",
+  "confidence": "C",
   "founded_in_ohio": "yes",
-  "notes": "One of a series of Mills Barnett Sirris Holdings LLCs (II, III, IV) that JobsOhio metrics list for Ohio Site Inventory Program spec office buildings in Greene County serving Wright-Patterson defense contractors; the Beavercreek address and Dayton Business Journal coverage of Mills Development's spec office buildings near Wright-Patt point to Beavercreek developer Mills Development with partners Barnett and Sirris. No release found naming the partners' firms or headcount, so size is a placeholder for a local development partnership."
+  "notes": "One of a series of Mills Barnett Sirris Holdings LLCs (II, III, IV) that JobsOhio metrics list for Ohio Site Inventory Program spec office buildings in Greene County for Wright-Patterson defense contractors; the Beavercreek address, the Mills name and Dayton Business Journal coverage of Synergy & Mills Development's speculative Class A office buildings along Colonel Glenn Highway point to that private Beavercreek developer (Barnett and Sirris are presumably co-investors). No document naming the LLC's members was found and the developer publishes no headcount, so the bucket reflects a local development firm."
  },
  {
   "recipient_id": "EIN:251151457",
@@ -127,7 +127,7 @@
   "emp_asof": "2023",
   "confidence": "C",
   "founded_in_ohio": "no",
-  "notes": "Morgan Truck Body, LLC (Morgantown, PA) is a unit of privately held J.B. Poindexter & Co. (JBPCO), Houston, whose portfolio also includes Morgan Olson, Reading Truck and other manufacturers; the grant relates to Morgan's Orrville, Wayne County plant (JobsOhio metrics: 139 new jobs, $24.4 million, June 2020). The 2015 Form 5500 for Morgan alone showed 3,725 participants and JBPCO overall employs several thousand across 40-plus acquired businesses, so the group exceeds 5,000."
+  "notes": "Morgan Truck Body, LLC (Morgantown, PA) is a unit of privately held J.B. Poindexter & Co. (JBPCO), Houston, whose portfolio also includes Morgan Olson, Reading Truck and other manufacturers; the grant relates to Morgan's Orrville, Wayne County plant (JobsOhio metrics: 139 new jobs, $24.4 million, June 2020). The 2015 Form 5500 for Morgan alone showed 3,725 participants and Morgan Olson laid off over 900 workers at three plants in 2023, so the group exceeds 5,000, but JBPCO publishes no total headcount."
  },
  {
   "recipient_id": "EIN:871507299",
@@ -145,7 +145,7 @@
  {
   "recipient_id": "EIN:872678863",
   "recipient_class": "site_development",
-  "parent": "The Opus Group (Opus Development Company, L.L.C.)",
+  "parent": "The Opus Group (Opus Development Company, L.L.C.) with Balboa Real Estate Partners",
   "parent_hq_state": "MN",
   "hq_source": "https://www.opus-group.com/News/Opus-Breaks-Ground-on-Speculative-Industrial-Building-in-Union-Ohio",
   "emp_bucket": "100-499",
@@ -160,26 +160,26 @@
   "recipient_class": "government",
   "parent": "Cuyahoga County Land Reutilization Corporation (Cuyahoga Land Bank)",
   "parent_hq_state": "OH",
-  "hq_source": "https://en.wikipedia.org/wiki/Cuyahoga_Land_Bank",
+  "hq_source": "https://cuyahogalandbank.org/about/",
   "emp_bucket": "<100",
-  "emp_source": "https://projects.propublica.org/nonprofits/organizations/264753241",
+  "emp_source": "https://cuyahogalandbank.org/about/our-team/",
   "emp_asof": "2023",
   "confidence": "B",
   "founded_in_ohio": "yes",
-  "notes": "Quasi-governmental nonprofit land bank created by Cuyahoga County in 2009 under Ohio's county land reutilization law, based in Cleveland (the Akron address in the 990 is a mailing anomaly); Form 5500 shows 49 plan participants in 2023. JobsOhio metrics list an Ohio Site Inventory Program spec-development grant in April 2023 with a $1.5 million commitment; the specific site was not identified in the sources found."
+  "notes": "Quasi-governmental nonprofit land bank created by Cuyahoga County in 2009 under Ohio's county land reutilization law, based in Cleveland (the Akron address in the 990 is a mailing anomaly); Form 5500 shows 49 plan participants in 2023, and the staff page lists a few dozen employees. JobsOhio metrics list an Ohio Site Inventory Program spec-development grant in April 2023 ($1.5 million commitment), matching the Land Bank's $3.5 million renovation of the former Mickey's building in East Cleveland for biotech tenant Verdynt Bio, which credits a JobsOhio grant (cuyahogalandbank.org/press-release/cuyahoga-land-bank-completes-3-5-million-renovation-of-mickeys-in-east-cleveland-ready-for-new-jobs-with-pending-sale/)."
  },
  {
   "recipient_id": "EIN:863988020",
   "recipient_class": "site_development",
-  "parent": "Weston, Inc. and DiGeronimo Companies joint venture (Forward Innovation Center)",
+  "parent": "Weston, Inc., DiGeronimo Companies and Scannell Properties joint venture (Forward Innovation Center)",
   "parent_hq_state": "OH",
-  "hq_source": "https://www.jobsohio.com/incentives-programs/ohio-site-inventory-program",
+  "hq_source": "https://neo-trans.blog/2021/07/11/amazon-to-be-first-tenant-at-brook-parks-ex-ford-site/",
   "emp_bucket": "100-499",
-  "emp_source": "https://www.jobsohio.com/incentives-programs/ohio-site-inventory-program",
-  "emp_asof": "2024",
-  "confidence": "D",
+  "emp_source": "https://www.digeronimocompanies.com/",
+  "emp_asof": "2026",
+  "confidence": "C",
   "founded_in_ohio": "yes",
-  "notes": "The name reads as 'Ford' reversed plus 'BP' for Brook Park, matching the former Ford Cleveland Engine Plant No. 2 site in Brook Park that a Weston Inc. and DiGeronimo Companies joint venture bought for $31.5 million in May 2021 and is redeveloping as the Forward Innovation Center; the LLC has a Cleveland address and no JobsOhio metrics record. The attribution rests on the name pattern and the news coverage, not on a document naming the LLC, and the two private Northeast Ohio firms do not publish combined headcount."
+  "notes": "NEOtrans reported in July 2021 that Weston, Inc. (Warrensville Heights), the DiGeronimo Cos. (Independence) and Scannell Properties (Indianapolis) formed DROF BP I LLC ('Ford' backwards, 'BP' for Brook Park) to buy the 210-acre former Ford Cleveland Engine Plant No. 2 site for $31.5 million and redevelop it as the Forward Innovation Center. The three partners are private; DiGeronimo Companies' site lists 1,700 employees, the largest of the three, so the bucket follows it, and the JobsOhio grant (FY2024, no metrics record found) is presumably site-development support for the brownfield."
  },
  {
   "recipient_id": "EIN:853165520",
@@ -188,10 +188,10 @@
   "parent_hq_state": "CA",
   "hq_source": "https://www.jobsohio.com/newsroom/news-press/national-resilience-announces-expansion-in-west-chester",
   "emp_bucket": "500-4999",
-  "emp_source": "https://www.jobsohio.com/newsroom/news-press/national-resilience-announces-expansion-in-west-chester",
-  "emp_asof": "2023",
+  "emp_source": "https://resilience.com/news/resilience-announces-625-million-series-d-financing-to-expand-network-bring-innovative-technologies-to-biomanufacturing",
+  "emp_asof": "2022",
   "confidence": "B",
   "founded_in_ohio": "no",
-  "notes": "Resilience US, Inc. is the operating subsidiary of National Resilience, Inc., a venture-backed biomanufacturing CDMO headquartered in San Diego during the grant year (it moved its headquarters to Blue Ash, Ohio in June 2026). The December 2023 JobsOhio release reports 476 retained and 440 committed jobs at the West Chester plant bought in January 2023, and the company ran roughly a dozen sites in the US and Canada in 2023, putting the total in the low thousands."
+  "notes": "Resilience US, Inc. is the operating subsidiary of National Resilience, Inc., a venture-backed biomanufacturing CDMO headquartered in San Diego during the grant year (it moved its headquarters to Blue Ash, Ohio in June 2026). Its June 2022 Series D release reported more than 1,600 employees across 10 North American facilities, and the December 2023 JobsOhio release reports 476 retained and 440 committed jobs at the West Chester plant bought from AstraZeneca in January 2023."
  }
 ]
