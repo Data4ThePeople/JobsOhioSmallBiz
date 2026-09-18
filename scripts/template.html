@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Where JobsOhio's grant money went | Data 4 The People</title>
+<meta name="description" content="Every grant JobsOhio has disclosed on its IRS Form 990 since 2014, classified by the size and home state of the company that received it. Small businesses are most of the recipients; large companies get most of the dollars.">
+<style>
+  html,body{margin:0;padding:0}
+  .jo{
+    container-type:inline-size;
+    --page:#f9f9f7; --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+    --line:#e1e0d9; --border:rgba(11,11,11,.10); --hover:#efeee9; --focus:#2a78d6;
+    --small:#2a78d6; --large:#eb6834; --unk:#b9b7ae; --ohio:#008300; --other:#4a3aa7;
+    background:var(--page); color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",sans-serif; line-height:1.45;
+    padding:20px 20px 16px; box-sizing:border-box; -webkit-font-smoothing:antialiased;
+  }
+  @media (prefers-color-scheme: dark){
+    .jo:not(.framed){
+      --page:#181A1B; --surface:#1f2223; --ink:#E4E2DC; --ink2:#BBBDC0; --muted:#8C9094;
+      --line:#33373A; --border:rgba(255,255,255,.10); --hover:#24282a; --focus:#6da7ec;
+      --small:#3987e5; --large:#d95926; --unk:#6b6e70; --ohio:#2fa32f; --other:#9085e9;
+    }
+    .jo:not(.framed) .brand img.logo-on-light{display:none} .jo:not(.framed) .brand img.logo-on-dark{display:block}
+  }
+  .jo *{box-sizing:border-box}
+  .jo .wrap{max-width:1180px;margin:0 auto}
+  .jo h1{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-weight:600;font-size:28px;line-height:1.15;margin:0 0 6px;text-wrap:balance}
+  .jo .sub{color:var(--ink2);font-size:15px;margin:0 0 12px;max-width:82ch}
+  .jo .ctl{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;margin:0 0 12px}
+  .jo .ctl .lab{font-size:13px;color:var(--ink2);margin-right:6px}
+  .jo .seg{display:inline-flex;border:1px solid var(--border);border-radius:8px;overflow:hidden;background:var(--surface);vertical-align:middle}
+  .jo .seg button{appearance:none;border:0;border-left:1px solid var(--border);background:transparent;color:var(--ink2);
+                  font:600 13px/1 system-ui,-apple-system,"Segoe UI",sans-serif;padding:8px 12px;cursor:pointer}
+  .jo .seg button:first-child{border-left:0}
+  .jo .seg button[aria-pressed="true"]{background:var(--ink);color:var(--page)}
+  .jo button:focus-visible,.jo input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+  .jo .card{background:var(--surface);border:1px solid var(--border);border-radius:12px}
+  .jo .tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+  .jo .tile{padding:14px 16px}
+  .jo .tile .lab{font-size:13.5px;color:var(--ink2)}
+  .jo .tile .val{font-size:40px;font-weight:650;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1;margin:4px 0}
+  .jo .tile .hint{font-size:12.5px;color:var(--muted)}
+  .jo .grid2{display:grid;grid-template-columns:1fr;gap:10px;margin-bottom:12px}
+  @container (min-width: 880px){ .jo .grid2{grid-template-columns:1fr 1fr} }
+  .jo .chart{padding:12px 14px 10px}
+  .jo .chart h2{font-size:15px;font-weight:650;margin:0 0 2px}
+  .jo .chart .note{font-size:12.5px;color:var(--muted);margin:0 0 8px}
+  .jo .legend{font-size:12.5px;color:var(--ink2);margin:6px 0 0;display:flex;flex-wrap:wrap;gap:4px 14px}
+  .jo .legend b{font-weight:650}
+  .jo svg{display:block;width:100%;height:auto;overflow:visible}
+  .jo .bar-lab{font-size:12px;fill:var(--ink2)}
+  .jo .seg-lab{font-size:12px;font-weight:650;fill:#fff}
+  .jo .seg-lab.dark{fill:var(--ink)}
+  .jo .axis{font-size:11px;fill:var(--muted)}
+  .jo .gl{stroke:var(--line);stroke-width:1}
+  .jo .two{display:grid;grid-template-columns:auto 1fr 1fr;gap:6px;font-size:13px;align-items:stretch}
+  .jo .two .hd{color:var(--muted);font-size:12px;align-self:end;text-align:center}
+  .jo .two .rh{color:var(--muted);font-size:12px;align-self:center;text-align:right;padding-right:4px}
+  .jo .two .cell{border-radius:8px;padding:8px 10px;border:1px solid var(--border);border-left-width:5px}
+  .jo .two .cell .v{font-size:19px;font-weight:650;font-variant-numeric:tabular-nums}
+  .jo .two .cell .s{font-size:12px;color:var(--muted)}
+  .jo .wc{font-size:13px;color:var(--ink2);margin:10px 0 0}
+  .jo .tablecard{padding:10px 12px 12px;margin-bottom:12px}
+  .jo .tablectl{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin-bottom:8px}
+  .jo input[type=search]{font:14px system-ui,sans-serif;padding:7px 10px;border:1px solid var(--border);border-radius:8px;background:var(--page);color:var(--ink);min-width:240px;flex:1}
+  .jo .count{font-size:12.5px;color:var(--muted)}
+  .jo .tablewrap{overflow:auto;max-height:560px}
+  .jo table{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeric:tabular-nums}
+  .jo th,.jo td{text-align:left;padding:5px 8px;border-bottom:1px solid var(--line);color:var(--ink2);white-space:nowrap}
+  .jo th{position:sticky;top:0;background:var(--surface);z-index:1}
+  .jo td.num,.jo th.num{text-align:right}
+  .jo th button{appearance:none;border:0;background:transparent;color:var(--muted);font:600 12px system-ui,sans-serif;cursor:pointer;padding:0}
+  .jo th button[aria-sort]::after{content:" ▾"} .jo th button[aria-sort="ascending"]::after{content:" ▴"}
+  .jo tbody tr:hover{background:var(--hover)}
+  .jo td .key{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:7px;vertical-align:baseline}
+  .jo td .conf{display:inline-block;font-size:11px;font-weight:650;padding:0 5px;border-radius:4px;border:1px solid var(--border);color:var(--muted)}
+  .jo td a{color:var(--ink2)}
+  .jo .more{margin-top:8px;font-size:13px}
+  .jo .more button{appearance:none;border:1px solid var(--border);background:var(--surface);color:var(--ink2);border-radius:8px;padding:6px 12px;font:600 13px system-ui,sans-serif;cursor:pointer}
+  .jo .foot{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between;margin-top:12px;font-size:12px;color:var(--muted)}
+  .jo .foot .src{max-width:95ch}
+  .jo .brand{display:block;flex:none}
+  .jo .brand img{height:22px;display:block}
+  .jo .brand img.logo-on-dark{display:none}
+  .jo #tip{position:fixed;z-index:10;pointer-events:none;display:none;background:var(--surface);color:var(--ink);border:1px solid var(--border);
+           border-radius:8px;padding:8px 11px;font-size:13px;line-height:1.4;box-shadow:0 4px 14px rgba(0,0,0,.14);max-width:300px}
+  .jo #tip .v{font-weight:650;font-size:16px;font-variant-numeric:tabular-nums}
+  .jo #tip .s{color:var(--muted);font-size:12px}
+  /* frame variant: fixed 780 px, light theme pinned, content scrolls inside */
+  .jo.framed{height:780px;overflow:hidden;padding:12px 14px 10px}
+  .jo.framed .wrap{height:100%;display:flex;flex-direction:column}
+  .jo.framed h1{font-size:21px;margin-bottom:3px}
+  .jo.framed .sub{font-size:13.5px;margin-bottom:8px}
+  .jo.framed .body{flex:1;min-height:0;overflow-y:auto;overflow-x:hidden}
+  .jo.framed .tile .val{font-size:30px}
+  .jo.framed .tablewrap{max-height:420px}
+  .jo.framed .foot{margin-top:8px} .jo.framed .foot .src{font-size:11.5px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  @container (max-width: 640px){
+    .jo h1{font-size:22px} .jo .tiles{grid-template-columns:1fr} .jo .tile .val{font-size:32px}
+    .jo .seg button{padding:7px 9px;font-size:12px} .jo .two .cell .v{font-size:16px}
+  }
+  .jo [hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="jo" id="root">
+ <div class="wrap">
+  <h1>Where JobsOhio's grant money went</h1>
+  <p class="sub" id="sub"></p>
+  <div class="body">
+  <div class="ctl">
+    <span><span class="lab">Count</span>
+      <span class="seg" role="group" aria-label="Which recipients to count" id="denom">
+        <button type="button" data-v="business" aria-pressed="true">Businesses only</button>
+        <button type="button" data-v="all" aria-pressed="false">All recipients</button>
+      </span></span>
+    <span><span class="lab">"Small" means under</span>
+      <span class="seg" role="group" aria-label="Employee cutoff for small" id="cutoff">
+        <button type="button" data-v="100" aria-pressed="false">100</button>
+        <button type="button" data-v="500" aria-pressed="true">500</button>
+        <button type="button" data-v="5000" aria-pressed="false">5,000</button>
+      </span> <span class="lab">employees at the parent company</span></span>
+  </div>
+  <div class="tiles" id="tiles"></div>
+  <div class="grid2">
+    <div class="card chart" id="c-size"></div>
+    <div class="card chart" id="c-home"></div>
+  </div>
+  <div class="grid2">
+    <div class="card chart" id="c-two"></div>
+    <div class="card chart" id="c-fy"></div>
+  </div>
+  <div class="card tablecard">
+    <div class="tablectl">
+      <input type="search" id="q" placeholder="Search a company, city or parent" autocomplete="off" aria-label="Search the table">
+      <span class="seg" role="group" aria-label="Table view" id="tview">
+        <button type="button" data-v="parents" aria-pressed="true">By company</button>
+        <button type="button" data-v="rows" aria-pressed="false">Every payment</button>
+      </span>
+      <span class="count" id="count"></span>
+    </div>
+    <div class="tablewrap"><table id="tbl"><thead><tr></tr></thead><tbody></tbody></table></div>
+    <div class="more" id="more"></div>
+  </div>
+  <div class="foot">
+    <div class="src" id="src"></div>
+    <a class="brand" href="https://www.data4thepeople.com" target="_blank" rel="noopener" aria-label="Data 4 The People">
+      <img class="logo-on-light" src="__LOGO_ON_LIGHT__" alt="Data 4 The People">
+      <img class="logo-on-dark" src="__LOGO_ON_DARK__" alt="Data 4 The People">
+    </a>
+  </div>
+  </div>
+ </div>
+ <div id="tip" role="status"></div>
+</div>
+<script>
+(function(){
+"use strict";
+var D = __DATA__;
+var root = document.getElementById("root");
+var framed = __FORCE_FRAMED__ || window.self !== window.top || /(^|[#&])framed=1\b/.test(location.hash);
+if (framed) root.classList.add("framed");
+
+var NS = "http://www.w3.org/2000/svg";
+var BUCKETS = ["<100","100-499","500-4999","5000+"];
+var SMALL_AT = {"100":["<100"], "500":["<100","100-499"], "5000":["<100","100-499","500-4999"]};
+var state = { denom:"business", cutoff:"500", tview:"parents", q:"", sortKey:"cash", sortDir:-1, limit:100 };
+
+function el(tag, attrs, parent, ns){ var n = ns ? document.createElementNS(NS, tag) : document.createElement(tag); for (var k in attrs) n.setAttribute(k, attrs[k]); if (parent) parent.appendChild(n); return n; }
+function txt(tag, cls, s, parent){ var n = el(tag, cls ? {class: cls} : {}, parent); n.textContent = s; return n; }
+function pct(x){ return (100*x).toFixed(x >= 0.095 ? 0 : 1) + "%"; }
+function money(v){ if (v >= 1e9) return "$" + (v/1e9).toFixed(2) + " billion"; if (v >= 1e6) return "$" + (v/1e6).toFixed(v >= 1e8 ? 0 : 1) + " million"; if (v >= 1e3) return "$" + Math.round(v/1e3) + ",000".slice(0, 4); return "$" + v; }
+function moneyFull(v){ return "$" + v.toLocaleString("en-US"); }
+function sizeGroup(p){ if (BUCKETS.indexOf(p.bucket) < 0) return "unknown"; return SMALL_AT[state.cutoff].indexOf(p.bucket) >= 0 ? "small" : "large"; }
+function homeGroup(p){ if (!p.hq) return "unknown"; return p.hq.toUpperCase() === "OH" ? "ohio" : "other"; }
+function pool(){ return state.denom === "business" ? D.parents_table.filter(function(p){ return p.class === "business"; }) : D.parents_table; }
+function shares(items, keyFn, wFn){
+  var c = {}, tot = 0;
+  items.forEach(function(p){ var k = keyFn(p), w = wFn(p); c[k] = (c[k] || 0) + w; tot += w; });
+  var out = {}; for (var k in c) out[k] = {n: c[k], share: tot ? c[k]/tot : 0}; out._total = tot; return out;
+}
+var ones = function(){ return 1; }, cash = function(p){ return p.cash; };
+
+/* ---- header text ---- */
+var m = D.meta;
+document.getElementById("sub").textContent =
+  "Every grant over $5,000 that JobsOhio reported paying on its IRS Form 990, fiscal years " + m.fy_min + " to " + m.fy_max + ": " +
+  m.rows.toLocaleString() + " payments totaling " + money(m.cash_total) + " to " + m.parents.toLocaleString() + " parent companies and organizations. " +
+  "Each recipient is traced to its ultimate parent at the time of the grant, and the parent is sized by worldwide employees.";
+
+/* ---- tiles ---- */
+function renderTiles(){
+  var items = pool(), sp = shares(items, sizeGroup, ones), sc = shares(items, sizeGroup, cash);
+  var g = function(o,k){ return (o[k] || {share:0}).share; };
+  var who = state.denom === "business" ? "businesses" : "recipients";
+  var tiles = [
+    ["Share of " + who + " that are small", pct(g(sp,"small")), pct(g(sp,"large")) + " are large" + (g(sp,"unknown") ? ", " + pct(g(sp,"unknown")) + " unresolved" : "") + ". " + items.length.toLocaleString() + " parent companies."],
+    ["Share of dollars that went to small " + who, pct(g(sc,"small")), pct(g(sc,"large")) + " of dollars went to large companies" + (g(sc,"unknown") ? ", " + pct(g(sc,"unknown")) + " unresolved" : "") + ". " + money(sc._total) + " paid."]
+  ];
+  var box = document.getElementById("tiles"); box.replaceChildren();
+  tiles.forEach(function(t){ var c = el("div",{class:"card tile"},box); txt("div","lab",t[0],c); txt("div","val",t[1],c); txt("div","hint",t[2],c); });
+}
+
+/* ---- stacked bars (two rows: recipients, dollars) ---- */
+var tip = document.getElementById("tip");
+function showTip(html, x, y){ tip.replaceChildren(); html.forEach(function(h){ txt("div", h[0], h[1], tip); }); tip.style.display = "block";
+  var r = tip.getBoundingClientRect(), pad = 14, px = x + pad, py = y + pad;
+  if (px + r.width > window.innerWidth - 8) px = x - r.width - pad; if (py + r.height > window.innerHeight - 8) py = y - r.height - pad;
+  tip.style.left = Math.max(4, px) + "px"; tip.style.top = Math.max(4, py) + "px"; }
+function hideTip(){ tip.style.display = "none"; }
+
+function stackedBars(host, title, note, groups, keyFn, colors, labels){
+  host.replaceChildren();
+  txt("h2","",title,host); txt("p","note",note,host);
+  var items = pool();
+  var rows = [["Recipients", shares(items, keyFn, ones), "parent companies"], ["Dollars", shares(items, keyFn, cash), "paid"]];
+  var W = 600, H = 96, left = 78, right = 8, bh = 28, gap = 16;
+  var svg = el("svg",{viewBox:"0 0 " + W + " " + H, role:"img"},host,true);
+  var t = el("title",{},svg,true); t.textContent = title + ": " + rows.map(function(r){ return r[0] + " " + groups.map(function(g){ return labels[g] + " " + pct((r[1][g]||{share:0}).share); }).join(", "); }).join("; ");
+  rows.forEach(function(r, i){
+    var y = 10 + i * (bh + gap), x = left, o = r[1];
+    var lab = el("text",{x:left-10, y:y+bh/2+4, class:"bar-lab","text-anchor":"end"},svg,true); lab.textContent = r[0];
+    groups.forEach(function(g, gi){
+      var s = (o[g] || {share:0, n:0}), w = Math.max(0, s.share * (W-left-right) - (gi < groups.length-1 && s.share > 0 ? 2 : 0));
+      if (s.share <= 0) return;
+      var rect = el("rect",{x:x, y:y, width:w, height:bh, rx:3, fill:colors[g]},svg,true);
+      if (w > 46){ var tl = el("text",{x:x+w/2, y:y+bh/2+4, class:"seg-lab" + (g === "unknown" ? " dark" : ""),"text-anchor":"middle"},svg,true); tl.textContent = pct(s.share); }
+      var detail = r[0] === "Dollars" ? moneyFull(s.n) + " paid" : s.n.toLocaleString() + " parent companies";
+      rect.addEventListener("pointermove", function(e){ showTip([["", labels[g] + " · " + r[0].toLowerCase()], ["v", pct(s.share)], ["s", detail]], e.clientX, e.clientY); });
+      rect.addEventListener("pointerleave", hideTip);
+      x += s.share * (W-left-right);
+    });
+  });
+  var lg = el("div",{class:"legend"},host);
+  groups.forEach(function(g){ var b = el("b",{},lg); b.style.color = colors[g]; b.textContent = labels[g]; });
+}
+var SIZE_COLORS = {small:"var(--small)", large:"var(--large)", unknown:"var(--unk)"};
+var HOME_COLORS = {ohio:"var(--ohio)", other:"var(--other)", unknown:"var(--unk)"};
+function renderSize(){
+  var cut = {"100":"100","500":"500","5000":"5,000"}[state.cutoff];
+  stackedBars(document.getElementById("c-size"), "Small companies are most of the recipients. Large ones get most of the money.",
+    "Small: parent company under " + cut + " employees worldwide at the time of the grant. Unresolved: no size found.",
+    ["small","large","unknown"], sizeGroup, SIZE_COLORS, {small:"Small (under " + cut + ")", large:"Large (" + cut + " or more)", unknown:"Unresolved"});
+}
+function renderHome(){
+  stackedBars(document.getElementById("c-home"), "Most recipients are Ohio companies. Most dollars leave the state's headquarters map.",
+    "Ohio: the ultimate parent was headquartered in Ohio at the time of the grant. The Ohio plant address does not count.",
+    ["ohio","other","unknown"], homeGroup, HOME_COLORS, {ohio:"Headquartered in Ohio", other:"Headquartered elsewhere", unknown:"Unresolved"});
+}
+
+/* ---- two-by-two ---- */
+function renderTwo(){
+  var host = document.getElementById("c-two"); host.replaceChildren();
+  txt("h2","","Size and home state together",host);
+  txt("p","note","Share of dollars in each cell, with the share of parent companies underneath. Resolved recipients only.",host);
+  var items = pool().filter(function(p){ return sizeGroup(p) !== "unknown" && homeGroup(p) !== "unknown"; });
+  var k = function(p){ return sizeGroup(p) + "|" + homeGroup(p); };
+  var sc = shares(items, k, cash), sp = shares(items, k, ones);
+  var grid = el("div",{class:"two"},host);
+  el("div",{},grid); txt("div","hd","Headquartered in Ohio",grid); txt("div","hd","Headquartered elsewhere",grid);
+  [["small","Small"],["large","Large"]].forEach(function(sz){
+    txt("div","rh",sz[1],grid);
+    ["ohio","other"].forEach(function(h){
+      var key = sz[0] + "|" + h, c = el("div",{class:"cell"},grid); c.style.borderLeftColor = SIZE_COLORS[sz[0]];
+      txt("div","v", pct((sc[key]||{share:0}).share) + " of dollars", c);
+      txt("div","s", pct((sp[key]||{share:0}).share) + " of companies · " + money((sc[key]||{n:0}).n), c);
+    });
+  });
+  var wc = worstCase();
+  txt("p","wc","Worst case for this finding: if every unresolved or low-confidence recipient were counted the other way, at least " + pct(wc.largeCash) + " of dollars still went to large companies and at least " + pct(wc.smallCount) + " of recipients were still small.", host);
+}
+function worstCase(){
+  var items = pool();
+  var lc = shares(items, function(p){ var g = sizeGroup(p); return (g === "unknown" || p.conf === "C" || p.conf === "D") ? "small" : g; }, cash);
+  var sp = shares(items, function(p){ var g = sizeGroup(p); return (g === "unknown" || p.conf === "C" || p.conf === "D") ? "large" : g; }, ones);
+  return {largeCash: (lc.large||{share:0}).share, smallCount: (sp.small||{share:0}).share};
+}
+
+/* ---- by fiscal year ---- */
+function renderFY(){
+  var host = document.getElementById("c-fy"); host.replaceChildren();
+  txt("h2","","Dollars paid each fiscal year, by company size",host);
+  txt("p","note","Fiscal years end June 30. Grants are paid as companies submit costs, so one award can span several years.",host);
+  var items = pool(), byfy = {};
+  items.forEach(function(p){ var g = sizeGroup(p); for (var fy in p.by_fy){ byfy[fy] = byfy[fy] || {small:0,large:0,unknown:0}; byfy[fy][g] += p.by_fy[fy]; } });
+  var fys = Object.keys(byfy).sort(), max = 0;
+  fys.forEach(function(fy){ var o = byfy[fy]; max = Math.max(max, o.small+o.large+o.unknown); });
+  var W = 600, H = 230, left = 56, right = 8, top = 10, bottom = 26, pw = W-left-right, ph = H-top-bottom;
+  var svg = el("svg",{viewBox:"0 0 " + W + " " + H, role:"img"},host,true);
+  var t = el("title",{},svg,true); t.textContent = "Stacked bars of dollars paid per fiscal year, small versus large companies";
+  var step = niceStep(max), y0 = top + ph;
+  for (var v = 0; v <= max; v += step){ var yy = y0 - v/max*ph; el("line",{x1:left,x2:W-right,y1:yy,y2:yy,class:"gl"},svg,true); var a = el("text",{x:left-6,y:yy+4,class:"axis","text-anchor":"end"},svg,true); a.textContent = v ? "$" + Math.round(v/1e6) + "M" : "0"; }
+  var bw = pw / fys.length, barw = Math.min(40, bw*0.7);
+  fys.forEach(function(fy, i){
+    var x = left + i*bw + (bw-barw)/2, o = byfy[fy], y = y0;
+    ["small","large","unknown"].forEach(function(g){
+      var h = o[g]/max*ph; if (h <= 0) return;
+      var r = el("rect",{x:x, y:y-h, width:barw, height:Math.max(0,h-2), rx:2, fill:SIZE_COLORS[g]},svg,true);
+      r.addEventListener("pointermove", function(e){ showTip([["", "FY" + fy + " · " + {small:"small",large:"large",unknown:"unresolved"}[g]], ["v", moneyFull(o[g])], ["s", pct(o[g]/(o.small+o.large+o.unknown)) + " of that year's " + moneyFull(o.small+o.large+o.unknown)]], e.clientX, e.clientY); });
+      r.addEventListener("pointerleave", hideTip);
+      y -= h;
+    });
+    var l = el("text",{x:x+barw/2, y:H-8, class:"axis","text-anchor":"middle"},svg,true); l.textContent = (fys.length > 9 && i % 2) ? "" : "FY" + String(fy).slice(2);
+  });
+  var lg = el("div",{class:"legend"},host);
+  [["small","Small"],["large","Large"],["unknown","Unresolved"]].forEach(function(g){ var b = el("b",{},lg); b.style.color = SIZE_COLORS[g[0]]; b.textContent = g[1]; });
+}
+function niceStep(max){ var raw = max/4, p = Math.pow(10, Math.floor(Math.log10(raw))), n = raw/p; return (n < 1.5 ? 1 : n < 3.5 ? 2 : n < 7.5 ? 5 : 10) * p; }
+
+/* ---- table ---- */
+var PCOLS = [["parent","Parent company",false],["class","Type",false],["bucket","Employees",false],["hq","HQ",false],["conf","Evidence",false],["cash","Paid",true],["recipients","Payees",true],["years","Years",false]];
+var RCOLS = [["fy","FY",true],["recipient","Payee on the 990",false],["city","City",false],["state","St",false],["parent","Parent company",false],["cash","Paid",true]];
+var CLASS_LABEL = {business:"Business", site_development:"Site developer", government:"Government", university:"University", hospital:"Hospital", nonprofit:"Nonprofit"};
+function tableRows(){
+  var q = state.q.trim().toLowerCase();
+  if (state.tview === "parents"){
+    var items = pool();
+    if (q) items = items.filter(function(p){ return (p.parent + " " + p.hq + " " + p.class + " " + (p.payees||"")).toLowerCase().indexOf(q) >= 0; });
+    return items;
+  }
+  var rows = D.rows;
+  if (state.denom === "business"){ var biz = {}; D.parents_table.forEach(function(p){ if (p.class === "business") biz[p.parent] = 1; }); rows = rows.filter(function(r){ return biz[r.parent]; }); }
+  if (q) rows = rows.filter(function(r){ return (r.recipient + " " + r.city + " " + r.parent).toLowerCase().indexOf(q) >= 0; });
+  return rows;
+}
+function renderTable(){
+  var cols = state.tview === "parents" ? PCOLS : RCOLS;
+  var head = document.querySelector("#tbl thead tr"), body = document.querySelector("#tbl tbody"); head.replaceChildren(); body.replaceChildren();
+  cols.forEach(function(c){
+    var th = el("th",{scope:"col", class: c[2] ? "num" : ""},head), b = el("button",{type:"button"},th); b.textContent = c[1];
+    if (state.sortKey === c[0]) b.setAttribute("aria-sort", state.sortDir > 0 ? "ascending" : "descending");
+    b.addEventListener("click", function(){ state.sortDir = state.sortKey === c[0] ? -state.sortDir : (c[2] ? -1 : 1); state.sortKey = c[0]; state.limit = 100; renderTable(); });
+  });
+  var rows = tableRows().slice().sort(function(a,b){ var x = a[state.sortKey], y = b[state.sortKey]; if (Array.isArray(x)) { x = x[0]||0; y = y[0]||0; } return (x < y ? -1 : x > y ? 1 : 0) * state.sortDir; });
+  document.getElementById("count").textContent = rows.length.toLocaleString() + (state.tview === "parents" ? " companies" : " payments") + (state.q ? " match" : "");
+  rows.slice(0, state.limit).forEach(function(p){
+    var tr = el("tr",{},body);
+    if (state.tview === "parents"){
+      var td = el("td",{},tr), key = el("span",{class:"key"},td); key.style.background = SIZE_COLORS[sizeGroup(p)];
+      if (p.sources && p.sources.length){ var a = el("a",{href:p.sources[0], target:"_blank", rel:"noopener"},td); a.textContent = p.parent; } else td.appendChild(document.createTextNode(p.parent));
+      txt("td","",CLASS_LABEL[p.class] || p.class,tr); txt("td","",p.bucket || "unresolved",tr); txt("td","",p.hq || "",tr);
+      var tc = el("td",{},tr); if (p.conf){ var s = el("span",{class:"conf", title:{A:"SEC or IRS filing",B:"JobsOhio, partner release or Form 5500",C:"Website or directory",D:"Unresolved"}[p.conf]||""},tc); s.textContent = p.conf; }
+      txt("td","num",moneyFull(p.cash),tr); txt("td","num",String(p.recipients),tr); txt("td","",p.years.length > 1 ? p.years[0] + " to " + p.years[p.years.length-1] : String(p.years[0]),tr);
+    } else {
+      txt("td","num",String(p.fy),tr); txt("td","",p.recipient,tr); txt("td","",p.city,tr); txt("td","",p.state,tr); txt("td","",p.parent,tr); txt("td","num",moneyFull(p.cash),tr);
+    }
+  });
+  var more = document.getElementById("more"); more.replaceChildren();
+  if (rows.length > state.limit){ var b = el("button",{type:"button"},more); b.textContent = "Show " + Math.min(500, rows.length - state.limit) + " more of " + rows.length.toLocaleString(); b.addEventListener("click", function(){ state.limit += 500; renderTable(); }); }
+}
+
+/* ---- controls ---- */
+function seg(id, key, after){
+  var box = document.getElementById(id);
+  Array.prototype.forEach.call(box.children, function(b){
+    b.addEventListener("click", function(){ state[key] = b.getAttribute("data-v"); Array.prototype.forEach.call(box.children, function(c){ c.setAttribute("aria-pressed", String(c === b)); }); after(); });
+  });
+}
+function renderAll(){ renderTiles(); renderSize(); renderHome(); renderTwo(); renderFY(); state.limit = 100; renderTable(); }
+seg("denom","denom",renderAll); seg("cutoff","cutoff",renderAll);
+seg("tview","tview",function(){ state.sortKey = state.tview === "parents" ? "cash" : "fy"; state.sortDir = -1; state.limit = 100; renderTable(); });
+document.getElementById("q").addEventListener("input", function(e){ state.q = e.target.value; state.limit = 100; renderTable(); });
+
+document.getElementById("src").textContent =
+  "Source: JobsOhio Form 990, Schedule I, fiscal years " + m.fy_min + " to " + m.fy_max + " (IRS e-file data). Schedule I lists grants over $5,000 on a cash basis, so the dollars are what was paid in each year, not what was committed. " +
+  "Each payee was traced to its ultimate parent at the time of the grant using SEC filings, Form 5500 plan data, JobsOhio and regional partner releases, and company sources; the evidence grade shows which. " +
+  "Universities, hospitals, governments, nonprofits and site developers are shown separately from operating businesses. Free to use. Built by Data 4 The People, " + m.built + ".";
+renderAll();
+})();
+</script>
+</body>
+</html>

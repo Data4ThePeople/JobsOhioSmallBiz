@@ -111,7 +111,8 @@ def main():
     agg = build_parents(grants, parents)
     allp = list(agg.values())
     biz = [a for a in allp if a["class"] == "business"]
-    out = {"meta": {"rows": len(grants), "recipients": len({g['recipient_id'] for g in grants}), "parents": len(allp),
+    from datetime import date
+    out = {"meta": {"built": date.today().strftime("%B %-d, %Y"), "rows": len(grants), "recipients": len({g['recipient_id'] for g in grants}), "parents": len(allp),
                     "fy_min": min(g["fy"] for g in grants), "fy_max": max(g["fy"] for g in grants),
                     "cash_total": sum(g["cash"] for g in grants),
                     "resolved_parents": sum(1 for a in allp if a["resolved"]),
@@ -157,6 +158,8 @@ def main():
         "parent": a["parent"], "class": a["class"], "bucket": a["bucket"], "hq": a["hq"], "conf": a["conf"],
         "founded_oh": a["founded_oh"], "cash": a["cash"], "rows": a["rows"], "recipients": len(a["recipients"]),
         "years": sorted(a["years"]), "programs": sorted(a["programs"]), "sources": sorted(a["sources"])[:3],
+        "by_fy": {str(k): v for k, v in sorted(a["by_fy"].items())},
+        "payees": " | ".join(sorted({parents[r]["name"] for r in a["recipients"]}))[:400],
     } for a in allp], key=lambda d: -d["cash"])
     out["rows"] = [{"fy": g["fy"], "recipient": g["recipient_name"], "city": g["city"], "state": g["state"],
                     "cash": g["cash"], "parent": parent_key(parents[g["recipient_id"]])} for g in grants]
