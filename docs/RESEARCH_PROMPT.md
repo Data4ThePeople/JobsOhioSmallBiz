@@ -1,0 +1,89 @@
+# Parent-resolution research prompt
+
+This is the instruction given to each research agent, one batch of recipients
+at a time. It is kept here so the method is reproducible and can be quoted in
+the post's methodology.
+
+---
+
+You are classifying recipients of JobsOhio grants (from JobsOhio's IRS Form
+990 Schedule I). For each recipient in the JSON list below, determine the
+ultimate parent company at the time of the grant, that parent's headquarters
+state, the parent's worldwide employee count bucket at the time of the grant,
+and whether the recipient is an operating business at all. Return one JSON
+object per recipient.
+
+## Definitions
+
+- **Ultimate parent**: the top of the ownership chain at the time of the
+  grant years listed in `years` (fiscal years ending June 30). A subsidiary,
+  project LLC, or plant entity resolves to the company that controls it. A
+  private-equity-owned company resolves to the operating company, not the PE
+  fund, but note the PE owner in `notes`. If the recipient was acquired
+  after the grant years, use the owner during the grant years.
+- **parent_hq_state**: two-letter US state of the parent's headquarters at
+  the time of the grant, or the country name if outside the US (e.g.
+  "Japan", "Germany"). The recipient's own Ohio plant address does not count.
+- **emp_bucket**: the parent's total worldwide employees at the time of the
+  grant, one of `<100`, `100-499`, `500-4999`, `5000+`. When the exact number
+  is unknown, pick the bucket the evidence supports and lower `confidence`.
+- **recipient_class**: `business` (operating for-profit company),
+  `site_development` (real-estate or single-project LLC receiving a site,
+  spec-building or revitalization grant; name the developer as parent),
+  `government`, `university`, `hospital` (nonprofit health system),
+  `nonprofit` (chambers, economic development corporations, foundations,
+  JobsOhio network partners, event committees).
+- **founded_in_ohio**: `yes`, `no`, or `unknown`. Whether the parent was
+  founded in Ohio. Only fill when a source says so.
+- **confidence**: `A` the size and parent come from an SEC filing, an IRS
+  record, or the company's own audited report for the grant year; `B` from a
+  JobsOhio or regional partner press release, a Form 5500 participant count,
+  or a reputable news story naming the size and owner; `C` from a company
+  website, LinkedIn, or a business directory; `D` unresolved, best guess.
+
+## Signals already gathered (use them, cite them where they decide the call)
+
+- `edgar_name`, `edgar_state_inc`, `edgar_hq_state`: the recipient's EIN is
+  an SEC registrant. Public company or filing subsidiary. Cite the 10-K.
+- `f5500_participants_YYYY`: Form 5500 plan participants for the recipient's
+  EIN (largest plan, beginning of year). Includes former employees with
+  balances. Under 250 means very likely under 500 employees at that entity;
+  over 1,500 means very likely over 500. The entity may still be a
+  subsidiary of something larger, so check the name.
+- `metrics_programs`, `metrics_jobs_retained_max`, `metrics_industry`,
+  `metrics_commit_total`: JobsOhio's own project report for this company.
+  An **Inclusion Grant** (also called Small Business Grant) is restricted to
+  small businesses and capped at $50,000; a recipient with only that program
+  is small unless something contradicts it. `jobs_retained` is existing
+  employment at the Ohio site, a floor on company size.
+
+## Method
+
+1. Start from the signals. If the name is a well-known public company, cite
+   its 10-K for the grant year (sec.gov) for employees and HQ.
+2. Otherwise search for the company with its city: JobsOhio and regional
+   partner releases (jobsohio.com, teamneo.org, columbusregion.com,
+   redicincinnati.com, daytonregion.com, rgp.org, ohiose.com), the state's
+   Tax Credit Authority approvals, local business press (Columbus Business
+   First, Crain's Cleveland, Dayton Business Journal, Cincinnati Business
+   Courier, Toledo Blade), then the company site and LinkedIn.
+3. For an LLC that looks like a project vehicle, find the JobsOhio release
+   for the project in that county and month; it names the operating company.
+4. Do not guess a size from revenue or from the grant amount. If you cannot
+   find a source, set `confidence` to `D`, pick the bucket that the signals
+   most support, and say in `notes` what you looked for.
+5. Every row must carry at least one URL in `hq_source` or `emp_source`.
+
+## Output
+
+Write a JSON list to the file path given, one object per input recipient,
+with exactly these keys:
+
+```
+recipient_id, recipient_class, parent, parent_hq_state, hq_source,
+emp_bucket, emp_source, emp_asof, confidence, founded_in_ohio, notes
+```
+
+`emp_asof` is the year the employee figure refers to (e.g. "2022"). Keep
+`notes` to one or two sentences: the employee figure found, the ownership
+chain if any, and anything a skeptical reader would ask about.

@@ -158,9 +158,17 @@ this list but are not Schedule I grants to businesses in the same way; the
 match to Schedule I is by name and county, and unmatched rows on either side
 are reported.
 
-**Changes over time.** Column set appears stable from 2015; the "Region" column
-and program names change as programs are added (Inclusion Grant from 2020,
-Vibrant Community from 2021 or so). To verify per year when parsing.
+**Changes over time.** Two layouts. 2015 to 2021: a wide table with one
+dollar column per program (Growth Fund Loan, Workforce Grant, Economic Dev.
+Grant, Revitalization Grant, Revitalization Loan, Revitalization Grant Phase
+II, Research and Development Grant; Inclusion Grant and OSIP columns appear in
+2020 and 2021). 2022 onward: one line per agreement with "Program Type" and
+"Program Value" columns; some 2022 months label the column "Record Type"; 2023
+months prefix program names with codes (JOG, JOW, JORG, JOIG, JOL, JOSDGO).
+From 2026 the Inclusion Grant is called the "JobsOhio Small Business Grant."
+Column order also differs: Company, Industry, Region, County in the wide
+layout; Company, County, Region, Industry in the long one. Program names are
+folded to one family each in `scripts/names.py` (`program_family`).
 
 **Suppressed, censored or masked values.** "TBD" appears in jobs and payroll
 columns for site-development projects. Company names are as JobsOhio wrote
@@ -170,11 +178,28 @@ them, sometimes a holding company or a project LLC.
 
 **Units and rounding.** Whole dollars; jobs as integers.
 
-**Known quirks.** The agreement date is the month of the report, not the
-payment date, so a 2022 agreement may appear on Schedule I in FY2023 through
-FY2026. Name matching between the two sources must tolerate suffix and
-punctuation differences. The company named here can differ from the Schedule I
-payee (parent vs. subsidiary).
+**Known quirks.**
+
+- The agreement date is the month of the report, not the payment date, so a
+  2022 agreement may appear on Schedule I in FY2023 through FY2026, or never,
+  if the company does not draw the grant.
+- The company named here can differ from the Schedule I payee (parent vs.
+  subsidiary), so matching is by normalized name with a conservative
+  threshold; 76% of Schedule I recipients and 77% of dollars (FY2014 to
+  FY2024) match a metrics record.
+- Ten pages of the 2016 compilation were exported with a broken font: the
+  space glyph reads as "!" or "&" and the hyphen as "0" or "Y"
+  ("JobsOhio0funded"). The parser splits on the glyph; hyphenated company
+  names on those pages may carry a stray digit or letter.
+- In two 2021 months the Inclusion Grant column touches its neighbor and the
+  two headers merge; those 54 rows are resolved by amount (Inclusion caps at
+  $50,000) and flagged.
+- 22 of 2,984 parsed rows (0.7%) lack a county, jobs or investment value
+  because a wrapped line split them; they are listed in
+  `data/commitments_anomalies.csv` for hand review.
+- Loans (Growth Fund, Revitalization Loan) and OSIP site grants are in the
+  list; they are kept for matching but are not grants to businesses in the
+  Schedule I sense.
 
 **Uncertainty.** None stated.
 
@@ -205,7 +230,9 @@ subsidiaries, so a project LLC may be absent even when its parent is public.
 
 **Known quirks.** Employee counts in 10-Ks are worldwide, as of fiscal year
 end, sometimes "approximately," sometimes full-time only. Recorded as a bucket
-with the as-of date and the wording.
+with the as-of date and the wording. Two Schedule I rows carry the placeholder
+EIN 000000000, which also appears on tens of thousands of EDGAR records; it
+is treated as missing. The bulk archive matched 165 recipient EINs.
 
 **License and attribution.** Public domain. Cite as "SEC EDGAR."
 
@@ -227,8 +254,13 @@ exclude ineligible employees, so they are a size band, not a headcount.
 
 **Known quirks.** Filed at the sponsor (usually parent or payroll entity)
 level; the recipient EIN on Schedule I may belong to a subsidiary that does
-not sponsor its own plan. Used as a size bucket signal for private parents
-only, graded B.
+not sponsor its own plan, or to a subsidiary with its own plan (JSW Steel USA
+Ohio: 345 participants; parent JSW Steel: tens of thousands). Used as a size
+signal for the entity, graded B; parent resolution still comes first. Large
+employers' counts include retirees (General Electric: 490,975 in 2015). We
+use plan years 2015, 2019 and 2023 and the largest plan per sponsor EIN,
+beginning-of-year participants. 834 of 1,515 recipient EINs (FY2014 to
+FY2024) have a filing in at least one of those years.
 
 **License and attribution.** Public record. Cite as "U.S. Department of Labor,
 Form 5500 datasets."
