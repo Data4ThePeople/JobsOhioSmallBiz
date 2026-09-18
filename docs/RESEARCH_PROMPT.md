@@ -73,6 +73,16 @@ object per recipient.
    find a source, set `confidence` to `D`, pick the bucket that the signals
    most support, and say in `notes` what you looked for.
 5. Every row must carry at least one URL in `hq_source` or `emp_source`.
+6. **Search budget.** You have about 200 web searches for the whole batch.
+   Plan on at most 6 per recipient, fewer for the easy ones. Prefer direct
+   fetches of known endpoints over searches: EDGAR full-text search
+   (`https://efts.sec.gov/LATEST/search-index?q=%22COMPANY%22&forms=10-K`),
+   a company's own site, `https://www.jobsohio.com/news?search=COMPANY`.
+   When the signals already settle the call (an Inclusion Grant with a small
+   jobs-retained figure, or a Form 5500 count under 100), one search to
+   confirm the parent and headquarters city is enough. If the budget runs out,
+   finish the remaining rows from the signals at confidence `D` and say so in
+   `notes`; never leave a row out.
 
 ## Output
 
