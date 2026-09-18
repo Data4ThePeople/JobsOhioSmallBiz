@@ -1,0 +1,1202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Return xmlns="http://www.irs.gov/efile" xsi:schemaLocation="http://www.irs.gov/efile" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" returnVersion="2013v3.1">
+  <ReturnHeader binaryAttachmentCnt="0">
+    <ReturnTs>2014-11-14T15:53:00-06:00</ReturnTs>
+    <TaxPeriodEndDt>2014-06-30</TaxPeriodEndDt>
+    <PreparerFirmGrp>
+      <PreparerFirmName>
+        <BusinessNameLine1>KPMG LLP</BusinessNameLine1>
+      </PreparerFirmName>
+      <PreparerUSAddress>
+        <AddressLine1>191 West Nationwide Blvd Ste 500</AddressLine1>
+        <City>Columbus</City>
+        <State>OH</State>
+        <ZIPCode>432152568</ZIPCode>
+      </PreparerUSAddress>
+    </PreparerFirmGrp>
+    <ReturnTypeCd>990</ReturnTypeCd>
+    <TaxPeriodBeginDt>2013-07-01</TaxPeriodBeginDt>
+    <Filer>
+      <EIN>452798687</EIN>
+      <BusinessName>
+        <BusinessNameLine1>JobsOhio</BusinessNameLine1>
+      </BusinessName>
+      <InCareOfNm>% KEVIN A GIANGOLA</InCareOfNm>
+      <BusinessNameControlTxt>JOBS</BusinessNameControlTxt>
+      <PhoneNum>6142246446</PhoneNum>
+      <USAddress>
+        <AddressLine1>41 South High Street</AddressLine1>
+        <AddressLine2>Suite 1500</AddressLine2>
+        <City>Columbus</City>
+        <State>OH</State>
+        <ZIPCode>432156104</ZIPCode>
+      </USAddress>
+    </Filer>
+    <BusinessOfficerGrp>
+      <PersonNm>JOHN MINOR</PersonNm>
+      <PersonTitleTxt>PRESIDENT &amp; CIO</PersonTitleTxt>
+      <PhoneNum>6142246446</PhoneNum>
+      <SignatureDt>2014-11-15</SignatureDt>
+      <DiscussWithPaidPreparerInd>true</DiscussWithPaidPreparerInd>
+    </BusinessOfficerGrp>
+    <PreparerPersonGrp>
+      <PreparerPersonNm>Philip B Bartlett</PreparerPersonNm>
+      <PTIN>P01299075</PTIN>
+      <PhoneNum>6142246446</PhoneNum>
+    </PreparerPersonGrp>
+    <TaxYr>2013</TaxYr>
+    <BuildTS>2015-11-30 17:44:51Z</BuildTS>
+  </ReturnHeader>
+  <ReturnData documentCount="8">
+    <IRS990 documentId="IRS990" referenceDocumentId="IRS990ScheduleO">
+      <PrincipalOfficerNm>John Minor</PrincipalOfficerNm>
+      <USAddress>
+        <AddressLine1>41 S High Street STE 1500</AddressLine1>
+        <City>Columbus</City>
+        <State>OH</State>
+        <ZIPCode>43215</ZIPCode>
+      </USAddress>
+      <GrossReceiptsAmt>100610329</GrossReceiptsAmt>
+      <GroupReturnForAffiliatesInd>false</GroupReturnForAffiliatesInd>
+      <Organization501cInd organization501cTypeTxt="4">X</Organization501cInd>
+      <WebsiteAddressTxt>www.jobs-ohio.com</WebsiteAddressTxt>
+      <TypeOfOrganizationCorpInd>X</TypeOfOrganizationCorpInd>
+      <FormationYr>2011</FormationYr>
+      <LegalDomicileStateCd>OH</LegalDomicileStateCd>
+      <ActivityOrMissionDesc>TO PROMOTE ECONOMIC DEVELOPMENT, JOB CREATION, JOB RETENTION, JOB training, workforce development, and the retention of current and recruitment of new business to Ohio.</ActivityOrMissionDesc>
+      <VotingMembersGoverningBodyCnt>8</VotingMembersGoverningBodyCnt>
+      <VotingMembersIndependentCnt>7</VotingMembersIndependentCnt>
+      <TotalEmployeeCnt>40</TotalEmployeeCnt>
+      <TotalVolunteersCnt>8</TotalVolunteersCnt>
+      <TotalGrossUBIAmt>0</TotalGrossUBIAmt>
+      <PYContributionsGrantsAmt>187178930</PYContributionsGrantsAmt>
+      <CYContributionsGrantsAmt>100000000</CYContributionsGrantsAmt>
+      <PYProgramServiceRevenueAmt>1243323</PYProgramServiceRevenueAmt>
+      <CYProgramServiceRevenueAmt>551874</CYProgramServiceRevenueAmt>
+      <PYInvestmentIncomeAmt>200</PYInvestmentIncomeAmt>
+      <CYInvestmentIncomeAmt>58455</CYInvestmentIncomeAmt>
+      <PYOtherRevenueAmt>0</PYOtherRevenueAmt>
+      <CYOtherRevenueAmt>0</CYOtherRevenueAmt>
+      <PYTotalRevenueAmt>188422453</PYTotalRevenueAmt>
+      <CYTotalRevenueAmt>100610329</CYTotalRevenueAmt>
+      <PYGrantsAndSimilarPaidAmt>0</PYGrantsAndSimilarPaidAmt>
+      <CYGrantsAndSimilarPaidAmt>3862966</CYGrantsAndSimilarPaidAmt>
+      <PYBenefitsPaidToMembersAmt>0</PYBenefitsPaidToMembersAmt>
+      <CYBenefitsPaidToMembersAmt>0</CYBenefitsPaidToMembersAmt>
+      <PYSalariesCompEmpBnftPaidAmt>2547046</PYSalariesCompEmpBnftPaidAmt>
+      <CYSalariesCompEmpBnftPaidAmt>4648610</CYSalariesCompEmpBnftPaidAmt>
+      <PYTotalProfFndrsngExpnsAmt>0</PYTotalProfFndrsngExpnsAmt>
+      <CYTotalProfFndrsngExpnsAmt>0</CYTotalProfFndrsngExpnsAmt>
+      <CYTotalFundraisingExpenseAmt>0</CYTotalFundraisingExpenseAmt>
+      <PYOtherExpensesAmt>4681201</PYOtherExpensesAmt>
+      <CYOtherExpensesAmt>12062805</CYOtherExpensesAmt>
+      <PYTotalExpensesAmt>7228247</PYTotalExpensesAmt>
+      <CYTotalExpensesAmt>20574381</CYTotalExpensesAmt>
+      <PYRevenuesLessExpensesAmt>181194206</PYRevenuesLessExpensesAmt>
+      <CYRevenuesLessExpensesAmt>80035948</CYRevenuesLessExpensesAmt>
+      <TotalAssetsBOYAmt>184374426</TotalAssetsBOYAmt>
+      <TotalAssetsEOYAmt>269021082</TotalAssetsEOYAmt>
+      <TotalLiabilitiesBOYAmt>1329822</TotalLiabilitiesBOYAmt>
+      <TotalLiabilitiesEOYAmt>5940530</TotalLiabilitiesEOYAmt>
+      <NetAssetsOrFundBalancesBOYAmt>183044604</NetAssetsOrFundBalancesBOYAmt>
+      <NetAssetsOrFundBalancesEOYAmt>263080552</NetAssetsOrFundBalancesEOYAmt>
+      <MissionDesc>To promote economic development, job creation, job retention, job training, workforce development, and the retention of current and recruitment of new business to the state of Ohio.</MissionDesc>
+      <SignificantNewProgramSrvcInd>false</SignificantNewProgramSrvcInd>
+      <SignificantChangeInd>false</SignificantChangeInd>
+      <ExpenseAmt>16127462</ExpenseAmt>
+      <GrantAmt>3862966</GrantAmt>
+      <RevenueAmt>551874</RevenueAmt>
+      <Desc>JOBSOHIO'S PROGRAM OF ECONOMIC DEVELOPMENT FOCUSED ON JOB CREATION, JOB RETENTION, AND NEW CAPITAL INVESTMENT FROM EXISTING BUSINESS EXPANSION AND ATTRACTION OF NEW COMPANIES TO THE STATE OF OHIO. The economic development program will increase in intensity in fiscal year 2015 as JobsOhio implements new economic development programs while continuing to leverage existing programs.</Desc>
+      <TotalProgramServiceExpensesAmt>16127462</TotalProgramServiceExpensesAmt>
+      <DescribedInSection501c3Ind>false</DescribedInSection501c3Ind>
+      <ScheduleBRequiredInd referenceDocumentId="IRS990ScheduleB">true</ScheduleBRequiredInd>
+      <PoliticalCampaignActyInd>false</PoliticalCampaignActyInd>
+      <SubjectToProxyTaxInd>false</SubjectToProxyTaxInd>
+      <DonorAdvisedFundInd referenceDocumentId="IRS990ScheduleD">false</DonorAdvisedFundInd>
+      <ConservationEasementsInd referenceDocumentId="IRS990ScheduleD">false</ConservationEasementsInd>
+      <CollectionsOfArtInd referenceDocumentId="IRS990ScheduleD">false</CollectionsOfArtInd>
+      <CreditCounselingInd referenceDocumentId="IRS990ScheduleD">false</CreditCounselingInd>
+      <TempOrPermanentEndowmentsInd referenceDocumentId="IRS990ScheduleD">false</TempOrPermanentEndowmentsInd>
+      <ReportLandBuildingEquipmentInd referenceDocumentId="IRS990ScheduleD">true</ReportLandBuildingEquipmentInd>
+      <ReportInvestmentsOtherSecInd referenceDocumentId="IRS990ScheduleD">false</ReportInvestmentsOtherSecInd>
+      <ReportProgramRelatedInvstInd referenceDocumentId="IRS990ScheduleD">false</ReportProgramRelatedInvstInd>
+      <ReportOtherAssetsInd referenceDocumentId="IRS990ScheduleD">false</ReportOtherAssetsInd>
+      <ReportOtherLiabilitiesInd referenceDocumentId="IRS990ScheduleD">true</ReportOtherLiabilitiesInd>
+      <IncludeFIN48FootnoteInd referenceDocumentId="IRS990ScheduleD">false</IncludeFIN48FootnoteInd>
+      <IndependentAuditFinclStmtInd referenceDocumentId="IRS990ScheduleD">true</IndependentAuditFinclStmtInd>
+      <ConsolidatedAuditFinclStmtInd referenceDocumentId="IRS990ScheduleD">false</ConsolidatedAuditFinclStmtInd>
+      <SchoolOperatingInd>false</SchoolOperatingInd>
+      <ForeignOfficeInd>true</ForeignOfficeInd>
+      <ForeignActivitiesInd referenceDocumentId="IRS990ScheduleF">true</ForeignActivitiesInd>
+      <MoreThan5000KToOrgInd referenceDocumentId="IRS990ScheduleF">false</MoreThan5000KToOrgInd>
+      <MoreThan5000KToIndividualsInd referenceDocumentId="IRS990ScheduleF">false</MoreThan5000KToIndividualsInd>
+      <ProfessionalFundraisingInd>false</ProfessionalFundraisingInd>
+      <FundraisingActivitiesInd>false</FundraisingActivitiesInd>
+      <GamingActivitiesInd>false</GamingActivitiesInd>
+      <OperateHospitalInd>false</OperateHospitalInd>
+      <GrantsToOrganizationsInd referenceDocumentId="IRS990ScheduleI">true</GrantsToOrganizationsInd>
+      <GrantsToIndividualsInd referenceDocumentId="IRS990ScheduleI">false</GrantsToIndividualsInd>
+      <ScheduleJRequiredInd referenceDocumentId="IRS990ScheduleJ">true</ScheduleJRequiredInd>
+      <TaxExemptBondsInd>false</TaxExemptBondsInd>
+      <EngagedInExcessBenefitTransInd>false</EngagedInExcessBenefitTransInd>
+      <PYExcessBenefitTransInd>false</PYExcessBenefitTransInd>
+      <LoanOutstandingInd>false</LoanOutstandingInd>
+      <GrantToRelatedPersonInd>false</GrantToRelatedPersonInd>
+      <BusinessRlnWithOrgMemInd>false</BusinessRlnWithOrgMemInd>
+      <BusinessRlnWithFamMemInd>false</BusinessRlnWithFamMemInd>
+      <BusinessRlnWithOfficerEntInd>false</BusinessRlnWithOfficerEntInd>
+      <DeductibleNonCashContriInd>false</DeductibleNonCashContriInd>
+      <DeductibleArtContributionInd>false</DeductibleArtContributionInd>
+      <TerminateOperationsInd>false</TerminateOperationsInd>
+      <PartialLiquidationInd>false</PartialLiquidationInd>
+      <DisregardedEntityInd referenceDocumentId="IRS990ScheduleR">false</DisregardedEntityInd>
+      <RelatedEntityInd referenceDocumentId="IRS990ScheduleR">true</RelatedEntityInd>
+      <RelatedOrganizationCtrlEntInd>true</RelatedOrganizationCtrlEntInd>
+      <TransactionWithControlEntInd referenceDocumentId="IRS990ScheduleR">true</TransactionWithControlEntInd>
+      <ActivitiesConductedPrtshpInd referenceDocumentId="IRS990ScheduleR">false</ActivitiesConductedPrtshpInd>
+      <ScheduleORequiredInd>true</ScheduleORequiredInd>
+      <IRPDocumentCnt>44</IRPDocumentCnt>
+      <IRPDocumentW2GCnt>0</IRPDocumentW2GCnt>
+      <BackupWthldComplianceInd>true</BackupWthldComplianceInd>
+      <EmployeeCnt>40</EmployeeCnt>
+      <EmploymentTaxReturnsFiledInd>true</EmploymentTaxReturnsFiledInd>
+      <UnrelatedBusIncmOverLimitInd>false</UnrelatedBusIncmOverLimitInd>
+      <ForeignFinancialAccountInd>false</ForeignFinancialAccountInd>
+      <ProhibitedTaxShelterTransInd>false</ProhibitedTaxShelterTransInd>
+      <TaxablePartyNotificationInd>false</TaxablePartyNotificationInd>
+      <NondeductibleContributionsInd>false</NondeductibleContributionsInd>
+      <IndoorTanningServicesInd>false</IndoorTanningServicesInd>
+      <InfoInScheduleOPartVIInd>X</InfoInScheduleOPartVIInd>
+      <GoverningBodyVotingMembersCnt>8</GoverningBodyVotingMembersCnt>
+      <IndependentVotingMemberCnt>7</IndependentVotingMemberCnt>
+      <FamilyOrBusinessRlnInd>true</FamilyOrBusinessRlnInd>
+      <DelegationOfMgmtDutiesInd>false</DelegationOfMgmtDutiesInd>
+      <ChangeToOrgDocumentsInd>false</ChangeToOrgDocumentsInd>
+      <MaterialDiversionOrMisuseInd>false</MaterialDiversionOrMisuseInd>
+      <MembersOrStockholdersInd>false</MembersOrStockholdersInd>
+      <ElectionOfBoardMembersInd>true</ElectionOfBoardMembersInd>
+      <DecisionsSubjectToApprovaInd>false</DecisionsSubjectToApprovaInd>
+      <MinutesOfGoverningBodyInd>true</MinutesOfGoverningBodyInd>
+      <MinutesOfCommitteesInd>true</MinutesOfCommitteesInd>
+      <OfficerMailingAddressInd>true</OfficerMailingAddressInd>
+      <LocalChaptersInd>false</LocalChaptersInd>
+      <Form990ProvidedToGvrnBodyInd>true</Form990ProvidedToGvrnBodyInd>
+      <ConflictOfInterestPolicyInd>true</ConflictOfInterestPolicyInd>
+      <AnnualDisclosureCoveredPrsnInd>true</AnnualDisclosureCoveredPrsnInd>
+      <RegularMonitoringEnfrcInd>true</RegularMonitoringEnfrcInd>
+      <WhistleblowerPolicyInd>true</WhistleblowerPolicyInd>
+      <DocumentRetentionPolicyInd>true</DocumentRetentionPolicyInd>
+      <CompensationProcessCEOInd>true</CompensationProcessCEOInd>
+      <CompensationProcessOtherInd>true</CompensationProcessOtherInd>
+      <InvestmentInJointVentureInd>false</InvestmentInJointVentureInd>
+      <OwnWebsiteInd>X</OwnWebsiteInd>
+      <UponRequestInd>X</UponRequestInd>
+      <BooksInCareOfDetail>
+        <PersonNm>KEVIN A GIANGOLA</PersonNm>
+        <PhoneNum>6142246446</PhoneNum>
+        <USAddress>
+          <AddressLine1>41 S HIGH STREET STE 1500</AddressLine1>
+          <City>COLUMBUS</City>
+          <State>OH</State>
+          <ZIPCode>43215</ZIPCode>
+        </USAddress>
+      </BooksInCareOfDetail>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>James Boland</PersonNm>
+        <TitleTxt>Chairman of the Board</TitleTxt>
+        <AverageHoursPerWeekRt>1.0</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>1.0</AverageHoursPerWeekRltdOrgRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>John Minor</PersonNm>
+        <TitleTxt>Board Member President and CIO</TitleTxt>
+        <AverageHoursPerWeekRt>40.0</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>1.0</AverageHoursPerWeekRltdOrgRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>222524</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>13372</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Steve Davis</PersonNm>
+        <TitleTxt>Board Member</TitleTxt>
+        <AverageHoursPerWeekRt>1.0</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Gary Heminger</PersonNm>
+        <TitleTxt>Board Member</TitleTxt>
+        <AverageHoursPerWeekRt>1.0</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Martin Harris MD</PersonNm>
+        <TitleTxt>Board Member</TitleTxt>
+        <AverageHoursPerWeekRt>1.0</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Larry Kidd</PersonNm>
+        <TitleTxt>Board Member, Secretary-Treasu</TitleTxt>
+        <AverageHoursPerWeekRt>1.0</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Brad Lindner</PersonNm>
+        <TitleTxt>Board Member</TitleTxt>
+        <AverageHoursPerWeekRt>1.0</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>E Gordon Gee</PersonNm>
+        <TitleTxt>Board Member</TitleTxt>
+        <AverageHoursPerWeekRt>1.0</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Pam Springer</PersonNm>
+        <TitleTxt>Board Member</TitleTxt>
+        <AverageHoursPerWeekRt>1.0</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Kevin A Giangola</PersonNm>
+        <TitleTxt>Chief Financial Officer</TitleTxt>
+        <AverageHoursPerWeekRt>40.0</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>1.0</AverageHoursPerWeekRltdOrgRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>121274</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>6635</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Mark Patton</PersonNm>
+        <TitleTxt>Managing Director</TitleTxt>
+        <AverageHoursPerWeekRt>40.0</AverageHoursPerWeekRt>
+        <KeyEmployeeInd>X</KeyEmployeeInd>
+        <ReportableCompFromOrgAmt>222648</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>12614</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Charles Mustine</PersonNm>
+        <TitleTxt>Managing Director</TitleTxt>
+        <AverageHoursPerWeekRt>40.0</AverageHoursPerWeekRt>
+        <KeyEmployeeInd>X</KeyEmployeeInd>
+        <ReportableCompFromOrgAmt>221958</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>16410</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Kristi Tanner</PersonNm>
+        <TitleTxt>Managing Director</TitleTxt>
+        <AverageHoursPerWeekRt>40.0</AverageHoursPerWeekRt>
+        <KeyEmployeeInd>X</KeyEmployeeInd>
+        <ReportableCompFromOrgAmt>162270</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>444</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Laura Jones</PersonNm>
+        <TitleTxt>Communications Director</TitleTxt>
+        <AverageHoursPerWeekRt>40.0</AverageHoursPerWeekRt>
+        <HighestCompensatedEmployeeInd>X</HighestCompensatedEmployeeInd>
+        <ReportableCompFromOrgAmt>115429</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>6635</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Daryl Revoldt</PersonNm>
+        <TitleTxt>Director, Legislative Affairs</TitleTxt>
+        <AverageHoursPerWeekRt>40.0</AverageHoursPerWeekRt>
+        <HighestCompensatedEmployeeInd>X</HighestCompensatedEmployeeInd>
+        <ReportableCompFromOrgAmt>115024</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>991</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Marlon Cheatham</PersonNm>
+        <TitleTxt>Marketing Director</TitleTxt>
+        <AverageHoursPerWeekRt>40.0</AverageHoursPerWeekRt>
+        <HighestCompensatedEmployeeInd>X</HighestCompensatedEmployeeInd>
+        <ReportableCompFromOrgAmt>114956</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>18462</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Kristina Clouse</PersonNm>
+        <TitleTxt>Director, Project Management</TitleTxt>
+        <AverageHoursPerWeekRt>40.0</AverageHoursPerWeekRt>
+        <HighestCompensatedEmployeeInd>X</HighestCompensatedEmployeeInd>
+        <ReportableCompFromOrgAmt>113862</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>18462</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Tracy Allen</PersonNm>
+        <TitleTxt>Loan Officer</TitleTxt>
+        <AverageHoursPerWeekRt>40.0</AverageHoursPerWeekRt>
+        <HighestCompensatedEmployeeInd>X</HighestCompensatedEmployeeInd>
+        <ReportableCompFromOrgAmt>106998</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>991</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <TotalReportableCompFromOrgAmt>1516943</TotalReportableCompFromOrgAmt>
+      <TotReportableCompRltdOrgAmt>0</TotReportableCompRltdOrgAmt>
+      <TotalOtherCompensationAmt>95016</TotalOtherCompensationAmt>
+      <IndivRcvdGreaterThan100KCnt>11</IndivRcvdGreaterThan100KCnt>
+      <FormerOfcrEmployeesListedInd>false</FormerOfcrEmployeesListedInd>
+      <TotalCompGreaterThan150KInd>true</TotalCompGreaterThan150KInd>
+      <CompensationFromOtherSrcsInd>false</CompensationFromOtherSrcsInd>
+      <ContractorCompensationGrp>
+        <ContractorName>
+          <PersonNm>Deloitte Touche LLP</PersonNm>
+        </ContractorName>
+        <ContractorAddress>
+          <USAddress>
+            <AddressLine1>PO Box 7247-6446</AddressLine1>
+            <City>Philadelphia</City>
+            <State>PA</State>
+            <ZIPCode>191706446</ZIPCode>
+          </USAddress>
+        </ContractorAddress>
+        <ServicesDesc>Consultant</ServicesDesc>
+        <CompensationAmt>1117835</CompensationAmt>
+      </ContractorCompensationGrp>
+      <ContractorCompensationGrp>
+        <ContractorName>
+          <PersonNm>Jones Day</PersonNm>
+        </ContractorName>
+        <ContractorAddress>
+          <USAddress>
+            <AddressLine1>PO Box 165017</AddressLine1>
+            <City>Columbus</City>
+            <State>OH</State>
+            <ZIPCode>432165017</ZIPCode>
+          </USAddress>
+        </ContractorAddress>
+        <ServicesDesc>Legal</ServicesDesc>
+        <CompensationAmt>677679</CompensationAmt>
+      </ContractorCompensationGrp>
+      <ContractorCompensationGrp>
+        <ContractorName>
+          <PersonNm>Squire Sanders US LLP</PersonNm>
+        </ContractorName>
+        <ContractorAddress>
+          <USAddress>
+            <AddressLine1>425 Walnut St</AddressLine1>
+            <City>Cincinnati</City>
+            <State>OH</State>
+            <ZIPCode>45264</ZIPCode>
+          </USAddress>
+        </ContractorAddress>
+        <ServicesDesc>Legal</ServicesDesc>
+        <CompensationAmt>425913</CompensationAmt>
+      </ContractorCompensationGrp>
+      <ContractorCompensationGrp>
+        <ContractorName>
+          <PersonNm>Stephen Fechtor</PersonNm>
+        </ContractorName>
+        <ContractorAddress>
+          <USAddress>
+            <AddressLine1>145 N High St Suite 500</AddressLine1>
+            <City>Columbus</City>
+            <State>OH</State>
+            <ZIPCode>43215</ZIPCode>
+          </USAddress>
+        </ContractorAddress>
+        <ServicesDesc>Consultant</ServicesDesc>
+        <CompensationAmt>309876</CompensationAmt>
+      </ContractorCompensationGrp>
+      <ContractorCompensationGrp>
+        <ContractorName>
+          <PersonNm>George R Arabian</PersonNm>
+        </ContractorName>
+        <ContractorAddress>
+          <USAddress>
+            <AddressLine1>18 Meadow Ridge Drive</AddressLine1>
+            <City>Corte Madera</City>
+            <State>CA</State>
+            <ZIPCode>94925</ZIPCode>
+          </USAddress>
+        </ContractorAddress>
+        <ServicesDesc>Consultant</ServicesDesc>
+        <CompensationAmt>163716</CompensationAmt>
+      </ContractorCompensationGrp>
+      <CntrctRcvdGreaterThan100KCnt>7</CntrctRcvdGreaterThan100KCnt>
+      <RelatedOrganizationsAmt>100000000</RelatedOrganizationsAmt>
+      <TotalContributionsAmt>100000000</TotalContributionsAmt>
+      <ProgramServiceRevenueGrp>
+        <Desc>MANAGEMENT FEES</Desc>
+        <BusinessCd>900099</BusinessCd>
+        <TotalRevenueColumnAmt>446879</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>446879</RelatedOrExemptFuncIncomeAmt>
+      </ProgramServiceRevenueGrp>
+      <ProgramServiceRevenueGrp>
+        <Desc>LOAN FEES</Desc>
+        <BusinessCd>900099</BusinessCd>
+        <TotalRevenueColumnAmt>73839</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>73839</RelatedOrExemptFuncIncomeAmt>
+      </ProgramServiceRevenueGrp>
+      <ProgramServiceRevenueGrp>
+        <Desc>LOAN INTEREST</Desc>
+        <BusinessCd>900099</BusinessCd>
+        <TotalRevenueColumnAmt>31156</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>31156</RelatedOrExemptFuncIncomeAmt>
+      </ProgramServiceRevenueGrp>
+      <TotalProgramServiceRevenueAmt>551874</TotalProgramServiceRevenueAmt>
+      <InvestmentIncomeGrp>
+        <TotalRevenueColumnAmt>58455</TotalRevenueColumnAmt>
+        <ExclusionAmt>58455</ExclusionAmt>
+      </InvestmentIncomeGrp>
+      <IncmFromInvestBondProceedsGrp>
+        <TotalRevenueColumnAmt>0</TotalRevenueColumnAmt>
+      </IncmFromInvestBondProceedsGrp>
+      <RoyaltiesRevenueGrp>
+        <TotalRevenueColumnAmt>0</TotalRevenueColumnAmt>
+      </RoyaltiesRevenueGrp>
+      <RentalIncomeOrLossGrp>
+        <RealAmt>0</RealAmt>
+        <PersonalAmt>0</PersonalAmt>
+      </RentalIncomeOrLossGrp>
+      <NetRentalIncomeOrLossGrp>
+        <TotalRevenueColumnAmt>0</TotalRevenueColumnAmt>
+      </NetRentalIncomeOrLossGrp>
+      <NetGainOrLossInvestmentsGrp>
+        <TotalRevenueColumnAmt>0</TotalRevenueColumnAmt>
+      </NetGainOrLossInvestmentsGrp>
+      <NetIncmFromFundraisingEvtGrp>
+        <TotalRevenueColumnAmt>0</TotalRevenueColumnAmt>
+      </NetIncmFromFundraisingEvtGrp>
+      <NetIncomeFromGamingGrp>
+        <TotalRevenueColumnAmt>0</TotalRevenueColumnAmt>
+      </NetIncomeFromGamingGrp>
+      <NetIncomeOrLossGrp>
+        <TotalRevenueColumnAmt>0</TotalRevenueColumnAmt>
+      </NetIncomeOrLossGrp>
+      <OtherRevenueTotalAmt>0</OtherRevenueTotalAmt>
+      <TotalRevenueGrp>
+        <TotalRevenueColumnAmt>100610329</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>551874</RelatedOrExemptFuncIncomeAmt>
+        <ExclusionAmt>58455</ExclusionAmt>
+      </TotalRevenueGrp>
+      <InfoInScheduleOPartIXInd>X</InfoInScheduleOPartIXInd>
+      <GrantsToDomesticOrgsGrp>
+        <TotalAmt>3862966</TotalAmt>
+        <ProgramServicesAmt>3862966</ProgramServicesAmt>
+      </GrantsToDomesticOrgsGrp>
+      <GrantsToDomesticIndividualsGrp>
+        <TotalAmt>0</TotalAmt>
+      </GrantsToDomesticIndividualsGrp>
+      <ForeignGrantsGrp>
+        <TotalAmt>0</TotalAmt>
+      </ForeignGrantsGrp>
+      <BenefitsToMembersGrp>
+        <TotalAmt>0</TotalAmt>
+      </BenefitsToMembersGrp>
+      <CompCurrentOfcrDirectorsGrp>
+        <TotalAmt>1200100</TotalAmt>
+        <ProgramServicesAmt>1045594</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>154506</ManagementAndGeneralAmt>
+      </CompCurrentOfcrDirectorsGrp>
+      <CompDisqualPersonsGrp>
+        <TotalAmt>0</TotalAmt>
+      </CompDisqualPersonsGrp>
+      <OtherSalariesAndWagesGrp>
+        <TotalAmt>2923159</TotalAmt>
+        <ProgramServicesAmt>2037857</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>885302</ManagementAndGeneralAmt>
+      </OtherSalariesAndWagesGrp>
+      <PensionPlanContributionsGrp>
+        <TotalAmt>27480</TotalAmt>
+        <ProgramServicesAmt>17916</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>9564</ManagementAndGeneralAmt>
+      </PensionPlanContributionsGrp>
+      <OtherEmployeeBenefitsGrp>
+        <TotalAmt>208902</TotalAmt>
+        <ProgramServicesAmt>164955</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>43947</ManagementAndGeneralAmt>
+      </OtherEmployeeBenefitsGrp>
+      <PayrollTaxesGrp>
+        <TotalAmt>288969</TotalAmt>
+        <ProgramServicesAmt>215304</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>73665</ManagementAndGeneralAmt>
+      </PayrollTaxesGrp>
+      <FeesForServicesManagementGrp>
+        <TotalAmt>2296822</TotalAmt>
+        <ProgramServicesAmt>2296822</ProgramServicesAmt>
+      </FeesForServicesManagementGrp>
+      <FeesForServicesLegalGrp>
+        <TotalAmt>688034</TotalAmt>
+        <ProgramServicesAmt>181423</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>506611</ManagementAndGeneralAmt>
+      </FeesForServicesLegalGrp>
+      <FeesForServicesAccountingGrp>
+        <TotalAmt>519163</TotalAmt>
+        <ManagementAndGeneralAmt>519163</ManagementAndGeneralAmt>
+      </FeesForServicesAccountingGrp>
+      <FeesForServicesLobbyingGrp>
+        <TotalAmt>0</TotalAmt>
+      </FeesForServicesLobbyingGrp>
+      <FeesForServicesProfFundraising>
+        <TotalAmt>0</TotalAmt>
+      </FeesForServicesProfFundraising>
+      <FeesForSrvcInvstMgmntFeesGrp>
+        <TotalAmt>20000</TotalAmt>
+        <ManagementAndGeneralAmt>20000</ManagementAndGeneralAmt>
+      </FeesForSrvcInvstMgmntFeesGrp>
+      <FeesForServicesOtherGrp>
+        <TotalAmt>1186265</TotalAmt>
+        <ProgramServicesAmt>808608</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>377657</ManagementAndGeneralAmt>
+      </FeesForServicesOtherGrp>
+      <AdvertisingGrp>
+        <TotalAmt>667090</TotalAmt>
+        <ProgramServicesAmt>667090</ProgramServicesAmt>
+      </AdvertisingGrp>
+      <OfficeExpensesGrp>
+        <TotalAmt>215276</TotalAmt>
+        <ManagementAndGeneralAmt>215276</ManagementAndGeneralAmt>
+      </OfficeExpensesGrp>
+      <InformationTechnologyGrp>
+        <TotalAmt>720506</TotalAmt>
+        <ManagementAndGeneralAmt>720506</ManagementAndGeneralAmt>
+      </InformationTechnologyGrp>
+      <RoyaltiesGrp>
+        <TotalAmt>0</TotalAmt>
+      </RoyaltiesGrp>
+      <OccupancyGrp>
+        <TotalAmt>396013</TotalAmt>
+        <ManagementAndGeneralAmt>396013</ManagementAndGeneralAmt>
+      </OccupancyGrp>
+      <TravelGrp>
+        <TotalAmt>256959</TotalAmt>
+        <ProgramServicesAmt>256959</ProgramServicesAmt>
+      </TravelGrp>
+      <PymtTravelEntrtnmntPubOfclGrp>
+        <TotalAmt>612</TotalAmt>
+        <ProgramServicesAmt>612</ProgramServicesAmt>
+      </PymtTravelEntrtnmntPubOfclGrp>
+      <ConferencesMeetingsGrp>
+        <TotalAmt>241331</TotalAmt>
+        <ProgramServicesAmt>240831</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>500</ManagementAndGeneralAmt>
+      </ConferencesMeetingsGrp>
+      <InterestGrp>
+        <TotalAmt>0</TotalAmt>
+      </InterestGrp>
+      <PaymentsToAffiliatesGrp>
+        <TotalAmt>0</TotalAmt>
+      </PaymentsToAffiliatesGrp>
+      <DepreciationDepletionGrp>
+        <TotalAmt>403484</TotalAmt>
+        <ManagementAndGeneralAmt>403484</ManagementAndGeneralAmt>
+      </DepreciationDepletionGrp>
+      <InsuranceGrp>
+        <TotalAmt>120725</TotalAmt>
+        <ManagementAndGeneralAmt>120725</ManagementAndGeneralAmt>
+      </InsuranceGrp>
+      <OtherExpensesGrp>
+        <Desc>OTHER EXPENSES</Desc>
+        <TotalAmt>13637</TotalAmt>
+        <ProgramServicesAmt>13637</ProgramServicesAmt>
+      </OtherExpensesGrp>
+      <OtherExpensesGrp>
+        <Desc>Training</Desc>
+        <TotalAmt>5438</TotalAmt>
+        <ProgramServicesAmt>5438</ProgramServicesAmt>
+      </OtherExpensesGrp>
+      <OtherExpensesGrp>
+        <Desc>Network partner service fees</Desc>
+        <TotalAmt>4234520</TotalAmt>
+        <ProgramServicesAmt>4234520</ProgramServicesAmt>
+      </OtherExpensesGrp>
+      <OtherExpensesGrp>
+        <Desc>Research and Materials</Desc>
+        <TotalAmt>76930</TotalAmt>
+        <ProgramServicesAmt>76930</ProgramServicesAmt>
+      </OtherExpensesGrp>
+      <TotalFunctionalExpensesGrp>
+        <TotalAmt>20574381</TotalAmt>
+        <ProgramServicesAmt>16127462</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>4446919</ManagementAndGeneralAmt>
+        <FundraisingAmt>0</FundraisingAmt>
+      </TotalFunctionalExpensesGrp>
+      <CashNonInterestBearingGrp>
+        <BOYAmt>176724986</BOYAmt>
+        <EOYAmt>159442756</EOYAmt>
+      </CashNonInterestBearingGrp>
+      <SavingsAndTempCashInvstGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </SavingsAndTempCashInvstGrp>
+      <PledgesAndGrantsReceivableGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </PledgesAndGrantsReceivableGrp>
+      <AccountsReceivableGrp>
+        <BOYAmt>421822</BOYAmt>
+        <EOYAmt>27802</EOYAmt>
+      </AccountsReceivableGrp>
+      <ReceivablesFromOfficersEtcGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </ReceivablesFromOfficersEtcGrp>
+      <RcvblFromDisqualifiedPrsnGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </RcvblFromDisqualifiedPrsnGrp>
+      <OthNotesLoansReceivableNetGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </OthNotesLoansReceivableNetGrp>
+      <InventoriesForSaleOrUseGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </InventoriesForSaleOrUseGrp>
+      <PrepaidExpensesDefrdChargesGrp>
+        <BOYAmt>197846</BOYAmt>
+        <EOYAmt>398665</EOYAmt>
+      </PrepaidExpensesDefrdChargesGrp>
+      <LandBldgEquipCostOrOtherBssAmt>2375008</LandBldgEquipCostOrOtherBssAmt>
+      <LandBldgEquipAccumDeprecAmt>638571</LandBldgEquipAccumDeprecAmt>
+      <LandBldgEquipBasisNetGrp>
+        <BOYAmt>1959276</BOYAmt>
+        <EOYAmt>1736437</EOYAmt>
+      </LandBldgEquipBasisNetGrp>
+      <InvestmentsPubTradedSecGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>101985000</EOYAmt>
+      </InvestmentsPubTradedSecGrp>
+      <InvestmentsOtherSecuritiesGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </InvestmentsOtherSecuritiesGrp>
+      <InvestmentsProgramRelatedGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>381926</EOYAmt>
+      </InvestmentsProgramRelatedGrp>
+      <IntangibleAssetsGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </IntangibleAssetsGrp>
+      <OtherAssetsTotalGrp>
+        <BOYAmt>5070496</BOYAmt>
+        <EOYAmt>5048496</EOYAmt>
+      </OtherAssetsTotalGrp>
+      <TotalAssetsGrp>
+        <BOYAmt>184374426</BOYAmt>
+        <EOYAmt>269021082</EOYAmt>
+      </TotalAssetsGrp>
+      <AccountsPayableAccrExpnssGrp>
+        <BOYAmt>912088</BOYAmt>
+        <EOYAmt>3625187</EOYAmt>
+      </AccountsPayableAccrExpnssGrp>
+      <GrantsPayableGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>2304966</EOYAmt>
+      </GrantsPayableGrp>
+      <DeferredRevenueGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </DeferredRevenueGrp>
+      <TaxExemptBondLiabilitiesGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </TaxExemptBondLiabilitiesGrp>
+      <EscrowAccountLiabilityGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </EscrowAccountLiabilityGrp>
+      <LoansFromOfficersDirectorsGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </LoansFromOfficersDirectorsGrp>
+      <MortgNotesPyblScrdInvstPropGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </MortgNotesPyblScrdInvstPropGrp>
+      <UnsecuredNotesLoansPayableGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </UnsecuredNotesLoansPayableGrp>
+      <OtherLiabilitiesGrp>
+        <BOYAmt>417734</BOYAmt>
+        <EOYAmt>10377</EOYAmt>
+      </OtherLiabilitiesGrp>
+      <TotalLiabilitiesGrp>
+        <BOYAmt>1329822</BOYAmt>
+        <EOYAmt>5940530</EOYAmt>
+      </TotalLiabilitiesGrp>
+      <OrgDoesNotFollowSFAS117Ind>X</OrgDoesNotFollowSFAS117Ind>
+      <CapStkTrPrinCurrentFundsGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </CapStkTrPrinCurrentFundsGrp>
+      <PdInCapSrplsLandBldgEqpFundGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </PdInCapSrplsLandBldgEqpFundGrp>
+      <RtnEarnEndowmentIncmOthFndsGrp>
+        <BOYAmt>183044604</BOYAmt>
+        <EOYAmt>263080552</EOYAmt>
+      </RtnEarnEndowmentIncmOthFndsGrp>
+      <TotalNetAssetsFundBalanceGrp>
+        <BOYAmt>183044604</BOYAmt>
+        <EOYAmt>263080552</EOYAmt>
+      </TotalNetAssetsFundBalanceGrp>
+      <TotLiabNetAssetsFundBalanceGrp>
+        <BOYAmt>184374426</BOYAmt>
+        <EOYAmt>269021082</EOYAmt>
+      </TotLiabNetAssetsFundBalanceGrp>
+      <ReconcilationRevenueExpnssAmt>80035948</ReconcilationRevenueExpnssAmt>
+      <MethodOfAccountingAccrualInd>X</MethodOfAccountingAccrualInd>
+      <AccountantCompileOrReviewInd>false</AccountantCompileOrReviewInd>
+      <FSAuditedInd>true</FSAuditedInd>
+      <FSAuditedBasisGrp>
+        <SeparateBasisFinclStmtInd>X</SeparateBasisFinclStmtInd>
+      </FSAuditedBasisGrp>
+      <AuditCommitteeInd>true</AuditCommitteeInd>
+      <FederalGrantAuditRequiredInd>false</FederalGrantAuditRequiredInd>
+    </IRS990>
+    <IRS990ScheduleB documentId="IRS990ScheduleB">
+      <ContributorInformationGrp>
+        <ContributorNum>RESTRICTED</ContributorNum>
+        <ContributorBusinessName>
+          <BusinessNameLine1>RESTRICTED</BusinessNameLine1>
+        </ContributorBusinessName>
+        <ContributorUSAddress>
+          <AddressLine1>RESTRICTED</AddressLine1>
+          <AddressLine2>RESTRICTED</AddressLine2>
+          <City>RESTRICTED</City>
+          <State>RESTRICTED</State>
+          <ZIPCode>RESTRICTED</ZIPCode>
+        </ContributorUSAddress>
+        <TotalContributionsAmt>RESTRICTED</TotalContributionsAmt>
+      </ContributorInformationGrp>
+    </IRS990ScheduleB>
+    <IRS990ScheduleD documentId="IRS990ScheduleD">
+      <ArtPublicExhibitionAmountsGrp />
+      <HeldWorksArtGrp />
+      <CYMinus3YrEndwmtFundGrp />
+      <CYMinus4YrEndwmtFundGrp />
+      <LandGrp />
+      <BuildingsGrp />
+      <LeaseholdImprovementsGrp>
+        <OtherCostOrOtherBasisAmt>575018</OtherCostOrOtherBasisAmt>
+        <DepreciationAmt>110245</DepreciationAmt>
+        <BookValueAmt>464772</BookValueAmt>
+      </LeaseholdImprovementsGrp>
+      <EquipmentGrp>
+        <OtherCostOrOtherBasisAmt>460807</OtherCostOrOtherBasisAmt>
+        <DepreciationAmt>163296</DepreciationAmt>
+        <BookValueAmt>297511</BookValueAmt>
+      </EquipmentGrp>
+      <OtherLandBuildingsGrp>
+        <OtherCostOrOtherBasisAmt>1339184</OtherCostOrOtherBasisAmt>
+        <DepreciationAmt>365030</DepreciationAmt>
+        <BookValueAmt>974154</BookValueAmt>
+      </OtherLandBuildingsGrp>
+      <TotalBookValueLandBuildingsAmt>1736437</TotalBookValueLandBuildingsAmt>
+      <FederalIncomeTaxLiabilityAmt>0</FederalIncomeTaxLiabilityAmt>
+      <OtherLiabilitiesOrgGrp>
+        <Desc>DUE TO JOBSOHIO BEVERAGE SYSTEM</Desc>
+        <Amt>10377</Amt>
+      </OtherLiabilitiesOrgGrp>
+      <TotalLiabilityAmt>10377</TotalLiabilityAmt>
+      <TotalRevEtcAuditedFinclStmtAmt>100610329</TotalRevEtcAuditedFinclStmtAmt>
+      <RevenueSubtotalAmt>100610329</RevenueSubtotalAmt>
+      <TotalRevenuePerForm990Amt>100610329</TotalRevenuePerForm990Amt>
+      <TotExpnsEtcAuditedFinclStmtAmt>20574381</TotExpnsEtcAuditedFinclStmtAmt>
+      <ExpensesSubtotalAmt>20574381</ExpensesSubtotalAmt>
+      <TotalExpensesPerForm990Amt>20574381</TotalExpensesPerForm990Amt>
+    </IRS990ScheduleD>
+    <IRS990ScheduleF documentId="IRS990ScheduleF">
+      <AccountActivitiesOutsideUSGrp>
+        <RegionTxt>Europe (Including Iceland and Greenland)</RegionTxt>
+        <EmployeeCnt>1</EmployeeCnt>
+        <TypeOfActivitiesConductedTxt>Program Services</TypeOfActivitiesConductedTxt>
+        <SpecificServicesProvidedTxt>Economic development</SpecificServicesProvidedTxt>
+        <RegionTotalExpendituresAmt>79839</RegionTotalExpendituresAmt>
+      </AccountActivitiesOutsideUSGrp>
+      <AccountActivitiesOutsideUSGrp>
+        <RegionTxt>East Asia and the Pacific</RegionTxt>
+        <EmployeeCnt>1</EmployeeCnt>
+        <TypeOfActivitiesConductedTxt>Program Services</TypeOfActivitiesConductedTxt>
+        <SpecificServicesProvidedTxt>Economic development</SpecificServicesProvidedTxt>
+        <RegionTotalExpendituresAmt>251073</RegionTotalExpendituresAmt>
+      </AccountActivitiesOutsideUSGrp>
+      <SubtotalEmployeesCnt>2</SubtotalEmployeesCnt>
+      <TotalEmployeeCnt>2</TotalEmployeeCnt>
+      <SubtotalSpentAmt>330912</SubtotalSpentAmt>
+      <TotalSpentAmt>330912</TotalSpentAmt>
+      <TransferToForeignCorpInd>false</TransferToForeignCorpInd>
+      <InterestInForeignTrustInd>false</InterestInForeignTrustInd>
+      <ForeignCorpOwnershipInd>false</ForeignCorpOwnershipInd>
+      <PassiveForeignInvestmestCoInd>false</PassiveForeignInvestmestCoInd>
+      <ForeignPartnershipInd>false</ForeignPartnershipInd>
+      <BoycottCountriesInd>false</BoycottCountriesInd>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Part I, Line 3</FormAndLineReferenceDesc>
+        <ExplanationTxt>JobsOhio retains market consultants to represent its interests in other countries for foreign direct investment in Ohio. The countries are Ohio's top markets for both current international investment and active economic development projects.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Part I, Line 3, Column (f)</FormAndLineReferenceDesc>
+        <ExplanationTxt>Accounting method is accrual. All amounts are for expenditures.</ExplanationTxt>
+      </SupplementalInformationDetail>
+    </IRS990ScheduleF>
+    <IRS990ScheduleI documentId="IRS990ScheduleI">
+      <GrantRecordsMaintainedInd>true</GrantRecordsMaintainedInd>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1>GKN Sinter Metals Inc</BusinessNameLine1>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1>550 Warrensville Road</AddressLine1>
+          <AddressLine2>Suite 400</AddressLine2>
+          <City>Lisle</City>
+          <State>IL</State>
+          <ZIPCode>60532</ZIPCode>
+        </USAddress>
+        <RecipientEIN>263199128</RecipientEIN>
+        <CashGrantAmt>150000</CashGrantAmt>
+        <ValuationMethodUsedDesc>Cost</ValuationMethodUsedDesc>
+        <PurposeOfGrantTxt>Economic development grant for capital expenditures</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1>Fulton County Processing Limited</BusinessNameLine1>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1>7800 State Highway 109</AddressLine1>
+          <City>Delta</City>
+          <State>OH</State>
+          <ZIPCode>43515</ZIPCode>
+        </USAddress>
+        <RecipientEIN>341965647</RecipientEIN>
+        <CashGrantAmt>50000</CashGrantAmt>
+        <ValuationMethodUsedDesc>Cost</ValuationMethodUsedDesc>
+        <PurposeOfGrantTxt>Economic development grant for capital expenditures</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1>ECS Tuning</BusinessNameLine1>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1>1000 Seville Road</AddressLine1>
+          <City>Wadsworth</City>
+          <State>OH</State>
+          <ZIPCode>44281</ZIPCode>
+        </USAddress>
+        <RecipientEIN>113682720</RecipientEIN>
+        <CashGrantAmt>50000</CashGrantAmt>
+        <ValuationMethodUsedDesc>Cost</ValuationMethodUsedDesc>
+        <PurposeOfGrantTxt>Economic development grant for capital expenditures</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1>Independent Can Company</BusinessNameLine1>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1>1300 Brass Mill Road</AddressLine1>
+          <City>Belcamp</City>
+          <State>MD</State>
+          <ZIPCode>21017</ZIPCode>
+        </USAddress>
+        <RecipientEIN>520902777</RecipientEIN>
+        <CashGrantAmt>50000</CashGrantAmt>
+        <ValuationMethodUsedDesc>Cost</ValuationMethodUsedDesc>
+        <PurposeOfGrantTxt>Economic development grant for capital expenditures</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1>Folded Pak Inc</BusinessNameLine1>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1>5885 Stapleton Drive North</AddressLine1>
+          <AddressLine2>Unit C-305</AddressLine2>
+          <City>Denver</City>
+          <State>CO</State>
+          <ZIPCode>80216</ZIPCode>
+        </USAddress>
+        <RecipientEIN>010781438</RecipientEIN>
+        <CashGrantAmt>60000</CashGrantAmt>
+        <ValuationMethodUsedDesc>Cost</ValuationMethodUsedDesc>
+        <PurposeOfGrantTxt>Economic development grant for capital expenditures</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1>Economic Growth Foundation</BusinessNameLine1>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1>1240 Huron Road</AddressLine1>
+          <AddressLine2>Suite 400</AddressLine2>
+          <City>Cleveland</City>
+          <State>OH</State>
+          <ZIPCode>44115</ZIPCode>
+        </USAddress>
+        <RecipientEIN>341916518</RecipientEIN>
+        <IRCSectionDesc>501(c)(3)</IRCSectionDesc>
+        <CashGrantAmt>176000</CashGrantAmt>
+        <ValuationMethodUsedDesc>Cost</ValuationMethodUsedDesc>
+        <PurposeOfGrantTxt>Cost of research study</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1>Coshocton Port Authority</BusinessNameLine1>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1>106 South 4th Street</AddressLine1>
+          <City>Coshocton</City>
+          <State>OH</State>
+          <ZIPCode>43812</ZIPCode>
+        </USAddress>
+        <RecipientEIN>432008761</RecipientEIN>
+        <CashGrantAmt>22000</CashGrantAmt>
+        <ValuationMethodUsedDesc>Cost</ValuationMethodUsedDesc>
+        <PurposeOfGrantTxt>Purchase of equip for workforce training</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1>Global Cleveland</BusinessNameLine1>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1>200 Public Square</AddressLine1>
+          <AddressLine2>Suite 150</AddressLine2>
+          <City>Cleveland</City>
+          <State>OH</State>
+          <ZIPCode>44114</ZIPCode>
+        </USAddress>
+        <RecipientEIN>275245539</RecipientEIN>
+        <IRCSectionDesc>501(c)(3)</IRCSectionDesc>
+        <CashGrantAmt>750000</CashGrantAmt>
+        <ValuationMethodUsedDesc>Cost</ValuationMethodUsedDesc>
+        <PurposeOfGrantTxt>Talent attraction initiative</PurposeOfGrantTxt>
+      </RecipientTable>
+      <Total501c3OrgCnt>2</Total501c3OrgCnt>
+      <TotalOtherOrgCnt>6</TotalOtherOrgCnt>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Part I, Line 2</FormAndLineReferenceDesc>
+        <ExplanationTxt>JobsOhio grantees receive grant funds only on a reimbursement basis. Grantees must submit a request for reimbursement and supporting documentation for review and approval by JobsOhio. Grantees must maintain records supporting claimed costs and all requests for reimbursement are subject to audit by JobsOhio. Requests for reimbursement must be certified by authorized officers of grantee. Documentation in support of claimed costs must include agreements, paid invoices, vouchers, paid receipts, and other documentation as needed. Program disbursements are reviewed at multiple levels within JobsOhio. GRANTEES ARE REQUIRED TO SUBMIT AN ANNUAL REPORT TO THE JOBSOHIO DIRECTOR OF COMPLIANCE. ALL SUCH REPORTS ARE REVIEWED BY THE DIRECTOR OF COMPLIANCE, WHO PREPARES A REPORT ON PROJECT PERFORMANCE. UNDERPERFORMING PROJECTS MAY BE THE SUBJECT OF ACTION AT THE RECOMMENDATION OF THE DIRECTOR OF COMPLIANCE BY THE JOBSOHIO COMPLIANCE TEAM, AND FINAL DETERMINATION BY THE JOBSOHIO EXECUTIVE TEAM.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Part II</FormAndLineReferenceDesc>
+        <ExplanationTxt>THE STATEMENT OF FUNCTIONAL EXPENSES IS PREPARED ON THE ACCRUAL BASIS OF ACCOUNTING AND SCHEDULE I IS PREPARED ON THE CASH BASIS OF ACCOUNTING, IN ACCORDANCE WITH IRS REPORTING INSTRUCTIONS. ACCORDINGLY, A VARIANCE EXISTS BETWEEN THE AMOUNTS REPORTED FOR GRANT EXPENSE ON EACH SCHEDULE.</ExplanationTxt>
+      </SupplementalInformationDetail>
+    </IRS990ScheduleI>
+    <IRS990ScheduleJ documentId="IRS990ScheduleJ">
+      <CompensationCommitteeInd>X</CompensationCommitteeInd>
+      <IndependentConsultantInd>X</IndependentConsultantInd>
+      <CompensationSurveyInd>X</CompensationSurveyInd>
+      <BoardOrCommitteeApprovalInd>X</BoardOrCommitteeApprovalInd>
+      <SeverancePaymentInd>false</SeverancePaymentInd>
+      <SupplementalNonqualRtrPlanInd>false</SupplementalNonqualRtrPlanInd>
+      <EquityBasedCompArrngmInd>false</EquityBasedCompArrngmInd>
+      <CompBasedOnRevenueOfFlngOrgInd>false</CompBasedOnRevenueOfFlngOrgInd>
+      <CompBsdOnRevRelatedOrgsInd>false</CompBsdOnRevRelatedOrgsInd>
+      <CompBsdNetEarnsFlngOrgInd>false</CompBsdNetEarnsFlngOrgInd>
+      <CompBsdNetEarnsRltdOrgsInd>false</CompBsdNetEarnsRltdOrgsInd>
+      <AnyNonFixedPaymentsInd>false</AnyNonFixedPaymentsInd>
+      <InitialContractExceptionInd>false</InitialContractExceptionInd>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>John Minor</PersonNm>
+        <TitleTxt>Board Member President and CIO</TitleTxt>
+        <BaseCompensationFilingOrgAmt>222524</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>0</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>0</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>0</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>13372</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>235896</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>Mark Patton</PersonNm>
+        <TitleTxt>Managing Director</TitleTxt>
+        <BaseCompensationFilingOrgAmt>222648</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>0</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>0</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>0</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>12614</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>235262</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>Charles Mustine</PersonNm>
+        <TitleTxt>Managing Director</TitleTxt>
+        <BaseCompensationFilingOrgAmt>221958</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>0</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>0</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>0</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>16410</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>238368</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>Kristi Tanner</PersonNm>
+        <TitleTxt>Managing Director</TitleTxt>
+        <BaseCompensationFilingOrgAmt>162270</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>0</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>0</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>0</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>444</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>162714</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+    </IRS990ScheduleJ>
+    <IRS990ScheduleO documentId="IRS990ScheduleO">
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Form 990 Part VI Line 2</FormAndLineReferenceDesc>
+        <ExplanationTxt>JOHN MINOR, A DIRECTOR AND OFFICER OF JOBSOHIO, JAMES BOLAND, A DIRECTOR AND OFFICER OF JOBSOHIO, AND KEVIN GIANGOLA, AN OFFICER OF JOBSOHIO, WERE SIMULTANEOUSLY DIRECTORS AND OFFICERS OF JOBSOHIO BEVERAGE SYSTEM. STEVE DAVIS AND GARY HEMINGER, BOTH DIRECTORS OF JOBSOHIO, HAVE A BUSINESS RELATIONSHIP.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Form 990 Part VI Line 7a</FormAndLineReferenceDesc>
+        <ExplanationTxt>THE GOVERNING BODY IS APPOINTED BY THE GOVERNOR ACCORDING TO OHIO STATE LAW, CHAPTER 187, REVISED CODE.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Form 990 Part VI Line 9</FormAndLineReferenceDesc>
+        <ExplanationTxt>E. GORDON GEE PO BOX 6201 1500 UNIVERSITY AVENUE MORGANTOWN, WV 26506-6201 DARYL REVOLDT 1565 AMBLER AVENUE NORTH CANTON, OH STEVE DAVIS BOB EVANS FARMS, INC. 8111 SMITH'S MILL ROAD NEW ALBANY, OH 43054 LAURA JONES 3495 WENWOOD DRIVE HILLIARD, OH 43026 MARLON CHEATHAM 11863 LATROBE COURT FISHERS, INDIANA 46037 PAMELA SPRINGER 4715 OLENTANGY BOULEVARD COLUMBUS, OH 43214</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Form 990 Part VI Line 11b</FormAndLineReferenceDesc>
+        <ExplanationTxt>THE FORM 990 IS SUBMITTED TO THE CHIEF FINANCIAL OFFICER FOR HIS REVIEW. SUBSEQUENT TO HIS APPROVAL, IT IS SUBMITTED TO THE PRESIDENT AND CHIEF INVESTMENT OFFICER FOR REVIEW AND APPROVAL. COPIES OF THE FORM 990 ARE PROVIDED TO THE BOARD OF DIRECTORS FOR REVIEW PRIOR TO FILING THE RETURN. ADDITIONALLY, JOBSOHIO EMPLOYS KPMG TO REVIEW THE RETURN AND PROVIDE GUIDANCE IN IDENTIFYING ERRORS IN THE RETURN SUBMISSION AND FEEDBACK ON QUANTITATIVE AND QUALITATIVE RESPONSES.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Form 990 Part VI Line 12c</FormAndLineReferenceDesc>
+        <ExplanationTxt>JOBOHIO'S CONFLICTS OF INTEREST POLICY IS INTENDED TO PROTECT THE CORPORATION'S INTEREST WHEN IT IS CONSIDERING A TRANSACTION OR ARRANGEMENT THAT MIGHT BENEFIT THE PRIVATE INTEREST OF A DIRECTOR OR OFFICER OR EMPLOYEE OF THE CORPORATION OR MIGHT DIRECTLY BENEFIT THAT INDIVIDUAL IN OTHER THAN A DE MINIMIS MANNER. THIS POLICY SUPPLEMENTS, BUT DOES NOT REPLACE, OHIO LAWS GOVERNING CONFLICTS OF INTEREST APPLICABLE TO THE CORPORATION. UNDER JOBSOHIO'S CONFLICTS OF INTEREST POLICY, DIRECTORS, OFFICERS AND EMPLOYEES OF THE CORPORATION ARE CONSIDERED TO BE INTERESTED INDIVIDUALS WHERE THEY HAVE, DIRECTLY OR INDIRECTLY, THROUGH BUSINESS, INVESTMENT, OR FAMILY: (A) A NON DE MINIMIS OWNERSHIP OR INVESTMENT INTEREST IN ANY PERSON WITH WHICH THE CORPORATION HAS A TRANSACTION OR ARRANGEMENT; (B) A COMPENSATION ARRANGEMENT WITH THE CORPORATION OR ANY PERSON WITH WHICH THE CORPORATION HAS A TRANSACTION OR ARRANGEMENT; OR C) A NON DE MINIMIS POTENTIAL OWNERSHIP OR INVESTMENT INTEREST IN, OR POTENTIAL COMPENSATION ARRANGEMENT WITH, ANY PERSON WITH WHICH THE CORPORATION IS NEGOTIATING A TRANSACTION OR ARRANGMENET. "COMPENSATION" INCLUDES DIRECT OR INDIRECT REMUNERATION AS WELL AS MATERIAL GIFTS OR FAVORS. IN CONNECTION WITH ANY ACTUAL OR POSSIBLE CONFLICTS OF INTEREST WITH RESPECT TO A SPECIFIC TRANSACTION OR ARRANGEMENT BETWEEN AN INTERESTED INDIVIDUAL AND THE CORPORATION, AN INTERESTED INDIVIDUAL MUST DISCLOSE THE EXISTENCE AND NATURE OF THE FINANCIAL INTEREST AND ALL MATERIAL FACTS TO THE DIRECTOR OF COMPLIANCE, BOARD, AND MEMBERS OF ANY COMMITTEES OR INDIVIDUALS WITH BOARD-DELEGATED POWERS THAT ARE CONSIDERING THE PROPOSED TRANSACTION OR ARRANGEMENT. AFTER DISCLOSURE OF THE FINANCIAL INTEREST AND ALL MATERIAL FACTS AND ANY DISCUSSION WITH THE INTERESTED INDIVIDUAL, THE INTERESTED INDIVIDUAL MUST LEAVE THE BOARD OR OTHER MEETING WHILE A DETERMINATION IS MADE AS TO WHETHER A CONFLICT OF INTEREST EXISTS. THE BOARD SHALL DECIDE IF A CONFLICT OF INTEREST EXISTS. IF THE BOARD DECIDES BY A MAJORITY VOTE OF THE DISINTERESTED DIRECTORS THAT A CONFLICT EXISTS, THE DISINTERESTED DIRECTORS MUST DETERMINE WHETHER THE CORPORATION CAN OBTAIN, WITH REASONABLE EFFORTS, A MORE ADVANTAGEOUS TRANSACTION OR ARRANGEMENT FROM A PERSON THAT WOULD NOT GIVE RISE TO A CONFLICT OF INTEREST. IF A MORE ADVANTAGEOUS TRANSACTION OR ARRANGEMENT IS NOT REASONABLY AVAILABLE UNDER CIRCUMSTANCES THAT WOULD NOT GIVE RISE TO A CONFLICT OF INTEREST, THE BOARD MUST DETERMINE BY A MAJORITY VOTE OF THE DISINTERESTED DIRECTORS WHETHER THE TRANSACTION OR ARRANGEMENT IS IN THE CORPORATION'S BEST INTEREST, FOR ITS OWN BENEFIT, AND WHETHER THE TRANSACTION OR ARRANGEMENT IS FAIR AND REASONABLE. IF THE BOARD HAS REASONABLE CAUSE TO BELIEVE THAT A DIRECTOR OR OFFICER HAS FAILED TO DISCLOSE AN ACTUAL OR POSSIBLE CONFLICT OF INTEREST, IT WILL INFORM THE INDIVIDUAL OF THE BASIS FOR SUCH BELIEF AND PROVIDE THE INDIVIDUAL WITH AN OPPORTUNITY TO EXPLAIN THE ALLEGED FAILURE TO DISCLOSE. IF, AFTER HEARING THE RESPONSE OF THE DIRECTOR OR OFFICER AND MAKING SUCH FURTHER INVESTIGATION AS MAY BE WARRANTED IN THE CIRCUMSTANCES, THE BOARD DETERMINES THAT THE DIRECTOR OR OFFICER HAS IN FACT FAILED TO DISCLOSE AN ACTUAL OR POSSIBLE CONFLICT OF INTEREST, IT MUST TAKE APPROPRIATE DISCIPLINARY AND CORRECTIVE ACTION, INCLUDING, WITHOUT LIMITATION, INITIATING AN ACTION FOR BREACH OF FIDUCIARY DUTY. THE MINUTES OF THE BOARD MEETINGS CONSIDERING POSSIBLE OR ACTUAL CONFLICTS OF INTEREST SHALL BE KEPT AND SHALL CONTAIN BOTH OF THE FOLLOWING: (A) THE NAMES OF THE INDIVIDUALS WHO DISCLOSED OR OTHERWISE WERE FOUND TO HAVE A FINANCIAL INTEREST IN CONNECTION WITH AN ACTUAL OR POSSIBLE CONFLICT OF INTEREST, THE NATURE OF THE FINANCIAL INTEREST, ANY ACTION TAKEN TO DETERMINE WHETHER A CONFLICT OF INTEREST WAS PRESENT, AND THE BOARD'S DECISION AS TO WHETHER A CONFLICT OF INTEREST EXISTED; AND (B) THE NAMES OF THE INDIVIDUALS WHO WERE PRESENT FOR DISCUSSIONS AND VOTES RELATING TO THE TRANSACTION OR ARRANGEMENT, THE CONTENT OF THE DISCUSSION, INCLUDING ANY ALTERNATIVES TO THE PROPOSED TRANSACTION OR ARRANGEMENT, AND A RECORD OF ANY VOTES TAKEN IN CONNECTION THEREWITH. IN ADDITION TO THE FOREGOING, ANY OFFICER OR EMPLOYEE OF THE CORPORATION WHOSE RESPONSIBILITY INCLUDES COMPENSATION MATTERS AND WHO RECEIVES COMPENSATION DIRECTLY OR INDIRECTLY FROM THE CORPORATION IS PRECLUDED FROM VOTING OR PROVIDING INFORMATION TO ANY COMPENSATION COMMITTEE ON MATTERS PERTAINING TO THAT INDIVIDUAL'S COMPENSATION. DIRECTORS MAY NOT SOLICIT OR ACCEPT EMPLOYMENT WITH ANY PERSON THAT RECEIVES OR HAS RECEIVED AN INCENTIVE OR OTHER ASSISTANCE AS A RESULT OF A DECISION THAT SUCH DIRECTOR PARTICIPATED IN AS A DIRECTOR OF THE CORPORATION. EACH DIRECTOR, OFFICER AND EMPLOYEE IS REQUIRED TO ANNUALLY SIGN A STATEMENT AFFIRMING THAT SUCH INDIVIDUAL: (A) HAS RECEIVED A COPY OF THE POLICY; (B) HAS READ AND UNDERSTANDS THE POLICY; (C) HAS AGREED TO COMPLY WITH THE POLICY; AND (D) UNDERSTANDS THE CORPORATION'S STATUTORY PURPOSE AND THAT IT IS A NONPROFIT CORPORATION. TO ENSURE THAT THE CORPORATION OPERATES IN A MANNER CONSISTENT WITH ITS STATUTORY AND CHARITABLE PURPOSES OR CONTRACTUAL OBLIGATIONS AND THAT IT DOES NOT ENGAGE IN ACTIVITIES THAT COULD JEOPARDIZE THE STATUS OF THE CORPORATION AS AN ORGANIZATION EXEMPT FROM FEDERAL INCOME TAX, PERIODIC REVIEWS OF ITS OPERATIONS ARE PERFORMED. THE PERIODIC REVIEWS, AT A MINIMUM, DETERMINE ALL OF THE FOLLOWING: (A) WHETHER COMPENSATION ARRANGEMENTS AND BENEFITS ARE REASONABLE, BASED UPON COMPETENT SURVEY INFORMATION, AND ARE THE RESULT OF ARM'S LENGTH BARGAINING; (B) WHETHER THE CORPORATION'S OPERATIONS ARE CONSISTENT WITH THE ARTICLES, THIS CODE OF REGULATIONS AND CONTRACTUAL OBLIGATIONS, AND ARE PROPERLY DOCUMENTED; AND (C) WHETHER TRANSACTIONS ARE FAIR TO THE CORPORATION, REFLECT REASONABLE INVESTMENT OR PAYMENTS OR GOODS AND SERVICES, FURTHER THE CORPORATION'S STATUTORY AND CHARITABLE PURPOSES OR CONTRACTUAL OBLIGATIONS, AND DO NOT RESULT IN DIRECT PRIVATE BENEFIT TO DIRECTORS, OFFICERS OR OTHER PERSONs, IN OTHER THAN A DE MINIMIS MANNER. A MAJORITY OF THE DISINTERESTED DIRECTORS MAY REMOVE ANY DIRECTOR FOR MISCONDUCT. MISCONDUCT INCLUDES ANY BEHAVIOR BY A DIRECTOR THAT INDICATES THE DIRECTOR HAS FAILED TO PERFORM HIS OR HER FIDUCIARY DUTIES TO THE CORPORATION; TO COMPLY WITH THE REQUIREMENTS OF THE ARTICLES, THIS CODE OF REGULATIONS, OR ANY CORPORATE CONFLICTS OR INTEREST OR ETHICAL POLICIES; TO MEET HIS OR HER OBLIGATIONS AS A DIRECTOR UNDER OHIO LAW; HAS BEEN CONVICTED OF A FELONY; OR HAS OTHERWISE ENGAGED, THROUGH ACT OR OMISSION, IN SIMILAR BEHAVIOR THAT A MAJORITY OF THE DISINTERESTED DIRECTORS DETERMINES WARRANTS REMOVAL FOR MISCONDUCT. A MAJORITY OF THE DISINTERESTED DIRECTORS HAVE SOLE AUTHORITY TO DETERMINE WHETHER A DIRECTOR SHOULD BE REMOVED FROM OFFICE ON THE BASIS OF MISCONDUCT. Effective October 1, 2013, JobsOhio's Board of Directors created an Independent Review Panel to, among other things, assess the adequacy of JobsOhio's review process regarding potential conflicts of interest. The Director of Compliance has compiled a list of financial and fiduciary interests from the Financial Disclosure Statements that all JobsOhio Board of Directors and numerous JobsOhio staff members must fill out and submit to the Ohio Ethics Commission. In the fall of 2013, JobsOhio built into Salesforce, its Customer Relationship Management software where all project information is maintained, a robust potential conflict identification system (PCIS) that automatically searches for matches of disclosed financial and fiduciary interests of Board members and employees with any company that seeks an economic development incentive from JobsOhio. At three points in the project development process, the PCIS alerts JobsOhio's General Counsel of any potential conflicts and requires those potential conflicts of interest to be cleared or managed before the project may proceed to approval. In tandem with the automated PCIS process and twice a week, the Director of Compliance performs an independent review of the agendas for the project team meetings to check for potential conflicts of interest in advance of those meetings.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Form 990, Part VI, Lines 15a &amp; 15b</FormAndLineReferenceDesc>
+        <ExplanationTxt>Pursuant to Article 5.1 (a) of the JobsOhio Articles of Incorporation, the JobsOhio Board of Directors (Board) is to approve by resolution the compensation of the chief investment officer. Pursuant to Article 5.1 (b) thereof, the Board is to approve a compensation plan for the Corporation. Under Article 6.4 of the JobsOhio Articles of Incorporation, a Compensation Committee (Committee) is elected by the Board. The Committee is responsible for reviewing any plan for the compensation of the Corporation's employees recommended by the Chief Investment Officer and for making recommendations regarding any such plan of compensation to the Board for their action. In addition, the Committee is to review compensation arrangements with both employees and independent contractors of the Corporation. During the tax year the Compensation Committee retained the services of a compensation consultant and developed and reviewed a compensation plan for the Corporation, excluding the President/Chief Investment Officer. The Committee was provided with and considered supporting data and documentation, including comparisons, and approved the compensation plan. The Committee separately reviewed and approved a proposal for the compensation of the President/Chief Investment Officer. Officers and employees that were the subject of the compensation determinations, including the President/Chief Investment Officer, were not present for the discussion and voting on their compensation. The actions of the Compensation Committee were contemporaneously documented in Committee minutes. The actions of the Compensation Committee were forwarded to the Board of Directors for approval of that body.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Form 990, Part VI, Line 19</FormAndLineReferenceDesc>
+        <ExplanationTxt>THE CORPORATION'S ARTICLES OF INCORPORATION ARE FILED WITH THE OFFICE OF THE OHIO SECRETARY OF STATE AND ARE A MATTER OF PUBLIC RECORD AVAILABLE ONLINE. THE CORPORATION'S CONFLICT OF INTEREST POLICY AND AUDITED FINANCIAL STATEMENTS ARE FILED WITH THE OHIO DEVELOPMENT SERVICES AGENCY AND ARE PUBLIC RECORDS AVAILABLE TO THE GENERAL PUBLIC UPON REQUEST. THE FOLLOWING DOCUMENTS ARE AVAILABLE ON THE JOBSOHIO WEBSITE: ARTICLES OF INCORPORATION, CODE OF REGULATIONS, CONFLICTS OF INTEREST POLICY, STANDARDS OF CONDUCT POLICY, EMPLOYEE GIFT POLICY, ETHICAL ANNUAL CONDUCT PLEDGE, ANNUAL ETHICS TRAINING, 2013 AUDITED FINANCIAL STATEMENTS, 2014 AUDITED FINANCIAL STATEMENTS, AND IRS FORM 990.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>FORM 990, PART IX, LINE 24C</FormAndLineReferenceDesc>
+        <ExplanationTxt>Network service partner fees are amounts paid to JobsOhio regional partners in support of achieving the mission to promote economic development in the state. The six regional partners within this JobsOhio Network focus their efforts on economic development within their area.</ExplanationTxt>
+      </SupplementalInformationDetail>
+    </IRS990ScheduleO>
+    <IRS990ScheduleR documentId="IRS990ScheduleR">
+      <IdRelatedTaxExemptOrgGrp>
+        <DisregardedEntityName>
+          <BusinessNameLine1>JobsOhio Beverage System</BusinessNameLine1>
+        </DisregardedEntityName>
+        <USAddress>
+          <AddressLine1>41 S High Street Suite 1500</AddressLine1>
+          <City>Columbus</City>
+          <State>OH</State>
+          <ZIPCode>43215</ZIPCode>
+        </USAddress>
+        <EIN>201255734</EIN>
+        <PrimaryActivitiesTxt>Econ Develop</PrimaryActivitiesTxt>
+        <LegalDomicileStateCd>OH</LegalDomicileStateCd>
+        <ExemptCodeSectionTxt>501(c)(3)</ExemptCodeSectionTxt>
+        <PublicCharityStatusTxt>7</PublicCharityStatusTxt>
+        <DirectControllingEntityName>
+          <BusinessNameLine1>JobsOhio</BusinessNameLine1>
+        </DirectControllingEntityName>
+        <ControlledOrganizationInd>true</ControlledOrganizationInd>
+      </IdRelatedTaxExemptOrgGrp>
+      <ReceiptOfIntAnntsRntsRyltsInd>false</ReceiptOfIntAnntsRntsRyltsInd>
+      <GiftGrntOrCapContriToOthOrgInd>false</GiftGrntOrCapContriToOthOrgInd>
+      <GiftGrntCapContriFromOthOrgInd>true</GiftGrntCapContriFromOthOrgInd>
+      <LoansOrGuaranteesToOtherOrgInd>false</LoansOrGuaranteesToOtherOrgInd>
+      <LoansOrGuaranteesFromOthOrgInd>false</LoansOrGuaranteesFromOthOrgInd>
+      <DivRelatedOrganizationInd>false</DivRelatedOrganizationInd>
+      <AssetSaleToOtherOrgInd>false</AssetSaleToOtherOrgInd>
+      <AssetPurchaseFromOtherOrgInd>false</AssetPurchaseFromOtherOrgInd>
+      <AssetExchangeInd>false</AssetExchangeInd>
+      <RentalOfFacilitiesToOthOrgInd>true</RentalOfFacilitiesToOthOrgInd>
+      <RentalOfFcltsFromOthOrgInd>false</RentalOfFcltsFromOthOrgInd>
+      <PerformOfServicesForOthOrgInd>true</PerformOfServicesForOthOrgInd>
+      <PerformOfServicesByOtherOrgInd>false</PerformOfServicesByOtherOrgInd>
+      <SharingOfFacilitiesInd>true</SharingOfFacilitiesInd>
+      <PaidEmployeesSharingInd>true</PaidEmployeesSharingInd>
+      <ReimbursementPaidToOtherOrgInd>false</ReimbursementPaidToOtherOrgInd>
+      <ReimbursementPaidByOtherOrgInd>false</ReimbursementPaidByOtherOrgInd>
+      <TransferToOtherOrgInd>false</TransferToOtherOrgInd>
+      <TransferFromOtherOrgInd>false</TransferFromOtherOrgInd>
+      <TransactionsRelatedOrgGrp>
+        <OtherOrganizationName>
+          <BusinessNameLine1>JobsOhio Beverage System</BusinessNameLine1>
+        </OtherOrganizationName>
+        <TransactionTypeTxt>c</TransactionTypeTxt>
+        <InvolvedAmt>100000000</InvolvedAmt>
+        <MethodOfAmountDeterminationTxt>Cash</MethodOfAmountDeterminationTxt>
+      </TransactionsRelatedOrgGrp>
+      <TransactionsRelatedOrgGrp>
+        <OtherOrganizationName>
+          <BusinessNameLine1>JobsOhio Beverage System</BusinessNameLine1>
+        </OtherOrganizationName>
+        <TransactionTypeTxt>j,n</TransactionTypeTxt>
+        <InvolvedAmt>183121</InvolvedAmt>
+        <MethodOfAmountDeterminationTxt>Cost</MethodOfAmountDeterminationTxt>
+      </TransactionsRelatedOrgGrp>
+      <TransactionsRelatedOrgGrp>
+        <OtherOrganizationName>
+          <BusinessNameLine1>JobsOhio Beverage System</BusinessNameLine1>
+        </OtherOrganizationName>
+        <TransactionTypeTxt>l,o</TransactionTypeTxt>
+        <InvolvedAmt>263738</InvolvedAmt>
+        <MethodOfAmountDeterminationTxt>Cost</MethodOfAmountDeterminationTxt>
+      </TransactionsRelatedOrgGrp>
+    </IRS990ScheduleR>
+  </ReturnData>
+</Return>

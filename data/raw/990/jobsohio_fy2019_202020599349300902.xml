@@ -1,0 +1,3825 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Return xmlns="http://www.irs.gov/efile" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.irs.gov/efile" returnVersion="2018v3.1">
+  <ReturnHeader binaryAttachmentCnt="0">
+    <ReturnTs>2020-02-28T07:49:57-06:00</ReturnTs>
+    <TaxPeriodEndDt>2019-06-30</TaxPeriodEndDt>
+    <PreparerFirmGrp>
+      <PreparerFirmEIN>861065772</PreparerFirmEIN>
+      <PreparerFirmName>
+        <BusinessNameLine1Txt>DELOITTE TAX LLP</BusinessNameLine1Txt>
+      </PreparerFirmName>
+      <PreparerUSAddress>
+        <AddressLine1Txt>111 MONUMENT CIRCLE SUITE 4200</AddressLine1Txt>
+        <CityNm>INDIANAPOLIS</CityNm>
+        <StateAbbreviationCd>IN</StateAbbreviationCd>
+        <ZIPCd>462045108</ZIPCd>
+      </PreparerUSAddress>
+    </PreparerFirmGrp>
+    <ReturnTypeCd>990</ReturnTypeCd>
+    <TaxPeriodBeginDt>2018-07-01</TaxPeriodBeginDt>
+    <Filer>
+      <EIN>452798687</EIN>
+      <BusinessName>
+        <BusinessNameLine1Txt>JOBSOHIO</BusinessNameLine1Txt>
+      </BusinessName>
+      <BusinessNameControlTxt>JOBS</BusinessNameControlTxt>
+      <PhoneNum>6142246446</PhoneNum>
+      <USAddress>
+        <AddressLine1Txt>41 SOUTH HIGH STREET NO 1500</AddressLine1Txt>
+        <CityNm>COLUMBUS</CityNm>
+        <StateAbbreviationCd>OH</StateAbbreviationCd>
+        <ZIPCd>432156104</ZIPCd>
+      </USAddress>
+    </Filer>
+    <BusinessOfficerGrp>
+      <PersonNm>JP NAUSEEF</PersonNm>
+      <PersonTitleTxt>PRESIDENT &amp; CIO</PersonTitleTxt>
+      <PhoneNum>6142246446</PhoneNum>
+      <SignatureDt>2020-02-28</SignatureDt>
+      <DiscussWithPaidPreparerInd>1</DiscussWithPaidPreparerInd>
+    </BusinessOfficerGrp>
+    <PreparerPersonGrp>
+      <PreparerPersonNm>SHAWNA M SUNBURY</PreparerPersonNm>
+      <PTIN>P01222873</PTIN>
+      <PhoneNum>3174648600</PhoneNum>
+    </PreparerPersonGrp>
+    <FilingSecurityInformation>
+      <IPAddress>
+        <IPv4AddressTxt>172.78.45.5</IPv4AddressTxt>
+      </IPAddress>
+      <IPDt>2020-02-28</IPDt>
+      <IPTm>07:49:52</IPTm>
+      <IPTimezoneCd>ES</IPTimezoneCd>
+      <FilingLicenseTypeCd>P</FilingLicenseTypeCd>
+      <AtSubmissionCreationDeviceId>8CEDF576CA043CC62ABB75A2273520B055B15DFF</AtSubmissionCreationDeviceId>
+      <AtSubmissionFilingDeviceId>0B3501086DFA94E6E07BB44763ACEA73AB7CFF8C</AtSubmissionFilingDeviceId>
+    </FilingSecurityInformation>
+    <TaxYr>2018</TaxYr>
+    <BuildTS>2020-09-23 17:36:50Z</BuildTS>
+  </ReturnHeader>
+  <ReturnData documentCnt="8">
+    <IRS990 documentId="RetDoc1038000001" referenceDocumentId="RetDoc1044400001">
+      <PrincipalOfficerNm>JP NAUSEEF</PrincipalOfficerNm>
+      <USAddress>
+        <AddressLine1Txt>41 SOUTH HIGH STREET NO 1500</AddressLine1Txt>
+        <CityNm>COLUMBUS</CityNm>
+        <StateAbbreviationCd>OH</StateAbbreviationCd>
+        <ZIPCd>432156104</ZIPCd>
+      </USAddress>
+      <GrossReceiptsAmt>366264700</GrossReceiptsAmt>
+      <GroupReturnForAffiliatesInd>0</GroupReturnForAffiliatesInd>
+      <Organization501cInd organization501cTypeTxt="4">X</Organization501cInd>
+      <WebsiteAddressTxt>WWW.JOBSOHIO.COM</WebsiteAddressTxt>
+      <TypeOfOrganizationCorpInd>X</TypeOfOrganizationCorpInd>
+      <FormationYr>2011</FormationYr>
+      <LegalDomicileStateCd>OH</LegalDomicileStateCd>
+      <ActivityOrMissionDesc>TO PROMOTE ECONOMIC DEVELOPMENT, JOB CREATION, JOB RETENTION, JOB TRAINING, WORKFORCE DEVELOPMENT, AND THE RETENTION OF CURRENT AND RECRUITMENT OF NEW BUSINESS TO OHIO.</ActivityOrMissionDesc>
+      <VotingMembersGoverningBodyCnt>9</VotingMembersGoverningBodyCnt>
+      <VotingMembersIndependentCnt>8</VotingMembersIndependentCnt>
+      <TotalEmployeeCnt>103</TotalEmployeeCnt>
+      <TotalVolunteersCnt>8</TotalVolunteersCnt>
+      <TotalGrossUBIAmt>0</TotalGrossUBIAmt>
+      <NetUnrelatedBusTxblIncmAmt>0</NetUnrelatedBusTxblIncmAmt>
+      <PYContributionsGrantsAmt>195000000</PYContributionsGrantsAmt>
+      <CYContributionsGrantsAmt>350000000</CYContributionsGrantsAmt>
+      <PYProgramServiceRevenueAmt>3429406</PYProgramServiceRevenueAmt>
+      <CYProgramServiceRevenueAmt>4251384</CYProgramServiceRevenueAmt>
+      <PYInvestmentIncomeAmt>7710001</PYInvestmentIncomeAmt>
+      <CYInvestmentIncomeAmt>12004621</CYInvestmentIncomeAmt>
+      <PYOtherRevenueAmt>7238</PYOtherRevenueAmt>
+      <CYOtherRevenueAmt>8695</CYOtherRevenueAmt>
+      <PYTotalRevenueAmt>206146645</PYTotalRevenueAmt>
+      <CYTotalRevenueAmt>366264700</CYTotalRevenueAmt>
+      <PYGrantsAndSimilarPaidAmt>72468892</PYGrantsAndSimilarPaidAmt>
+      <CYGrantsAndSimilarPaidAmt>112393413</CYGrantsAndSimilarPaidAmt>
+      <PYBenefitsPaidToMembersAmt>0</PYBenefitsPaidToMembersAmt>
+      <CYBenefitsPaidToMembersAmt>0</CYBenefitsPaidToMembersAmt>
+      <PYSalariesCompEmpBnftPaidAmt>12835928</PYSalariesCompEmpBnftPaidAmt>
+      <CYSalariesCompEmpBnftPaidAmt>14939646</CYSalariesCompEmpBnftPaidAmt>
+      <PYTotalProfFndrsngExpnsAmt>0</PYTotalProfFndrsngExpnsAmt>
+      <CYTotalProfFndrsngExpnsAmt>0</CYTotalProfFndrsngExpnsAmt>
+      <CYTotalFundraisingExpenseAmt>0</CYTotalFundraisingExpenseAmt>
+      <PYOtherExpensesAmt>33263599</PYOtherExpensesAmt>
+      <CYOtherExpensesAmt>34775130</CYOtherExpensesAmt>
+      <PYTotalExpensesAmt>118568419</PYTotalExpensesAmt>
+      <CYTotalExpensesAmt>162108189</CYTotalExpensesAmt>
+      <PYRevenuesLessExpensesAmt>87578226</PYRevenuesLessExpensesAmt>
+      <CYRevenuesLessExpensesAmt>204156511</CYRevenuesLessExpensesAmt>
+      <TotalAssetsBOYAmt>626905476</TotalAssetsBOYAmt>
+      <TotalAssetsEOYAmt>875968690</TotalAssetsEOYAmt>
+      <TotalLiabilitiesBOYAmt>57232123</TotalLiabilitiesBOYAmt>
+      <TotalLiabilitiesEOYAmt>92795126</TotalLiabilitiesEOYAmt>
+      <NetAssetsOrFundBalancesBOYAmt>569673353</NetAssetsOrFundBalancesBOYAmt>
+      <NetAssetsOrFundBalancesEOYAmt>783173564</NetAssetsOrFundBalancesEOYAmt>
+      <MissionDesc>TO PROMOTE ECONOMIC DEVELOPMENT, JOB CREATION, JOB RETENTION, JOB TRAINING, WORKFORCE DEVELOPMENT, AND THE RETENTION OF CURRENT AND RECRUITMENT OF NEW BUSINESS TO OHIO.</MissionDesc>
+      <SignificantNewProgramSrvcInd>0</SignificantNewProgramSrvcInd>
+      <SignificantChangeInd>0</SignificantChangeInd>
+      <ExpenseAmt>152612850</ExpenseAmt>
+      <GrantAmt>112393413</GrantAmt>
+      <RevenueAmt>4260079</RevenueAmt>
+      <Desc>JOBSOHIO'S PROGRAM OF ECONOMIC DEVELOPMENT FOCUSED ON JOB CREATION, JOB RETENTION, AND NEW CAPITAL INVESTMENT FROM EXISTING BUSINESS EXPANSION AND ATTRACTION OF NEW COMPANIES TO THE STATE OF OHIO. THE ECONOMIC DEVELOPMENT PROGRAM WILL INCREASE IN INTENSITY IN FISCAL YEAR 2020 AS JOBSOHIO PROMOTES NEW ECONOMIC DEVELOPMENT PROGRAMS WHILE CONTINUING TO LEVERAGE EXISTING PROGRAMS. JOBSOHIO RECEIVED A CONTRIBUTION OF $350,000,000 DURING THE FISCAL YEAR ENDED JUNE 30, 2019 FROM JOBSOHIO BEVERAGE SYSTEM TO AID IN CARRYING OUT ITS JOB CREATION AND OTHER ECONOMIC DEVELOPMENT ACTIVITIES.</Desc>
+      <TotalProgramServiceExpensesAmt>152612850</TotalProgramServiceExpensesAmt>
+      <DescribedInSection501c3Ind>0</DescribedInSection501c3Ind>
+      <ScheduleBRequiredInd referenceDocumentId="RetDoc1234500001">1</ScheduleBRequiredInd>
+      <PoliticalCampaignActyInd>0</PoliticalCampaignActyInd>
+      <SubjectToProxyTaxInd>0</SubjectToProxyTaxInd>
+      <DonorAdvisedFundInd referenceDocumentId="RetDoc1040000001">0</DonorAdvisedFundInd>
+      <ConservationEasementsInd referenceDocumentId="RetDoc1040000001">0</ConservationEasementsInd>
+      <CollectionsOfArtInd referenceDocumentId="RetDoc1040000001">0</CollectionsOfArtInd>
+      <CreditCounselingInd referenceDocumentId="RetDoc1040000001">0</CreditCounselingInd>
+      <TempOrPermanentEndowmentsInd referenceDocumentId="RetDoc1040000001">0</TempOrPermanentEndowmentsInd>
+      <ReportLandBuildingEquipmentInd referenceDocumentId="RetDoc1040000001">1</ReportLandBuildingEquipmentInd>
+      <ReportInvestmentsOtherSecInd referenceDocumentId="RetDoc1040000001">0</ReportInvestmentsOtherSecInd>
+      <ReportProgramRelatedInvstInd referenceDocumentId="RetDoc1040000001">1</ReportProgramRelatedInvstInd>
+      <ReportOtherAssetsInd referenceDocumentId="RetDoc1040000001">0</ReportOtherAssetsInd>
+      <ReportOtherLiabilitiesInd referenceDocumentId="RetDoc1040000001">0</ReportOtherLiabilitiesInd>
+      <IncludeFIN48FootnoteInd referenceDocumentId="RetDoc1040000001">0</IncludeFIN48FootnoteInd>
+      <IndependentAuditFinclStmtInd referenceDocumentId="RetDoc1040000001">1</IndependentAuditFinclStmtInd>
+      <ConsolidatedAuditFinclStmtInd referenceDocumentId="RetDoc1040000001">1</ConsolidatedAuditFinclStmtInd>
+      <SchoolOperatingInd>0</SchoolOperatingInd>
+      <ForeignOfficeInd>1</ForeignOfficeInd>
+      <ForeignActivitiesInd referenceDocumentId="RetDoc1040500001">1</ForeignActivitiesInd>
+      <MoreThan5000KToOrgInd referenceDocumentId="RetDoc1040500001">0</MoreThan5000KToOrgInd>
+      <MoreThan5000KToIndividualsInd referenceDocumentId="RetDoc1040500001">0</MoreThan5000KToIndividualsInd>
+      <ProfessionalFundraisingInd>0</ProfessionalFundraisingInd>
+      <FundraisingActivitiesInd>0</FundraisingActivitiesInd>
+      <GamingActivitiesInd>0</GamingActivitiesInd>
+      <OperateHospitalInd>0</OperateHospitalInd>
+      <GrantsToOrganizationsInd referenceDocumentId="RetDoc1041900001">1</GrantsToOrganizationsInd>
+      <GrantsToIndividualsInd referenceDocumentId="RetDoc1041900001">0</GrantsToIndividualsInd>
+      <ScheduleJRequiredInd referenceDocumentId="RetDoc1042400001">1</ScheduleJRequiredInd>
+      <TaxExemptBondsInd>0</TaxExemptBondsInd>
+      <EngagedInExcessBenefitTransInd>0</EngagedInExcessBenefitTransInd>
+      <PYExcessBenefitTransInd>0</PYExcessBenefitTransInd>
+      <LoanOutstandingInd>0</LoanOutstandingInd>
+      <GrantToRelatedPersonInd>0</GrantToRelatedPersonInd>
+      <BusinessRlnWithOrgMemInd>0</BusinessRlnWithOrgMemInd>
+      <BusinessRlnWithFamMemInd>0</BusinessRlnWithFamMemInd>
+      <BusinessRlnWithOfficerEntInd>0</BusinessRlnWithOfficerEntInd>
+      <DeductibleNonCashContriInd>0</DeductibleNonCashContriInd>
+      <DeductibleArtContributionInd>0</DeductibleArtContributionInd>
+      <TerminateOperationsInd>0</TerminateOperationsInd>
+      <PartialLiquidationInd>0</PartialLiquidationInd>
+      <DisregardedEntityInd referenceDocumentId="RetDoc1043400001">0</DisregardedEntityInd>
+      <RelatedEntityInd referenceDocumentId="RetDoc1043400001">1</RelatedEntityInd>
+      <RelatedOrganizationCtrlEntInd>1</RelatedOrganizationCtrlEntInd>
+      <TransactionWithControlEntInd referenceDocumentId="RetDoc1043400001">1</TransactionWithControlEntInd>
+      <ActivitiesConductedPrtshpInd referenceDocumentId="RetDoc1043400001">0</ActivitiesConductedPrtshpInd>
+      <ScheduleORequiredInd>1</ScheduleORequiredInd>
+      <IRPDocumentCnt>77</IRPDocumentCnt>
+      <IRPDocumentW2GCnt>0</IRPDocumentW2GCnt>
+      <BackupWthldComplianceInd>1</BackupWthldComplianceInd>
+      <EmployeeCnt>103</EmployeeCnt>
+      <EmploymentTaxReturnsFiledInd>1</EmploymentTaxReturnsFiledInd>
+      <UnrelatedBusIncmOverLimitInd>0</UnrelatedBusIncmOverLimitInd>
+      <ForeignFinancialAccountInd>0</ForeignFinancialAccountInd>
+      <ProhibitedTaxShelterTransInd>0</ProhibitedTaxShelterTransInd>
+      <TaxablePartyNotificationInd>0</TaxablePartyNotificationInd>
+      <NondeductibleContributionsInd>0</NondeductibleContributionsInd>
+      <QuidProQuoContributionsInd>0</QuidProQuoContributionsInd>
+      <Form8282PropertyDisposedOfInd>0</Form8282PropertyDisposedOfInd>
+      <RcvFndsToPayPrsnlBnftCntrctInd>0</RcvFndsToPayPrsnlBnftCntrctInd>
+      <PayPremiumsPrsnlBnftCntrctInd>0</PayPremiumsPrsnlBnftCntrctInd>
+      <IndoorTanningServicesInd>0</IndoorTanningServicesInd>
+      <SubjToTaxRmnrtnExPrchtPymtInd>0</SubjToTaxRmnrtnExPrchtPymtInd>
+      <SubjectToExcsTaxNetInvstIncInd>0</SubjectToExcsTaxNetInvstIncInd>
+      <InfoInScheduleOPartVIInd>X</InfoInScheduleOPartVIInd>
+      <GoverningBodyVotingMembersCnt>9</GoverningBodyVotingMembersCnt>
+      <IndependentVotingMemberCnt>8</IndependentVotingMemberCnt>
+      <FamilyOrBusinessRlnInd>0</FamilyOrBusinessRlnInd>
+      <DelegationOfMgmtDutiesInd>0</DelegationOfMgmtDutiesInd>
+      <ChangeToOrgDocumentsInd>0</ChangeToOrgDocumentsInd>
+      <MaterialDiversionOrMisuseInd>0</MaterialDiversionOrMisuseInd>
+      <MembersOrStockholdersInd>0</MembersOrStockholdersInd>
+      <ElectionOfBoardMembersInd>1</ElectionOfBoardMembersInd>
+      <DecisionsSubjectToApprovaInd>0</DecisionsSubjectToApprovaInd>
+      <MinutesOfGoverningBodyInd>1</MinutesOfGoverningBodyInd>
+      <MinutesOfCommitteesInd>1</MinutesOfCommitteesInd>
+      <OfficerMailingAddressInd>0</OfficerMailingAddressInd>
+      <LocalChaptersInd>0</LocalChaptersInd>
+      <Form990ProvidedToGvrnBodyInd>1</Form990ProvidedToGvrnBodyInd>
+      <ConflictOfInterestPolicyInd>1</ConflictOfInterestPolicyInd>
+      <AnnualDisclosureCoveredPrsnInd>1</AnnualDisclosureCoveredPrsnInd>
+      <RegularMonitoringEnfrcInd>1</RegularMonitoringEnfrcInd>
+      <WhistleblowerPolicyInd>1</WhistleblowerPolicyInd>
+      <DocumentRetentionPolicyInd>1</DocumentRetentionPolicyInd>
+      <CompensationProcessCEOInd>1</CompensationProcessCEOInd>
+      <CompensationProcessOtherInd>1</CompensationProcessOtherInd>
+      <InvestmentInJointVentureInd>0</InvestmentInJointVentureInd>
+      <OwnWebsiteInd>X</OwnWebsiteInd>
+      <UponRequestInd>X</UponRequestInd>
+      <BooksInCareOfDetail>
+        <BusinessName>
+          <BusinessNameLine1Txt>BRIAN FAUST</BusinessNameLine1Txt>
+        </BusinessName>
+        <PhoneNum>6142246446</PhoneNum>
+        <USAddress>
+          <AddressLine1Txt>41 S HIGH STREET SUITE 1500</AddressLine1Txt>
+          <CityNm>COLUMBUS</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>43215</ZIPCd>
+        </USAddress>
+      </BooksInCareOfDetail>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>ROBERT C SMITH</PersonNm>
+        <TitleTxt>CHAIRMAN (BEGIN 4/19)</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>1.00</AverageHoursPerWeekRltdOrgRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>JAMES BOLAND</PersonNm>
+        <TitleTxt>CHAIRMAN (THRU 4/19)</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>1.00</AverageHoursPerWeekRltdOrgRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>JP NAUSEEF</PersonNm>
+        <TitleTxt>PRESIDENT &amp; CIO (BEGIN 3/19)</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>1.00</AverageHoursPerWeekRltdOrgRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>JOHN MINOR</PersonNm>
+        <TitleTxt>PRESIDENT &amp; CIO (THRU 3/19)</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>1.00</AverageHoursPerWeekRltdOrgRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>621323</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>29472</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>LAWRENCE KIDD</PersonNm>
+        <TitleTxt>SECRETARY-TREAS</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>DR JERRY SUE THORNTON</PersonNm>
+        <TitleTxt>BOARD MEMBER (BEGIN 11/18)</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>JOHN BISHOP</PersonNm>
+        <TitleTxt>BOARD MEMBER</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>RICK PLATT</PersonNm>
+        <TitleTxt>BOARD MEMBER (BEGIN 3/19)</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>STEPHEN MARKOVICH</PersonNm>
+        <TitleTxt>BOARD MEMBER</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>TOM WILLIAMS</PersonNm>
+        <TitleTxt>BOARD MEMBER</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>WILLIAM BATCHELDER</PersonNm>
+        <TitleTxt>BOARD MEMBER</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>GARY HEMINGER</PersonNm>
+        <TitleTxt>BOARD MEMBER (THRU 10/18)</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>BARBARA SNYDER</PersonNm>
+        <TitleTxt>BOARD MEMBER (THRU 12/18)</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>BRIAN FAUST</PersonNm>
+        <TitleTxt>CHIEF FINANCIAL OFFICER (BEGIN 5/19)</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>1.00</AverageHoursPerWeekRltdOrgRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>KEVIN A GIANGOLA</PersonNm>
+        <TitleTxt>CHIEF FINANCIAL OFFICER (THRU 5/19)</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>1.00</AverageHoursPerWeekRltdOrgRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>240487</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>18674</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>AARON PITTS</PersonNm>
+        <TitleTxt>SENIOR MANAGING DIRECTOR</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <KeyEmployeeInd>X</KeyEmployeeInd>
+        <ReportableCompFromOrgAmt>342156</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>37470</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>ANDREW DEYE</PersonNm>
+        <TitleTxt>MANAGING DIRECTOR</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <KeyEmployeeInd>X</KeyEmployeeInd>
+        <ReportableCompFromOrgAmt>241519</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>19062</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>DANA SAUCIER</PersonNm>
+        <TitleTxt>VP, HEAD OF ECONOMIC DEV.</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <KeyEmployeeInd>X</KeyEmployeeInd>
+        <ReportableCompFromOrgAmt>353100</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>13850</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>DONELL GRUBBS</PersonNm>
+        <TitleTxt>GENERAL COUNSEL</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <KeyEmployeeInd>X</KeyEmployeeInd>
+        <ReportableCompFromOrgAmt>238163</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>19834</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>GLENN RICHARDSON</PersonNm>
+        <TitleTxt>MANAGING DIRECTOR</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <KeyEmployeeInd>X</KeyEmployeeInd>
+        <ReportableCompFromOrgAmt>275984</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>37404</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>KRISTI TANNER</PersonNm>
+        <TitleTxt>SENIOR MANAGING DIRECTOR</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <KeyEmployeeInd>X</KeyEmployeeInd>
+        <ReportableCompFromOrgAmt>304863</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>26470</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>KRISTINA CLOUSE</PersonNm>
+        <TitleTxt>EXECUTIVE DIR. OF OPERATIONS</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <KeyEmployeeInd>X</KeyEmployeeInd>
+        <ReportableCompFromOrgAmt>253998</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>36664</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>TED GRIFFITH</PersonNm>
+        <TitleTxt>MANAGING DIRECTOR</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <KeyEmployeeInd>X</KeyEmployeeInd>
+        <ReportableCompFromOrgAmt>277826</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>36223</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>VALENTINA ISAKINA</PersonNm>
+        <TitleTxt>MANAGING DIRECTOR</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <KeyEmployeeInd>X</KeyEmployeeInd>
+        <ReportableCompFromOrgAmt>257691</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>26393</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>LEE CRUME</PersonNm>
+        <TitleTxt>DIRECTOR OF SALES</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <HighestCompensatedEmployeeInd>X</HighestCompensatedEmployeeInd>
+        <ReportableCompFromOrgAmt>191438</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>22603</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>MATTHEW CYBULSKI</PersonNm>
+        <TitleTxt>SECTOR DIRECTOR</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <HighestCompensatedEmployeeInd>X</HighestCompensatedEmployeeInd>
+        <ReportableCompFromOrgAmt>171150</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>15807</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>CHERYL HAY</PersonNm>
+        <TitleTxt>DIRECTOR, TALENT ACQUISITION</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <HighestCompensatedEmployeeInd>X</HighestCompensatedEmployeeInd>
+        <ReportableCompFromOrgAmt>179254</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>18742</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>RENAE SCOTT</PersonNm>
+        <TitleTxt>DIRECTOR, MARKETING &amp; COMM.</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <HighestCompensatedEmployeeInd>X</HighestCompensatedEmployeeInd>
+        <ReportableCompFromOrgAmt>195574</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>17196</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>JULIE BATTLES</PersonNm>
+        <TitleTxt>CONTROLLER</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <HighestCompensatedEmployeeInd>X</HighestCompensatedEmployeeInd>
+        <ReportableCompFromOrgAmt>173987</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>9237</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <TotalReportableCompFromOrgAmt>4318513</TotalReportableCompFromOrgAmt>
+      <TotReportableCompRltdOrgAmt>0</TotReportableCompRltdOrgAmt>
+      <TotalOtherCompensationAmt>385101</TotalOtherCompensationAmt>
+      <IndivRcvdGreaterThan100KCnt>39</IndivRcvdGreaterThan100KCnt>
+      <FormerOfcrEmployeesListedInd>0</FormerOfcrEmployeesListedInd>
+      <TotalCompGreaterThan150KInd>1</TotalCompGreaterThan150KInd>
+      <CompensationFromOtherSrcsInd>0</CompensationFromOtherSrcsInd>
+      <ContractorCompensationGrp>
+        <ContractorName>
+          <BusinessName>
+            <BusinessNameLine1Txt>MCGANN MEDIA</BusinessNameLine1Txt>
+          </BusinessName>
+        </ContractorName>
+        <ContractorAddress>
+          <USAddress>
+            <AddressLine1Txt>61 JEFFERSON AVENUE</AddressLine1Txt>
+            <CityNm>COLUMBUS</CityNm>
+            <StateAbbreviationCd>OH</StateAbbreviationCd>
+            <ZIPCd>43215</ZIPCd>
+          </USAddress>
+        </ContractorAddress>
+        <ServicesDesc>CONSULTANT</ServicesDesc>
+        <CompensationAmt>4273538</CompensationAmt>
+      </ContractorCompensationGrp>
+      <ContractorCompensationGrp>
+        <ContractorName>
+          <BusinessName>
+            <BusinessNameLine1Txt>TEAM NEO</BusinessNameLine1Txt>
+          </BusinessName>
+        </ContractorName>
+        <ContractorAddress>
+          <USAddress>
+            <AddressLine1Txt>737 BOLIVAR ROAD SUITE 2000</AddressLine1Txt>
+            <CityNm>CLEVELAND</CityNm>
+            <StateAbbreviationCd>OH</StateAbbreviationCd>
+            <ZIPCd>44115</ZIPCd>
+          </USAddress>
+        </ContractorAddress>
+        <ServicesDesc>CONSULTANT</ServicesDesc>
+        <CompensationAmt>2921045</CompensationAmt>
+      </ContractorCompensationGrp>
+      <ContractorCompensationGrp>
+        <ContractorName>
+          <BusinessName>
+            <BusinessNameLine1Txt>REDI CINCINNATI</BusinessNameLine1Txt>
+          </BusinessName>
+        </ContractorName>
+        <ContractorAddress>
+          <USAddress>
+            <AddressLine1Txt>3 EAST 4TH STREET SUITE 301</AddressLine1Txt>
+            <CityNm>CINCINNATI</CityNm>
+            <StateAbbreviationCd>OH</StateAbbreviationCd>
+            <ZIPCd>45202</ZIPCd>
+          </USAddress>
+        </ContractorAddress>
+        <ServicesDesc>CONSULTANT</ServicesDesc>
+        <CompensationAmt>2181692</CompensationAmt>
+      </ContractorCompensationGrp>
+      <ContractorCompensationGrp>
+        <ContractorName>
+          <BusinessName>
+            <BusinessNameLine1Txt>APPALACHIAN PARTNERSHIP FOR ECONOMIC GRO</BusinessNameLine1Txt>
+          </BusinessName>
+        </ContractorName>
+        <ContractorAddress>
+          <USAddress>
+            <AddressLine1Txt>35 PUBLIC SQUARE</AddressLine1Txt>
+            <CityNm>NELSONVILLE</CityNm>
+            <StateAbbreviationCd>OH</StateAbbreviationCd>
+            <ZIPCd>45764</ZIPCd>
+          </USAddress>
+        </ContractorAddress>
+        <ServicesDesc>CONSULTANT</ServicesDesc>
+        <CompensationAmt>1985943</CompensationAmt>
+      </ContractorCompensationGrp>
+      <ContractorCompensationGrp>
+        <ContractorName>
+          <BusinessName>
+            <BusinessNameLine1Txt>COLUMBUS 2020</BusinessNameLine1Txt>
+          </BusinessName>
+        </ContractorName>
+        <ContractorAddress>
+          <USAddress>
+            <AddressLine1Txt>150 SOUTH FRONT STREET 200</AddressLine1Txt>
+            <CityNm>COLUMBUS</CityNm>
+            <StateAbbreviationCd>OH</StateAbbreviationCd>
+            <ZIPCd>43215</ZIPCd>
+          </USAddress>
+        </ContractorAddress>
+        <ServicesDesc>CONSULTANT</ServicesDesc>
+        <CompensationAmt>1808804</CompensationAmt>
+      </ContractorCompensationGrp>
+      <CntrctRcvdGreaterThan100KCnt>34</CntrctRcvdGreaterThan100KCnt>
+      <RelatedOrganizationsAmt>350000000</RelatedOrganizationsAmt>
+      <TotalContributionsAmt>350000000</TotalContributionsAmt>
+      <ProgramServiceRevenueGrp>
+        <Desc>LOAN INTEREST</Desc>
+        <BusinessCd>900099</BusinessCd>
+        <TotalRevenueColumnAmt>2729348</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>2729348</RelatedOrExemptFuncIncomeAmt>
+      </ProgramServiceRevenueGrp>
+      <ProgramServiceRevenueGrp>
+        <Desc>MANAGEMENT FEES</Desc>
+        <BusinessCd>900099</BusinessCd>
+        <TotalRevenueColumnAmt>1147079</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>1147079</RelatedOrExemptFuncIncomeAmt>
+      </ProgramServiceRevenueGrp>
+      <ProgramServiceRevenueGrp>
+        <Desc>LOAN FEES</Desc>
+        <BusinessCd>900099</BusinessCd>
+        <TotalRevenueColumnAmt>374957</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>374957</RelatedOrExemptFuncIncomeAmt>
+      </ProgramServiceRevenueGrp>
+      <TotalProgramServiceRevenueAmt>4251384</TotalProgramServiceRevenueAmt>
+      <InvestmentIncomeGrp>
+        <TotalRevenueColumnAmt>12004621</TotalRevenueColumnAmt>
+        <ExclusionAmt>12004621</ExclusionAmt>
+      </InvestmentIncomeGrp>
+      <OtherRevenueMiscGrp>
+        <Desc>MISCELLANEOUS INCOME</Desc>
+        <BusinessCd>900099</BusinessCd>
+        <TotalRevenueColumnAmt>8695</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>8695</RelatedOrExemptFuncIncomeAmt>
+      </OtherRevenueMiscGrp>
+      <OtherRevenueTotalAmt>8695</OtherRevenueTotalAmt>
+      <TotalRevenueGrp>
+        <TotalRevenueColumnAmt>366264700</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>4260079</RelatedOrExemptFuncIncomeAmt>
+        <UnrelatedBusinessRevenueAmt>0</UnrelatedBusinessRevenueAmt>
+        <ExclusionAmt>12004621</ExclusionAmt>
+      </TotalRevenueGrp>
+      <GrantsToDomesticOrgsGrp>
+        <TotalAmt>112393413</TotalAmt>
+        <ProgramServicesAmt>112393413</ProgramServicesAmt>
+      </GrantsToDomesticOrgsGrp>
+      <CompCurrentOfcrDirectorsGrp>
+        <TotalAmt>6592154</TotalAmt>
+        <ProgramServicesAmt>5109727</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>1482427</ManagementAndGeneralAmt>
+      </CompCurrentOfcrDirectorsGrp>
+      <OtherSalariesAndWagesGrp>
+        <TotalAmt>5859626</TotalAmt>
+        <ProgramServicesAmt>3696490</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>2163136</ManagementAndGeneralAmt>
+      </OtherSalariesAndWagesGrp>
+      <PensionPlanContributionsGrp>
+        <TotalAmt>392508</TotalAmt>
+        <ProgramServicesAmt>277592</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>114916</ManagementAndGeneralAmt>
+      </PensionPlanContributionsGrp>
+      <OtherEmployeeBenefitsGrp>
+        <TotalAmt>1299278</TotalAmt>
+        <ProgramServicesAmt>918883</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>380395</ManagementAndGeneralAmt>
+      </OtherEmployeeBenefitsGrp>
+      <PayrollTaxesGrp>
+        <TotalAmt>796080</TotalAmt>
+        <ProgramServicesAmt>563008</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>233072</ManagementAndGeneralAmt>
+      </PayrollTaxesGrp>
+      <FeesForServicesLegalGrp>
+        <TotalAmt>226138</TotalAmt>
+        <ProgramServicesAmt>182290</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>43848</ManagementAndGeneralAmt>
+      </FeesForServicesLegalGrp>
+      <FeesForServicesAccountingGrp>
+        <TotalAmt>231076</TotalAmt>
+        <ManagementAndGeneralAmt>231076</ManagementAndGeneralAmt>
+      </FeesForServicesAccountingGrp>
+      <FeesForSrvcInvstMgmntFeesGrp>
+        <TotalAmt>333851</TotalAmt>
+        <ManagementAndGeneralAmt>333851</ManagementAndGeneralAmt>
+      </FeesForSrvcInvstMgmntFeesGrp>
+      <FeesForServicesOtherGrp>
+        <TotalAmt>5241288</TotalAmt>
+        <ProgramServicesAmt>4750601</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>490687</ManagementAndGeneralAmt>
+      </FeesForServicesOtherGrp>
+      <AdvertisingGrp>
+        <TotalAmt>7695189</TotalAmt>
+        <ProgramServicesAmt>7695189</ProgramServicesAmt>
+      </AdvertisingGrp>
+      <OfficeExpensesGrp>
+        <TotalAmt>397628</TotalAmt>
+        <ManagementAndGeneralAmt>397628</ManagementAndGeneralAmt>
+      </OfficeExpensesGrp>
+      <InformationTechnologyGrp>
+        <TotalAmt>2105381</TotalAmt>
+        <ManagementAndGeneralAmt>2105381</ManagementAndGeneralAmt>
+      </InformationTechnologyGrp>
+      <OccupancyGrp>
+        <TotalAmt>837614</TotalAmt>
+        <ManagementAndGeneralAmt>837614</ManagementAndGeneralAmt>
+      </OccupancyGrp>
+      <TravelGrp>
+        <TotalAmt>1293865</TotalAmt>
+        <ProgramServicesAmt>1293865</ProgramServicesAmt>
+      </TravelGrp>
+      <PymtTravelEntrtnmntPubOfclGrp>
+        <TotalAmt>9013</TotalAmt>
+        <ProgramServicesAmt>9013</ProgramServicesAmt>
+      </PymtTravelEntrtnmntPubOfclGrp>
+      <ConferencesMeetingsGrp>
+        <TotalAmt>1063351</TotalAmt>
+        <ProgramServicesAmt>1019921</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>43430</ManagementAndGeneralAmt>
+      </ConferencesMeetingsGrp>
+      <InterestGrp>
+        <TotalAmt>690</TotalAmt>
+        <ManagementAndGeneralAmt>690</ManagementAndGeneralAmt>
+      </InterestGrp>
+      <DepreciationDepletionGrp>
+        <TotalAmt>334611</TotalAmt>
+        <ManagementAndGeneralAmt>334611</ManagementAndGeneralAmt>
+      </DepreciationDepletionGrp>
+      <InsuranceGrp>
+        <TotalAmt>226752</TotalAmt>
+        <ManagementAndGeneralAmt>226752</ManagementAndGeneralAmt>
+      </InsuranceGrp>
+      <OtherExpensesGrp>
+        <Desc>UBI TAX</Desc>
+        <TotalAmt>41593</TotalAmt>
+        <ProgramServicesAmt>0</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>41593</ManagementAndGeneralAmt>
+      </OtherExpensesGrp>
+      <OtherExpensesGrp>
+        <Desc>NETWORK PARTNER SERVICE</Desc>
+        <TotalAmt>13679725</TotalAmt>
+        <ProgramServicesAmt>13679725</ProgramServicesAmt>
+      </OtherExpensesGrp>
+      <OtherExpensesGrp>
+        <Desc>RESEARCH AND MATERIALS</Desc>
+        <TotalAmt>375610</TotalAmt>
+        <ProgramServicesAmt>375610</ProgramServicesAmt>
+      </OtherExpensesGrp>
+      <OtherExpensesGrp>
+        <Desc>TRAINING</Desc>
+        <TotalAmt>255520</TotalAmt>
+        <ProgramServicesAmt>255520</ProgramServicesAmt>
+      </OtherExpensesGrp>
+      <AllOtherExpensesGrp>
+        <TotalAmt>426235</TotalAmt>
+        <ProgramServicesAmt>392003</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>34232</ManagementAndGeneralAmt>
+      </AllOtherExpensesGrp>
+      <TotalFunctionalExpensesGrp>
+        <TotalAmt>162108189</TotalAmt>
+        <ProgramServicesAmt>152612850</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>9495339</ManagementAndGeneralAmt>
+        <FundraisingAmt>0</FundraisingAmt>
+      </TotalFunctionalExpensesGrp>
+      <CashNonInterestBearingGrp>
+        <BOYAmt>0</BOYAmt>
+      </CashNonInterestBearingGrp>
+      <SavingsAndTempCashInvstGrp>
+        <BOYAmt>70974000</BOYAmt>
+        <EOYAmt>65185836</EOYAmt>
+      </SavingsAndTempCashInvstGrp>
+      <AccountsReceivableGrp>
+        <BOYAmt>1883702</BOYAmt>
+        <EOYAmt>2893821</EOYAmt>
+      </AccountsReceivableGrp>
+      <PrepaidExpensesDefrdChargesGrp>
+        <BOYAmt>995961</BOYAmt>
+        <EOYAmt>940332</EOYAmt>
+      </PrepaidExpensesDefrdChargesGrp>
+      <LandBldgEquipCostOrOtherBssAmt>3545923</LandBldgEquipCostOrOtherBssAmt>
+      <LandBldgEquipAccumDeprecAmt>2629386</LandBldgEquipAccumDeprecAmt>
+      <LandBldgEquipBasisNetGrp>
+        <BOYAmt>1080154</BOYAmt>
+        <EOYAmt>916537</EOYAmt>
+      </LandBldgEquipBasisNetGrp>
+      <InvestmentsPubTradedSecGrp>
+        <BOYAmt>460682175</BOYAmt>
+        <EOYAmt>713884577</EOYAmt>
+      </InvestmentsPubTradedSecGrp>
+      <InvestmentsProgramRelatedGrp>
+        <BOYAmt>90943643</BOYAmt>
+        <EOYAmt>92134043</EOYAmt>
+      </InvestmentsProgramRelatedGrp>
+      <OtherAssetsTotalGrp>
+        <BOYAmt>345841</BOYAmt>
+        <EOYAmt>13544</EOYAmt>
+      </OtherAssetsTotalGrp>
+      <TotalAssetsGrp>
+        <BOYAmt>626905476</BOYAmt>
+        <EOYAmt>875968690</EOYAmt>
+      </TotalAssetsGrp>
+      <AccountsPayableAccrExpnssGrp>
+        <BOYAmt>4307817</BOYAmt>
+        <EOYAmt>4924059</EOYAmt>
+      </AccountsPayableAccrExpnssGrp>
+      <GrantsPayableGrp>
+        <BOYAmt>52924306</BOYAmt>
+        <EOYAmt>87871067</EOYAmt>
+      </GrantsPayableGrp>
+      <TotalLiabilitiesGrp>
+        <BOYAmt>57232123</BOYAmt>
+        <EOYAmt>92795126</EOYAmt>
+      </TotalLiabilitiesGrp>
+      <OrgDoesNotFollowSFAS117Ind>X</OrgDoesNotFollowSFAS117Ind>
+      <CapStkTrPrinCurrentFundsGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </CapStkTrPrinCurrentFundsGrp>
+      <PdInCapSrplsLandBldgEqpFundGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </PdInCapSrplsLandBldgEqpFundGrp>
+      <RtnEarnEndowmentIncmOthFndsGrp>
+        <BOYAmt>569673353</BOYAmt>
+        <EOYAmt>783173564</EOYAmt>
+      </RtnEarnEndowmentIncmOthFndsGrp>
+      <TotalNetAssetsFundBalanceGrp>
+        <BOYAmt>569673353</BOYAmt>
+        <EOYAmt>783173564</EOYAmt>
+      </TotalNetAssetsFundBalanceGrp>
+      <TotLiabNetAssetsFundBalanceGrp>
+        <BOYAmt>626905476</BOYAmt>
+        <EOYAmt>875968690</EOYAmt>
+      </TotLiabNetAssetsFundBalanceGrp>
+      <ReconcilationRevenueExpnssAmt>204156511</ReconcilationRevenueExpnssAmt>
+      <NetUnrlzdGainsLossesInvstAmt>9343700</NetUnrlzdGainsLossesInvstAmt>
+      <OtherChangesInNetAssetsAmt>0</OtherChangesInNetAssetsAmt>
+      <MethodOfAccountingAccrualInd>X</MethodOfAccountingAccrualInd>
+      <AccountantCompileOrReviewInd>0</AccountantCompileOrReviewInd>
+      <FSAuditedInd>1</FSAuditedInd>
+      <FSAuditedBasisGrp>
+        <ConsolAndSepBasisFinclStmtInd>X</ConsolAndSepBasisFinclStmtInd>
+      </FSAuditedBasisGrp>
+      <AuditCommitteeInd>1</AuditCommitteeInd>
+      <FederalGrantAuditRequiredInd>0</FederalGrantAuditRequiredInd>
+    </IRS990>
+    <IRS990ScheduleB documentId="RetDoc1234500001">
+      <ContributorInformationGrp>
+        <ContributorNum>RESTRICTED</ContributorNum>
+        <ContributorBusinessName>
+          <BusinessNameLine1>RESTRICTED</BusinessNameLine1>
+        </ContributorBusinessName>
+        <ContributorUSAddress>
+          <AddressLine1>RESTRICTED</AddressLine1>
+          <AddressLine2>RESTRICTED</AddressLine2>
+          <City>RESTRICTED</City>
+          <State>RESTRICTED</State>
+          <ZIPCode>RESTRICTED</ZIPCode>
+        </ContributorUSAddress>
+        <TotalContributionsAmt>RESTRICTED</TotalContributionsAmt>
+      </ContributorInformationGrp>
+    </IRS990ScheduleB>
+    <IRS990ScheduleD documentId="RetDoc1040000001">
+      <LeaseholdImprovementsGrp>
+        <OtherCostOrOtherBasisAmt>1216501</OtherCostOrOtherBasisAmt>
+        <DepreciationAmt>653090</DepreciationAmt>
+        <BookValueAmt>563411</BookValueAmt>
+      </LeaseholdImprovementsGrp>
+      <EquipmentGrp>
+        <OtherCostOrOtherBasisAmt>808774</OtherCostOrOtherBasisAmt>
+        <DepreciationAmt>542875</DepreciationAmt>
+        <BookValueAmt>265899</BookValueAmt>
+      </EquipmentGrp>
+      <OtherLandBuildingsGrp>
+        <OtherCostOrOtherBasisAmt>1520648</OtherCostOrOtherBasisAmt>
+        <DepreciationAmt>1433421</DepreciationAmt>
+        <BookValueAmt>87227</BookValueAmt>
+      </OtherLandBuildingsGrp>
+      <TotalBookValueLandBuildingsAmt>916537</TotalBookValueLandBuildingsAmt>
+      <InvstProgramRelatedOrgGrp>
+        <Desc>ECONOMIC DEVELOPMENT LOANS</Desc>
+        <BookValueAmt>92134043</BookValueAmt>
+        <MethodValuationCd>F</MethodValuationCd>
+      </InvstProgramRelatedOrgGrp>
+      <TotalBookValueProgramRltdAmt>92134043</TotalBookValueProgramRltdAmt>
+      <TotalRevEtcAuditedFinclStmtAmt>375608400</TotalRevEtcAuditedFinclStmtAmt>
+      <NetUnrealizedGainsInvstAmt>9343700</NetUnrealizedGainsInvstAmt>
+      <RevenueNotReportedAmt>9343700</RevenueNotReportedAmt>
+      <RevenueSubtotalAmt>366264700</RevenueSubtotalAmt>
+      <RevenueNotReportedFinclStmtAmt>0</RevenueNotReportedFinclStmtAmt>
+      <TotalRevenuePerForm990Amt>366264700</TotalRevenuePerForm990Amt>
+      <TotExpnsEtcAuditedFinclStmtAmt>162108189</TotExpnsEtcAuditedFinclStmtAmt>
+      <ExpensesNotReportedAmt>0</ExpensesNotReportedAmt>
+      <ExpensesSubtotalAmt>162108189</ExpensesSubtotalAmt>
+      <ExpensesNotRptFinclStmtAmt>0</ExpensesNotRptFinclStmtAmt>
+      <TotalExpensesPerForm990Amt>162108189</TotalExpensesPerForm990Amt>
+    </IRS990ScheduleD>
+    <IRS990ScheduleF documentId="RetDoc1040500001">
+      <AccountActivitiesOutsideUSGrp>
+        <RegionTxt>EUROPE (INCLUDING ICELAND &amp; GREENLAND)</RegionTxt>
+        <OfficesCnt>0</OfficesCnt>
+        <EmployeeCnt>1</EmployeeCnt>
+        <TypeOfActivitiesConductedTxt>PROGRAM SERVICES</TypeOfActivitiesConductedTxt>
+        <SpecificServicesProvidedTxt>ECONOMIC DEVELOPMENT</SpecificServicesProvidedTxt>
+        <RegionTotalExpendituresAmt>1007161</RegionTotalExpendituresAmt>
+      </AccountActivitiesOutsideUSGrp>
+      <AccountActivitiesOutsideUSGrp>
+        <RegionTxt>EAST ASIA AND THE PACIFIC</RegionTxt>
+        <OfficesCnt>0</OfficesCnt>
+        <EmployeeCnt>1</EmployeeCnt>
+        <TypeOfActivitiesConductedTxt>PROGRAM SERVICES</TypeOfActivitiesConductedTxt>
+        <SpecificServicesProvidedTxt>ECONOMIC DEVELOPMENT</SpecificServicesProvidedTxt>
+        <RegionTotalExpendituresAmt>498984</RegionTotalExpendituresAmt>
+      </AccountActivitiesOutsideUSGrp>
+      <AccountActivitiesOutsideUSGrp>
+        <RegionTxt>NORTH AMERICA</RegionTxt>
+        <OfficesCnt>0</OfficesCnt>
+        <EmployeeCnt>1</EmployeeCnt>
+        <TypeOfActivitiesConductedTxt>PROGRAM SERVICES</TypeOfActivitiesConductedTxt>
+        <SpecificServicesProvidedTxt>ECONOMIC DEVELOPMENT</SpecificServicesProvidedTxt>
+        <RegionTotalExpendituresAmt>58971</RegionTotalExpendituresAmt>
+      </AccountActivitiesOutsideUSGrp>
+      <SubtotalOfficesCnt>0</SubtotalOfficesCnt>
+      <SubtotalEmployeesCnt>3</SubtotalEmployeesCnt>
+      <ContinuationTotalOfficeCnt>0</ContinuationTotalOfficeCnt>
+      <ContinuationTotalEmployeeCnt>0</ContinuationTotalEmployeeCnt>
+      <TotalOfficeCnt>0</TotalOfficeCnt>
+      <TotalEmployeeCnt>3</TotalEmployeeCnt>
+      <SubtotalSpentAmt>1565116</SubtotalSpentAmt>
+      <ContinuationSpentAmt>0</ContinuationSpentAmt>
+      <TotalSpentAmt>1565116</TotalSpentAmt>
+      <TransferToForeignCorpInd>0</TransferToForeignCorpInd>
+      <InterestInForeignTrustInd>0</InterestInForeignTrustInd>
+      <ForeignCorpOwnershipInd>0</ForeignCorpOwnershipInd>
+      <PassiveForeignInvestmestCoInd>0</PassiveForeignInvestmestCoInd>
+      <ForeignPartnershipInd>0</ForeignPartnershipInd>
+      <BoycottCountriesInd>0</BoycottCountriesInd>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>PART I, LINE 3:</FormAndLineReferenceDesc>
+        <ExplanationTxt>JOBSOHIO RETAINS MARKET CONSULTANTS TO REPRESENT ITS INTERESTS IN OTHER COUNTRIES FOR FOREIGN DIRECT INVESTMENT IN OHIO. THE COUNTRIES ARE OHIO'S TOP MARKETS FOR BOTH CURRENT INTERNATIONAL INVESTMENT AND ACTIVE ECONOMIC DEVELOPMENT PROJECTS. PART I, LINE 3, COLUMN (F): ACCOUNTING METHOD IS ACCRUAL. ALL AMOUNTS ARE FOR EXPENDITURES.</ExplanationTxt>
+      </SupplementalInformationDetail>
+    </IRS990ScheduleF>
+    <IRS990ScheduleI documentId="RetDoc1041900001">
+      <GrantRecordsMaintainedInd>1</GrantRecordsMaintainedInd>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>2828 CLINTON INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>2828 CLINTON AVENUE</AddressLine1Txt>
+          <CityNm>CLEVELAND</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>441132939</ZIPCd>
+        </USAddress>
+        <RecipientEIN>341644643</RecipientEIN>
+        <CashGrantAmt>7200</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>4440 CREEK ROAD PROPERTIES LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>4440 CREEK ROAD</AddressLine1Txt>
+          <CityNm>CINCINNATI</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45242</ZIPCd>
+        </USAddress>
+        <RecipientEIN>825280312</RecipientEIN>
+        <CashGrantAmt>350000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>476 BRIDGE STREET LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>15 RESERVOIR ROAD</AddressLine1Txt>
+          <CityNm>WHITE PLAINS</CityNm>
+          <StateAbbreviationCd>NY</StateAbbreviationCd>
+          <ZIPCd>10603</ZIPCd>
+        </USAddress>
+        <RecipientEIN>813568315</RecipientEIN>
+        <CashGrantAmt>800000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>777 LENA LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>777 LENA DRIVE</AddressLine1Txt>
+          <CityNm>AURORA</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>442028025</ZIPCd>
+        </USAddress>
+        <RecipientEIN>384031342</RecipientEIN>
+        <CashGrantAmt>500000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>A &amp; P TOOL INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>801 INDUSTRIAL DRIVE</AddressLine1Txt>
+          <CityNm>HICKSVILLE</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>435261174</ZIPCd>
+        </USAddress>
+        <RecipientEIN>341816209</RecipientEIN>
+        <CashGrantAmt>112233</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>ADVICS MANUFACTURING OHIO INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1650 KINGSVIEW DRIVE</AddressLine1Txt>
+          <CityNm>LEBANON</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>450368390</ZIPCd>
+        </USAddress>
+        <RecipientEIN>311229422</RecipientEIN>
+        <CashGrantAmt>248660</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>AEROCONTROLEX GROUP INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>313 GILLETT STREET</AddressLine1Txt>
+          <CityNm>PAINESVILLE</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>440772918</ZIPCd>
+        </USAddress>
+        <RecipientEIN>260379798</RecipientEIN>
+        <CashGrantAmt>200000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>AIR SOUTH COMMERCE CENTER PHASE II LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>POTH ROAD</AddressLine1Txt>
+          <CityNm>WHITEHALL</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>43213</ZIPCd>
+        </USAddress>
+        <RecipientEIN>384013255</RecipientEIN>
+        <CashGrantAmt>200000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>AIRSTREAM INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>419 W PIKE STREET</AddressLine1Txt>
+          <CityNm>JACKSON CENTER</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>453349728</ZIPCd>
+        </USAddress>
+        <RecipientEIN>930768561</RecipientEIN>
+        <CashGrantAmt>600000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>AK STEEL CORPORATION</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>9227 CENTRE POINTE DRIVE</AddressLine1Txt>
+          <CityNm>WEST CHESTER</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>450694822</ZIPCd>
+        </USAddress>
+        <RecipientEIN>311267098</RecipientEIN>
+        <CashGrantAmt>250000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>ALEX PRODUCTS INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>19911 COUNTY ROAD T</AddressLine1Txt>
+          <CityNm>RIDGEVILLE CORNERS</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>43555</ZIPCd>
+        </USAddress>
+        <RecipientEIN>341117191</RecipientEIN>
+        <CashGrantAmt>74897</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>ALKON CORPORATION</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>728 GRAHAM DRIVE</AddressLine1Txt>
+          <CityNm>FREMONT</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>434204073</ZIPCd>
+        </USAddress>
+        <RecipientEIN>341679064</RecipientEIN>
+        <CashGrantAmt>30000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>ALPLA INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>3320 FORT SHAWNEE INDUS DRIVE</AddressLine1Txt>
+          <CityNm>LIMA</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>458061843</ZIPCd>
+        </USAddress>
+        <RecipientEIN>582611718</RecipientEIN>
+        <CashGrantAmt>150000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>ALTIVIA PETROCHEMICALS LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1019 FURNACE ROAD</AddressLine1Txt>
+          <CityNm>HAVERHILL</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45636</ZIPCd>
+        </USAddress>
+        <RecipientEIN>474927987</RecipientEIN>
+        <CashGrantAmt>805668</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>AQUABLOK LTD</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>175 WOODLAND AVENUE</AddressLine1Txt>
+          <CityNm>SWANTON</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>435581026</ZIPCd>
+        </USAddress>
+        <RecipientEIN>341904902</RecipientEIN>
+        <CashGrantAmt>50000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>ARCONIC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>425 SIXTH AVENUE</AddressLine1Txt>
+          <CityNm>PITTSBURGH</CityNm>
+          <StateAbbreviationCd>PA</StateAbbreviationCd>
+          <ZIPCd>44105</ZIPCd>
+        </USAddress>
+        <RecipientEIN>250317820</RecipientEIN>
+        <CashGrantAmt>200000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>ASM INTERNATIONAL</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>9639 KINSMAN ROAD</AddressLine1Txt>
+          <CityNm>NOVELTY</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>44073</ZIPCd>
+        </USAddress>
+        <RecipientEIN>340714532</RecipientEIN>
+        <CashGrantAmt>475000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>AUTOTOOL INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>7875 CORPORATE BOULEVARD</AddressLine1Txt>
+          <CityNm>PLAIN CITY</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>430648045</ZIPCd>
+        </USAddress>
+        <RecipientEIN>341789017</RecipientEIN>
+        <CashGrantAmt>53137</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>BANK STREET HOLDINGS LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>4820 BRIAR ROAD</AddressLine1Txt>
+          <CityNm>CLEVELAND</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>441355040</ZIPCd>
+        </USAddress>
+        <RecipientEIN>821501811</RecipientEIN>
+        <CashGrantAmt>75000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>BELLISIO FOODS INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>100 E BROADWAY STREET</AddressLine1Txt>
+          <CityNm>JACKSON</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>456401347</ZIPCd>
+        </USAddress>
+        <RecipientEIN>593015985</RecipientEIN>
+        <CashGrantAmt>1000000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>BENCHMARK EDUCATION COMPANY LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>145 HUGUENOT STREET</AddressLine1Txt>
+          <CityNm>NEW ROCHELLE</CityNm>
+          <StateAbbreviationCd>NY</StateAbbreviationCd>
+          <ZIPCd>10801</ZIPCd>
+        </USAddress>
+        <RecipientEIN>133996703</RecipientEIN>
+        <CashGrantAmt>50000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>BENDIX COMMERCIAL VEHICLE SYSTEMS LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>901 CLEVELAND STREET</AddressLine1Txt>
+          <CityNm>ELYRIA</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>440354153</ZIPCd>
+        </USAddress>
+        <RecipientEIN>521843583</RecipientEIN>
+        <CashGrantAmt>500000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>BLECKMANN USA LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>188 COMMERCE BOULEVARD</AddressLine1Txt>
+          <CityNm>JOHNSTOWN</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>43031</ZIPCd>
+        </USAddress>
+        <RecipientEIN>371790634</RecipientEIN>
+        <CashGrantAmt>50000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>BRAUN INDUSTRIES INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1170 PRODUCTION DRIVE</AddressLine1Txt>
+          <CityNm>VAN WERT</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>458919391</ZIPCd>
+        </USAddress>
+        <RecipientEIN>310792103</RecipientEIN>
+        <CashGrantAmt>55000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>BRENNAN INDUSTRIES INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>6701 COCHRAN ROAD</AddressLine1Txt>
+          <CityNm>SOLON</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>441393411</ZIPCd>
+        </USAddress>
+        <RecipientEIN>340859271</RecipientEIN>
+        <CashGrantAmt>200000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>BREWDOG COLUMBUS LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>96 GENDER ROAD</AddressLine1Txt>
+          <CityNm>CANAL WINDCHESTER</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>43110</ZIPCd>
+        </USAddress>
+        <RecipientEIN>474320975</RecipientEIN>
+        <CashGrantAmt>-200000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>CANDID CARE CO INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>213 PARK AVENUE SOUTH 2ND FLOOR</AddressLine1Txt>
+          <CityNm>NEW YORK</CityNm>
+          <StateAbbreviationCd>NY</StateAbbreviationCd>
+          <ZIPCd>10003</ZIPCd>
+        </USAddress>
+        <RecipientEIN>364867239</RecipientEIN>
+        <CashGrantAmt>106718</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>CENTRAL MACHINERY COMPANY LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1339 E FAIRGROUND ROAD</AddressLine1Txt>
+          <CityNm>MARION</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>433028873</ZIPCd>
+        </USAddress>
+        <RecipientEIN>341943090</RecipientEIN>
+        <CashGrantAmt>63011</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>CERTAINTEED CORPORATION</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>11519 US HIGHWAY 250 NORTH</AddressLine1Txt>
+          <CityNm>MILAN</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>448469708</ZIPCd>
+        </USAddress>
+        <RecipientEIN>232510893</RecipientEIN>
+        <CashGrantAmt>350000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>CHERYL &amp; CO</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>4465 INDUSTRIAL CENTER DRIVE</AddressLine1Txt>
+          <CityNm>OBETZ</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>432074589</ZIPCd>
+        </USAddress>
+        <RecipientEIN>311006364</RecipientEIN>
+        <CashGrantAmt>100000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>CHILLICOTHE KENWORTH INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1331 DELANO ROAD</AddressLine1Txt>
+          <CityNm>CHILLICOTHE</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45601</ZIPCd>
+        </USAddress>
+        <RecipientEIN>475572204</RecipientEIN>
+        <CashGrantAmt>27170</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>CINTAS CORPORATION NO 2</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>3219 ROHR ROAD</AddressLine1Txt>
+          <CityNm>GROVEPORT</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>431259433</ZIPCd>
+        </USAddress>
+        <RecipientEIN>311703809</RecipientEIN>
+        <CashGrantAmt>100000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>CITY OF BEDFORD HEIGHTS</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>5661 PERKINS ROAD</AddressLine1Txt>
+          <CityNm>CLEVELAND</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>441462558</ZIPCd>
+        </USAddress>
+        <RecipientEIN>346003691</RecipientEIN>
+        <CashGrantAmt>302350</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>CITY OF CINCINNATI</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>805 CENTRAL AVENUE SUITE 700</AddressLine1Txt>
+          <CityNm>CINCINNATI</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45202</ZIPCd>
+        </USAddress>
+        <RecipientEIN>316000064</RecipientEIN>
+        <CashGrantAmt>570000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>CITY OF CLEVELAND</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>601 LAKESIDE AVE EAST ROOM 210</AddressLine1Txt>
+          <CityNm>CLEVELAND</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>441141015</ZIPCd>
+        </USAddress>
+        <RecipientEIN>346000646</RecipientEIN>
+        <CashGrantAmt>99919</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>CITY OF HURON</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>417 MAIN STREET</AddressLine1Txt>
+          <CityNm>HURON</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>448391652</ZIPCd>
+        </USAddress>
+        <RecipientEIN>346400671</RecipientEIN>
+        <CashGrantAmt>200000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>CL PRODUCTS INTERNATIONAL LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>250 EASTERN AVENUE PO BOX 385</AddressLine1Txt>
+          <CityNm>LEESBURG</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>451359783</ZIPCd>
+        </USAddress>
+        <RecipientEIN>463867345</RecipientEIN>
+        <CashGrantAmt>100000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>CLOPAY BUILDING PRODUCTS COMPANY INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1400 WEST MARKET STREET</AddressLine1Txt>
+          <CityNm>TROY</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45373</ZIPCd>
+        </USAddress>
+        <RecipientEIN>112808682</RecipientEIN>
+        <CashGrantAmt>180000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>CONTINENTAL STRUCTURAL PLASTICS INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>255 REX BOULEVARD</AddressLine1Txt>
+          <CityNm>AUBURN HILLS</CityNm>
+          <StateAbbreviationCd>MI</StateAbbreviationCd>
+          <ZIPCd>48326</ZIPCd>
+        </USAddress>
+        <RecipientEIN>522108862</RecipientEIN>
+        <CashGrantAmt>400000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>COVERMYMEDS LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>8866 COMMONS BOULEVARD</AddressLine1Txt>
+          <CityNm>TWINSBURG</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>44087</ZIPCd>
+        </USAddress>
+        <RecipientEIN>263446223</RecipientEIN>
+        <CashGrantAmt>155255</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>CPG INTERNATIONAL LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>5215 OLD ORCHARD ROAD SUITE 725</AddressLine1Txt>
+          <CityNm>SKOKIE</CityNm>
+          <StateAbbreviationCd>IL</StateAbbreviationCd>
+          <ZIPCd>60077</ZIPCd>
+        </USAddress>
+        <RecipientEIN>202779385</RecipientEIN>
+        <CashGrantAmt>55000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>CRANE CONSUMABLES INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>155 WESTHEIMER DRIVE</AddressLine1Txt>
+          <CityNm>MIDDLETOWN</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45044</ZIPCd>
+        </USAddress>
+        <RecipientEIN>274356106</RecipientEIN>
+        <CashGrantAmt>25000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>CREATIVE PACKAGING LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1781 KEMPER COURT PO BOX 305</AddressLine1Txt>
+          <CityNm>ZANESVILLE</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>437014606</ZIPCd>
+        </USAddress>
+        <RecipientEIN>311682777</RecipientEIN>
+        <CashGrantAmt>350000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>CREDIT ADJUSTMENTS INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>330 FLORENCE STREET</AddressLine1Txt>
+          <CityNm>DEFIANCE</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>43512</ZIPCd>
+        </USAddress>
+        <RecipientEIN>340941570</RecipientEIN>
+        <CashGrantAmt>79143</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>CROWN EQUIPMENT CORPORATION</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>44 S WASHINGTON STREET</AddressLine1Txt>
+          <CityNm>NEW BREMEN</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>458691288</ZIPCd>
+        </USAddress>
+        <RecipientEIN>344412691</RecipientEIN>
+        <CashGrantAmt>1500000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>CUSTOM PRO LOGISTICS LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1707 RACE STREET</AddressLine1Txt>
+          <CityNm>CINCINNATI</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45202</ZIPCd>
+        </USAddress>
+        <RecipientEIN>462460862</RecipientEIN>
+        <CashGrantAmt>250000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>DAISY BRAND LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>3600 NORTH GEYERS CHAPEL ROAD</AddressLine1Txt>
+          <CityNm>WOOSTER</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>446919641</ZIPCd>
+        </USAddress>
+        <RecipientEIN>800595003</RecipientEIN>
+        <CashGrantAmt>400787</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>DANA LIGHT AXLE MANUFACTURING LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>3044 JEEP PARKWAY</AddressLine1Txt>
+          <CityNm>TOLEDO</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>43657</ZIPCd>
+        </USAddress>
+        <RecipientEIN>261347098</RecipientEIN>
+        <CashGrantAmt>250000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>DANA LIMITED</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>3857 TECHNOLOGY DRIVE</AddressLine1Txt>
+          <CityNm>MAUMEE</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>43537</ZIPCd>
+        </USAddress>
+        <RecipientEIN>261531856</RecipientEIN>
+        <CashGrantAmt>3000000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>DAYTON SEWING COLLABORATIVE</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>PO BOX 392</AddressLine1Txt>
+          <CityNm>DAYTON</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45401</ZIPCd>
+        </USAddress>
+        <RecipientEIN>822325963</RecipientEIN>
+        <CashGrantAmt>66300</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>DECEUNINCK NORTH AMERICA LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>351 N GARVER ROAD</AddressLine1Txt>
+          <CityNm>MONROE</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>450501233</ZIPCd>
+        </USAddress>
+        <RecipientEIN>311745568</RecipientEIN>
+        <CashGrantAmt>50000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>DECKED LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>120 N LEADVILLE AVENUE SUITE 4</AddressLine1Txt>
+          <CityNm>KETCHUM</CityNm>
+          <StateAbbreviationCd>ID</StateAbbreviationCd>
+          <ZIPCd>83340</ZIPCd>
+        </USAddress>
+        <RecipientEIN>462633179</RecipientEIN>
+        <CashGrantAmt>50000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>DIGERONIMO DEVELOPMENT LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>5720 EAST SCHAAF ROAD</AddressLine1Txt>
+          <CityNm>INDEPENDENCE</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>44131</ZIPCd>
+        </USAddress>
+        <RecipientEIN>823411495</RecipientEIN>
+        <CashGrantAmt>264000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>DOLLAR TREE DISTRIBUTION INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>500 VOLVO PARKWAY</AddressLine1Txt>
+          <CityNm>CHESAPEAKE</CityNm>
+          <StateAbbreviationCd>VA</StateAbbreviationCd>
+          <ZIPCd>23320</ZIPCd>
+        </USAddress>
+        <RecipientEIN>541737649</RecipientEIN>
+        <CashGrantAmt>34360</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>E1 DIGITAL DIRECT INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>491 MCCLURG ROAD</AddressLine1Txt>
+          <CityNm>BOARDMAN</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>445126404</ZIPCd>
+        </USAddress>
+        <RecipientEIN>474912935</RecipientEIN>
+        <CashGrantAmt>70000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>ECCRINE SYSTEMS INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1775 MENTOR AVENUE SUITE 300</AddressLine1Txt>
+          <CityNm>CINCINNATI</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>452121100</ZIPCd>
+        </USAddress>
+        <RecipientEIN>472692010</RecipientEIN>
+        <CashGrantAmt>48452</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>ELYRIA COMMUNITY IMPROVEMENT CORPORATION</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>131 COURT STREET</AddressLine1Txt>
+          <CityNm>ELYRIA</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>440355511</ZIPCd>
+        </USAddress>
+        <RecipientEIN>472250959</RecipientEIN>
+        <IRCSectionDesc>501(C)(3)</IRCSectionDesc>
+        <CashGrantAmt>192889</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>E-MEK TECHNOLOGIES LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>7410 WEBSTER STREET</AddressLine1Txt>
+          <CityNm>VANDALIA</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>454145816</ZIPCd>
+        </USAddress>
+        <RecipientEIN>204904956</RecipientEIN>
+        <CashGrantAmt>36343</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>ENSEMBLE HP LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1701 MERCY HEALTH PLACE</AddressLine1Txt>
+          <CityNm>CINCINNATI</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45237</ZIPCd>
+        </USAddress>
+        <RecipientEIN>384050738</RecipientEIN>
+        <CashGrantAmt>317555</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>EXSURCO MEDICAL INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>10804 GREEN ROAD</AddressLine1Txt>
+          <CityNm>WAKEMAN</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>448899676</ZIPCd>
+        </USAddress>
+        <RecipientEIN>453836837</RecipientEIN>
+        <CashGrantAmt>211919</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>FACILITYSOURCE LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>200 EAST CAMPUS VIEW BOULEVARD</AddressLine1Txt>
+          <AddressLine2Txt>SUITE 301</AddressLine2Txt>
+          <CityNm>COLUMBUS</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>432354732</ZIPCd>
+        </USAddress>
+        <RecipientEIN>203319511</RecipientEIN>
+        <CashGrantAmt>82085</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>FAT HEAD'S BREWING LP</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>ENGEL LAKE DRIVE</AddressLine1Txt>
+          <CityNm>MIDDLEBURG HEIGHTS</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>44130</ZIPCd>
+        </USAddress>
+        <RecipientEIN>271931373</RecipientEIN>
+        <CashGrantAmt>50000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>FAXON MACHINING INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>11101 ADWOOD DRIVE</AddressLine1Txt>
+          <CityNm>FOREST PARK</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45240</ZIPCd>
+        </USAddress>
+        <RecipientEIN>311054769</RecipientEIN>
+        <CashGrantAmt>150000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>FCA US LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1000 CHRYSLER DRIVE</AddressLine1Txt>
+          <CityNm>AUBURN HILLS</CityNm>
+          <StateAbbreviationCd>MI</StateAbbreviationCd>
+          <ZIPCd>483262766</ZIPCd>
+        </USAddress>
+        <RecipientEIN>270187277</RecipientEIN>
+        <CashGrantAmt>196402</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>FIRST SOLAR INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>28101 CEDAR PARK BOULEVARD</AddressLine1Txt>
+          <CityNm>PERRYSBURG</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>435514871</ZIPCd>
+        </USAddress>
+        <RecipientEIN>204623678</RecipientEIN>
+        <CashGrantAmt>651448</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>FORMLABS OHIO INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>27800 LEMOYNE ROAD SUITE J</AddressLine1Txt>
+          <CityNm>MILLBURY</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>434479683</ZIPCd>
+        </USAddress>
+        <RecipientEIN>320536305</RecipientEIN>
+        <CashGrantAmt>50000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>FORTUITY HOLDING LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>750 MOUNT CARMEL MALL</AddressLine1Txt>
+          <CityNm>COLUMBUS</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>432221553</ZIPCd>
+        </USAddress>
+        <RecipientEIN>821921127</RecipientEIN>
+        <CashGrantAmt>400000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>FRANKLIN INTERNATIONAL INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>2020 BRUCK STREET</AddressLine1Txt>
+          <CityNm>COLUMBUS</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>432072329</ZIPCd>
+        </USAddress>
+        <RecipientEIN>314183710</RecipientEIN>
+        <CashGrantAmt>1000000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>FULTON COUNTY PROCESSING LTD</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>7800 STATE ROUTE 109</AddressLine1Txt>
+          <CityNm>DELTA</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>435159335</ZIPCd>
+        </USAddress>
+        <RecipientEIN>341965647</RecipientEIN>
+        <CashGrantAmt>75000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>G&amp;S METAL PRODUCTS CO INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>3330 EAST 79TH STREET</AddressLine1Txt>
+          <CityNm>CLEVELAND</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>441271831</ZIPCd>
+        </USAddress>
+        <RecipientEIN>341145880</RecipientEIN>
+        <CashGrantAmt>21000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>GEORGIA TSS INC (TOTAL SYSTEM SERVICES INC)</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1500 BOLTONFIELD STREET</AddressLine1Txt>
+          <CityNm>COLUMBUS</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>43228</ZIPCd>
+        </USAddress>
+        <RecipientEIN>581493818</RecipientEIN>
+        <CashGrantAmt>200000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>GEO-TECH POLYMERS LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>423 HOPEWELL ROAD</AddressLine1Txt>
+          <CityNm>WAVERLY</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45690</ZIPCd>
+        </USAddress>
+        <RecipientEIN>800814251</RecipientEIN>
+        <CashGrantAmt>100000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>GHD GREEN LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>PO BOX 42598</AddressLine1Txt>
+          <CityNm>CINCINNATI</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45242</ZIPCd>
+        </USAddress>
+        <RecipientEIN>825505807</RecipientEIN>
+        <CashGrantAmt>75000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>HILLCREST EGG &amp; CHEESE CO</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>2700 E 55TH STREET</AddressLine1Txt>
+          <CityNm>CLEVELAND</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>44115</ZIPCd>
+        </USAddress>
+        <RecipientEIN>341136697</RecipientEIN>
+        <CashGrantAmt>400000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>HOMESIDE FINANCIAL LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>7775 WALTON PARKWAY 4TH FLOOR</AddressLine1Txt>
+          <CityNm>NEW ALBANY</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>43054</ZIPCd>
+        </USAddress>
+        <RecipientEIN>463689142</RecipientEIN>
+        <CashGrantAmt>300000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>HONDA R&amp;D AMERICAS INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>21001 STATE ROUTE 739</AddressLine1Txt>
+          <CityNm>RAYMOND</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>430679705</ZIPCd>
+        </USAddress>
+        <RecipientEIN>330054861</RecipientEIN>
+        <CashGrantAmt>3960281</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>HONEYMOON PAPER PRODUCTS INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>7100 DIXIE HIGHWAY</AddressLine1Txt>
+          <CityNm>FAIRFIELD</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45014</ZIPCd>
+        </USAddress>
+        <RecipientEIN>310625744</RecipientEIN>
+        <CashGrantAmt>48776</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>HUMBLE ROBINSON GROUP LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>2615 CRYSTAL AVENUE</AddressLine1Txt>
+          <CityNm>FINDLAY</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45840</ZIPCd>
+        </USAddress>
+        <RecipientEIN>814058205</RecipientEIN>
+        <CashGrantAmt>860776</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>HYNES INDUSTRIES INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>3760 OAKWOOD AVENUE</AddressLine1Txt>
+          <CityNm>YOUNGSTOWN</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>445153041</ZIPCd>
+        </USAddress>
+        <RecipientEIN>340871763</RecipientEIN>
+        <CashGrantAmt>-50000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>INOGEN INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>326 BOLLAY DRIVE</AddressLine1Txt>
+          <CityNm>GOLETA</CityNm>
+          <StateAbbreviationCd>CA</StateAbbreviationCd>
+          <ZIPCd>931175550</ZIPCd>
+        </USAddress>
+        <RecipientEIN>330989359</RecipientEIN>
+        <CashGrantAmt>500000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>IRONUNITS LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>200 PUBLIC SQUARE SUITE 3300</AddressLine1Txt>
+          <CityNm>CLEVELAND</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>441142315</ZIPCd>
+        </USAddress>
+        <RecipientEIN>341920747</RecipientEIN>
+        <CashGrantAmt>10895137</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>ITM MARKETING INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>331 MAIN STREET</AddressLine1Txt>
+          <CityNm>COSHOCTON</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>438121929</ZIPCd>
+        </USAddress>
+        <RecipientEIN>351989444</RecipientEIN>
+        <CashGrantAmt>285000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>JAC PRODUCTS INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>225 S INDUSTRIAL DRIVE</AddressLine1Txt>
+          <CityNm>SALINE</CityNm>
+          <StateAbbreviationCd>MI</StateAbbreviationCd>
+          <ZIPCd>48176</ZIPCd>
+        </USAddress>
+        <RecipientEIN>381888757</RecipientEIN>
+        <CashGrantAmt>1772474</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>JACKSON COUNTY ECONOMIC DEVELOPMENT PARTNERSHIP</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>920 VETERANS DRIVE SUITE A</AddressLine1Txt>
+          <CityNm>JACKSON</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45640</ZIPCd>
+        </USAddress>
+        <RecipientEIN>341604927</RecipientEIN>
+        <IRCSectionDesc>501(C)(3)</IRCSectionDesc>
+        <CashGrantAmt>510000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>JEFFERIS REAL ESTATE LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>62894 EASTVIEW COURT</AddressLine1Txt>
+          <CityNm>BARNESVILLE</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>43713</ZIPCd>
+        </USAddress>
+        <RecipientEIN>341823010</RecipientEIN>
+        <CashGrantAmt>2741727</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>JOHNSON MEDTECH LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>145 MILK STREET</AddressLine1Txt>
+          <CityNm>METHUEN</CityNm>
+          <StateAbbreviationCd>MA</StateAbbreviationCd>
+          <ZIPCd>01844</ZIPCd>
+        </USAddress>
+        <RecipientEIN>980208105</RecipientEIN>
+        <CashGrantAmt>65000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>JPMORGAN CHASE BANK NATIONAL ASSOCIATION</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1111 POLARIS PARKWAY</AddressLine1Txt>
+          <CityNm>COLUMBUS</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>432402031</ZIPCd>
+        </USAddress>
+        <RecipientEIN>134994650</RecipientEIN>
+        <CashGrantAmt>3000000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>JUST4CONSTRUCTIONCOM LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>17999 FOLTZ PARKWAY</AddressLine1Txt>
+          <CityNm>STRONGSVILLE</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>441495565</ZIPCd>
+        </USAddress>
+        <RecipientEIN>461185968</RecipientEIN>
+        <CashGrantAmt>750000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>KENO KOZIE ASSOCIATES LTD</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>ONE N FRANKLIN STREET SUITE 500</AddressLine1Txt>
+          <CityNm>CHICAGO</CityNm>
+          <StateAbbreviationCd>IL</StateAbbreviationCd>
+          <ZIPCd>60606</ZIPCd>
+        </USAddress>
+        <RecipientEIN>363621191</RecipientEIN>
+        <CashGrantAmt>40000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>KEYSTONE TAILORED MANUFACTURING LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>4600 TIEDEMAN ROAD</AddressLine1Txt>
+          <CityNm>BROOKLYN</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>44144</ZIPCd>
+        </USAddress>
+        <RecipientEIN>473900155</RecipientEIN>
+        <CashGrantAmt>-288089</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>KOORSEN FIRE &amp; SECURITY INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>727 MANOR PARK DRIVE</AddressLine1Txt>
+          <CityNm>COLUMBUS</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>43228</ZIPCd>
+        </USAddress>
+        <RecipientEIN>351153549</RecipientEIN>
+        <CashGrantAmt>50000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>KRAFT FOODS GROUP INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>THREE LAKES DRIVE</AddressLine1Txt>
+          <CityNm>NORTHFIELD</CityNm>
+          <StateAbbreviationCd>IL</StateAbbreviationCd>
+          <ZIPCd>600932753</ZIPCd>
+        </USAddress>
+        <RecipientEIN>363083135</RecipientEIN>
+        <CashGrantAmt>-175000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>KURTZ BROS INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>5000 WARNER ROAD</AddressLine1Txt>
+          <CityNm>GARFIELD HEIGHTS</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>44125</ZIPCd>
+        </USAddress>
+        <RecipientEIN>341152347</RecipientEIN>
+        <CashGrantAmt>61351</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>LAWRENCE ECONOMIC DEVELOPMENT CORPORATION</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>216 COLLINS AVENUE</AddressLine1Txt>
+          <CityNm>SOUTH POINT</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>456808501</ZIPCd>
+        </USAddress>
+        <RecipientEIN>311075744</RecipientEIN>
+        <IRCSectionDesc>501(C)(3)</IRCSectionDesc>
+        <CashGrantAmt>724114</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>MAC WHITE LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>120 WEST MAIN STREET SUITE 200</AddressLine1Txt>
+          <CityNm>VAN WERT</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45891</ZIPCd>
+        </USAddress>
+        <RecipientEIN>830892018</RecipientEIN>
+        <CashGrantAmt>50000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>MANE INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>2501 HENKLE DRIVE</AddressLine1Txt>
+          <CityNm>LEBANON</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>450367794</ZIPCd>
+        </USAddress>
+        <RecipientEIN>311611663</RecipientEIN>
+        <CashGrantAmt>100000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>MCDANIEL PRODUCTS INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>50 MANSFIELD INDUSTRIAL PARKWAY</AddressLine1Txt>
+          <CityNm>MANSFIELD</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>449038999</ZIPCd>
+        </USAddress>
+        <RecipientEIN>263498215</RecipientEIN>
+        <CashGrantAmt>75000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>MCLANE OHIO INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>3200 MCLANE DRIVE</AddressLine1Txt>
+          <CityNm>FINDLAY</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45840</ZIPCd>
+        </USAddress>
+        <RecipientEIN>475030627</RecipientEIN>
+        <CashGrantAmt>121152</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>MEDPACE INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>5375 MEDPACE WAY</AddressLine1Txt>
+          <CityNm>CINCINNATI</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>452271543</ZIPCd>
+        </USAddress>
+        <RecipientEIN>753033627</RecipientEIN>
+        <CashGrantAmt>922134</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>METALX LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>295 SOUTH COMMERCE DRIVE</AddressLine1Txt>
+          <CityNm>WATERLOO</CityNm>
+          <StateAbbreviationCd>IN</StateAbbreviationCd>
+          <ZIPCd>46793</ZIPCd>
+        </USAddress>
+        <RecipientEIN>453790057</RecipientEIN>
+        <CashGrantAmt>250000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>MIDMARK CORPORATION</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>60 VISTA DRIVE</AddressLine1Txt>
+          <CityNm>VERSAILLES</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>453809488</ZIPCd>
+        </USAddress>
+        <RecipientEIN>344269370</RecipientEIN>
+        <CashGrantAmt>2670767</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>MITEC POWERTRAIN INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>4000 FOSTORIA AVENUE</AddressLine1Txt>
+          <CityNm>FINDLAY</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>458408733</ZIPCd>
+        </USAddress>
+        <RecipientEIN>421769575</RecipientEIN>
+        <CashGrantAmt>200000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>MORGAN STANLEY &amp; CO LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1585 BROADWAY</AddressLine1Txt>
+          <CityNm>NEW YORK</CityNm>
+          <StateAbbreviationCd>NY</StateAbbreviationCd>
+          <ZIPCd>10036</ZIPCd>
+        </USAddress>
+        <RecipientEIN>208764829</RecipientEIN>
+        <CashGrantAmt>432070</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>MRI SOFTWARE LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>28925 FOUNTAIN PARKWAY</AddressLine1Txt>
+          <CityNm>SOLON</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>441394356</ZIPCd>
+        </USAddress>
+        <RecipientEIN>271499609</RecipientEIN>
+        <CashGrantAmt>250000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>MSW RE 1 INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>6161 VENTNOR AVENUE</AddressLine1Txt>
+          <CityNm>VANDALIA</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>454142651</ZIPCd>
+        </USAddress>
+        <RecipientEIN>823810794</RecipientEIN>
+        <CashGrantAmt>200000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>MULTI-COLOR CORPORATION</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>4053 CLOUGH WOODS DRIVE</AddressLine1Txt>
+          <CityNm>BATAVIA</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45103</ZIPCd>
+        </USAddress>
+        <RecipientEIN>311125853</RecipientEIN>
+        <CashGrantAmt>300000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>MUNICIPAL LIGHT PLANT LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1400 DUBLIN ROAD</AddressLine1Txt>
+          <CityNm>COLUMBUS</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>432151009</ZIPCd>
+        </USAddress>
+        <RecipientEIN>472373487</RecipientEIN>
+        <CashGrantAmt>700000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>NANOGATE JAY SYSTEMS LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>150 EAST LONGVIEW AVENUE</AddressLine1Txt>
+          <CityNm>MANSFIELD</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>449034206</ZIPCd>
+        </USAddress>
+        <RecipientEIN>814480790</RecipientEIN>
+        <CashGrantAmt>1000000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>NATIONAL DOOR AND TRIM INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1189 GRILL ROAD</AddressLine1Txt>
+          <CityNm>VAN WERT</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>458919386</ZIPCd>
+        </USAddress>
+        <RecipientEIN>341269925</RecipientEIN>
+        <CashGrantAmt>91078</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>NAVARRE FACILITY LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>4500 STERILITE STREET NE</AddressLine1Txt>
+          <CityNm>NAVARRE</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>44662</ZIPCd>
+        </USAddress>
+        <RecipientEIN>472532936</RecipientEIN>
+        <CashGrantAmt>850000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>NELSON PACKAGING COMPANY INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1801 RESERVOIR ROAD</AddressLine1Txt>
+          <CityNm>LIMA</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45804</ZIPCd>
+        </USAddress>
+        <RecipientEIN>341846562</RecipientEIN>
+        <CashGrantAmt>80000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>NEW HORIZONS BAKING COMPANY INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>211 WOODLAWN AVENUE</AddressLine1Txt>
+          <CityNm>NORWALK</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>448572276</ZIPCd>
+        </USAddress>
+        <RecipientEIN>311178698</RecipientEIN>
+        <CashGrantAmt>100000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>NIPPON STEEL INTEGRATED CRANKSHAFT LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1815 EAST SANDUSKY STREET</AddressLine1Txt>
+          <CityNm>FOSTORIA</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>44830</ZIPCd>
+        </USAddress>
+        <RecipientEIN>263444991</RecipientEIN>
+        <CashGrantAmt>200000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>NRP INVESTMENTS LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>5309 TRANSPORTATION BOULEVARD</AddressLine1Txt>
+          <CityNm>CLEVELAND</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>441255333</ZIPCd>
+        </USAddress>
+        <RecipientEIN>341899036</RecipientEIN>
+        <CashGrantAmt>600000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>NSG GLASS NORTH AMERICA INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>PEMBERVILLE ROAD</AddressLine1Txt>
+          <CityNm>LUCKEY</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>43443</ZIPCd>
+        </USAddress>
+        <RecipientEIN>831622986</RecipientEIN>
+        <CashGrantAmt>2000000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>OHIO AWNING GRANT LENDER INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>2658 SCRANTON ROAD</AddressLine1Txt>
+          <CityNm>CLEVELAND</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>44113</ZIPCd>
+        </USAddress>
+        <RecipientEIN>475146583</RecipientEIN>
+        <CashGrantAmt>300000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>PH GLATFELTER COMPANY</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>232 EAST 8TH STREET</AddressLine1Txt>
+          <CityNm>CHILLICOTHE</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>456013364</ZIPCd>
+        </USAddress>
+        <RecipientEIN>230628360</RecipientEIN>
+        <CashGrantAmt>500000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>PAS TECHNOLOGIES INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>214 HOBART DRIVE</AddressLine1Txt>
+          <CityNm>HILLSBORO</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>451339487</ZIPCd>
+        </USAddress>
+        <RecipientEIN>204772714</RecipientEIN>
+        <CashGrantAmt>150000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>PEPPERIDGE FARM INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>3320 STATE ROUTE 103 E</AddressLine1Txt>
+          <CityNm>WILLARD</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>448909614</ZIPCd>
+        </USAddress>
+        <RecipientEIN>060613103</RecipientEIN>
+        <CashGrantAmt>47315</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>PHILLIPS MEAT PROCESSING LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>2790 RIDGE ROAD</AddressLine1Txt>
+          <CityNm>ZANESVILLE</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>43701</ZIPCd>
+        </USAddress>
+        <RecipientEIN>611394910</RecipientEIN>
+        <CashGrantAmt>40000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>PLASTIC PACKAGING TECHNOLOGIES LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>4041 ROBERTS ROAD</AddressLine1Txt>
+          <CityNm>COLUMBUS</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>432289536</ZIPCd>
+        </USAddress>
+        <RecipientEIN>274037334</RecipientEIN>
+        <CashGrantAmt>25000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>PORT OF GREATER CINCINNATI DEVELOPMENT AUTHORITY</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>3 EAST 4TH STREET SUITE 300</AddressLine1Txt>
+          <CityNm>CINCINNATI</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>452023745</ZIPCd>
+        </USAddress>
+        <RecipientEIN>311752368</RecipientEIN>
+        <CashGrantAmt>540961</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>PRO-TEC COATING COMPANY LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>5500 PRO-TEC PARKWAY</AddressLine1Txt>
+          <CityNm>LEIPSIC</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45856</ZIPCd>
+        </USAddress>
+        <RecipientEIN>251635459</RecipientEIN>
+        <CashGrantAmt>3000000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>RAYCO MANUFACTURING LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>4255 EAST LINCOLN WAY</AddressLine1Txt>
+          <CityNm>WOOSTER</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>44691</ZIPCd>
+        </USAddress>
+        <RecipientEIN>822889106</RecipientEIN>
+        <CashGrantAmt>77630</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>RBB SYSTEMS INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1909 OLD MANSFIELD ROAD</AddressLine1Txt>
+          <CityNm>WOOSTER</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>44691</ZIPCd>
+        </USAddress>
+        <RecipientEIN>341353186</RecipientEIN>
+        <CashGrantAmt>60000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>RELATECARE LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>3615 SUPERIOR AVENUE SUITE 4406C</AddressLine1Txt>
+          <CityNm>CLEVELAND</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>44114</ZIPCd>
+        </USAddress>
+        <RecipientEIN>461590730</RecipientEIN>
+        <CashGrantAmt>42176</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>RIMECO PRODUCTS INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>38198 WILLOUGHBY PARKWAY</AddressLine1Txt>
+          <CityNm>WILLOUGHBY</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>440947580</ZIPCd>
+        </USAddress>
+        <RecipientEIN>341715965</RecipientEIN>
+        <CashGrantAmt>50000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>RISE BRANDS INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>134 EAST LONG STREET</AddressLine1Txt>
+          <CityNm>COLUMBUS</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>432152518</ZIPCd>
+        </USAddress>
+        <RecipientEIN>464760127</RecipientEIN>
+        <CashGrantAmt>141476</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>ROGERS INDUSTRIAL PRODUCTS INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>532 SOUTH MAIN STREET</AddressLine1Txt>
+          <CityNm>AKRON</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>443111018</ZIPCd>
+        </USAddress>
+        <RecipientEIN>340897539</RecipientEIN>
+        <CashGrantAmt>100000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>RUDOLPH DEVELOPMENT LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>2120 SMITHTOWN AVENUE</AddressLine1Txt>
+          <CityNm>RONKONKOMA</CityNm>
+          <StateAbbreviationCd>NY</StateAbbreviationCd>
+          <ZIPCd>11779</ZIPCd>
+        </USAddress>
+        <RecipientEIN>464521270</RecipientEIN>
+        <CashGrantAmt>500000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>RXQ COMPOUNDING LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>340 WEST STATE STREET</AddressLine1Txt>
+          <CityNm>ATHENS</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45701</ZIPCd>
+        </USAddress>
+        <RecipientEIN>471235128</RecipientEIN>
+        <CashGrantAmt>100000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>SAFRAN POWER USA LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>8380 DARROW ROAD</AddressLine1Txt>
+          <CityNm>TWINSBURG</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>440872329</ZIPCd>
+        </USAddress>
+        <RecipientEIN>461426922</RecipientEIN>
+        <CashGrantAmt>25000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>SCIOTO VALLEY WOODWORKING INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>423 HOPEWELL ROAD</AddressLine1Txt>
+          <CityNm>WAVERLY</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45690</ZIPCd>
+        </USAddress>
+        <RecipientEIN>831892831</RecipientEIN>
+        <CashGrantAmt>165680</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>SEARCH DISCOVERY INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1250 OLD RIVER ROAD</AddressLine1Txt>
+          <CityNm>CLEVELAND</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>44115</ZIPCd>
+        </USAddress>
+        <RecipientEIN>202057743</RecipientEIN>
+        <CashGrantAmt>500000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>SEEFRIED DEVELOPMENT SERVICES INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>3333 RIVERWOOD PARKWAY SE SUITE 200</AddressLine1Txt>
+          <AddressLine2Txt>200</AddressLine2Txt>
+          <CityNm>ATLANTA</CityNm>
+          <StateAbbreviationCd>GA</StateAbbreviationCd>
+          <ZIPCd>303396411</ZIPCd>
+        </USAddress>
+        <RecipientEIN>821661828</RecipientEIN>
+        <CashGrantAmt>3305000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>SHIN-ETSU SILICONES OF AMERICA INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>963 EVANS AVENUE</AddressLine1Txt>
+          <CityNm>AKRON</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>443051021</ZIPCd>
+        </USAddress>
+        <RecipientEIN>954015700</RecipientEIN>
+        <CashGrantAmt>193194</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>SILFEX INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>950 SOUTH FRANKLIN STREET</AddressLine1Txt>
+          <CityNm>EATON</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45320</ZIPCd>
+        </USAddress>
+        <RecipientEIN>205699765</RecipientEIN>
+        <CashGrantAmt>59375</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>SJN DATA CENTER LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>4620 WESLEY AVENUE</AddressLine1Txt>
+          <CityNm>CINCINNATI</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45212</ZIPCd>
+        </USAddress>
+        <RecipientEIN>472512296</RecipientEIN>
+        <CashGrantAmt>400000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>SKY CLIMBER FABRICATING LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1600 PITTSBURGH DRIVE</AddressLine1Txt>
+          <CityNm>DELAWARE</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>43015</ZIPCd>
+        </USAddress>
+        <RecipientEIN>812506619</RecipientEIN>
+        <CashGrantAmt>-40000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>SMITHERS INFORMATION LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>425 WEST MARKET STREET</AddressLine1Txt>
+          <CityNm>AKRON</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>443032044</ZIPCd>
+        </USAddress>
+        <RecipientEIN>273887724</RecipientEIN>
+        <CashGrantAmt>50000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>SOFIDEL AMERICA CORP</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>25910 US 23</AddressLine1Txt>
+          <CityNm>CIRCLEVILLE</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>43113</ZIPCd>
+        </USAddress>
+        <RecipientEIN>371700146</RecipientEIN>
+        <CashGrantAmt>500000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>SOUTHSIDE REDEVELOPMENT LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>2135 DANA AVENUE SUITE 200</AddressLine1Txt>
+          <CityNm>CINCINNATI</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45207</ZIPCd>
+        </USAddress>
+        <RecipientEIN>260621636</RecipientEIN>
+        <CashGrantAmt>14281</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>ST BERNARD SOAP COMPANY</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>5177 SPRING GROVE AVENUE</AddressLine1Txt>
+          <CityNm>CINCINNATI</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>452171050</ZIPCd>
+        </USAddress>
+        <RecipientEIN>980390818</RecipientEIN>
+        <CashGrantAmt>900000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>STEINER EOPTICS INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>3475 NEWMARK DRIVE</AddressLine1Txt>
+          <CityNm>MIAMI TOWNSHIP</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45342</ZIPCd>
+        </USAddress>
+        <RecipientEIN>311314876</RecipientEIN>
+        <CashGrantAmt>25000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>STEWART-MACDONALD MANUFACTURING COMPANY</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>21 N SHAFER STREET</AddressLine1Txt>
+          <CityNm>ATHENS</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45701</ZIPCd>
+        </USAddress>
+        <RecipientEIN>310783143</RecipientEIN>
+        <CashGrantAmt>400000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>STOLLE MACHINERY COMPANY LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>7425 WEBSTER STREET</AddressLine1Txt>
+          <CityNm>DAYTON</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45414</ZIPCd>
+        </USAddress>
+        <RecipientEIN>770616243</RecipientEIN>
+        <CashGrantAmt>60000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>STONECROP TECHNOLOGIES LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>3500 SOUTHWEST BOULEVARD</AddressLine1Txt>
+          <CityNm>GROVE CITY</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>431232244</ZIPCd>
+        </USAddress>
+        <RecipientEIN>141831492</RecipientEIN>
+        <CashGrantAmt>40000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>TEIKOKU USA INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>27881 STATE ROUTE 7</AddressLine1Txt>
+          <CityNm>MARIETTA</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45750</ZIPCd>
+        </USAddress>
+        <RecipientEIN>760356084</RecipientEIN>
+        <CashGrantAmt>120000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>TERREX HARRIS AVE LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>3200 MADISON ROAD SUITE 2B</AddressLine1Txt>
+          <CityNm>CINCINNATI</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45209</ZIPCd>
+        </USAddress>
+        <RecipientEIN>471885117</RecipientEIN>
+        <CashGrantAmt>198000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>THE CLARENCE AND JUDITH LAPEDES FAMILY LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>2444 MADISON ROAD SUITE 207</AddressLine1Txt>
+          <CityNm>CINCINNATI</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>452081219</ZIPCd>
+        </USAddress>
+        <RecipientEIN>311570785</RecipientEIN>
+        <CashGrantAmt>68696</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>THE GREAT LAKES CONSTRUCTION CO</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>2608 GREAT LAKES WAY</AddressLine1Txt>
+          <CityNm>HINCKLEY</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>44233</ZIPCd>
+        </USAddress>
+        <RecipientEIN>340689355</RecipientEIN>
+        <CashGrantAmt>96500</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>THE HUNTINGTON NATIONAL BANK</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>5555 CLEVELAND AVENUE</AddressLine1Txt>
+          <CityNm>COLUMBUS</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>43231</ZIPCd>
+        </USAddress>
+        <RecipientEIN>310966785</RecipientEIN>
+        <CashGrantAmt>1500000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>THE OHIO MANUFACTURERS' ASSOCIATION</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>33 NORTH HIGH STREET 6TH FLOOR</AddressLine1Txt>
+          <CityNm>COLUMBUS</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>43215</ZIPCd>
+        </USAddress>
+        <RecipientEIN>314270490</RecipientEIN>
+        <CashGrantAmt>30000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>THE WORNICK COMPANY</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>4700 CREEK ROAD</AddressLine1Txt>
+          <CityNm>BLUE ASH</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>452422808</ZIPCd>
+        </USAddress>
+        <RecipientEIN>300225741</RecipientEIN>
+        <CashGrantAmt>50000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>THEKEN COMPANIES LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1800 TRIPLETT BOULEVARD</AddressLine1Txt>
+          <CityNm>AKRON</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>443063311</ZIPCd>
+        </USAddress>
+        <RecipientEIN>900951383</RecipientEIN>
+        <CashGrantAmt>268529</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>THERMA-TRU CORP</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1750 INDIAN WOOD CIRCLE</AddressLine1Txt>
+          <CityNm>MAUMEE</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>435374018</ZIPCd>
+        </USAddress>
+        <RecipientEIN>341923454</RecipientEIN>
+        <CashGrantAmt>350000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>TIFFIN METAL PRODUCTS CO</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>450 WALL STREET</AddressLine1Txt>
+          <CityNm>TIFFIN</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>448831366</ZIPCd>
+        </USAddress>
+        <RecipientEIN>341302396</RecipientEIN>
+        <CashGrantAmt>6648</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>TOPRE AMERICA CORPORATION</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1100 REAPER AVENUE</AddressLine1Txt>
+          <CityNm>SPRINGFIELD</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>455033501</ZIPCd>
+        </USAddress>
+        <RecipientEIN>980380782</RecipientEIN>
+        <CashGrantAmt>500000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>TPAM INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>28175 HAGGERTY ROAD SUITE 151</AddressLine1Txt>
+          <CityNm>NOVI</CityNm>
+          <StateAbbreviationCd>MI</StateAbbreviationCd>
+          <ZIPCd>48377</ZIPCd>
+        </USAddress>
+        <RecipientEIN>300869183</RecipientEIN>
+        <CashGrantAmt>89619</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>TRAMEC SLOAN LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>30 DAVIS STREET</AddressLine1Txt>
+          <CityNm>IOLA</CityNm>
+          <StateAbbreviationCd>KS</StateAbbreviationCd>
+          <ZIPCd>66749</ZIPCd>
+        </USAddress>
+        <RecipientEIN>800917230</RecipientEIN>
+        <CashGrantAmt>-200000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>TRI-COUNTY RURAL WATER AND SEWER DISTRICT</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>20 ANDERSON LANE</AddressLine1Txt>
+          <CityNm>WATERFORD</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45786</ZIPCd>
+        </USAddress>
+        <RecipientEIN>311269601</RecipientEIN>
+        <CashGrantAmt>-50000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>TRUE INSPECTION SERVICES LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>871 SOUTH MAIN STREET</AddressLine1Txt>
+          <CityNm>URBANA</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>430782537</ZIPCd>
+        </USAddress>
+        <RecipientEIN>261737051</RecipientEIN>
+        <CashGrantAmt>707158</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>US BANK NATIONAL ASSOCIATION</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>800 NICOLLET MALL</AddressLine1Txt>
+          <CityNm>MINNEAPOLIS</CityNm>
+          <StateAbbreviationCd>MN</StateAbbreviationCd>
+          <ZIPCd>55402</ZIPCd>
+        </USAddress>
+        <RecipientEIN>310841368</RecipientEIN>
+        <CashGrantAmt>150000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>UNITED PARCEL SERVICE INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>5101 TRABUE ROAD</AddressLine1Txt>
+          <CityNm>COLUMBUS</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>432289613</ZIPCd>
+        </USAddress>
+        <RecipientEIN>362407381</RecipientEIN>
+        <CashGrantAmt>75000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>UNIVERSITY OF DAYTON RESEARCH INSTITUTE</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>300 COLLEGE PARK AVENUE</AddressLine1Txt>
+          <CityNm>DAYTON</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>454691640</ZIPCd>
+        </USAddress>
+        <RecipientEIN>310536715</RecipientEIN>
+        <IRCSectionDesc>501(C)(3)</IRCSectionDesc>
+        <CashGrantAmt>510563</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>UNVERFERTH MANU CO INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>PO BOX 357</AddressLine1Txt>
+          <CityNm>KALIDA</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45853</ZIPCd>
+        </USAddress>
+        <RecipientEIN>340936989</RecipientEIN>
+        <CashGrantAmt>-50000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>V WERT 1 LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1180 KEAR ROAD</AddressLine1Txt>
+          <CityNm>VAN WERT</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45891</ZIPCd>
+        </USAddress>
+        <RecipientEIN>814145031</RecipientEIN>
+        <CashGrantAmt>1224966</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>VEE PAK OHIO LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>9040 SMITHS MILL ROAD</AddressLine1Txt>
+          <CityNm>NEW ALBANY</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>43054</ZIPCd>
+        </USAddress>
+        <RecipientEIN>900629281</RecipientEIN>
+        <CashGrantAmt>100000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>VILLAGE OF EVENDALE</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>10500 READING ROAD</AddressLine1Txt>
+          <CityNm>EVENDALE</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>452412574</ZIPCd>
+        </USAddress>
+        <RecipientEIN>316001691</RecipientEIN>
+        <CashGrantAmt>400000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>VILLAGE OF RIPLEY</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>PO BOX 219</AddressLine1Txt>
+          <CityNm>RIPLEY</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>451670219</ZIPCd>
+        </USAddress>
+        <RecipientEIN>316001082</RecipientEIN>
+        <CashGrantAmt>131500</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>VITATOE INDUSTRIES INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>100 CHAMBER DRIVE PO BOX 224</AddressLine1Txt>
+          <CityNm>CHILLICOTHE</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>456010224</ZIPCd>
+        </USAddress>
+        <RecipientEIN>311012711</RecipientEIN>
+        <CashGrantAmt>25000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>VOSS INDUSTRIES LLC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>2168 W 25TH STREET</AddressLine1Txt>
+          <CityNm>CLEVELAND</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>441134172</ZIPCd>
+        </USAddress>
+        <RecipientEIN>340891000</RecipientEIN>
+        <CashGrantAmt>26129</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>WASHINGTON COUNTY CAREER CENTER</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>21740 STATE ROUTE 676</AddressLine1Txt>
+          <CityNm>MARIETTA</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45750</ZIPCd>
+        </USAddress>
+        <RecipientEIN>310735812</RecipientEIN>
+        <CashGrantAmt>259877</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>WAYNE TRAIL TECHNOLOGIES INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>203 EAST PARK STREET</AddressLine1Txt>
+          <CityNm>FORT LORAMIE</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>45845</ZIPCd>
+        </USAddress>
+        <RecipientEIN>340922427</RecipientEIN>
+        <CashGrantAmt>100000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>WF MANUFACTURING LTD</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>1785 WALL ROAD</AddressLine1Txt>
+          <CityNm>WADSWORTH</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>44281</ZIPCd>
+        </USAddress>
+        <RecipientEIN>814549773</RecipientEIN>
+        <CashGrantAmt>125000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>ZIMMER SURGICAL INC</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>6001 ROYALTON ROAD</AddressLine1Txt>
+          <CityNm>BROADVIEW HEIGHTS</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>44147</ZIPCd>
+        </USAddress>
+        <RecipientEIN>810550216</RecipientEIN>
+        <CashGrantAmt>250000</CashGrantAmt>
+        <PurposeOfGrantTxt>ECONOMIC DEVELOPMENT</PurposeOfGrantTxt>
+      </RecipientTable>
+      <Total501c3OrgCnt>4</Total501c3OrgCnt>
+      <TotalOtherOrgCnt>172</TotalOtherOrgCnt>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>PART I, LINE 2:</FormAndLineReferenceDesc>
+        <ExplanationTxt>JOBSOHIO GRANTEES RECEIVE GRANT FUNDS ONLY ON A REIMBURSEMENT BASIS. GRANTEES MUST SUBMIT A REQUEST FOR REIMBURSEMENT AND SUPPORTING DOCUMENTATION FOR REVIEW AND APPROVAL BY JOBSOHIO. GRANTEES MUST MAINTAIN RECORDS SUPPORTING CLAIMED COSTS AND ALL REQUESTS FOR REIMBURSEMENT ARE SUBJECT TO AUDIT BY JOBSOHIO. REQUESTS FOR REIMBURSEMENT MUST BE CERTIFIED BY AUTHORIZED OFFICERS OF GRANTEE. DOCUMENTATION IN SUPPORT OF CLAIMED COSTS MUST INCLUDE AGREEMENTS, PAID INVOICES, VOUCHERS, PAID RECEIPTS, AND OTHER DOCUMENTATION AS NEEDED. PROGRAM DISBURSEMENTS ARE REVIEWED AT MULTIPLE LEVELS WITHIN JOBSOHIO. GRANTEES ARE REQUIRED TO SUBMIT AN ANNUAL REPORT TO THE JOBSOHIO DIRECTOR OF COMPLIANCE. ALL SUCH REPORTS ARE REVIEWED BY THE DIRECTOR OF COMPLIANCE, WHO PREPARES A REPORT ON PROJECT PERFORMANCE. UNDERPERFORMING PROJECTS MAY BE THE SUBJECT OF ACTION AT THE RECOMMENDATION OF THE DIRECTOR OF COMPLIANCE BY THE JOBSOHIO COMPLIANCE TEAM, AND FINAL DETERMINATION BY THE JOBSOHIO PRESIDENT/CIO.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>PART II:</FormAndLineReferenceDesc>
+        <ExplanationTxt>THE STATEMENT OF FUNCTIONAL EXPENSES IS PREPARED ON THE ACCRUAL BASIS OF ACCOUNTING AND SCHEDULE I IS PREPARED ON THE CASH BASIS OF ACCOUNTING. ACCORDINGLY, A VARIANCE EXISTS BETWEEN THE AMOUNTS REPORTED FOR GRANT EXPENSE ON EACH SCHEDULE.</ExplanationTxt>
+      </SupplementalInformationDetail>
+    </IRS990ScheduleI>
+    <IRS990ScheduleJ documentId="RetDoc1042400001">
+      <CompensationCommitteeInd>X</CompensationCommitteeInd>
+      <IndependentConsultantInd>X</IndependentConsultantInd>
+      <CompensationSurveyInd>X</CompensationSurveyInd>
+      <BoardOrCommitteeApprovalInd>X</BoardOrCommitteeApprovalInd>
+      <SeverancePaymentInd>0</SeverancePaymentInd>
+      <SupplementalNonqualRtrPlanInd>0</SupplementalNonqualRtrPlanInd>
+      <EquityBasedCompArrngmInd>0</EquityBasedCompArrngmInd>
+      <CompBasedOnRevenueOfFlngOrgInd>0</CompBasedOnRevenueOfFlngOrgInd>
+      <CompBsdOnRevRelatedOrgsInd>0</CompBsdOnRevRelatedOrgsInd>
+      <CompBsdNetEarnsFlngOrgInd>0</CompBsdNetEarnsFlngOrgInd>
+      <CompBsdNetEarnsRltdOrgsInd>0</CompBsdNetEarnsRltdOrgsInd>
+      <AnyNonFixedPaymentsInd>0</AnyNonFixedPaymentsInd>
+      <InitialContractExceptionInd>0</InitialContractExceptionInd>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>JOHN MINOR</PersonNm>
+        <TitleTxt>PRESIDENT &amp; CIO (THRU 3/19)</TitleTxt>
+        <BaseCompensationFilingOrgAmt>391008</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>230000</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>315</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>11000</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>18472</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>650795</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>KEVIN A GIANGOLA</PersonNm>
+        <TitleTxt>CHIEF FINANCIAL OFFICER (THRU 5/19)</TitleTxt>
+        <BaseCompensationFilingOrgAmt>193087</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>47000</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>400</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>9692</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>8982</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>259161</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>AARON PITTS</PersonNm>
+        <TitleTxt>SENIOR MANAGING DIRECTOR</TitleTxt>
+        <BaseCompensationFilingOrgAmt>246473</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>95200</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>483</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>11000</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>26470</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>379626</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>ANDREW DEYE</PersonNm>
+        <TitleTxt>MANAGING DIRECTOR</TitleTxt>
+        <BaseCompensationFilingOrgAmt>191165</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>50200</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>154</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>9737</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>9325</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>260581</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>DANA SAUCIER</PersonNm>
+        <TitleTxt>VP, HEAD OF ECONOMIC DEV.</TitleTxt>
+        <BaseCompensationFilingOrgAmt>267500</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>85000</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>600</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>11000</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>2850</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>366950</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>DONELL GRUBBS</PersonNm>
+        <TitleTxt>GENERAL COUNSEL</TitleTxt>
+        <BaseCompensationFilingOrgAmt>187242</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>50200</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>721</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>9633</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>10201</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>257997</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>GLENN RICHARDSON</PersonNm>
+        <TitleTxt>MANAGING DIRECTOR</TitleTxt>
+        <BaseCompensationFilingOrgAmt>217298</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>57300</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>1386</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>11000</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>26404</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>313388</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>KRISTI TANNER</PersonNm>
+        <TitleTxt>SENIOR MANAGING DIRECTOR</TitleTxt>
+        <BaseCompensationFilingOrgAmt>245097</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>59200</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>566</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>0</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>26470</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>331333</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>KRISTINA CLOUSE</PersonNm>
+        <TitleTxt>EXECUTIVE DIR. OF OPERATIONS</TitleTxt>
+        <BaseCompensationFilingOrgAmt>193617</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>60200</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>181</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>10446</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>26218</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>290662</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>TED GRIFFITH</PersonNm>
+        <TitleTxt>MANAGING DIRECTOR</TitleTxt>
+        <BaseCompensationFilingOrgAmt>217143</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>60200</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>483</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>11000</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>25223</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>314049</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>VALENTINA ISAKINA</PersonNm>
+        <TitleTxt>MANAGING DIRECTOR</TitleTxt>
+        <BaseCompensationFilingOrgAmt>211376</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>46000</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>315</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>0</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>26393</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>284084</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>LEE CRUME</PersonNm>
+        <TitleTxt>DIRECTOR OF SALES</TitleTxt>
+        <BaseCompensationFilingOrgAmt>166907</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>24200</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>331</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>7787</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>14816</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>214041</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>MATTHEW CYBULSKI</PersonNm>
+        <TitleTxt>SECTOR DIRECTOR</TitleTxt>
+        <BaseCompensationFilingOrgAmt>148337</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>22700</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>113</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>7106</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>8701</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>186957</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>CHERYL HAY</PersonNm>
+        <TitleTxt>DIRECTOR, TALENT ACQUISITION</TitleTxt>
+        <BaseCompensationFilingOrgAmt>156682</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>22000</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>572</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>0</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>18742</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>197996</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>RENAE SCOTT</PersonNm>
+        <TitleTxt>DIRECTOR, MARKETING &amp; COMM.</TitleTxt>
+        <BaseCompensationFilingOrgAmt>172223</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>23200</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>151</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>7969</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>9227</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>212770</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>JULIE BATTLES</PersonNm>
+        <TitleTxt>CONTROLLER</TitleTxt>
+        <BaseCompensationFilingOrgAmt>151865</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>22000</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>122</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>6960</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>2277</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>183224</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+    </IRS990ScheduleJ>
+    <IRS990ScheduleO documentId="RetDoc1044400001">
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>FORM 990, PART VI, SECTION A, LINE 7A</FormAndLineReferenceDesc>
+        <ExplanationTxt>THE GOVERNING BODY IS APPOINTED BY THE GOVERNOR ACCORDING TO OHIO STATE LAW, CHAPTER 187, REVISED CODE.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>FORM 990, PART VI, SECTION B, LINE 11B</FormAndLineReferenceDesc>
+        <ExplanationTxt>THE FORM 990 IS SUBMITTED TO THE CHIEF FINANCIAL OFFICER FOR HIS REVIEW. SUBSEQUENT TO HIS APPROVAL, IT IS SUBMITTED TO THE PRESIDENT AND CHIEF INVESTMENT OFFICER FOR REVIEW AND APPROVAL. COPIES OF THE FORM 990 ARE PROVIDED TO THE BOARD OF DIRECTORS FOR REVIEW PRIOR TO FILING THE RETURN. ADDITIONALLY, JOBSOHIO EMPLOYS DELOITTE TO REVIEW THE RETURN AND PROVIDE GUIDANCE IN IDENTIFYING ERRORS IN THE RETURN SUBMISSION AND FEEDBACK ON QUANTITATIVE AND QUALITATIVE RESPONSES.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>FORM 990, PART VI, SECTION B, LINE 12C</FormAndLineReferenceDesc>
+        <ExplanationTxt>JOBSOHIO'S CONFLICTS OF INTEREST POLICY IS INTENDED TO PROTECT THE CORPORATION'S INTEREST WHEN IT IS CONSIDERING A TRANSACTION OR ARRANGEMENT THAT MIGHT BENEFIT THE PRIVATE INTEREST OF A DIRECTOR OR OFFICER OR EMPLOYEE OF THE CORPORATION OR MIGHT DIRECTLY BENEFIT THAT INDIVIDUAL IN OTHER THAN A DE MINIMIS MANNER. THIS POLICY SUPPLEMENTS, BUT DOES NOT REPLACE, OHIO LAWS GOVERNING CONFLICTS OF INTEREST APPLICABLE TO THE CORPORATION. UNDER JOBSOHIO'S CONFLICTS OF INTEREST POLICY, DIRECTORS, OFFICERS AND EMPLOYEES OF THE CORPORATION ARE CONSIDERED TO BE INTERESTED INDIVIDUALS WHERE THEY HAVE, DIRECTLY OR INDIRECTLY, THROUGH BUSINESS, INVESTMENT, OR FAMILY: (A) A NON DE MINIMIS OWNERSHIP OR INVESTMENT INTEREST IN ANY PERSON WITH WHICH THE CORPORATION HAS A TRANSACTION OR ARRANGEMENT; (B) A COMPENSATION ARRANGEMENT WITH THE CORPORATION OR ANY PERSON WITH WHICH THE CORPORATION HAS A TRANSACTION OR ARRANGEMENT; OR (C) A NON DE MINIMIS POTENTIAL OWNERSHIP OR INVESTMENT INTEREST IN, OR POTENTIAL COMPENSATION ARRANGEMENT WITH, ANY PERSON WITH WHICH THE CORPORATION IS NEGOTIATING A TRANSACTION OR ARRANGEMENT. COMPENSATION INCLUDES DIRECT OR INDIRECT REMUNERATION AS WELL AS MATERIAL GIFTS OR FAVORS. IN CONNECTION WITH ANY ACTUAL OR POSSIBLE CONFLICTS OF INTEREST WITH RESPECT TO A SPECIFIC TRANSACTION OR ARRANGEMENT BETWEEN AN INTERESTED INDIVIDUAL AND THE CORPORATION, AN INTERESTED INDIVIDUAL MUST DISCLOSE THE EXISTENCE AND NATURE OF THE FINANCIAL INTEREST AND ALL MATERIAL FACTS TO THE DIRECTOR OF COMPLIANCE, BOARD, AND MEMBERS OF ANY COMMITTEES OR INDIVIDUALS WITH BOARD-DELEGATED POWERS THAT ARE CONSIDERING THE PROPOSED TRANSACTION OR ARRANGEMENT. AFTER DISCLOSURE OF THE FINANCIAL INTEREST AND ALL MATERIAL FACTS AND ANY DISCUSSION WITH THE INTERESTED INDIVIDUAL, THE INTERESTED INDIVIDUAL MUST LEAVE THE BOARD OR OTHER MEETING WHILE A DETERMINATION IS MADE AS TO WHETHER A CONFLICT OF INTEREST EXISTS. THE BOARD SHALL DECIDE IF A CONFLICT OF INTEREST EXISTS. IF THE BOARD DECIDES BY A MAJORITY VOTE OF THE DISINTERESTED DIRECTORS THAT A CONFLICT EXISTS, THE DISINTERESTED DIRECTORS MUST DETERMINE WHETHER THE CORPORATION CAN OBTAIN, WITH REASONABLE EFFORTS, A MORE ADVANTAGEOUS TRANSACTION OR ARRANGEMENT FROM A PERSON THAT WOULD NOT GIVE RISE TO A CONFLICT OF INTEREST. IF A MORE ADVANTAGEOUS TRANSACTION OR ARRANGEMENT IS NOT REASONABLY AVAILABLE UNDER CIRCUMSTANCES THAT WOULD NOT GIVE RISE TO A CONFLICT OF INTEREST, THE BOARD MUST DETERMINE BY A MAJORITY VOTE OF THE DISINTERESTED DIRECTORS WHETHER THE TRANSACTION OR ARRANGEMENT IS IN THE CORPORATION'S BEST INTEREST, FOR ITS OWN BENEFIT, AND WHETHER THE TRANSACTION OR ARRANGEMENT IS FAIR AND REASONABLE. IF THE BOARD HAS REASONABLE CAUSE TO BELIEVE THAT A DIRECTOR OR OFFICER HAS FAILED TO DISCLOSE AN ACTUAL OR POSSIBLE CONFLICT OF INTEREST, IT WILL INFORM THE INDIVIDUAL OF THE BASIS FOR SUCH BELIEF AND PROVIDE THE INDIVIDUAL WITH AN OPPORTUNITY TO EXPLAIN THE ALLEGED FAILURE TO DISCLOSE. IF, AFTER HEARING THE RESPONSE OF THE DIRECTOR OR OFFICER AND MAKING SUCH FURTHER INVESTIGATION AS MAY BE WARRANTED IN THE CIRCUMSTANCES, THE BOARD DETERMINES THAT THE DIRECTOR OR OFFICER HAS IN FACT FAILED TO DISCLOSE AN ACTUAL OR POSSIBLE CONFLICT OF INTEREST, IT MUST TAKE APPROPRIATE DISCIPLINARY AND CORRECTIVE ACTION, INCLUDING, WITHOUT LIMITATION, INITIATING AN ACTION FOR BREACH OF FIDUCIARY DUTY. THE MINUTES OF THE BOARD MEETINGS CONSIDERING POSSIBLE OR ACTUAL CONFLICTS OF INTEREST SHALL BE KEPT AND SHALL CONTAIN BOTH OF THE FOLLOWING: (A) THE NAMES OF THE INDIVIDUALS WHO DISCLOSED OR OTHERWISE WERE FOUND TO HAVE A FINANCIAL INTEREST IN CONNECTION WITH AN ACTUAL OR POSSIBLE CONFLICT OF INTEREST, THE NATURE OF THE FINANCIAL INTEREST, ANY ACTION TAKEN TO DETERMINE WHETHER A CONFLICT OF INTEREST WAS PRESENT, AND THE BOARD'S DECISION AS TO WHETHER A CONFLICT OF INTEREST EXISTED; AND (B) THE NAMES OF THE INDIVIDUALS WHO WERE PRESENT FOR DISCUSSIONS AND VOTES RELATING TO THE TRANSACTION OR ARRANGEMENT, THE CONTENT OF THE DISCUSSION, INCLUDING ANY ALTERNATIVES TO THE PROPOSED TRANSACTION OR ARRANGEMENT, AND A RECORD OF ANY VOTES TAKEN IN CONNECTION THEREWITH. IN ADDITION TO THE FOREGOING, ANY OFFICER OR EMPLOYEE OF THE CORPORATION WHOSE RESPONSIBILITY INCLUDES COMPENSATION MATTERS AND WHO RECEIVES COMPENSATION DIRECTLY OR INDIRECTLY FROM THE CORPORATION IS PRECLUDED FROM VOTING OR PROVIDING INFORMATION TO ANY COMPENSATION COMMITTEE ON MATTERS PERTAINING TO THAT INDIVIDUAL'S COMPENSATION. DIRECTORS MAY NOT SOLICIT OR ACCEPT EMPLOYMENT WITH ANY PERSON THAT RECEIVES OR HAS RECEIVED AN INCENTIVE OR OTHER ASSISTANCE AS A RESULT OF A DECISION THAT SUCH DIRECTOR PARTICIPATED IN AS A DIRECTOR OF THE CORPORATION. EACH DIRECTOR, OFFICER AND EMPLOYEE IS REQUIRED TO ANNUALLY SIGN A STATEMENT AFFIRMING THAT SUCH INDIVIDUAL: (A) HAS RECEIVED A COPY OF THE POLICY; (B) HAS READ AND UNDERSTANDS THE POLICY; (C) HAS AGREED TO COMPLY WITH THE POLICY; AND (D) UNDERSTANDS THE CORPORATION'S STATUTORY PURPOSE AND THAT IT IS A NONPROFIT CORPORATION. TO ENSURE THAT THE CORPORATION OPERATES IN A MANNER CONSISTENT WITH ITS STATUTORY AND CHARITABLE PURPOSES OR CONTRACTUAL OBLIGATIONS AND THAT IT DOES NOT ENGAGE IN ACTIVITIES THAT COULD JEOPARDIZE THE STATUS OF THE CORPORATION AS AN ORGANIZATION EXEMPT FROM FEDERAL INCOME TAX, PERIODIC REVIEWS OF ITS OPERATIONS ARE PERFORMED. THE PERIODIC REVIEWS, AT A MINIMUM, DETERMINE ALL OF THE FOLLOWING: (A) WHETHER COMPENSATION ARRANGEMENTS AND BENEFITS ARE REASONABLE, BASED UPON COMPETENT SURVEY INFORMATION, AND ARE THE RESULT OF ARM'S LENGTH BARGAINING; (B) WHETHER THE CORPORATION'S OPERATIONS ARE CONSISTENT WITH THE ARTICLES, THIS CODE OF REGULATIONS AND CONTRACTUAL OBLIGATIONS, AND ARE PROPERLY DOCUMENTED; AND (C) WHETHER TRANSACTIONS ARE FAIR TO THE CORPORATION, REFLECT REASONABLE INVESTMENT OR PAYMENTS FOR GOODS AND SERVICES, FURTHER THE CORPORATION'S STATUTORY AND CHARITABLE PURPOSES OR CONTRACTUAL OBLIGATIONS, AND DO NOT RESULT IN DIRECT PRIVATE BENEFIT TO DIRECTORS, OFFICERS OR OTHER PERSONS, IN OTHER THAN A DE MINIMIS MANNER. A MAJORITY OF THE DISINTERESTED DIRECTORS MAY REMOVE ANY DIRECTOR FOR MISCONDUCT. MISCONDUCT INCLUDES ANY BEHAVIOR BY A DIRECTOR THAT INDICATES THE DIRECTOR HAS FAILED TO PERFORM HIS OR HER FIDUCIARY DUTIES TO THE CORPORATION; TO COMPLY WITH THE REQUIREMENTS OF THE ARTICLES, THIS CODE OF REGULATIONS, OR ANY CORPORATE CONFLICTS OF INTEREST OR ETHICAL POLICIES; TO MEET HIS OR HER OBLIGATIONS AS A DIRECTOR UNDER OHIO LAW; HAS BEEN CONVICTED OF A FELONY; OR HAS OTHERWISE ENGAGED, THROUGH ACT OR OMISSION, IN SIMILAR BEHAVIOR THAT A MAJORITY OF THE DISINTERESTED DIRECTORS DETERMINES WARRANTS REMOVAL FOR MISCONDUCT. A MAJORITY OF THE DISINTERESTED DIRECTORS HAVE SOLE AUTHORITY TO DETERMINE WHETHER A DIRECTOR SHOULD BE REMOVED FROM OFFICE ON THE BASIS OF MISCONDUCT. EFFECTIVE OCTOBER 1, 2013, JOBSOHIO'S BOARD OF DIRECTORS CREATED AN INDEPENDENT REVIEW PANEL TO, AMONG OTHER THINGS, ASSESS THE ADEQUACY OF JOBSOHIO'S REVIEW PROCESS REGARDING POTENTIAL CONFLICTS OF INTEREST. THE DIRECTOR OF COMPLIANCE HAS COMPILED A LIST OF FINANCIAL AND FIDUCIARY INTERESTS FROM THE FINANCIAL DISCLOSURE STATEMENTS THAT ALL JOBSOHIO BOARD OF DIRECTORS AND NUMEROUS JOBSOHIO STAFF MEMBERS MUST FILL OUT AND SUBMIT TO THE OHIO ETHICS COMMISSION. IN THE FALL OF 2013, JOBSOHIO BUILT INTO ITS CUSTOMER RELATIONSHIP MANAGEMENT SOFTWARE SYSTEM A ROBUST POTENTIAL CONFLICT IDENTIFICATION SYSTEM (PCIS) THAT AUTOMATICALLY SEARCHES FOR MATCHES OF DISCLOSED FINANCIAL AND FIDUCIARY INTERESTS OF BOARD MEMBERS AND EMPLOYEES WITH ANY COMPANY THAT SEEKS AN ECONOMIC DEVELOPMENT INCENTIVE FROM JOBSOHIO. AT THREE POINTS IN THE PROJECT DEVELOPMENT PROCESS, THE PCIS ALERTS JOBSOHIO'S GENERAL COUNSEL OF ANY POTENTIAL CONFLICTS AND REQUIRES THOSE POTENTIAL CONFLICTS OF INTEREST TO BE CLEARED OR MANAGED BEFORE THE PROJECT MAY PROCEED TO APPROVAL. IN TANDEM WITH THE AUTOMATED PCIS PROCESS AND TWICE A WEEK, THE DIRECTOR OF COMPLIANCE PERFORMS AN INDEPENDENT REVIEW OF THE AGENDAS FOR THE PROJECT TEAM MEETINGS TO CHECK FOR POTENTIAL CONFLICTS OF INTEREST IN ADVANCE OF THOSE MEETINGS.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>FORM 990, PART VI, SECTION B, LINE 15</FormAndLineReferenceDesc>
+        <ExplanationTxt>PURSUANT TO ARTICLE 5.1 (A) OF THE JOBSOHIO ARTICLES OF INCORPORATION, THE JOBSOHIO BOARD OF DIRECTORS (BOARD) IS TO APPROVE BY RESOLUTION THE COMPENSATION OF THE CHIEF INVESTMENT OFFICER. PURSUANT TO ARTICLE 5.1 (B) THEREOF, THE BOARD IS TO APPROVE A COMPENSATION PLAN FOR THE CORPORATION. UNDER ARTICLE 6.4 OF THE JOBSOHIO ARTICLES OF INCORPORATION, A COMPENSATION COMMITTEE (COMMITTEE) IS ELECTED BY THE BOARD. THE COMMITTEE IS RESPONSIBLE FOR REVIEWING ANY PLAN FOR THE COMPENSATION OF THE CORPORATION'S EMPLOYEES RECOMMENDED BY THE CHIEF INVESTMENT OFFICER AND FOR MAKING RECOMMENDATIONS REGARDING ANY SUCH PLAN OF COMPENSATION TO THE BOARD FOR THEIR ACTION. IN ADDITION, THE COMMITTEE IS TO REVIEW COMPENSATION ARRANGEMENTS WITH BOTH EMPLOYEES AND INDEPENDENT CONTRACTORS OF THE CORPORATION. DURING THE TAX YEAR THE COMPENSATION COMMITTEE RETAINED THE SERVICES OF A COMPENSATION CONSULTANT AND DEVELOPED AND REVIEWED A COMPENSATION PLAN FOR THE CORPORATION, EXCLUDING THE PRESIDENT/CHIEF INVESTMENT OFFICER. THE COMMITTEE WAS PROVIDED WITH AND CONSIDERED SUPPORTING DATA AND DOCUMENTATION, INCLUDING COMPARISONS, AND APPROVED THE COMPENSATION PLAN. THE COMMITTEE SEPARATELY REVIEWED AND APPROVED A PROPOSAL FOR THE COMPENSATION OF THE PRESIDENT/CHIEF INVESTMENT OFFICER. OFFICERS AND EMPLOYEES THAT WERE THE SUBJECT OF THE COMPENSATION DETERMINATIONS, INCLUDING THE PRESIDENT/CHIEF INVESTMENT OFFICER, WERE NOT PRESENT FOR THE DISCUSSION AND VOTING ON THEIR COMPENSATION. THE ACTIONS OF THE COMPENSATION COMMITTEE WERE CONTEMPORANEOUSLY DOCUMENTED IN COMMITTEE MINUTES. THE ACTIONS OF THE COMPENSATION COMMITTEE WERE FORWARDED TO THE BOARD OF DIRECTORS FOR APPROVAL OF THAT BODY.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>FORM 990, PART VI, SECTION C, LINE 19</FormAndLineReferenceDesc>
+        <ExplanationTxt>THE CORPORATION'S ARTICLES OF INCORPORATION ARE FILED WITH THE OFFICE OF THE OHIO SECRETARY OF STATE AND ARE A MATTER OF PUBLIC RECORD AVAILABLE ONLINE. THE CORPORATION'S CONFLICT OF INTEREST POLICY AND AUDITED FINANCIAL STATEMENTS ARE FILED WITH THE OHIO DEVELOPMENT SERVICES AGENCY AND ARE PUBLIC RECORDS AVAILABLE TO THE GENERAL PUBLIC UPON REQUEST. THE FOLLOWING DOCUMENTS ARE AVAILABLE ON THE JOBSOHIO WEBSITE: ARTICLES OF INCORPORATION, CODE OF REGULATIONS, CONFLICTS OF INTEREST POLICY, STANDARDS OF CONDUCT POLICY, EMPLOYEE GIFT POLICY, ETHICAL ANNUAL CONDUCT PLEDGE, ANNUAL ETHICS TRAINING, ANNUAL AUDITED FINANCIAL STATEMENTS, QUARTERLY REVIEWED FINANCIAL STATEMENTS, AND IRS FORM 990.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>FORM 990, PART IX, LINE 24B:</FormAndLineReferenceDesc>
+        <ExplanationTxt>NETWORK PARTNER SERVICE FEES ARE AMOUNTS PAID TO JOBSOHIO REGIONAL PARTNERS IN SUPPORT OF ACHIEVING THE MISSION TO PROMOTE ECONOMIC DEVELOPMENT IN THE STATE. THE SIX REGIONAL PARTNERS WITHIN THIS JOBSOHIO NETWORK FOCUS THEIR EFFORTS ON ECONOMIC DEVELOPMENT WITHIN THEIR AREA.</ExplanationTxt>
+      </SupplementalInformationDetail>
+    </IRS990ScheduleO>
+    <IRS990ScheduleR documentId="RetDoc1043400001">
+      <IdRelatedTaxExemptOrgGrp>
+        <DisregardedEntityName>
+          <BusinessNameLine1Txt>JOBSOHIO BEVERAGE SYSTEM</BusinessNameLine1Txt>
+        </DisregardedEntityName>
+        <USAddress>
+          <AddressLine1Txt>41 SOUTH HIGH STREET SUITE 1500</AddressLine1Txt>
+          <CityNm>COLUMBUS</CityNm>
+          <StateAbbreviationCd>OH</StateAbbreviationCd>
+          <ZIPCd>43215</ZIPCd>
+        </USAddress>
+        <EIN>201255734</EIN>
+        <PrimaryActivitiesTxt>ECONOMIC DEVELOPMENT</PrimaryActivitiesTxt>
+        <LegalDomicileStateCd>OH</LegalDomicileStateCd>
+        <ExemptCodeSectionTxt>501(C)(3)</ExemptCodeSectionTxt>
+        <PublicCharityStatusTxt>10</PublicCharityStatusTxt>
+        <DirectControllingEntityName>
+          <BusinessNameLine1Txt>JOBSOHIO</BusinessNameLine1Txt>
+        </DirectControllingEntityName>
+        <ControlledOrganizationInd>1</ControlledOrganizationInd>
+      </IdRelatedTaxExemptOrgGrp>
+      <ReceiptOfIntAnntsRntsRyltsInd>0</ReceiptOfIntAnntsRntsRyltsInd>
+      <GiftGrntOrCapContriToOthOrgInd>0</GiftGrntOrCapContriToOthOrgInd>
+      <GiftGrntCapContriFromOthOrgInd>1</GiftGrntCapContriFromOthOrgInd>
+      <LoansOrGuaranteesToOtherOrgInd>0</LoansOrGuaranteesToOtherOrgInd>
+      <LoansOrGuaranteesFromOthOrgInd>0</LoansOrGuaranteesFromOthOrgInd>
+      <DivRelatedOrganizationInd>0</DivRelatedOrganizationInd>
+      <AssetSaleToOtherOrgInd>0</AssetSaleToOtherOrgInd>
+      <AssetPurchaseFromOtherOrgInd>0</AssetPurchaseFromOtherOrgInd>
+      <AssetExchangeInd>0</AssetExchangeInd>
+      <RentalOfFacilitiesToOthOrgInd>1</RentalOfFacilitiesToOthOrgInd>
+      <RentalOfFcltsFromOthOrgInd>0</RentalOfFcltsFromOthOrgInd>
+      <PerformOfServicesForOthOrgInd>1</PerformOfServicesForOthOrgInd>
+      <PerformOfServicesByOtherOrgInd>0</PerformOfServicesByOtherOrgInd>
+      <SharingOfFacilitiesInd>1</SharingOfFacilitiesInd>
+      <PaidEmployeesSharingInd>1</PaidEmployeesSharingInd>
+      <ReimbursementPaidToOtherOrgInd>0</ReimbursementPaidToOtherOrgInd>
+      <ReimbursementPaidByOtherOrgInd>1</ReimbursementPaidByOtherOrgInd>
+      <TransferToOtherOrgInd>0</TransferToOtherOrgInd>
+      <TransferFromOtherOrgInd>0</TransferFromOtherOrgInd>
+      <TransactionsRelatedOrgGrp>
+        <OtherOrganizationName>
+          <BusinessNameLine1Txt>JOBSOHIO BEVERAGE SYSTEM</BusinessNameLine1Txt>
+        </OtherOrganizationName>
+        <TransactionTypeTxt>C</TransactionTypeTxt>
+        <InvolvedAmt>350000000</InvolvedAmt>
+        <MethodOfAmountDeterminationTxt>CASH</MethodOfAmountDeterminationTxt>
+      </TransactionsRelatedOrgGrp>
+      <TransactionsRelatedOrgGrp>
+        <OtherOrganizationName>
+          <BusinessNameLine1Txt>JOBSOHIO BEVERAGE SYSTEM</BusinessNameLine1Txt>
+        </OtherOrganizationName>
+        <TransactionTypeTxt>L</TransactionTypeTxt>
+        <InvolvedAmt>1090483</InvolvedAmt>
+        <MethodOfAmountDeterminationTxt>COST</MethodOfAmountDeterminationTxt>
+      </TransactionsRelatedOrgGrp>
+      <TransactionsRelatedOrgGrp>
+        <OtherOrganizationName>
+          <BusinessNameLine1Txt>JOBSOHIO BEVERAGE SYSTEM</BusinessNameLine1Txt>
+        </OtherOrganizationName>
+        <TransactionTypeTxt>Q</TransactionTypeTxt>
+        <InvolvedAmt>445380</InvolvedAmt>
+        <MethodOfAmountDeterminationTxt>COST</MethodOfAmountDeterminationTxt>
+      </TransactionsRelatedOrgGrp>
+    </IRS990ScheduleR>
+  </ReturnData>
+</Return>

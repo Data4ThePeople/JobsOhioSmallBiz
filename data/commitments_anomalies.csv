@@ -1,0 +1,34 @@
+file,page,issue,text
+2019-monthly-metrics.pdf,8,no program value,"{'company': 'Wagenbrenner Development, Inc.', 'industry': 'Other', 'region': 'Central', 'county': 'Franklin', 'jobs_created': '0', 'payroll': '-', 'jobs_retained': '0', 'investment': '-', 'prog:Revitalization Grant Phase II': '$137,000*'}"
+2021-monthly_metrics_vc_.pdf,8,no program value,"{'company': 'CW Partners, LLC', 'industry': 'Other', 'region': 'Central', 'county': 'Franklin', 'jobs_created': '0', 'payroll': '$0', 'jobs_retained': '0', 'investment': '$12,621,744', 'prog:JobsOhio Spec Development Grant-OSIP*': '$500,000*'}"
+2021-monthly_metrics_vc_.pdf,8,no program value,"{'company': 'Western Reserve Port Authority', 'industry': 'Military and Federal', 'region': 'Northeast', 'county': 'Trumbull', 'jobs_created': '0', 'payroll': '$0', 'jobs_retained': '0', 'investment': '$8,690,951', 'prog:JobsOhio Spec Development Grant-OSIP*': '$250,000*'}"
+2022-monthly_metrics_-_vc.pdf,10,no program value,"{'company': 'Zanesville Vibrant Community', 'county': 'Muskingum', 'region': 'Southeast', 'industry': 'TBD', 'jobs_created': '37', 'payroll': '$1,162,950', 'jobs_retained': 'TBD', 'investment': '$1,104,312', 'program_type': 'JobsOhio Vibrant Community Grant'}"
+2022-monthly_metrics_-_vc.pdf,11,no company,"{'program_type': 'JobsOhio Workforce Grant', 'program_value': '$300,000'}"
+2022-monthly_metrics_-_vc.pdf,12,no company,"{'program_value': '$404,312'}"
+2023_monthly_metrics-vc.pdf,1,no company,"{'program_type': 'JOW-JobsOhio Workforce', 'program_value': '$10,000,000'}"
+2023_monthly_metrics-vc.pdf,1,no company,"{'program_type': 'JOW-JobsOhio Workforce', 'program_value': '$125,000'}"
+2023_monthly_metrics-vc.pdf,3,no program value,"{'company': 'Corporation ValuTex Reinforcements, Inc.', 'county': 'Fayette', 'industry': 'Advanced Manufacturing', 'investment': '$3,300,000 JobsOhio', 'program_type': 'Economic Development Grant'}"
+2023_monthly_metrics-vc.pdf,3,no company,"{'region': 'Western', 'jobs_created': '15', 'payroll': '$624,000', 'program_value': '$45,000'}"
+2023_monthly_metrics-vc.pdf,3,no program value,"{'jobs_created': '12', 'payroll': '$627,677'}"
+2023_monthly_metrics-vc.pdf,6,no company,"{'county': 'Hamilton', 'region': 'Southwest', 'industry': 'Advanced Manufacturing', 'jobs_created': '1155', 'payroll': '$1,435,000', 'investment': '$15,000,000', 'program_type': 'JobsOhio Economic Development Grant', 'program_value': '$100,000'}"
+2023_monthly_metrics-vc.pdf,6,no program value,"{'company': 'Camden Vibrant Community', 'county': 'Preble', 'region': 'Western', 'industry': 'Other', 'jobs_created': '30', 'payroll': '$1,500,000', 'jobs_retained': '14', 'investment': '$2,294,527', 'program_type': 'JobsOhio Vibrant Community Grant'}"
+2023_monthly_metrics-vc.pdf,6,no company,"{'program_value': '$750,000'}"
+2023_monthly_metrics-vc.pdf,6,no program value,"{'company': 'Ottawa 1 a - Deford Vibrant Community', 'county': 'Putnam', 'region': 'tNorthwest', 'industry': 'Other', 'jobs_created': '6', 'payroll': '$250,000', 'jobs_retained': '21', 'investment': '$1,850,010'}"
+2023_monthly_metrics-vc.pdf,6,no company,"{'program_type': 'JobsOhio Vibrant Community Grant', 'program_value': '$500,000'}"
+2023_monthly_metrics-vc.pdf,6,no program value,"{'company': 'Ottawa 1 b - DuMont Vibrant Community', 'county': 'Putnam', 'region': 'Northwest', 'industry': 'Other', 'jobs_created': '16', 'payroll': '$873,333', 'jobs_retained': '23', 'investment': '$2,890,100'}"
+2023_monthly_metrics-vc.pdf,6,no company,"{'program_type': 'JobsOhio Vibrant Community Grant', 'program_value': '$500,000'}"
+2023_monthly_metrics-vc.pdf,6,no program value,"{'company': 'Hillsboro Vibrant Community', 'county': 'Highland', 'region': 'Southwest', 'industry': 'Other', 'jobs_created': '5', 'payroll': '$153,688', 'jobs_retained': '6', 'investment': '$1,038,000', 'program_type': 'JobsOhio Vibrant Community Grant'}"
+2023_monthly_metrics-vc.pdf,6,no company,"{'program_value': '$415,200'}"
+jo_monthly_metrics_2016.pdf,1,"font encoding: space read as ['!', '&']; hyphens in names may read as 0 or Y",
+jo_monthly_metrics_2016.pdf,2,"font encoding: space read as ['!', '&']; hyphens in names may read as 0 or Y",
+jo_monthly_metrics_2016.pdf,3,font encoding: space read as ['&']; hyphens in names may read as 0 or Y,
+jo_monthly_metrics_2016.pdf,4,"font encoding: space read as ['!', '&']; hyphens in names may read as 0 or Y",
+jo_monthly_metrics_2016.pdf,5,"font encoding: space read as ['!', '&']; hyphens in names may read as 0 or Y",
+jo_monthly_metrics_2016.pdf,7,"font encoding: space read as ['!', '&']; hyphens in names may read as 0 or Y",
+jo_monthly_metrics_2016.pdf,9,"font encoding: space read as ['!', '&']; hyphens in names may read as 0 or Y",
+jo_monthly_metrics_2016.pdf,10,"font encoding: space read as ['!', '&']; hyphens in names may read as 0 or Y",
+jo_monthly_metrics_2016.pdf,11,font encoding: space read as ['!']; hyphens in names may read as 0 or Y,
+jo_monthly_metrics_2016.pdf,12,font encoding: space read as ['!']; hyphens in names may read as 0 or Y,
+jo_monthly_metrics_2018.pdf,1,no program value,"{'region': 'Southwest', 'county': 'Warren', 'jobs_created': '1,000', 'payroll': '$26,700,000', 'jobs_retained': '0', 'investment': '$30,000,000', 'company': 'Amazon.com.dedc, LLC', 'industry': 'Logistics and Distribution'}"
+jo_monthly_metrics_2018.pdf,14,no program value,"{'company': 'MSW Plastics USA Inc.', 'region': 'Western', 'county': 'Montgomery', 'jobs_created': '43', 'payroll': '$1,516,320', 'jobs_retained': '0', 'investment': '$6,361,919', 'industry': 'Advanced Manufacturing'}"
+jobsohio-2020-metrics.pdf,9,no program value,"{'company': 'Athens County Port Authority', 'industry': 'Other', 'region': 'Southeast', 'county': 'Athens', 'jobs_created': '0', 'payroll': '$0', 'jobs_retained': '0', 'investment': '$2,892,000', 'prog:Spec Development - OHSE': '$2,892,000*'}"
