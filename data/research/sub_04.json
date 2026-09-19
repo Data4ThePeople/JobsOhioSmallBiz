@@ -223,5 +223,50 @@
   "emp_bucket": "",
   "source": "https://polymericsinc.com/pdf/RPN_20140224-Polymerics.pdf",
   "notes": "A 2014 Rubber & Plastics News profile on the company site says the Samples family founded and runs Polymerics; its China plant is its own joint venture, and no later sale was found."
+ },
+ {
+  "recipient_id": "EIN:311309353",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "West Chester robot integrator since 1990; its Motofil link is a distribution partnership, and site and news show no parent company."
+ },
+ {
+  "recipient_id": "EIN:472427790",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.ace-laboratories.com/about-us/",
+  "notes": "ACE (now ACE Laboratories) calls itself an independent Ravenna lab founded in 2014 by CEO Erick Sharp; no parent found."
+ },
+ {
+  "recipient_id": "EIN:208679477",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Brunswick real-estate software firm owned by founder Greg Clement per Cleveland.com coverage; no acquisition or parent found."
+ },
+ {
+  "recipient_id": "EIN:222988012",
+  "owned_by_larger": "yes",
+  "parent": "Bigshire Mexico S. de R.L. de C.V.",
+  "parent_hq_state": "Mexico",
+  "emp_bucket": "",
+  "source": "https://www.ineos.com/news/ineos-group/ineos-enterprises-to-acquire-ashta-chemicals-inc.-from-bigshire-mexico/",
+  "notes": "INEOS release says ASHTA (about 110 staff) was owned by Mexico's Bigshire until INEOS bought it in Dec 2022; Bigshire's worldwide headcount was not found, so emp_bucket is blank."
+ },
+ {
+  "recipient_id": "EIN:311435433",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Winchester auto-parts molder that later moved work to Maysville, KY and was ordered to repay its JobsOhio grant; news coverage names no parent company."
  }
 ]
