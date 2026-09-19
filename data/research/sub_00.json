@@ -214,5 +214,23 @@
   "emp_bucket": "",
   "source": "",
   "notes": "Only a 2018 local building story found; no company site or ownership information reachable."
+ },
+ {
+  "recipient_id": "EIN:202694811",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Fremont fabricator described in local and North Carolina news as an Ohio firm; no parent company found."
+ },
+ {
+  "recipient_id": "EIN:310999166",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOQmRRZ2VUZF91aFA2MXdHU01yRFhiZHlkbUF4b2ZQY3pJMmJRa2RPSXNhYW9xM1lFQVhhZnBvdW9rbFJWMGFYemxobUxPM3VWbTREREw4U19oY3l4blZoaFNNYzZtTHBlUU1VRjB2QjFmZ3Q5UWVoaTdQY1BMcUxkZ2x6ODlBd2dHczRoaEQwRUdiUXRRLTAxbmE0dHpUTXpPTWszMF8tZERyN1lKZU4za0tsdzctaEhkY0RUSTJ2WGxFUFU0d0YwVWUtS3hsVUlHbVpMUg?oc=5",
+  "notes": "South Point shipyard founded by L. Dale Manns and run as a small independent yard (MARAD small-shipyard grantee); no parent found."
  }
 ]
