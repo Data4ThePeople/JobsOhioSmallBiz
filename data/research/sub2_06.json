@@ -205,5 +205,68 @@
   "emp_bucket": "",
   "source": "https://businessjournaldaily.com/air-crash-claims-lives-of-prominent-businessman-pilot/",
   "notes": "The Business Journal says Liberty Steel Industries was formed in Warren in 2015 as a Weller family company separate from Liberty Steel Products, run by president and CEO James Weller."
+ },
+ {
+  "recipient_id": "EIN:202186395",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.cantonrep.com/story/news/2013/10/11/candidate-profiles-lexington-township-trustee/42095125007/",
+  "notes": "Stuchell Products appears to be the Stuchell family's Alliance company tied to the Sare Plastics molding plant that Bart Stuchell operates, with no outside corporate owner found; the Sare link is inferred."
+ },
+ {
+  "recipient_id": "EIN:310533100",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.gentool.com/",
+  "notes": "General Tool calls itself a privately owned Cincinnati manufacturer, and its sale to the Ventus-formed Aeron Defense platform was announced in February 2026, after the 2024 grant year."
+ },
+ {
+  "recipient_id": "EIN:611367211",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.sec.gov/Archives/edgar/data/1481582/000119312517013207/d326140dex991.htm",
+  "notes": "Ryerson's January 2017 release (cited in earlier research, not re-fetched because SEC blocks this User-Agent) describes Laserflex as privately owned before Ryerson bought it, which came after the 2016 grant year."
+ },
+ {
+  "recipient_id": "EIN:310996012",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "The only mentions of ABB Leasing are Zanesville property transfers, so it looks like a local property-holding company, but its owner and any operating business were not found."
+ },
+ {
+  "recipient_id": "EIN:263033679",
+  "owned_by_larger": "no",
+  "parent": "K.E. McCartney & Associates, Inc. (probable affiliate; tie inferred)",
+  "parent_hq_state": "OH",
+  "emp_bucket": "<100",
+  "source": "https://www.richlandsource.com/2020/10/05/mansfield-city-council-expected-to-spend-1-67-million-in-cares-act-funds-tuesday/",
+  "notes": "Mansfield's 2020 tax abatement paired KJBS LLC with McCartney Associates to expand 52 N. Diamond St., the office of the local engineering firm K.E. McCartney & Associates (founded 1978), so KJBS looks like its property-holding affiliate."
+ },
+ {
+  "recipient_id": "EIN:851784819",
+  "owned_by_larger": "no",
+  "parent": "Golden Protective Services (probable affiliate; tie inferred)",
+  "parent_hq_state": "OR",
+  "emp_bucket": "<100",
+  "source": "https://www.cantonrep.com/story/news/2020/12/21/carrollton-company-golden-protective-services-buys-industrial-building/3931455001/",
+  "notes": "Passmore G&P appears to be the entity holding the 300 Industrial Drive building in Carrollton that Golden Protective Services, a small glove distributor the Repository says is based in Salem, Oregon, bought with a JobsOhio grant in 2020."
+ },
+ {
+  "recipient_id": "EIN:843575923",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No site or news item was found, but the Dublin trucking firm received an Inclusion Grant, which goes to small businesses owned by underrepresented individuals, and reported 6 retained jobs, with nothing pointing to a corporate owner."
  }
 ]
