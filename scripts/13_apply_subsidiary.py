@@ -24,7 +24,7 @@ def main(files):
             r = by_id.get(x.get("recipient_id"))
             if r is None:
                 sys.exit(f"{f}: unknown recipient_id {x.get('recipient_id')!r}")
-            if not r["notes"].startswith(("Rule R1", "Rule R2")) or "Subsidiary check" in r["notes"]:
+            if "Subsidiary check" in r["notes"]:
                 continue
             checked += 1
             ans = (x.get("owned_by_larger") or "").strip().lower()
