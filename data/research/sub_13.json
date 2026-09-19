@@ -34,5 +34,41 @@
     "emp_bucket": "",
     "source": "https://wurtec.com/about",
     "notes": "Toledo-headquartered company that describes itself as a family business with its own branch locations."
+  },
+  {
+    "recipient_id": "EIN:341101709",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "https://lakebusiness.com/culture-hub",
+    "notes": "Lake Business Products describes itself as a family-owned company and shows no parent group."
+  },
+  {
+    "recipient_id": "EIN:831834479",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "",
+    "notes": "Dayton machine shop bought by an individual owner in 2018 (Dayton Business Journal); its site names no parent group."
+  },
+  {
+    "recipient_id": "EIN:310517028",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "",
+    "notes": "Dayton filler-cap maker headquartered in Dayton for over 75 years; its site names no parent group."
+  },
+  {
+    "recipient_id": "EIN:341096771",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "",
+    "notes": "Norton machine and fabrication job shop operating for over 65 years; its site names no parent group."
   }
 ]

@@ -250,5 +250,23 @@
   "emp_bucket": "",
   "source": "",
   "notes": "Site describes a Dayton sheet metal and air filtration contractor in business since 1976 with no parent named, and no acquisition news was found."
+ },
+ {
+  "recipient_id": "EIN:311495395",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://nationalextrusion.com/index_files/EmployeeList.htm",
+  "notes": "Bellefontaine extruder founded 1950 is led by President and CEO Kevin McKnight, and its Form 5500 is filed under McKnight Industries, Inc. on the same EIN, which looks like the family's legal name rather than a separate parent."
+ },
+ {
+  "recipient_id": "EIN:472961066",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://n-ovationtech.com/",
+  "notes": "Site shows a Dayton network services firm certified as a service-disabled veteran-owned small business and SBA 8(a), both of which require individual ownership; no parent found."
  }
 ]
