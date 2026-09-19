@@ -49,7 +49,7 @@
   "emp_asof": "2022",
   "confidence": "A",
   "founded_in_ohio": "no",
-  "notes": "UPS Supply Chain Solutions, Inc. (Delaware) is listed in UPS's 2022 Exhibit 21, and UPS's 2022 10-K reports about 536,000 employees. The EDGAR match to Fritz Companies reflects the EIN of the freight forwarder UPS bought in 2001, which became part of this unit."
+  "notes": "UPS Supply Chain Solutions, Inc. (Delaware) is listed in UPS's 2022 Exhibit 21, and UPS's 2022 10-K reports about 536,000 employees. The EDGAR match to Fritz Companies Inc was not confirmed from a filing; Fritz was a freight forwarder UPS acquired, so the EIN likely carried over."
  },
  {
   "recipient_id": "EIN:873412426",
