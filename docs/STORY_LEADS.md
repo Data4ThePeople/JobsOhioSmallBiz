@@ -162,11 +162,41 @@ cannot check the outcome, even for a grant that was paid in full.
 - The revenue guarantee terms: how much per route, for how long, and whether
   the ended routes drew guarantee payments before they stopped.
 - The Cincinnati (CVG) routes are in Kentucky and not in the Ohio T-100 pull.
-- The same check can be run for the other airlines JobsOhio paid: British
-  Airways ($5,681,149, Columbus-London), Aer Lingus ($400,000,
-  Cleveland-Dublin), United ($473,975, Dayton-Denver), Avelo ($200,000) and
-  Air Wisconsin ($50,000). International routes need the T-100 International
-  Segment file.
+- The other airlines are checked in lead 6.
 
 **Why it matters:** unlike jobs, the output of this program is public and
 checkable month by month, which lets the post show what a grant bought.
+
+---
+
+## 6. The other airlines: British Airways, Aer Lingus, United, Avelo, Alaska
+
+Flights from BTS T-100 Segment (All Carriers), Ohio and Kentucky, through
+June 2026 (`data/air_service_routes.csv`).
+
+| Airline | Route | JobsOhio paid | Service | Flights / passengers to June 2026 |
+|---|---|---|---|---|
+| British Airways | Cincinnati (CVG, Kentucky)-London Heathrow | $5,681,149 (FY2024) | June 2023 to present; rising to 6 a week in 2026 | 718 / 125,435 |
+| Aer Lingus | Cleveland-Dublin | $400,000 (FY2024) | May 2023 to present; expanded 2025 | 675 / 91,361 |
+| United | Dayton-Denver | $473,975 (FY2024) | Sept 2023 to present (SkyWest as United Express; United mainline from June 2025) | 998 / 82,329 |
+| Avelo | Dayton-Orlando (the only sustained Avelo route from Ohio) | $200,000 (FY2023-24) | Jan to Sept 2023, then ended | 73 flights |
+| Alaska | Cleveland-Seattle | none on Schedule I through FY2024 | June 2022 to present | about 1,700 flights |
+
+**Notes and open questions**
+
+- British Airways is the largest air-service payment and the route is at
+  Cincinnati's airport, which is in Kentucky. JobsOhio's release cites a study
+  that 70% of CVG passengers are Ohio residents. The single Schedule I row has
+  no address or EIN.
+- Avelo's $200,000 is not tied to a route in any JobsOhio release. Dayton-
+  Orlando is the only Avelo route from Ohio that flew for more than a few
+  months, and it ended in September 2023. Ask JobsOhio what the Avelo payments
+  were for.
+- Alaska's Cleveland-Seattle route was announced as a JobsOhio deal but no
+  payment appears through FY2024. Either the guarantee was never drawn (the
+  route did well: loads of 80% to 88%), or it was paid through another party
+  or later. Check the FY2025 Schedule I.
+- JobsOhio's September 2023 claim that United "began service" to Denver is
+  borne out: SkyWest flew it under the United Express brand from that month.
+- Air Wisconsin's $50,000 (FY2020) is not air service; it was a January 2018
+  economic development grant for a Dayton-area operation promising 70 jobs.

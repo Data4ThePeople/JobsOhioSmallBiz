@@ -115,5 +115,86 @@
   "emp_bucket": "",
   "source": "https://www.the-daily-record.com/story/news/2020/02/20/holmes-county-approves-enterprise-zone/1668319007/",
   "notes": "Stamark Co. Ltd. is the Coblentz family's holding company for Walnut Creek Foods (operating company Coblentz Distributing), founded by Mark Coblentz in 1977; no outside owner found."
+ },
+ {
+  "recipient_id": "EIN:262308491",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Eight-job Wellston bottled-water firm that received an Inclusion Grant, which goes to minority- or woman-owned small businesses; no site, news item, or parent company found."
+ },
+ {
+  "recipient_id": "EIN:521747729",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://wedc.org/american-wood-fibers-inc-expands-operations-in-schofield-facility-expansion-will-create-10-jobs-1-7-million-capital-investment/",
+  "notes": "American Wood Fibers is the Faehner family's company, founded in 1966 and based in Columbia, Maryland, and is the recipient itself; Circleville is one of its 10 US plants."
+ },
+ {
+  "recipient_id": "EIN:200643423",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Grant address 10142 Springfield Pike, Woodlawn, is the Assist Financial Group office, but no site, news item, or release ties D3 Future Investments LLC to any owner."
+ },
+ {
+  "recipient_id": "EIN:463040190",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.ezkin.com/about-us/",
+  "notes": "Small Dayton firm founded in 2013 and led by President Maria Perez, with sister shop Interscope Manufacturing; no owner company found."
+ },
+ {
+  "recipient_id": "EIN:272915235",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.bizjournals.com/dayton/news/2019/08/05/dayton-startup-profile-spintech.html",
+  "notes": "Dayton-area composite startup with about 70 workers in 2025, profiled as a local startup and itself the holding company; no owner company found."
+ },
+ {
+  "recipient_id": "EIN:340898426",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.servicespring.com/about",
+  "notes": "The McAlear Group (Service Spring Corp.) is a fourth-generation McAlear family business in Maumee, founded in 1962; no owner company found."
+ },
+ {
+  "recipient_id": "EIN:871054446",
+  "owned_by_larger": "no",
+  "parent": "Acme Lock & Door (probable affiliate)",
+  "parent_hq_state": "OH",
+  "emp_bucket": "<100",
+  "source": "https://www.cincinnati.com/story/money/real-estate/2026/05/16/2-8-million-indian-hill-home-sale-among-the-weeks-top-property-transfers/90100348007/",
+  "notes": "Acme Site One LLC held 6270 Este Ave., the building Acme Lock & Door bought as its new Cincinnati headquarters in 2022, so it is likely a property LLC tied to that Woods-family locksmith of about 60 workers; ownership not confirmed."
+ },
+ {
+  "recipient_id": "EIN:341690243",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.billionaires.africa/2026/06/11/warren-anderson-lost-his-media-job-and-built-a-500-million-mcdonalds-distribution-empire-from-scratch/",
+  "notes": "The Anderson-DuBose Company is a Black-owned McDonald's distributor based in Lordstown and owned by Warren Anderson; no owner company found."
+ },
+ {
+  "recipient_id": "EIN:208295733",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Seven-job Wakeman filter maker with an Inclusion Grant; its site names no parent or group and nothing contrary was found."
  }
 ]

@@ -124,5 +124,86 @@
   "emp_bucket": "100-499",
   "source": "https://www.sidneydailynews.com/2018/04/13/jim-and-diana-subler/",
   "notes": "Jim Subler started Classic Warehousing in Versailles in 2000 alongside his family trucking firm Classic Carriers (150 trucks in 2018), and the 100-499 size for the group is inferred from fleet size."
+ },
+ {
+  "recipient_id": "EIN:204904956",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "E-Mek's site describes a single Dayton electronics contract-manufacturing plant at 7410 Webster St. and names no parent, and no news item or JobsOhio release points to an outside owner."
+ },
+ {
+  "recipient_id": "EIN:271235638",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.cbh.com/newsroom/cherry-bekaert-acquires-mcm-cpa-advisors/",
+  "notes": "MCM was an independent Louisville accounting partnership of about 370 employees until Cherry Bekaert acquired it in August 2023, well after the 2018 grant."
+ },
+ {
+  "recipient_id": "EIN:465425790",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.prnewswire.com/news-releases/closed-loop-partners-acquires-majority-stake-in-sage-sustainable-electronics-accelerating-it-asset-management-and-disposition-services-in-north-america-301975973.html",
+  "notes": "Sage was founded in Columbus in 2014 by Bob Houghton and Jill Vaské, and the investment firm Closed Loop Partners took a majority stake only in November 2023, after the 2018 grant."
+ },
+ {
+  "recipient_id": "EIN:550561999",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No company site, news item or JobsOhio release was found for the Wellston firm, so its ownership could not be judged."
+ },
+ {
+  "recipient_id": "EIN:260902522",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.carriermanagement.com/features/2020/03/04/203968.htm",
+  "notes": "Insight Catastrophe Group is the Jersey City company now operating as SageSure, not a subsidiary, and private-equity firm Flexpoint Ford first invested in May 2023, after the 2022 grant, though the company itself may have been near 500 employees by then."
+ },
+ {
+  "recipient_id": "EIN:208826851",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://columbusunderground.com/homage-nets-10-million-investment-from-express/",
+  "notes": "Founder Ryan Vesler's Columbus apparel brand took a $10 million minority, non-controlling investment from Express in August 2016, so Express did not control it during the 2017 grant."
+ },
+ {
+  "recipient_id": "EIN:311440199",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.bizjournals.com/cincinnati/news/2019/03/06/one-of-greater-cincinnati-s-largest-private.html",
+  "notes": "West Chester Holdings (West Chester Protective Gear) was a privately owned Sharonville glove company until its March 2019 sale to New York-based Protective Industrial Products, after the 2017 grant."
+ },
+ {
+  "recipient_id": "EIN:113703106",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "NanoSperse's site describes a single Kettering nanocomposite materials plant and names no parent, and no news item or JobsOhio release points to an outside owner."
+ },
+ {
+  "recipient_id": "EIN:472870834",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://businessjournaldaily.com/air-crash-claims-lives-of-prominent-businessman-pilot/",
+  "notes": "The Business Journal says Liberty Steel Industries was formed in Warren in 2015 as a Weller family company separate from Liberty Steel Products, run by president and CEO James Weller."
  }
 ]

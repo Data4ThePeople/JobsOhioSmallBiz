@@ -187,5 +187,86 @@
   "emp_bucket": "",
   "source": "https://www.mulletcabinet.com",
   "notes": "Family-owned Millersburg cabinet maker (now branded Mullwoods) whose site names brothers Vince and Nick Mullet as co-owners."
+ },
+ {
+  "recipient_id": "EIN:271511457",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.crowworks.com/about-us/",
+  "notes": "Ohio commercial furniture maker founded in 1995 by Dennis and Denise Blankemeyer and run under their Crow Brands umbrella, with no outside parent named."
+ },
+ {
+  "recipient_id": "EIN:341152347",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.kurtz-bros.com/about-us/",
+  "notes": "Northeast Ohio soil, mulch, and compost company describing a family tradition since 1948, itself an acquirer of local stores, with no parent named."
+ },
+ {
+  "recipient_id": "EIN:341202777",
+  "owned_by_larger": "no",
+  "parent": "Panelmatic, Inc.",
+  "parent_hq_state": "OH",
+  "emp_bucket": "",
+  "source": "https://www.tribtoday.com/news/local-news/2020/12/panelmatic-settles-in-for-growth/",
+  "notes": "In 2020 the Brookfield plant was a division of Cincinnati-based control-panel maker Panelmatic Inc., whose size was not found; the outside investment and Houston headquarters move came in 2025, after the grant."
+ },
+ {
+  "recipient_id": "EIN:311669229",
+  "owned_by_larger": "no",
+  "parent": "Phillips Edison & Company, Inc. (PECO)",
+  "parent_hq_state": "OH",
+  "emp_bucket": "100-499",
+  "source": "https://www.phillipsedison.com/about",
+  "notes": "The Ltd is the operating subsidiary of Cincinnati shopping-center REIT Phillips Edison & Company, Inc. (after the 2017 merger), a company of roughly 300 staff that shares the same Ohio workforce, so the parent is not larger."
+ },
+ {
+  "recipient_id": "EIN:453997071",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Dublin respiratory-device startup that files its own SEC Form D and presents itself as a standalone company; no parent or acquirer found."
+ },
+ {
+  "recipient_id": "EIN:520902777",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.independentcan.com/from-icc-ceo",
+  "notes": "Maryland tin-can maker that its CEO and chairman Rick Huether describes as family-owned for 96 years; the Ohio grant went to its own plant, with no parent company."
+ },
+ {
+  "recipient_id": "EIN:320071821",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No website, news item, or JobsOhio release found for the Findlay LLC, so ownership could not be judged."
+ },
+ {
+  "recipient_id": "EIN:341398298",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Holmes County food distributor run by the Coblentz family (2022 news), operating as Coblentz Distributing Inc, the Ohio sponsor of its own 5500 plan; no outside parent found."
+ },
+ {
+  "recipient_id": "EIN:341570807",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Mentor strapping maker (renamed Greenbridge, with sister recycler Evergreen) that sponsored its own 5500 plan and was led by CEO Omar Abuaita; no parent or private-equity owner was found for 2017, though later investors could not be checked."
  }
 ]

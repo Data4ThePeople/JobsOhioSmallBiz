@@ -17,7 +17,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "raw" / "t100"
-URL = "https://www.transtats.bts.gov/DL_SelectFields.aspx?gnoyr_VQ=FIM&QO_fu146_anzr=Nv4%20Pn44vr45"
+# T-100 tables on TranStats (database "Air Carrier Statistics"):
+#   FIM  Domestic Segment, U.S. carriers only
+#   FMG  Segment, all carriers (domestic and international, U.S. and foreign)
+TABLES = {"domestic_us": "FIM", "all": "FMG"}
+URL_T = "https://www.transtats.bts.gov/DL_SelectFields.aspx?gnoyr_VQ={}&QO_fu146_anzr=Nv4%20Pn44vr45"
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/128.0 Safari/537.36"
 FIELDS = ["DEPARTURES_SCHEDULED", "DEPARTURES_PERFORMED", "SEATS", "PASSENGERS", "UNIQUE_CARRIER",
           "UNIQUE_CARRIER_NAME", "ORIGIN", "ORIGIN_CITY_NAME", "ORIGIN_STATE_ABR", "DEST", "DEST_CITY_NAME",
@@ -35,11 +39,12 @@ def hidden(html):
     return {n: v for n, v in re.findall(r'<input[^>]+type="hidden"[^>]+name="([^"]+)"[^>]+value="([^"]*)"', html)}
 
 
-def fetch_year(year):
+def fetch_year(year, table="domestic_us", state="Ohio"):
+    URL = URL_T.format(TABLES[table])
     o = opener()
     html = o.open(URL, timeout=90).read().decode("utf-8", "replace")
     form = hidden(html)
-    form.update({"cboGeography": "Ohio", "cboYear": str(year), "cboPeriod": "All", "chkDownloadZip": "on",
+    form.update({"cboGeography": state, "cboYear": str(year), "cboPeriod": "All", "chkDownloadZip": "on",
                  "btnDownload": "Download"})
     for f in FIELDS:
         form[f] = "on"
@@ -52,19 +57,21 @@ def fetch_year(year):
         # the zip also carries a small field-description CSV; take the data file
         name = max((n for n in z.namelist() if n.lower().endswith(".csv")), key=lambda n: z.getinfo(n).file_size)
         csv = z.read(name)
-    out = OUT / f"t100d_segment_ohio_{year}.csv"
+    out = OUT / (f"t100d_segment_ohio_{year}.csv" if (table, state) == ("domestic_us", "Ohio")
+                 else f"t100_{table}_{state.lower().replace(' ', '_')}_{year}.csv")
     out.write_bytes(csv)
     return out, csv.count(b"\n") - 1
 
 
-def main(years):
+def main(years, table="domestic_us", state="Ohio"):
     OUT.mkdir(parents=True, exist_ok=True)
     for y in years:
-        out = OUT / f"t100d_segment_ohio_{y}.csv"
+        out = OUT / (f"t100d_segment_ohio_{y}.csv" if (table, state) == ("domestic_us", "Ohio")
+                     else f"t100_{table}_{state.lower().replace(' ', '_')}_{y}.csv")
         if out.exists() and out.stat().st_size > 1000:
             print(f"{y}: on disk"); continue
         try:
-            p, n = fetch_year(y)
+            p, n = fetch_year(y, table, state)
             print(f"{y}: {n:,} rows -> {p.name}")
         except Exception as e:
             print(f"{y}: FAILED {e}")
@@ -72,4 +79,9 @@ def main(years):
 
 
 if __name__ == "__main__":
-    main([int(a) for a in sys.argv[1:]] or list(range(2019, 2027)))
+    # usage: 15_fetch_t100.py [--table all] [--state Kentucky] [years...]
+    a = sys.argv[1:]
+    table = a[a.index("--table") + 1] if "--table" in a else "domestic_us"
+    state = a[a.index("--state") + 1] if "--state" in a else "Ohio"
+    years = [int(x) for x in a if x.isdigit()] or list(range(2019, 2027))
+    main(years, table, state)
