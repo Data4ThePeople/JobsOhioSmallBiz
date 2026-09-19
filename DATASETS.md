@@ -50,8 +50,12 @@ returns (to confirm: `AmendedReturnInd` absent). Schema versions run 2013v3.1
 through 2023v6.0. The element names used here (`RecipientTable`,
 `RecipientBusinessName/BusinessNameLine1Txt`, `RecipientEIN`, `CashGrantAmt`,
 `NonCashAssistanceAmt`, `IRCSectionDesc`, `PurposeOfGrantTxt`,
-`USAddress/CityNm`, `USAddress/StateAbbreviationCd`) are stable across all 11.
-Pre-2013 schemas used different names; none of our XML files predate 2013.
+`USAddress/CityNm`, `USAddress/StateAbbreviationCd`) are stable from the
+2014v6.0 schema on. The FY2014 filing (schema 2013v3.1) uses the older names
+`BusinessNameLine1`, `AddressLine1`, `City`, `State` and `ZIPCode`; the first
+parse missed them, leaving the eight FY2014 rows without a name or address
+(dollars and EINs were read correctly). Fixed September 19, 2026: the parser
+accepts both names and stops if any row has no recipient name.
 
 **Coverage.** FY2014 to FY2024 e-files: 2,038 rows, $1,171,884,901 in cash
 grants. FY2025 adds 377 rows (13 to 501(c)(3)s or governments, 364 to other

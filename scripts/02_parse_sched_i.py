@@ -23,8 +23,14 @@ COLS = ["fiscal_year", "object_id", "row_in_filing", "recipient_name", "recipien
 
 
 def tx(el, path):
-    x = el.find(path, NS)
-    return (x.text or "").strip() if x is not None and x.text else ""
+    """First non-empty match. `path` may list alternatives separated by '||'
+    for element names that changed between schema versions (the 2013 schema
+    uses BusinessNameLine1, City, State, ZIPCode, AddressLine1)."""
+    for p in path.split("||"):
+        x = el.find(p, NS)
+        if x is not None and x.text and x.text.strip():
+            return x.text.strip()
+    return ""
 
 
 def parse(path):
@@ -37,15 +43,17 @@ def parse(path):
         sys.exit(f"{path.name}: no Schedule I")
     rows = []
     for n, r in enumerate(si.findall("i:RecipientTable", NS), 1):
+        if not tx(r, "i:RecipientBusinessName/i:BusinessNameLine1Txt||i:RecipientBusinessName/i:BusinessNameLine1"):
+            sys.exit(f"{path.name} row {n}: no recipient name under any known element name")
         rows.append({
             "fiscal_year": fy, "object_id": oid, "row_in_filing": n,
-            "recipient_name": tx(r, "i:RecipientBusinessName/i:BusinessNameLine1Txt"),
-            "recipient_name_2": tx(r, "i:RecipientBusinessName/i:BusinessNameLine2Txt"),
+            "recipient_name": tx(r, "i:RecipientBusinessName/i:BusinessNameLine1Txt||i:RecipientBusinessName/i:BusinessNameLine1"),
+            "recipient_name_2": tx(r, "i:RecipientBusinessName/i:BusinessNameLine2Txt||i:RecipientBusinessName/i:BusinessNameLine2"),
             "recipient_ein": tx(r, "i:RecipientEIN"),
-            "street": tx(r, "i:USAddress/i:AddressLine1Txt"),
-            "city": tx(r, "i:USAddress/i:CityNm"),
-            "state": tx(r, "i:USAddress/i:StateAbbreviationCd"),
-            "zip": tx(r, "i:USAddress/i:ZIPCd"),
+            "street": tx(r, "i:USAddress/i:AddressLine1Txt||i:USAddress/i:AddressLine1"),
+            "city": tx(r, "i:USAddress/i:CityNm||i:USAddress/i:City"),
+            "state": tx(r, "i:USAddress/i:StateAbbreviationCd||i:USAddress/i:State"),
+            "zip": tx(r, "i:USAddress/i:ZIPCd||i:USAddress/i:ZIPCode"),
             "irc_section": tx(r, "i:IRCSectionDesc"),
             "cash_amt": int(float(tx(r, "i:CashGrantAmt") or 0)),
             "noncash_amt": int(float(tx(r, "i:NonCashAssistanceAmt") or 0)),

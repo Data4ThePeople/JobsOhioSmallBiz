@@ -206,5 +206,57 @@
   "confidence": "C",
   "founded_in_ohio": "unknown",
   "notes": "The SEC EIN match is the same Dublin, OH company under its full name (Monitored Therapeutics, maker of the GoSpiro home spirometer), a venture-funded startup that files Form D offerings. No headcount was found; the bucket rests on its startup profile."
+ },
+ {
+  "recipient_id": "EIN:741478631",
+  "recipient_class": "business",
+  "parent": "Berkshire Hathaway Inc. (via McLane Company, Inc.)",
+  "parent_hq_state": "NE",
+  "hq_source": "https://www.sec.gov/Archives/edgar/data/1067983/000119312519048926/d678758d10k.htm",
+  "emp_bucket": "5000+",
+  "emp_source": "https://www.sec.gov/Archives/edgar/data/1067983/000119312519048926/d678758d10k.htm",
+  "emp_asof": "2018",
+  "confidence": "A",
+  "founded_in_ohio": "no",
+  "notes": "McLane Ohio (Findlay distribution center) belongs to McLane Company of Temple, TX, a wholly owned Berkshire Hathaway subsidiary; Berkshire's 2018 10-K reports about 389,000 employees. Form 5500 for McLane shows over 26,000 participants."
+ },
+ {
+  "recipient_id": "EIN:113682720",
+  "recipient_class": "business",
+  "parent": "ECS Tuning, Inc.",
+  "parent_hq_state": "OH",
+  "hq_source": "https://www.beaconjournal.com/story/news/2013/06/20/wadsworth-city-council-approves-incentive/10312227007/",
+  "emp_bucket": "100-499",
+  "emp_source": "https://www.beaconjournal.com/story/news/2013/06/20/wadsworth-city-council-approves-incentive/10312227007/",
+  "emp_asof": "2013",
+  "confidence": "C",
+  "founded_in_ohio": "unknown",
+  "notes": "The 990 lists this EIN as ECS Tuning (1000 Seville Road, Wadsworth, OH), a family-owned auto parts e-commerce firm that planned 105 new jobs in its 2013 expansion; no current headcount was given. Bertram Capital (PE) invested in August 2014, after the grant year."
+ },
+ {
+  "recipient_id": "EIN:520902777",
+  "recipient_class": "business",
+  "parent": "Independent Can Company",
+  "parent_hq_state": "MD",
+  "hq_source": "https://www.independentcan.com/",
+  "emp_bucket": "100-499",
+  "emp_source": "f5500_participants_2015=395 (sponsor Independent Can Company, MD); https://www.independentcan.com/",
+  "emp_asof": "2015",
+  "confidence": "B",
+  "founded_in_ohio": "no",
+  "notes": "The 990 names this EIN as Independent Can Company of Belcamp, MD, a tin-packaging maker operating since 1929; Form 5500 shows 395-403 participants in 2015-2019. No parent company was found."
+ },
+ {
+  "recipient_id": "EIN:930518680",
+  "recipient_class": "business",
+  "parent": "Amsted Industries Inc. (via Consolidated Metco / ConMet)",
+  "parent_hq_state": "IL",
+  "hq_source": "https://conmet.com/company/about/",
+  "emp_bucket": "5000+",
+  "emp_source": "https://www.amsted.com/about-us/",
+  "emp_asof": "2015",
+  "confidence": "C",
+  "founded_in_ohio": "no",
+  "notes": "ConMet (Vancouver, WA; plant in Chillicothe, OH) has been owned by Chicago-based, 100% employee-owned Amsted Industries since its 1999 Varlen purchase. Amsted's site lists over 75 locations in 13 countries but no headcount, so 5000+ rests on that footprint."
  }
 ]

@@ -1,0 +1,67 @@
+[
+ {
+  "recipient_id": "EIN:340936989",
+  "recipient_class": "business",
+  "parent": "Unverferth Manufacturing Co., Inc.",
+  "parent_hq_state": "OH",
+  "hq_source": "https://www.unverferth.com/about-us",
+  "emp_bucket": "500-4999",
+  "emp_source": "https://www.unverferth.com/about-us",
+  "emp_asof": "2019",
+  "confidence": "B",
+  "founded_in_ohio": "yes",
+  "notes": "Family-owned farm equipment maker founded in 1948 and headquartered in Kalida, with plants in Ohio, Iowa and other states. Size rests on its Form 5500 (906 to 1,182 participants in 2015-2023) and 484 jobs retained in JobsOhio's report."
+ },
+ {
+  "recipient_id": "EIN:320071821",
+  "recipient_class": "business",
+  "parent": "Manufacturing Business Development Solutions LLC",
+  "parent_hq_state": "OH",
+  "hq_source": "https://news.google.com/rss/search?q=%22Manufacturing+Business+Development+Solutions%22",
+  "emp_bucket": "<100",
+  "emp_source": "https://news.google.com/rss/search?q=%22Manufacturing+Business+Development+Solutions%22",
+  "emp_asof": "2017",
+  "confidence": "D",
+  "founded_in_ohio": "unknown",
+  "notes": "No Form 5500, JobsOhio project record, sitemap match, news story or company site was found for this Findlay LLC, and the Ohio Secretary of State search was down. The name suggests a small consulting firm, so the bucket is a guess."
+ },
+ {
+  "recipient_id": "EIN:341398298",
+  "recipient_class": "business",
+  "parent": "Coblentz Distributing, Inc. (Walnut Creek Foods)",
+  "parent_hq_state": "OH",
+  "hq_source": "https://www.jobsohio.com/newsroom/news-press/walnut-creek-foods-invests-in-new-ohio-manufacturing-and-distribution-facility",
+  "emp_bucket": "100-499",
+  "emp_source": "https://www.jobsohio.com/newsroom/news-press/walnut-creek-foods-invests-in-new-ohio-manufacturing-and-distribution-facility",
+  "emp_asof": "2020",
+  "confidence": "B",
+  "founded_in_ohio": "yes",
+  "notes": "JobsOhio's 2020 release says Walnut Creek Foods, founded in Holmes County in the 1970s, has 350 associates and retained 280 jobs; its Form 5500 sponsor is Coblentz Distributing (210 participants in 2015). Family-owned by the Coblentz family, no outside parent found."
+ },
+ {
+  "recipient_id": "EIN:341570807",
+  "recipient_class": "business",
+  "parent": "Polychem, LLC (now Greenbridge)",
+  "parent_hq_state": "OH",
+  "hq_source": "https://www.greenbridge.com/the-greenbridge-story",
+  "emp_bucket": "100-499",
+  "emp_source": "https://www.greenbridge.com/the-greenbridge-story",
+  "emp_asof": "2017",
+  "confidence": "B",
+  "founded_in_ohio": "unknown",
+  "notes": "Mentor strapping maker founded in 1974 and renamed Greenbridge in 2021; its Form 5500 showed 349 participants in 2015 and 543 in 2019, so the 2017 size sits near the 500 line. JobsOhio lists 157 jobs retained, and no outside parent was confirmed."
+ },
+ {
+  "recipient_id": "EIN:465690691",
+  "recipient_class": "business",
+  "parent": "W&W Dry Cleaners, Laundry and Linen Services, LLC",
+  "parent_hq_state": "OH",
+  "hq_source": "https://news.google.com/rss/search?q=%22W%26W+Dry+Cleaners%22",
+  "emp_bucket": "<100",
+  "emp_source": "https://www.jobsohio.com/sitemap.xml",
+  "emp_asof": "2017",
+  "confidence": "D",
+  "founded_in_ohio": "unknown",
+  "notes": "JobsOhio's project data lists a Revitalization Grant with 7 jobs retained in Greenfield, which points to a small local business. No company site, news story or JobsOhio release was found to confirm ownership."
+ }
+]

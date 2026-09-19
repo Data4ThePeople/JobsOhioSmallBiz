@@ -1,0 +1,41 @@
+[
+ {
+  "recipient_id": "EIN:262898052",
+  "recipient_class": "business",
+  "parent": "Harbor Diversified, Inc.",
+  "parent_hq_state": "WI",
+  "hq_source": "https://www.sec.gov/Archives/edgar/data/899394/000119312520191135/d926157d10k.htm",
+  "emp_bucket": "500-4999",
+  "emp_source": "https://www.sec.gov/Archives/edgar/data/899394/000119312520191135/d926157d10k.htm",
+  "emp_asof": "2020",
+  "confidence": "A",
+  "founded_in_ohio": "no",
+  "notes": "Harbor Diversified 10-K for 2019 reports Air Wisconsin had 1,308 full-time and 24 part-time employees as of May 31, 2020. Air Wisconsin Airlines LLC is the operating subsidiary of Harbor Diversified, headquartered in Appleton, Wisconsin."
+ },
+ {
+  "recipient_id": "EIN:562640186",
+  "recipient_class": "business",
+  "parent": "Otsuka Holdings Co., Ltd.",
+  "parent_hq_state": "Japan",
+  "hq_source": "https://www.otsuka.com/en/company/group/",
+  "emp_bucket": "5000+",
+  "emp_source": "https://en.wikipedia.org/wiki/Otsuka_Pharmaceutical",
+  "emp_asof": "2017",
+  "confidence": "C",
+  "founded_in_ohio": "no",
+  "notes": "Otsuka group company list names CIL Isotope Separations LLC (Xenia isotope plant) alongside its parent Cambridge Isotope Laboratories, both Otsuka subsidiaries. Wikipedia lists 5,634 employees for Otsuka Pharmaceutical alone in 2017, so the Tokyo-based holding company is well above 5,000."
+ },
+ {
+  "recipient_id": "EIN:208033614",
+  "recipient_class": "business",
+  "parent": "Fire-Dex LLC",
+  "parent_hq_state": "OH",
+  "hq_source": "https://mfas.com/fire-equipment/firedex",
+  "emp_bucket": "100-499",
+  "emp_source": "Form 5500 sponsor FIRE-DEX LLC (OH): f5500_participants_2019=192, 2023=470; JobsOhio metrics jobs retained 133",
+  "emp_asof": "2021",
+  "confidence": "B",
+  "founded_in_ohio": "unknown",
+  "notes": "A distributor profile describes Fire-Dex as a family-owned firefighter PPE maker founded in 1983 and headquartered in Medina, Ohio. Form 5500 shows 192 participants in 2019 and 470 in 2023, and JobsOhio lists 133 retained jobs, so it was likely under 500 at the 2021 grant, though growth brought it near the line."
+ }
+]

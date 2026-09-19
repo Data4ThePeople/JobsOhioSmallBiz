@@ -206,5 +206,44 @@
   "confidence": "B",
   "founded_in_ohio": "unknown",
   "notes": "Form 5500 shows 750 participants in 2023, and a 2022 Hallmark 8-K says about 200 employees moved to Core Specialty in its E&S deal; Cincinnati press calls it one of the city's largest private companies. Core Specialty Insurance Holdings, a privately held Form D filer formed in 2020, bought StarStone U.S. from Enstar."
+ },
+ {
+  "recipient_id": "EIN:341913858",
+  "recipient_class": "business",
+  "parent": "Sequoia Financial Group, LLC (self)",
+  "parent_hq_state": "OH",
+  "hq_source": "https://reports.adviserinfo.sec.gov/reports/ADV/117756/PDF/117756.pdf",
+  "emp_bucket": "100-499",
+  "emp_source": "https://reports.adviserinfo.sec.gov/reports/ADV/117756/PDF/117756.pdf; Form 5500 f5500_participants_2023=194",
+  "emp_asof": "2023",
+  "confidence": "B",
+  "founded_in_ohio": "unknown",
+  "notes": "Sequoia's current SEC Form ADV lists its principal office in Akron and 424 employees, a figure that includes RIAs bought after the grant year; Form 5500 shows 194 participants in 2023. Sequoia Financial Group, LLC is the direct owner on Schedule A, and no controlling outside owner is listed."
+ },
+ {
+  "recipient_id": "EIN:844391631",
+  "recipient_class": "business",
+  "parent": "1M Group, LLC (owner of A&F Souvenir)",
+  "parent_hq_state": "CO",
+  "hq_source": "https://www.jobsohio.com/newsroom/news-press/af-souvenir-opening-new-production-and-warehouse-facility-west-chester-township; https://www.giftsanddec.com/industry-news/more-custom-souvenir-museum-gifts-coming-to-u-s/",
+  "emp_bucket": "<100",
+  "emp_source": "none found; https://www.afgift.com/ (no headcount)",
+  "emp_asof": "2023",
+  "confidence": "D",
+  "founded_in_ohio": "no",
+  "notes": "JobsOhio names 1M Group, LLC as the company behind A&F Souvenir's first U.S. plant in West Chester Township, and Gifts & Decorative Accessories says 1M Group bought the Canadian souvenir wholesaler in January 2020. The 990 gives a Denver address; no headcount was found, so the bucket is a guess."
+ },
+ {
+  "recipient_id": "EIN:873277500",
+  "recipient_class": "site_development",
+  "parent": "Smartland (Highland Heights, OH real-estate investor)",
+  "parent_hq_state": "OH",
+  "hq_source": "https://news.google.com/rss/search?q=%2235350+Curtis%22 (Crain's Cleveland, Oct 21, 2022: 'Smartland affiliate lands five-story Eastlake office building for just over $1M')",
+  "emp_bucket": "<100",
+  "emp_source": "none found; no JobsOhio metrics or Form 5500 record",
+  "emp_asof": "2023",
+  "confidence": "D",
+  "founded_in_ohio": "unknown",
+  "notes": "The only hit for 35350 Curtis is a Crain's Cleveland headline saying a Smartland affiliate bought a five-story Eastlake office building in October 2022, and the 990 address (67 Alpha Dr, Highland Heights) fits Smartland's hometown. The Crain's and cleveland.com articles were blocked, so the owner link and the headcount are unconfirmed."
  }
 ]

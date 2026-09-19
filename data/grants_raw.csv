@@ -1,12 +1,12 @@
 fiscal_year,object_id,row_in_filing,recipient_name,recipient_name_2,recipient_ein,street,city,state,zip,irc_section,cash_amt,noncash_amt,purpose
-2014,201413189349308116,1,,,263199128,,,,,,150000,0,Economic development grant for capital expenditures
-2014,201413189349308116,2,,,341965647,,,,,,50000,0,Economic development grant for capital expenditures
-2014,201413189349308116,3,,,113682720,,,,,,50000,0,Economic development grant for capital expenditures
-2014,201413189349308116,4,,,520902777,,,,,,50000,0,Economic development grant for capital expenditures
-2014,201413189349308116,5,,,010781438,,,,,,60000,0,Economic development grant for capital expenditures
-2014,201413189349308116,6,,,341916518,,,,,501(c)(3),176000,0,Cost of research study
-2014,201413189349308116,7,,,432008761,,,,,,22000,0,Purchase of equip for workforce training
-2014,201413189349308116,8,,,275245539,,,,,501(c)(3),750000,0,Talent attraction initiative
+2014,201413189349308116,1,GKN Sinter Metals Inc,,263199128,550 Warrensville Road,Lisle,IL,60532,,150000,0,Economic development grant for capital expenditures
+2014,201413189349308116,2,Fulton County Processing Limited,,341965647,7800 State Highway 109,Delta,OH,43515,,50000,0,Economic development grant for capital expenditures
+2014,201413189349308116,3,ECS Tuning,,113682720,1000 Seville Road,Wadsworth,OH,44281,,50000,0,Economic development grant for capital expenditures
+2014,201413189349308116,4,Independent Can Company,,520902777,1300 Brass Mill Road,Belcamp,MD,21017,,50000,0,Economic development grant for capital expenditures
+2014,201413189349308116,5,Folded Pak Inc,,010781438,5885 Stapleton Drive North,Denver,CO,80216,,60000,0,Economic development grant for capital expenditures
+2014,201413189349308116,6,Economic Growth Foundation,,341916518,1240 Huron Road,Cleveland,OH,44115,501(c)(3),176000,0,Cost of research study
+2014,201413189349308116,7,Coshocton Port Authority,,432008761,106 South 4th Street,Coshocton,OH,43812,,22000,0,Purchase of equip for workforce training
+2014,201413189349308116,8,Global Cleveland,,275245539,200 Public Square,Cleveland,OH,44114,501(c)(3),750000,0,Talent attraction initiative
 2015,201630469349301988,1,Ace Hardware Corporation,,360700810,2200 Kensington Court,Oak Brook,IL,605232103,,75000,0,Economic Development expenditures
 2015,201630469349301988,2,AdaletScott Fetzer Company,,470691259,4801 W 150th Street,Cleveland,OH,44135,,100000,0,Economic development grant for capital Economic Development
 2015,201630469349301988,3,Appvion Inc,,362556469,PO Box 1872,Appleton,WI,549121872,,10000,0,Economic development grant for capital expenditures Economic Development
