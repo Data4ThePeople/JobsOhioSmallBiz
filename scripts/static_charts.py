@@ -63,7 +63,8 @@ def two_bars(block, groups, colors, labels, title, subtitle, fname, key="500"):
     rows = [("Recipients", src["parents"]), ("Dollars", src["cash"])]
     fig, ax = figure(height=3.6)
     frame(fig, title, subtitle, top=0.80, left=0.15)
-    word_legend(fig, [(labels[g], colors[g]) for g in groups])
+    present = [g for g in groups if any(o.get(g, {"share": 0})["share"] > 0 for _, o in rows)]
+    word_legend(fig, [(labels[g], colors[g]) for g in present])
     for i, (name, o) in enumerate(rows):
         x = 0
         for g in groups:

@@ -1,0 +1,15 @@
+[
+ {
+  "recipient_id": "EIN:340564691",
+  "recipient_class": "business",
+  "parent": "Superior Dairy, Inc.",
+  "parent_hq_state": "OH",
+  "hq_source": "https://www.jobsohio.com/newsroom/news-press/superior-dairy-incorporated-expands-dairy-product-line-in-ohio",
+  "emp_bucket": "100-499",
+  "emp_source": "https://www.jobsohio.com/newsroom/news-press/superior-dairy-incorporated-expands-dairy-product-line-in-ohio",
+  "emp_asof": "2020",
+  "confidence": "B",
+  "founded_in_ohio": "yes",
+  "notes": "JobsOhio 2020 release: Canton-based, fourth-generation family-owned, 313 jobs retained, founded 1922 in Canton; Form 5500 participants 229 (2015) to 309 (2023) support 100-499 for the 2017 grant."
+ }
+]
