@@ -178,5 +178,23 @@
   "emp_bucket": "",
   "source": "https://costumespecialists.com/",
   "notes": "Columbus mascot maker founded in 1983 with its own retirement plan (40 to 68 participants); its site and local business press name no parent."
+ },
+ {
+  "recipient_id": "EIN:800404705",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.frontburnermarketing.com/home",
+  "notes": "Northfield, Illinois agency describing itself as proudly woman-owned, founded in 2002 by managing director Janalee Silvey, with no parent named."
+ },
+ {
+  "recipient_id": "EIN:341897953",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.globalmedfoam.com/about-us",
+  "notes": "Lexington, Ohio maker of patented pressure-care foam led by president and inventor Victoria Langer, with local press profiling her business and no parent named."
  }
 ]

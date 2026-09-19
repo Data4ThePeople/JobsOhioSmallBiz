@@ -1,5 +1,59 @@
 [
   {
+    "recipient_id": "EIN:200731750",
+    "owned_by_larger": "unknown",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "",
+    "notes": "No working website or recent news found for the salvage firm, so ownership during the grant year could not be checked."
+  },
+  {
+    "recipient_id": "EIN:341229509",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "https://businessjournaldaily.com/flying-high-partners-with-livi-steel/",
+    "notes": "Warren steel fabricator described in October 2024 as a third-generation family-owned business."
+  },
+  {
+    "recipient_id": "EIN:465380502",
+    "owned_by_larger": "unknown",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "",
+    "notes": "The MAK Engineering domains found are placeholder pages and no news or JobsOhio release covers the Columbus firm."
+  },
+  {
+    "recipient_id": "EIN:263196092",
+    "owned_by_larger": "unknown",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "",
+    "notes": "No working website, news item or JobsOhio release found for the Mount Vernon firm, so ownership could not be checked."
+  },
+  {
+    "recipient_id": "EIN:874643870",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "",
+    "notes": "Ottawa, Ohio label printer operating since 1994; its site names no parent group and no acquisition news was found."
+  },
+  {
+    "recipient_id": "EIN:813233328",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "https://www.ohioconcretecrushing.com/about",
+    "notes": "Small family business owned and operated by Charles and Susan Scheckelhoff in Ottawa, Ohio."
+  },
+  {
     "recipient_id": "EIN:341631954",
     "owned_by_larger": "no",
     "parent": "",
@@ -18,40 +72,76 @@
     "notes": "Cleveland worker-owned cooperative founded in 2014, no parent company."
   },
   {
-    "recipient_id": "EIN:273409599",
+    "recipient_id": "EIN:341756687",
     "owned_by_larger": "no",
     "parent": "",
     "parent_hq_state": "",
     "emp_bucket": "",
-    "source": "https://jafedecorating.com/about",
-    "notes": "Family-owned Greenville glass decorator led by Randy O'Dell, who acquired the company in 2010."
+    "source": "https://ocj.com/2019/04/s-i-distributing-celebrates-40-years/",
+    "notes": "Spencerville farm-equipment parts company founded by farmer Joe Whitney and run by co-owner Dave Burgei with 26 employees in 2019."
   },
   {
-    "recipient_id": "EIN:341478051",
-    "owned_by_larger": "no",
+    "recipient_id": "EIN:863801176",
+    "owned_by_larger": "unknown",
     "parent": "",
     "parent_hq_state": "",
     "emp_bucket": "",
-    "source": "https://wurtec.com/about",
-    "notes": "Toledo-headquartered company that describes itself as a family business with its own branch locations."
+    "source": "",
+    "notes": "No website, relevant news item or JobsOhio release found for the Cleveland machine shop formed in 2021, so ownership could not be checked."
   },
   {
-    "recipient_id": "EIN:341101709",
-    "owned_by_larger": "no",
-    "parent": "",
-    "parent_hq_state": "",
-    "emp_bucket": "",
-    "source": "https://lakebusiness.com/culture-hub",
-    "notes": "Lake Business Products describes itself as a family-owned company and shows no parent group."
-  },
-  {
-    "recipient_id": "EIN:831834479",
+    "recipient_id": "EIN:881160783",
     "owned_by_larger": "no",
     "parent": "",
     "parent_hq_state": "",
     "emp_bucket": "",
     "source": "",
-    "notes": "Dayton machine shop bought by an individual owner in 2018 (Dayton Business Journal); its site names no parent group."
+    "notes": "Cleveland procurement startup launched in 2022 by local founders and backed by Techstars; no parent company found."
+  },
+  {
+    "recipient_id": "EIN:261384199",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "https://tcrandalconstructionllc.com",
+    "notes": "Minerva contractor founded in 2007 by Tony and Christine Randal and described as family owned and operated."
+  },
+  {
+    "recipient_id": "EIN:341280883",
+    "owned_by_larger": "unknown",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "",
+    "notes": "No website, news item or JobsOhio release found for the Cleveland tool shop, so ownership could not be checked."
+  },
+  {
+    "recipient_id": "EIN:310617669",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "https://hylandmach.com",
+    "notes": "Dayton screw-machine shop (Hyland Screw Machine Products, 1900 Kuntz Rd.) that is a fourth- and fifth-generation family business since 1928."
+  },
+  {
+    "recipient_id": "EIN:341096771",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "",
+    "notes": "Norton machine and fabrication job shop operating for over 65 years; its site names no parent group."
+  },
+  {
+    "recipient_id": "EIN:341452106",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "https://www.uisprotect.com/history",
+    "notes": "Tiffin independent insurance agency (UIS) run by the Felton family since 1928 that acquires other agencies and shows no parent through its 2024 centennial."
   },
   {
     "recipient_id": "EIN:310517028",
@@ -63,13 +153,22 @@
     "notes": "Dayton filler-cap maker headquartered in Dayton for over 75 years; its site names no parent group."
   },
   {
-    "recipient_id": "EIN:341096771",
+    "recipient_id": "EIN:831834479",
     "owned_by_larger": "no",
     "parent": "",
     "parent_hq_state": "",
     "emp_bucket": "",
     "source": "",
-    "notes": "Norton machine and fabrication job shop operating for over 65 years; its site names no parent group."
+    "notes": "Dayton machine shop bought by an individual owner in 2018 (Dayton Business Journal); its site names no parent group."
+  },
+  {
+    "recipient_id": "EIN:341101709",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "https://lakebusiness.com/culture-hub",
+    "notes": "Lake Business Products describes itself as a family-owned company and shows no parent group."
   },
   {
     "recipient_id": "EIN:814419315",
@@ -90,6 +189,42 @@
     "notes": "Cincinnati minority-owned IT firm founded by Vincent Williams that acquired a Northern Kentucky company in 2023 rather than being acquired."
   },
   {
+    "recipient_id": "EIN:341697384",
+    "owned_by_larger": "unknown",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "",
+    "notes": "No working website, relevant news item or JobsOhio release found for the North Canton casting firm, so ownership could not be checked."
+  },
+  {
+    "recipient_id": "EIN:834257094",
+    "owned_by_larger": "unknown",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "",
+    "notes": "No website, news item or JobsOhio release found for the Cincinnati electrical contractor, so ownership could not be checked."
+  },
+  {
+    "recipient_id": "EIN:273409599",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "https://jafedecorating.com/about",
+    "notes": "Family-owned Greenville glass decorator led by Randy O'Dell, who acquired the company in 2010."
+  },
+  {
+    "recipient_id": "EIN:341478051",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "https://wurtec.com/about",
+    "notes": "Toledo-headquartered company that describes itself as a family business with its own branch locations."
+  },
+  {
     "recipient_id": "EIN:311336286",
     "owned_by_larger": "no",
     "parent": "",
@@ -97,6 +232,15 @@
     "emp_bucket": "",
     "source": "https://www.advantagetent.com/about",
     "notes": "Chillicothe tent-component maker founded in 1991 by Mike Hall; its history lists no sale to a parent group."
+  },
+  {
+    "recipient_id": "EIN:311452347",
+    "owned_by_larger": "unknown",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "",
+    "notes": "No website, news item or JobsOhio release found for the Zanesville firm, so ownership could not be checked."
   },
   {
     "recipient_id": "EIN:341804827",
@@ -108,31 +252,13 @@
     "notes": "Cleveland office-technology dealer that describes itself as locally owned for over 30 years."
   },
   {
-    "recipient_id": "EIN:341756687",
-    "owned_by_larger": "no",
+    "recipient_id": "EIN:832064278",
+    "owned_by_larger": "unknown",
     "parent": "",
     "parent_hq_state": "",
     "emp_bucket": "",
-    "source": "https://ocj.com/2019/04/s-i-distributing-celebrates-40-years/",
-    "notes": "Spencerville farm-equipment parts company founded by farmer Joe Whitney and run by co-owner Dave Burgei with 26 employees in 2019."
-  },
-  {
-    "recipient_id": "EIN:310617669",
-    "owned_by_larger": "no",
-    "parent": "",
-    "parent_hq_state": "",
-    "emp_bucket": "",
-    "source": "https://hylandmach.com",
-    "notes": "Dayton screw-machine shop (Hyland Screw Machine Products, 1900 Kuntz Rd.) that is a fourth- and fifth-generation family business since 1928."
-  },
-  {
-    "recipient_id": "EIN:341452106",
-    "owned_by_larger": "no",
-    "parent": "",
-    "parent_hq_state": "",
-    "emp_bucket": "",
-    "source": "https://www.uisprotect.com/history",
-    "notes": "Tiffin independent insurance agency (UIS) run by the Felton family since 1928 that acquires other agencies and shows no parent through its 2024 centennial."
+    "source": "",
+    "notes": "The Artisan Technologies sites found are unrelated firms in other states and no news covers the Beavercreek company."
   },
   {
     "recipient_id": "EIN:311439596",
@@ -142,50 +268,5 @@
     "emp_bucket": "",
     "source": "",
     "notes": "Ravenna heated-tank maker in business since 1921; its site names no parent group."
-  },
-  {
-    "recipient_id": "EIN:341697384",
-    "owned_by_larger": "no",
-    "parent": "",
-    "parent_hq_state": "",
-    "emp_bucket": "",
-    "source": "",
-    "notes": "North Canton casting company whose Form 5500 plan it sponsors itself; no news or filing names a parent."
-  },
-  {
-    "recipient_id": "EIN:813233328",
-    "owned_by_larger": "no",
-    "parent": "",
-    "parent_hq_state": "",
-    "emp_bucket": "",
-    "source": "https://www.ohioconcretecrushing.com/about",
-    "notes": "Small family business owned and operated by Charles and Susan Scheckelhoff in Ottawa, Ohio."
-  },
-  {
-    "recipient_id": "EIN:341229509",
-    "owned_by_larger": "no",
-    "parent": "",
-    "parent_hq_state": "",
-    "emp_bucket": "",
-    "source": "https://businessjournaldaily.com/flying-high-partners-with-livi-steel/",
-    "notes": "Warren steel fabricator described in October 2024 as a third-generation family-owned business."
-  },
-  {
-    "recipient_id": "EIN:311452347",
-    "owned_by_larger": "no",
-    "parent": "",
-    "parent_hq_state": "",
-    "emp_bucket": "",
-    "source": "",
-    "notes": "Small Zanesville company carrying the local Swingle family name; no news or filing names a parent."
-  },
-  {
-    "recipient_id": "EIN:834257094",
-    "owned_by_larger": "no",
-    "parent": "",
-    "parent_hq_state": "",
-    "emp_bucket": "",
-    "source": "",
-    "notes": "Small Cincinnati electrical contractor that sponsors its own Form 5500 plan; no news or filing names a parent."
   }
 ]
