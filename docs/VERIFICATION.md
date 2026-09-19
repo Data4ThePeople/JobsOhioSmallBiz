@@ -72,6 +72,15 @@ recipients, $54.4 million) was put through a narrow ownership check
 `scripts/13_apply_subsidiary.py`): was the company owned by a larger, foreign,
 or private-equity-backed group during the grant years?
 
+## A second rule assumption: Ohio headquarters
+
+Rule R1 also recorded every Inclusion Grant recipient as Ohio-headquartered,
+since the program funds Ohio businesses. The ownership check found
+independent R1 recipients based elsewhere (Walkenhorst's, Sparks, NV; Tiger
+Pistol, Austin, TX), and four more R1 rows carry a non-Ohio address on
+Schedule I. Those six were moved to their own state. An R1 recipient with an
+Ohio address and no contrary evidence stays Ohio-headquartered.
+
 ## Limits
 
 The two passes are not fully independent: both used the same written method,

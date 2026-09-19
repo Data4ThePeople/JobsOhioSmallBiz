@@ -160,5 +160,77 @@
   "emp_bucket": "",
   "source": "",
   "notes": "No working company site or news found for Skylight Partners of Cincinnati, so ownership could not be checked."
+ },
+ {
+  "recipient_id": "EIN:311424288",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.stardynamics.com/?page_id=3544",
+  "notes": "The company history says STAR Dynamics was spun out of Aeroflex in 2008 and bought in 2014 by Dr. Jerry Jost, making it a privately and veteran-owned small business."
+ },
+ {
+  "recipient_id": "EIN:843448596",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No working company site found for Special Power Sources of Akron, and news turned up only passing mentions in clean-energy startup coverage, so ownership could not be checked."
+ },
+ {
+  "recipient_id": "EIN:310826775",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.techmetals.com/about-us/",
+  "notes": "The about page traces Techmetals to founders Dan Brockman and Mike Franz and gives about 230 employees at its Dayton plant, with no parent named."
+ },
+ {
+  "recipient_id": "EIN:311392639",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No working company site or news found for Stat Industries of Chillicothe, so ownership could not be checked."
+ },
+ {
+  "recipient_id": "EIN:371591120",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/ohio-success/the-aka-team-building-opportunities-in-cleveland",
+  "notes": "JobsOhio describes The AKA Team as Ariane Kirkpatrick's minority- and woman-owned Cleveland firm, and no parent was found."
+ },
+ {
+  "recipient_id": "EIN:823446932",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "News coverage ties Terry Thomsen LLC to Terry Thomsen's own Pizagel pizza-bagel business in the Cleveland area, and no parent or acquirer was found."
+ },
+ {
+  "recipient_id": "EIN:340680692",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.ericson.com/en/content/about-us",
+  "notes": "The about page says the Ericson family has run the Willoughby company since 1918, and no parent was found."
+ },
+ {
+  "recipient_id": "EIN:341158960",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No company site or news found for Topcraft Inc. of Canton (the 2007 Topcraft Precision deal involved an unrelated Pennsylvania molder), so ownership could not be checked."
  }
 ]

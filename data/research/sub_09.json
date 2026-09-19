@@ -1,5 +1,14 @@
 [
  {
+  "recipient_id": "EIN:341016421",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Wodin's site describes a Bedford Heights forging shop founded in 1967 and names no parent or group, and it sponsors its own small Form 5500 plan; no ownership news was found."
+ },
+ {
   "recipient_id": "EIN:760704915",
   "owned_by_larger": "no",
   "parent": "",
@@ -16,6 +25,33 @@
   "emp_bucket": "",
   "source": "https://www.lorisprinting.net/feature/company-history/",
   "notes": "Loris Printing calls itself a second-generation family-owned Sandusky business in operation since 1966; it bought Lake Shore Graphic Industries in 2019 rather than being bought."
+ },
+ {
+  "recipient_id": "EIN:464852821",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No company site or news coverage found for the Bidwell logistics firm, so ownership could not be checked."
+ },
+ {
+  "recipient_id": "EIN:311144772",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.labelandnarrowweb.com/companies-to-watch-repacorp-inc/",
+  "notes": "Repacorp is owned by the Heinl family; CEO Rick Heinl became sole owner in 1990 and the company has grown by buying other label printers, not by being bought."
+ },
+ {
+  "recipient_id": "EIN:311420884",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "The Minford race-car builder's old domain now hosts unrelated content and news mentions are race results only, so ownership could not be checked."
  },
  {
   "recipient_id": "EIN:811327105",
@@ -45,6 +81,42 @@
   "notes": "Daniel's Industrial Services describes itself as a family-owned and operated Zanesville business started in 2014, with no parent named."
  },
  {
+  "recipient_id": "EIN:262052986",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "KebCo Precision Metal Fabricating has a small Canton site that names no parent or group, and no ownership news was found."
+ },
+ {
+  "recipient_id": "EIN:200277513",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "O'Reilly Precision Products of Russia, Ohio appears only in a 2019 local sponsor list; no company site or ownership detail was found."
+ },
+ {
+  "recipient_id": "EIN:852766469",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "The Westerville firm's domain is parked and no news coverage was found, so ownership could not be checked."
+ },
+ {
+  "recipient_id": "EIN:300059101",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Quality 1 Welding's site is a coming-soon page and no news coverage was found for the Elyria shop, so ownership could not be checked."
+ },
+ {
   "recipient_id": "EIN:311381123",
   "owned_by_larger": "no",
   "parent": "",
@@ -52,6 +124,15 @@
   "emp_bucket": "",
   "source": "https://www.ultra-met.com/about",
   "notes": "Ultra-Met says it has been owned by private family owners since 1993 (after an earlier period under Krupp-WIDIA ending then) and has about 90 employees."
+ },
+ {
+  "recipient_id": "EIN:311450435",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.vyasystems.com/about",
+  "notes": "Vya (DocuStar until 2015) says it is an independently owned Cincinnati marketing technology firm launched in 1993, with no parent named."
  },
  {
   "recipient_id": "EIN:830421014",
@@ -72,6 +153,33 @@
   "notes": "APS Materials says it is a family-owned and operated Dayton company founded in 1975, with no parent named."
  },
  {
+  "recipient_id": "EIN:814361459",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No company site or news coverage found for the Piketon trucking firm, so ownership could not be checked."
+ },
+ {
+  "recipient_id": "EIN:208413312",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://sanduskyregister.com/news/14218/family-business-a-success/",
+  "notes": "A 2018 Norwalk Reflector profile describes SC Strategic Solutions as a Stein family business formed and run by president Chad Stein, with about 45 employees."
+ },
+ {
+  "recipient_id": "EIN:474255172",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No company site or news coverage found for the Liberty Township salon, so ownership could not be checked."
+ },
+ {
   "recipient_id": "EIN:843857873",
   "owned_by_larger": "no",
   "parent": "",
@@ -88,6 +196,15 @@
   "emp_bucket": "",
   "source": "https://www.jobsohio.com/newsroom/news-press/tiger-pistol-chooses-ohio-for-first-location-outside-of-texas-hq",
   "notes": "Tiger Pistol was a stand-alone, venture-backed company headquartered in Austin, Texas in the 2022 grant year (Cleveland was its first site outside Texas), so it was not Ohio-headquartered then, but no parent company was found."
+ },
+ {
+  "recipient_id": "EIN:113747263",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "The Painting Contractor's domain is parked and no news coverage was found for the Sharonville firm, so ownership could not be checked."
  },
  {
   "recipient_id": "EIN:202018667",
