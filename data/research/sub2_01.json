@@ -1,0 +1,101 @@
+[
+ {
+  "recipient_id": "EIN:874718796",
+  "owned_by_larger": "no",
+  "parent": "P&THE (Pancho Hall manufacturing holding group, Canton MI)",
+  "parent_hq_state": "MI",
+  "emp_bucket": "",
+  "source": "https://www.sec.gov/Archives/edgar/data/1934663/000193466322000001/0001934663-22-000001-index.htm",
+  "notes": "Acquisition vehicle formed in 2022 by Michigan-based P&THE, a small minority-owned group led by Pancho Hall that bought Ross Aluminum and later a Michigan engine-parts supplier; nothing shows it was part of a 500-plus group."
+ },
+ {
+  "recipient_id": "EIN:462863103",
+  "owned_by_larger": "no",
+  "parent": "auticon GmbH",
+  "parent_hq_state": "Germany",
+  "emp_bucket": "100-499",
+  "source": "https://www.jobsohio.com/newsroom/news-press/auticon-an-it-and-compliance-consulting-business-creates-50-new-jobs-for-ohioans-on-the-autism-spectrum",
+  "notes": "The US operation belongs to Berlin-founded auticon GmbH, which JobsOhio put at about 170 consultants in 2019, so the parent is foreign but well under 500 people in the grant years."
+ },
+ {
+  "recipient_id": "EIN:205877688",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Privately held Kansas City generic drugmaker controlled by its CEO Nirmal Mulye (it bought the Bryan plant from Sun Pharma in 2015); news names no corporate parent."
+ },
+ {
+  "recipient_id": "EIN:264690600",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.arlingtonvalleyfarms.com/about",
+  "notes": "Hudson frozen-food maker whose site calls it a family-centric company, and news covers it as a standalone Hudson firm; no parent found."
+ },
+ {
+  "recipient_id": "EIN:824672012",
+  "owned_by_larger": "no",
+  "parent": "CeramSource, Inc. (sister company under common owner Edwin Wang)",
+  "parent_hq_state": "PA",
+  "emp_bucket": "<100",
+  "source": "https://www.jobsohio.com/newsroom/news-press/ceramfab-wyg-refractories-onshores-manufacturing-in-ohio",
+  "notes": "JobsOhio says CeramFab is a sister company of Beaver Falls, PA refractory wholesaler CeramSource under owner Edwin Wang, a small group, so it is not tied to a larger company."
+ },
+ {
+  "recipient_id": "EIN:831024049",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://news.google.com/rss/search?q=%22Hometown+Food%22+Brynwood",
+  "notes": "Chicago packaged-food company formed from Smucker baking brands and owned by private-equity firm Brynwood Partners; Hometown is itself the operating platform, with about 240 to 370 plan participants, not part of a larger group."
+ },
+ {
+  "recipient_id": "EIN:814100770",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.skuldllc.com/about-us",
+  "notes": "Company site describes a startup founded in 2015 and led by its CEO and co-founder, now in Piqua, Ohio; no corporate parent found."
+ },
+ {
+  "recipient_id": "EIN:311653157",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Ironton millwright and industrial contractor whose own site and local news show no parent company; nothing points to outside ownership."
+ },
+ {
+  "recipient_id": "EIN:831267351",
+  "owned_by_larger": "yes",
+  "parent": "AGC Inc. (via AGC North America; joint venture with AutoTemp Inc.)",
+  "parent_hq_state": "Japan",
+  "emp_bucket": "5000+",
+  "source": "https://www.aagglass.com",
+  "notes": "Company site says AAG Glass is a joint venture formed in 2018 between AGC North America, the US arm of Japanese glassmaker AGC, and AutoTemp Inc."
+ },
+ {
+  "recipient_id": "EIN:812174460",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://news.google.com/rss/search?q=%22Oats+Overnight%22+investors",
+  "notes": "Venture-backed Phoenix-area breakfast brand led by its founder that raised minority rounds (Series B in 2024); no acquisition or corporate parent found."
+ },
+ {
+  "recipient_id": "EIN:820628587",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/branch-financial-expands-ohio-hq-creates-150-new-jobs",
+  "notes": "JobsOhio describes Branch as founded in 2017 and headquartered in Columbus, and news through 2022 shows venture funding rounds rather than an acquisition by another company."
+ }
+]

@@ -1,0 +1,20 @@
+[
+ {
+  "recipient_id": "EIN:980390818",
+  "owned_by_larger": "no",
+  "parent": "Trillium Health Care Products Inc.",
+  "parent_hq_state": "Canada",
+  "emp_bucket": "",
+  "source": "https://www.happi.com/breaking-news/historic-st-bernard-soap-factory-to-close-in-march/",
+  "notes": "P&G sold the Ivorydale bar-soap plant in 2003 to Trillium Health Care Products of Brockville, Ontario, a contract manufacturer of about 200 to 300 employees, and no later sale of the soap plant turned up."
+ },
+ {
+  "recipient_id": "EIN:043590028",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/spray-products-acquires-new-facility-with-revitalization-support",
+  "notes": "Spray Products is its own company, founded in 1958 and run by the founder's son Bart Bastian from Plymouth Meeting, Pennsylvania, so it is independent but headquartered outside Ohio."
+ }
+]

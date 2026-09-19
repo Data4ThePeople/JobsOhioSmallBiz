@@ -1,0 +1,83 @@
+[
+ {
+  "recipient_id": "EIN:760795388",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.nexusegroup.com/about",
+  "notes": "Founded in 2005 by partners Jeff Herzog and Marianne Corrao and headquartered in Cleveland; no parent found."
+ },
+ {
+  "recipient_id": "EIN:270543481",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.solechoiceinc.com/about",
+  "notes": "Portsmouth shoelace maker run by its own board and directors; site and news show no parent company."
+ },
+ {
+  "recipient_id": "EIN:371878747",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No website, news, or JobsOhio release found; the USA suffix hints at a foreign parent but nothing confirms one."
+ },
+ {
+  "recipient_id": "EIN:270733747",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://cerkl.com/about-us",
+  "notes": "Venture-funded Cincinnati software startup; no acquisition or parent company found."
+ },
+ {
+  "recipient_id": "EIN:450508423",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Site lists only two Delaware, Ohio foundries and the company sponsors its own retirement plan; no parent found."
+ },
+ {
+  "recipient_id": "EIN:205316317",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Local Marion real estate investor that renovated a downtown building into a coworking center; no parent company found."
+ },
+ {
+  "recipient_id": "EIN:815275280",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Holding LLC at a Litchfield, Ohio address with no website, news, or JobsOhio release naming the operating company or owner."
+ },
+ {
+  "recipient_id": "EIN:311399268",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Pataskala composites maker founded in 2004 that sponsors its own plan; site, news, and JobsOhio release name no parent."
+ },
+ {
+  "recipient_id": "EIN:340971763",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://businessjournaldaily.com/hynes-industries-witnesses-century-of-change/",
+  "notes": "PE firm Resilience Capital held majority ownership in 2015, but Hynes was its own operating platform (about 180 plan participants), not part of a larger group."
+ }
+]

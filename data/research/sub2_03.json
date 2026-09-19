@@ -1,0 +1,101 @@
+[
+ {
+  "recipient_id": "EIN:630944385",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://huntsvillebusinessjournal.com/news/2023/10/10/cfd-research-announces-major-company-transition/",
+  "notes": "Founder-led Huntsville firm that became 100% employee-owned (ESOP) in October 2023; no outside parent found."
+ },
+ {
+  "recipient_id": "EIN:273187193",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Independent Pierce fire-apparatus dealer based in Virginia with its own executive team; no parent company found."
+ },
+ {
+  "recipient_id": "EIN:873286018",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/beloved-winans-chocolates-coffees-expansion-contributes-to-community-revitalization",
+  "notes": "Winans Chocolates and Coffees is a Reiser family business in Piqua; no parent company found."
+ },
+ {
+  "recipient_id": "EIN:020537099",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/winesburg-chair-companyplans-3-phase-expansion-in-holmes-county",
+  "notes": "JobsOhio describes Winesburg Chair as a family-operated company founded in Winesburg; no parent found."
+ },
+ {
+  "recipient_id": "EIN:952546613",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/air-cargo-equipment-company-satco-inc-chooses-ohio-for-new-operations",
+  "notes": "JobsOhio describes Satco as a family-owned and operated air cargo equipment maker based in California."
+ },
+ {
+  "recipient_id": "EIN:850660241",
+  "owned_by_larger": "no",
+  "parent": "Trucent, Inc.",
+  "parent_hq_state": "MI",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/trucent-renewable-chemicals-to-open-new-facility-in-ohio",
+  "notes": "JobsOhio calls TRC a division of Trucent, a privately held fluid-separation company founded in 1997 and based in Dexter, Mich.; its size was not found but nothing suggests 500 or more."
+ },
+ {
+  "recipient_id": "EIN:900823691",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Cincinnati freight broker (formerly Logikor) described as privately held; Redwood Logistics bought it in March 2026, after the 2023 grant year."
+ },
+ {
+  "recipient_id": "EIN:841923636",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Small Portsmouth warehousing and trucking firm with its own site and no parent or group named; nothing contrary found."
+ },
+ {
+  "recipient_id": "EIN:854368179",
+  "owned_by_larger": "no",
+  "parent": "Nehemiah Manufacturing Company (probable affiliate)",
+  "parent_hq_state": "OH",
+  "emp_bucket": "100-499",
+  "source": "https://www.nehemiahmfg.com/",
+  "notes": "The grant address, 1907 South St, Cincinnati, is Nehemiah Manufacturing main office, so the LLC is likely a Nehemiah affiliate, a Cincinnati consumer-products maker of roughly 200 workers; ownership not confirmed."
+ },
+ {
+  "recipient_id": "EIN:274462942",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.buzzfile.com/business/Ironhawk-Industrial-216-502-3700",
+  "notes": "Directory lists a single-location Ohio LLC founded in 2010 with about 8 workers; no parent found."
+ },
+ {
+  "recipient_id": "EIN:464864574",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://news.google.com/rss/search?q=%22Profusion+Industries%22+acquired",
+  "notes": "Private-equity firm Peak Rock Capital sold the Marietta matting and sheeting maker to a management group in July 2020, so it was management-owned in the 2022 grant year."
+ }
+]
