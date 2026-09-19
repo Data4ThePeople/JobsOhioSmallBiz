@@ -39,3 +39,12 @@ None.
   businesses as the headline denominator with an all-recipients toggle;
   unique recipients as the count; Eric reviews the parents carrying 90% of
   dollars.
+- 2026-09-19 Step 1 in progress. Schedule I FY2014 to FY2024 parsed (2,038
+  rows, $1.17B, 1,515 recipients). 1,228 recipients classified (research
+  agents plus rules R1 to R4); the 287 left carry 1.7% of dollars, none over
+  $137,000. Interim, businesses only, small = under 500 employees: small
+  firms are 50.5% of parents and 18.4% of dollars; large firms 27.8% of
+  parents and 79.3% of dollars; worst case at least 61% of dollars to large.
+  Open: research on the last 287 (agents stalled; resume in a fresh
+  session with web search), 150-row re-check sample, Eric's review of
+  data/review_for_eric.csv, FY2025 XML and FY2012-13 PDFs from Eric.
