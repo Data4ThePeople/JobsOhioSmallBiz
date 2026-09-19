@@ -1,0 +1,54 @@
+[
+ {
+  "recipient_id": "EIN:750782223",
+  "recipient_class": "business",
+  "parent": "Post Holdings, Inc.",
+  "parent_hq_state": "MO",
+  "hq_source": "https://www.sec.gov/Archives/edgar/data/1530950/000153095020000326/post-20200930.htm",
+  "emp_bucket": "5000+",
+  "emp_source": "https://www.sec.gov/Archives/edgar/data/1530950/000153095020000326/post-20200930.htm",
+  "emp_asof": "2020",
+  "confidence": "A",
+  "founded_in_ohio": "no",
+  "notes": "BEF Foods, Inc. (Ohio) is listed in Post Holdings' FY2020 Exhibit 21; it is the Bob Evans Farms foods business Post bought in January 2018. Post's FY2020 10-K reports about 10,200 employees as of November 1, 2020."
+ },
+ {
+  "recipient_id": "EIN:208826851",
+  "recipient_class": "business",
+  "parent": "Homage Holdings, Inc. (Homage, LLC)",
+  "parent_hq_state": "OH",
+  "hq_source": "https://www.sec.gov/Archives/edgar/data/1483510/000148351017000086/a2017q210-q.htm",
+  "emp_bucket": "<100",
+  "emp_source": "Form 5500 participants for EIN 208826851 (sponsor HOMAGE, LLC): 76 in 2019, 132 in 2023",
+  "emp_asof": "2019",
+  "confidence": "B",
+  "founded_in_ohio": "unknown",
+  "notes": "Express, Inc.'s 2017 10-Q describes a $10.6 million non-controlling stake in Homage, LLC, a private retailer based in Columbus, so Express was not the parent. Homage's Form 5500 shows 76 plan participants in 2019, and its holding company files only Form D with the SEC."
+ },
+ {
+  "recipient_id": "EIN:770584954",
+  "recipient_class": "business",
+  "parent": "Persistent Systems Limited",
+  "parent_hq_state": "India",
+  "hq_source": "https://en.wikipedia.org/wiki/Persistent_Systems",
+  "emp_bucket": "5000+",
+  "emp_source": "https://en.wikipedia.org/wiki/Persistent_Systems",
+  "emp_asof": "2024",
+  "confidence": "C",
+  "founded_in_ohio": "no",
+  "notes": "Persistent Systems Inc. of Santa Clara is the US arm of Pune-based IT services firm Persistent Systems Limited, which Wikipedia lists at 23,941 employees in 2024; its US plan alone had 513 Form 5500 participants in 2015. The 2017 group headcount was not fetched, but a company of that scale was very likely over 5,000 then too."
+ },
+ {
+  "recipient_id": "EIN:475572204",
+  "recipient_class": "business",
+  "parent": "Murphy-Hoffman Company (MHC)",
+  "parent_hq_state": "KS",
+  "hq_source": "https://en.wikipedia.org/wiki/Murphy-Hoffman_Company",
+  "emp_bucket": "500-4999",
+  "emp_source": "https://www.mhc.com/about",
+  "emp_asof": "2025",
+  "confidence": "C",
+  "founded_in_ohio": "no",
+  "notes": "JobsOhio's release (https://www.jobsohio.com/newsroom/news-press/chillicothe-kenworth-announces-expansion-new-jobs-in-ross-county) says Chillicothe Kenworth is MHC RoadReady Center, part of MHC, with 76 jobs retained; MHC's site says it has nearly 5,000 employees today, so the 2019 figure was likely under 5,000. MHC was founded in Springfield, Missouri, and is based in Leawood, Kansas."
+ }
+]
