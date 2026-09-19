@@ -1,0 +1,29 @@
+[
+ {
+  "recipient_id": "EIN:341576726",
+  "owned_by_larger": "no",
+  "parent": "PowerParts Group (Mangrove Equity Partners)",
+  "parent_hq_state": "FL",
+  "emp_bucket": "",
+  "source": "https://pulse2.com/jll-partners-acquires-powerparts-group-to-build-power-turbine-aftermarket-components-platform/",
+  "notes": "STAR Turbine was a wholly owned unit of PowerParts Group, formed in 2020 and owned by Tampa private-equity firm Mangrove Equity Partners until its 2026 sale to JLL Partners; the two-unit platform looks well under 500 employees, so the parent is named but not counted as larger."
+ },
+ {
+  "recipient_id": "EIN:475355898",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://geminiindustrial.com/about-us",
+  "notes": "The company's about page says its founders started Gemini from their own manufacturing careers; no parent or investor was found."
+ },
+ {
+  "recipient_id": "EIN:814719550",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No parent found for the Norwalk/Huron manufacturer; the only related news is a 2025 insolvency filing by Goodlevel Enterprises Canada ULC, which looks like an affiliate rather than an owner."
+ }
+]

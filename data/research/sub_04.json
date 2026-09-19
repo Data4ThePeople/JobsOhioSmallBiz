@@ -97,5 +97,104 @@
   "emp_bucket": "",
   "source": "https://www.miletwo.us/about",
   "notes": "Site says Mile Two was founded in 2015 in Dayton; news covers it as a standalone Dayton defense software contractor with no parent."
+ },
+ {
+  "recipient_id": "EIN:311290621",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.rrtoolinc.com/about-us",
+  "notes": "Site says R&R Tool was founded by Dan Reed in 1987 and has grown to about 120 employees in two Ohio plants; no parent found."
+ },
+ {
+  "recipient_id": "EIN:311401876",
+  "owned_by_larger": "yes",
+  "parent": "KLINGER Group",
+  "parent_hq_state": "Austria",
+  "emp_bucket": "500-4999",
+  "source": "https://www.klinger-thermoseal.com/",
+  "notes": "Sidney plant operates as KLINGER Thermoseal (rebranded 2021) of the Austrian KLINGER Group, which runs 60+ sites in 40+ countries; worldwide headcount not confirmed, bucket estimated."
+ },
+ {
+  "recipient_id": "EIN:272450190",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/ohio-success/diamond-manufacturings-future-shines-bright-through-investments",
+  "notes": "JobsOhio profile describes Diamond Manufacturing as a women-owned Bluffton business; no parent company found."
+ },
+ {
+  "recipient_id": "EIN:341846562",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.nelsonpackagingco.com/",
+  "notes": "Site describes a Lima contract manufacturer certified as a women-owned business (WBENC); no parent company found."
+ },
+ {
+  "recipient_id": "EIN:310733949",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Jackson, Ohio construction contractor; site blocked the fetch and news on its nuclear-site contracts names no parent company."
+ },
+ {
+  "recipient_id": "EIN:341943090",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No working company site or news coverage found for the Marion firm (dba Cen Mac Metal), so ownership could not be checked."
+ },
+ {
+  "recipient_id": "EIN:800065827",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Blue Ash-headquartered Raymond forklift dealer; site could not be reached and news on its 2018 HQ move names no parent company."
+ },
+ {
+  "recipient_id": "EIN:203815844",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Chillicothe industrial repair firm; 2023 local and North Carolina coverage of its expansion calls it Ohio-based and names no parent."
+ },
+ {
+  "recipient_id": "EIN:844259995",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.thalermachine.com/",
+  "notes": "Thaler family sold the company in 2020 to private-equity firm Cognitive Capital Partners (with PNC Mezzanine debt), but no sister companies were found, so the platform appears to be Thaler alone at about 140 staff; review if any PE ownership should count."
+ },
+ {
+  "recipient_id": "EIN:262606260",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Owned by private-equity firm Providence Equity Partners during FY2022 (bought 2019, per Crain's Cleveland), but n2y was a standalone platform then (233 plan participants); it merged with Texthelp into 500+ person Everway only in 2024, so review if PE ownership should count."
+ },
+ {
+  "recipient_id": "EIN:271764977",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.napoleonmachine.com/about",
+  "notes": "Site says the shop is family-owned, with president Kevin Febrey taking full ownership in 2018."
  }
 ]
