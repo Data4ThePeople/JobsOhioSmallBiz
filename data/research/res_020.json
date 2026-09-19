@@ -37,5 +37,57 @@
   "confidence": "C",
   "founded_in_ohio": "no",
   "notes": "BrewDog USA's 2019 Reg A offering circular says it is majority owned by BrewDog plc of Ellon, Scotland, with the rest held by crowdfunding investors. The worldwide headcount comes only from an undated Wikipedia figure of 2,400, which likely overstates the 2018 level but fits the same bucket."
+ },
+ {
+  "recipient_id": "EIN:352549748",
+  "recipient_class": "business",
+  "parent": "Masias (Masias Invest / Masias Maquinaria, via Fluvitex S.L.)",
+  "parent_hq_state": "Spain",
+  "hq_source": "https://www.textileworld.com/textile-world/2018/09/ikea-supplier-fluvitex-to-open-first-u-s-operation-in-ohio/",
+  "emp_bucket": "100-499",
+  "emp_source": "https://www.linkedin.com/company/fluvitex (Fluvitex 51-200 employees); f5500_participants_2023=105 for Fluvitex USA",
+  "emp_asof": "2026",
+  "confidence": "C",
+  "founded_in_ohio": "no",
+  "notes": "In 2018 Fluvitex USA was a new Groveport plant of Fluvitex, an IKEA bedding supplier owned by the Spanish family firm Masias; Indo Count Industries (India) bought 81% of it in 2024, after the grant. Masias does not publish a group headcount, so the bucket rests on Fluvitex's LinkedIn range and the US plant's 105 plan participants."
+ },
+ {
+  "recipient_id": "EIN:363083135",
+  "recipient_class": "business",
+  "parent": "The Kraft Heinz Company",
+  "parent_hq_state": "PA",
+  "hq_source": "https://www.sec.gov/Archives/edgar/data/1637459/000163745919000049/form10-k2018.htm",
+  "emp_bucket": "5000+",
+  "emp_source": "https://www.sec.gov/Archives/edgar/data/1637459/000163745919000049/form10-k2018.htm (approximately 38,000 employees as of December 29, 2018)",
+  "emp_asof": "2018",
+  "confidence": "A",
+  "founded_in_ohio": "no",
+  "notes": "Kraft Foods Group merged into a Kraft Heinz subsidiary in July 2015, so Kraft Heinz was the parent in the grant years; its 10-K reports about 38,000 employees. The 10-K lists co-headquarters in Pittsburgh (principal executive offices) and Chicago."
+ },
+ {
+  "recipient_id": "EIN:473252445",
+  "recipient_class": "business",
+  "parent": "Nature Fresh Farms Inc.",
+  "parent_hq_state": "Canada",
+  "hq_source": "https://www.naturefresh.ca/about",
+  "emp_bucket": "500-4999",
+  "emp_source": "f5500_participants_2019=99, 2023=130 for Nature Fresh Farms USA only; no group headcount found on https://www.naturefresh.ca/careers or in Google News RSS",
+  "emp_asof": "2018",
+  "confidence": "D",
+  "founded_in_ohio": "no",
+  "notes": "The company site describes a family-owned greenhouse grower founded in 1999 in Leamington, Ontario, with 160 acres there and 90 in Delta, Ohio, so the parent is solid. No worldwide headcount was found (LinkedIn slug returned a different firm), and the 500-4999 bucket is a best guess from the size of the operation."
+ },
+ {
+  "recipient_id": "EIN:200378455",
+  "recipient_class": "business",
+  "parent": "Recker Consulting, LLC dba Path Forward (self)",
+  "parent_hq_state": "OH",
+  "hq_source": "https://www.pathforwardit.com/about",
+  "emp_bucket": "100-499",
+  "emp_source": "f5500_participants_2015=170, 2019=358 for sponsor PATH FORWARD CONSULTING (same EIN); metrics_jobs_retained_max=160",
+  "emp_asof": "2019",
+  "confidence": "B",
+  "founded_in_ohio": "yes",
+  "notes": "Path Forward's site says Nick Recker founded the Cincinnati healthcare IT firm in 2002; it later became part of Blue Alliance IT, which took a Prairie Capital investment in 2024, both after the grant. Form 5500 counts of 170 to 358 around the grant year fit the 100-499 bucket, though they include former employees with balances."
  }
 ]
