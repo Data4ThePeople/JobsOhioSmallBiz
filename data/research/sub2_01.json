@@ -97,5 +97,176 @@
   "emp_bucket": "",
   "source": "https://www.jobsohio.com/newsroom/news-press/branch-financial-expands-ohio-hq-creates-150-new-jobs",
   "notes": "JobsOhio describes Branch as founded in 2017 and headquartered in Columbus, and news through 2022 shows venture funding rounds rather than an acquisition by another company."
+ },
+ {
+  "recipient_id": "EIN:900751535",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://peprofessional.com/2015/02/sequel-lives-up-to-name-buys-back-lakeview-farms/",
+  "notes": "Private-equity firm Sequel Holdings bought Lakeview Farms in February 2015, but Lakeview was the Delphos-based operating platform itself (about 316 plan participants in 2015), not part of a larger group."
+ },
+ {
+  "recipient_id": "EIN:341919610",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.canplastics.com/canplastics/quebecs-ipl-inc-involved-rigid-plastic-packaging-acquisition/1003439213/",
+  "notes": "Sandusky-based Encore was independent in fiscal 2016; Irish group One51 bought it through its Quebec unit IPL in November 2016, after the grant year."
+ },
+ {
+  "recipient_id": "EIN:311752403",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.mastersrx.com/about/",
+  "notes": "Cincinnati-area drug wholesaler founded in 2002 and covered in news through 2017 as its own company, later described as a defunct Ohio distributor; no parent found."
+ },
+ {
+  "recipient_id": "EIN:202016358",
+  "owned_by_larger": "yes",
+  "parent": "Hill & Smith PLC (via Creative Composites Group)",
+  "parent_hq_state": "United Kingdom",
+  "emp_bucket": "500-4999",
+  "source": "https://www.creativecompositesgroup.com/about-us/creative-composites-group/composite-advantage",
+  "notes": "Company history says UK-listed Hill & Smith bought Composite Advantage in October 2018, so it was independent for the fiscal 2018 grant but owned by Hill & Smith for the fiscal 2022 grant."
+ },
+ {
+  "recipient_id": "EIN:340859271",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.brennaninc.com/about-us",
+  "notes": "Solon fittings distributor whose site describes long-held family traditions, and news shows it as the acquirer of other distributors, not a subsidiary."
+ },
+ {
+  "recipient_id": "EIN:920191641",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/rhinosystems-inc-expands-in-ohio-praises-healthcare-workforce-and-location",
+  "notes": "JobsOhio release quotes founder Martin Hoke describing a company that started at his kitchen counter and grew in Brooklyn Heights; no parent found."
+ },
+ {
+  "recipient_id": "EIN:341670663",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Cleveland marketing and IT agency covered by Crain's as moving its own offices and buying smaller agencies; no parent found."
+ },
+ {
+  "recipient_id": "EIN:310620191",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.silcofs.com/about-us/",
+  "notes": "Company history says Silco is led by the fourth generation of the Fraser family, reached about 300 employees in 2020, and built its own Evendale headquarters."
+ },
+ {
+  "recipient_id": "EIN:471035156",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Form 5500 shows Topco America is the Blue Ash operator of the Shoot Point Blank (now Range USA) gun-range chain, which news calls Blue Ash-based; no parent found."
+ },
+ {
+  "recipient_id": "EIN:341914556",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.arborwear.com/pages/about",
+  "notes": "Site says the company was started by arborists and runs its flagship store in Chagrin Falls; no parent or acquisition found."
+ },
+ {
+  "recipient_id": "EIN:872778954",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No website, news, or filing identifies what Jamland2 LLC at 4934 Lewis Avenue in Toledo is or who owns it."
+ },
+ {
+  "recipient_id": "EIN:843382410",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Gahanna maker of Crocodile Cloth wipes with about 14 plan participants; despite USA in the name, its site and news show no foreign or corporate parent."
+ },
+ {
+  "recipient_id": "EIN:273454290",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Hudson medical-supply wholesaler that sponsors its own retirement and welfare plans (358 participants in 2023); no website or news names a parent."
+ },
+ {
+  "recipient_id": "EIN:314271820",
+  "owned_by_larger": "no",
+  "parent": "Ohio Valley Banc Corp.",
+  "parent_hq_state": "OH",
+  "emp_bucket": "100-499",
+  "source": "https://www.sec.gov/Archives/edgar/data/894671/000114036122009818/sec10k123121.htm",
+  "notes": "The bank is the main subsidiary of Gallipolis-based holding company Ohio Valley Banc Corp., whose 2021 10-K reports about 264 employees in total."
+ },
+ {
+  "recipient_id": "EIN:341282776",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.wildrepublic.com/about-us",
+  "notes": "Company history says K&M International was founded in 1979 by G.B. and Kamala Pillai and is the Twinsburg global headquarters of the Wild Republic toy brand, not a subsidiary."
+ },
+ {
+  "recipient_id": "EIN:800814251",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Trade press describes Geo-Tech Polymers as an Ohio plastics recycler opening its own plants and hiring its own executives; no website found and nothing points to a parent."
+ },
+ {
+  "recipient_id": "EIN:272573256",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No website, news, or filing identifies what Garrett Wood LLC of Lexington, Kentucky does or who owns it."
+ },
+ {
+  "recipient_id": "EIN:204718296",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://news.google.com/rss/search?q=%22Al.+Neyer%22+employee+owned",
+  "notes": "Cincinnati developer and builder that the Enquirer reported became employee owned in 2014, before the 2017 grant; renamed Merus in 2025, with no corporate parent found."
+ },
+ {
+  "recipient_id": "EIN:815322241",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No website, news, or filing identifies what H2W Consulting LLC at 172 East State Street in Columbus does or who owns it."
  }
 ]

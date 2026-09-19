@@ -79,5 +79,104 @@
   "emp_bucket": "",
   "source": "https://businessjournaldaily.com/hynes-industries-witnesses-century-of-change/",
   "notes": "PE firm Resilience Capital held majority ownership in 2015, but Hynes was its own operating platform (about 180 plan participants), not part of a larger group."
+ },
+ {
+  "recipient_id": "EIN:030607461",
+  "owned_by_larger": "yes",
+  "parent": "gategroup Holding AG",
+  "parent_hq_state": "Switzerland",
+  "emp_bucket": "5000+",
+  "source": "https://www.gategroup.com/about/our-group-history/",
+  "notes": "deSter was acquired by gategroup in 2007, and gategroup was itself owned by China's HNA Group during the 2018 grant year."
+ },
+ {
+  "recipient_id": "EIN:465041467",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/fast-growing-fintech-company-fund-that-flip-expands-in-ohio",
+  "notes": "Independent venture-funded fintech startup (later renamed Upright) with 31 Ohio staff in 2020; no parent company found."
+ },
+ {
+  "recipient_id": "EIN:341827361",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://ptg-electronics.com/about-us/",
+  "notes": "Independent electronics maker headquartered in Ottawa Lake, Michigan, with its own history since 1984 and no parent company named."
+ },
+ {
+  "recipient_id": "EIN:311776202",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Cincinnati distributor and servicer of foreign machine-tool brands; site and news show no parent company."
+ },
+ {
+  "recipient_id": "EIN:020572651",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://pulse2.com/frontline-managed-services-profile-seelin-naidoo-interview/",
+  "notes": "Atlanta-based Intelliteach (later Frontline Managed Services) was itself the operating platform owned by PE firm BV Investment Partners; its 2021 headcount was not found, though it reports over 1,000 staff by 2025."
+ },
+ {
+  "recipient_id": "EIN:344473514",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.perryprotech.com/about",
+  "notes": "Lima company founded in 1965 by Rex Perry and now 100% employee-owned through an ESOP; no parent company."
+ },
+ {
+  "recipient_id": "EIN:208104524",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.weatherables.com/pages/about-us",
+  "notes": "Columbus-area vinyl fence maker (Weatherables brand) that describes itself as family-owned; no parent company."
+ },
+ {
+  "recipient_id": "EIN:842782969",
+  "owned_by_larger": "yes",
+  "parent": "Alene Candles",
+  "parent_hq_state": "NH",
+  "emp_bucket": "500-4999",
+  "source": "https://www.nhbr.com/business-scents-alene-candles-produces-specialty-lines-at-its-milford-factory/",
+  "notes": "Alene Pollen LLC shares Alene Candles' Milford, NH address and Ohio candle operations, and Alene Candles (owned by its executives and investors) employed about 1,100 people; the entity link is inferred, not stated."
+ },
+ {
+  "recipient_id": "EIN:860802110",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "ITC Manufacturing is itself headquartered in Phoenix, Arizona, with plants in Phoenix and Columbus, and sponsors its own plan; no parent company found."
+ },
+ {
+  "recipient_id": "EIN:341778077",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.revenuegroup.com/about",
+  "notes": "Cleveland collections firm founded in 1994 by John J. Sheehan III; site and news show no parent company."
+ },
+ {
+  "recipient_id": "EIN:272293444",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Massachusetts pouch maker that began in 2010 with ties to Italy's Gualapack and names Japan's Hosokawa Yoko as a strategic partner, but no source found stating who owned it in 2023."
  }
 ]

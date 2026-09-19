@@ -11,7 +11,7 @@ from pathlib import Path
 
 RAW = Path(__file__).resolve().parent.parent / "data" / "raw" / "990"
 LAKE = "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/{}_public.xml"
-UA = "Data 4 The People research (eric@asaltollc.com)"
+UA = "Data 4 The People research"
 
 # fiscal year end -> IRS object id
 FILINGS = {

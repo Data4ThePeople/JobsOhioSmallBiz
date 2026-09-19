@@ -26,6 +26,15 @@ Since: 2026-09-18
 
 None.
 
+## Reminders for writing (raise at Step 2a)
+
+- Story leads are in `docs/STORY_LEADS.md`. Eric asked to be reminded:
+  **Petmin USA** ($10M paid in FY2020-21 for an Ashtabula pig iron plant that
+  was never built; Chapter 7 filed November 3, 2025). Open question to answer
+  before publishing: does Ohio get the money back?
+- Also there: $26.0M in reversed grants; foreign-owned units inside the
+  small-business Inclusion Grant.
+
 ## Log
 
 - 2026-09-18 Step 1 opened. Topic: every grant JobsOhio has disclosed on

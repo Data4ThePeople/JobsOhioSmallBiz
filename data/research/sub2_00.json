@@ -16,5 +16,68 @@
   "emp_bucket": "",
   "source": "https://www.jobsohio.com/newsroom/news-press/spray-products-acquires-new-facility-with-revitalization-support",
   "notes": "Spray Products is its own company, founded in 1958 and run by the founder's son Bart Bastian from Plymouth Meeting, Pennsylvania, so it is independent but headquartered outside Ohio."
+ },
+ {
+  "recipient_id": "EIN:453836837",
+  "owned_by_larger": "no",
+  "parent": "Bettcher Industries, Inc. (MPE Partners platform)",
+  "parent_hq_state": "OH",
+  "emp_bucket": "",
+  "source": "https://www.exsurco.com/who-we-are",
+  "notes": "Exsurco is a subsidiary of Bettcher Industries of Birmingham, Ohio, which MPE Partners owned from 2017 until KKR bought it in late 2021; Bettcher's own plan shows about 350 participants, and with its Georgia units Cantrell and Gainco the group may sit near 500 but no count above that was found."
+ },
+ {
+  "recipient_id": "EIN:311588140",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No sign of a parent turned up for the Portsmouth flooring maker; its website is gone and news coverage is thin, so this rests on nothing contrary found."
+ },
+ {
+  "recipient_id": "EIN:582514686",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.tronair.com/pages/about-us",
+  "notes": "Tronair is itself the operating platform, headquartered in Swanton, Ohio, and owned by private-equity firm Golden Gate Capital since 2016; its own plan shows about 350 to 400 participants and its add-on brands (Columbus Jack, Malabar, Eagle Tugs) are small, so no larger parent was found."
+ },
+ {
+  "recipient_id": "EIN:474578433",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.amgindustries.com/about-us/",
+  "notes": "AMG Industries describes itself as a single-site Mount Vernon metal stamper founded in 1904 as Akron Metallic Gasket, and no parent company turned up."
+ },
+ {
+  "recipient_id": "EIN:825215665",
+  "owned_by_larger": "no",
+  "parent": "PureCycle Technologies, Inc.",
+  "parent_hq_state": "FL",
+  "emp_bucket": "",
+  "source": "https://www.sec.gov/Archives/edgar/data/1830033/000183003323000024/pct-form10xk2022ex211listo.htm",
+  "notes": "PureCycle: Ohio LLC, the Ironton plant, is a subsidiary of Nasdaq-listed PureCycle Technologies of Orlando, Florida, which reported 177 employees at the end of 2022."
+ },
+ {
+  "recipient_id": "EIN:311581466",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.smartbusinessdealmakers.com/articles/topic/revlocal-marc-hawk-take-on-investors-with-care/",
+  "notes": "RevLocal was run by founder Marc Hawk with angel and minority equity backing (about 450 employees in 2020) until H.I.G.-backed Hibu bought it in August 2024, after the grant years."
+ },
+ {
+  "recipient_id": "EIN:316034125",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "KEMBA Credit Union of West Chester is a member-owned credit union, so no company owns it, and no merger during the grant year turned up."
  }
 ]

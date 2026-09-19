@@ -97,5 +97,131 @@
   "emp_bucket": "",
   "source": "https://news.google.com/rss/search?q=%22Profusion+Industries%22+acquired",
   "notes": "Private-equity firm Peak Rock Capital sold the Marietta matting and sheeting maker to a management group in July 2020, so it was management-owned in the 2022 grant year."
+ },
+ {
+  "recipient_id": "EIN:455115834",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No company site, news item, or JobsOhio release found for the Fairfield (3795 Symmes Rd) recipient, so ownership could not be judged."
+ },
+ {
+  "recipient_id": "EIN:463761164",
+  "owned_by_larger": "no",
+  "parent": "xperion Energy & Environment GmbH",
+  "parent_hq_state": "Germany",
+  "emp_bucket": "",
+  "source": "https://news.google.com/rss/search?q=%22xperion%22+Heath+Ohio",
+  "notes": "The Heath plant was the US arm of German CNG and hydrogen tank maker xperion Energy & Environment, a smaller group in 2015 that later became part of Norway-based Hexagon Composites after the grant year (acquisition date not confirmed here)."
+ },
+ {
+  "recipient_id": "EIN:421772220",
+  "owned_by_larger": "no",
+  "parent": "S\u00e9rigraphie Richford Inc.",
+  "parent_hq_state": "Canada",
+  "emp_bucket": "",
+  "source": "https://www.serigraphierichford.com/about/",
+  "notes": "SRI Ohio is the US site of S\u00e9rigraphie Richford, a family-owned bottle-decorating company based in Montreal with plants in Quebec and Ontario; its total size was not found but nothing suggests 500 or more."
+ },
+ {
+  "recipient_id": "EIN:453507457",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://en.wikipedia.org/wiki/Christine_Hunsicker",
+  "notes": "Gwynnie Bee was an independent venture-backed startup founded by Christine Hunsicker, later renamed CaaStle, with no parent company."
+ },
+ {
+  "recipient_id": "EIN:462903016",
+  "owned_by_larger": "no",
+  "parent": "Precision Products Group, Inc. (platform owned by private-equity firms Long Point Capital and Greyrock Capital)",
+  "parent_hq_state": "IN",
+  "emp_bucket": "",
+  "source": "https://news.google.com/rss/search?q=%22Precision+Products+Group%22+Long+Point+Capital",
+  "notes": "The recipient is itself a private-equity-owned multi-plant platform (Euclid Medical in Apple Creek, Paramount Tube and paper-straw lines in Fort Wayne) that moved its headquarters to Indiana in 2016 and was sold to Auxo in 2020; its total headcount was not found and nothing shows 500 or more."
+ },
+ {
+  "recipient_id": "EIN:200378455",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.pathforwardit.com/about",
+  "notes": "Nick Recker founded the Cincinnati healthcare IT firm (now Path Forward IT) in 2002; it joined the Blue Alliance IT network only after the 2018 grant year."
+ },
+ {
+  "recipient_id": "EIN:341754280",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://businessjournaldaily.com/trumbull-manufacturing-to-expand-in-austintown/",
+  "notes": "The Warren-area water-system parts maker, formed in 1981, is described as a sister company of Trumbull Industries (same Ohio owners), not a subsidiary of any larger group."
+ },
+ {
+  "recipient_id": "EIN:311178698",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/ohio-success/new-horizons-when-baking-grows-bigger",
+  "notes": "Norwalk bun and English-muffin maker led by the Brown family (Tim Brown and daughter Trina Bediako); no parent company or private-equity owner found."
+ },
+ {
+  "recipient_id": "EIN:823127174",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Only an Ohio registration and a rural Ashland County grant address turned up; no business description or owner was found."
+ },
+ {
+  "recipient_id": "EIN:261762076",
+  "owned_by_larger": "yes",
+  "parent": "Metal Exchange Corporation (Lefton family)",
+  "parent_hq_state": "MO",
+  "emp_bucket": "500-4999",
+  "source": "https://www.pennex.com/who-we-are/our-history",
+  "notes": "The Leetonia metals plant is Pennex Aluminum, part of St. Louis-based Metal Exchange, founded by Morris Lefton and self-described as one of the largest privately held aluminum groups with plants in PA, OH and Italy; the link to the Lefton-named recipient and the size bucket are inferred, not stated."
+ },
+ {
+  "recipient_id": "EIN:341472584",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.butechbliss.com/about-us/",
+  "notes": "Butech was formed in Salem by John Buta in 1985 and he remains president of the combined Butech Bliss; no outside parent found."
+ },
+ {
+  "recipient_id": "EIN:061569176",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Lakewood, NJ foodservice and industrial hardware maker operating since 1981 with its own European unit; no parent or private-equity owner found."
+ },
+ {
+  "recipient_id": "EIN:311204991",
+  "owned_by_larger": "no",
+  "parent": "TenCate Advanced Armour Holding (owned by Agilitas Private Equity; renamed Integris Composites in 2023)",
+  "parent_hq_state": "Netherlands",
+  "emp_bucket": "100-499",
+  "source": "https://www.defensedaily.com/private-equity-firm-agilitas-acquires-tencate-advanced-armour/business-financial/",
+  "notes": "Agilitas bought the Netherlands-based armor group from Royal TenCate in March 2021, before the 2022 grant year, and the group had just over 300 employees across the Netherlands, Denmark, France and the US."
+ },
+ {
+  "recipient_id": "EIN:471395397",
+  "owned_by_larger": "no",
+  "parent": "Enthusiast Auto Holdings, LLC (platform owned by Cortec Group since Jan 2020)",
+  "parent_hq_state": "OH",
+  "emp_bucket": "",
+  "source": "https://www.bertramcapital.com/portfolio/enthusiast-auto-holdings/",
+  "notes": "ECS Tuning is the core of Wadsworth-based Enthusiast Auto Holdings, a private-equity platform (Bertram 2014, Cortec 2020) that also owns Turner Motorsport, Z1 and EVANNEX; its total headcount was not found and could be near 500 given the 807 plan participants in 2023."
  }
 ]
