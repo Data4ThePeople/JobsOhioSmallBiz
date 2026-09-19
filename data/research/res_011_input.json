@@ -21,7 +21,8 @@
   "metrics_programs": "Economic Development Grant",
   "metrics_jobs_retained_max": "43",
   "metrics_industry": "Healthcare",
-  "metrics_commit_total": "250000"
+  "metrics_commit_total": "250000",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:475621244",
@@ -45,7 +46,8 @@
   "metrics_programs": "Workforce Grant",
   "metrics_jobs_retained_max": "41",
   "metrics_industry": "Other",
-  "metrics_commit_total": "250000"
+  "metrics_commit_total": "250000",
+  "edgar_name_match": "same name"
  },
  {
   "recipient_id": "EIN:250530110",
@@ -69,7 +71,8 @@
   "metrics_programs": "Economic Development Grant; Revitalization Grant",
   "metrics_jobs_retained_max": "42",
   "metrics_industry": "Energy and Chemicals",
-  "metrics_commit_total": "400000"
+  "metrics_commit_total": "400000",
+  "edgar_name_match": "DIFFERENT NAME: EIN reused or a parent/former filer; confirm before using"
  },
  {
   "recipient_id": "EIN:205877688",
@@ -93,7 +96,8 @@
   "metrics_programs": "Economic Development Grant",
   "metrics_jobs_retained_max": "57",
   "metrics_industry": "Healthcare",
-  "metrics_commit_total": "250000"
+  "metrics_commit_total": "250000",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:310807991",
@@ -117,7 +121,8 @@
   "metrics_programs": "Economic Development Grant; Workforce Grant",
   "metrics_jobs_retained_max": "745",
   "metrics_industry": "Logistics and Distribution",
-  "metrics_commit_total": "250000"
+  "metrics_commit_total": "250000",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:133246026",
@@ -141,7 +146,8 @@
   "metrics_programs": "Economic Development Grant",
   "metrics_jobs_retained_max": "100",
   "metrics_industry": "Advanced Manufacturing",
-  "metrics_commit_total": "250000"
+  "metrics_commit_total": "250000",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:311317049",
@@ -165,7 +171,8 @@
   "metrics_programs": "",
   "metrics_jobs_retained_max": "",
   "metrics_industry": "",
-  "metrics_commit_total": ""
+  "metrics_commit_total": "",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:264690600",
@@ -189,7 +196,8 @@
   "metrics_programs": "Economic Development Grant",
   "metrics_jobs_retained_max": "11",
   "metrics_industry": "Food and Agribusiness",
-  "metrics_commit_total": "250000"
+  "metrics_commit_total": "250000",
+  "edgar_name_match": "same name"
  },
  {
   "recipient_id": "EIN:824672012",
@@ -213,7 +221,8 @@
   "metrics_programs": "Revitalization Grant",
   "metrics_jobs_retained_max": "8",
   "metrics_industry": "Advanced Manufacturing",
-  "metrics_commit_total": "250000"
+  "metrics_commit_total": "250000",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:352380696",
@@ -237,7 +246,8 @@
   "metrics_programs": "Workforce Grant",
   "metrics_jobs_retained_max": "0",
   "metrics_industry": "Financial Services",
-  "metrics_commit_total": "250000"
+  "metrics_commit_total": "250000",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:341437898",
@@ -261,7 +271,8 @@
   "metrics_programs": "Economic Development Grant",
   "metrics_jobs_retained_max": "209",
   "metrics_industry": "Advanced Manufacturing",
-  "metrics_commit_total": "250000"
+  "metrics_commit_total": "250000",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:341675168",
@@ -285,7 +296,8 @@
   "metrics_programs": "",
   "metrics_jobs_retained_max": "",
   "metrics_industry": "",
-  "metrics_commit_total": ""
+  "metrics_commit_total": "",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:222784144",
@@ -309,7 +321,8 @@
   "metrics_programs": "Economic Development Grant",
   "metrics_jobs_retained_max": "350",
   "metrics_industry": "Advanced Manufacturing",
-  "metrics_commit_total": "250000"
+  "metrics_commit_total": "250000",
+  "edgar_name_match": "same name"
  },
  {
   "recipient_id": "EIN:341378660",
@@ -333,7 +346,8 @@
   "metrics_programs": "",
   "metrics_jobs_retained_max": "",
   "metrics_industry": "",
-  "metrics_commit_total": ""
+  "metrics_commit_total": "",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:341532037",
@@ -357,7 +371,8 @@
   "metrics_programs": "Revitalization Grant",
   "metrics_jobs_retained_max": "21",
   "metrics_industry": "Advanced",
-  "metrics_commit_total": "250000"
+  "metrics_commit_total": "250000",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:201702549",
@@ -381,7 +396,8 @@
   "metrics_programs": "Revitalization Grant",
   "metrics_jobs_retained_max": "0",
   "metrics_industry": "Advanced Manufacturing",
-  "metrics_commit_total": "250000"
+  "metrics_commit_total": "250000",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:201248880",
@@ -405,7 +421,8 @@
   "metrics_programs": "Economic Development Grant; Workforce Grant",
   "metrics_jobs_retained_max": "929",
   "metrics_industry": "Food and Agribusiness",
-  "metrics_commit_total": "1250000"
+  "metrics_commit_total": "1250000",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:831024049",
@@ -429,7 +446,8 @@
   "metrics_programs": "Economic Development Grant",
   "metrics_jobs_retained_max": "227",
   "metrics_industry": "Food Sciences and Agriculture",
-  "metrics_commit_total": "250000"
+  "metrics_commit_total": "250000",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:340750763",
@@ -453,7 +471,8 @@
   "metrics_programs": "Economic Development Grant",
   "metrics_jobs_retained_max": "449",
   "metrics_industry": "Food and Agribusiness",
-  "metrics_commit_total": "250000"
+  "metrics_commit_total": "250000",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:822257804",
@@ -477,6 +496,7 @@
   "metrics_programs": "",
   "metrics_jobs_retained_max": "",
   "metrics_industry": "",
-  "metrics_commit_total": ""
+  "metrics_commit_total": "",
+  "edgar_name_match": ""
  }
 ]

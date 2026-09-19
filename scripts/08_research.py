@@ -23,7 +23,7 @@ HAND = ["recipient_class", "parent", "parent_hq_state", "hq_source", "emp_bucket
 BUCKETS = {"<100", "100-499", "500-4999", "5000+", ""}
 CLASSES = {"business", "site_development", "government", "nonprofit", "university", "hospital", ""}
 SIGNALS = ["recipient_id", "name", "ein", "city", "state", "irc_section", "total_cash", "years",
-           "recipient_class_auto", "edgar_name", "edgar_state_inc", "edgar_hq_state",
+           "recipient_class_auto", "edgar_name", "edgar_name_match", "edgar_state_inc", "edgar_hq_state",
            "f5500_participants_2015", "f5500_participants_2019", "f5500_participants_2023", "f5500_sponsor",
            "metrics_company", "metrics_programs", "metrics_jobs_retained_max", "metrics_industry", "metrics_commit_total"]
 

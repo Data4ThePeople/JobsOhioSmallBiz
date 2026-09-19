@@ -236,7 +236,11 @@ subsidiaries, so a project LLC may be absent even when its parent is public.
 end, sometimes "approximately," sometimes full-time only. Recorded as a bucket
 with the as-of date and the wording. Two Schedule I rows carry the placeholder
 EIN 000000000, which also appears on tens of thousands of EDGAR records; it
-is treated as missing. The bulk archive matched 165 recipient EINs.
+is treated as missing. The bulk archive matched 165 recipient EINs. The EIN on an EDGAR record is entered by the filer and is not validated;
+24 of the 165 matches carry an unrelated name (Calgon Carbon's EIN appears on
+an R.R. Donnelley record; Church & Dwight's on an individual's). Others are
+former names or parents (Noveon for Lubrizol). The match is therefore a hint
+for research, flagged `edgar_name_match`, never a classification by itself.
 
 **License and attribution.** Public domain. Cite as "SEC EDGAR."
 

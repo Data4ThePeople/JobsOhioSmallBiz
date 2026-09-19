@@ -14,6 +14,7 @@ Hand-filled columns are preserved across runs:
 emp_bucket values: <100, 100-499, 500-4999, 5000+."""
 import csv, re, sys
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 ROOT = Path(__file__).resolve().parent.parent
 RECIP = ROOT / "data" / "recipients.csv"
@@ -24,7 +25,7 @@ F5500 = ROOT / "data" / "f5500_participants.csv"
 HAND = ["recipient_class", "parent", "parent_hq_state", "hq_source", "emp_bucket",
         "emp_source", "emp_asof", "confidence", "founded_in_ohio", "notes"]
 AUTO = ["recipient_id", "name", "ein", "city", "state", "irc_section", "total_cash", "n_rows", "years",
-        "recipient_class_auto", "edgar_cik", "edgar_name", "edgar_state_inc", "edgar_hq_state",
+        "recipient_class_auto", "edgar_cik", "edgar_name", "edgar_name_match", "edgar_state_inc", "edgar_hq_state",
         "f5500_participants_2015", "f5500_participants_2019", "f5500_participants_2023", "f5500_sponsor", "f5500_sponsor_state",
         "metrics_company", "metrics_programs", "metrics_jobs_retained_max", "metrics_industry", "metrics_commit_total"]
 
@@ -70,6 +71,9 @@ def main():
         row = {k: r.get(k, "") for k in AUTO if k in r}
         row["recipient_class_auto"] = recipient_class(r["name"], r["irc_section"])
         e = edgar.get(r["ein"], {})
+        from names import score as _score
+        nm = max([_score(r["name"], e.get("name", ""))] + [_score(r["name"], f) for f in e.get("former_names", "").split(" | ") if f]) if e else 0
+        row["edgar_name_match"] = ("" if not e else "same name" if nm >= 0.34 else "DIFFERENT NAME: EIN reused or a parent/former filer; confirm before using")
         row.update({"edgar_cik": e.get("cik", ""), "edgar_name": e.get("name", ""),
                     "edgar_state_inc": e.get("state_inc", ""), "edgar_hq_state": e.get("hq_state", "")})
         f = f5500.get(r["ein"], {})

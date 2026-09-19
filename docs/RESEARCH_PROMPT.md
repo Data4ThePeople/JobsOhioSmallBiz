@@ -45,6 +45,9 @@ object per recipient.
 
 - `edgar_name`, `edgar_state_inc`, `edgar_hq_state`: the recipient's EIN is
   an SEC registrant. Public company or filing subsidiary. Cite the 10-K.
+  If `edgar_name_match` says DIFFERENT NAME, the EIN on file at the SEC
+  belongs to another filer (EINs are self-reported and sometimes reused) or
+  to a former name or parent; confirm the link before relying on it.
 - `f5500_participants_YYYY`: Form 5500 plan participants for the recipient's
   EIN (largest plan, beginning of year). Includes former employees with
   balances. Under 250 means very likely under 500 employees at that entity;

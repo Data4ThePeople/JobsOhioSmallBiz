@@ -21,7 +21,8 @@
   "metrics_programs": "Economic Development Grant",
   "metrics_jobs_retained_max": "484",
   "metrics_industry": "Advanced Manufacturing",
-  "metrics_commit_total": "50000"
+  "metrics_commit_total": "50000",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:320071821",
@@ -45,7 +46,8 @@
   "metrics_programs": "",
   "metrics_jobs_retained_max": "",
   "metrics_industry": "",
-  "metrics_commit_total": ""
+  "metrics_commit_total": "",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:341398298",
@@ -69,7 +71,8 @@
   "metrics_programs": "",
   "metrics_jobs_retained_max": "",
   "metrics_industry": "",
-  "metrics_commit_total": ""
+  "metrics_commit_total": "",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:341570807",
@@ -93,7 +96,8 @@
   "metrics_programs": "Economic Development Grant; Workforce Grant",
   "metrics_jobs_retained_max": "157",
   "metrics_industry": "Advanced Manufacturing",
-  "metrics_commit_total": "150000"
+  "metrics_commit_total": "150000",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:465690691",
@@ -117,7 +121,8 @@
   "metrics_programs": "Revitalization Grant",
   "metrics_jobs_retained_max": "7",
   "metrics_industry": "Other",
-  "metrics_commit_total": "50000"
+  "metrics_commit_total": "50000",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:341101302",
@@ -141,7 +146,8 @@
   "metrics_programs": "",
   "metrics_jobs_retained_max": "",
   "metrics_industry": "",
-  "metrics_commit_total": ""
+  "metrics_commit_total": "",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:271320001",
@@ -165,7 +171,8 @@
   "metrics_programs": "Workforce Grant",
   "metrics_jobs_retained_max": "0",
   "metrics_industry": "Advanced Manufacturing",
-  "metrics_commit_total": "50000"
+  "metrics_commit_total": "50000",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:251766580",
@@ -189,7 +196,8 @@
   "metrics_programs": "",
   "metrics_jobs_retained_max": "",
   "metrics_industry": "",
-  "metrics_commit_total": ""
+  "metrics_commit_total": "",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:311539233",
@@ -213,7 +221,8 @@
   "metrics_programs": "Workforce Grant",
   "metrics_jobs_retained_max": "87",
   "metrics_industry": "Advanced Manufacturing",
-  "metrics_commit_total": "50000"
+  "metrics_commit_total": "50000",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:341949320",
@@ -237,7 +246,8 @@
   "metrics_programs": "Workforce Grant",
   "metrics_jobs_retained_max": "190",
   "metrics_industry": "Automotive",
-  "metrics_commit_total": "50000"
+  "metrics_commit_total": "50000",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:452583478",
@@ -261,7 +271,8 @@
   "metrics_programs": "",
   "metrics_jobs_retained_max": "",
   "metrics_industry": "",
-  "metrics_commit_total": ""
+  "metrics_commit_total": "",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:133537004",
@@ -285,7 +296,8 @@
   "metrics_programs": "",
   "metrics_jobs_retained_max": "",
   "metrics_industry": "",
-  "metrics_commit_total": ""
+  "metrics_commit_total": "",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:311437701",
@@ -309,7 +321,8 @@
   "metrics_programs": "",
   "metrics_jobs_retained_max": "",
   "metrics_industry": "",
-  "metrics_commit_total": ""
+  "metrics_commit_total": "",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:133996703",
@@ -333,7 +346,8 @@
   "metrics_programs": "Workforce Grant",
   "metrics_jobs_retained_max": "",
   "metrics_industry": "Other",
-  "metrics_commit_total": "50000"
+  "metrics_commit_total": "50000",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:371790634",
@@ -357,7 +371,8 @@
   "metrics_programs": "",
   "metrics_jobs_retained_max": "",
   "metrics_industry": "",
-  "metrics_commit_total": ""
+  "metrics_commit_total": "",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:311745568",
@@ -381,7 +396,8 @@
   "metrics_programs": "Workforce Grant",
   "metrics_jobs_retained_max": "480",
   "metrics_industry": "Advanced Manufacturing",
-  "metrics_commit_total": "50000"
+  "metrics_commit_total": "50000",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:462633179",
@@ -405,7 +421,8 @@
   "metrics_programs": "Economic Development Grant",
   "metrics_jobs_retained_max": "36",
   "metrics_industry": "Automotive",
-  "metrics_commit_total": "150000"
+  "metrics_commit_total": "150000",
+  "edgar_name_match": "DIFFERENT NAME: EIN reused or a parent/former filer; confirm before using"
  },
  {
   "recipient_id": "EIN:830892018",
@@ -429,7 +446,8 @@
   "metrics_programs": "",
   "metrics_jobs_retained_max": "",
   "metrics_industry": "",
-  "metrics_commit_total": ""
+  "metrics_commit_total": "",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:273887724",
@@ -453,7 +471,8 @@
   "metrics_programs": "Workforce Grant",
   "metrics_jobs_retained_max": "",
   "metrics_industry": "Other",
-  "metrics_commit_total": "50000"
+  "metrics_commit_total": "50000",
+  "edgar_name_match": ""
  },
  {
   "recipient_id": "EIN:300225741",
@@ -477,6 +496,7 @@
   "metrics_programs": "Workforce Grant",
   "metrics_jobs_retained_max": "509",
   "metrics_industry": "Food Processing",
-  "metrics_commit_total": "70000"
+  "metrics_commit_total": "70000",
+  "edgar_name_match": "same name"
  }
 ]
