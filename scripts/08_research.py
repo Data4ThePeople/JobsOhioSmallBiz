@@ -60,6 +60,13 @@ def cmd_merge(files):
                 sys.exit(f"{f}: bad emp_bucket {item.get('emp_bucket')!r} for {rid}")
             if item.get("recipient_class", "") not in CLASSES:
                 sys.exit(f"{f}: bad recipient_class {item.get('recipient_class')!r} for {rid}")
+            # Wikipedia alone is not grade-B evidence under the rubric: a row whose
+            # size and HQ sources are only Wikipedia is capped at C.
+            srcs = " ".join(str(item.get(k, "")) for k in ("emp_source", "hq_source"))
+            if item.get("confidence") in ("A", "B") and "wikipedia.org" in srcs and not any(
+                    t in srcs for t in ("sec.gov", "Form 5500", "jobsohio", "10-K", "annual report")):
+                item["confidence"] = "C"
+                item["notes"] = (item.get("notes", "") + " Graded C: Wikipedia is the only source.").strip()
             row = by_id[rid]
             was = bool(row["parent"])
             for k in HAND:

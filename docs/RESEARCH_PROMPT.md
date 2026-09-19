@@ -39,7 +39,9 @@ object per recipient.
   record, or the company's own audited report for the grant year; `B` from a
   JobsOhio or regional partner press release, a Form 5500 participant count,
   or a reputable news story naming the size and owner; `C` from a company
-  website, LinkedIn, or a business directory; `D` unresolved, best guess.
+  website, LinkedIn, Wikipedia, or a business directory; `D` unresolved,
+  best guess. General knowledge is not a source: every grade above D needs a
+  URL you actually fetched.
 
 ## Signals already gathered (use them, cite them where they decide the call)
 
