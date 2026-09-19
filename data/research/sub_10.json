@@ -115,5 +115,50 @@
   "emp_bucket": "",
   "source": "https://www.herald-dispatch.com/business/former-pepsi-plant-property-in-west-huntington-sold/article_16b1c2b3-c2d4-599e-aeba-6ec4904e949f.html",
   "notes": "Local press names Shane Pauley as owner of the machine shop he started in Proctorville in 2014; no parent found."
+ },
+ {
+  "recipient_id": "EIN:833409500",
+  "owned_by_larger": "no",
+  "parent": "Aeropact Precision Machining Pvt. Ltd. (common owners)",
+  "parent_hq_state": "India",
+  "emp_bucket": "",
+  "source": "https://www.aeropact.com/about-us/",
+  "notes": "The owners of Indian machinist Aeropact Precision Machining (founded 2014, Perundurai) bought Bowling Green's Martin Machine in 2019 and run it as its US sister company; the group is small."
+ },
+ {
+  "recipient_id": "EIN:843573025",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No website, news item or JobsOhio release found for the Dayton firm, so ownership could not be checked."
+ },
+ {
+  "recipient_id": "EIN:820669036",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.prweb.com/releases/clarion-safety-systems-acquires-arrow-industrial-solutions-302025744.html",
+  "notes": "Release shows Arrow (founded 2003) was independent until Pennsylvania's Clarion Safety Systems bought it in January 2024, after the 2022 grant year."
+ },
+ {
+  "recipient_id": "EIN:823063010",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No working website, news item or JobsOhio release found for the Cleveland analytics firm, so ownership could not be checked."
+ },
+ {
+  "recipient_id": "EIN:264577447",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.freshwatercleveland.com/breaking-ground/LandEBike020922.aspx",
+  "notes": "Founder Scott Colosimo started the Cleveland motorcycle maker in 2009 and sold it to his investors around 2021, when he moved to e-bike maker LAND; no corporate parent found."
  }
 ]
