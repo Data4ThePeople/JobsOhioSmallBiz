@@ -223,5 +223,23 @@
   "emp_bucket": "",
   "source": "https://www.bertramcapital.com/portfolio/enthusiast-auto-holdings/",
   "notes": "ECS Tuning is the core of Wadsworth-based Enthusiast Auto Holdings, a private-equity platform (Bertram 2014, Cortec 2020) that also owns Turner Motorsport, Z1 and EVANNEX; its total headcount was not found and could be near 500 given the 807 plan participants in 2023."
+ },
+ {
+  "recipient_id": "EIN:260295908",
+  "owned_by_larger": "no",
+  "parent": "INNOMOTIVE Solutions Group (parent of AMDOR and Whiting Canada)",
+  "parent_hq_state": "Canada",
+  "emp_bucket": "",
+  "source": "https://www.fireengineering.com/fire-industry-news/innomotive-solutions-group-acquires-fire-and-marine-fmi/",
+  "notes": "Burlington, Ontario-based INNOMOTIVE Solutions Group bought the Springfield compartment maker (then Fire and Marine, Inc.) in May 2021, before the 2024 grant year; the group size was not found but it appears to be a small specialty-vehicle parts group."
+ },
+ {
+  "recipient_id": "EIN:844116479",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://oat.haus/pages/about",
+  "notes": "Kween and Co. is the woman-owned, founder-led granola-butter brand Oat Haus in Brooklyn Heights, Ohio, funded by small investors including Shark Tank; no parent company found."
  }
 ]

@@ -79,5 +79,14 @@
   "emp_bucket": "",
   "source": "",
   "notes": "KEMBA Credit Union of West Chester is a member-owned credit union, so no company owns it, and no merger during the grant year turned up."
+ },
+ {
+  "recipient_id": "EIN:471671054",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://siliconangle.com/2024/08/14/mimecast-acquires-aware-enhance-security-compliance-workplace-collaboration-tools/",
+  "notes": "Nullable Inc. is Columbus startup Aware, venture-backed and independent through the grant years; Mimecast bought it in August 2024, just after fiscal 2024 ended."
  }
 ]
