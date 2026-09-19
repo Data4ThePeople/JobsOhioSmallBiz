@@ -25,5 +25,14 @@
   "emp_bucket": "",
   "source": "",
   "notes": "Single Portsmouth coffee shop with no website or news found and no sign of any parent company."
+ },
+ {
+  "recipient_id": "EIN:811581426",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.permapaveredging.com/about",
+  "notes": "Vandalia paver-edging maker whose about page describes it as developed by hardscape business owner Chris Yancey, with no parent company named."
  }
 ]

@@ -96,8 +96,10 @@ fetches, which earlier batches found reliable:
 
 - EDGAR full-text search JSON: `https://efts.sec.gov/LATEST/search-index?q=%22COMPANY%20NAME%22&forms=10-K`
   and company lookup `https://www.sec.gov/cgi-bin/browse-edgar?company=NAME&type=10-K&output=atom`
-  (use curl with the User-Agent "Data 4 The People research"; never put a
-  personal email address in a request; the fetch tool is blocked by sec.gov). Read the 10-K "Human Capital" or "Employees" section.
+  (use curl; for sec.gov only, the User-Agent is
+  "Data 4 The People research connect@data4thepeople.com", which SEC requires;
+  every other site gets "Data 4 The People research"; never use any other
+  email address; the fetch tool is blocked by sec.gov). Read the 10-K "Human Capital" or "Employees" section.
 - JobsOhio releases: fetch `https://www.jobsohio.com/sitemap.xml`, grep for
   the company or county, then fetch the release.
 - Google News RSS: `https://news.google.com/rss/search?q=%22COMPANY%22+Ohio`

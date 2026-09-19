@@ -27,6 +27,9 @@ How to check, in order, stopping as soon as it is settled:
    `https://www.jobsohio.com/sitemap.xml`), which often names the parent.
 
 Use curl with `--max-time 30` on every request; web search is not available.
+User-Agent: "Data 4 The People research" everywhere, except sec.gov, which
+requires a contact: "Data 4 The People research connect@data4thepeople.com".
+Never send any other email address.
 Save the output file after every recipient.
 
 Also report a parent that is **not** larger. If the company was owned by
