@@ -11,5 +11,31 @@
   "confidence": "C",
   "founded_in_ohio": "no",
   "notes": "Scannell #277 LLC is a numbered project entity of Scannell Properties, a privately held Indianapolis build-to-suit developer founded in 1990; LinkedIn shows 51-200 employees (155 listed). The Ohio project was not confirmed, though Scannell built Riddell's North Ridgeville plant around 2017."
+ },
+ {
+  "recipient_id": "EIN:340564691",
+  "recipient_class": "business",
+  "parent": "Superior Dairy, Inc. (self)",
+  "parent_hq_state": "OH",
+  "hq_source": "https://www.jobsohio.com/newsroom/news-press/superior-dairy-incorporated-expands-dairy-product-line-in-ohio",
+  "emp_bucket": "100-499",
+  "emp_source": "https://www.jobsohio.com/newsroom/news-press/superior-dairy-incorporated-expands-dairy-product-line-in-ohio (313 jobs retained); f5500_participants_2015=229, 2019=274",
+  "emp_asof": "2017",
+  "confidence": "B",
+  "founded_in_ohio": "yes",
+  "notes": "JobsOhio describes a fourth-generation, family-owned Canton dairy founded in 1922 and the largest independently owned dairy maker in Ohio, with 313 jobs retained. Form 5500 counts of 229 to 309 agree with a company under 500 employees."
+ },
+ {
+  "recipient_id": "EIN:474320975",
+  "recipient_class": "business",
+  "parent": "BrewDog plc (via BrewDog USA Inc.)",
+  "parent_hq_state": "United Kingdom",
+  "hq_source": "https://www.sec.gov/Archives/edgar/data/1646269/000164626919000013/partiiandiii.htm",
+  "emp_bucket": "500-4999",
+  "emp_source": "https://en.wikipedia.org/wiki/BrewDog (num_employees 2,400, year not stated)",
+  "emp_asof": "2021",
+  "confidence": "C",
+  "founded_in_ohio": "no",
+  "notes": "BrewDog USA's 2019 Reg A offering circular says it is majority owned by BrewDog plc of Ellon, Scotland, with the rest held by crowdfunding investors. The worldwide headcount comes only from an undated Wikipedia figure of 2,400, which likely overstates the 2018 level but fits the same bucket."
  }
 ]
