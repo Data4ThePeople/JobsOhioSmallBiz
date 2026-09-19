@@ -1,0 +1,74 @@
+[
+ {
+  "recipient_id": "EIN:363280906",
+  "owned_by_larger": "yes",
+  "parent": "Daido Metal Co., Ltd.",
+  "parent_hq_state": "Japan",
+  "emp_bucket": "5000+",
+  "source": "https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%90%8C%E3%83%A1%E3%82%BF%E3%83%AB%E5%B7%A5%E6%A5%AD",
+  "notes": "Daido Metal U.S.A. Inc. is listed among the subsidiaries of TSE-listed Daido Metal (Nagoya), which reports 7,055 consolidated employees (Mar 2024)."
+ },
+ {
+  "recipient_id": "EIN:341266185",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://thevillagereporter.com/fulton-industries-in-wauseon-continues-legacy-with-new-leadership/",
+  "notes": "Local press describes a Wauseon flashlight and metal stamping firm dating to the 1930s that was bought by an individual owner in 2025; no corporate parent found for 2021."
+ },
+ {
+  "recipient_id": "EIN:310516359",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.wyso.org/local-and-statewide-news/2023-02-02/daytons-famous-mikesells-potato-chip-co-to-close-after-110-years",
+  "notes": "Dayton chip maker founded 1910 operated on its own until closing in 2023, when Zanesville's Conn's bought only the brand; no parent found for 2021."
+ },
+ {
+  "recipient_id": "EIN:311332047",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://replex.com/about-us/",
+  "notes": "About page describes a central Ohio thermoformer started in 1991 and quotes Mark Schuetz as President/Owner; no parent found."
+ },
+ {
+  "recipient_id": "EIN:340968517",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Site describes a Sandusky folding-carton maker operating since 1965 with no parent named, and news and the JobsOhio sitemap show no acquisition."
+ },
+ {
+  "recipient_id": "EIN:472798900",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No website, news item or JobsOhio release found for the Napoleon recycler, so ownership could not be checked."
+ },
+ {
+  "recipient_id": "EIN:341866677",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/ohio-success/the-chefs-garden",
+  "notes": "JobsOhio story describes a woman-owned Huron farm co-owned by Barbara Jones with about 150 employees; no parent found."
+ },
+ {
+  "recipient_id": "EIN:341832279",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.knoxpages.com/2023/08/16/fredericktown-company-ready-to-break-ground-on-9000-square-foot-expansion/",
+  "notes": "Local press shows founder Don Rogers and his sons running the Fredericktown conveyor maker; no parent found."
+ }
+]

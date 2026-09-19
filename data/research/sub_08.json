@@ -52,5 +52,113 @@
   "emp_bucket": "",
   "source": "",
   "notes": "HPC Fire Inspired (Miamisburg, since 1975) appears in news as the buyer of other firms such as Dekko and Galaxy Outdoor, and no owner above it was found."
+ },
+ {
+  "recipient_id": "EIN:474281000",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No company site or ownership news found for the Cincinnati cleaning firm (the similarly named ICS site is a Los Angeles company), so ownership could not be checked."
+ },
+ {
+  "recipient_id": "EIN:274037354",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No company site or news found for JTW Inc. of Mansfield, so ownership could not be checked."
+ },
+ {
+  "recipient_id": "EIN:471779165",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No company site or news found for Masters Precision Machining of Kent (mastersprecision.com is an unrelated CMM firm), so ownership could not be checked."
+ },
+ {
+  "recipient_id": "EIN:263333961",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Only a 2017 Canton Repository feature ('Making a go with dough') turned up for the Canton food firm, and no ownership detail was reachable."
+ },
+ {
+  "recipient_id": "EIN:522314113",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.nacdonline.org/",
+  "notes": "NACD is an Arlington, Virginia, nonprofit membership association of corporate directors and is not owned by any company."
+ },
+ {
+  "recipient_id": "EIN:462196621",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No site or news found for P&L Metal Crafts of Youngstown; the related-looking P&L Heat Treating site does not say who owns either business."
+ },
+ {
+  "recipient_id": "EIN:452349532",
+  "owned_by_larger": "yes",
+  "parent": "The Cypress Companies",
+  "parent_hq_state": "OH",
+  "emp_bucket": "500-4999",
+  "source": "https://www.paragontemperedglass.com/about-us",
+  "notes": "Paragon's site names Akron investment firm The Cypress Companies as parent (owner since the 2011-2012 Tem-Pace and Spec-Temp deals), and Cypress's group-wide 2023 Form 5500 retirement plan lists 668 active participants."
+ },
+ {
+  "recipient_id": "EIN:611493910",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/ohio-success/phillips-meat-processing",
+  "notes": "JobsOhio describes Phillips as a family-owned Zanesville processor run by Dale and Roxann Phillips since 1998, and no later sale was found."
+ },
+ {
+  "recipient_id": "EIN:831858753",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.prescriptionbliss.com/about-us",
+  "notes": "The about page says Prescription Bliss was founded in 2018 by Andrew and Jennifer Brewer as a family-driven business, and no parent was found."
+ },
+ {
+  "recipient_id": "EIN:341402791",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.quesinc.com/company/",
+  "notes": "The company page says Quentin Meng founded Ques Industries in 1983 and his son Colton Meng took over in 2015, with no parent named."
+ },
+ {
+  "recipient_id": "EIN:863328721",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Cincinnati Business Courier coverage describes Remote Vans as a startup founded by a former Brandery leader, and no parent or acquirer was found."
+ },
+ {
+  "recipient_id": "EIN:811781311",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No working company site or news found for Skylight Partners of Cincinnati, so ownership could not be checked."
  }
 ]

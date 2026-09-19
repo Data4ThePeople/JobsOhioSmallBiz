@@ -1,14 +1,5 @@
 [
  {
-  "recipient_id": "EIN:341576726",
-  "owned_by_larger": "no",
-  "parent": "PowerParts Group (Mangrove Equity Partners)",
-  "parent_hq_state": "FL",
-  "emp_bucket": "",
-  "source": "https://pulse2.com/jll-partners-acquires-powerparts-group-to-build-power-turbine-aftermarket-components-platform/",
-  "notes": "STAR Turbine was a wholly owned unit of PowerParts Group, formed in 2020 and owned by Tampa private-equity firm Mangrove Equity Partners until its 2026 sale to JLL Partners; the two-unit platform looks well under 500 employees, so the parent is named but not counted as larger."
- },
- {
   "recipient_id": "EIN:475355898",
   "owned_by_larger": "no",
   "parent": "",
@@ -45,15 +36,6 @@
   "notes": "Innovative Card Solutions does business as Kurense, a small Cincinnati prepaid-card fintech; its site and a 2021 Business Journals profile show no parent."
  },
  {
-  "recipient_id": "EIN:471351569",
-  "owned_by_larger": "no",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "source": "https://www.lionaenterprises.com/",
-  "notes": "Cincinnati IT firm founded and run by Michelle Morales-Denisoff (Enquirer 2020, Business Journals 2026); a 2023 Paycor deal was an alliance, not an ownership stake."
- },
- {
   "recipient_id": "EIN:473375885",
   "owned_by_larger": "no",
   "parent": "",
@@ -61,6 +43,15 @@
   "emp_bucket": "",
   "source": "",
   "notes": "One-job Jackson, Ohio food business with no news coverage and a site that blocks automated reads; nothing points to a parent."
+ },
+ {
+  "recipient_id": "EIN:471351569",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.lionaenterprises.com/",
+  "notes": "Cincinnati IT firm founded and run by Michelle Morales-Denisoff (Enquirer 2020, Business Journals 2026); a 2023 Paycor deal was an alliance, not an ownership stake."
  },
  {
   "recipient_id": "EIN:471569655",
@@ -133,5 +124,149 @@
   "emp_bucket": "",
   "source": "https://www.schaeffermetal.com/",
   "notes": "Operates as Schaeffer's Tank & Truck Service in Ravenna, which its site describes as a three-generation shop open since 1978; no parent found."
+ },
+ {
+  "recipient_id": "EIN:270733710",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/seal-tite-bringing-80-new-jobs-to-hillsboro",
+  "notes": "JobsOhio's release calls Seal-Tite a Hillsboro-headquartered duct maker with plants in Ohio and Lebanon, PA; it sponsors its own 126-person plan and no parent or owner group was found."
+ },
+ {
+  "recipient_id": "EIN:464837984",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/ohio-success/silver-bridge-coffee-company",
+  "notes": "JobsOhio's success story describes Silver Bridge as a woman-owned, family-supported Gallipolis coffee roaster; no parent found."
+ },
+ {
+  "recipient_id": "EIN:883732303",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.smithbrotherscreamery.com/",
+  "notes": "Site describes a family-owned and operated McConnelsville dairy that milks, bottles, and sells its own milk."
+ },
+ {
+  "recipient_id": "EIN:461090667",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001759081",
+  "notes": "Two-job Columbus vending-software startup that raised money through Reg CF and Reg A filings as its own issuer; no parent company appears."
+ },
+ {
+  "recipient_id": "EIN:310918771",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/southern-ohio-communication-services-inc-expands-services",
+  "notes": "JobsOhio's 2021 release profiles SOCS as a woman-owned last-mile internet provider in Waverly; no parent found."
+ },
+ {
+  "recipient_id": "EIN:844810330",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Founder-led Cincinnati running-apparel brand started by a P&G alum (Enquirer 2025, Business Journals 2025); coverage treats it as independent and no parent was found."
+ },
+ {
+  "recipient_id": "EIN:341576726",
+  "owned_by_larger": "no",
+  "parent": "PowerParts Group (Mangrove Equity Partners)",
+  "parent_hq_state": "FL",
+  "emp_bucket": "",
+  "source": "https://pulse2.com/jll-partners-acquires-powerparts-group-to-build-power-turbine-aftermarket-components-platform/",
+  "notes": "STAR Turbine was a wholly owned unit of PowerParts Group, formed in 2020 and owned by Tampa private-equity firm Mangrove Equity Partners until its 2026 sale to JLL Partners; the two-unit platform looks well under 500 employees, so the parent is named but not counted as larger."
+ },
+ {
+  "recipient_id": "EIN:300494586",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://thevoiceofyourcustomer.com/",
+  "notes": "Site describes a Black-owned, minority-certified Cincinnati marketing research firm led by Crystal Kendrick; no parent found."
+ },
+ {
+  "recipient_id": "EIN:203581585",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Cincinnati contractor led and owned by CEO Mel Gravely, whose ownership group added individual executives in 2021 (Business Journals); no corporate parent found."
+ },
+ {
+  "recipient_id": "EIN:833686461",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.clevelandwhiskey.com/",
+  "notes": "Vispiri is the holding company behind Cleveland Whiskey, founded by Tom Lix and funded through its own crowdfunding and SEC offerings; it is the parent, not a subsidiary."
+ },
+ {
+  "recipient_id": "EIN:310792900",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.zebcoindustries.com/about-us/",
+  "notes": "Lancaster foam-packaging maker whose about page says it was founded and still operates in Lancaster; it is unrelated to the Zebco fishing brand and no parent was found."
+ },
+ {
+  "recipient_id": "EIN:873030540",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://acgreenllc.com/about",
+  "notes": "About page describes a woman-owned, family-run metal fabrication small business in the Athens area; no parent found."
+ },
+ {
+  "recipient_id": "EIN:311669468",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Cambridge, Ohio compressor engineering firm founded by Norm Shade; Cooper Machinery Services bought it in January 2025 (PR Newswire), after the fiscal 2024 grant year, so it was independent during the grant."
+ },
+ {
+  "recipient_id": "EIN:341200570",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Toledo label maker whose legal name is Bollin & Sons, Inc. and which sponsors its own 61-person plan; trade coverage treats it as a family business and no parent was found."
+ },
+ {
+  "recipient_id": "EIN:452894956",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.browniepointsinc.com/our-story",
+  "notes": "Story page says two founders named Lisa started the bakery in an apartment kitchen and moved it to Columbus; no parent found."
+ },
+ {
+  "recipient_id": "EIN:270092221",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Nine-job Twinsburg trucking firm with no website or news coverage found; nothing points to a parent."
  }
 ]

@@ -9,6 +9,15 @@
   "notes": "NuWaves RF Solutions describes itself as a veteran-owned small business founded in 2000 by its own group of founders, with no parent named."
  },
  {
+  "recipient_id": "EIN:341689472",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.lorisprinting.net/feature/company-history/",
+  "notes": "Loris Printing calls itself a second-generation family-owned Sandusky business in operation since 1966; it bought Lake Shore Graphic Industries in 2019 rather than being bought."
+ },
+ {
   "recipient_id": "EIN:811327105",
   "owned_by_larger": "no",
   "parent": "",
@@ -16,6 +25,24 @@
   "emp_bucket": "",
   "source": "https://www.bluerosesupply.com/about",
   "notes": "BlueRose Supply is a certified minority business led by managing director Myron Hughes, and it bought The Jerus Company in 2016 rather than being bought; no parent was found."
+ },
+ {
+  "recipient_id": "EIN:941647336",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.kolotv.com/content/news/MADE-IN-NEVADA-Walkenhorsts-488445831.html",
+  "notes": "Walkenhorst's is a Walkenhorst family business headquartered in Sparks, Nevada, so it is not Ohio-headquartered, but no parent company was found."
+ },
+ {
+  "recipient_id": "EIN:472151591",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.danielsindustrialservices.com/pages/about",
+  "notes": "Daniel's Industrial Services describes itself as a family-owned and operated Zanesville business started in 2014, with no parent named."
  },
  {
   "recipient_id": "EIN:311381123",
@@ -27,6 +54,15 @@
   "notes": "Ultra-Met says it has been owned by private family owners since 1993 (after an earlier period under Krupp-WIDIA ending then) and has about 90 employees."
  },
  {
+  "recipient_id": "EIN:830421014",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.techr2.com/about",
+  "notes": "TechR2's about page credits founder Sepp with starting the Reynoldsburg company in 1997 and calls it independent, with no parent named."
+ },
+ {
   "recipient_id": "EIN:310868493",
   "owned_by_larger": "no",
   "parent": "",
@@ -36,6 +72,33 @@
   "notes": "APS Materials says it is a family-owned and operated Dayton company founded in 1975, with no parent named."
  },
  {
+  "recipient_id": "EIN:843857873",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Dove Die and Stamping of Cleveland (in business since 1952, now branded Dove Stamping with two plants) names no parent on its current or archived site, though the new 2019 LLC may reflect an ownership change that could not be traced."
+ },
+ {
+  "recipient_id": "EIN:472241600",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/tiger-pistol-chooses-ohio-for-first-location-outside-of-texas-hq",
+  "notes": "Tiger Pistol was a stand-alone, venture-backed company headquartered in Austin, Texas in the 2022 grant year (Cleveland was its first site outside Texas), so it was not Ohio-headquartered then, but no parent company was found."
+ },
+ {
+  "recipient_id": "EIN:202018667",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.prweb.com/releases/willowtree-and-dynamit-join-to-form-leading-digital-product-agency-827924265.html",
+  "notes": "Dynamit was an independent, founder-owned Columbus agency in 2016; it did not combine with WillowTree until November 2019, after the grant year."
+ },
+ {
   "recipient_id": "EIN:341145087",
   "owned_by_larger": "no",
   "parent": "",
@@ -43,5 +106,50 @@
   "emp_bucket": "",
   "source": "https://www.nockandson.com",
   "notes": "The company site says Nock & Son is a family-owned, privately held firm run by the third and fourth generations of the Nock family."
+ },
+ {
+  "recipient_id": "EIN:311068810",
+  "owned_by_larger": "no",
+  "parent": "Trio Enterprises",
+  "parent_hq_state": "OH",
+  "emp_bucket": "",
+  "source": "https://shoppeblack.us/black-owned-logistics-transportation-companies/",
+  "notes": "Trio Trucking is one of three divisions of Trio Enterprises, the Cincinnati transportation group founded and owned by Carvel Simmons until he sold it to CEO Tamara Paul in June 2024; the group is small and Ohio-based."
+ },
+ {
+  "recipient_id": "EIN:833164081",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.toledoblade.com/business/development/2019/04/15/area-investors-purchase-ballreichs-chips-company.html",
+  "notes": "A group of local investors bought Ballreich's in 2019 and it stayed locally owned through the 2021 grant year; Grippo's bought it later, in September 2023."
+ },
+ {
+  "recipient_id": "EIN:341478321",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Belletech's Bellefontaine site describes a Tier 1 contract molder in business for over three decades and names no parent or group, and it sponsors its own Form 5500 plan; no ownership news was found."
+ },
+ {
+  "recipient_id": "EIN:341969819",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.limaohio.com/news/2024/11/04/chuffers-pizza-merging-with-spencerville-gas-station/",
+  "notes": "Chuffer's is a local Spencerville pizza shop whose only news is a 2024 move to combine with a local gas station, after the grant year; no parent was found."
+ },
+ {
+  "recipient_id": "EIN:310899736",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.thereportingproject.org/world-war-ii-veteran-invited-to-help-lead-columbus-independence-day-parade-recalls-liberating-concentration-camp/",
+  "notes": "A 2022 profile says Bob Coyne founded the printing business and Coyne Graphic Finishing in Mount Vernon now belongs to his son Kevin Coyne, so it is family-owned."
  }
 ]
