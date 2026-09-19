@@ -6,3 +6,6 @@ __pycache__/
 .DS_Store
 data/raw/edgar/
 data/raw/f5500/
+/*.xml
+/*.html
+/*.json
