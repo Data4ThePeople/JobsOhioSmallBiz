@@ -16,5 +16,41 @@
   "emp_bucket": "",
   "source": "",
   "notes": "No company website, news item, or JobsOhio release found for the Westlake coatings firm, so ownership could not be judged."
+ },
+ {
+  "recipient_id": "EIN:943450803",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.satelytics.com/about",
+  "notes": "Venture-backed Toledo geospatial analytics firm that grew out of Bowling Green State University, files its own SEC Form D and 5500, and names no parent."
+ },
+ {
+  "recipient_id": "EIN:815315937",
+  "owned_by_larger": "no",
+  "parent": "Crawford/Allied Crawford Steel (Spiegel/Stern family group)",
+  "parent_hq_state": "GA",
+  "emp_bucket": "",
+  "source": "https://crawfordsteel.com/our-story/",
+  "notes": "The Cincinnati entity is one of about 17 US and Canadian steel distribution centers in the privately held Crawford/Allied Crawford Steel family group, founded in Ontario and now run from Mableton, Georgia; group headcount not found, so whether it tops 500 is unconfirmed."
+ },
+ {
+  "recipient_id": "EIN:311564962",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.vinylmax.com/history/",
+  "notes": "Family-owned Hamilton window maker founded by Jim Doerger in 1982 and led by the second generation, with no parent company named."
+ },
+ {
+  "recipient_id": "EIN:260546656",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Columbus engineering firm that sponsored its own 5500 plan (288 to 429 participants) during the 2016 and 2018 grants; the Platform Holdings private-equity backing reported in 2025 news came after the grant years."
  }
 ]

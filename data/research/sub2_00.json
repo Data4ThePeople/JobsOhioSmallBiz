@@ -160,5 +160,59 @@
   "emp_bucket": "",
   "source": "https://www.lakeshore.com/about",
   "notes": "Lake Shore Cryotronics was family-owned by the Swartz founders' company through fiscal 2024; Arcline-backed DwyerOmega bought it in June 2026, well after the grant year."
+ },
+ {
+  "recipient_id": "EIN:340941570",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Credit Adjustments is a Defiance-based collections firm with its own call centers, and no parent company or sale turned up."
+ },
+ {
+  "recipient_id": "EIN:463981791",
+  "owned_by_larger": "no",
+  "parent": "Opus Packaging Group, Inc.",
+  "parent_hq_state": "MI",
+  "emp_bucket": "",
+  "source": "https://www.opuspkg.com/about",
+  "notes": "Safeway Packaging of New Bremen is part of Opus Packaging Group, a holding company formed in 2013 by owners Kevin Manor and Butch Stoner and headquartered in Caledonia, Michigan; the recipient EIN is Opus's own, and its plan showed about 300 to 400 participants in 2019."
+ },
+ {
+  "recipient_id": "EIN:833394582",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "80 Acres Farms was a venture-backed Hamilton, Ohio indoor-farming startup with minority investors in 2020, not owned by another company; it merged with Soli Organic in 2025 and wound down in 2026."
+ },
+ {
+  "recipient_id": "EIN:462417625",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://woub.org/2023/11/21/local-manufacturer-featured-amazon-documentary/",
+  "notes": "QuickLoadz is an Athens manufacturer run by founder Sean Jones, and no parent company turned up."
+ },
+ {
+  "recipient_id": "EIN:204014729",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.sec.gov/Archives/edgar/data/1816877/000181687721000001/primary_doc.xml",
+  "notes": "Kasper Holdings is an Ohio LLC led by founder Eric Kasper that raised money from 44 outside investors in 2021 per its SEC Form D, and no parent company turned up."
+ },
+ {
+  "recipient_id": "EIN:311653174",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.richlandsource.com/2017/01/19/hess-industries-owner-took-cue-from-mansfield-legend-dick-taylor/",
+  "notes": "Hess Industries is a Mansfield company started and owned by Mark Hess, and no parent or sale turned up."
  }
 ]

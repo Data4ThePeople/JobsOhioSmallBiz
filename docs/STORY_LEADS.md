@@ -94,3 +94,36 @@ of the Inclusion Grant, a program restricted to small businesses: ISS America
 Group, Germany, about 11,000). The grant applies to the entity, not its
 owner, so this may be within the rules; worth one line in the methodology and
 possibly a question to JobsOhio about how eligibility is judged.
+
+---
+
+## 4. JPMorgan Chase at Otterbein's The Point: 75 jobs promised, none verifiable
+
+**Verified**
+
+- September 2018: JobsOhio R&D Center Grant, $2,900,000, to JPMorgan Chase
+  Bank, N.A., for fintech R&D space leased at The Point, Otterbein
+  University's STEAM innovation center in Westerville (opened October 2016,
+  $10.8 million). Partners named: Otterbein, JobsOhio, city of Westerville.
+  Source: JobsOhio release
+  (https://www.jobsohio.com/newsroom/news-press/jobsohio-provides-support-to-jpmorgan-chase-for-new-fintech-rd-innovation-space).
+- Commitment in JobsOhio's September 2018 Monthly Executed Grants and Loans
+  Report: 75 new jobs, $7,500,000 new payroll, 0 retained, $0 fixed-asset
+  investment. The release says "75 to 100 full-time jobs."
+- Paid: $2,900,000 in FY2023 (JobsOhio Form 990, Schedule I). A separate
+  $3,000,000 Workforce Grant (September 2017, 20,000 jobs retained, $200
+  million investment) was paid in FY2019. JPMorgan Chase total: $5,900,000.
+
+**Open**
+
+- Actual jobs created are not published. The release describes teams of
+  "JPMorgan Chase employees and Otterbein students," so some seats may be
+  existing Columbus staff, not new hires.
+- Paths: public records request to the city of Westerville for any incentive
+  agreement and annual job reports; request to JobsOhio for the agreement's
+  job terms and compliance reports; ask JPMorgan and Otterbein for headcount at
+  The Point, peak and current.
+
+**Why it matters:** every jobs figure in JobsOhio's disclosures is a promise
+made at signing. This is a clean example to show readers that the public
+cannot check the outcome, even for a grant that was paid in full.

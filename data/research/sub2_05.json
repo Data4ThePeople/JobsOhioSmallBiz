@@ -16,5 +16,50 @@
   "emp_bucket": "",
   "source": "https://www.veteranownedbusiness.com/business/2831/federal-supply-services-int",
   "notes": "Small Piketon packaging supplier listed as veteran-owned; its site names German makers Sapper and Soehner only as partners, not owners."
+ },
+ {
+  "recipient_id": "EIN:311539233",
+  "owned_by_larger": "yes",
+  "parent": "LSI Industries Inc.",
+  "parent_hq_state": "OH",
+  "emp_bucket": "500-4999",
+  "source": "https://www.sec.gov/Archives/edgar/data/763532/000143774918016857/ex_123570.htm",
+  "notes": "Grady McCauley is listed as a subsidiary in LSI Industries' 10-K Exhibit 21 every year from 2017 to 2025, and its web domain redirected to LSI's graphics site."
+ },
+ {
+  "recipient_id": "EIN:341949320",
+  "owned_by_larger": "yes",
+  "parent": "Nippon Steel Trading Corporation (Nippon Steel & Sumikin Bussan in 2018)",
+  "parent_hq_state": "Japan",
+  "emp_bucket": "5000+",
+  "source": "https://web.archive.org/web/20211210062703/https://jrmanufacturing.net/who-we-are/",
+  "notes": "Company history says JR Manufacturing became part of Sumikin Bussan (now Nippon Steel Trading) in 2010 and is the North American branch of its headrest division."
+ },
+ {
+  "recipient_id": "EIN:133996703",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "New Rochelle, NY education publisher that is itself the parent of Newmark Learning and Reycraft Books; no owner company or acquisition found."
+ },
+ {
+  "recipient_id": "EIN:462633179",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://decked.com/pages/about-us",
+  "notes": "Founder-started truck-storage maker based in Ketchum, Idaho, with its plant in Defiance, Ohio; it raises its own capital (SEC Form D) and no owner company was found."
+ },
+ {
+  "recipient_id": "EIN:830892018",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No company site, news item, or JobsOhio release found for this 2018 Van Wert LLC at 120 W. Main St., so ownership could not be judged."
  }
 ]

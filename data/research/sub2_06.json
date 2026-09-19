@@ -1,0 +1,56 @@
+[
+ {
+  "recipient_id": "EIN:872959043",
+  "owned_by_larger": "no",
+  "parent": "AMP Robotics Corp.",
+  "parent_hq_state": "CO",
+  "emp_bucket": "100-499",
+  "source": "https://news.google.com/rss/search?q=%22AMP+Robotics%22+Solon",
+  "notes": "Phoenix Facility III is the Louisville, Colorado-addressed project entity for AMP Robotics' grant-backed Solon recycling sortation facility, and AMP is a venture-backed company of a few hundred employees rather than a larger group."
+ },
+ {
+  "recipient_id": "EIN:872574202",
+  "owned_by_larger": "no",
+  "parent": "Ray Hamilton Company (family-owned affiliate)",
+  "parent_hq_state": "OH",
+  "emp_bucket": "<100",
+  "source": "https://www.rayhamilton.com/about-us",
+  "notes": "The LLC is the 3PL arm Ray Hamilton Company added in 2022, a Cincinnati moving and logistics business founded in 1892 and still run by the founder's great-great-grandchildren."
+ },
+ {
+  "recipient_id": "EIN:472692010",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://news.google.com/rss/search?q=%22Eccrine+Systems%22+acquired",
+  "notes": "Eccrine Systems was an independent venture-backed Cincinnati sweat-sensor startup whose assets were bought by the small Massachusetts firm Epicore Biosystems in May 2022, an asset sale rather than ownership during the grant years."
+ },
+ {
+  "recipient_id": "EIN:201177715",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/snowville-creamery-expands-meigs-county-production-facility",
+  "notes": "JobsOhio's 2020 release describes Snowville as a Meigs County creamery founded in 2003 with 30 jobs and quotes its owner, Victoria Taylor, with no parent company named."
+ },
+ {
+  "recipient_id": "EIN:464855962",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://news.google.com/rss/search?q=%22SurgiHealth+Solution%22",
+  "notes": "SurgiHealth Solutions is a small Cincinnati sterile-processing brush supplier started by local entrepreneur Joshua Williams (Cincinnati Enquirer, 2020), with no parent company found."
+ },
+ {
+  "recipient_id": "EIN:275378467",
+  "owned_by_larger": "no",
+  "parent": "Fiber-Tech Industries, Inc. (sister company under common ownership)",
+  "parent_hq_state": "OH",
+  "emp_bucket": "",
+  "source": "https://www.valutex.net/about-us",
+  "notes": "ValuTex's about page says it began in 2011 in Washington Court House as vertical integration for sister company Fiber-Tech Industries, a composite-panel maker with plants in Ohio, Washington and Michigan whose size and exact ownership were not found."
+ }
+]
