@@ -1,0 +1,38 @@
+[
+  {
+    "recipient_id": "EIN:341631954",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "https://ronalmold.com/about",
+    "notes": "Family-run by the Siciliano family since 1980 through the grant year; George Bain (Bain Machine) took ownership only in December 2025."
+  },
+  {
+    "recipient_id": "EIN:465133072",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "https://www.rustbeltriders.com/about",
+    "notes": "Cleveland worker-owned cooperative founded in 2014, no parent company."
+  },
+  {
+    "recipient_id": "EIN:273409599",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "https://jafedecorating.com/about",
+    "notes": "Family-owned Greenville glass decorator led by Randy O'Dell, who acquired the company in 2010."
+  },
+  {
+    "recipient_id": "EIN:341478051",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "https://wurtec.com/about",
+    "notes": "Toledo-headquartered company that describes itself as a family business with its own branch locations."
+  }
+]
