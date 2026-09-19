@@ -107,6 +107,14 @@ fetches, which earlier batches found reliable:
 If none of these settle a row, grade it `D`, pick the bucket the signals
 support, and say what you tried.
 
+## Saving progress
+
+Work can be cut off by a usage limit at any time. Before starting, check
+whether the output file already exists; if it does, keep its rows and
+research only the recipients it is missing. Rewrite the whole output file
+(valid JSON, all rows done so far) after every five recipients, not only at
+the end.
+
 ## Output
 
 Write a JSON list to the file path given, one object per input recipient,

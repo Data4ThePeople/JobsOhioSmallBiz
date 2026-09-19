@@ -54,6 +54,8 @@ def cmd_merge(files):
             rid = item.get("recipient_id")
             if rid not in by_id:
                 sys.exit(f"{f}: unknown recipient_id {rid!r}")
+            if not item.get("parent"):
+                continue   # partial row from an interrupted batch; leave for the rerun
             if item.get("emp_bucket", "") not in BUCKETS:
                 sys.exit(f"{f}: bad emp_bucket {item.get('emp_bucket')!r} for {rid}")
             if item.get("recipient_class", "") not in CLASSES:
