@@ -124,7 +124,8 @@ def main():
                     "parents_net_zero_or_less": len(clawed),
                     "net_negative_dollars": sum(a["cash"] for a in clawed),
                     "resolved_parents": sum(1 for a in allp if a["resolved"]),
-                    "resolved_cash": sum(a["cash"] for a in allp if a["resolved"])}}
+                    "resolved_cash": sum(a["cash"] for a in allp if a["resolved"]),
+                    "cash_positive": sum(a["cash"] for a in allp)}}
     out["by_class"] = {k: {"parents": v["n"], "cash": 0} for k, v in shares(allp, lambda a: a["class"], lambda a: 1)[0].items()}
     for a in allp:
         out["by_class"][a["class"]]["cash"] += a["cash"]
@@ -181,7 +182,7 @@ def main():
     m = out["meta"]
     lines += [f"- Schedule I rows: {m['rows']:,}; distinct recipients: {m['recipients']:,}; parents: {m['parents']:,}; FY{m['fy_min']} to FY{m['fy_max']}; cash ${m['cash_total']:,}",
               f"- Reversed payments (negative Schedule I rows): {m['reversal_rows']} rows, ${m['reversal_dollars']:,}; parents netting to zero or less, not counted as recipients: {m['parents_net_zero_or_less']} (net ${m['net_negative_dollars']:,})",
-              f"- Parents with a researched classification: {m['resolved_parents']:,} carrying ${m['resolved_cash']:,} ({pct(m['resolved_cash'] / m['cash_total'])} of dollars)", ""]
+              f"- Parents counted (net payment above zero): {m['parents']:,}; with a classification: {m['resolved_parents']:,}, carrying ${m['resolved_cash']:,} of the ${m['cash_positive']:,} they were paid on net ({pct(m['resolved_cash'] / m['cash_positive'])})", ""]
     lines += ["## By recipient class (all parents)", ""]
     for k, v in sorted(out["by_class"].items(), key=lambda kv: -kv[1]["cash"]):
         lines.append(f"- {k}: {v['parents']:,} parents, ${v['cash']:,} ({pct(v['cash'] / m['cash_total'])})")
