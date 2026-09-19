@@ -187,5 +187,32 @@
   "emp_bucket": "",
   "source": "",
   "notes": "Chardon holding LLC with no website, news, or JobsOhio release naming its operating business or owner."
+ },
+ {
+  "recipient_id": "EIN:873879236",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.lms-co.com/about-us",
+  "notes": "Privately owned Franklin, Ohio co-packer founded in 2021; site and JobsOhio release name no parent company."
+ },
+ {
+  "recipient_id": "EIN:314190600",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.aftermarketmatters.com/regions/midwest/glockner-chevrolet-is-nations-oldest-chevrolet-franchise-with-a-servants-heart/",
+  "notes": "Portsmouth dealership founded in 1914 and run by the sixth generation of the Glockner family; no parent company found."
+ },
+ {
+  "recipient_id": "EIN:383697656",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No website, news, or JobsOhio release found for this 2016 Dayton recipient; nothing shows who owned it."
  }
 ]

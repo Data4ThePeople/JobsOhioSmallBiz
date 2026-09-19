@@ -88,5 +88,23 @@
   "emp_bucket": "",
   "source": "https://siliconangle.com/2024/08/14/mimecast-acquires-aware-enhance-security-compliance-workplace-collaboration-tools/",
   "notes": "Nullable Inc. is Columbus startup Aware, venture-backed and independent through the grant years; Mimecast bought it in August 2024, just after fiscal 2024 ended."
+ },
+ {
+  "recipient_id": "EIN:341483237",
+  "owned_by_larger": "no",
+  "parent": "Cornerstone Corporation (Cornerstone Capital Partners)",
+  "parent_hq_state": "OH",
+  "emp_bucket": "",
+  "source": "https://www.therobotreport.com/wauseon-machine-acquires-mcalister-design/",
+  "notes": "Wauseon Machine is owned by Cornerstone Corporation, a Dublin, Ohio holding company whose holdings are the Wauseon businesses themselves, so the parent is small and Ohio-based."
+ },
+ {
+  "recipient_id": "EIN:311697398",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/powerbuilt-material-handling-solutions-expands-headquarters-in-ohio",
+  "notes": "JobsOhio describes PowerBuilt as founded in 2000 by Rick Hauck and headquartered in Bellefontaine, and no parent or sale turned up."
  }
 ]

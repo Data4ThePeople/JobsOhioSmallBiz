@@ -1,14 +1,5 @@
 [
  {
-  "recipient_id": "EIN:630944385",
-  "owned_by_larger": "no",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "source": "https://huntsvillebusinessjournal.com/news/2023/10/10/cfd-research-announces-major-company-transition/",
-  "notes": "Founder-led Huntsville firm that became 100% employee-owned (ESOP) in October 2023; no outside parent found."
- },
- {
   "recipient_id": "EIN:273187193",
   "owned_by_larger": "no",
   "parent": "",
@@ -18,49 +9,13 @@
   "notes": "Independent Pierce fire-apparatus dealer based in Virginia with its own executive team; no parent company found."
  },
  {
-  "recipient_id": "EIN:873286018",
-  "owned_by_larger": "no",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "source": "https://www.jobsohio.com/newsroom/news-press/beloved-winans-chocolates-coffees-expansion-contributes-to-community-revitalization",
-  "notes": "Winans Chocolates and Coffees is a Reiser family business in Piqua; no parent company found."
- },
- {
-  "recipient_id": "EIN:020537099",
-  "owned_by_larger": "no",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "source": "https://www.jobsohio.com/newsroom/news-press/winesburg-chair-companyplans-3-phase-expansion-in-holmes-county",
-  "notes": "JobsOhio describes Winesburg Chair as a family-operated company founded in Winesburg; no parent found."
- },
- {
-  "recipient_id": "EIN:952546613",
-  "owned_by_larger": "no",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "source": "https://www.jobsohio.com/newsroom/news-press/air-cargo-equipment-company-satco-inc-chooses-ohio-for-new-operations",
-  "notes": "JobsOhio describes Satco as a family-owned and operated air cargo equipment maker based in California."
- },
- {
-  "recipient_id": "EIN:850660241",
-  "owned_by_larger": "no",
-  "parent": "Trucent, Inc.",
-  "parent_hq_state": "MI",
-  "emp_bucket": "",
-  "source": "https://www.jobsohio.com/newsroom/news-press/trucent-renewable-chemicals-to-open-new-facility-in-ohio",
-  "notes": "JobsOhio calls TRC a division of Trucent, a privately held fluid-separation company founded in 1997 and based in Dexter, Mich.; its size was not found but nothing suggests 500 or more."
- },
- {
-  "recipient_id": "EIN:900823691",
-  "owned_by_larger": "no",
+  "recipient_id": "EIN:455115834",
+  "owned_by_larger": "unknown",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "source": "",
-  "notes": "Cincinnati freight broker (formerly Logikor) described as privately held; Redwood Logistics bought it in March 2026, after the 2023 grant year."
+  "notes": "No company site, news item, or JobsOhio release found for the Fairfield (3795 Symmes Rd) recipient, so ownership could not be judged."
  },
  {
   "recipient_id": "EIN:841923636",
@@ -81,6 +36,15 @@
   "notes": "The grant address, 1907 South St, Cincinnati, is Nehemiah Manufacturing main office, so the LLC is likely a Nehemiah affiliate, a Cincinnati consumer-products maker of roughly 200 workers; ownership not confirmed."
  },
  {
+  "recipient_id": "EIN:630944385",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://huntsvillebusinessjournal.com/news/2023/10/10/cfd-research-announces-major-company-transition/",
+  "notes": "Founder-led Huntsville firm that became 100% employee-owned (ESOP) in October 2023; no outside parent found."
+ },
+ {
   "recipient_id": "EIN:274462942",
   "owned_by_larger": "no",
   "parent": "",
@@ -99,13 +63,13 @@
   "notes": "Private-equity firm Peak Rock Capital sold the Marietta matting and sheeting maker to a management group in July 2020, so it was management-owned in the 2022 grant year."
  },
  {
-  "recipient_id": "EIN:455115834",
+  "recipient_id": "EIN:341918788",
   "owned_by_larger": "unknown",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "source": "",
-  "notes": "No company site, news item, or JobsOhio release found for the Fairfield (3795 Symmes Rd) recipient, so ownership could not be judged."
+  "notes": "No company site, JobsOhio release, or news item describing the Tallmadge foam company or its owners was found."
  },
  {
   "recipient_id": "EIN:463761164",
@@ -117,6 +81,15 @@
   "notes": "The Heath plant was the US arm of German CNG and hydrogen tank maker xperion Energy & Environment, a smaller group in 2015 that later became part of Norway-based Hexagon Composites after the grant year (acquisition date not confirmed here)."
  },
  {
+  "recipient_id": "EIN:453507457",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://en.wikipedia.org/wiki/Christine_Hunsicker",
+  "notes": "Gwynnie Bee was an independent venture-backed startup founded by Christine Hunsicker, later renamed CaaStle, with no parent company."
+ },
+ {
   "recipient_id": "EIN:421772220",
   "owned_by_larger": "no",
   "parent": "S\u00e9rigraphie Richford Inc.",
@@ -126,13 +99,13 @@
   "notes": "SRI Ohio is the US site of S\u00e9rigraphie Richford, a family-owned bottle-decorating company based in Montreal with plants in Quebec and Ontario; its total size was not found but nothing suggests 500 or more."
  },
  {
-  "recipient_id": "EIN:453507457",
+  "recipient_id": "EIN:020537099",
   "owned_by_larger": "no",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
-  "source": "https://en.wikipedia.org/wiki/Christine_Hunsicker",
-  "notes": "Gwynnie Bee was an independent venture-backed startup founded by Christine Hunsicker, later renamed CaaStle, with no parent company."
+  "source": "https://www.jobsohio.com/newsroom/news-press/winesburg-chair-companyplans-3-phase-expansion-in-holmes-county",
+  "notes": "JobsOhio describes Winesburg Chair as a family-operated company founded in Winesburg; no parent found."
  },
  {
   "recipient_id": "EIN:462903016",
@@ -189,6 +162,15 @@
   "notes": "The Leetonia metals plant is Pennex Aluminum, part of St. Louis-based Metal Exchange, founded by Morris Lefton and self-described as one of the largest privately held aluminum groups with plants in PA, OH and Italy; the link to the Lefton-named recipient and the size bucket are inferred, not stated."
  },
  {
+  "recipient_id": "EIN:952546613",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/air-cargo-equipment-company-satco-inc-chooses-ohio-for-new-operations",
+  "notes": "JobsOhio describes Satco as a family-owned and operated air cargo equipment maker based in California."
+ },
+ {
   "recipient_id": "EIN:341472584",
   "owned_by_larger": "no",
   "parent": "",
@@ -216,6 +198,33 @@
   "notes": "Agilitas bought the Netherlands-based armor group from Royal TenCate in March 2021, before the 2022 grant year, and the group had just over 300 employees across the Netherlands, Denmark, France and the US."
  },
  {
+  "recipient_id": "EIN:900823691",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Cincinnati freight broker (formerly Logikor) described as privately held; Redwood Logistics bought it in March 2026, after the 2023 grant year."
+ },
+ {
+  "recipient_id": "EIN:850660241",
+  "owned_by_larger": "no",
+  "parent": "Trucent, Inc.",
+  "parent_hq_state": "MI",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/trucent-renewable-chemicals-to-open-new-facility-in-ohio",
+  "notes": "JobsOhio calls TRC a division of Trucent, a privately held fluid-separation company founded in 1997 and based in Dexter, Mich.; its size was not found but nothing suggests 500 or more."
+ },
+ {
+  "recipient_id": "EIN:873286018",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/beloved-winans-chocolates-coffees-expansion-contributes-to-community-revitalization",
+  "notes": "Winans Chocolates and Coffees is a Reiser family business in Piqua; no parent company found."
+ },
+ {
   "recipient_id": "EIN:471395397",
   "owned_by_larger": "no",
   "parent": "Enthusiast Auto Holdings, LLC (platform owned by Cortec Group since Jan 2020)",
@@ -241,5 +250,23 @@
   "emp_bucket": "",
   "source": "https://oat.haus/pages/about",
   "notes": "Kween and Co. is the woman-owned, founder-led granola-butter brand Oat Haus in Brooklyn Heights, Ohio, funded by small investors including Shark Tank; no parent company found."
+ },
+ {
+  "recipient_id": "EIN:921419914",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "http://web.archive.org/web/2024id_/https://premiummetals.com/",
+  "notes": "Cleveland steel service center operating since 1990 whose 2024 site named no parent; it now lists itself among American Consolidated Industries companies, a Cleveland group, apparently only after the grant year."
+ },
+ {
+  "recipient_id": "EIN:811520982",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Dayton graphene and battery-materials firm founded by Bor Z. Jang (parent of Angstron Materials and, later, Honeycomb Battery); it is itself the top company, with no outside parent found."
  }
 ]
