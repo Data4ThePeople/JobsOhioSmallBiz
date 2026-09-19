@@ -1,0 +1,65 @@
+[
+  {
+    "recipient_id": "EIN:421769575",
+    "owned_by_larger": "yes",
+    "parent": "MITEC Automotive AG",
+    "parent_hq_state": "Germany",
+    "emp_bucket": "500-4999",
+    "source": "https://www.wtol.com/article/news/courier-new-findlay-factory-to-create-100-jobs/512-ae202a8b-0bf9-4bea-a997-92b81dee747a",
+    "notes": "Findlay plant of Eisenach, Germany-based MITEC Automotive AG, which had about 1,010 employees worldwide at its 2018 insolvency filing (de.wikipedia Mitec Automotive)."
+  },
+  {
+    "recipient_id": "EIN:340903894",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "https://www.pfonline.com/articles/medina-plating-earns-no-1-top-shops-status",
+    "notes": "Owned and run by Shawn Ritchie and Tait Krejci since 2001 with about 130 employees in 2017; no parent company found, and local news reports it closed in 2019."
+  },
+  {
+    "recipient_id": "EIN:310870863",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "https://www.bizjournals.com/cincinnati/c/meet-our-2024-climb-award-winners/29417/2024-minority-business-accelerator-awards-mpi-consulting.html",
+    "notes": "MPI Consulting is a Cincinnati minority-owned consultancy led by John Hawkins, honored as a minority business in 2024; no parent company found."
+  },
+  {
+    "recipient_id": "EIN:813604877",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "",
+    "notes": "Small Maumee remodeler whose 2023 Form 5500 plan (13 participants) is sponsored by CRD Construction, LLC, apparently the same Counts Remodel & Design initials under an Ohio name; no parent or group found, websites are parked."
+  },
+  {
+    "recipient_id": "EIN:272027486",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "https://www.jobsohio.com/newsroom/news-press/jobsohio-small-business-grant-boosts-patter-fam-sauces-ohio-expansion",
+    "notes": "JobsOhio release says the female-owned sauce maker was founded in 2009 by Joyce and Sam Peters; no parent company."
+  },
+  {
+    "recipient_id": "EIN:454011666",
+    "owned_by_larger": "no",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "https://www.wolfsridgebrewing.com/about",
+    "notes": "Columbus brewery and restaurant cofounded in 2013 by owners Alan and Bob Szuter, a father and son; no parent company found."
+  },
+  {
+    "recipient_id": "EIN:300931047",
+    "owned_by_larger": "unknown",
+    "parent": "",
+    "parent_hq_state": "",
+    "emp_bucket": "",
+    "source": "",
+    "notes": "No website, news, or JobsOhio release found for this Perrysburg company, whose 2017 grant was later returned; ownership could not be determined."
+  }
+]
