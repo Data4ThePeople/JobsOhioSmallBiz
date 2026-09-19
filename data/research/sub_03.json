@@ -1,0 +1,272 @@
+[
+ {
+  "recipient_id": "EIN:341290571",
+  "owned_by_larger": "yes",
+  "parent": "Klepsch Group",
+  "parent_hq_state": "Austria",
+  "emp_bucket": "500-4999",
+  "source": "http://www.castnylons.com",
+  "notes": "castnylons.com frames zlplastics.com, ZL Engineering Plastics 'member of Klepsch Group' (Austria); group size estimated, and ownership in 2021 inferred from shared group branding back to 2003."
+ },
+ {
+  "recipient_id": "EIN:310997825",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Cincinnati architecture firm SHP; site blocked, no acquisition or parent found in news."
+ },
+ {
+  "recipient_id": "EIN:310287650",
+  "owned_by_larger": "yes",
+  "parent": "BMG (Brown Machine Group)",
+  "parent_hq_state": "MI",
+  "emp_bucket": "500-4999",
+  "source": "https://www.onebmg.com/our-company",
+  "notes": "Plastics News (Jan 2018) reports Brown Machine Group bought Freeman; BMG lists Freeman among its brands; BMG size not confirmed."
+ },
+ {
+  "recipient_id": "EIN:201626973",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Plibrico site and news show it acquiring others but name no parent company or sponsor."
+ },
+ {
+  "recipient_id": "EIN:843192180",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Could not identify the company's site or any news on ownership."
+ },
+ {
+  "recipient_id": "EIN:861564797",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Could not identify the company's site or any news; plan has only 3 participants."
+ },
+ {
+  "recipient_id": "EIN:310682235",
+  "owned_by_larger": "yes",
+  "parent": "A. O. Smith Corporation",
+  "parent_hq_state": "WI",
+  "emp_bucket": "5000+",
+  "source": "https://news.google.com/rss/search?q=%22Hague%22+Groveport+acquired",
+  "notes": "A. O. Smith bought Hague Quality Water (William R. Hague, Inc., Groveport) in September 2017, before the 2020 grant (PR Newswire, Business Journals)."
+ },
+ {
+  "recipient_id": "EIN:300389878",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://nucamprv.com/about-us/",
+  "notes": "nuCamp's own history describes founder Joe Hubble's company with no parent; no acquisition news found."
+ },
+ {
+  "recipient_id": "EIN:270176680",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Local news (Toledo Blade, WTVG 2017) describes a local owner; no parent or acquisition found."
+ },
+ {
+  "recipient_id": "EIN:263039980",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Columbus developer led by Mark Wagenbrenner; news shows no parent or acquisition."
+ },
+ {
+  "recipient_id": "EIN:823959668",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Found only 2024 local expansion headlines; no site or ownership detail reachable."
+ },
+ {
+  "recipient_id": "EIN:203319511",
+  "owned_by_larger": "yes",
+  "parent": "CBRE Group",
+  "parent_hq_state": "TX",
+  "emp_bucket": "5000+",
+  "source": "https://news.google.com/rss/search?q=CBRE+acquires+FacilitySource",
+  "notes": "Warburg Pincus-backed until CBRE bought it for $290M in June 2018 (Columbus Dispatch), covering both grant years."
+ },
+ {
+  "recipient_id": "EIN:822889106",
+  "owned_by_larger": "yes",
+  "parent": "Alamo Group Inc.",
+  "parent_hq_state": "TX",
+  "emp_bucket": "500-4999",
+  "source": "https://news.google.com/rss/search?q=Rayco+Manufacturing+acquired",
+  "notes": "Morbark (Stellex Capital) bought Rayco in Nov 2017, and Alamo Group bought Morbark in Oct 2019, so both grant years were under a larger parent."
+ },
+ {
+  "recipient_id": "EIN:470691259",
+  "owned_by_larger": "yes",
+  "parent": "Berkshire Hathaway Inc.",
+  "parent_hq_state": "NE",
+  "emp_bucket": "5000+",
+  "source": "https://www.adalet.com/about",
+  "notes": "The recipient name itself shows Adalet as a unit of Scott Fetzer, a Berkshire Hathaway subsidiary; Adalet's site now lists Marmon/Berkshire Hathaway."
+ },
+ {
+  "recipient_id": "EIN:341134243",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Mansfield tube maker; local news covers it as a standalone company and no parent or acquisition was found."
+ },
+ {
+  "recipient_id": "EIN:383825650",
+  "owned_by_larger": "yes",
+  "parent": "Miba AG",
+  "parent_hq_state": "Austria",
+  "emp_bucket": "5000+",
+  "source": "https://www.miba.com/en/about-us",
+  "notes": "Miba Energy Holding is the US arm of Austria's Miba AG, which reports 7,400 employees worldwide."
+ },
+ {
+  "recipient_id": "EIN:340697598",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Cleveland produce distributor since 1914; site and news name no parent."
+ },
+ {
+  "recipient_id": "EIN:341108705",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.unigrip.com/",
+  "notes": "CEO Deb King says her family has owned Uni-Grip since 1973."
+ },
+ {
+  "recipient_id": "EIN:340922427",
+  "owned_by_larger": "yes",
+  "parent": "Lincoln Electric Holdings",
+  "parent_hq_state": "OH",
+  "emp_bucket": "5000+",
+  "source": "https://www.jobsohio.com/newsroom/news-press/lincoln-electrics-wayne-trail-technologies-opens-newly-expanded-facility-in-western-ohio",
+  "notes": "JobsOhio release says Lincoln Electric acquired Wayne Trail in 2012, before the 2019 grant."
+ },
+ {
+  "recipient_id": "EIN:911678875",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Holster maker that moved from Washington to Streetsboro in 2018; site and news name no parent company."
+ },
+ {
+  "recipient_id": "EIN:202093507",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.ironcitypipe.com/",
+  "notes": "Jackson, Ohio supplier in business since 2004; site and news name no parent."
+ },
+ {
+  "recipient_id": "EIN:341930826",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.northernstamping.com/",
+  "notes": "Site calls it a family-run company led by President and CEO Matthew Friedman."
+ },
+ {
+  "recipient_id": "EIN:341488414",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Salem tire-valve maker named SBA Exporter of the Year in 2024; no parent or acquisition found."
+ },
+ {
+  "recipient_id": "EIN:341499502",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Canton metallurgy firm covered as a local company (Canton Repository 2009, 2023); no parent or acquisition found."
+ },
+ {
+  "recipient_id": "EIN:854302513",
+  "owned_by_larger": "yes",
+  "parent": "Hannecard Group",
+  "parent_hq_state": "Belgium",
+  "emp_bucket": "500-4999",
+  "source": "https://www.hannecard.com/en/company",
+  "notes": "Hannecard (Belgium, 1,000+ employees in 17 countries) formed Hannecard Roller Coatings when it bought ASB Industries in Barberton."
+ },
+ {
+  "recipient_id": "EIN:870574076",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "PE-owned (Graham Partners sold it to Ridgemont Equity in 2017, per WSJ) but platform size unconfirmed; its own plan shows about 133 participants, likely under 500."
+ },
+ {
+  "recipient_id": "EIN:311690460",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.kutol.com/about-us",
+  "notes": "Kutol's site says it has been family owned and operated since 1912."
+ },
+ {
+  "recipient_id": "EIN:412194439",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.universitytees.com/about",
+  "notes": "Founded in 2003 by Miami University students Nick and Joe; it acquires others and no parent was found."
+ },
+ {
+  "recipient_id": "EIN:341545822",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Now Kreate, owned by Sarasota family office Nickolas Asset Management (Business Wire 2025); new ownership was reported in 2019, but the 2023 owner and group size were not confirmed."
+ },
+ {
+  "recipient_id": "EIN:311277407",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Lebanon/Cincinnati envelope and packaging maker covered as a local independent firm; no parent or acquisition found."
+ }
+]

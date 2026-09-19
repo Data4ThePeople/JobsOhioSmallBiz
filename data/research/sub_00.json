@@ -10,11 +10,209 @@
  },
  {
   "recipient_id": "EIN:824786509",
+  "owned_by_larger": "yes",
+  "parent": "Phoenix International S.p.A.",
+  "parent_hq_state": "Italy",
+  "emp_bucket": "500-4999",
+  "source": "https://www.youngstowntool.com/about",
+  "notes": "Company site says it was acquired in 2018 by Phoenix International S.p.A. of Verdello, Italy, a multi-country extrusion die group (worldwide headcount not confirmed; bucket estimated)."
+ },
+ {
+  "recipient_id": "EIN:351989444",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Coshocton call-center firm founded in 1996; site and news show no parent company."
+ },
+ {
+  "recipient_id": "EIN:261737051",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "True Inspection Services joined The Mannik & Smith Group only in 2025, after the 2019-2020 grant years; no earlier parent found."
+ },
+ {
+  "recipient_id": "EIN:341568276",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Family-run Carrollton trucking firm; news coverage of its 2019-2020 expansion names no parent company."
+ },
+ {
+  "recipient_id": "EIN:341667697",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "P. Graham Dunn was acquired by Creative Brands only in October 2024, after the 2017-2021 grant years; no parent found before that."
+ },
+ {
+  "recipient_id": "EIN:311422564",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Upper Arlington IT staffing firm led by founder Nancy Matijasich; no parent company found."
+ },
+ {
+  "recipient_id": "EIN:341816209",
   "owned_by_larger": "unknown",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "source": "",
-  "notes": "placeholder"
+  "notes": "No company site or news found that shows ownership either way; the company sponsors its own Form 5500 plan."
+ },
+ {
+  "recipient_id": "EIN:341789017",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Plain City automation builder in business since 1994; site and news name no parent company."
+ },
+ {
+  "recipient_id": "EIN:341269925",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.nationaldoorandtrim.com/about",
+  "notes": "Company history describes a Turnwald family business started in Van Wert County; no parent company named."
+ },
+ {
+  "recipient_id": "EIN:311260509",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.5bs.com",
+  "notes": "Company site describes 5B's as family-owned and based in Zanesville."
+ },
+ {
+  "recipient_id": "EIN:310308370",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPNjhkQVZJR0pxY3J4WVJOYWhRQS1Ndno4Ukk0aXVBZDRCcWJhQnhMNWRoSDFONHRQcHlqcTBOa3NCN2ZwZWJYeUs3THZGQVp2Q3VMYkVwcEVZV3g4Q3ZtVFFLXzRUOHI4dEs3UmVtblBJZWphbDBENmFaRjB1OFVlWHBUZWwtMUFPNmtYWlhmMi1wSlJvT05vb2ZZMmMydndhbnExbWZuakVPMC1UUmk2MjJyTkRlYWVReWdnZjdkamw5U3Z4MEFobWhvLWs0VXRtdUZncE93RFJTZG1kN2txaHFwT1c0M0U?oc=5",
+  "notes": "Journal-News (Feb 2023) reports Hamilton Caster continuing family leadership; no parent company found."
+ },
+ {
+  "recipient_id": "EIN:311441978",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "NexTech Materials (now Nexceris) was privately held in 2021; its only deal found is a 2025 sale of the Li-ion Tamer product line to Honeywell."
+ },
+ {
+  "recipient_id": "EIN:310963794",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Lancaster label printer profiled as an independent narrow-web converter; no acquisition or parent found in news."
+ },
+ {
+  "recipient_id": "EIN:310940115",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Dayton precision machining shop; site and news name no parent company."
+ },
+ {
+  "recipient_id": "EIN:274356106",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Monroe label and barcode supplier covered in local growth stories with no parent named; company site did not load."
+ },
+ {
+  "recipient_id": "EIN:262958880",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Mattingly Cold Storage was acquired by Igneo Infrastructure Partners only in April 2026, after the 2020-2021 grant years; no earlier large parent found."
+ },
+ {
+  "recipient_id": "EIN:471756027",
+  "owned_by_larger": "yes",
+  "parent": "Bright Innovation Labs (Aterian Investment Partners)",
+  "parent_hq_state": "CA",
+  "emp_bucket": "500-4999",
+  "source": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOS0NZU25abjA1bnZDMnRzX1h1Q0pTb01Sdm5ES2tMVjR3WVVRalhlaDRpUVdDQVg3WlYxeGs3OTk5VGNWbDl3VUEwU2k2SlA5QmVCa0F2eU5VUWN3YzBsTU0yYkdtQTVPbmFxX1NLaktFV2ppVkxidzRvQnlNWjc4VURhN3dES1Y2YVZfdzNtbjJkd2pTbWQzaXo1Z3Z3d1RQMks4ODFHa1dWNmsyU050YmhXN0xWcGVCNGlnbmhHVDhHM1Y1M3hiZERwbldIczZUNktNWW1jdDYtLW45UU00dkNxRWZnU21xTkZiUWtHamV3bno4WVZZLUlyVm81MWo0NEVYLTdmZw?oc=5",
+  "notes": "PR Newswire (Jan 2021) says Aterian-backed Bright International combined with Bocchi Laboratories to form a beauty manufacturing platform, before the FY2021 grant; headcount not confirmed, bucket estimated."
+ },
+ {
+  "recipient_id": "EIN:273929785",
+  "owned_by_larger": "yes",
+  "parent": "FEW Fahrzeugelektrik Werk GmbH & Co. KG",
+  "parent_hq_state": "Germany",
+  "emp_bucket": "",
+  "source": "https://few-group.com/en/few-automotive-group/company-profile/",
+  "notes": "Wooster plant is the US arm of German FEW Automotive Group (Zwenkau), but no worldwide headcount was found and the group looks small, possibly under 500."
+ },
+ {
+  "recipient_id": "EIN:461560163",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Site now says Graphic Village is part of the Revitalize Group (a Cincinnati investment firm), but the date it joined and the group's size could not be confirmed; 2018 news called it independent."
+ },
+ {
+  "recipient_id": "EIN:815429950",
+  "owned_by_larger": "yes",
+  "parent": "Mucci Farms",
+  "parent_hq_state": "Canada",
+  "emp_bucket": "500-4999",
+  "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNE9BQTRzeHNvLUliOVhuRm5qbTc2ME1UQ1NHam9uN2lvZzFmeWE3OWtjcTR1bGo3aG54N3RReS11OWRUVE9tM1I4cHc5MDRJdjF0N3I0UnVZY0hOMW1wTkZfMFBWU2RfTERLV3NUeG1zUjNQQnYzd05xZ0dGeEt6Szlnbm5oMU9yRHQ0aXFjaDlaUXFjTkppUlNhUDR1T2NJcXdLZ1BWMm5Na0c4NWlnM0VR0gG3AUFVX3lxTE93cE4wNTdQVGVrMTI2a3M0dUJZLTlDRDM2UTAzM3IxVDgwSFUteXJ3ZzMwbWs3eU5UMGcxVllZZ2ZXOE5PTmtiaGpINHZRMG1xaWhVb2JfSGlnTmw0TzI0alBYN2wta29rQWE4dWtaV0NFc0QxYXh0aHdldGRnUDc2N2tTLWxka1ZqV09wRGo4WDRicXZ0MFA4MWtkaXJVT2pkdGw2UlFreGtuS2p5VXBCVjgzTFZQcw?oc=5",
+  "notes": "MIMI Farms is the Huron, Ohio greenhouse of Mucci Farms of Kingsville, Ontario (Form 5500 sponsor is Mucci Farms); worldwide headcount not confirmed, bucket estimated."
+ },
+ {
+  "recipient_id": "EIN:820878051",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Local news covers Ohio Pack's Licking County plants but no ownership detail was reachable and the company site did not load."
+ },
+ {
+  "recipient_id": "EIN:611403731",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Cleveland-area fresh-cut produce processor; 2019 relocation coverage names no parent company."
+ },
+ {
+  "recipient_id": "EIN:311462897",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Only a 2018 local building story found; no company site or ownership information reachable."
  }
 ]

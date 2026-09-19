@@ -25,5 +25,113 @@
   "emp_bucket": "",
   "source": "https://www.pehub.com/igp-acquires-industrial-company-pi/",
   "notes": "Owned by private-equity firm IGP since June 2022 (grant FY2023), but the size of the P&I platform could not be confirmed as 500 or more."
+ },
+ {
+  "recipient_id": "EIN:453790057",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/metalx-to-invest-253-million-and-create-180-jobs-at-new-recycling-campus-in-defiance",
+  "notes": "JobsOhio profile calls MetalX an independent metals recycling business founded in 2012."
+ },
+ {
+  "recipient_id": "EIN:272624327",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Independent solar racking maker in FY2016; Gibraltar Industries bought it later, after the grant year."
+ },
+ {
+  "recipient_id": "EIN:203900803",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.ladepeche.fr/2020/09/14/cedric-barbe-dedienne-aerospace-laureat-du-fonds-de-modernisation-industrielle-9070222.php",
+  "notes": "US arm of French tooling maker Dedienne Aerospace, but the whole group had about 400 employees worldwide in 2020, under the 500 threshold."
+ },
+ {
+  "recipient_id": "EIN:311728288",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/velocys-acquires-lease-on-production-facility",
+  "notes": "US unit of UK-listed Velocys plc in FY2023, but the whole group was small (well under 500 employees)."
+ },
+ {
+  "recipient_id": "EIN:205839715",
+  "owned_by_larger": "yes",
+  "parent": "Nidec Corporation",
+  "parent_hq_state": "Japan",
+  "emp_bucket": "5000+",
+  "source": "https://www.imperialelectric.com",
+  "notes": "Imperial Electric's site is branded Nidec Elevator; it is part of Japan's Nidec group."
+ },
+ {
+  "recipient_id": "EIN:263444991",
+  "owned_by_larger": "yes",
+  "parent": "Nippon Steel Corporation",
+  "parent_hq_state": "Japan",
+  "emp_bucket": "5000+",
+  "source": "https://web.archive.org/web/2019/https://www.nsicrankshaft.com/about/",
+  "notes": "The 2019 company site says NSI Crankshaft was owned by Nippon Steel and Sumitomo Corporation of Japan."
+ },
+ {
+  "recipient_id": "EIN:880377766",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.kroy.com/about-us/company-history",
+  "notes": "Owned by Cleveland holding company Pubco Corporation since 1997; after Pubco sold Allied Construction to Sandvik, Kroy (with its Buckeye division) appears to be its main business, with no sign of a 500+ group."
+ },
+ {
+  "recipient_id": "EIN:341646871",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Business press describes OMNI Systems as a privately held Cleveland label maker; no parent or PE owner found."
+ },
+ {
+  "recipient_id": "EIN:310568575",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.precisionimpacts.com/about/our-story",
+  "notes": "Gayston is itself the parent of Precision Impacts, a single-campus Miamisburg manufacturer founded in 1951; no outside owner found."
+ },
+ {
+  "recipient_id": "EIN:340690321",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://malish.com/malish-history/",
+  "notes": "Malish family company founded in 1945 in Cleveland; it owns its own small units abroad but no outside parent was found."
+ },
+ {
+  "recipient_id": "EIN:341468011",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.danielsamish.com/history/",
+  "notes": "Holmes County furniture maker founded by Daniel Yoder; its plan sponsor Carroll & Jameson Corp is a related local entity, and no larger parent was found."
+ },
+ {
+  "recipient_id": "EIN:811145148",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.sperryrice.com/about/about-us/",
+  "notes": "Single-plant Killbuck rubber extruder; its site names no parent and no acquisition news was found."
  }
 ]
