@@ -1,0 +1,15 @@
+[
+ {
+  "recipient_id": "EIN:812288733",
+  "recipient_class": "site_development",
+  "parent": "Scannell Properties",
+  "parent_hq_state": "IN",
+  "hq_source": "https://www.scannellproperties.com/about/",
+  "emp_bucket": "100-499",
+  "emp_source": "https://www.linkedin.com/company/scannell-properties",
+  "emp_asof": "2026",
+  "confidence": "C",
+  "founded_in_ohio": "no",
+  "notes": "Scannell #277 LLC is a numbered project entity of Scannell Properties, a privately held Indianapolis build-to-suit developer founded in 1990; LinkedIn shows 51-200 employees (155 listed). The Ohio project was not confirmed, though Scannell built Riddell's North Ridgeville plant around 2017."
+ }
+]
