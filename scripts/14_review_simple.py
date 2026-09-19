@@ -16,7 +16,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 d = json.loads((ROOT / "dist" / "data.json").read_text())
+# answers are never lost on a rebuild: take them from the earlier sheet and from
+# the current simple sheet, the current one winning
 old = {r["parent"]: r["eric_ok"] for r in csv.DictReader((ROOT / "data" / "review_for_eric.csv").open()) if r.get("eric_ok")}
+cur = ROOT / "data" / "review_simple.csv"
+if cur.exists():
+    old.update({r["company"]: r["your_answer"] for r in csv.DictReader(cur.open()) if r.get("your_answer")})
 notes = {}
 for r in csv.DictReader((ROOT / "data" / "parents.csv").open()):
     notes.setdefault(r["parent"].strip() or r["name"].strip(), r)

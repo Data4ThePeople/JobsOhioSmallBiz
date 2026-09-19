@@ -100,6 +100,28 @@ the grant years (Thaler Machine, n2y, PUI Audio).
 | Small share of dollars | 19.6% | 18.4% |
 | Worst case, dollars to large | at least 61.5% | at least 62.1% |
 
+(These are the figures after the first check only; the final figures are below.)
+
+### Second ownership check: researched small businesses
+
+The random re-check also found 3 errors in 67 researched rows (4.5%), all of
+the same kind: a subsidiary of a larger group counted as small. So the same
+ownership check was run on every researched small business outside the hand
+review and the random sample: 221 recipients, $37.0 million. 12 (5.4%, $2.5
+million) belonged to a larger group and were reclassified, among them Grady
+McCauley (LSI Industries), JR Manufacturing (Nippon Steel Trading), Hamilton
+Safe (Gunnebo, Sweden), 20/20 Custom Molded Plastics (Inteplast) and deSter
+(gategroup, Switzerland). Several more moved home state to a smaller
+out-of-state parent.
+
+### Headline after both checks (businesses, 500-employee cutoff)
+
+| | Before the checks | After |
+|---|---|---|
+| Small share of recipients | 63.9% | 60.1% |
+| Small share of dollars | 19.6% | 18.1% |
+| Worst case, dollars to large | at least 61.5% | at least 62.3% |
+
 ## A second rule assumption: Ohio headquarters
 
 Rule R1 also recorded every Inclusion Grant recipient as Ohio-headquartered,
