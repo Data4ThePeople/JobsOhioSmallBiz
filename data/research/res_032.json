@@ -1,0 +1,54 @@
+[
+ {
+  "recipient_id": "EIN:464936616",
+  "recipient_class": "business",
+  "parent": "TS Sales LLC (Top Shot Ammunition)",
+  "parent_hq_state": "OH",
+  "hq_source": "https://www.morrowcountysentinel.com/2019/10/28/chamber-recognizes-business-success/",
+  "emp_bucket": "<100",
+  "emp_source": "https://www.morrowcountysentinel.com/2019/10/28/chamber-recognizes-business-success/",
+  "emp_asof": "2019",
+  "confidence": "C",
+  "founded_in_ohio": "yes",
+  "notes": "Morrow County Chamber lists TS Sales LLC/Top Shot Ammunition as a Mount Gilead business opened in 2014; no employee count found, and JobsOhio metrics show 1 job retained on a Revitalization Loan. Independent, no parent found."
+ },
+ {
+  "recipient_id": "EIN:474912935",
+  "recipient_class": "business",
+  "parent": "Pidgeon Group (Envelope 1 Inc.)",
+  "parent_hq_state": "OH",
+  "hq_source": "https://businessjournaldaily.com/usda-loan-supports-envelope-1s-28m-expansion/",
+  "emp_bucket": "100-499",
+  "emp_source": "https://businessjournaldaily.com/usda-loan-supports-envelope-1s-28m-expansion/",
+  "emp_asof": "2022",
+  "confidence": "B",
+  "founded_in_ohio": "unknown",
+  "notes": "Business Journal Daily (2022) says E1 Digital Direct is an affiliate of Columbiana-based Envelope 1, part of the privately owned Pidgeon Group, and the combined project retains 200 jobs. The Pidgeon Group's total headcount across all its companies was not found."
+ },
+ {
+  "recipient_id": "EIN:680659789",
+  "recipient_class": "business",
+  "parent": "BrightEdge Technologies Inc.",
+  "parent_hq_state": "CA",
+  "hq_source": "https://www.brightedge.com/about-us",
+  "emp_bucket": "100-499",
+  "emp_source": "https://www.brightedge.com/about-us",
+  "emp_asof": "2021",
+  "confidence": "B",
+  "founded_in_ohio": "no",
+  "notes": "Form 5500 participants were 406 (2019) and 425 (2023), and the company site says it employs 430+ worldwide; venture-backed and privately held, headquartered in San Mateo, CA. JobsOhio metrics show 83 jobs retained at the Cleveland office."
+ },
+ {
+  "recipient_id": "EIN:770528042",
+  "recipient_class": "business",
+  "parent": "Landec Corporation (now Lifecore Biomedical)",
+  "parent_hq_state": "CA",
+  "hq_source": "https://www.sec.gov/Archives/edgar/data/1005286/000100528621000043/lndc-20210530.htm",
+  "emp_bucket": "500-4999",
+  "emp_source": "https://www.sec.gov/Archives/edgar/data/1005286/000100528621000043/lndc-20210530.htm",
+  "emp_asof": "2021",
+  "confidence": "A",
+  "founded_in_ohio": "no",
+  "notes": "Curation Foods was a reportable segment of Nasdaq-listed Landec (Santa Maria, CA), which reported 905 full-time employees at May 30, 2021 and 689 at May 29, 2022. Landec later sold the Curation Foods businesses and renamed itself Lifecore Biomedical (Chaska, MN)."
+ }
+]

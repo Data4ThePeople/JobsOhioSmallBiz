@@ -1,44 +1,5 @@
 [
  {
-  "recipient_id": "EIN:060613103",
-  "recipient_class": "business",
-  "parent": "Campbell Soup Company",
-  "parent_hq_state": "NJ",
-  "hq_source": "https://www.sec.gov/Archives/edgar/data/16732/000001673219000070/cpb-7282019x10xk.htm",
-  "emp_bucket": "5000+",
-  "emp_source": "https://www.sec.gov/Archives/edgar/data/16732/000001673219000070/cpb-7282019x10xk.htm",
-  "emp_asof": "2019",
-  "confidence": "A",
-  "founded_in_ohio": "no",
-  "notes": "Pepperidge Farm is a wholly owned Campbell Soup subsidiary; Campbell's FY2019 10-K reports about 19,000 employees as of July 28, 2019. The grant supports the Willard, Ohio bakery."
- },
- {
-  "recipient_id": "EIN:472692010",
-  "recipient_class": "business",
-  "parent": "Eccrine Systems, Inc.",
-  "parent_hq_state": "OH",
-  "hq_source": "https://www.sec.gov/Archives/edgar/data/1677374/000167737419000002/primary_doc.xml",
-  "emp_bucket": "<100",
-  "emp_source": "Form 5500 participants 2019 (55), sponsor Eccrine Systems, Inc.",
-  "emp_asof": "2019",
-  "confidence": "B",
-  "founded_in_ohio": "unknown",
-  "notes": "Independent venture-backed Cincinnati sweat-sensor startup (Form D filer, Delaware corp. incorporated 2014); Form 5500 shows 55 plan participants in 2019 and JobsOhio lists 41 retained jobs. It wound down in 2020 and Epicore Biosystems bought its assets in 2022, after the grant years."
- },
- {
-  "recipient_id": "EIN:201177715",
-  "recipient_class": "business",
-  "parent": "Snowville Creamery, LLC",
-  "parent_hq_state": "OH",
-  "hq_source": "https://irontontribune.com/2021/11/19/dairy-delights-snowville-creamery-milks-the-most-out-of-dairy-products/",
-  "emp_bucket": "<100",
-  "emp_source": "JobsOhio project metrics (30 jobs retained)",
-  "emp_asof": "2021",
-  "confidence": "C",
-  "founded_in_ohio": "yes",
-  "notes": "Independent Pomeroy dairy processor started in 2007, per the Ironton Tribune; JobsOhio lists 30 retained jobs and no source found gives a total above 100. No parent company found."
- },
- {
   "recipient_id": "EIN:341690243",
   "recipient_class": "business",
   "parent": "The Anderson-DuBose Company",
@@ -78,6 +39,32 @@
   "notes": "Air and kitchen-hood filter maker at 15706 Garfield Road, Wakeman, Ohio, per its website; its only JobsOhio program is an Inclusion (small business) Grant with 7 retained jobs. No parent company found."
  },
  {
+  "recipient_id": "EIN:201299801",
+  "recipient_class": "business",
+  "parent": "Skylift, Inc. (likely affiliate)",
+  "parent_hq_state": "OH",
+  "hq_source": "https://www.bbb.org/us/oh/lorain/profile/contractors-equipment/skylift-inc-0312-20003981",
+  "emp_bucket": "<100",
+  "emp_source": "Form 5500 2023, Skylift, Inc. 401(k) plan (EIN 341934934): 92-98 participants; https://www.linkedin.com/company/skylift-inc1 (11-50)",
+  "emp_asof": "2023",
+  "confidence": "C",
+  "founded_in_ohio": "unknown",
+  "notes": "The 990 address (3000 Leavitt Rd Unit 6, Lorain) is Skylift Inc.'s plant and BBB lists Skylift's other location in Rocky River, so JW of Rocky River is likely a Skylift affiliate or holding entity; the link is inferred from the address. Skylift's 2023 Form 5500 shows 92-98 participants and JobsOhio lists 66-81 retained jobs, so it sits near the top of the under-100 bucket."
+ },
+ {
+  "recipient_id": "EIN:463120860",
+  "recipient_class": "business",
+  "parent": "SLD Enterprises LLC",
+  "parent_hq_state": "OH",
+  "hq_source": "https://www.bizapedia.com/oh/sld-enterprises-llc.html",
+  "emp_bucket": "<100",
+  "emp_source": "No size source found; the $50,000 grant is in the range of JobsOhio small-business grants",
+  "emp_asof": "2023",
+  "confidence": "D",
+  "founded_in_ohio": "unknown",
+  "notes": "Ohio LLC at 7162 Reading Rd, Cincinnati (990 address, an office building); Google News, EDGAR, Bizapedia (blocked by a security check) and web searches did not identify the operating business, and the same-named SLD Enterprises in East Carondelet, IL is a different firm. No JobsOhio metrics row matched, so the bucket is a best guess."
+ },
+ {
   "recipient_id": "EIN:830722506",
   "recipient_class": "business",
   "parent": "Aunt Flow Corp.",
@@ -91,19 +78,6 @@
   "notes": "Venture-backed period-product company that files Form D with the SEC from 757 Garden Road, Columbus (Delaware corporation); its investors, including JLL in 2022, hold minority stakes. JobsOhio lists 6 retained jobs and no source found gives a larger headcount."
  },
  {
-  "recipient_id": "EIN:314274980",
-  "recipient_class": "business",
-  "parent": "The Palmer-Donavin Manufacturing Company",
-  "parent_hq_state": "OH",
-  "hq_source": "https://www.palmerdonavin.com/about-us",
-  "emp_bucket": "500-4999",
-  "emp_source": "Form 5500 participants 2023 (663), sponsor Palmer-Donavin Manufacturing Company",
-  "emp_asof": "2023",
-  "confidence": "B",
-  "founded_in_ohio": "yes",
-  "notes": "Employee-owned (ESOP since 2007) Columbus building-products distributor that traces to a 1907 Columbus company, per its website. Its Form 5500 plan had 663 participants in 2023, which can include former employees, and JobsOhio lists 116 retained jobs at the Ohio project."
- },
- {
   "recipient_id": "EIN:341924589",
   "recipient_class": "business",
   "parent": "Automation Systems & Design, Inc. (ASD)",
@@ -115,6 +89,45 @@
   "confidence": "B",
   "founded_in_ohio": "yes",
   "notes": "Robotic automation integrator founded in Dayton in 2000 and led by President and CEO Sunny Kullar; the Dayton Daily News reported 25 employees when it moved to 3540 Vance Road, Moraine, in late 2022. No parent company found."
+ },
+ {
+  "recipient_id": "EIN:863411379",
+  "recipient_class": "business",
+  "parent": "Barn View Investments LLC",
+  "parent_hq_state": "OH",
+  "hq_source": "https://www.bizapedia.com/oh/barn-view-investments-llc.html",
+  "emp_bucket": "<100",
+  "emp_source": "No size source found; the $50,000 grant is in the range of JobsOhio small-business grants",
+  "emp_asof": "2024",
+  "confidence": "D",
+  "founded_in_ohio": "unknown",
+  "notes": "Ohio LLC at 7574 Justus Ave, Navarre (Stark County) per the 990; its name suggests a real-estate holding entity for an operating business, but Google News, EDGAR, Form 5500 and Bizapedia (blocked) did not identify it or match it to a JobsOhio metrics row. The bucket is a best guess."
+ },
+ {
+  "recipient_id": "EIN:810685370",
+  "recipient_class": "business",
+  "parent": "International Specialty Produce, Inc.",
+  "parent_hq_state": "OH",
+  "hq_source": "https://www.clevelandtofu.com/about.html",
+  "emp_bucket": "<100",
+  "emp_source": "JobsOhio monthly metrics Sep 2023, International Specialty Produce, Inc. (Inclusion Grant, 3 jobs retained)",
+  "emp_asof": "2023",
+  "confidence": "C",
+  "founded_in_ohio": "unknown",
+  "notes": "Cleveland Tofu's website says it is part of International Specialty Produce Inc., which shares its 3800 Woodland Ave, Cleveland address. JobsOhio's metrics list the $50,000 grant under an Inclusion (small business) Grant to International Specialty Produce with 3 retained and 3 new jobs."
+ },
+ {
+  "recipient_id": "EIN:812679212",
+  "recipient_class": "business",
+  "parent": "FABA Machine Services LLC",
+  "parent_hq_state": "OH",
+  "hq_source": "https://fabamachineservices.com/",
+  "emp_bucket": "<100",
+  "emp_source": "JobsOhio monthly metrics Feb 2023, FABA Machine Services LLC (Inclusion Grant, 3 jobs retained)",
+  "emp_asof": "2023",
+  "confidence": "C",
+  "founded_in_ohio": "unknown",
+  "notes": "Precision machine shop founded in 2016, per its website, at 2001 Courtright Rd, Columbus (990 address). JobsOhio lists an Inclusion (small business) Grant with 3 retained jobs; no parent company found."
  },
  {
   "recipient_id": "EIN:813722879",
@@ -143,56 +156,30 @@
   "notes": "Metal artist Nicholas Yust's studio and gallery in Cincinnati, per his website, which describes him working full time out of his own metal studio; no headcount found but it is a small owner-run studio. The 990 lists no EIN."
  },
  {
-  "recipient_id": "EIN:201299801",
+  "recipient_id": "EIN:314274980",
   "recipient_class": "business",
-  "parent": "Skylift, Inc. (likely affiliate)",
+  "parent": "The Palmer-Donavin Manufacturing Company",
   "parent_hq_state": "OH",
-  "hq_source": "https://www.bbb.org/us/oh/lorain/profile/contractors-equipment/skylift-inc-0312-20003981",
-  "emp_bucket": "<100",
-  "emp_source": "Form 5500 2023, Skylift, Inc. 401(k) plan (EIN 341934934): 92-98 participants; https://www.linkedin.com/company/skylift-inc1 (11-50)",
+  "hq_source": "https://www.palmerdonavin.com/about-us",
+  "emp_bucket": "500-4999",
+  "emp_source": "Form 5500 participants 2023 (663), sponsor Palmer-Donavin Manufacturing Company",
   "emp_asof": "2023",
-  "confidence": "C",
-  "founded_in_ohio": "unknown",
-  "notes": "The 990 address (3000 Leavitt Rd Unit 6, Lorain) is Skylift Inc.'s plant and BBB lists Skylift's other location in Rocky River, so JW of Rocky River is likely a Skylift affiliate or holding entity; the link is inferred from the address. Skylift's 2023 Form 5500 shows 92-98 participants and JobsOhio lists 66-81 retained jobs, so it sits near the top of the under-100 bucket."
+  "confidence": "B",
+  "founded_in_ohio": "yes",
+  "notes": "Employee-owned (ESOP since 2007) Columbus building-products distributor that traces to a 1907 Columbus company, per its website. Its Form 5500 plan had 663 participants in 2023, which can include former employees, and JobsOhio lists 116 retained jobs at the Ohio project."
  },
  {
-  "recipient_id": "EIN:810685370",
+  "recipient_id": "EIN:872959043",
   "recipient_class": "business",
-  "parent": "International Specialty Produce, Inc.",
-  "parent_hq_state": "OH",
-  "hq_source": "https://www.clevelandtofu.com/about.html",
-  "emp_bucket": "<100",
-  "emp_source": "JobsOhio monthly metrics Sep 2023, International Specialty Produce, Inc. (Inclusion Grant, 3 jobs retained)",
+  "parent": "AMP Robotics Corp.",
+  "parent_hq_state": "CO",
+  "hq_source": "https://www.sec.gov/Archives/edgar/data/1699390/000169939020000001/primary_doc.xml",
+  "emp_bucket": "100-499",
+  "emp_source": "Form 5500 2023, AMP Robotics Corporation (EIN 901248052): health plan 230 participants, 401(k) 421",
   "emp_asof": "2023",
-  "confidence": "C",
-  "founded_in_ohio": "unknown",
-  "notes": "Cleveland Tofu's website says it is part of International Specialty Produce Inc., which shares its 3800 Woodland Ave, Cleveland address. JobsOhio's metrics list the $50,000 grant under an Inclusion (small business) Grant to International Specialty Produce with 3 retained and 3 new jobs."
- },
- {
-  "recipient_id": "EIN:464855962",
-  "recipient_class": "business",
-  "parent": "SurgiHealth Solutions, LLC",
-  "parent_hq_state": "OH",
-  "hq_source": "https://news.google.com/rss/search?q=%22SurgiHealth%22&hl=en-US&gl=US&ceid=US:en",
-  "emp_bucket": "<100",
-  "emp_source": "JobsOhio monthly metrics Jan 2021 (Inclusion OSIP Grant, 2 jobs retained, 14 to be created)",
-  "emp_asof": "2021",
-  "confidence": "C",
-  "founded_in_ohio": "unknown",
-  "notes": "Cincinnati medical-supply seller founded by entrepreneur Joshua Williams (Cincinnati Enquirer headline, 2020; 2023 CLIMB award winner). JobsOhio lists an Inclusion Grant with 2 retained and 14 new jobs; no parent company found."
- },
- {
-  "recipient_id": "EIN:812679212",
-  "recipient_class": "business",
-  "parent": "FABA Machine Services LLC",
-  "parent_hq_state": "OH",
-  "hq_source": "https://fabamachineservices.com/",
-  "emp_bucket": "<100",
-  "emp_source": "JobsOhio monthly metrics Feb 2023, FABA Machine Services LLC (Inclusion Grant, 3 jobs retained)",
-  "emp_asof": "2023",
-  "confidence": "C",
-  "founded_in_ohio": "unknown",
-  "notes": "Precision machine shop founded in 2016, per its website, at 2001 Courtright Rd, Columbus (990 address). JobsOhio lists an Inclusion (small business) Grant with 3 retained jobs; no parent company found."
+  "confidence": "B",
+  "founded_in_ohio": "no",
+  "notes": "Phoenix Facility III LLC uses AMP Robotics' Louisville, CO address (1500 Cherry St, on AMP's SEC Form D), and news headlines (Cleveland.com, Mar 2022; Business Journals, May 2022) report AMP opening a grant-backed recycling sortation facility in Solon, matching JobsOhio's Feb 2022 Cuyahoga project. AMP's 2023 Form 5500 health plan covered 230 participants and its 401(k) 421, which includes former employees."
  },
  {
   "recipient_id": "EIN:872574202",
@@ -208,6 +195,19 @@
   "notes": "Commercial moving and logistics firm founded in Cincinnati in 1892 and led by founder descendants Andy Black and Jim Wyenandt, per its website; a 2022 Business Journals headline reported new owners. JobsOhio lists 15 retained and 15 new jobs."
  },
  {
+  "recipient_id": "EIN:472692010",
+  "recipient_class": "business",
+  "parent": "Eccrine Systems, Inc.",
+  "parent_hq_state": "OH",
+  "hq_source": "https://www.sec.gov/Archives/edgar/data/1677374/000167737419000002/primary_doc.xml",
+  "emp_bucket": "<100",
+  "emp_source": "Form 5500 participants 2019 (55), sponsor Eccrine Systems, Inc.",
+  "emp_asof": "2019",
+  "confidence": "B",
+  "founded_in_ohio": "unknown",
+  "notes": "Independent venture-backed Cincinnati sweat-sensor startup (Form D filer, Delaware corp. incorporated 2014); Form 5500 shows 55 plan participants in 2019 and JobsOhio lists 41 retained jobs. It wound down in 2020 and Epicore Biosystems bought its assets in 2022, after the grant years."
+ },
+ {
   "recipient_id": "EIN:341973299",
   "recipient_class": "site_development",
   "parent": "Sustainable Community Associates",
@@ -219,5 +219,44 @@
   "confidence": "C",
   "founded_in_ohio": "unknown",
   "notes": "Tremont-based Cleveland real-estate developer (The Tappan, The Lincoln, Hawthorne School), per Signal Cleveland/The Land; the $48,000 was a Revitalization Grant for a building project, not an operating business grant. No headcount found; a local development firm of this kind is likely small."
+ },
+ {
+  "recipient_id": "EIN:201177715",
+  "recipient_class": "business",
+  "parent": "Snowville Creamery, LLC",
+  "parent_hq_state": "OH",
+  "hq_source": "https://irontontribune.com/2021/11/19/dairy-delights-snowville-creamery-milks-the-most-out-of-dairy-products/",
+  "emp_bucket": "<100",
+  "emp_source": "JobsOhio project metrics (30 jobs retained)",
+  "emp_asof": "2021",
+  "confidence": "C",
+  "founded_in_ohio": "yes",
+  "notes": "Independent Pomeroy dairy processor started in 2007, per the Ironton Tribune; JobsOhio lists 30 retained jobs and no source found gives a total above 100. No parent company found."
+ },
+ {
+  "recipient_id": "EIN:464855962",
+  "recipient_class": "business",
+  "parent": "SurgiHealth Solutions, LLC",
+  "parent_hq_state": "OH",
+  "hq_source": "https://news.google.com/rss/search?q=%22SurgiHealth%22&hl=en-US&gl=US&ceid=US:en",
+  "emp_bucket": "<100",
+  "emp_source": "JobsOhio monthly metrics Jan 2021 (Inclusion OSIP Grant, 2 jobs retained, 14 to be created)",
+  "emp_asof": "2021",
+  "confidence": "C",
+  "founded_in_ohio": "unknown",
+  "notes": "Cincinnati medical-supply seller founded by entrepreneur Joshua Williams (Cincinnati Enquirer headline, 2020; 2023 CLIMB award winner). JobsOhio lists an Inclusion Grant with 2 retained and 14 new jobs; no parent company found."
+ },
+ {
+  "recipient_id": "EIN:060613103",
+  "recipient_class": "business",
+  "parent": "Campbell Soup Company",
+  "parent_hq_state": "NJ",
+  "hq_source": "https://www.sec.gov/Archives/edgar/data/16732/000001673219000070/cpb-7282019x10xk.htm",
+  "emp_bucket": "5000+",
+  "emp_source": "https://www.sec.gov/Archives/edgar/data/16732/000001673219000070/cpb-7282019x10xk.htm",
+  "emp_asof": "2019",
+  "confidence": "A",
+  "founded_in_ohio": "no",
+  "notes": "Pepperidge Farm is a wholly owned Campbell Soup subsidiary; Campbell's FY2019 10-K reports about 19,000 employees as of July 28, 2019. The grant supports the Willard, Ohio bakery."
  }
 ]
