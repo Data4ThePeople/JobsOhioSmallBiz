@@ -109,12 +109,20 @@ def shares(items, key, weight):
 def main():
     grants, parents = load()
     agg = build_parents(grants, parents)
-    allp = list(agg.values())
+    # A parent whose payments net to zero or less (JobsOhio reversed or clawed
+    # back everything) is not counted as a recipient. Its negative dollars
+    # stay in the net totals.
+    clawed = [a for a in agg.values() if a["cash"] <= 0]
+    allp = [a for a in agg.values() if a["cash"] > 0]
     biz = [a for a in allp if a["class"] == "business"]
     from datetime import date
     out = {"meta": {"built": date.today().strftime("%B %-d, %Y"), "rows": len(grants), "recipients": len({g['recipient_id'] for g in grants}), "parents": len(allp),
                     "fy_min": min(g["fy"] for g in grants), "fy_max": max(g["fy"] for g in grants),
                     "cash_total": sum(g["cash"] for g in grants),
+                    "reversal_rows": sum(1 for g in grants if g["cash"] < 0),
+                    "reversal_dollars": sum(g["cash"] for g in grants if g["cash"] < 0),
+                    "parents_net_zero_or_less": len(clawed),
+                    "net_negative_dollars": sum(a["cash"] for a in clawed),
                     "resolved_parents": sum(1 for a in allp if a["resolved"]),
                     "resolved_cash": sum(a["cash"] for a in allp if a["resolved"])}}
     out["by_class"] = {k: {"parents": v["n"], "cash": 0} for k, v in shares(allp, lambda a: a["class"], lambda a: 1)[0].items()}
@@ -172,6 +180,7 @@ def main():
     lines = ["# Tie-out", "", "Every number below is recomputed from `data/grants_raw.csv` and `data/parents.csv` by `scripts/09_analyze.py`.", ""]
     m = out["meta"]
     lines += [f"- Schedule I rows: {m['rows']:,}; distinct recipients: {m['recipients']:,}; parents: {m['parents']:,}; FY{m['fy_min']} to FY{m['fy_max']}; cash ${m['cash_total']:,}",
+              f"- Reversed payments (negative Schedule I rows): {m['reversal_rows']} rows, ${m['reversal_dollars']:,}; parents netting to zero or less, not counted as recipients: {m['parents_net_zero_or_less']} (net ${m['net_negative_dollars']:,})",
               f"- Parents with a researched classification: {m['resolved_parents']:,} carrying ${m['resolved_cash']:,} ({pct(m['resolved_cash'] / m['cash_total'])} of dollars)", ""]
     lines += ["## By recipient class (all parents)", ""]
     for k, v in sorted(out["by_class"].items(), key=lambda kv: -kv[1]["cash"]):

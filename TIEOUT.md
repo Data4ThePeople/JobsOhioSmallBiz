@@ -2,35 +2,36 @@
 
 Every number below is recomputed from `data/grants_raw.csv` and `data/parents.csv` by `scripts/09_analyze.py`.
 
-- Schedule I rows: 2,038; distinct recipients: 1,515; parents: 1,482; FY2014 to FY2024; cash $1,171,884,901
-- Parents with a researched classification: 1,199 carrying $1,152,554,929 (98.4% of dollars)
+- Schedule I rows: 2,038; distinct recipients: 1,515; parents: 1,463; FY2014 to FY2024; cash $1,171,884,901
+- Reversed payments (negative Schedule I rows): 33 rows, $-26,040,088; parents netting to zero or less, not counted as recipients: 17 (net $-807,252)
+- Parents with a researched classification: 1,310 carrying $1,165,391,842 (99.4% of dollars)
 
 ## By recipient class (all parents)
 
-- business: 1,290 parents, $834,510,113 (71.2%)
-- site_development: 105 parents, $109,418,084 (9.3%)
+- business: 1,264 parents, $833,351,538 (71.1%)
+- site_development: 109 parents, $109,980,448 (9.4%)
 - university: 11 parents, $95,233,751 (8.1%)
 - hospital: 6 parents, $64,135,725 (5.5%)
-- nonprofit: 33 parents, $39,854,482 (3.4%)
-- government: 37 parents, $28,732,746 (2.5%)
+- nonprofit: 34 parents, $41,054,482 (3.5%)
+- government: 39 parents, $28,936,209 (2.5%)
 
 ## Businesses only
 
-- Cutoff 100 employees: parents small 33.3%, large 45.0%, unknown 21.7%; dollars small 8.1%, large 89.6%, unknown 2.3%
-- Cutoff 500 employees: parents small 50.5%, large 27.8%, unknown 21.7%; dollars small 18.4%, large 79.3%, unknown 2.3%
-- Cutoff 5000 employees: parents small 64.0%, large 14.3%, unknown 21.7%; dollars small 33.2%, large 64.5%, unknown 2.3%
-- Home state: parents Ohio 53.8%, other 24.5%, unknown 21.7%; dollars Ohio 37.1%, other 60.6%, unknown 2.3%
-- Worst case: dollars to large at least 61.1%; parents small at least 43.9%
-- Two-by-two (dollars): large|ohio 21.1%, large|other 58.2%, small|ohio 16.0%, small|other 2.4%, unknown|unknown 2.3%
+- Cutoff 100 employees: parents small 35.9%, large 52.1%, unknown 11.9%; dollars small 8.3%, large 90.8%, unknown 0.9%
+- Cutoff 500 employees: parents small 55.6%, large 32.4%, unknown 11.9%; dollars small 19.0%, large 80.1%, unknown 0.9%
+- Cutoff 5000 employees: parents small 71.5%, large 16.5%, unknown 11.9%; dollars small 34.2%, large 65.0%, unknown 0.9%
+- Home state: parents Ohio 58.6%, other 29.4%, unknown 11.9%; dollars Ohio 37.7%, other 61.4%, unknown 0.9%
+- Worst case: dollars to large at least 61.5%; parents small at least 46.2%
+- Two-by-two (dollars): large|ohio 21.3%, large|other 58.8%, small|ohio 16.4%, small|other 2.6%, unknown|unknown 0.9%
 
 ## All recipients
 
-- Cutoff 100 employees: parents small 34.4%, large 41.8%, unknown 23.8%; dollars small 16.0%, large 80.9%, unknown 3.1%
-- Cutoff 500 employees: parents small 50.7%, large 25.5%, unknown 23.8%; dollars small 25.8%, large 71.1%, unknown 3.1%
-- Cutoff 5000 employees: parents small 63.0%, large 13.2%, unknown 23.8%; dollars small 38.6%, large 58.3%, unknown 3.1%
-- Home state: parents Ohio 58.4%, other 22.5%, unknown 19.1%; dollars Ohio 52.0%, other 46.4%, unknown 1.6%
-- Worst case: dollars to large at least 55.3%; parents small at least 39.5%
-- Two-by-two (dollars): large|ohio 29.1%, large|other 42.0%, small|ohio 21.4%, small|other 4.4%, unknown|ohio 1.5%, unknown|unknown 1.6%
+- Cutoff 100 employees: parents small 37.0%, large 47.8%, unknown 15.2%; dollars small 16.3%, large 81.6%, unknown 2.2%
+- Cutoff 500 employees: parents small 55.4%, large 29.4%, unknown 15.2%; dollars small 26.3%, large 71.5%, unknown 2.2%
+- Cutoff 5000 employees: parents small 69.8%, large 15.0%, unknown 15.2%; dollars small 39.3%, large 58.5%, unknown 2.2%
+- Home state: parents Ohio 62.8%, other 26.7%, unknown 10.5%; dollars Ohio 52.5%, other 46.9%, unknown 0.6%
+- Worst case: dollars to large at least 55.6%; parents small at least 41.3%
+- Two-by-two (dollars): large|ohio 29.2%, large|other 42.3%, small|ohio 21.7%, small|other 4.6%, unknown|ohio 1.5%, unknown|unknown 0.6%
 
 ## Conflicts between recipients of one parent
 

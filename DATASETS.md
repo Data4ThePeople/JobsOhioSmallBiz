@@ -126,6 +126,17 @@ July 1, 2023 to June 30, 2024. Grant dates within the year are not given.
   years (reimbursement basis, per Schedule I Part IV), so one company appears
   in several years. Counting rows overstates "grants" for large multi-year
   awards; the headline count uses unique parents.
+- *Reversed grants.* 33 rows carry negative cash amounts, all in FY2019 to
+  FY2022, totaling -$26,040,088. They record money returned or reversed:
+  Bon-Ton Department Stores (-$200,000 in FY2020, after its 2018
+  bankruptcy), Pactiv, Tramec Sloan and others; one payee is literally named
+  "AJM PACKAGING CLAWBACK." 17 recipients net to zero or below. Some negative
+  rows have no positive row under the same EIN (Foundation Software,
+  -$750,000 in FY2021; Hynes Industries, -$50,000 in FY2019), so the original
+  payment was either before FY2014 or under another name or EIN. Dollar
+  totals are net of reversals; a parent is counted as a recipient only if its
+  net payment is above zero. Whether a reversal is a performance clawback or
+  an accounting correction is not stated on the form.
 - *Case and punctuation vary* across years for the same recipient
   ("Company, Inc." vs "COMPANY INC"). Dedupe by EIN first, then normalized name.
 
