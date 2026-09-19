@@ -232,5 +232,41 @@
   "emp_bucket": "",
   "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOQmRRZ2VUZF91aFA2MXdHU01yRFhiZHlkbUF4b2ZQY3pJMmJRa2RPSXNhYW9xM1lFQVhhZnBvdW9rbFJWMGFYemxobUxPM3VWbTREREw4U19oY3l4blZoaFNNYzZtTHBlUU1VRjB2QjFmZ3Q5UWVoaTdQY1BMcUxkZ2x6ODlBd2dHczRoaEQwRUdiUXRRLTAxbmE0dHpUTXpPTWszMF8tZERyN1lKZU4za0tsdzctaEhkY0RUSTJ2WGxFUFU0d0YwVWUtS3hsVUlHbVpMUg?oc=5",
   "notes": "South Point shipyard founded by L. Dale Manns and run as a small independent yard (MARAD small-shipyard grantee); no parent found."
+ },
+ {
+  "recipient_id": "EIN:882794171",
+  "owned_by_larger": "yes",
+  "parent": "Forsee Power SA",
+  "parent_hq_state": "France",
+  "emp_bucket": "500-4999",
+  "source": "https://www.jobsohio.com/newsroom/ohio-success/forsee-power-chooses-ohio-for-north-american-headquarters",
+  "notes": "Forsee Power Inc. is the North American arm of French battery maker Forsee Power SA, a listed group with several hundred employees across Europe and Asia."
+ },
+ {
+  "recipient_id": "EIN:464455633",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Olive was a venture-backed Columbus startup with no corporate parent (it made its own acquisitions and wound down in 2023), though it grew large on its own."
+ },
+ {
+  "recipient_id": "EIN:263498215",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.automaticparts.com/about.html",
+  "notes": "McDaniel Products (dba Automatic Parts) is owned by Coleys, a small Ohio CNC machining company that bought it in 2009, not a large or foreign group."
+ },
+ {
+  "recipient_id": "EIN:203246696",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Moraine metal fabricator with 2022 expansion coverage, but no company site loaded and no ownership detail was reachable."
  }
 ]

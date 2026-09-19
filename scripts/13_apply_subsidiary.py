@@ -30,7 +30,7 @@ def main(files):
             if ans == "yes" and x.get("parent") and x.get("emp_bucket") in BUCKETS and x.get("source"):
                 # grade B only when the source is an actual page stating the ownership; a
                 # search-results link, or ownership or size the checker had to infer, is C
-                weak = "news.google.com/rss/search" in x["source"] or any(
+                weak = "news.google.com" in x["source"] or any(
                     w in (x.get("notes") or "").lower() for w in ("inferred", "estimate", "unconfirmed", "no source", "not confirmed", "likely"))
                 r.update(parent=x["parent"].strip(), parent_hq_state=(x.get("parent_hq_state") or "").strip(),
                          emp_bucket=x["emp_bucket"], confidence="C" if weak else "B", hq_source=x["source"], emp_source=x["source"])

@@ -133,5 +133,86 @@
   "emp_bucket": "",
   "source": "https://www.sperryrice.com/about/about-us/",
   "notes": "Single-plant Killbuck rubber extruder; its site names no parent and no acquisition news was found."
+ },
+ {
+  "recipient_id": "EIN:300869183",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "http://www.toledoblade.com/business/2018/09/07/Japanese-automotive-company-Topia-opens-first-North-American-plant-in-Toledo/stories/20180906176",
+  "notes": "Toledo Blade (2018) says TPAM is the first North American plant of Japanese auto-parts maker Topia, but Topia's worldwide headcount could not be confirmed."
+ },
+ {
+  "recipient_id": "EIN:473582799",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.markonemfg.com/about",
+  "notes": "Mark One says it is headquartered in Minster, Ohio, and was established in 2000; no parent company is named."
+ },
+ {
+  "recipient_id": "EIN:201498559",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Small Solon plastic-film maker; news coverage treats it as a standalone company and no parent was found."
+ },
+ {
+  "recipient_id": "EIN:204459634",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Perrysburg countertop maker covered by the Toledo Blade as a local company; no parent found for the 2018 grant year."
+ },
+ {
+  "recipient_id": "EIN:344420713",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Longtime Toledo-area bearing and power-transmission distributor that moved to Bowling Green; no parent or acquisition found."
+ },
+ {
+  "recipient_id": "EIN:861365263",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Massillon paperboard mill with no website or news naming a parent; no sign of a larger owner was found, so this rests on absence of evidence."
+ },
+ {
+  "recipient_id": "EIN:043689503",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.meritec.com",
+  "notes": "Painesville parent of Meritec and Joy Signal in FY2021; private-equity firm Arcline bought the businesses in May 2022 for its Qnnect platform, after the grant year."
+ },
+ {
+  "recipient_id": "EIN:822019085",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Founder-led Columbus freight broker (Brent Bosse); news covers its own growth and no parent or investor was found."
+ },
+ {
+  "recipient_id": "EIN:208619767",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/with-210-revenue-increase-zipline-logistics-expands-in-ohio-for-purposeful-growth",
+  "notes": "Columbus-founded freight firm that itself acquires others (Summit Eleven); no parent or PE owner found."
  }
 ]

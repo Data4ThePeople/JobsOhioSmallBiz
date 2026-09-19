@@ -1,0 +1,74 @@
+[
+ {
+  "recipient_id": "EIN:831235047",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/mix-talent-expands-ohio-headquarters-to-expand-client-base-and-reduce-costs",
+  "notes": "JobsOhio release describes Mix Talent as a Columbus-headquartered talent firm founded in 2018 led by its president; no parent company found."
+ },
+ {
+  "recipient_id": "EIN:311341799",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.ripplejunction.com/pages/about-us",
+  "notes": "Company history describes a founder-built, privately owned Cincinnati apparel firm that itself acquired a Mexican print shop in 2021; no parent found."
+ },
+ {
+  "recipient_id": "EIN:341954882",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.tarpstop.com/about",
+  "notes": "Site describes a Perrysburg company founded in 2001 that grew to four Midwest locations; no parent company found in site or news."
+ },
+ {
+  "recipient_id": "EIN:341224718",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.expertcrane.com/about",
+  "notes": "Company history describes a Doty family business since 1977 with the second generation in the company; no parent found."
+ },
+ {
+  "recipient_id": "EIN:341845975",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.mumindustries.com/",
+  "notes": "Site says MUM Industries, founded 1996, is itself the parent of Integra Enclosures, StrongBox and EMF with sites in Belgium and China; no owner above it found."
+ },
+ {
+  "recipient_id": "EIN:850848748",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/premier-global-transportation-announces-expansion-in-ohio",
+  "notes": "JobsOhio release describes a minority-owned logistics brokerage headquartered in Miami Township; no parent found in news."
+ },
+ {
+  "recipient_id": "EIN:340806947",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Site blocked the fetch; local news on its Russia, Ohio plant and expansions names no parent company."
+ },
+ {
+  "recipient_id": "EIN:010656293",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Twinsburg food-service firm (appears to operate Innovation Food Services and On-Call Meal Solutions); site and news name no parent company."
+ }
+]
