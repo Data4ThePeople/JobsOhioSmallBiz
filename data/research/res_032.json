@@ -50,5 +50,44 @@
   "confidence": "A",
   "founded_in_ohio": "no",
   "notes": "Curation Foods was a reportable segment of Nasdaq-listed Landec (Santa Maria, CA), which reported 905 full-time employees at May 30, 2021 and 689 at May 29, 2022. Landec later sold the Curation Foods businesses and renamed itself Lifecore Biomedical (Chaska, MN)."
+ },
+ {
+  "recipient_id": "EIN:341873488",
+  "recipient_class": "business",
+  "parent": "J.B.K. Group, Inc.",
+  "parent_hq_state": "OH",
+  "hq_source": "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/public-disclosure/foia/form-5500-datasets",
+  "emp_bucket": "100-499",
+  "emp_source": "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/public-disclosure/foia/form-5500-datasets",
+  "emp_asof": "2019",
+  "confidence": "C",
+  "founded_in_ohio": "unknown",
+  "notes": "The company's own 401(k) plan (Form 5500, 6001 Towpath Drive, Valley View, OH, NAICS 453990) reports 190 participants with 147 active in 2019 and 194 with 168 active in 2023, so it is likely 100-499 employees. No news, website or trade name was found to confirm the line of business or any parent; the JobsOhio grant was reversed (-$100,000 in FY2021, +$100,000 in FY2022)."
+ },
+ {
+  "recipient_id": "EIN:133290300",
+  "recipient_class": "business",
+  "parent": "INEOS Group (via INEOS Enterprises)",
+  "parent_hq_state": "United Kingdom",
+  "hq_source": "https://en.wikipedia.org/wiki/Ineos",
+  "emp_bucket": "5000+",
+  "emp_source": "https://en.wikipedia.org/wiki/Ineos",
+  "emp_asof": "2021",
+  "confidence": "C",
+  "founded_in_ohio": "no",
+  "notes": "INEOS Pigments USA (the Ashtabula titanium dioxide plants bought from Tronox/Cristal in 2019) is part of INEOS Enterprises, a unit of privately held INEOS Group, London, which had about 26,000 employees in 2021 per Wikipedia (23,000 on ineos.com today). JobsOhio metrics show 450 jobs retained in Ashtabula."
+ },
+ {
+  "recipient_id": "EIN:340871763",
+  "recipient_class": "business",
+  "parent": "Hynes Industries Inc.",
+  "parent_hq_state": "OH",
+  "hq_source": "https://businessjournaldaily.com/crossplane-capital-acquires-hynes-industries/",
+  "emp_bucket": "100-499",
+  "emp_source": "https://businessjournaldaily.com/hynes-industries-celebrating-100th-year-in-business/",
+  "emp_asof": "2024",
+  "confidence": "B",
+  "founded_in_ohio": "yes",
+  "notes": "Youngstown roll-form maker founded in 1925 with more than 200 employees across three plants (Youngstown, Painesville, Kokomo IN) per Business Journal Daily 2024; it was independent in 2019 and acquired by Dallas PE firm Crossplane Capital in late 2023. The only 990 entry is a -$50,000 reversal in FY2019."
  }
 ]
