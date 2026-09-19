@@ -34,5 +34,59 @@
   "emp_bucket": "",
   "source": "https://www.permapaveredging.com/about",
   "notes": "Vandalia paver-edging maker whose about page describes it as developed by hardscape business owner Chris Yancey, with no parent company named."
+ },
+ {
+  "recipient_id": "EIN:372653777",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No live company website, news item, or JobsOhio release found for this Cleveland firm; its likely domain is taken over by an unrelated site."
+ },
+ {
+  "recipient_id": "EIN:873412426",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No website, news item, or JobsOhio release found for this Jackson, Ohio company; same-name firms found online are unrelated."
+ },
+ {
+  "recipient_id": "EIN:851462264",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No website, news item, or JobsOhio release found for this rental company listed in Barnesville."
+ },
+ {
+  "recipient_id": "EIN:812762797",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://businessjournaldaily.com/engineered-products-of-ohio-awarded-200k-in-state-funds/",
+  "notes": "Cortland startup that won an Ohio Third Frontier start-up fund grant in 2024 to commercialize an RFID tag, with no parent company named anywhere found."
+ },
+ {
+  "recipient_id": "EIN:272513416",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No live website, news item, or JobsOhio release found for this Dublin firm; bpiassociates.com is parked."
+ },
+ {
+  "recipient_id": "EIN:341145880",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.gsmetal.com/about",
+  "notes": "Cleveland bakeware maker operating since 1949 that sponsors its own benefit plan and names no parent on its site or in news."
  }
 ]

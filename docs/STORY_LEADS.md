@@ -200,3 +200,52 @@ June 2026 (`data/air_service_routes.csv`).
   borne out: SkyWest flew it under the United Express brand from that month.
 - Air Wisconsin's $50,000 (FY2020) is not air service; it was a January 2018
   economic development grant for a Dayton-area operation promising 70 jobs.
+
+---
+
+## 7. Intel Ohio One: $124.4 million paid, 3,000 jobs promised, first fab now 2031
+
+**Verified**
+
+- JobsOhio commitments, 2022 (Monthly Executed Grants and Loans Reports):
+  Economic Development Grant $125,000,000 (July 2022) and Workforce Grant
+  $25,000,000 (December 2022), for 3,000 new jobs, $405 million in new
+  payroll and $20 billion in investment in Licking County.
+- Paid (Schedule I): $123,181,109 in FY2023 and $1,241,684 in FY2024,
+  $124,422,793 total, the largest amount paid to any recipient FY2014-FY2024.
+- Intel's 10-Q for the quarter ended June 27, 2026 (filed July 24, 2026)
+  describes "investing in a new leading-edge manufacturing facility in Ohio in
+  the long term." No date.
+- WOSU, August 26, 2026: Intel says it is on track to finish the first of two
+  fabs by 2031, will not say how much construction is complete, calls the $28
+  billion campus a "critical part" of its strategy, with deadlines "flexible
+  based on customer demand." Announced January 2022 to open within three
+  years. (https://www.wosu.org/2026-08-26/slow-progress-continues-at-intels-new-albany-semiconductor-fab-still-set-to-open-by-2031)
+- WHIO, March 13, 2026, citing Intel's report to the state: $1.53 billion
+  spent in Ohio in 2025; 162 employees on site through 2025.
+- Reuters, September 16, 2026 (exclusive): SK hynix in talks with Intel about
+  making memory chips in the U.S., reported to involve the Ohio site. SK
+  hynix's statement the same day: "no specific plans or arrangements have been
+  finalized." (https://news.skhynix.com/en/fact-10/)
+
+**What the plant is for**
+
+- Leading-edge logic fabs for Intel's most advanced processes (18A and 14A):
+  general-purpose chips, Intel's own processors and chips for outside foundry
+  customers. Not an AI-only plant. AI demand is now the main thing driving the
+  foundry customers Intel needs to fill it.
+- Two reported shifts point toward AI uses but are not confirmed by Intel:
+  memory production with SK hynix (Reuters; SK hynix says nothing is final),
+  and trade-press reports (eTeknix, Wccftech, August 2026, one resting on a
+  social media post) that Intel is expanding EMIB-T advanced packaging, used
+  for AI accelerators, tied to Ohio. Treat these as reports, not facts.
+
+**Open**
+
+- The grant agreements' repayment terms if the fabs are delayed or not built,
+  and whether the $25 million workforce grant balance (about $25.6 million
+  unpaid of $150 million) is still owed.
+- The 3,000 jobs were promised for a plant first due in 2025; 162 employees
+  were on site at the end of 2025.
+- Related coverage: Ohio Capital Journal, August 7, 2026, JobsOhio's chairman
+  lobbying for Intel.
