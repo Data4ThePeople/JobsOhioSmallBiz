@@ -1,0 +1,8 @@
+compared 150 recipients
+  size-call disagreements by first-pass method: {'Rule R1': 2, 'Rule R2': 5, 'research': 5}
+  sample by first-pass method: {'Rule R3': 13, 'Rule R4': 11, 'Rule R2': 31, 'Rule R1': 28, 'research': 67}
+  emp_bucket         disagree  25  (16.7%)
+  parent_hq_state    disagree  19  (12.7%)
+  recipient_class    disagree   5  (3.3%)
+  size_call          disagree  12  (8.0%)
+wrote data/verify_report.csv: 34 rows with any disagreement, for adjudication

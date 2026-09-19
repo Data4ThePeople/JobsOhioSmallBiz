@@ -1,0 +1,29 @@
+[
+ {
+  "recipient_id": "EIN:208677704",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Independent Cincinnati consultancy in 2021; CGI acquired it in September 2026, after the grant year."
+ },
+ {
+  "recipient_id": "EIN:311609501",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Family-owned Heath formula maker in 2020; Bobbie acquired it in July 2023, after the grant year."
+ },
+ {
+  "recipient_id": "EIN:340471740",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.pehub.com/igp-acquires-industrial-company-pi/",
+  "notes": "Owned by private-equity firm IGP since June 2022 (grant FY2023), but the size of the P&I platform could not be confirmed as 500 or more."
+ }
+]
