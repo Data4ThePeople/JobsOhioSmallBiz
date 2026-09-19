@@ -61,5 +61,59 @@
   "emp_bucket": "",
   "source": "",
   "notes": "No company site, news item, or JobsOhio release found for this 2018 Van Wert LLC at 120 W. Main St., so ownership could not be judged."
+ },
+ {
+  "recipient_id": "EIN:208033614",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://web.archive.org/web/20210120215958/https://www.firedex.com/about/",
+  "notes": "Fire-Dex's 2021 about page calls it a family-owned global PPE maker based in Medina, Ohio; no owner company found."
+ },
+ {
+  "recipient_id": "EIN:770043660",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://hardydiagnostics.com/about-us",
+  "notes": "Hardy Diagnostics is a 100% employee-owned company headquartered in Santa Maria, California, and is the recipient itself rather than a subsidiary; its Springboro plant is a branch."
+ },
+ {
+  "recipient_id": "EIN:272751869",
+  "owned_by_larger": "no",
+  "parent": "Heartland Steel Products LLC",
+  "parent_hq_state": "MI",
+  "emp_bucket": "100-499",
+  "source": "https://web.archive.org/web/20190317210432/http://www.heartland-ep.com/heartland-steel",
+  "notes": "Heartland Engineered Products shares a site with Heartland Steel Products of Marysville, Michigan, which presents HEP as one of its two brands across four plants; size is an estimate from its roughly 90 Michigan jobs cut in 2024 plus 91 Ohio jobs."
+ },
+ {
+  "recipient_id": "EIN:465690691",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Local Greenfield dry cleaner and linen service with 7 retained jobs in JobsOhio records; no site, news item, or parent company found, so nothing contrary."
+ },
+ {
+  "recipient_id": "EIN:823136388",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No company site, news item, or JobsOhio release found for this 2018 Tiffin LLC at 1616 County Road 1, so ownership could not be judged."
+ },
+ {
+  "recipient_id": "EIN:271569711",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.the-daily-record.com/story/news/2020/02/20/holmes-county-approves-enterprise-zone/1668319007/",
+  "notes": "Stamark Co. Ltd. is the Coblentz family's holding company for Walnut Creek Foods (operating company Coblentz Distributing), founded by Mark Coblentz in 1977; no outside owner found."
  }
 ]

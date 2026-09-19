@@ -127,3 +127,46 @@ possibly a question to JobsOhio about how eligibility is judged.
 **Why it matters:** every jobs figure in JobsOhio's disclosures is a promise
 made at signing. This is a clean example to show readers that the public
 cannot check the outcome, even for a grant that was paid in full.
+
+---
+
+## 5. Breeze Airways: $3.3 million for routes, and we can check which ones flew
+
+**Verified**
+
+- JobsOhio Air Service Restoration program: "short-term revenue guarantee
+  incentives" to airlines, $10 million a year (JobsOhio program page).
+- Agreement with Breeze announced May 21, 2021: eight routes from Akron-Canton
+  (CAK) and Columbus (CMH), 22 weekly flights, "estimated total economic impact
+  of over $140 million." More routes announced March 2022 and July 2023, plus
+  Cincinnati (CVG, which is in Kentucky) in 2024.
+- Paid to Breeze Aviation Group (Schedule I): $1,927,924 FY2022, $924,617
+  FY2023, $466,046 FY2024; $3,318,587 total. No payment after FY2024.
+- Flights actually flown, from DOT/BTS T-100 Domestic Segment data through
+  June 2026 (`data/breeze_jobsohio_routes.csv`, `scripts/15_fetch_t100.py`).
+  Of the 15 Ohio routes JobsOhio announced with Breeze:
+  - 9 were still flying in 2026: CAK-Charleston, CAK-Tampa, CAK-Fort Myers,
+    CMH-Charleston, CMH-Hartford, CMH-Norfolk, CMH-Jacksonville,
+    CMH-Fort Myers, and CMH-Providence (seasonal; no flights in 2025).
+  - 6 ended: both New Orleans routes (February 2023, 12 months each),
+    CMH-Tampa (December 2023), CAK-Nashville (May 2023, 13 months),
+    CMH-Savannah (4 months, summer 2022), and CAK-Hartford (8 flights in
+    summer 2022, one in 2026).
+- The core routes kept flying after JobsOhio's payments stopped in FY2024,
+  which is what the program says should happen. Breeze grew into
+  Akron-Canton's largest airline (JobsOhio calls it that; T-100 shows
+  1,383 CAK-Charleston and 1,007 CAK-Orlando flights through June 2026).
+
+**Open**
+
+- The revenue guarantee terms: how much per route, for how long, and whether
+  the ended routes drew guarantee payments before they stopped.
+- The Cincinnati (CVG) routes are in Kentucky and not in the Ohio T-100 pull.
+- The same check can be run for the other airlines JobsOhio paid: British
+  Airways ($5,681,149, Columbus-London), Aer Lingus ($400,000,
+  Cleveland-Dublin), United ($473,975, Dayton-Denver), Avelo ($200,000) and
+  Air Wisconsin ($50,000). International routes need the T-100 International
+  Segment file.
+
+**Why it matters:** unlike jobs, the output of this program is public and
+checkable month by month, which lets the post show what a grant bought.

@@ -52,5 +52,140 @@
   "emp_bucket": "",
   "source": "",
   "notes": "Columbus engineering firm that sponsored its own 5500 plan (288 to 429 participants) during the 2016 and 2018 grants; the Platform Holdings private-equity backing reported in 2025 news came after the grant years."
+ },
+ {
+  "recipient_id": "EIN:341376029",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No company website, JobsOhio release, or news naming an owner was found for the Toledo packaging firm, so ownership could not be judged."
+ },
+ {
+  "recipient_id": "EIN:825505807",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No website, news item, or JobsOhio release found for the Cincinnati LLC, so ownership could not be judged."
+ },
+ {
+  "recipient_id": "EIN:383974397",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Small Hudson and Kent reverse-auction procurement firm described in 2022 news as run by its co-founders, with no parent named; its own site could not be read."
+ },
+ {
+  "recipient_id": "EIN:611692583",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Local Coshocton welding and tank fabricator marking its 40th year in 2020 news with no parent named; Fox Tank later bought equipment at a 2025 auction, after the grant year."
+ },
+ {
+  "recipient_id": "EIN:461588341",
+  "owned_by_larger": "no",
+  "parent": "Faxon Machining, Inc. (affiliate)",
+  "parent_hq_state": "OH",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Faxon Firearms grew out of Cincinnati defense contractor Faxon Machining and is described in trade press as its subsidiary; Faxon Machining is Ohio-based and its headcount was not found."
+ },
+ {
+  "recipient_id": "EIN:222451241",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Aurora manufacturer that sponsored its own small 5500 plan (18 to 32 participants); no website, news, or release naming a parent was found."
+ },
+ {
+  "recipient_id": "EIN:341174227",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://prc-saltillo.com/why-prc-saltillo/history",
+  "notes": "Wooster maker of speech devices that has been 100% employee-owned since 2008 and is itself the parent of Saltillo (merged as PRC-Saltillo in 2019), so it has no outside parent."
+ },
+ {
+  "recipient_id": "EIN:844391631",
+  "owned_by_larger": "no",
+  "parent": "A&F Souvenir",
+  "parent_hq_state": "Canada",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/af-souvenir-opening-new-production-and-warehouse-facility-west-chester-township",
+  "notes": "JobsOhio names 1M Group LLC as the West Chester operations site of A&F Souvenir, a Canada-based souvenir wholesaler founded in 1962; the group size was not found but it appears to be a mid-sized private firm."
+ },
+ {
+  "recipient_id": "EIN:611853400",
+  "owned_by_larger": "no",
+  "parent": "AVT Beckett Elevators (Toronto-area parent company)",
+  "parent_hq_state": "Canada",
+  "emp_bucket": "",
+  "source": "https://avtbeckett.com/about-us",
+  "notes": "The Logan plant is the US arm of AVT Beckett, a Toronto elevator maker founded in 2006 with three North American plants; group size not found but appears well under 500."
+ },
+ {
+  "recipient_id": "EIN:881542227",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Appears to be a local Navarre real-estate partnership tied in 2024 news to restoring a Canton commercial building, but no page naming its owners was found."
+ },
+ {
+  "recipient_id": "EIN:341913858",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Akron wealth-management firm that is itself the parent of its advisory subsidiary and an acquirer of other firms; the Valeas Capital minority stake reported in February 2025 came after the 2024 grant year."
+ },
+ {
+  "recipient_id": "EIN:311570785",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "By its name a family holding LLC of Clarence and Judith Lapedes, owned by individuals rather than a company; no parent company found."
+ },
+ {
+  "recipient_id": "EIN:453535042",
+  "owned_by_larger": "no",
+  "parent": "Green Planet 21 (probable affiliate)",
+  "parent_hq_state": "CA",
+  "emp_bucket": "",
+  "source": "https://greenplanet21.com/about",
+  "notes": "The Oakland LLC appears to be an arm of Green Planet 21, a founder-started Oakland industrial recycler with sites in California, Washington, Nevada, and Ohio; its headcount was not found and the link is inferred from the shared name and city."
+ },
+ {
+  "recipient_id": "EIN:452752253",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.usafirmware.com/company-leadership",
+  "notes": "Brecksville embedded-systems engineering firm led by its founder and CEO Bob Scaccia, with no parent company named."
+ },
+ {
+  "recipient_id": "EIN:341440886",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.mulletcabinet.com",
+  "notes": "Family-owned Millersburg cabinet maker (now branded Mullwoods) whose site names brothers Vince and Nick Mullet as co-owners."
  }
 ]

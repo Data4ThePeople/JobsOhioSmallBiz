@@ -92,7 +92,7 @@
  {
   "recipient_id": "EIN:341483237",
   "owned_by_larger": "no",
-  "parent": "Cornerstone Corporation (Cornerstone Capital Partners)",
+  "parent": "Cornerstone Corporation",
   "parent_hq_state": "OH",
   "emp_bucket": "",
   "source": "https://www.therobotreport.com/wauseon-machine-acquires-mcalister-design/",
@@ -214,5 +214,59 @@
   "emp_bucket": "",
   "source": "https://www.richlandsource.com/2017/01/19/hess-industries-owner-took-cue-from-mansfield-legend-dick-taylor/",
   "notes": "Hess Industries is a Mansfield company started and owned by Mark Hess, and no parent or sale turned up."
+ },
+ {
+  "recipient_id": "EIN:472512296",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://local12.com/news/local/cincinnati-large-private-company-encore-technologies-create-170-new-jobs-hiring-spree-jobs-norwood",
+  "notes": "SJN Data Center LLC shares its EIN with Encore Technologies, the privately held Norwood IT firm founded about 2014 and led by CEO John Burns, so it is the same company, not a subsidiary of a larger one."
+ },
+ {
+  "recipient_id": "EIN:344472215",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.bryantimes.com/news/business/new-manufacturer-coming-to-pioneer-creating-60-jobs/article_b9c54dcc-3702-5f12-a4d9-350c43b140d8.html",
+  "notes": "Toledo Tool and Die has been owned by the Kujawa family for several generations, per a December 2019 report."
+ },
+ {
+  "recipient_id": "EIN:850997867",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.xeniagazette.com/2022/09/06/beavercreek-company-qqe-ready-to-grow/",
+  "notes": "QQE Summit (Quality Quartz Engineering) was bought in 2020 by CEO Ryan Kelly and three other individual shareholders, who moved its headquarters to Beavercreek, Ohio; no corporate parent turned up."
+ },
+ {
+  "recipient_id": "EIN:832135454",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/path-robotics-grows-workforce-and-production-capacity-in-ohio",
+  "notes": "Path Robotics is a venture-backed Columbus startup founded in 2018, not owned by another company."
+ },
+ {
+  "recipient_id": "EIN:341945124",
+  "owned_by_larger": "yes",
+  "parent": "Inteplast Group",
+  "parent_hq_state": "NJ",
+  "emp_bucket": "5000+",
+  "source": "https://web.archive.org/web/2021/https://www.plasticsnews.com/news/2020-custom-molded-plastics-expanding-ohio-indiana",
+  "notes": "Inteplast Group of Livingston, New Jersey (about 5,400 plan participants) became part-owner of 20/20 in 2015 when a founder sold his stake and was majority owner by 2021; the size of its stake in fiscal 2018 is not stated."
+ },
+ {
+  "recipient_id": "EIN:310729027",
+  "owned_by_larger": "yes",
+  "parent": "Gunnebo AB",
+  "parent_hq_state": "Sweden",
+  "emp_bucket": "500-4999",
+  "source": "https://news.cision.com/gunnebo/r/gunnebo-s--21-million-new-hamilton-facility-in-the-us-up-and-running,c3565743",
+  "notes": "Swedish security group Gunnebo bought the Hamilton Safe companies in 2012 and still owned them in 2022, when it reported about 4,000 employees worldwide."
  }
 ]

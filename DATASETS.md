@@ -324,3 +324,30 @@ no parent match is not thereby small.
 
 **License and attribution.** Cite as "Good Jobs First, Subsidy Tracker" where
 used.
+
+---
+
+## T-100 Domestic Segment, U.S. carriers (Bureau of Transportation Statistics)
+
+**What it is.** Each U.S. airline's monthly report to the Department of
+Transportation of every nonstop segment it flew: departures scheduled and
+performed, seats and passengers, by carrier, origin, destination and month.
+
+**Where it comes from.** TranStats download form
+(`DL_SelectFields.aspx`, table T-100 Domestic Segment U.S. Carriers), posted
+by `scripts/15_fetch_t100.py` with geography Ohio, which keeps segments with
+an Ohio origin or destination. One CSV per year, 2019 to 2026, in
+`data/raw/t100/` (not committed).
+
+**Coverage.** Through June 2026 at download (September 19, 2026); the data
+lags about three months. Carrier-reported, not sampled. A month with one
+departure on a route can be a charter or a repositioning flight rather than
+scheduled service, so a route's life is read from sustained months, not a
+single flight.
+
+**Known quirks.** Breeze is carrier code MX. Cincinnati (CVG) is in Kentucky,
+so its routes are not in the Ohio pull. International routes are in a
+separate table (T-100 International Segment).
+
+**License and attribution.** Public domain. Cite as "U.S. Department of
+Transportation, Bureau of Transportation Statistics, T-100 Domestic Segment."

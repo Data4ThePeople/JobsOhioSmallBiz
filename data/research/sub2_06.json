@@ -52,5 +52,77 @@
   "emp_bucket": "",
   "source": "https://www.valutex.net/about-us",
   "notes": "ValuTex's about page says it began in 2011 in Washington Court House as vertical integration for sister company Fiber-Tech Industries, a composite-panel maker with plants in Ohio, Washington and Michigan whose size and exact ownership were not found."
+ },
+ {
+  "recipient_id": "EIN:383914676",
+  "owned_by_larger": "no",
+  "parent": "Perham Egg (division of North Central Equity LLC, Minneapolis holding company)",
+  "parent_hq_state": "MN",
+  "emp_bucket": "",
+  "source": "https://dailystandard.com/archive/2014-07-23/stories/24509/fort-recovery-has-eggs-actly-what-company-needs",
+  "notes": "The Fort Recovery egg-breaking plant opened in July 2014 as the second site of North Central Equity's Minnesota-based Perham Egg division, and Cooper Farms and Weaver Brothers bought the facility in December 2014 and renamed it CW Egg Products, which may mean larger Ohio owners for part of fiscal 2015."
+ },
+ {
+  "recipient_id": "EIN:454498851",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "The Enquirer (Jan 2015) says NPW-USA moved its 'North American headquarters' from Colorado to Cincinnati, which hints at a foreign affiliate, but no site page or news item names an owner."
+ },
+ {
+  "recipient_id": "EIN:611394910",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/ohio-success/phillips-meat-processing",
+  "notes": "JobsOhio profiles Phillips Meat Processing as a small Zanesville business run by Dale Phillips that sells to Kroger, with no parent company named."
+ },
+ {
+  "recipient_id": "EIN:844096096",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No site, news item or JobsOhio release names IMMS LLC of Garrettsville; a news search links the town to small molder Diskin Enterprises, but no tie to IMMS was confirmed."
+ },
+ {
+  "recipient_id": "EIN:824207420",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No company site, news item or JobsOhio release was found for JRJP LLC of Brooklyn, Ohio, which reads like an initials-named holding entity for an unnamed business."
+ },
+ {
+  "recipient_id": "EIN:462283342",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.zanesvilletimesrecorder.com/story/news/local/2020/01/05/john-saunders-agent-change-machining-industry/4409858002/",
+  "notes": "The Times Recorder describes Saunders Machine Works as the Zanesville machining and CNC-training business John Saunders started in 2014, with no parent company named."
+ },
+ {
+  "recipient_id": "EIN:872935432",
+  "owned_by_larger": "no",
+  "parent": "Little Cottage Company (Schlabach family; Green Fox Plastics affiliate)",
+  "parent_hq_state": "OH",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/green-fox-plastics-announces-7-2m-investment-in-ohio",
+  "notes": "Red Fox Real Estate is the building entity for the Millersburg plant of Green Fox Plastics, which JobsOhio calls a family-owned part of Berlin, Ohio's Little Cottage Company owned by Dan Schlabach; the Red Fox link comes from local news and the group's size was not found."
+ },
+ {
+  "recipient_id": "EIN:311809959",
+  "owned_by_larger": "no",
+  "parent": "Classic Carriers, Inc. (sister company under owner Jim Subler)",
+  "parent_hq_state": "OH",
+  "emp_bucket": "100-499",
+  "source": "https://www.sidneydailynews.com/2018/04/13/jim-and-diana-subler/",
+  "notes": "Jim Subler started Classic Warehousing in Versailles in 2000 alongside his family trucking firm Classic Carriers (150 trucks in 2018), and the 100-499 size for the group is inferred from fleet size."
  }
 ]
