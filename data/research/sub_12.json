@@ -1,21 +1,12 @@
 [
  {
-  "recipient_id": "EIN:453569330",
-  "owned_by_larger": "no",
+  "recipient_id": "EIN:811096219",
+  "owned_by_larger": "unknown",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
-  "source": "https://picobarn.com/",
-  "notes": "Picobarn describes itself as a small, independent Cleveland Heights e-commerce company running its own brands; no parent found."
- },
- {
-  "recipient_id": "EIN:341550221",
-  "owned_by_larger": "no",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "source": "https://www.oxyrase.com/about-us/",
-  "notes": "Oxyrase says it was founded in 1987 by Crow, Adler and current president James Copeland and names no parent company."
+  "source": "",
+  "notes": "No website, news item or JobsOhio release found for the Akron food science firm, so ownership could not be checked."
  },
  {
   "recipient_id": "EIN:203715075",
@@ -27,13 +18,13 @@
   "notes": "Shelby onion grower and packer describing three generations of family onion growing; no parent company found."
  },
  {
-  "recipient_id": "EIN:811096219",
-  "owned_by_larger": "unknown",
+  "recipient_id": "EIN:341550221",
+  "owned_by_larger": "no",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
-  "source": "",
-  "notes": "No website, news item or JobsOhio release found for the Akron food science firm, so ownership could not be checked."
+  "source": "https://www.oxyrase.com/about-us/",
+  "notes": "Oxyrase says it was founded in 1987 by Crow, Adler and current president James Copeland and names no parent company."
  },
  {
   "recipient_id": "EIN:465667935",
@@ -43,6 +34,15 @@
   "emp_bucket": "",
   "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWUZmeHp4TnFQOXlpZURRaURLSnp2OVJDOEplMlVRTWZhRXVGQlVFS01NVndoRUtzR3VkWEJFV05nTjRyMmZmTmo5RzBnWlpJLTllVzZGS3ZZdWNYVF91QmJaU1BkeXZSZGJLZlZveDJ0TFRFN3BpTlNKMEJKU2UyUTJVVE55TEtzeXVWY0l1eTRsSXNYX29Ibks1UVJkV2xnNlE?oc=5",
   "notes": "Founder-led Barberton snack maker (Evan Delahanty) covered by local press from 2016 to 2026 with no parent or acquisition named."
+ },
+ {
+  "recipient_id": "EIN:453569330",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://picobarn.com/",
+  "notes": "Picobarn describes itself as a small, independent Cleveland Heights e-commerce company running its own brands; no parent found."
  },
  {
   "recipient_id": "EIN:832997411",
@@ -117,15 +117,6 @@
   "notes": "Mansfield finishing-supply distributor with its own small retirement plan (7 participants) whose site names no parent, and no acquisition news was found."
  },
  {
-  "recipient_id": "EIN:311709638",
-  "owned_by_larger": "no",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPOGRHT1FTY2xNRlR3ZTFtNC11enkyY0lnTTlYb21aQ240MWE4TnNaUVVLLW1ueFk0b0h1WHJIOVlvd25OdTZhRy13aUM1VndBWGdkVlp3TVVxcFU3Q2NXYjZIeDVaTU5DaGJlMDJMVXpYcWV6aVJoZWZYXzlFWnlVeC1PUUxwQkdnRWNEalRNZGFZSHc0MVB0TndRb0Y5UFRiYlJwc0ZiU3FyenFKOWQzdHRSeWY4dw?oc=5",
-  "notes": "Cincinnati firm with its own small retirement plan (9 to 10 participants) listed as a 2016 Business Courier Fast 55 finalist for private local companies; no parent found."
- },
- {
   "recipient_id": "EIN:812266905",
   "owned_by_larger": "no",
   "parent": "",
@@ -133,6 +124,15 @@
   "emp_bucket": "",
   "source": "https://krodefense.com/media/",
   "notes": "Veteran-founded Findlay defense-gear startup (now branded Kro Defense) described in its own media coverage as small and veteran-owned, with no parent named."
+ },
+ {
+  "recipient_id": "EIN:311709638",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPOGRHT1FTY2xNRlR3ZTFtNC11enkyY0lnTTlYb21aQ240MWE4TnNaUVVLLW1ueFk0b0h1WHJIOVlvd25OdTZhRy13aUM1VndBWGdkVlp3TVVxcFU3Q2NXYjZIeDVaTU5DaGJlMDJMVXpYcWV6aVJoZWZYXzlFWnlVeC1PUUxwQkdnRWNEalRNZGFZSHc0MVB0TndRb0Y5UFRiYlJwc0ZiU3FyenFKOWQzdHRSeWY4dw?oc=5",
+  "notes": "Cincinnati firm with its own small retirement plan (9 to 10 participants) listed as a 2016 Business Courier Fast 55 finalist for private local companies; no parent found."
  },
  {
   "recipient_id": "EIN:208765780",
@@ -196,5 +196,77 @@
   "emp_bucket": "",
   "source": "https://www.globalmedfoam.com/about-us",
   "notes": "Lexington, Ohio maker of patented pressure-care foam led by president and inventor Victoria Langer, with local press profiling her business and no parent named."
+ },
+ {
+  "recipient_id": "EIN:344493159",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.heorr.com/about-us/",
+  "notes": "Paulding coater founded in 1957 with 62 employees and its own retirement plan (67 participants); its site names no parent and no acquisition news was found."
+ },
+ {
+  "recipient_id": "EIN:880741490",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/ohio-success/hyphen-innovations-keeping-pace-in-the-aerospace-race",
+  "notes": "JobsOhio profile describes a Dayton-area aerospace startup founded in 2022 and led by founder and CEO Onome Scott-Emuakpor, with no parent named."
+ },
+ {
+  "recipient_id": "EIN:311130926",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://web.archive.org/web/20250120102642/https://industrialgrinding.com/about-us/",
+  "notes": "Dayton grinding shop in business over 70 years with its own retirement plan (14 to 16 participants); its archived site names no parent and no acquisition news was found."
+ },
+ {
+  "recipient_id": "EIN:871653544",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://thevillagereporter.com/new-owners-take-over-jb-feed-in-wauseon/",
+  "notes": "Local press reports Dan and Pam Seiler bought the Wauseon feed mill from its previous individual owner in 2022; no parent company."
+ },
+ {
+  "recipient_id": "EIN:463037482",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://jbnets.com/about-us/",
+  "notes": "JB-Nets says it is family owned and operated since 2002 by husband and wife Jake and Brandi Kline."
+ },
+ {
+  "recipient_id": "EIN:471425443",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "One-job Ravenna shop that sponsors its own 3-participant retirement plan; the only JCS Manufacturing site found is an unrelated Canadian firm, and nothing points to a parent."
+ },
+ {
+  "recipient_id": "EIN:471505953",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://juggerbot3d.com/our-team/",
+  "notes": "Youngstown 3D-printer builder led by founders Zac and Dan, with partners but no parent named, and news shows no acquisition."
+ },
+ {
+  "recipient_id": "EIN:472873646",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://kdhealthcaresolutions.com/about-us/",
+  "notes": "Dayton medical-supply firm established in 2015 whose president and owner is Karen S. Dunson, certified as a woman-owned small business."
  }
 ]

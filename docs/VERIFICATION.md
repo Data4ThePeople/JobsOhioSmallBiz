@@ -72,6 +72,34 @@ recipients, $54.4 million) was put through a narrow ownership check
 `scripts/13_apply_subsidiary.py`): was the company owned by a larger, foreign,
 or private-equity-backed group during the grant years?
 
+### Result of the ownership check
+
+All 427 rows were checked. 27 turned out to belong to a larger group
+($7.3 million of grants) and were reclassified to the parent: among them
+Adalet (Berkshire Hathaway), Wayne Trail (Lincoln Electric), IMCO Carbide
+(Berkshire Hathaway), Aer Lingus (IAG), Imperial Electric (Nidec), Daido
+Metal USA (Daido Metal), Miba Energy (Miba AG), FacilitySource (CBRE) and
+Forsee Power (France). Another 16 kept their size but moved home state,
+because their owner was a smaller company outside Ohio (Dewesoft, Slovenia;
+ASHTA Chemicals, Mexico; SentriLock, National Association of Realtors,
+Illinois) or because the company itself was based elsewhere. 328 were
+confirmed or presumed independent, and 65 could not be settled either way;
+those keep the rule's classification. In the later, smaller batches a "no"
+usually means nothing contrary was found, not that independence was proven.
+
+Private-equity ownership was handled one way throughout: the fund is never
+the parent. A company owned by a fund is classified under the operating group
+the fund built, and is small if that group had fewer than 500 employees in
+the grant years (Thaler Machine, n2y, PUI Audio).
+
+### Effect on the headline (businesses, 500-employee cutoff)
+
+| | Before the check | After |
+|---|---|---|
+| Small share of recipients | 63.9% | 61.1% |
+| Small share of dollars | 19.6% | 18.4% |
+| Worst case, dollars to large | at least 61.5% | at least 62.1% |
+
 ## A second rule assumption: Ohio headquarters
 
 Rule R1 also recorded every Inclusion Grant recipient as Ohio-headquartered,
