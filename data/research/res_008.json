@@ -193,5 +193,70 @@
   "confidence": "A",
   "founded_in_ohio": "no",
   "notes": "Arcelormittal Tubular Products Shelby LLC is a plant of global steelmaker ArcelorMittal S.A. (Luxembourg), a large public company (NYSE: MT). The Shelby, OH facility is a single tubular-products plant within a company with well over 100,000 employees worldwide."
+ },
+ {
+  "recipient_id": "EIN:475253747",
+  "recipient_class": "business",
+  "parent": "Veoneer, Inc. (51% owner of joint venture Veoneer-Nissin Brake Systems; Nissin Kogyo owns 49%)",
+  "parent_hq_state": "Sweden",
+  "hq_source": "Veoneer, Inc. FY2018 10-K (sec.gov/Archives/edgar/data/1733186/000173318619000044/veoneer_10k.htm): lists \"Veoneer Nissin Brake Systems America, LLC\" in Findlay, OH as a Brake Systems facility and states Veoneer's head office is in Stockholm, Sweden; VNBS is 51% owned by Veoneer, 49% by Nissin Kogyo, and fully consolidated by Veoneer",
+  "emp_bucket": "5000+",
+  "emp_source": "Same Veoneer FY2018 10-K: \"As of December 31, 2018, Veoneer had approximately 7,300 employees worldwide and a total headcount of approximately 8,600, including temporary personnel\"",
+  "emp_asof": "2018",
+  "confidence": "A",
+  "founded_in_ohio": "no",
+  "notes": "The Findlay, OH plant (input name \"Autoliv Nissin Brake Systems America LLC\"; later F5500 sponsor \"Veoneer Brake Systems LLC\") is Veoneer-Nissin Brake Systems (VNBS), a 51/49 joint venture between Veoneer and Japan's Nissin Kogyo formed in 2016, fully consolidated by Veoneer. Veoneer spun off from Autoliv AB and began trading independently on July 2, 2018, the same grant year, so the entity may have been under Autoliv for part of 2018 before the spinoff; Veoneer is used as parent since its own FY2018 10-K covers the Findlay plant and year-end headcount."
+ },
+ {
+  "recipient_id": "EIN:521762325",
+  "recipient_class": "business",
+  "parent": "Kadant Inc.",
+  "parent_hq_state": "MA",
+  "hq_source": "SEC EDGAR company record for Kadant Inc (CIK 0000886346), Westford, MA, DE incorporated (matches input edgar_name/edgar_hq_state signals)",
+  "emp_bucket": "500-4999",
+  "emp_source": "Kadant Inc FY2018 10-K (sec.gov/Archives/edgar/data/886346/000088634619000019/kai201810k.htm): \"At year-end 2018, we had approximately 2,500 employees worldwide\"",
+  "emp_asof": "2018",
+  "confidence": "A",
+  "founded_in_ohio": "no",
+  "notes": "Kadant Black Clawson LLC (Mason, OH) is a subsidiary of NYSE-listed Kadant Inc, whose FY2018 10-K (the grant year) reports about 2,500 employees worldwide, headquartered in Westford, MA. F5500 participant counts for parent sponsor KADANT INC (623-1,355 across 2015-2023) are consistent with this range."
+ },
+ {
+  "recipient_id": "EIN:311208705",
+  "recipient_class": "business",
+  "parent": "Mitsubishi Electric Corporation",
+  "parent_hq_state": "Japan",
+  "hq_source": "Wikipedia summary for Mitsubishi Electric Corporation: \"a Japanese multinational electronics and electrical equipment manufacturing company headquartered in Tokyo, Japan\"",
+  "emp_bucket": "5000+",
+  "emp_source": "Wikipedia infobox for Mitsubishi Electric (citing the company's own \"At-a-Glance\" corporate data page): approximately 149,000 employees company-wide (current figure); the company has reported well over 100,000 employees worldwide for many years including around the 2018 grant year",
+  "emp_asof": "2018",
+  "confidence": "B",
+  "founded_in_ohio": "no",
+  "notes": "Mitsubishi Electric Automotive America, Inc. (Mason, OH) is the North American automotive-components arm of Mitsubishi Electric Corporation, a Tokyo-based public conglomerate; the F5500 sponsor line lists an individual's name rather than the corporate parent, so it was not used as a signal. mitsubishielectric.com did not return content when fetched directly and the parent is not an SEC filer, so this is graded B from Wikipedia/company at-a-glance data rather than an audited report specific to the grant year; the 5000+ bucket itself is not in doubt given the company's scale."
+ },
+ {
+  "recipient_id": "EIN:814369608",
+  "recipient_class": "site_development",
+  "parent": "Vora Solution Center LLC (self; developer not identified)",
+  "parent_hq_state": "OH",
+  "hq_source": "vorasolutioncenter.com meta tags: \"Office Space in Springdale Ohio | Vora Solution Center ... offers Class A and Class B office space - finished and unfinished and perfect for tech and services companies\"",
+  "emp_bucket": "<100",
+  "emp_source": "No F5500, SEC, or JobsOhio metrics record found for this EIN; the company's own site describes a leasable office building rather than an operating company",
+  "emp_asof": "2018",
+  "confidence": "D",
+  "founded_in_ohio": "unknown",
+  "notes": "Vora Solution Center's own website markets Class A/B office space for lease in Springdale/Blue Ash, OH, suggesting a site-development/real-estate vehicle rather than an operating business, though all JobsOhio metrics fields (programs, jobs retained) are blank for this recipient so the grant type could not be confirmed. Google News RSS returned no results for any query tried this session (the feed appeared unreachable in this environment), and no press release, business registry, or ownership record was found naming a developer behind the LLC, so parent is left as the entity itself at confidence D."
+ },
+ {
+  "recipient_id": "EIN:112808682",
+  "recipient_class": "business",
+  "parent": "Griffon Corporation",
+  "parent_hq_state": "NY",
+  "hq_source": "SEC EDGAR company record for Griffon Corp (CIK 0000050725), New York, NY, DE incorporated (matches input edgar_name \"Clopay Corp.\" / edgar_hq_state NY signals)",
+  "emp_bucket": "5000+",
+  "emp_source": "Griffon Corporation FY2019 10-K (sec.gov/Archives/edgar/data/50725/000005072519000077/gff-20190930x10k.htm): \"As of September 30, 2019, Griffon and its subsidiaries employ approximately 7,300 people\"; the same filing states \"Clopay has approximately 2,700 employees\"",
+  "emp_asof": "2019",
+  "confidence": "A",
+  "founded_in_ohio": "unknown",
+  "notes": "Clopay Building Products Company (Troy, OH garage-door maker) is a subsidiary of NYSE-listed Griffon Corporation, headquartered in New York, NY; Griffon's FY2019 10-K (covering the 2019 grant year) reports about 7,300 employees company-wide, with the Clopay building-products/plastics segment at about 2,700."
  }
 ]
