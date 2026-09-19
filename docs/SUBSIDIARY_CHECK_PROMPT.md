@@ -29,6 +29,13 @@ How to check, in order, stopping as soon as it is settled:
 Use curl with `--max-time 30` on every request; web search is not available.
 Save the output file after every recipient.
 
+Also report a parent that is **not** larger. If the company was owned by
+any other company during the grant years (a smaller domestic or foreign
+group, a family holding company elsewhere), fill `parent` and
+`parent_hq_state` even when `owned_by_larger` is `no`, and give its size in
+`emp_bucket` if known. Headquarters is judged at the parent, so a small
+Ohio plant of a 300-person French company is small but not Ohio-headquartered.
+
 Output: a JSON list, one object per input recipient, with exactly these keys:
 
 ```
@@ -40,7 +47,7 @@ emp_bucket, source, notes
   `parent_hq_state` its two-letter state or country name, `emp_bucket` the
   parent's worldwide size (`500-4999` or `5000+`), `source` the URL that shows
   the ownership.
-- If `no`: leave `parent`, `parent_hq_state`, `emp_bucket` empty; `source` is
+- If `no` and independent: leave `parent`, `parent_hq_state`, `emp_bucket` empty; `source` is
   the page that shows it is independent (an "about" page naming the founders
   or family owners, a "family-owned since" line), or empty if you only found
   nothing contrary.

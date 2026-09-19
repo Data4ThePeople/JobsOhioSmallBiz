@@ -43,5 +43,86 @@
   "emp_bucket": "",
   "source": "https://arnoldmachine.com/about-us/company-overview/",
   "notes": "Company history describes a Tiffin shop started in 1994 as a two-person operation; no parent company found."
+ },
+ {
+  "recipient_id": "EIN:341904902",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.aquablok.com/about",
+  "notes": "Company site calls AquaBlok independently owned and privately held, backed by private investors, with one Swanton location."
+ },
+ {
+  "recipient_id": "EIN:271931373",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Independent Cleveland-area craft brewer that owns its own brands (Buckeye, Excursion); no parent company found."
+ },
+ {
+  "recipient_id": "EIN:471923176",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.mixtsolutions.com/about",
+  "notes": "Company site tells a founder-built story with about 35 employees; no parent company found."
+ },
+ {
+  "recipient_id": "EIN:341480627",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.reifel.com/about-us",
+  "notes": "Company site lists founder Tom Reifel and Kathy Reifel as owners of the Pioneer e-coating plant founded in 1984."
+ },
+ {
+  "recipient_id": "EIN:311408665",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.dnkarchitects.com/",
+  "notes": "Cincinnati architecture firm founded in 1986; no parent company found."
+ },
+ {
+  "recipient_id": "EIN:392059617",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.gatewaylogisticsinc.com/about.html",
+  "notes": "Company site names founders Ashlee Carucci-Kenner and Benny Kenner as the ownership group; no larger parent found."
+ },
+ {
+  "recipient_id": "EIN:471876052",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No company site or news coverage found for the Bellaire firm."
+ },
+ {
+  "recipient_id": "EIN:311338488",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://mhi-inc.com/about-micropyretics-heaters-international-mhi/",
+  "notes": "Company site says MHI was founded in 1991 in a Cincinnati incubator and is headquartered there; no parent found."
+ },
+ {
+  "recipient_id": "EIN:311471291",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Cincinnati golf promotional products firm with local news coverage of its own headquarters move; no parent company found."
  }
 ]

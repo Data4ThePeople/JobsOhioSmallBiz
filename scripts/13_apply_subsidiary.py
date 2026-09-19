@@ -18,6 +18,7 @@ def main(files):
     rows = list(csv.DictReader(PARENTS.open()))
     by_id = {r["recipient_id"]: r for r in rows}
     moved = checked = 0
+    rehomed = []
     for f in files:
         for x in json.load(open(f)):
             r = by_id.get(x.get("recipient_id"))
@@ -36,13 +37,21 @@ def main(files):
                          emp_bucket=x["emp_bucket"], confidence="C" if weak else "B", hq_source=x["source"], emp_source=x["source"])
                 r["notes"] += f" Subsidiary check: owned by {x['parent'].strip()}; rule result replaced. {x.get('notes', '')}".rstrip()
                 moved += 1
+            elif ans == "no" and x.get("parent") and x.get("parent_hq_state") and x.get("source") \
+                    and x["parent"].strip().lower() != r["name"].strip().lower():
+                # owned by a smaller group: size stays small, home state moves to the parent's
+                r.update(parent=x["parent"].strip(), parent_hq_state=x["parent_hq_state"].strip(), hq_source=x["source"])
+                if x.get("emp_bucket") in BUCKETS:
+                    r["emp_bucket"] = x["emp_bucket"]
+                r["notes"] += f" Subsidiary check: owned by smaller group {x['parent'].strip()}; home state set to the parent's. {x.get('notes', '')}".rstrip()
+                rehomed.append(r["name"])
             else:
                 r["notes"] += f" Subsidiary check: {ans or 'unknown'}. {x.get('notes', '')}".rstrip()
     with PARENTS.open("w", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows)
     total = sum(1 for r in rows if r["notes"].startswith(("Rule R1", "Rule R2")))
     done = sum(1 for r in rows if r["notes"].startswith(("Rule R1", "Rule R2")) and "Subsidiary check" in r["notes"])
-    print(f"applied {len(files)} files: {checked} rule rows checked, {moved} moved to a larger parent; {done}/{total} rule rows now checked")
+    print(f"applied {len(files)} files: {checked} rule rows checked, {moved} moved to a larger parent, {len(rehomed)} re-homed to a smaller parent {rehomed}; {done}/{total} rule rows now checked")
 
 
 if __name__ == "__main__":

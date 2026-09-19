@@ -70,5 +70,32 @@
   "emp_bucket": "",
   "source": "",
   "notes": "Twinsburg food-service firm (appears to operate Innovation Food Services and On-Call Meal Solutions); site and news name no parent company."
+ },
+ {
+  "recipient_id": "EIN:310625744",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Independent through almost all of FY2019-2020; PR Newswire (June 29, 2020) reports Southern Champion Tray of Chattanooga, TN bought it one day before FY2020 ended, so review if that edge case should count."
+ },
+ {
+  "recipient_id": "EIN:340689355",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Hinckley heavy-civil contractor; its site could not be reached and news on its ODOT and Metroparks projects names no parent company."
+ },
+ {
+  "recipient_id": "EIN:474094933",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.miletwo.us/about",
+  "notes": "Site says Mile Two was founded in 2015 in Dayton; news covers it as a standalone Dayton defense software contractor with no parent."
  }
 ]

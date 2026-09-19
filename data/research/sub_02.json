@@ -1,30 +1,30 @@
 [
  {
-  "recipient_id": "EIN:208677704",
+  "recipient_id": "EIN:822019085",
   "owned_by_larger": "no",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "source": "",
-  "notes": "Independent Cincinnati consultancy in 2021; CGI acquired it in September 2026, after the grant year."
+  "notes": "Founder-led Columbus freight broker (Brent Bosse); news covers its own growth and no parent or investor was found."
  },
  {
-  "recipient_id": "EIN:311609501",
+  "recipient_id": "EIN:204459634",
   "owned_by_larger": "no",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "source": "",
-  "notes": "Family-owned Heath formula maker in 2020; Bobbie acquired it in July 2023, after the grant year."
+  "notes": "Perrysburg countertop maker covered by the Toledo Blade as a local company; no parent found for the 2018 grant year."
  },
  {
-  "recipient_id": "EIN:340471740",
-  "owned_by_larger": "unknown",
+  "recipient_id": "EIN:462460862",
+  "owned_by_larger": "no",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
-  "source": "https://www.pehub.com/igp-acquires-industrial-company-pi/",
-  "notes": "Owned by private-equity firm IGP since June 2022 (grant FY2023), but the size of the P&I platform could not be confirmed as 500 or more."
+  "source": "",
+  "notes": "Small Cincinnati refrigerated logistics firm listed among local Fast 55 private companies; no parent found."
  },
  {
   "recipient_id": "EIN:453790057",
@@ -36,6 +36,51 @@
   "notes": "JobsOhio profile calls MetalX an independent metals recycling business founded in 2012."
  },
  {
+  "recipient_id": "EIN:208619767",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/with-210-revenue-increase-zipline-logistics-expands-in-ohio-for-purposeful-growth",
+  "notes": "Columbus-founded freight firm that itself acquires others (Summit Eleven); no parent or PE owner found."
+ },
+ {
+  "recipient_id": "EIN:310568575",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.precisionimpacts.com/about/our-story",
+  "notes": "Gayston is itself the parent of Precision Impacts, a single-campus Miamisburg manufacturer founded in 1951; no outside owner found."
+ },
+ {
+  "recipient_id": "EIN:825076139",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Tiny Hilliard 3D-printing firm (3 jobs retained); no parent or investor found."
+ },
+ {
+  "recipient_id": "EIN:201498559",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Small Solon plastic-film maker; news coverage treats it as a standalone company and no parent was found."
+ },
+ {
+  "recipient_id": "EIN:043689503",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.meritec.com",
+  "notes": "Painesville parent of Meritec and Joy Signal in FY2021; private-equity firm Arcline bought the businesses in May 2022 for its Qnnect platform, after the grant year."
+ },
+ {
   "recipient_id": "EIN:272624327",
   "owned_by_larger": "no",
   "parent": "",
@@ -43,24 +88,6 @@
   "emp_bucket": "",
   "source": "",
   "notes": "Independent solar racking maker in FY2016; Gibraltar Industries bought it later, after the grant year."
- },
- {
-  "recipient_id": "EIN:203900803",
-  "owned_by_larger": "no",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "source": "https://www.ladepeche.fr/2020/09/14/cedric-barbe-dedienne-aerospace-laureat-du-fonds-de-modernisation-industrielle-9070222.php",
-  "notes": "US arm of French tooling maker Dedienne Aerospace, but the whole group had about 400 employees worldwide in 2020, under the 500 threshold."
- },
- {
-  "recipient_id": "EIN:311728288",
-  "owned_by_larger": "no",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "source": "https://www.jobsohio.com/newsroom/news-press/velocys-acquires-lease-on-production-facility",
-  "notes": "US unit of UK-listed Velocys plc in FY2023, but the whole group was small (well under 500 employees)."
  },
  {
   "recipient_id": "EIN:205839715",
@@ -81,6 +108,42 @@
   "notes": "The 2019 company site says NSI Crankshaft was owned by Nippon Steel and Sumitomo Corporation of Japan."
  },
  {
+  "recipient_id": "EIN:203900803",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.ladepeche.fr/2020/09/14/cedric-barbe-dedienne-aerospace-laureat-du-fonds-de-modernisation-industrielle-9070222.php",
+  "notes": "US arm of French tooling maker Dedienne Aerospace, but the whole group had about 400 employees worldwide in 2020, under the 500 threshold."
+ },
+ {
+  "recipient_id": "EIN:311609501",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Family-owned Heath formula maker in 2020; Bobbie acquired it in July 2023, after the grant year."
+ },
+ {
+  "recipient_id": "EIN:208677704",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Independent Cincinnati consultancy in 2021; CGI acquired it in September 2026, after the grant year."
+ },
+ {
+  "recipient_id": "EIN:311418092",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "http://schlabachwooddesign.com/",
+  "notes": "Amish-country cabinet maker in Baltic whose site and local coverage name no parent company."
+ },
+ {
   "recipient_id": "EIN:880377766",
   "owned_by_larger": "no",
   "parent": "",
@@ -88,87 +151,6 @@
   "emp_bucket": "",
   "source": "https://www.kroy.com/about-us/company-history",
   "notes": "Owned by Cleveland holding company Pubco Corporation since 1997; after Pubco sold Allied Construction to Sandvik, Kroy (with its Buckeye division) appears to be its main business, with no sign of a 500+ group."
- },
- {
-  "recipient_id": "EIN:341646871",
-  "owned_by_larger": "no",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "source": "",
-  "notes": "Business press describes OMNI Systems as a privately held Cleveland label maker; no parent or PE owner found."
- },
- {
-  "recipient_id": "EIN:310568575",
-  "owned_by_larger": "no",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "source": "https://www.precisionimpacts.com/about/our-story",
-  "notes": "Gayston is itself the parent of Precision Impacts, a single-campus Miamisburg manufacturer founded in 1951; no outside owner found."
- },
- {
-  "recipient_id": "EIN:340690321",
-  "owned_by_larger": "no",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "source": "https://malish.com/malish-history/",
-  "notes": "Malish family company founded in 1945 in Cleveland; it owns its own small units abroad but no outside parent was found."
- },
- {
-  "recipient_id": "EIN:341468011",
-  "owned_by_larger": "no",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "source": "https://www.danielsamish.com/history/",
-  "notes": "Holmes County furniture maker founded by Daniel Yoder; its plan sponsor Carroll & Jameson Corp is a related local entity, and no larger parent was found."
- },
- {
-  "recipient_id": "EIN:811145148",
-  "owned_by_larger": "no",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "source": "https://www.sperryrice.com/about/about-us/",
-  "notes": "Single-plant Killbuck rubber extruder; its site names no parent and no acquisition news was found."
- },
- {
-  "recipient_id": "EIN:300869183",
-  "owned_by_larger": "unknown",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "source": "http://www.toledoblade.com/business/2018/09/07/Japanese-automotive-company-Topia-opens-first-North-American-plant-in-Toledo/stories/20180906176",
-  "notes": "Toledo Blade (2018) says TPAM is the first North American plant of Japanese auto-parts maker Topia, but Topia's worldwide headcount could not be confirmed."
- },
- {
-  "recipient_id": "EIN:473582799",
-  "owned_by_larger": "no",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "source": "https://www.markonemfg.com/about",
-  "notes": "Mark One says it is headquartered in Minster, Ohio, and was established in 2000; no parent company is named."
- },
- {
-  "recipient_id": "EIN:201498559",
-  "owned_by_larger": "no",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "source": "",
-  "notes": "Small Solon plastic-film maker; news coverage treats it as a standalone company and no parent was found."
- },
- {
-  "recipient_id": "EIN:204459634",
-  "owned_by_larger": "no",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "source": "",
-  "notes": "Perrysburg countertop maker covered by the Toledo Blade as a local company; no parent found for the 2018 grant year."
  },
  {
   "recipient_id": "EIN:344420713",
@@ -180,6 +162,42 @@
   "notes": "Longtime Toledo-area bearing and power-transmission distributor that moved to Bowling Green; no parent or acquisition found."
  },
  {
+  "recipient_id": "EIN:834693967",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://businessjournaldaily.com/bloom-industries-buys-building-in-golden-triangle/",
+  "notes": "Warren injection molder that is an affiliate of Austintown's Novatech under local Lewkowitz family ownership; no sign that the combined group reaches 500."
+ },
+ {
+  "recipient_id": "EIN:311728288",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/velocys-acquires-lease-on-production-facility",
+  "notes": "US unit of UK-listed Velocys plc in FY2023, but the whole group was small (well under 500 employees)."
+ },
+ {
+  "recipient_id": "EIN:314153030",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Historic private social club on East Broad Street in Columbus; no parent organization found."
+ },
+ {
+  "recipient_id": "EIN:811145148",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.sperryrice.com/about/about-us/",
+  "notes": "Single-plant Killbuck rubber extruder; its site names no parent and no acquisition news was found."
+ },
+ {
   "recipient_id": "EIN:861365263",
   "owned_by_larger": "no",
   "parent": "",
@@ -189,30 +207,66 @@
   "notes": "Massillon paperboard mill with no website or news naming a parent; no sign of a larger owner was found, so this rests on absence of evidence."
  },
  {
-  "recipient_id": "EIN:043689503",
+  "recipient_id": "EIN:340471740",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.pehub.com/igp-acquires-industrial-company-pi/",
+  "notes": "Owned by private-equity firm IGP since June 2022 (grant FY2023), but the size of the P&I platform could not be confirmed as 500 or more."
+ },
+ {
+  "recipient_id": "EIN:300869183",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "http://www.toledoblade.com/business/2018/09/07/Japanese-automotive-company-Topia-opens-first-North-American-plant-in-Toledo/stories/20180906176",
+  "notes": "Toledo Blade (2018) says TPAM is the first North American plant of Japanese auto-parts maker Topia, but Topia's worldwide headcount could not be confirmed."
+ },
+ {
+  "recipient_id": "EIN:341468011",
   "owned_by_larger": "no",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
-  "source": "https://www.meritec.com",
-  "notes": "Painesville parent of Meritec and Joy Signal in FY2021; private-equity firm Arcline bought the businesses in May 2022 for its Qnnect platform, after the grant year."
+  "source": "https://www.danielsamish.com/history/",
+  "notes": "Holmes County furniture maker founded by Daniel Yoder; its plan sponsor Carroll & Jameson Corp is a related local entity, and no larger parent was found."
  },
  {
-  "recipient_id": "EIN:822019085",
+  "recipient_id": "EIN:340690321",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://malish.com/malish-history/",
+  "notes": "Malish family company founded in 1945 in Cleveland; it owns its own small units abroad but no outside parent was found."
+ },
+ {
+  "recipient_id": "EIN:854364273",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001846146",
+  "notes": "Small Columbus startup that filed its own Form D offering in 2021; no parent company found."
+ },
+ {
+  "recipient_id": "EIN:473582799",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.markonemfg.com/about",
+  "notes": "Mark One says it is headquartered in Minster, Ohio, and was established in 2000; no parent company is named."
+ },
+ {
+  "recipient_id": "EIN:341646871",
   "owned_by_larger": "no",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "source": "",
-  "notes": "Founder-led Columbus freight broker (Brent Bosse); news covers its own growth and no parent or investor was found."
- },
- {
-  "recipient_id": "EIN:208619767",
-  "owned_by_larger": "no",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "source": "https://www.jobsohio.com/newsroom/news-press/with-210-revenue-increase-zipline-logistics-expands-in-ohio-for-purposeful-growth",
-  "notes": "Columbus-founded freight firm that itself acquires others (Summit Eleven); no parent or PE owner found."
+  "notes": "Business press describes OMNI Systems as a privately held Cleveland label maker; no parent or PE owner found."
  }
 ]
