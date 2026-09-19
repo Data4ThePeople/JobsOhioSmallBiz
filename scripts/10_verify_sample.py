@@ -49,13 +49,18 @@ def compare(files):
         if not a or not a["parent"]:
             continue
         n += 1
-        row = {"recipient_id": s["recipient_id"], "name": a["name"], "total_cash": a["total_cash"]}
+        row = {"recipient_id": s["recipient_id"], "name": a["name"], "total_cash": a["total_cash"],
+               "first_rule": a["notes"][:7] if a["notes"].startswith("Rule") else "research"}
         for f in fields:
             row[f"first_{f}"], row[f"second_{f}"] = a[f], s.get(f, "")
+            # a government or nonprofit row with no size recorded is not a size disagreement
+            if f == "emp_bucket" and not a[f] and (a["recipient_class"] or a["recipient_class_auto"]) != "business":
+                row[f"second_{f}"] = a[f]
+                continue
             if (a[f] or "").strip().lower() != (s.get(f, "") or "").strip().lower():
                 dis[f] += 1
         c1 = "small" if a["emp_bucket"] in SMALL else ("large" if a["emp_bucket"] else "unknown")
-        c2 = "small" if s.get("emp_bucket") in SMALL else ("large" if s.get("emp_bucket") else "unknown")
+        c2 = "small" if row["second_emp_bucket"] in SMALL else ("large" if row["second_emp_bucket"] else "unknown")
         row["first_size"], row["second_size"] = c1, c2
         if c1 != c2:
             dis["size_call"] += 1
@@ -65,6 +70,9 @@ def compare(files):
     with REPORT.open("w", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=list(report[0]) if report else ["recipient_id"]); w.writeheader(); w.writerows(report)
     print(f"compared {n} recipients")
+    from collections import Counter
+    print("  size-call disagreements by first-pass method:", dict(Counter(r["first_rule"] for r in report if r["first_size"] != r["second_size"])))
+    print("  sample by first-pass method:", dict(Counter((first[x["recipient_id"]]["notes"][:7] if first[x["recipient_id"]]["notes"].startswith("Rule") else "research") for x in second if x["recipient_id"] in first)))
     for k, v in dis.items():
         print(f"  {k:18s} disagree {v:3d}  ({v / n:.1%})")
     print(f"wrote {REPORT.relative_to(ROOT)}: {len(report)} rows with any disagreement, for adjudication")
