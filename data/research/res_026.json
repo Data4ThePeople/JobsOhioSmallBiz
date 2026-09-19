@@ -63,5 +63,18 @@
   "confidence": "D",
   "founded_in_ohio": "unknown",
   "notes": "JobsOhio's project data lists a Revitalization Grant with 7 jobs retained in Greenfield, which points to a small local business. No company site, news story or JobsOhio release was found to confirm ownership."
+ },
+ {
+  "recipient_id": "EIN:341101302",
+  "recipient_class": "business",
+  "parent": "Austin Powder Company",
+  "parent_hq_state": "OH",
+  "hq_source": "https://www.danmarco.com/about-us",
+  "emp_bucket": "500-4999",
+  "emp_source": "https://austinpowder.com/company/history/",
+  "emp_asof": "2026",
+  "confidence": "C",
+  "founded_in_ohio": "yes",
+  "notes": "Dan-Mar's site says Cleveland-based Austin Powder bought the Norwalk electronics maker in 2010; Austin Powder, founded in Akron in 1833, reports over 4,800 employees today. The 2018 headcount is not published, so the bucket assumes it was not above 5,000 then."
  }
 ]

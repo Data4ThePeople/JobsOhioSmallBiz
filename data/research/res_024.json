@@ -9,7 +9,7 @@
   "emp_source": "https://cookoutnews.com/char-broils-parent-company-acquires-dansons-pit-boss-louisiana-grills/ (no headcount found)",
   "emp_asof": "2023",
   "confidence": "D",
-  "founded_in_ohio": "no",
+  "founded_in_ohio": "unknown",
   "notes": "JobsOhio names Dansons US LLC (Pit Boss grills, Arizona) as parent of the Peebles pellet plant; W. C. Bradley Co. of Columbus, Georgia bought Dansons effective June 7, 2023, at the very end of FY2023. No worldwide headcount was found on the company site, CB Insights, Wikipedia or news, so the bucket is a guess from its multi-plant footprint."
  },
  {
@@ -100,7 +100,7 @@
   "emp_source": "https://www.edwclevy.com/",
   "emp_asof": "2026",
   "confidence": "C",
-  "founded_in_ohio": "no",
+  "founded_in_ohio": "unknown",
   "notes": "The company site says Levy, founded in 1918 and headquartered in Dearborn, Michigan, has a team of over 2,500 people; that figure is current, not dated to 2023. The Delta, Ohio grant site retained 40 jobs per JobsOhio metrics."
  },
  {
@@ -152,7 +152,7 @@
   "emp_source": "https://www.sec.gov/Archives/edgar/data/861884/000155837023002368/rs-20221231x10k.htm",
   "emp_asof": "2022",
   "confidence": "A",
-  "founded_in_ohio": "no",
+  "founded_in_ohio": "unknown",
   "notes": "Reliance's FY2022 10-K lists Phoenix Corporation (dba Phoenix Metals Company, 14 locations) as a subsidiary and reports about 14,500 employees worldwide at December 31, 2022. The 10-K cover gives Scottsdale, Arizona as the principal executive office; EDGAR's CA state for the Phoenix Corp EIN is an older address."
  },
  {
@@ -165,7 +165,7 @@
   "emp_source": "https://www.sec.gov/Archives/edgar/data/931015/000162828023004043/pii-20221231.htm",
   "emp_asof": "2022",
   "confidence": "A",
-  "founded_in_ohio": "no",
+  "founded_in_ohio": "unknown",
   "notes": "Polaris's FY2022 10-K reports about 16,200 full-time employees globally at December 31, 2022, and its Exhibit 21 lists Polaris Sales Inc. (Minnesota) as a subsidiary. The 10-K also lists a Wilmington, Ohio distribution center, which matches this Logistics and Distribution grant."
  },
  {
@@ -178,7 +178,7 @@
   "emp_source": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm",
   "emp_asof": "2022",
   "confidence": "A",
-  "founded_in_ohio": "no",
+  "founded_in_ohio": "unknown",
   "notes": "Stahl, a Wooster truck-body maker, is a Scott Fetzer company ('Berkshire Hathaway Trusted' on its site), and Berkshire's FY2022 10-K reports about 383,000 employees worldwide and names the Scott Fetzer companies. The recipient address is Scott Fetzer's Cleveland-area office, and JobsOhio has no project record for it."
  },
  {
@@ -245,5 +245,18 @@
   "confidence": "D",
   "founded_in_ohio": "unknown",
   "notes": "The only hit for 35350 Curtis is a Crain's Cleveland headline saying a Smartland affiliate bought a five-story Eastlake office building in October 2022, and the 990 address (67 Alpha Dr, Highland Heights) fits Smartland's hometown. The Crain's and cleveland.com articles were blocked, so the owner link and the headcount are unconfirmed."
+ },
+ {
+  "recipient_id": "EIN:460635641",
+  "recipient_class": "business",
+  "parent": "A-Gas Group (A-Gas International Ltd / A-Gas Bidco Limited, UK)",
+  "parent_hq_state": "United Kingdom",
+  "hq_source": "https://find-and-update.company-information.service.gov.uk/company/10786853/filing-history; https://www.agas.com/about-us/",
+  "emp_bucket": "500-4999",
+  "emp_source": "https://find-and-update.company-information.service.gov.uk/company/10786853/filing-history/MzQ4MTU0MDI0NWFkaXF6a2N4/document?format=pdf&download=0 (Arthur Midco group accounts, note 5)",
+  "emp_asof": "2024",
+  "confidence": "B",
+  "founded_in_ohio": "no",
+  "notes": "The audited group accounts of Arthur Midco, filed with A-Gas Bidco's 2024 accounts, report an average of 912 employees over the 17 months to December 2024; no group headcount was found for 2022. A-Gas started in the UK in 1993 and is based near Bristol; KKR held a majority from 2017 until TPG Rise Climate bought control in August 2023, after the FY2022 grant."
  }
 ]

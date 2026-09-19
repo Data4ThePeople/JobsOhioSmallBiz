@@ -37,5 +37,18 @@
   "confidence": "B",
   "founded_in_ohio": "unknown",
   "notes": "A distributor profile describes Fire-Dex as a family-owned firefighter PPE maker founded in 1983 and headquartered in Medina, Ohio. Form 5500 shows 192 participants in 2019 and 470 in 2023, and JobsOhio lists 133 retained jobs, so it was likely under 500 at the 2021 grant, though growth brought it near the line."
+ },
+ {
+  "recipient_id": "EIN:770043660",
+  "recipient_class": "business",
+  "parent": "Hardy Diagnostics",
+  "parent_hq_state": "CA",
+  "hq_source": "https://en.wikipedia.org/wiki/Hardy_Diagnostics",
+  "emp_bucket": "100-499",
+  "emp_source": "https://en.wikipedia.org/wiki/Hardy_Diagnostics; Form 5500 sponsor HARDY DIAGNOSTICS (CA): f5500_participants_2019=541, 2023=670",
+  "emp_asof": "2021",
+  "confidence": "C",
+  "founded_in_ohio": "no",
+  "notes": "Wikipedia lists Hardy Diagnostics as an independent culture-media maker founded in 1980 and based in Santa Maria, California, with a Springboro plant and 430 employees (undated). Form 5500 shows 541 to 670 participants, which include former employees, so the company sits near the 500 line."
  }
 ]
