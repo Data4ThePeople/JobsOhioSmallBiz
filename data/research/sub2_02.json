@@ -9,15 +9,6 @@
   "notes": "Founded in 2005 by partners Jeff Herzog and Marianne Corrao and headquartered in Cleveland; no parent found."
  },
  {
-  "recipient_id": "EIN:270543481",
-  "owned_by_larger": "no",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "source": "https://www.solechoiceinc.com/about",
-  "notes": "Portsmouth shoelace maker run by its own board and directors; site and news show no parent company."
- },
- {
   "recipient_id": "EIN:371878747",
   "owned_by_larger": "unknown",
   "parent": "",
@@ -25,6 +16,15 @@
   "emp_bucket": "",
   "source": "",
   "notes": "No website, news, or JobsOhio release found; the USA suffix hints at a foreign parent but nothing confirms one."
+ },
+ {
+  "recipient_id": "EIN:270543481",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.solechoiceinc.com/about",
+  "notes": "Portsmouth shoelace maker run by its own board and directors; site and news show no parent company."
  },
  {
   "recipient_id": "EIN:270733747",
@@ -214,5 +214,59 @@
   "emp_bucket": "",
   "source": "",
   "notes": "No website, news, or JobsOhio release found for this 2016 Dayton recipient; nothing shows who owned it."
+ },
+ {
+  "recipient_id": "EIN:844863234",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.quadc.com/portfolio/textum/",
+  "notes": "Textum is its own operating company, headquartered in Belmont, North Carolina, and owned since 2020 by PE firm Quad-C; no larger operating group found, and its headcount was not found."
+ },
+ {
+  "recipient_id": "NAME:development solutions",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Recipient at a rural New Riegel address with no EIN, website, news, or JobsOhio release; ownership could not be determined."
+ },
+ {
+  "recipient_id": "EIN:473900155",
+  "owned_by_larger": "yes",
+  "parent": "W Diamond Group Corp.",
+  "parent_hq_state": "IL",
+  "emp_bucket": "500-4999",
+  "source": "https://wwd.com/sourcing-journal/sj-denim/ohio-based-hugo-boss-plant-stays-open-with-new-owners-1238703607/",
+  "notes": "Keystone bought the Brooklyn Hugo Boss plant in 2015 as part of Chicago-based W Diamond Group (Hart Schaffner Marx), whose Des Plaines plant alone employed 450."
+ },
+ {
+  "recipient_id": "EIN:842617419",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Willoughby Hills LLC with no website, news, or JobsOhio release naming its owner or operating business."
+ },
+ {
+  "recipient_id": "EIN:814549773",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Wadsworth recipient with no website, news, or JobsOhio release naming its owner; the only W&F Manufacturing news concerns an unrelated 2011 Endura deal."
+ },
+ {
+  "recipient_id": "EIN:340673444",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.jobsohio.com/newsroom/news-press/r-w-beckett-overhauls-ohio-operations-following-acquisition-of-n-j-company",
+  "notes": "Family-owned North Ridgeville company that heads the Beckett Family of Companies; no outside parent."
  }
 ]

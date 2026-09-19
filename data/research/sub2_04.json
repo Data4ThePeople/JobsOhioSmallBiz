@@ -1,0 +1,20 @@
+[
+ {
+  "recipient_id": "EIN:873325044",
+  "owned_by_larger": "yes",
+  "parent": "Thirty Madison (owner of Nurx)",
+  "parent_hq_state": "NY",
+  "emp_bucket": "500-4999",
+  "source": "https://www.propelpharmacy.com/about-us/",
+  "notes": "Propel is the fulfilling pharmacy in the Nurx telemedicine network and its site carries Nurx accreditation text, and Nurx opened a Dublin closed-door pharmacy in 2022 after merging into Thirty Madison; direct ownership and parent headcount are inferred, not confirmed."
+ },
+ {
+  "recipient_id": "EIN:341834239",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No company website, news item, or JobsOhio release found for the Westlake coatings firm, so ownership could not be judged."
+ }
+]

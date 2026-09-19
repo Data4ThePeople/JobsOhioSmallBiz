@@ -106,5 +106,59 @@
   "emp_bucket": "",
   "source": "https://www.jobsohio.com/newsroom/news-press/powerbuilt-material-handling-solutions-expands-headquarters-in-ohio",
   "notes": "JobsOhio describes PowerBuilt as founded in 2000 by Rick Hauck and headquartered in Bellefontaine, and no parent or sale turned up."
+ },
+ {
+  "recipient_id": "EIN:341965647",
+  "owned_by_larger": "yes",
+  "parent": "Heidtman Steel Products, Inc.",
+  "parent_hq_state": "OH",
+  "emp_bucket": "500-4999",
+  "source": "https://www.heidtman.com/history",
+  "notes": "Heidtman Steel of Toledo says it invested in Fulton County Processing in 2005 and lists the Delta plant as one of its locations; Heidtman's own plans show roughly 1,000 participants, though the size of its stake before FCP took the Heidtman name around 2023 is not stated."
+ },
+ {
+  "recipient_id": "EIN:341715965",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.rimecoproducts.com/",
+  "notes": "Rimeco Products calls itself a family-owned CNC machine shop near Cleveland, run by the Ribic family."
+ },
+ {
+  "recipient_id": "EIN:273889959",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.channele2e.com/post/it-consulting-firm-ingage-partners-transitions-to-esop",
+  "notes": "Ingage Partners, a Cincinnati IT consulting firm, became owned by its employees through an ESOP in 2018 and no outside parent turned up."
+ },
+ {
+  "recipient_id": "EIN:341848737",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.sciotopost.com/ohio-attorney-general-dave-yost-tours-riffle-machine-works-in-chillicothe/",
+  "notes": "Riffle Machine Works is a family-founded Chillicothe supplier to Kenworth, founded in 1980, and no parent company turned up."
+ },
+ {
+  "recipient_id": "EIN:311274364",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://hitconsultant.net/2017/07/07/telehealth-monitoring-provider-vri-acquires-healthcom/",
+  "notes": "VRI of Franklin, Ohio was itself the operating platform, owned by private-equity firm Pamlico Capital, through fiscal 2021; ModivCare announced its purchase in August 2021, after that fiscal year ended."
+ },
+ {
+  "recipient_id": "EIN:310914553",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.lakeshore.com/about",
+  "notes": "Lake Shore Cryotronics was family-owned by the Swartz founders' company through fiscal 2024; Arcline-backed DwyerOmega bought it in June 2026, well after the grant year."
  }
 ]
