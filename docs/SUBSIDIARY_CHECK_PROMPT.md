@@ -35,6 +35,8 @@ group, a family holding company elsewhere), fill `parent` and
 `parent_hq_state` even when `owned_by_larger` is `no`, and give its size in
 `emp_bucket` if known. Headquarters is judged at the parent, so a small
 Ohio plant of a 300-person French company is small but not Ohio-headquartered.
+A private-equity fund is never the parent: report the operating group or
+platform the fund owns, and that group's headquarters and size.
 
 Output: a JSON list, one object per input recipient, with exactly these keys:
 
