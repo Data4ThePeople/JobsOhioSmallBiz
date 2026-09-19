@@ -1,0 +1,67 @@
+[
+ {
+  "recipient_id": "EIN:311398219",
+  "recipient_class": "business",
+  "parent": "Geiger Excavating, Inc.",
+  "parent_hq_state": "OH",
+  "hq_source": "https://www.geigerexcavating.com/",
+  "emp_bucket": "<100",
+  "emp_source": "https://www.geigerexcavating.com/",
+  "emp_asof": "2016",
+  "confidence": "C",
+  "founded_in_ohio": "unknown",
+  "notes": "Independent Gahanna excavating contractor with its own site (confirmed live); no employee count published anywhere found. Only signal is a Revitalization Grant Phase II award, so the small bucket is a best guess for a local contractor."
+ },
+ {
+  "recipient_id": "EIN:204718296",
+  "recipient_class": "business",
+  "parent": "Al. Neyer, LLC (renamed Merus in 2022)",
+  "parent_hq_state": "OH",
+  "hq_source": "Cincinnati Business Courier via Google News: \"A 130-year old Cincinnati development company takes a new name\"",
+  "emp_bucket": "100-499",
+  "emp_source": "Cincinnati Enquirer: \"Al. Neyer to become employee owned\"",
+  "emp_asof": "2017",
+  "confidence": "C",
+  "founded_in_ohio": "yes",
+  "notes": "Cincinnati commercial real estate developer/builder, independent and employee-owned (became an ESOP), renamed Merus in 2022; press calls it a 130-year-old Cincinnati company. No exact headcount found, so the bucket is inferred from its regional-developer scale."
+ },
+ {
+  "recipient_id": "EIN:815322241",
+  "recipient_class": "business",
+  "parent": "H2W Consulting LLC",
+  "parent_hq_state": "OH",
+  "hq_source": "JobsOhio recipient record lists Columbus, OH; no independent source found",
+  "emp_bucket": "<100",
+  "emp_source": "none found",
+  "emp_asof": "2017",
+  "confidence": "D",
+  "founded_in_ohio": "unknown",
+  "notes": "No working company website, EDGAR filing, news coverage, or Form 5500 record found for this Columbus consulting LLC despite multiple searches. Defaulting to a small independent business given the total absence of a size signal."
+ },
+ {
+  "recipient_id": "EIN:611346414",
+  "recipient_class": "business",
+  "parent": "Divisions, Inc. (Divisions Maintenance Group)",
+  "parent_hq_state": "OH",
+  "hq_source": "WCPO 9 News via Google News: \"Divisions Maintenance Group: Cincinnati claims HQ from Newport in big jobs win\"",
+  "emp_bucket": "500-4999",
+  "emp_source": "Form 5500 participant count for Divisions, Inc.'s plan",
+  "emp_asof": "2023",
+  "confidence": "B",
+  "founded_in_ohio": "unknown",
+  "notes": "Facilities-maintenance company that consolidated its HQ in Cincinnati (moved from Newport, KY) and has been adding 100+ jobs per Business Journals coverage. Form 5500 participants grew from 111 (2015) to 813 (2023), consistent with several hundred to low-thousands employees."
+ },
+ {
+  "recipient_id": "EIN:760795388",
+  "recipient_class": "business",
+  "parent": "Nexus Engineering Group, LLC",
+  "parent_hq_state": "OH",
+  "hq_source": "Crain's Cleveland Business via Google News: \"Nexus Engineering set to double its footprint and increase local hiring\"",
+  "emp_bucket": "100-499",
+  "emp_source": "Form 5500 participant count (244 in 2023) and JobsOhio jobs_retained_max of 125",
+  "emp_asof": "2023",
+  "confidence": "B",
+  "founded_in_ohio": "unknown",
+  "notes": "Cleveland-based independent engineering firm expanding regionally (Crain's, Business Journals coverage); no acquirer found. Form 5500 participants grew from 75 (2015) to 244 (2023), and JobsOhio lists 125 jobs retained at the Ohio site."
+ }
+]
