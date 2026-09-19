@@ -196,5 +196,32 @@
   "emp_bucket": "",
   "source": "https://www.napoleonmachine.com/about",
   "notes": "Site says the shop is family-owned, with president Kevin Febrey taking full ownership in 2018."
+ },
+ {
+  "recipient_id": "EIN:200027233",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.wkbn.com/obituaries/keith-dunbar-warren-ohio/",
+  "notes": "Warren automotive firm co-founded by local businessman Keith Dunbar per his 2025 obituary; no company site or parent company found."
+ },
+ {
+  "recipient_id": "EIN:820515535",
+  "owned_by_larger": "yes",
+  "parent": "Lakeside Foods, Inc. (joint venture with Interstate Food Processing Corp.)",
+  "parent_hq_state": "WI",
+  "emp_bucket": "500-4999",
+  "source": "https://www.relexsolutions.com/resources/peak-foods/",
+  "notes": "RELEX case study says Peak Foods is a joint venture of Wisconsin-based Lakeside Foods and Interstate Food Processing Corp. of Boise; JV shares and headcounts not confirmed, bucket estimated from Lakeside's size."
+ },
+ {
+  "recipient_id": "EIN:341148853",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://polymericsinc.com/pdf/RPN_20140224-Polymerics.pdf",
+  "notes": "A 2014 Rubber & Plastics News profile on the company site says the Samples family founded and runs Polymerics; its China plant is its own joint venture, and no later sale was found."
  }
 ]

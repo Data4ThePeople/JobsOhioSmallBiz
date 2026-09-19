@@ -207,6 +207,33 @@
   "notes": "Fraser, Michigan machining firm covered by Crain's Detroit as a growing independent shop; no parent company found and its site did not load."
  },
  {
+  "recipient_id": "EIN:341871890",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Warren embroidery shop covered by Business Journal Daily for a 2022 building purchase with no parent named; no parent company found."
+ },
+ {
+  "recipient_id": "EIN:341786803",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No company site or news found for Dana White Machining and Welding of Nova, so ownership could not be checked."
+ },
+ {
+  "recipient_id": "EIN:455425838",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Dayton security integrator Copp Systems is owned and run by CEO Bill DeFries per Dayton Business Journal profiles; no parent found."
+ },
+ {
   "recipient_id": "EIN:454388819",
   "owned_by_larger": "yes",
   "parent": "Dewesoft d.o.o.",
@@ -214,5 +241,32 @@
   "emp_bucket": "",
   "source": "https://www.dewesoft.com/careers",
   "notes": "Dewesoft USA is the largest subsidiary of employee-owned Dewesoft d.o.o. of Trbovlje, Slovenia; group headcount not found, so size is unconfirmed."
+ },
+ {
+  "recipient_id": "EIN:475137261",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Glouster coffee roaster profiled in 2018 and 2023 news as a founder-run social enterprise; no parent company found."
+ },
+ {
+  "recipient_id": "EIN:822566679",
+  "owned_by_larger": "unknown",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "No working company site or news found for Eminent Global Solutions of Cleveland, so ownership could not be checked."
+ },
+ {
+  "recipient_id": "EIN:473360682",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Cleveland maker operating as Burning River Foods Co. (home of Erie Bone Broth), a small co-packer; site and news name no parent company."
  }
 ]

@@ -37,6 +37,12 @@ def main(files):
                          emp_bucket=x["emp_bucket"], confidence="C" if weak else "B", hq_source=x["source"], emp_source=x["source"])
                 r["notes"] += f" Subsidiary check: owned by {x['parent'].strip()}; rule result replaced. {x.get('notes', '')}".rstrip()
                 moved += 1
+            elif ans == "yes" and x.get("parent") and x.get("parent_hq_state") and x.get("source"):
+                # owned by another company whose size could not be confirmed: keep the
+                # size bucket, take the parent's home state, grade C
+                r.update(parent=x["parent"].strip(), parent_hq_state=x["parent_hq_state"].strip(), hq_source=x["source"], confidence="C")
+                r["notes"] += f" Subsidiary check: owned by {x['parent'].strip()}, size unconfirmed; bucket kept, home state set to the parent's. {x.get('notes', '')}".rstrip()
+                rehomed.append(r["name"])
             elif ans == "no" and x.get("parent") and x.get("parent_hq_state") and x.get("source") \
                     and x["parent"].strip().lower() != r["name"].strip().lower():
                 # owned by a smaller group: size stays small, home state moves to the parent's

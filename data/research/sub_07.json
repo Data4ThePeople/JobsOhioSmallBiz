@@ -25,5 +25,41 @@
   "emp_bucket": "",
   "source": "",
   "notes": "No parent found for the Norwalk/Huron manufacturer; the only related news is a 2025 insolvency filing by Goodlevel Enterprises Canada ULC, which looks like an affiliate rather than an owner."
+ },
+ {
+  "recipient_id": "EIN:824027022",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "Small Euclid composites shop; its only news mention is a 2023 Crain's story on LEFCO Worthington's employee buyout, and no parent was found."
+ },
+ {
+  "recipient_id": "EIN:743254340",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.kurense.com/",
+  "notes": "Innovative Card Solutions does business as Kurense, a small Cincinnati prepaid-card fintech; its site and a 2021 Business Journals profile show no parent."
+ },
+ {
+  "recipient_id": "EIN:471351569",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "https://www.lionaenterprises.com/",
+  "notes": "Cincinnati IT firm founded and run by Michelle Morales-Denisoff (Enquirer 2020, Business Journals 2026); a 2023 Paycor deal was an alliance, not an ownership stake."
+ },
+ {
+  "recipient_id": "EIN:473375885",
+  "owned_by_larger": "no",
+  "parent": "",
+  "parent_hq_state": "",
+  "emp_bucket": "",
+  "source": "",
+  "notes": "One-job Jackson, Ohio food business with no news coverage and a site that blocks automated reads; nothing points to a parent."
  }
 ]
