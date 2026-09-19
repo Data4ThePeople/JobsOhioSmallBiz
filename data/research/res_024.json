@@ -1,0 +1,93 @@
+[
+ {
+  "recipient_id": "EIN:842948886",
+  "recipient_class": "business",
+  "parent": "Dansons US LLC",
+  "parent_hq_state": "AZ",
+  "hq_source": "https://www.jobsohio.com/newsroom/news-press/dansons-peebles-invests-in-ohio-to-utilize-abundant-available-local-talent-and-wood-materials; https://www.cbinsights.com/company/dansons",
+  "emp_bucket": "500-4999",
+  "emp_source": "https://cookoutnews.com/char-broils-parent-company-acquires-dansons-pit-boss-louisiana-grills/ (no headcount found)",
+  "emp_asof": "2023",
+  "confidence": "D",
+  "founded_in_ohio": "no",
+  "notes": "JobsOhio names Dansons US LLC (Pit Boss grills, Arizona) as parent of the Peebles pellet plant; W. C. Bradley Co. of Columbus, Georgia bought Dansons effective June 7, 2023, at the very end of FY2023. No worldwide headcount was found on the company site, CB Insights, Wikipedia or news, so the bucket is a guess from its multi-plant footprint."
+ },
+ {
+  "recipient_id": "EIN:341174227",
+  "recipient_class": "business",
+  "parent": "Prentke Romich Company dba PRC-Saltillo (self)",
+  "parent_hq_state": "OH",
+  "hq_source": "https://www.jobsohio.com/newsroom/news-press/prc-saltillo-expands-its-operations-in-northeast-ohio",
+  "emp_bucket": "100-499",
+  "emp_source": "Form 5500 sponsor PRC-Saltillo: f5500_participants_2019=288, 2023=396; JobsOhio metrics jobs retained 202",
+  "emp_asof": "2021",
+  "confidence": "B",
+  "founded_in_ohio": "unknown",
+  "notes": "PRC-Saltillo is a privately held Wooster maker of speech devices; JobsOhio lists 202 retained jobs in its metrics and 226 in a 2025 release. Form 5500 counts of 288 (2019) and 396 (2023) put it under 500, though its later acquisitions (Avaz, Therapy Box) postdate the 2021 grant."
+ },
+ {
+  "recipient_id": "EIN:222451241",
+  "recipient_class": "business",
+  "parent": "Meridienne International, Inc. (self)",
+  "parent_hq_state": "OH",
+  "hq_source": "https://www.bizapedia.com/oh/meridienne-international-inc.html",
+  "emp_bucket": "<100",
+  "emp_source": "Form 5500 sponsor Meridienne International Inc (OH): f5500_participants_2015=18, 2019=32; JobsOhio metrics jobs retained 20",
+  "emp_asof": "2019",
+  "confidence": "C",
+  "founded_in_ohio": "unknown",
+  "notes": "Form 5500 shows 18 to 32 plan participants and JobsOhio lists 20 retained jobs for this Aurora manufacturer, registered in Ohio with a Chagrin Falls address. No company website, news story, or sign of a corporate parent was found."
+ },
+ {
+  "recipient_id": "EIN:646016768",
+  "recipient_class": "business",
+  "parent": "LT Corporation (parent of Quality Steel Corporation)",
+  "parent_hq_state": "MS",
+  "hq_source": "https://manufacturing-today.com/news/quality-steel-corporation/",
+  "emp_bucket": "100-499",
+  "emp_source": "https://manufacturing-today.com/news/quality-steel-corporation/",
+  "emp_asof": "2021",
+  "confidence": "B",
+  "founded_in_ohio": "no",
+  "notes": "A February 2021 trade profile says Quality Steel, a subsidiary of family- and employee-owned LT Corporation founded in 1957 in Cleveland, Mississippi, runs six plants in four states with a little over 400 employees. The Fremont plant (former American Welding & Tank) retained 164 jobs per the News-Messenger and JobsOhio."
+ },
+ {
+  "recipient_id": "EIN:311585233",
+  "recipient_class": "business",
+  "parent": "Worthington Industries, Inc.",
+  "parent_hq_state": "OH",
+  "hq_source": "https://www.sec.gov/Archives/edgar/data/108516/000156459021039550/wor-10k_20210531.htm",
+  "emp_bucket": "5000+",
+  "emp_source": "https://www.sec.gov/Archives/edgar/data/108516/000156459021039550/wor-10k_20210531.htm",
+  "emp_asof": "2021",
+  "confidence": "A",
+  "founded_in_ohio": "unknown",
+  "notes": "The FY2021 10-K reports about 9,000 employees as of May 31, 2021 (including unconsolidated joint ventures) and names The Worthington Steel Company's Delta, Ohio facility. Worthington Steel was spun off as a separate public company in December 2023, after the grant year."
+ },
+ {
+  "recipient_id": "EIN:611853400",
+  "recipient_class": "business",
+  "parent": "AVT Beckett Elevators (AVT Beckett, Pickering, Ontario)",
+  "parent_hq_state": "Canada",
+  "hq_source": "https://www.athensmessenger.com/news/avt-beckett-elevators-relocates-manufacturing-facility-to-logan/article_54d1e174-5e08-11ee-ae16-ef209d8d1346.html",
+  "emp_bucket": "100-499",
+  "emp_source": "https://www.avtbeckett.com/about-us (three plants, no headcount)",
+  "emp_asof": "2023",
+  "confidence": "D",
+  "founded_in_ohio": "no",
+  "notes": "AVT Beckett, based in Pickering, Ontario, moved its Memphis plant to Logan in 2023 with at least 20 initial jobs; the company site lists three North American plants but no headcount. The bucket is a guess, and the US entity's Form 5500 shows only 2 participants in 2023."
+ },
+ {
+  "recipient_id": "EIN:871421992",
+  "recipient_class": "site_development",
+  "parent": "Unknown (10600 Evendale Drive LLC, Blue Ash real-estate entity)",
+  "parent_hq_state": "OH",
+  "hq_source": "https://www.bizapedia.com/oh/10600-evendale-drive-llc.html",
+  "emp_bucket": "<100",
+  "emp_source": "none found; JobsOhio 990 Schedule I lists mailing address 5000 Creek Road, Blue Ash",
+  "emp_asof": "2022",
+  "confidence": "D",
+  "founded_in_ohio": "unknown",
+  "notes": "An address-named LLC formed around 2021 with no JobsOhio project record; the property geocodes to Evendale Drive in Evendale/Sharonville. JobsOhio's sitemap, Google News, OpenStreetMap and registry pages did not name the operating company or developer behind it."
+ }
+]
