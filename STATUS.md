@@ -33,7 +33,17 @@ None.
   was never built; Chapter 7 filed November 3, 2025). Open question to answer
   before publishing: does Ohio get the money back?
 - Also there: $26.0M in reversed grants; foreign-owned units inside the
-  small-business Inclusion Grant.
+  small-business Inclusion Grant; the Breeze and other air-service routes
+  checked against DOT flight data; Intel's $124.4M with the plant now due
+  2031; JPMorgan's 75 promised jobs at Otterbein's The Point.
+- Eric asked (Sept 22, 2026) to be reminded to write about **Supply Line
+  International Medical**: $1,612,500 on the FY2020 grants schedule to a
+  Michigan distributor of syringes, gloves and COVID tests, with no JobsOhio
+  project record, while JobsOhio was buying PPE. Lead 8 in
+  `docs/STORY_LEADS.md`. No board connection found; JobsOhio disclosed no
+  insider transactions that year (no Schedule L). Open: ask JobsOhio grant or
+  purchase; check the state checkbook; run a board-conflict check across all
+  years.
 
 ## Log
 

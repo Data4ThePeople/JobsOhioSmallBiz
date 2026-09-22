@@ -284,3 +284,25 @@ matching entry in JobsOhio's own monthly project reports. Part of that is
 programs the monthly reports never cover (air service grants are absent
 entirely). The rest is unexplained: the two public records JobsOhio publishes
 about its grants do not reconcile.
+
+### Board connections checked (lead 8 follow-up)
+
+JobsOhio's FY2020 return lists the board as chairman Robert C. Smith, with
+Jerry Sue Thornton, Lester Lyles, John Bishop (secretary from Sept 2019),
+Rick Platt, Scott Sullivan, Tom Williams, William Batchelder, Stephen
+Markovich (through July 2019) and Lawrence Kidd (through July 2019), plus
+president J.P. Nauseef as a director. The return has **no Schedule L**, so
+JobsOhio disclosed no transactions with interested persons that year. No
+public record ties any of them to Supply Line International Medical, and the
+company has no SEC filings.
+
+The one documented account of how JobsOhio chose PPE vendors in spring 2020
+is the RB Sigma case (Cleveland.com, July 2022): consultant Bobby Ina said he
+connected the Mentor company to Michael Kiggin, a friend of Gov. DeWine who
+was helping JobsOhio find PPE sources. Whether Supply Line arrived the same
+way is unknown.
+
+Still to do: Michigan and Ohio business registries (officers, any Ohio
+registration) and the Ohio checkbook (did the state buy from the same
+company) both blocked automated access; and a systematic check of every
+JobsOhio director, year by year, against the recipient list.
