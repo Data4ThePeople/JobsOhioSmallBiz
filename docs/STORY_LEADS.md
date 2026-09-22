@@ -249,3 +249,38 @@ June 2026 (`data/air_service_routes.csv`).
   were on site at the end of 2025.
 - Related coverage: Ohio Capital Journal, August 7, 2026, JobsOhio's chairman
   lobbying for Intel.
+
+---
+
+## 8. What is on the grant schedule that may not be a grant
+
+**Supply Line International Medical LLC, $1,612,500, FY2020.** Listed on
+Schedule I (the grants schedule) with the purpose "Economic development,"
+payee address 42350 Grand River Avenue, Novi, Michigan, EIN 35-2487058.
+
+- Crain's Detroit: SLI Medical, founded 2013 in Novi, "sells syringes, gloves,
+  COVID-19 tests and other equipment"; put into receivership September 2025
+  over $23 million in unpaid loans (JPMorgan Chase, Oxford Bank, Comerica); a
+  judge ruled in June 2026 that it defrauded lenders. Co-founder Joshua Kaplan
+  filed personal Chapter 7 in August 2025.
+  (https://www.crainsdetroit.com/manufacturing/supply-line-international-medical-llc-put-receivership/)
+- No JobsOhio project report entry, no press release, no Ohio facility found.
+  By contrast STERIS's $1,600,000 payment in the same year matches a December
+  2018 grant agreement in JobsOhio's monthly reports.
+- JobsOhio was buying medical supplies at the time: its 2020 annual report
+  describes procuring PPE, "$250M assessed, validated, negotiated, and in some
+  cases rapidly procured," and "over 50 million units."
+- Against that reading: JobsOhio's known $21 million PPE contract with RB Sigma
+  of Mentor, Ohio (Cleveland.com, July 2022, in a suit by consultant Bobby Ina
+  over a $2 million fee) does **not** appear on Schedule I, so purchases were
+  not routinely reported there.
+
+**Ask JobsOhio:** was this a grant? Under which program, and for what Ohio
+project? If it was a purchase of test kits or PPE, why is it on the grants
+schedule?
+
+**The wider gap.** 46 payments of $250,000 or more in FY2020-21 have no
+matching entry in JobsOhio's own monthly project reports. Part of that is
+programs the monthly reports never cover (air service grants are absent
+entirely). The rest is unexplained: the two public records JobsOhio publishes
+about its grants do not reconcile.
