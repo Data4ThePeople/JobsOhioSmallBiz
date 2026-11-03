@@ -141,12 +141,24 @@ July 1, 2023 to June 30, 2024. Grant dates within the year are not given.
   totals are net of reversals; a parent is counted as a recipient only if its
   net payment is above zero. Whether a reversal is a performance clawback or
   an accounting correction is not stated on the form.
-- *The state code can be wrong.* In 15 rows the state abbreviation contradicts
-  the ZIP code and street address, 13 of them in FY2024: Barnesville, Paulding,
-  Marysville, Cambridge, Troy, Hillsboro, Northfield, Brooklyn Heights, Aurora
-  and Franklin are Ohio towns entered with another state's abbreviation
-  (Franklin, Ohio was filed as Franklin, TN), and Boston, Massachusetts was
-  filed as Ohio. Ohio ZIP codes run 430 to 459, which is how these were found.
+- *The state code can be wrong,* and the errors fall into two patterns. In 15
+  rows the state abbreviation contradicts the ZIP code. Ohio ZIP codes run 430
+  to 459, which is how they were found.
+
+  Thirteen are in FY2024 alone and twelve of those are the same mistake: an
+  Ohio town whose name also exists in another state, entered with that other
+  state's abbreviation while the ZIP stayed Ohio. Cambridge filed as MA, Troy
+  as MI, Northfield as IL, Hillsboro as OR, Marysville as PA, Aurora as CO,
+  Barnesville and Paulding as GA, Brooklyn Heights as NY, Franklin as TN,
+  Trenton and Dayton as NJ. The thirteenth runs the other way: American Craft
+  Brewery (Samuel Adams) in Boston, Massachusetts, ZIP 02210, filed as Ohio.
+  The shape of it suggests a city-name lookup that picked the wrong state, and
+  it is confined to one filing year.
+
+  The other two, Arconic in FY2017 and FY2019, are a different error: city and
+  state are the Pittsburgh headquarters while the ZIP, 44105, is the Cleveland
+  plant. Address fields in one row can refer to two different places.
+
   Home state is taken from researched parent headquarters rather than this
   field, so three classifications had inherited the error and were corrected.
 - *Case and punctuation vary* across years for the same recipient
