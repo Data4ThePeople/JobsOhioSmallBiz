@@ -141,6 +141,14 @@ July 1, 2023 to June 30, 2024. Grant dates within the year are not given.
   totals are net of reversals; a parent is counted as a recipient only if its
   net payment is above zero. Whether a reversal is a performance clawback or
   an accounting correction is not stated on the form.
+- *The state code can be wrong.* In 15 rows the state abbreviation contradicts
+  the ZIP code and street address, 13 of them in FY2024: Barnesville, Paulding,
+  Marysville, Cambridge, Troy, Hillsboro, Northfield, Brooklyn Heights, Aurora
+  and Franklin are Ohio towns entered with another state's abbreviation
+  (Franklin, Ohio was filed as Franklin, TN), and Boston, Massachusetts was
+  filed as Ohio. Ohio ZIP codes run 430 to 459, which is how these were found.
+  Home state is taken from researched parent headquarters rather than this
+  field, so three classifications had inherited the error and were corrected.
 - *Case and punctuation vary* across years for the same recipient
   ("Company, Inc." vs "COMPANY INC"). Dedupe by EIN first, then normalized name.
 
