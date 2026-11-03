@@ -92,13 +92,20 @@ def main():
             "recipient": p["name"] if p else "", "parent": (p or {}).get("parent", ""),
             "paid": (p or {}).get("total_cash", ""), "grant_years": (p or {}).get("years", ""),
             "matched_how": how,
-            "agreement": d.get("agreement", ""), "program": d.get("program", ""),
+            "agreement": d.get("agreement", ""), "agreement_date": d.get("agreement_date", ""),
+            "program": d.get("program", ""),
             "amount_sought": d.get("amount_sought", ""),
-            "job_commitments": d.get("job_commitments", "")[:200],
-            "repayment_quote": d.get("repayment_quote", "")[:400],
-            "outcome": d.get("outcome", ""), "amount_recovered": d.get("amount_recovered", ""),
+            "job_commitments": str(d.get("job_commitments", ""))[:300],
+            "shortfall": str(d.get("shortfall", ""))[:300],
+            "repayment_quote": str(d.get("repayment_quote", ""))[:600],
+            "remedy_named": d.get("remedy_named", ""),
+            "agreement_is_exhibit": d.get("agreement_is_exhibit", ""),
+            "outcome": str(d.get("outcome", ""))[:200], "outcome_date": d.get("outcome_date", ""),
+            "amount_recovered": str(d.get("amount_recovered", ""))[:200],
+            "confidence": d.get("confidence", ""),
             "docket_read": "yes" if d else "",
-            "notes": d.get("notes", "")[:300],
+            "source": str(d.get("source", ""))[:300],
+            "notes": str(d.get("notes", ""))[:600],
         })
 
     rows.sort(key=lambda r: (r["year"], r["filed"][:5]))
@@ -117,6 +124,44 @@ def main():
     for y, n in sorted(Counter(r["year"] for r in suits).items()):
         m = [r for r in matched if r["year"] == y]
         print(f"{y:6s} {n:6d} {len(m):16d} {sum(int(r['paid'] or 0) for r in m):15,}")
+    read_rows = [r for r in suits if r["docket_read"]]
+    if read_rows:
+        quoted = [r for r in read_rows if r["repayment_quote"]]
+        attached = [r for r in read_rows if str(r["agreement_is_exhibit"]).lower().startswith(("y", "true"))]
+        # the `program` field is prose, and almost every entry says some form of
+        # "not named", so count only the ones that actually name a published
+        # program rather than trusting the absence of a negative word
+        PUBLISHED = ("economic development grant", "workforce grant", "revitalization",
+                     "research & development", "research and development", "inclusion grant",
+                     "small business grant", "site inventory", "osip", "air service",
+                     "growth fund", "vibrant community", "aerospace and defense",
+                     "talent acquisition", "talent attraction")
+        named = [r for r in read_rows
+                 if any(p in r["program"].lower() for p in PUBLISHED)
+                 and not any(neg in r["program"].lower()[:60]
+                             for neg in ("not named", "never names", "names no", "no jobsohio program"))]
+        amts = []
+        for r in read_rows:
+            m = re.search(r"\$\s*([\d,]+(?:\.\d{2})?)", r["amount_sought"] or "")
+            if m:
+                amts.append(float(m.group(1).replace(",", "")))
+        print(f"\nof the {len(read_rows)} dockets read:")
+        print(f"  {len(quoted)} complaints quote the agreement's repayment clause")
+        print(f"  {len(attached)} attach the agreement as an exhibit")
+        print(f"  {len(named)} name one of JobsOhio's 12 published programs")
+        if amts:
+            print(f"  amounts sought: ${min(amts):,.0f} to ${max(amts):,.0f}, total ${sum(amts):,.0f}")
+        outcomes = Counter()
+        for r in read_rows:
+            o = (r["outcome"] or "").lower()
+            outcomes["default judgment" if "default" in o else
+                     "dismissed" if "dismiss" in o else
+                     "agreed judgment" if "agreed" in o else
+                     "removed to federal court" if "remov" in o else
+                     "still pending" if "pend" in o or "active" in o else
+                     "other or not stated"] += 1
+        for k, n in outcomes.most_common():
+            print(f"  {n:3d} {k}")
     unmatched = sorted({r["defendant"] for r in suits if not r["recipient"]})
     print(f"\ndefendants with no Schedule I match ({len(unmatched)}), "
           f"either paid under another name or never over $5,000:")
