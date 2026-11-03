@@ -682,7 +682,106 @@ reconciles them. Do not assert they are the same money.
 how much has actually come back? Why are the agreements confidential when the
 guidelines are public? And will JobsOhio publish a sample agreement?
 
+### What 58 dockets show about how the clause is actually used
+
+Read at High confidence, every complaint and every terminating filing opened as
+a scanned PDF. 55 of 58 complaints block-quote the repayment clause and 54
+attach the whole signed agreement. Amounts sought run $16,724 to $1,250,000,
+$10.26 million so far. Outcomes: 30 dismissed, 20 default judgments, 1 agreed
+judgment, 1 removed to federal court, 1 still pending.
+
+**Two courts have construed the clause, and they used different words for it.**
+
+- *JobsOhio v. MITEC Powertrain* (20CV004663). MITEC argued that enforcing the
+  clause "in the midst of a global pandemic, is unreasonable and a breach of
+  the implied duty to act in good faith." Judge Sheryl Munson: "Ohio law holds
+  that an implied duty of good faith cannot be used to prevent a party from
+  exercising remedies expressly afforded it under a contract," and the
+  agreement "clearly and unambiguously provided that Plaintiff may recover the
+  entire amount of the grant upon a breach."
+- *JobsOhio v. RM Biltrite* (25CV001115). Judge Carl A. Aveni, July 16, 2025:
+  "This repayment provision is enforceable as a liquidated damages clause,"
+  citing *State of Ohio Dept. of Dev. v. Matrix Centennial, L.L.C.*, 10th Dist.
+  Franklin No. 14AP-47, 2014-Ohio-3251, ¶ 21, which enforced "a materially
+  identical repayment provision in a grant agreement." So a court calls it
+  liquidated damages although the agreement never uses the phrase, and the
+  precedent predates most of these suits.
+
+**"All or a portion" works as an escalator, and that is the pattern to show.**
+JobsOhio demands part of the grant, the 30 days lapse, and the suit asks for
+all of it. Treves: demanded $50,000, sued for $200,000. Test-Fuchs: demanded
+$62,500, sued for $125,000. Kirtley Mold: demanded $25,000 twice, sued for
+$50,000. International Technical Coatings: demanded $100,000, sued and took
+judgment for $150,000, with the mechanism pleaded outright: the company
+"failed to pay the amount demanded ... thereby constituting a further breach
+... and JobsOhio is therefore entitled to recover the entire amount of its
+Grant." Union Metal: two letters for $200,000, then suit for $1,250,000.
+
+The nearest thing to a formula anywhere in the record is the Treves demand
+letter explaining its reduced figure: it "takes into account the number of
+jobs and payroll Grantee created, the total fixed assets invested in the
+Project, as well as the Market Conditions and Other Factors." Nothing
+published says how those are weighed. One amendment says it plainly:
+"**Notwithstanding the terms of this Agreement, Grantor has the discretion to
+determine compliance.**"
+
+**JobsOhio sues before it knows the numbers.** Five of ten complaints in one
+batch, and several in others, plead no performance figure at all: the breach is
+a missing Annual Report, or metrics missed "based upon information and belief."
+Two were filed before the metric evaluation date they complain of had arrived.
+Mike-Sell's Potato Chip was sued November 10, 2023 over a December 31, 2023
+evaluation date. Stonecrop Technologies was sued about six months early, won
+against by default, and garnished.
+
+**The worst performance figures that are on the record:** For-Tech created 0 of
+20 jobs, after JobsOhio had already amended the agreement to give it another
+year. Cleveland Cyclewerks 0 of 5 created and 0 of 5 retained. KDA 0 of 10.
+Kirtley Mold 1 of 10. Dedienne Aerospace "only created 1 new job with an
+associated payroll of $77,925.49, instead of the required 40 new jobs with an
+associated payroll of $2,000,000.00." Test-Fuchs 13 of 29. Sky Climber 19 of
+35. Treves 75 of 91.
+
+**How much came back is mostly not on the record.** Only a handful of dockets
+show a satisfaction of judgment, and none states the sum actually paid.
+Thirty cases ended in dismissal with no terms filed at all. One clerk financial
+entry does show money moving: in Stonecrop (21CV004075) a garnishment
+disbursement of $41,233.01 to "JOBSOHIO C/O R J MANN" on January 14, 2022,
+against a $40,000 judgment plus $1,025 in fees.
+
+**Three things that complicate the grant data itself.**
+
+- *Grantees get swapped inside one agreement.* Sky Climber's 2014 agreement was
+  with Precision Tower Products LLC; a 2016 amendment substituted Sky Climber
+  Fabricating into the same contract. A Form 990 row and a case caption can
+  carry different names for the same money.
+- *JobsOhio reaches past the grantee.* Recleim's parent was added on unjust
+  enrichment and took a second $510,000 judgment. Several agreements name a
+  related property company as "Grantee 2," jointly and severally liable, and
+  one amendment pulls in a third company as "Grantee Affiliate."
+- *A suit covers one agreement, not a company.* Keno Kozie took $40,000 in
+  FY2019 and $600,000 in FY2021; JobsOhio sued on the $40,000 only. A company
+  can be in court over one grant while another runs on.
+
+**Reimbursement really does hold money back.** JIT Packaging's agreement
+authorized $75,000 and only $16,724 was ever drawn, which is what JobsOhio sued
+for. Champlain's authorized $250,000, and the suit sought only the $108,375.03
+advanced outside the normal reimbursement process, which the company never
+documented. This is the strongest evidence for the point in lead 9 that
+reimbursement is a real constraint even where a jobs condition is not.
+
 ### One running the other way
 
 **Vet Mentor AI Inc. v. JobsOhio et al.**, 26CV006007, filed June 26, 2026,
 still active. Not yet read.
+
+### Still to settle before publishing
+
+- Four dockets are unread: 24CV008254, 21CV007238, 20CV000473, 26CV001965.
+- *JobsOhio v. Lateral Gig* (26CV005490): one reading found a judgment entered
+  at $25,000 against a complaint that pleaded $17,000 five times including the
+  prayer, with service only through the Secretary of State. A statement that a
+  judgment exceeded the pleading has to be exactly right, so it is being read a
+  second time independently. **Do not use it until that comes back.**
+- Whether the air service agreements carry Section 9(b)(ii) at all. No airline
+  is among the 63 defendants and the program publishes nothing, so the
+  generalization in lead 9 stops at the edge of that $10.07 million.

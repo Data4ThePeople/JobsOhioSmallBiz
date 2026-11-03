@@ -70,14 +70,22 @@ def main():
         # a match that could be two different companies is not a match
         return (list(uniq.values())[0], "distinctive words") if len(uniq) == 1 else (None, "")
 
-    # the docket readings, keyed by case number
-    read = {}
+    # The docket readings, keyed by case number. Several agents write these in
+    # parallel and one case has landed in two files before, so a second reading
+    # of the same case is a hard failure if it disagrees rather than a silent
+    # last-one-wins.
+    read, where = {}, {}
     for f in sorted(RES.glob("lawsuit_*.json")):
         if f.stem.endswith("_input"):
             continue
         for x in json.load(f.open()):
-            if x.get("case"):
-                read[x["case"].replace(" ", "").upper()] = x
+            case = (x.get("case") or "").replace(" ", "").upper()
+            if not case:
+                continue
+            if case in read and read[case] != x:
+                sys.exit(f"{case} read twice and the readings differ "
+                         f"({where[case]} vs {f.name}); settle it by hand")
+            read[case], where[case] = x, f.name
 
     rows = []
     for c in cases:
