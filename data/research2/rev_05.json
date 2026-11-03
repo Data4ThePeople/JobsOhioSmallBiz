@@ -46,5 +46,41 @@
   "parent": "Interstate Chemical Company, Inc. (2797 Freedland Road, Hermitage, Pennsylvania; privately held, founded 1968 by Albert R. Puntureri)",
   "source": "https://www.jobsohio.com/newsroom/ohio-success/alpont",
   "notes": "JobsOhio's own success story opens by calling Alpont LLC a Pennsylvania-based subsidiary of Interstate Chemical Company, and Interstate Chemical's own site lists Alpont Transportation LLC among its services and gives corporate headquarters in Hermitage, Pennsylvania, so the Oregon, Ohio methanol and sodium methylate plant is a Pennsylvania company's plant. Neither company publishes a headcount; the Small call is an inference from a privately held chemical distributor with 16 terminals and a fleet of about 200 trucks and trailers."
+ },
+ {
+  "company": "GG Brands Company LLC (The Gorilla Glue Company)",
+  "size": "Large",
+  "ohio_hq": "Yes",
+  "hq_where": "OH",
+  "employees_estimate": "about 530-700",
+  "employees_asof": "2022",
+  "confidence": "Medium",
+  "parent": "GG Brands Company LLC / The Gorilla Glue Company, Cincinnati, Ohio (family owned; no outside parent)",
+  "source": "https://www.gorillatough.com/about/",
+  "notes": "The company's own About page says The Gorilla Glue Company is based in Cincinnati, Ohio, and no filing or site text names a parent above GG Brands Company LLC, the Ohio entity that sponsors the retirement plan. JobsOhio's project report counts 529 jobs retained at the Ohio site in the 2022 grant year, which on its own is above the 500 line before the company's other locations are added, and Form 5500 participants rose from 208 in 2015 to 521 in 2019; no source states a worldwide headcount, so the figure is a band."
+ },
+ {
+  "company": "Nautic Partners (private equity)",
+  "size": "Small",
+  "ohio_hq": "Yes",
+  "hq_where": "OH",
+  "employees_estimate": "250-450",
+  "employees_asof": "2023",
+  "confidence": "Medium",
+  "parent": "Aurora Plastics, LLC (Aurora Material Solutions), 9280 Jefferson Street, Streetsboro, Ohio; Nautic Partners is the private equity owner, not the parent",
+  "source": "https://www.otpp.com/en-ca/about-us/news-and-insights/2021/wind-point-partners-and-ontario-teachers-announce-sale-of-aurora-plastics-to-nautic-partners/",
+  "notes": "The August 2021 sale announcement says Aurora Plastics was founded in 1997 and is headquartered in Streetsboro, Ohio, and Aurora's own About page gives the same Streetsboro address as its corporate and technical center. A private equity fund is not the parent, so the operating group Aurora Material Solutions is, and its home state is Ohio rather than Nautic's Rhode Island. Six plants by September 2022, 229 Form 5500 participants in 2023 and 68 jobs retained in Streetsboro all point below 500; no published headcount, so the range is an estimate."
+ },
+ {
+  "company": "Steelite International Ltd",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "United Kingdom",
+  "employees_estimate": "about 916 group-wide",
+  "employees_asof": "2023",
+  "confidence": "High",
+  "parent": "Steelite International Limited, Orme Street, Burslem, Stoke-on-Trent, England (Companies House no. 01697123)",
+  "source": "https://find-and-update.company-information.service.gov.uk/company/01697123/filing-history/MzQzNjM5MjIyNGFkaXF6a2N4/document?format=pdf&download=0",
+  "notes": "Steelite International Limited's consolidated accounts to 31 December 2023, filed at Companies House, report a monthly average of 916 persons employed by the group in 2023 and 808 in 2022, split 220 management and administration and 696 production. The registered office is Orme Street, Burslem, Stoke-on-Trent, and the grantee Steelite International USA Inc. of New Castle, Pennsylvania is the group's Americas arm, so the 2024 grant year parent is well above 500 and not Ohio-based."
  }
 ]

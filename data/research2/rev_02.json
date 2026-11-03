@@ -24,6 +24,18 @@
   "notes": "Hanon's own site reports more than 20,000 global employees and 50 manufacturing sites, with the company headquartered in Daejeon, South Korea. The US entity that received the grants, Hanon Systems USA LLC in Michigan, is a subsidiary; its Form 5500 plan alone held 548 participants in 2019."
  },
  {
+  "company": "Busche Performance Group",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "IN",
+  "employees_estimate": "nearly 1,500",
+  "employees_asof": "2018",
+  "confidence": "High",
+  "parent": "Busche Performance Group (Fort Wayne, IN)",
+  "source": "https://www.aftermarketnews.com/busche-performance-group-raises-150m-to-complete-capital-structure-fuel-growth-and-innovation/",
+  "notes": "AftermarketNews reported in 2018 that Busche Performance Group employs nearly 1,500 people in 16 facilities across Indiana, Ohio, Michigan and Alabama, with revenues approaching $400 million. The grantee NA Busche LLC and the group both carry the Fort Wayne, Indiana address, so the Ohio plants belong to an Indiana parent."
+ },
+ {
   "company": "Phoenix International S.p.A.",
   "size": "Large",
   "ohio_hq": "No",
@@ -34,6 +46,42 @@
   "parent": "Phoenix International S.p.A. (Verdello, Italy)",
   "source": "https://www.youngstowntool.com/about-us/",
   "notes": "Youngstown Tool & Die's own about page says the company was acquired in 2018 by Phoenix International S.p.A., headquartered in Verdello, Italy. Light Metal Age reported in June 2019 that Phoenix employs over 700 people across eight plants in Europe, the US and the Middle East; its private-equity owner Ambienta is not treated as the parent."
+ },
+ {
+  "company": "Pointe Ventures LLC",
+  "size": "Small",
+  "ohio_hq": "Yes",
+  "hq_where": "OH",
+  "employees_estimate": "not found",
+  "employees_asof": "",
+  "confidence": "Low",
+  "parent": "none found",
+  "source": "https://efts.sec.gov/LATEST/search-index?q=%22Pointe%20Ventures%22",
+  "notes": "Nothing was found for this Columbus LLC in SEC EDGAR full-text search, Google News RSS, the JobsOhio sitemap, or a company website search, and JobsOhio reports no project metrics for the row. The current small Ohio call is kept on the recipient's own Columbus address alone."
+ },
+ {
+  "company": "Fortner Upholstering, Inc.",
+  "size": "Small",
+  "ohio_hq": "Yes",
+  "hq_where": "OH",
+  "employees_estimate": "about 40",
+  "employees_asof": "2021",
+  "confidence": "High",
+  "parent": "none, independent family-owned",
+  "source": "https://www.fortnerinc.com/",
+  "notes": "Fortner's own site describes a fourth-generation, family-owned furniture and upholstery maker that has built everything in one Columbus, Ohio workshop since 1929, with no parent company. JobsOhio's project record for the Revitalization Grants reports 37 jobs retained, which caps the size."
+ },
+ {
+  "company": "Complete Filter Media LLC",
+  "size": "Small",
+  "ohio_hq": "Yes",
+  "hq_where": "OH",
+  "employees_estimate": "not found",
+  "employees_asof": "",
+  "confidence": "Low",
+  "parent": "none found",
+  "source": "https://efts.sec.gov/LATEST/search-index?q=%22Complete%20Filter%20Media%22",
+  "notes": "SEC EDGAR full-text search returns nothing, Google News RSS returns nothing for the company or for a filter-media plant in Lancaster, the JobsOhio sitemap has no release, and completefiltermedia.com now redirects to a parked lander page. The current small Ohio call is kept on the Lancaster address and the Revitalization Grant program alone."
  },
  {
   "company": "Groupe Treves",
@@ -70,5 +118,65 @@
   "parent": "Stanley Electric Co., Ltd. (Tokyo, Japan)",
   "source": "https://www.stanley.co.jp/e/company/outline.html",
   "notes": "Stanley Electric's own company profile gives a head office in Meguro-ku, Tokyo and 18,230 group employees as of March 2026, a figure that has been in the 16,000 to 18,000 band for years. Stanley Electric US Co Inc in London, Ohio is the grantee plant, and its own retirement plan held 996 participants in 2015."
+ },
+ {
+  "company": "Just4ConstructionCom, LLC",
+  "size": "Small",
+  "ohio_hq": "Yes",
+  "hq_where": "OH",
+  "employees_estimate": "not found",
+  "employees_asof": "",
+  "confidence": "Low",
+  "parent": "none found",
+  "source": "https://efts.sec.gov/LATEST/search-index?q=%22Just4Construction%22",
+  "notes": "SEC EDGAR full-text search, Google News RSS and the JobsOhio sitemap all return nothing for this Strongsville recipient, and the Wayback Machine shows just4construction.com was a parked GoDaddy page in the years around the 2019 grant, so it was never this company's site. The current small Ohio call is kept on the recipient address alone."
+ },
+ {
+  "company": "STAQ Pharma, Inc.",
+  "size": "Small",
+  "ohio_hq": "No",
+  "hq_where": "CO",
+  "employees_estimate": "under 250",
+  "employees_asof": "2023",
+  "confidence": "High",
+  "parent": "STAQ Pharma, Inc. (Denver, CO)",
+  "source": "https://www.sec.gov/Archives/edgar/data/1722397/000172239723000001/0001722397-23-000001-index.htm",
+  "notes": "STAQ Pharma's April 2023 Form D gives a Denver, Colorado address and a $20 million offering with $8.0 million sold, the profile of an independent venture-stage company with no parent. Its Ohio subsidiary STAQ Pharma of Ohio was still building out a plant toward a 300-job target, and the related Form 5500 plan held only 21 participants in 2019."
+ },
+ {
+  "company": "Zenni Optical, Inc.",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "CA",
+  "employees_estimate": "over 500",
+  "employees_asof": "2023",
+  "confidence": "Medium",
+  "parent": "Zenni Optical, Inc. (Novato, CA)",
+  "source": "https://www.visionmonday.com/latest-news/article/zenni-launches-fast-frame-to-ship-glasses-in-24-hours-or-less/",
+  "notes": "Trade coverage carries a Novato, California dateline for Zenni and says the company would employ more than 300 people at its Ohio location alone, on top of the California headquarters and its overseas lens production. No source gives a single worldwide headcount, so the figure above 500 is a judgment from those pieces."
+ },
+ {
+  "company": "T&C Rail Holdings, Inc.",
+  "size": "Small",
+  "ohio_hq": "Yes",
+  "hq_where": "OH",
+  "employees_estimate": "100-400",
+  "employees_asof": "2021",
+  "confidence": "Medium",
+  "parent": "T&C Rail Holdings, Inc., later Cathcart Rail and now Guardian Rail (Columbus, OH)",
+  "source": "https://www.guardianrail.com/about-guardian-rail/",
+  "notes": "The archived 2018 version of tcrailholdings.com shows T&C Rail Holdings doing business as Cathcart Rail Holdings, a rail services holding company whose operating unit was Bucyrus Railcar Repair, and the successor Guardian Rail site gives a Columbus, Ohio headquarters and a 2016 founding. Most of the growth to 10 repair shops and 40 running-repair locations came after the grant years, including the July 2022 purchase of The Andersons' railcar repair business, so the company was still small in 2018 and 2021; JobsOhio reports 40 jobs retained."
+ },
+ {
+  "company": "Fortuity Calling, LLC",
+  "size": "Small",
+  "ohio_hq": "Yes",
+  "hq_where": "OH",
+  "employees_estimate": "250-500",
+  "employees_asof": "2021",
+  "confidence": "Medium",
+  "parent": "none, independent",
+  "source": "https://www.fortuitycalling.com/our-center",
+  "notes": "Fortuity's own site shows a single 40,000 square foot, 600-seat contact center at 775 West Broad Street in Franklinton, Columbus, and names no parent company. Seat count is capacity rather than headcount, and the center was still filling up in the 2019 and 2021 grant years, so the staffing estimate stays a band below 500."
  }
 ]
