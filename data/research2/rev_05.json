@@ -82,5 +82,17 @@
   "parent": "Steelite International Limited, Orme Street, Burslem, Stoke-on-Trent, England (Companies House no. 01697123)",
   "source": "https://find-and-update.company-information.service.gov.uk/company/01697123/filing-history/MzQzNjM5MjIyNGFkaXF6a2N4/document?format=pdf&download=0",
   "notes": "Steelite International Limited's consolidated accounts to 31 December 2023, filed at Companies House, report a monthly average of 916 persons employed by the group in 2023 and 808 in 2022, split 220 management and administration and 696 production. The registered office is Orme Street, Burslem, Stoke-on-Trent, and the grantee Steelite International USA Inc. of New Castle, Pennsylvania is the group's Americas arm, so the 2024 grant year parent is well above 500 and not Ohio-based."
+ },
+ {
+  "company": "Borgers Group (Borgers SE & Co. KGaA)",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "Germany",
+  "employees_estimate": "about 7,100-7,600 group-wide",
+  "employees_asof": "2016-2018",
+  "confidence": "High",
+  "parent": "Borgers SE & Co. KGaA, Borgersstrasse 2-10, 46397 Bocholt, Germany (family owned)",
+  "source": "https://web.archive.org/web/20191118085423/http://www.borgers-group.com/de/unternehmen/borgers-gruppe/umsatz-und-mitarbeiter/",
+  "notes": "The group's own turnover-and-staff page, captured in 2019, charts group employees at 7,249 in 2016, 7,610 in 2017 and 7,097 in 2018, and gives the address as Borgersstrasse 2-10, Bocholt, Germany with sites in Germany, Belgium, England, Sweden, Spain, the Czech Republic, China and the United States. Borgers Ohio, Inc. in Norwalk was that group's U.S. plant through the 2016, 2017 and 2020 grant years; Autoneum of Switzerland only agreed to buy the Borgers automotive business in January 2023, after the grant years, so the parent for those years is the German group."
  }
 ]

@@ -22,7 +22,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 PARENTS = ROOT / "data" / "parents.csv"
 REVIEW = ROOT / "data" / "review_simple.csv"
-AGENTS = sorted((ROOT / "data" / "research2").glob("rev_*.json"))
+# the answer files only: rev_NN_input.json holds the questions, and reading it
+# would blank the answers
+AGENTS = sorted(f for f in (ROOT / "data" / "research2").glob("rev_*.json") if not f.stem.endswith("_input"))
 COLS = ["review_size", "review_hq", "review_employees", "review_asof",
         "review_confidence", "review_source", "review_by", "review_notes"]
 STATES = {"AL","AK","AZ","AR","CA","CO","CT","DE","FL","GA","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD",

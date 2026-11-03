@@ -72,6 +72,30 @@
   "notes": "Taiho Kogyo's own overseas-subsidiary page lists Taiho Corporation of America at 194 Heritage Drive, Tiffin, Ohio 44883, the grantee's address, and its company outline reports 4,089 consolidated employees against 1,885 at the parent alone. The Tiffin plant is the U.S. arm of a listed Japanese group, so the size and home state follow the parent."
  },
  {
+  "company": "Greenfield Products Incorporated",
+  "size": "Small",
+  "ohio_hq": "Yes",
+  "hq_where": "OH",
+  "employees_estimate": "45-100",
+  "employees_asof": "2020-2021",
+  "confidence": "Medium",
+  "parent": "Greenfield Products, Inc. (fourth-generation family manufacturer, Greenfield, Ohio)",
+  "source": "https://www.greenfieldfinishing.com/about",
+  "notes": "The Village of Greenfield's own industry list names Greenfield Products and Finishing at 1230 N. Washington St., Greenfield, Ohio, and that company's About page says Greenfield Finishing is the finishing division of Greenfield Products, Inc., a fourth-generation family manufacturer in Greenfield, Ohio, family-owned since 1959, whose first coating work was on marine products. The powder-coating and e-coat lines explain the JobsOhio Energy and Chemicals tag, and with 43 jobs retained, one Ohio site and no Form 5500 filing, the company stays well below 500; no headcount is published."
+ },
+ {
+  "company": "High Road Holdings LLC",
+  "size": "Small",
+  "ohio_hq": "Yes",
+  "hq_where": "OH",
+  "employees_estimate": "150-300",
+  "employees_asof": "2021-2024",
+  "confidence": "Medium",
+  "parent": "High Road Holdings LLC (Cincinnati; co-founder Brian Graves, co-founder Jacquie Denny and an investment syndicate)",
+  "source": "https://www.wcpo.com/money/local-business-news/co-founder-brian-graves-regains-control-of-everything-but-the-house",
+  "notes": "WCPO reported in August 2019 that Everything But The House co-founder Brian Graves bought the online estate-sale company's assets for $3.5 million through his company High Road Holdings LLC, after EBTH Inc. entered an assignment for the benefit of creditors, and that about 230 Cincinnati jobs were at stake. That matches the 2019-vintage EIN and the Cincinnati address on the grant record, and EBTH still operates from Blue Ash, so the parent is High Road Holdings itself, an investor syndicate rather than a private-equity fund, and the business has stayed far below 500."
+ },
+ {
   "company": "StandardAero, Inc.",
   "size": "Large",
   "ohio_hq": "No",
@@ -82,6 +106,18 @@
   "parent": "StandardAero, Inc. (Scottsdale, Arizona; majority-owned by Carlyle Group funds during the grant years, publicly traded as NYSE: SARO since October 2024)",
   "source": "https://www.sec.gov/Archives/edgar/data/2025410/000095017025037939/saro-20241231.htm",
   "notes": "The Cincinnati grantee, StandardAero Component Services, is a unit of StandardAero, Inc., whose 10-K reports about 7,700 employees worldwide at the end of 2024 and about 7,300 at the end of 2023, and whose business address is 6710 North Scottsdale Road, Scottsdale, Arizona. Carlyle held majority ownership across the 2017, 2021 and 2022 grant years, and a private-equity fund is not counted as the parent, so the parent is StandardAero itself."
+ },
+ {
+  "company": "Songs at the Center",
+  "size": "Small",
+  "ohio_hq": "Yes",
+  "hq_where": "OH",
+  "employees_estimate": "fewer than 10",
+  "employees_asof": "2020",
+  "confidence": "Medium",
+  "parent": "None; the series is created, hosted and run by Eric Gnezda in central Ohio",
+  "source": "https://www.songsatthecenter.tv/about",
+  "notes": "The official site shows Songs at the Center is a public-television songwriter interview and performance series created and hosted by Eric Gnezda, taped before a live audience in central Ohio and distributed through NETA, with The James at Ohio State as its single named sponsor. It is a one-host production with no corporate parent and no payroll of any size, which matches the absence of any JobsOhio project metrics or Form 5500 filing for the EIN."
  },
  {
   "company": "Bright Innovation Labs (Aterian Investment Partners)",
@@ -130,5 +166,17 @@
   "parent": "Selman & Company, LLC (privately held; David L. Selman, managing director)",
   "source": "https://www.selmanco.com/about-us/history/",
   "notes": "SelmanCo's own site says it is one of the largest privately held U.S. life and supplemental health insurance administration firms and that its workforce of 200 professionals is headquartered in Cleveland, Ohio at One Integrity Parkway, the Richmond Heights address on the grant record, with offices in Keene, New Hampshire and Baltimore. No parent company appears anywhere on the site and a Selman family member still runs it, which matches JobsOhio's 125 jobs retained."
+ },
+ {
+  "company": "OMEC Smart Card, LLC",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "China",
+  "employees_estimate": "over 500 group-wide; 200 Ohio jobs committed",
+  "employees_asof": "2020-2021",
+  "confidence": "High",
+  "parent": "OMEC, founded 1994 and based in Shanghai, China, in the grant year; the Strongsville plant was its first North American facility",
+  "source": "https://www.jobsohio.com/newsroom/news-press/international-smart-card-manufacturing-company-to-open-first-north-american-facility",
+  "notes": "JobsOhio's own October 2020 release says OMEC Smart Card, LLC of Strongsville is the first North American facility of OMEC, founded in 1994 and based in Shanghai, China, a smart card, tag and token maker that runs a Visa and Mastercard certified plant in Shanghai, has shipped over 10 billion products into more than 50 countries, and committed 200 Ohio jobs, quoting general manager Eric Li. The current omecus.com site presents the company as Strongsville-based and drops the China connection, but the grant-year owner was the Shanghai group; no headcount is published, so Large follows from the scale of that plant rather than a stated figure."
  }
 ]
