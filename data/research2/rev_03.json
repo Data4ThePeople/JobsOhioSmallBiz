@@ -1,5 +1,17 @@
 [
  {
+  "company": "Relink Medical, LLC",
+  "size": "Small",
+  "ohio_hq": "Yes",
+  "hq_where": "OH",
+  "employees_estimate": "60-120",
+  "employees_asof": "2021-2022",
+  "confidence": "Medium",
+  "parent": "reLink Medical, LLC (independent, Dalton family owned; president and CEO Jeff Dalton)",
+  "source": "https://www.scriptype.com/2019/01/30/relink-medical-relocates-from-aurora-to-enterprise-parkway/",
+  "notes": "ScripType reported in January 2019 that reLink Medical moved 43 employees from Aurora to 1755 Enterprise Parkway in Twinsburg and expected more than 60 within eighteen months, quoting president and CEO Jeff Dalton, who had earlier started and sold PartsSource. The company's own site still gives that Twinsburg address as its headquarters and names no parent, so the 2021-2022 grant years fall in the 60 to 120 range, consistent with JobsOhio's 28 jobs retained."
+ },
+ {
   "company": "CIC Group, Inc. (via Nooter Construction Company)",
   "size": "Large",
   "ohio_hq": "No",
@@ -22,6 +34,18 @@
   "parent": "London Computer Systems, Inc. (founder-owned; president and CEO Dave Hegemann)",
   "source": "https://www.lcs.com/about/",
   "notes": "The company's own About page names Dave Hegemann as founder, president and CEO and places the headquarters on Waterstone Boulevard in Cincinnati, with no parent or outside owner mentioned. Form 5500 participants rose from 255 in 2019 to 437 in 2023, and JobsOhio counted 177 jobs retained, which puts the 2020-2021 grant years in the 300-400 range and below the 500 line."
+ },
+ {
+  "company": "Vigilant, LLC dba Vigilant Technology Solutions",
+  "size": "Small",
+  "ohio_hq": "Yes",
+  "hq_where": "OH",
+  "employees_estimate": "about 40",
+  "employees_asof": "2022-2024",
+  "confidence": "Medium",
+  "parent": "Vigilant, LLC (independent; no parent named on the company site)",
+  "source": "https://www.vigilantnow.com/about",
+  "notes": "Vigilant's own site gives its global headquarters as 7723 Tylers Place Blvd., Suite 181, West Chester, Ohio, with remote operations in Lexington, Kentucky and no parent or group named anywhere on the site. Form 5500 showed 20 participants in 2019 and directories list about 40, so the company stayed far below 500 through the 2022-2024 grant years; no source publishes a current headcount."
  },
  {
   "company": "S&P Data LLC (S&P Data Digital)",

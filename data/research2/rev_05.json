@@ -10,5 +10,41 @@
   "parent": "BWX Technologies, Inc. (1720 Mt. Athos Road, Lynchburg, Virginia; NYSE: BWXT)",
   "source": "https://www.sec.gov/Archives/edgar/data/1486957/000148695721000006/bwxt-20201231.htm",
   "notes": "The grantee, BWXT Government Group Inc. of Barberton, is the nuclear operations arm of BWX Technologies, Inc., whose 10-K for the 2020 grant year states that at December 31, 2020 it employed about 6,700 persons worldwide, 5,400 in the United States and 1,300 in Canada. SEC records give the parent's business address as Lynchburg, Virginia, so the Barberton plant does not make the group Ohio-headquartered."
+ },
+ {
+  "company": "EVE Energy Co., Ltd.",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "China",
+  "employees_estimate": "over 30,000",
+  "employees_asof": "2024",
+  "confidence": "High",
+  "parent": "EVE Energy Co., Ltd. (No. 38 Huifeng 7th Road, Zhongkai Hi-Tech Zone, Huizhou, Guangdong, China; Shenzhen ChiNext code 300014)",
+  "source": "https://www.evebattery.com/en/about",
+  "notes": "EVE's own About page says the company was established in 2001, listed on the Shenzhen ChiNext board in 2009, and has more than 30,000 staff worldwide, and its contact address is in Huizhou, Guangdong. The Lewis Center grantee, Eve Energy North America Corporation, is the group's U.S. research arm, with only 8 jobs retained on JobsOhio's own project report, so the size and home country follow the listed Chinese parent."
+ },
+ {
+  "company": "Amcor plc (Amcor Limited at time of grant)",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "Switzerland",
+  "employees_estimate": "about 33,000",
+  "employees_asof": "2018",
+  "confidence": "High",
+  "parent": "Amcor Limited (incorporated in Victoria, Australia and listed on the ASX in the grant year; global management office in Zurich, Switzerland)",
+  "source": "https://www.sec.gov/Archives/edgar/data/1748790/000104746919001142/a2237894zs-4.htm",
+  "notes": "The Amcor-Bemis merger registration statement describes Amcor's two segments as of June 30, 2018: about 26,000 employees and 135 plants in 37 countries in Flexibles, and about 7,000 employees at 60 plants in 12 countries in Rigid Plastics, which is the segment the Bellevue grantee Amcor Rigid Plastics USA, LLC belongs to. The same filing places the chief executive and the board's meetings in Zurich during the 2017 grant year, before the 2019 Bemis merger and the move to Jersey, so the parent was well above 500 and not Ohio-based."
+ },
+ {
+  "company": "Alpont LLC",
+  "size": "Small",
+  "ohio_hq": "No",
+  "hq_where": "PA",
+  "employees_estimate": "200-400 group-wide",
+  "employees_asof": "2020",
+  "confidence": "Medium",
+  "parent": "Interstate Chemical Company, Inc. (2797 Freedland Road, Hermitage, Pennsylvania; privately held, founded 1968 by Albert R. Puntureri)",
+  "source": "https://www.jobsohio.com/newsroom/ohio-success/alpont",
+  "notes": "JobsOhio's own success story opens by calling Alpont LLC a Pennsylvania-based subsidiary of Interstate Chemical Company, and Interstate Chemical's own site lists Alpont Transportation LLC among its services and gives corporate headquarters in Hermitage, Pennsylvania, so the Oregon, Ohio methanol and sodium methylate plant is a Pennsylvania company's plant. Neither company publishes a headcount; the Small call is an inference from a privately held chemical distributor with 16 terminals and a fleet of about 200 trucks and trailers."
  }
 ]
