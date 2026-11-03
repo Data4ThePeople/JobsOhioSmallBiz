@@ -546,10 +546,34 @@ data by `scripts/22_lawsuits.py` into `data/jobsohio_lawsuits.csv`.
 
 **How a defendant is matched to a grant.** By normalized company name first,
 then by distinctive-word overlap with legal suffixes and generic industry
-words removed, and only when exactly one recipient matches. 52 of the 63
-defendants tie to a Schedule I recipient. The 11 that do not were either paid
-under another name, paid $5,000 or less (below the Schedule I threshold), or
-given something other than a reportable grant.
+words removed, and only when exactly one recipient matches. A match needs at
+least two distinctive words of two or more letters on both sides: without that
+floor, "JOSEPH H JAMES" matched "H&H INDUSTRIES INC," because both reduce to
+the single token "h". 51 of the 63 defendants tie to a Schedule I recipient.
+The 12 that do not were either paid under another name, paid $5,000 or less
+(below the Schedule I threshold), given something other than a reportable
+grant, or are individuals rather than companies.
+
+**The sum pleaded is not the grant, and usually differs from it.** 31 of the 47
+suits where both figures exist agree exactly; the other 16 differ for
+structural reasons, not errors. A company can hold a grant agreement, a Talent
+Acquisition Services agreement and a loan at once and be sued on one of them. A
+suit can cover one of several grants (Keno Kozie took $40,000 in FY2019 and
+$600,000 in FY2021 and was sued on the $40,000). The Schedule I figure is the
+parent's total across years and payees, while a complaint pleads what was
+disbursed under one agreement. And JobsOhio sometimes demands less than the
+whole. `data/jobsohio_lawsuits.csv` carries an `amount_matches_990` column
+marking every row where the two differ, so a pleaded sum is never mistaken for
+a grant.
+
+**Three instruments, and the attachment practice splits by instrument.** Grant
+Agreements (the majority) attach the signed contract as an exhibit every time.
+Talent Acquisition Services Agreements refuse every time, with the same
+sentence about "confidential and/or competitive and/or trade secret
+information." One case is a Loan Agreement with a Cognovit Promissory Note and
+personal guarantees, where JobsOhio filed the complaint and a confession of
+judgment the same day. So the text of a JobsOhio grant agreement is public and
+the text of its services agreements is not.
 
 **Coverage, and the limits that belong in the post.**
 

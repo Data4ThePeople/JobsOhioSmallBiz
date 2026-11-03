@@ -902,6 +902,103 @@ session. Nothing caught it because the defendant never appeared, so no one
 compared the motion against the prayer, and the court had a sworn affidavit in
 front of it saying $25,000 had been disbursed.
 
+### It is not one instrument. It is at least three.
+
+This matters for every sentence the post writes about "the grant agreement."
+Across 63 dockets JobsOhio sued on:
+
+- **Grant Agreements**, the large majority. Remedy: "Demand Repayment of Grant
+  Funds," Section 9(b)(ii). **The agreement is attached as an exhibit every
+  time.**
+- **Talent Acquisition Services Agreements**, at least four (Olive AI, Nexient,
+  Candid Care, Candle-Lite, and INEOS on a related form). JobsOhio pays
+  subcontractors instead of the company and the company owes the value of the
+  services. Remedy: "**Liquidated Damages**." **The agreement is refused every
+  time,** with the same sentence: "A copy of the TAS Agreement is not attached
+  as it contains confidential and/or competitive and/or trade secret
+  information, and as Defendant already has a copy in its possession." One adds
+  "and as it further contains confidentiality provisions."
+- **A Loan Agreement with a Cognovit Promissory Note** (24CV008254), plus
+  corporate and individual guarantees.
+
+That split is clean and worth stating plainly: **JobsOhio files its grant
+agreements in open court and withholds its services agreements.** Whatever the
+confidentiality reasoning is, it is not applied to the instrument that moves
+actual cash.
+
+### The cognovit note, which is a different animal entirely
+
+In 24CV008254 JobsOhio filed the complaint and a confession of judgment **the
+same day**, and had a judgment of **$587,832.20** against three companies and
+three individuals **23 days later**, at a 10% default rate. A cognovit note is
+an instrument in which the borrower agrees in advance that, on default,
+judgment may be taken against them without notice and without a defense. Ohio
+permits them in commercial lending and forbids them in consumer lending.
+
+The judgment was recorded as satisfied and released on October 1, 2026. No
+filing states the sum actually paid.
+
+This is the clearest evidence in the whole project that **JobsOhio lends as
+well as grants**, and that at least one of its loans is secured by personal
+guarantees and a confession of judgment. Lead 9 notes that the Growth Fund Loan
+guidelines have been removed from jobsohio.com entirely and were never
+archived. This case is what that missing document governs.
+
+**Caveat on this one.** The clerk's docket view truncates long dockets and the
+complaint itself could not be retrieved, so the loan's date, purpose and any
+job commitments are unknown. The judgment entry and the release were read
+directly. Say only what those two documents support.
+
+### Having a lawyer appears to change the outcome
+
+Worth testing further before publishing, but the pattern across 63 cases is
+visible. Every full-amount judgment examined ran against a defendant who never
+appeared or appeared without counsel. The cases where a defendant retained
+counsel ended in dismissal or settlement, and the two settlements with a figure
+on the record are **$391,000 against a $420,000 grant** and **$8,000 against
+$24,295 disbursed**, the latter at about 33 cents on the dollar from a company
+that delivered zero new jobs, zero new payroll and zero fixed-asset investment.
+Republic Steel answered through two national firms and the case was dismissed
+with prejudice. BrightEdge got its default judgment vacated by agreement
+through Littler Mendelson and the case was dismissed.
+
+Set against that: a company served only through the Secretary of State, which
+never appeared, had judgment entered $8,000 above the sum the complaint asked
+for.
+
+### One case that is not about metrics at all
+
+22CV007274. A man signed a $337,180 grant agreement for a company on August 18,
+2016, then two weeks later filed a Certificate of Dissolution **retroactive to
+the company's formation date**, so the grantee "effectively never existed as a
+legal entity," and did not tell JobsOhio. He continued submitting reimbursement
+requests in its name. Summary judgment went against him personally in 2025 on
+non-existent-entity liability and unjust enrichment, not on the repayment
+clause. **Do not name him**; the point is that JobsOhio's reimbursement checks
+did not catch a dissolved grantee for nine years.
+
+### Why a Schedule I figure and a pleaded figure rarely match
+
+31 of the 47 suits where both numbers exist agree exactly. The other 16 differ,
+and the reasons are structural rather than errors:
+
+- A company can hold a grant agreement, a services agreement and a loan at
+  once, and a suit covers one instrument. INEOS held a separate Grant Agreement
+  alongside the TAS Agreement it was sued on. Candle-Lite held both.
+- A suit can cover one of several grants. Keno Kozie took $40,000 in FY2019 and
+  $600,000 in FY2021; JobsOhio sued on the $40,000.
+- The Schedule I row is the parent's total across years and payees, while the
+  complaint pleads what was disbursed under one agreement. Lincoln Electric
+  $1,000,000 against $100,000 pleaded; Treves $800,000 against $200,000;
+  S&P Data $650,000 against $150,000; Republic Steel $500,000 against $300,000.
+- JobsOhio sometimes demands less than the whole: Champlain's agreement
+  authorized $250,000 and the suit sought only the $108,375.03 advanced outside
+  the normal reimbursement process.
+
+`data/jobsohio_lawsuits.csv` carries an `amount_matches_990` column marking
+every row where the two differ, so no sentence in the post can accidentally
+treat a pleaded sum as the grant.
+
 ### Two sentences only the attached agreements carry
 
 Because the whole agreement is filed in 56 of 62 cases, two clauses that no

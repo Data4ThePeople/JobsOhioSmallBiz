@@ -58,13 +58,15 @@ def main():
         n = normalize_name(name)
         if n in by_norm and len(by_norm[n]) == 1:
             return by_norm[n][0], "exact name"
-        toks = {t for t in name_tokens(name) if t not in NOISE}
-        if len(toks) < 1:
+        toks = {t for t in name_tokens(name) if t not in NOISE and len(t) > 1}
+        if len(toks) < 2:
+            # one distinctive word is not enough to claim a match. "JOSEPH H
+            # JAMES" matched "H&H INDUSTRIES INC" because both reduce to {h}.
             return None, ""
         hits = []
         for p in parents:
-            pt = {t for t in name_tokens(p["name"]) if t not in NOISE}
-            if pt and toks and (toks <= pt or pt <= toks):
+            pt = {t for t in name_tokens(p["name"]) if t not in NOISE and len(t) > 1}
+            if len(pt) >= 2 and (toks <= pt or pt <= toks):
                 hits.append(p)
         uniq = {h["recipient_id"]: h for h in hits}
         # a match that could be two different companies is not a match
@@ -136,10 +138,25 @@ def main():
             "outcome": str(d.get("outcome", ""))[:200], "outcome_date": d.get("outcome_date", ""),
             "amount_recovered": str(d.get("amount_recovered", ""))[:200],
             "confidence": d.get("confidence", ""),
+            # A company can hold a grant agreement, a Talent Acquisition
+            # Services agreement and a loan at the same time, and a suit covers
+            # one instrument, not a company. So the Schedule I total and the sum
+            # pleaded routinely differ and that is not an error in either. The
+            # flag marks the rows where a reader will notice.
+            "amount_matches_990": "",
             "docket_read": "yes" if d else "",
             "source": str(d.get("source", ""))[:300],
             "notes": str(d.get("notes", ""))[:600],
         })
+
+    for r in rows:
+        m = re.search(r"\$\s*([\d,]+(?:\.\d{2})?)", r["amount_sought"] or "")
+        paid = int(r["paid"] or 0)
+        if not m or not paid:
+            continue
+        sought = float(m.group(1).replace(",", ""))
+        r["amount_matches_990"] = ("yes" if abs(sought - paid) < max(1, 0.02 * paid)
+                                   else f"no: sought ${sought:,.0f}, Schedule I shows ${paid:,}")
 
     rows.sort(key=lambda r: (r["year"], r["filed"][:5]))
     with OUT.open("w", newline="") as fh:
