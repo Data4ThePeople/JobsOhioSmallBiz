@@ -1,0 +1,14 @@
+[
+ {
+  "company": "BWX Technologies, Inc.",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "VA",
+  "employees_estimate": "about 6,700",
+  "employees_asof": "2020",
+  "confidence": "High",
+  "parent": "BWX Technologies, Inc. (1720 Mt. Athos Road, Lynchburg, Virginia; NYSE: BWXT)",
+  "source": "https://www.sec.gov/Archives/edgar/data/1486957/000148695721000006/bwxt-20201231.htm",
+  "notes": "The grantee, BWXT Government Group Inc. of Barberton, is the nuclear operations arm of BWX Technologies, Inc., whose 10-K for the 2020 grant year states that at December 31, 2020 it employed about 6,700 persons worldwide, 5,400 in the United States and 1,300 in Canada. SEC records give the parent's business address as Lynchburg, Virginia, so the Barberton plant does not make the group Ohio-headquartered."
+ }
+]

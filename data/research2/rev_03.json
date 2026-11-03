@@ -24,6 +24,18 @@
   "notes": "The company's own About page names Dave Hegemann as founder, president and CEO and places the headquarters on Waterstone Boulevard in Cincinnati, with no parent or outside owner mentioned. Form 5500 participants rose from 255 in 2019 to 437 in 2023, and JobsOhio counted 177 jobs retained, which puts the 2020-2021 grant years in the 300-400 range and below the 500 line."
  },
  {
+  "company": "S&P Data LLC (S&P Data Digital)",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "Canada",
+  "employees_estimate": "over 1,000 group-wide, about 400 in Cleveland",
+  "employees_asof": "2018-2021",
+  "confidence": "Medium",
+  "parent": "S&P Data Digital (2 Bloor Street W, Suite 2005, Toronto, Ontario, Canada; co-founder and CEO Dan Plashkes)",
+  "source": "https://www.spdatadigital.com/about",
+  "notes": "The group's current site gives its head office as 2 Bloor Street West in Toronto and names Dan Plashkes as CEO and co-founder, with no U.S. parent. Cleveland.com reported that the S&P Data call center tripled its downtown Cleveland space and expected to add 325 jobs in twelve months, so the Ohio site alone approached 400 and the contact-center group across Canada and the United States was well above 500 in the 2018 and 2021 grant years; no company page publishes a worldwide headcount."
+ },
+ {
   "company": "Taiho Kogyo Co., Ltd.",
   "size": "Large",
   "ohio_hq": "No",
@@ -46,5 +58,53 @@
   "parent": "StandardAero, Inc. (Scottsdale, Arizona; majority-owned by Carlyle Group funds during the grant years, publicly traded as NYSE: SARO since October 2024)",
   "source": "https://www.sec.gov/Archives/edgar/data/2025410/000095017025037939/saro-20241231.htm",
   "notes": "The Cincinnati grantee, StandardAero Component Services, is a unit of StandardAero, Inc., whose 10-K reports about 7,700 employees worldwide at the end of 2024 and about 7,300 at the end of 2023, and whose business address is 6710 North Scottsdale Road, Scottsdale, Arizona. Carlyle held majority ownership across the 2017, 2021 and 2022 grant years, and a private-equity fund is not counted as the parent, so the parent is StandardAero itself."
+ },
+ {
+  "company": "Bright Innovation Labs (Aterian Investment Partners)",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "CA",
+  "employees_estimate": "500-1,000",
+  "employees_asof": "2021",
+  "confidence": "Medium",
+  "parent": "Bright Innovation Labs (formerly Bright International, founded 1987 by Anthony Bibars; owned by Aterian Investment Partners funds since August 2019), corporate headquarters Santa Clarita, California in the grant year",
+  "source": "https://peprofessional.com/2021/02/aterians-bright-international-buys-bocchi-labs/",
+  "notes": "Private Equity Professional reported in February 2021 that Aterian-backed Bright International bought Bocchi Laboratories, the New Albany grantee's owner, from the Bocchi family, and an archived November 2021 capture of brightinnovationlabs.com names Santa Clarita, California as the corporate headquarters, with plants of 225,000 square feet in California, 200,000 in Ohio and 122,000 in Arizona. Aterian is a private-equity fund, so the parent is the Bright operating group; no source publishes a headcount, so Large rests on the scale of three high-volume filling plants, against a 100-participant Form 5500 at the Ohio sponsor."
+ },
+ {
+  "company": "FEW Automotive Glass Applications Group (Zwenkau, Germany)",
+  "size": "Small",
+  "ohio_hq": "No",
+  "hq_where": "Germany",
+  "employees_estimate": "100-400 group-wide, about 35-45 in Ohio",
+  "employees_asof": "2019-2023",
+  "confidence": "Medium",
+  "parent": "FEW Fahrzeugelektrik Werk GmbH & Co. KG (FEW Automotive Group), Polierweg 6, 04442 Zwenkau, Germany",
+  "source": "https://few-group.com/en/few-automotive-group/company-profile/",
+  "notes": "The group's own profile and location pages show FEW Fahrzeugelektrik Werk GmbH & Co. KG, founded 1995, with its head office and all central functions in Zwenkau, Germany, plus production in Shanghai and a U.S. operation that grew out of a 2009 sales representation and a 2011 automated line. The group publishes no worldwide headcount, so the Small call is an inference from a 3,500 square meter German plant, three locations, and the Wooster unit's 34-37 Form 5500 participants and 43 jobs retained."
+ },
+ {
+  "company": "Mucci Farms",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "Canada",
+  "employees_estimate": "over 2,000",
+  "employees_asof": "2026",
+  "confidence": "Medium",
+  "parent": "Mucci Farms (Mucci International Marketing Inc.), Kingsville, Ontario, Canada",
+  "source": "https://www.muccifarms.com/who-we-are/our-story/",
+  "notes": "Mucci's own story page describes a team of over 2,000 and says the company owns and operates more than 250 acres of greenhouses in Kingsville, Ontario and Huron, Ohio, which is the grantee MIMI Farms site, and the site copyright reads Mucci Int'l Mrktg Inc. Cox Enterprises took a majority stake only after the 2021 grant year, so the parent for 2021 is Mucci Farms of Ontario."
+ },
+ {
+  "company": "Selman & Company, LLC",
+  "size": "Small",
+  "ohio_hq": "Yes",
+  "hq_where": "OH",
+  "employees_estimate": "about 200",
+  "employees_asof": "2026",
+  "confidence": "Medium",
+  "parent": "Selman & Company, LLC (privately held; David L. Selman, managing director)",
+  "source": "https://www.selmanco.com/about-us/history/",
+  "notes": "SelmanCo's own site says it is one of the largest privately held U.S. life and supplemental health insurance administration firms and that its workforce of 200 professionals is headquartered in Cleveland, Ohio at One Integrity Parkway, the Richmond Heights address on the grant record, with offices in Keene, New Hampshire and Baltimore. No parent company appears anywhere on the site and a Selman family member still runs it, which matches JobsOhio's 125 jobs retained."
  }
 ]
