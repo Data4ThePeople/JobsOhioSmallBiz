@@ -86,6 +86,31 @@ def main():
                 sys.exit(f"{case} read twice and the readings differ "
                          f"({where[case]} vs {f.name}); settle it by hand")
             read[case], where[case] = x, f.name
+    # the Olive AI contract suit was read first, before the batch format existed
+    olive = RES / "olive_ai_suit.json"
+    if olive.exists():
+        o = json.loads(olive.read_text())
+        rq = o.get("repayment_provision_quote") or {}
+        read.setdefault("23CV005498", {
+            "case": "23CV005498", "defendant": "OLIVE AI INC",
+            "agreement": "Talent Acquisition Services Agreement, not a grant agreement. "
+                         "JobsOhio funded subcontractors up to $645,000 rather than paying the company.",
+            "agreement_date": "2020-04-08, amended 2020-05-29",
+            "program": "Not named. The complaint calls it 'one of its incentive offerings'.",
+            "amount_sought": o.get("amount_sought", ""),
+            "job_commitments": o.get("job_commitments", ""),
+            "shortfall": "65 new jobs created with $9,889,289 of payroll, against 100 new jobs "
+                         "and $10,000,000 required",
+            "repayment_quote": rq.get("section_9b") or rq.get("section_2b_obligations_of_company", ""),
+            "remedy_named": "Liquidated Damages, Section 9(b)(ii)",
+            "agreement_is_exhibit": "no", "outcome": o.get("status", {}).get("23CV005498", "")
+            if isinstance(o.get("status"), dict) else str(o.get("status", "")),
+            "outcome_date": "2023-11-20 judgment; 2024-11-19 satisfaction",
+            "amount_recovered": o.get("amount_recovered", ""),
+            "confidence": "High", "source": "Franklin County Clerk, filed PDFs, read 2026-11-03",
+            "notes": "Read before the batch format existed; the full record is in "
+                     "data/research3/olive_ai_suit.json.",
+        })
 
     rows = []
     for c in cases:

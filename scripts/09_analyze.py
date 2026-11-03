@@ -35,6 +35,7 @@ GRANTS = ROOT / "data" / "grants_raw.csv"
 PARENTS = ROOT / "data" / "parents.csv"
 CONDITIONS = ROOT / "data" / "grant_conditions.csv"
 FAILURES = ROOT / "data" / "failures.csv"
+LAWSUITS = ROOT / "data" / "jobsohio_lawsuits.csv"
 OUT = ROOT / "dist" / "data.json"
 TIEOUT = ROOT / "TIEOUT.md"
 
@@ -118,7 +119,18 @@ def load_side_findings(parents):
             k = key(r["parent"], by_name.get(r["name"].strip()) or r["name"].strip())
             fail[k] = {"category": r["category"], "event": r["event"],
                        "date": r["event_date"], "confidence": r["confidence"]}
-    return cond, fail
+    # JobsOhio's own suits against the recipient, keyed the same way. A company
+    # can be sued more than once, so they are collected into a list.
+    sued = defaultdict(list)
+    if LAWSUITS.exists():
+        by_name = {p["name"].strip(): parent_key(p) for p in parents.values()}
+        for r in csv.DictReader(LAWSUITS.open()):
+            if r["kind"] != "suit" or not r["recipient"]:
+                continue
+            k = key(r["parent"], by_name.get(r["recipient"].strip()) or r["recipient"].strip())
+            sued[k].append({"case": r["case"], "filed": r["filed"],
+                            "sought": r["amount_sought"][:120], "outcome": r["outcome"][:120]})
+    return cond, fail, dict(sued)
 
 
 def build_parents(grants, parents):
@@ -306,7 +318,7 @@ def main():
     out["confidence"] = {"parents": shares(allp, lambda a: a["conf"] or "none", lambda a: 1)[0],
                          "cash": shares(allp, lambda a: a["conf"] or "none", lambda a: a["cash"])[0]}
     out["conflicts"] = sorted(c for a in allp for c in a.get("conflicts", set()))
-    cond, fail = load_side_findings(parents)
+    cond, fail, sued = load_side_findings(parents)
     out["parents_table"] = sorted([{
         "parent": a["parent"], "class": a["class"], "bucket": a["bucket"], "hq": a["hq"], "conf": a["conf"],
         "founded_oh": a["founded_oh"], "cash": a["cash"], "rows": a["rows"], "recipients": len(a["recipients"]),
@@ -314,6 +326,7 @@ def main():
         "by_fy": {str(k): v for k, v in sorted(a["by_fy"].items())},
         "payees": " | ".join(sorted({parents[r]["name"] for r in a["recipients"]}))[:400],
         "conditions": cond.get(a["parent"], ""), "failure": fail.get(a["parent"], None),
+        "sued": sued.get(a["parent"], None),
     } for a in allp], key=lambda d: -d["cash"])
     # dollars by published conditions, and the verified post-grant failures,
     # on the same parent universe the headline uses
@@ -341,6 +354,13 @@ def main():
         matched += 1
         g = fail_agg[f["category"] or "Uncategorised"]
         g["parents"] += 1; g["parent_cash"] += a["cash"]; g["payee_cash"] += payee_cash.get(a["parent"], 0)
+    sued_parents = [a for a in allp if sued.get(a["parent"])]
+    out["lawsuits"] = {
+        "parents_sued": len(sued_parents),
+        "suits": sum(len(sued[a["parent"]]) for a in sued_parents),
+        "cash_to_parents_sued": sum(a["cash"] for a in sued_parents),
+        "suits_total": sum(len(v) for v in sued.values()),
+    }
     out["failures"] = {"by_category": dict(fail_agg), "confirmed": len(fail),
                        "matched_to_a_parent": matched,
                        "payee_cash_total": sum(payee_cash.values()),

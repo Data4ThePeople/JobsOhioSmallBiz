@@ -682,15 +682,23 @@ reconciles them. Do not assert they are the same money.
 how much has actually come back? Why are the agreements confidential when the
 guidelines are public? And will JobsOhio publish a sample agreement?
 
-### What 58 dockets show about how the clause is actually used
+### What 62 dockets show about how the clause is actually used
 
-Read at High confidence, every complaint and every terminating filing opened as
-a scanned PDF. 55 of 58 complaints block-quote the repayment clause and 54
-attach the whole signed agreement. Amounts sought run $16,724 to $1,250,000,
-$10.26 million so far. Outcomes: 30 dismissed, 20 default judgments, 1 agreed
-judgment, 1 removed to federal court, 1 still pending.
+All 62 suits read at High confidence, every complaint and every terminating
+filing opened as a scanned image and read page by page. **58 of 62 complaints
+block-quote the repayment clause and 56 attach the whole signed agreement.**
+Amounts sought run $16,724 to $2,000,000, **$13,494,169 in total**. Outcomes: 30
+dismissed, 22 default judgments, 2 still pending, the rest removed, stayed or
+not stated.
 
-**Two courts have construed the clause, and they used different words for it.**
+The clause is identical across four drafting generations of the form, 2013
+through 2023. What moves is everything around it: Section 9(a) is headed
+"Default" in the 2014-2018 versions and "Breach" from 2020, the operations
+window narrows from 180 days to 90, the attorney-fee clause slides from 9(f) to
+9(e) to 9(d), and the 2023 version ties the metric test to "the final Annual
+Report." Section 9(b)(ii) never changes a word.
+
+**Three courts have now construed it, and they used different words for it.**
 
 - *JobsOhio v. MITEC Powertrain* (20CV004663). MITEC argued that enforcing the
   clause "in the midst of a global pandemic, is unreasonable and a breach of
@@ -699,6 +707,15 @@ judgment, 1 removed to federal court, 1 still pending.
   exercising remedies expressly afforded it under a contract," and the
   agreement "clearly and unambiguously provided that Plaintiff may recover the
   entire amount of the grant upon a breach."
+- *JobsOhio v. The Medina Plating Corp* (20CV000473). Judge Julie M. Lynch,
+  April 7, 2021, the fullest reasoning in the set: the grant agreement is an
+  enforceable contract and the full-repayment term is valid, because
+  "controlling legal precedent holds that a grantee may recover the full amount
+  of its grant funds in the event of a breach if the agreement so specifies,"
+  again citing Matrix Centennial. The facts are a good illustration: a $50,000
+  grant reimbursed a $65,526.65 machine, the company created 10 of 30 promised
+  jobs, then sold the machine with the whole business and closed the site a year
+  before the Metric Expiration Date.
 - *JobsOhio v. RM Biltrite* (25CV001115). Judge Carl A. Aveni, July 16, 2025:
   "This repayment provision is enforceable as a liquidated damages clause,"
   citing *State of Ohio Dept. of Dev. v. Matrix Centennial, L.L.C.*, 10th Dist.
@@ -774,14 +791,185 @@ reimbursement is a real constraint even where a jobs condition is not.
 **Vet Mentor AI Inc. v. JobsOhio et al.**, 26CV006007, filed June 26, 2026,
 still active. Not yet read.
 
+### The sentences JobsOhio cuts out of its own quotes
+
+This is the sharpest thing in the dockets. The standard agreement contains two
+discretion clauses that complaints quote around. Section 5(a) ends:
+
+> **Notwithstanding the terms of this Agreement, Grantor has the discretion to
+> determine compliance.**
+
+Section 5(c) contains:
+
+> **Grantor has the discretion to waive non-compliance if, in writing, Grantee
+> submits ... a description of Market Conditions and Other Factors ... and may
+> waive repayment of all or a portion of the Grant Funds disbursed.**
+
+Complaints block-quote Section 5(a) and Section 5(c) and cut both sentences
+with "***". The text is still on the record, because the signed agreement is
+attached as an exhibit in 56 of the 60 cases read. It is just not in the part
+JobsOhio sets out for the court to read.
+
+So the structure is: JobsOhio decides whether a company complied, JobsOhio
+decides whether to waive, JobsOhio decides how much to demand, and the only
+published basis for any of it is a demand letter's phrase, "Market Conditions
+and Other Factors."
+
+### JobsOhio's own words for the thing
+
+The agreements never say "clawback." In sixty dockets the word appears once,
+and it is JobsOhio's General Counsel using it. Don Grubbs, letter of June 14,
+2019, in the Hynes Industries case: "Please note the request for clawback is
+not the full amount of the disbursed grant funds."
+
+In the same case JobsOhio told the court outright that the right is
+discretionary: "While JobsOhio, in accordance with Ohio law, could have
+required repayment of the entire $150,000.00 grant amount due to the breach
+(See *State of Ohio Dept. of Dev. v. Matrix Centennial, L.L.C.*, 2014-Ohio-3251),
+JobsOhio only demanded repayment of $50,000.00." Worth noting that JobsOhio,
+a private nonprofit, reaches for a case about the state Development Department
+to describe its own contract rights.
+
+### Suing before the numbers are due
+
+Three instances now, and this is a pattern rather than a slip:
+
+- **Objective Reality Games** (25CV009210). Metric Evaluation Date December 31,
+  **2026**. JobsOhio sued in October 2025, fourteen months early, for the full
+  $47,774.56, on a missing 2024 Annual Report.
+- **Mike-Sell's Potato Chip** (23CV008049). Sued November 10, 2023 over a
+  December 31, 2023 evaluation date.
+- **Stonecrop Technologies** (21CV004075). Sued about six months early, won by
+  default, garnished $41,233.01.
+
+In these and others the metric failure is pleaded only "based upon information
+and belief." The hard-pleaded breach is a missing form. **Nexient** was sued
+for the entire $429,750.19 of JobsOhio's subcontractor spend on a missing 2024
+Annual Report alone, with no jobs shortfall pleaded at all.
+
+### JobsOhio v. Lateral Gig, 26CV005490: the judgment is $8,000 above the prayer
+
+Read twice, independently, from the filed images. Both readings agree.
+
+- The complaint, filed June 11, 2026, pleads **$17,000.00** as the amount
+  disbursed and says so five times, including the prayer: "**WHEREFORE**,
+  JobsOhio demands judgment against Defendant in the amount of $17,000.00, plus
+  interest, including prejudgment interest, reasonable attorney fees, costs and
+  expenses, and such other relief as the Court may deem appropriate." The only
+  appearance of $25,000 in the complaint is paragraph 4, as the ceiling: "up to
+  $25,000.00 in grant funds."
+- The demand letter of April 14, 2026, attached as Exhibit 2 and signed by
+  General Counsel Don Grubbs, is headed "Demand for Repayment ($17,000)."
+- The motion for default judgment, filed October 1, 2026, asks for
+  **$25,000.00** in all four places, and opens by describing the complaint as
+  "seeking recovery of $25,000.00."
+- The supporting affidavit, sworn by a JobsOhio Senior Managing Director,
+  states that JobsOhio "provided $25,000.00 in grant funds to Defendant" and
+  "therefore demanded repayment of $25,000.00," while expressly incorporating
+  the letter that demands $17,000.
+- The judgment entry of October 26, 2026, signed by Judge Christopher M. Brown
+  and submitted by plaintiff's counsel, orders judgment "in the amount of
+  25,000.00" (no dollar sign in the original).
+- The docket runs to 38 entries and contains **no amended complaint, no motion
+  to amend, no Civ.R. 60 motion and no corrective entry.**
+- Both certified mailings, to the company and to its statutory agent, came back
+  "NOT DELIVERABLE AS ADDRESSED." Service was completed on the Ohio Secretary
+  of State under R.C. 1706.09(H) on August 18, 2026. The defendant never
+  appeared and has no attorney of record.
+
+**How to write it.** Say the judgment exceeded the amount demanded in the
+complaint and let the reader weigh it. Ohio Civ.R. 54(C) says a default
+judgment "shall not be different in kind from or exceed in amount that prayed
+for in the demand for judgment," but no court has ruled on this entry and we
+must not call it improper or void. On service, say what the docket shows: both
+mailings came back undeliverable and service was completed on the Secretary of
+State, who forwarded the papers to two addresses. Do not write that the company
+never received notice; the docket does not record what became of those
+forwarded mailings. **Do not name the owner.** She is a private individual, the
+company is the defendant, and the story is about JobsOhio's process. (Her name
+appears three different ways across the filings, which is its own small sign of
+how the papers were assembled.)
+
+**The innocent explanation, which belongs in the piece.** $25,000 is the face
+amount of the grant: it is the first line of the agreement, the ceiling in the
+complaint, and the size of the agreement in the demand letter. $17,000 is what
+was actually disbursed, a number you only reach by consulting the ledger. The
+complaint and the demand letter, drafted when the disbursement was being
+computed, use $17,000 throughout. The motion, memorandum, affidavit and
+proposed entry, drafted four months later, use $25,000 throughout. That looks
+like one wrong figure picked up once and carried through a single drafting
+session. Nothing caught it because the defendant never appeared, so no one
+compared the motion against the prayer, and the court had a sworn affidavit in
+front of it saying $25,000 had been disbursed.
+
+### Two sentences only the attached agreements carry
+
+Because the whole agreement is filed in 56 of 62 cases, two clauses that no
+complaint quotes are nonetheless public. Section 9's opening:
+
+> Except to the extent that this Agreement or applicable law requires
+> otherwise, **the remedies set forth in this Section are the sole and
+> exclusive remedies** available upon a violation, default or Breach of this
+> Agreement.
+
+And the rest of the Section 5(c) waiver:
+
+> Grantor will review and consider such Market Conditions and Other Factors
+> submitted and **may waive repayment of all or a portion of the Grant Funds
+> disbursed.**
+
+So a company that misses its numbers can ask to be let off, in writing, on
+grounds the agreement calls "Market Conditions and Other Factors," and JobsOhio
+decides. Nothing published says how often that is asked for or granted. That is
+a good question to put to JobsOhio.
+
+### Individuals and affiliates can be on the hook
+
+The form is not always company-only. One agreement (Proto Precision Additive,
+22CV006667) names a person as "Grantee 2" and adds a sentence the other
+versions lack: "Upon Breach, Grantees shall be jointly and severally liable for
+repayment of all Grant Funds to be repaid." The $233,423.40 default judgment
+there runs against that person as well as the company. In Medina, JobsOhio
+pleaded fraudulent conveyance against the majority owner over $600,000 said to
+have been diverted from a $6.5 million asset sale; those claims were dismissed
+without prejudice after service failed. In Recleim the parent company was added
+on unjust enrichment and took a second $510,000 judgment. In Olive AI the
+founder was added personally and the case was then dismissed with prejudice
+against everyone, with no finding of liability against him.
+
+**The post should not name any of these individuals.** The companies are the
+defendants, none of the individual claims reached a finding, and the story is
+about JobsOhio's process.
+
+### One more thing the dockets undercut
+
+The agreements name programs even where the complaints do not. Two attached
+Inclusion Grant agreements carry the recital "in accordance with JobsOhio's
+Inclusion Grant guidelines," and one agreement is headed "JOBSOHIO RESEARCH &
+DEVELOPMENT GRANT AGREEMENT." The others carry only a contract number of the
+shape `SFPN_2018_455772-ED`, where the suffix encodes the program: ED, WF, RG,
+IG. So JobsOhio does track grants by program internally. It simply does not put
+the program in the complaint, and it does not publish the agreements.
+
 ### Still to settle before publishing
 
-- Four dockets are unread: 24CV008254, 21CV007238, 20CV000473, 26CV001965.
-- *JobsOhio v. Lateral Gig* (26CV005490): one reading found a judgment entered
-  at $25,000 against a complaint that pleaded $17,000 five times including the
-  prayer, with service only through the Secretary of State. A statement that a
-  judgment exceeded the pleading has to be exactly right, so it is being read a
-  second time independently. **Do not use it until that comes back.**
+- Two dockets remain unread: 24CV008254 and 20CV000473.
+- **Nexient** (23CV005495) was removed to the Southern District of Ohio on
+  March 28, 2024 and the federal outcome is unknown. Note also that Nexient had
+  merged into NTT DATA Americas on January 1, 2023, seven months before
+  JobsOhio sued the dissolved entity, and service failed.
+- **Techniplas** (26CV001965), the largest suit at $2,000,000, is still active
+  and JobsOhio cannot establish who owes it. It pleads that the company
+  "appears to be hiding behind the web of inter-related companies under the
+  Techniplas Group/Techniplas LLC umbrella, creating uncertainty as to the
+  identity of the correct Defendant or Defendants," and asks the court to
+  decide "What person and/or entity signed the Amendment to Grant Agreement
+  under the name 'Techniplas LLC'."
+- **Therma-Tru.** The Schedule I row reads "THERMA-TRU CORP CLAWBACK" at
+  $200,000 and a suit sits in the list (21CV001186, filed February 25, 2021,
+  dismissed six days later before service completed). The docket neither
+  confirms nor contradicts the 990 row and states no recovered sum. **Do not
+  link the two without separate evidence.**
 - Whether the air service agreements carry Section 9(b)(ii) at all. No airline
   is among the 63 defendants and the program publishes nothing, so the
   generalization in lead 9 stops at the edge of that $10.07 million.

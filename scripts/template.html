@@ -78,7 +78,7 @@
   .jo td .conf{display:inline-block;font-size:11px;font-weight:650;padding:0 5px;border-radius:4px;border:1px solid var(--border);color:var(--muted)}
   /* a few parent names run to a full sentence of ownership; let the name
      column take the slack so the columns to its right stay on screen */
-  .jo td.name{max-width:34ch;overflow:hidden;text-overflow:ellipsis}
+  .jo td.name{max-width:26ch;overflow:hidden;text-overflow:ellipsis}
   .jo td a{color:var(--ink2)}
   .jo .more{margin-top:8px;font-size:13px}
   .jo .more button{appearance:none;border:1px solid var(--border);background:var(--surface);color:var(--ink2);border-radius:8px;padding:6px 12px;font:600 13px system-ui,sans-serif;cursor:pointer}
@@ -313,10 +313,15 @@ function renderFY(){
 function niceStep(max){ var raw = max/4, p = Math.pow(10, Math.floor(Math.log10(raw))), n = raw/p; return (n < 1.5 ? 1 : n < 3.5 ? 2 : n < 7.5 ? 5 : 10) * p; }
 
 /* ---- table ---- */
-var PCOLS = [["parent","Parent company",false],["class","Type",false],["bucket","Employees",false],["hq","HQ",false],["conf","Evidence",false],["cash","Paid",true],["years","Years",false],["conditions","Conditions",false],["failure","After the grant",false]];
+var PCOLS = [["parent","Parent company",false],["class","Type",false],["bucket","Employees",false],["hq","HQ",false],["conf","Evidence",false],["cash","Paid",true],["years","Years",false],["conditions","Conditions",false],["failure","After the grant",false],["sued","Sued",false]];
 var RCOLS = [["fy","FY",true],["recipient","Payee on the 990",false],["city","City",false],["state","St",false],["parent","Parent company",false],["cash","Paid",true]];
 var CLASS_LABEL = {business:"Business", site_development:"Site developer", government:"Government", university:"University", hospital:"Hospital", nonprofit:"Nonprofit"};
 var COND_LABEL = {"Conditional":"clawback", "Partly conditional":"reimbursement", "Unknown":"none published", "Program unknown":"program unknown"};
+/* the full category is long; the short label goes in the cell and the whole
+   thing, with the date and how firmly it is established, sits on hover */
+var FAIL_LABEL = {"Bankruptcy or receivership":"bankruptcy", "Funded site closed":"site closed",
+                  "Mass layoff at the funded site":"mass layoff", "Sold or absorbed":"sold",
+                  "Subsidized service ended":"service ended"};
 var COND_HELP = {
   "Conditional":"The program guidelines publish a written clawback or repayment trigger.",
   "Partly conditional":"The guidelines require reimbursement of documented costs or state job metrics, but publish no repayment remedy.",
@@ -327,7 +332,7 @@ function tableRows(){
   var q = state.q.trim().toLowerCase();
   if (state.tview === "parents"){
     var items = pool();
-    if (q) items = items.filter(function(p){ return (p.parent + " " + p.hq + " " + p.class + " " + (p.payees||"") + " " + (p.conditions||"") + " " + (p.failure ? p.failure.category + " " + p.failure.event : "")).toLowerCase().indexOf(q) >= 0; });
+    if (q) items = items.filter(function(p){ return (p.parent + " " + p.hq + " " + p.class + " " + (p.payees||"") + " " + (p.conditions||"") + " " + (p.failure ? p.failure.category + " " + p.failure.event : "") + " " + (p.sued ? "sued " + p.sued.map(function(c){return c.case;}).join(" ") : "")).toLowerCase().indexOf(q) >= 0; });
     return items;
   }
   var rows = D.rows;
@@ -365,7 +370,15 @@ function renderTable(){
       var cd = el("td",{},tr);
       if (p.conditions){ var cs = el("span",{class:"conf", title:COND_HELP[p.conditions] || ""},cd); cs.textContent = COND_LABEL[p.conditions] || p.conditions; }
       var fd = el("td",{},tr);
-      if (p.failure){ var fs = el("span",{class:"conf", title:(p.failure.event ? p.failure.event + ", " : "") + (p.failure.date || "") + " (" + (p.failure.confidence || "") + " confidence)"},fd); fs.textContent = p.failure.category || "failure"; }
+      if (p.failure){ var fs = el("span",{class:"conf", title:(p.failure.category || "") + ". " + (p.failure.event ? p.failure.event + ", " : "") + (p.failure.date || "") + " (" + (p.failure.confidence || "") + " confidence)"},fd); fs.textContent = FAIL_LABEL[p.failure.category] || p.failure.category || "failure"; }
+      /* JobsOhio's own suits to get the money back, from the Franklin County
+         docket; the case number and what was sought sit on hover */
+      var sd = el("td",{},tr);
+      if (p.sued && p.sued.length){
+        var t = p.sued.map(function(c){ return c.case + ", filed " + c.filed + (c.sought ? ", sought " + c.sought : "") + (c.outcome ? ". " + c.outcome : ""); }).join("  |  ");
+        var ss = el("span",{class:"conf", title:t},sd);
+        ss.textContent = p.sued.length > 1 ? p.sued.length + " suits" : p.sued[0].case;
+      }
     } else {
       txt("td","num",String(p.fy),tr); txt("td","",p.recipient,tr); txt("td","",p.city,tr); txt("td","",p.state,tr); txt("td","",p.parent,tr); txt("td","num",moneyFull(p.cash),tr);
     }
@@ -392,6 +405,7 @@ document.getElementById("src").textContent =
   "Universities, hospitals, governments, nonprofits and site developers are shown separately from operating businesses. " +
   "“Conditions” reads the guidelines JobsOhio publishes for the program that paid each company: “clawback” where a written repayment trigger is published, “reimbursement” where the grant repays documented costs or states job metrics but publishes no remedy, “none published” where the program publishes neither, and “program unknown” where the payment matches no entry in JobsOhio's own monthly project reports. Individual grant agreements are not public, so these are the disclosed terms, not necessarily the terms in force. " +
   "“After the grant” shows a verified bankruptcy, closure, mass layoff, sale or ended service at the funded operation, found by scanning every recipient for distress headlines and then checking each one against court dockets, SEC filings and local news. It is a floor, not a count: a failure without news coverage is not in it. Hover a label for the date and how firmly it is established. " +
+  "\u201CSued by JobsOhio\u201D is JobsOhio's own lawsuit against that company in the Franklin County Court of Common Pleas, where it is headquartered, to get grant money back under the repayment clause its published guidelines do not mention. Hover for the case number, what was sought and how it ended. Suits filed in another county, in federal court or in another state would not appear, so this is a floor. " +
   "Free to use. Built by Data 4 The People, " + m.built + ".";
 renderAll();
 })();
