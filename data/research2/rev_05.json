@@ -106,5 +106,29 @@
   "parent": "Cargotec Corporation (Porkkalankatu 5, 00180 Helsinki, Finland; Nasdaq Helsinki), through its Hiab business area",
   "source": "https://web.archive.org/web/20211226165516/https://www.waltco.com/",
   "notes": "Waltco's own site in December 2021, inside the 2021-2023 grant years, was published by Hiab and carried the footer 'Hiab | A part of Cargotec' with a Hiab USA support center in Perrysburg, Ohio, and Hiab's current About page still lists WALTCO as one of its tail-lift brands alongside ZEPRO and DEL. Cargotec's own corporate page says around 11,000 people worked at Cargotec at the end of 2021 and gives its head office as Helsinki, Finland, so the Streetsboro liftgate plant is a Finnish group's plant, not an independent Ohio maker."
+ },
+ {
+  "company": "Logoplaste",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "Portugal",
+  "employees_estimate": "about 2,700",
+  "employees_asof": "2023",
+  "confidence": "High",
+  "parent": "Logoplaste (headquarters in Cascais, Portugal; owned by Carlyle funds, which are not counted as the parent)",
+  "source": "https://web.archive.org/web/20241118223637/https://www.logoplaste.com/about/who-we-are/",
+  "notes": "Logoplaste's own Who We Are page publishes 2023 figures of 2,692 employees and 66 plants across 17 countries and 3 continents, and its history page records new headquarters in Cascais, Portugal in 1999. The grantee Logoplaste Lima LLC is the group's new Lima, Ohio wall-to-wall plant, with 0 jobs retained on JobsOhio's project report, so the size and home country follow the Portuguese group rather than the Ohio site."
+ },
+ {
+  "company": "Nuproduce Solutions LLC",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "MI",
+  "employees_estimate": "over 10,000 group-wide",
+  "employees_asof": "2024",
+  "confidence": "High",
+  "parent": "Gordon Food Service, Inc., Grand Rapids area, Michigan (family operated, founded 1897)",
+  "source": "https://bgindependentmedia.org/bg-brings-jobs-to-community-using-teamwork-planning-creativity-and-at-times-sheer-grit/",
+  "notes": "BG Independent News, reporting Bowling Green Economic Development's 2024 annual figures, says NuProduce Solutions in the John Quinn Innovative Tech Park is a subsidiary of Gordon Food Service and its first U.S. plant of this type, and NuProduce's own site publishes Gordon Food Service's privacy policy covering GFS and its affiliates and subsidiaries. Gordon Food Service calls itself the largest family-operated broad-line food distributor in North America, founded in Grand Rapids in 1897; it publishes no headcount, so the figure is a floor rather than a count."
  }
 ]
