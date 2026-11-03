@@ -24,6 +24,18 @@
   "notes": "EVE's own About page says the company was established in 2001, listed on the Shenzhen ChiNext board in 2009, and has more than 30,000 staff worldwide, and its contact address is in Huizhou, Guangdong. The Lewis Center grantee, Eve Energy North America Corporation, is the group's U.S. research arm, with only 8 jobs retained on JobsOhio's own project report, so the size and home country follow the listed Chinese parent."
  },
  {
+  "company": "Alpont LLC",
+  "size": "Small",
+  "ohio_hq": "No",
+  "hq_where": "PA",
+  "employees_estimate": "200-400 group-wide",
+  "employees_asof": "2020",
+  "confidence": "Medium",
+  "parent": "Interstate Chemical Company, Inc. (2797 Freedland Road, Hermitage, Pennsylvania; privately held, founded 1968 by Albert R. Puntureri)",
+  "source": "https://www.jobsohio.com/newsroom/ohio-success/alpont",
+  "notes": "JobsOhio's own success story opens by calling Alpont LLC a Pennsylvania-based subsidiary of Interstate Chemical Company, and Interstate Chemical's own site lists Alpont Transportation LLC among its services and gives corporate headquarters in Hermitage, Pennsylvania, so the Oregon, Ohio methanol and sodium methylate plant is a Pennsylvania company's plant. Neither company publishes a headcount; the Small call is an inference from a privately held chemical distributor with 16 terminals and a fleet of about 200 trucks and trailers."
+ },
+ {
   "company": "Amcor plc (Amcor Limited at time of grant)",
   "size": "Large",
   "ohio_hq": "No",
@@ -36,16 +48,16 @@
   "notes": "The Amcor-Bemis merger registration statement describes Amcor's two segments as of June 30, 2018: about 26,000 employees and 135 plants in 37 countries in Flexibles, and about 7,000 employees at 60 plants in 12 countries in Rigid Plastics, which is the segment the Bellevue grantee Amcor Rigid Plastics USA, LLC belongs to. The same filing places the chief executive and the board's meetings in Zurich during the 2017 grant year, before the 2019 Bemis merger and the move to Jersey, so the parent was well above 500 and not Ohio-based."
  },
  {
-  "company": "Alpont LLC",
+  "company": "Unknown (RealPath Group LLC, unresolved)",
   "size": "Small",
-  "ohio_hq": "No",
-  "hq_where": "PA",
-  "employees_estimate": "200-400 group-wide",
-  "employees_asof": "2020",
-  "confidence": "Medium",
-  "parent": "Interstate Chemical Company, Inc. (2797 Freedland Road, Hermitage, Pennsylvania; privately held, founded 1968 by Albert R. Puntureri)",
-  "source": "https://www.jobsohio.com/newsroom/ohio-success/alpont",
-  "notes": "JobsOhio's own success story opens by calling Alpont LLC a Pennsylvania-based subsidiary of Interstate Chemical Company, and Interstate Chemical's own site lists Alpont Transportation LLC among its services and gives corporate headquarters in Hermitage, Pennsylvania, so the Oregon, Ohio methanol and sodium methylate plant is a Pennsylvania company's plant. Neither company publishes a headcount; the Small call is an inference from a privately held chemical distributor with 16 terminals and a fleet of about 200 trucks and trailers."
+  "ohio_hq": "Yes",
+  "hq_where": "OH",
+  "employees_estimate": "unknown, likely under 100",
+  "employees_asof": "2021",
+  "confidence": "Low",
+  "parent": "Unknown; no parent or owner identified for RealPath Group LLC of West Chester, Ohio",
+  "source": "https://efts.sec.gov/LATEST/search-index?q=%22RealPath+Group%22",
+  "notes": "SEC EDGAR full-text search returns zero documents for RealPath Group, Google News returns nothing for the company or for RealPath in West Chester, Ohio, the JobsOhio sitemap has no page for it, EPA's facility registry has no record, and the only Wayback captures of realpathgroup.com are redirects with no page. The source data carries no Form 5500 filing and no JobsOhio project metrics. Nothing was found to change the current small Ohio reading, so it stands at low confidence."
  },
  {
   "company": "GG Brands Company LLC (The Gorilla Glue Company)",
@@ -72,6 +84,42 @@
   "notes": "The August 2021 sale announcement says Aurora Plastics was founded in 1997 and is headquartered in Streetsboro, Ohio, and Aurora's own About page gives the same Streetsboro address as its corporate and technical center. A private equity fund is not the parent, so the operating group Aurora Material Solutions is, and its home state is Ohio rather than Nautic's Rhode Island. Six plants by September 2022, 229 Form 5500 participants in 2023 and 68 jobs retained in Streetsboro all point below 500; no published headcount, so the range is an estimate."
  },
  {
+  "company": "Ronfeldt Manufacturing LLC",
+  "size": "Small",
+  "ohio_hq": "Yes",
+  "hq_where": "OH",
+  "employees_estimate": "under 100",
+  "employees_asof": "2023",
+  "confidence": "Low",
+  "parent": "Ronfeldt Manufacturing LLC, 2345 S. Byrne Road, Toledo, Ohio (no parent found; same address as Ronfeldt Associates Inc.)",
+  "source": "https://data.epa.gov/efservice/FRS_PROGRAM_FACILITY/PRIMARY_NAME/CONTAINING/RONFELDT/JSON",
+  "notes": "EPA's facility registry shows Ronfeldt Manufacturing LLC at 2345 S. Byrne Road in Toledo, the same address as Ronfeldt Associates and Ronfeldt Associates Inc., from an OSHA record, and that single Toledo site is the only one in the registry. Searches of SEC EDGAR full text, SEC company lookup, the Form 5500 fields in the source data, the JobsOhio sitemap, Google News and the Wayback Machine for a company website all came back empty, and the OSHA inspection page that would carry a headcount refused the request, so the call keeps the current small independent reading at low confidence."
+ },
+ {
+  "company": "MJM Logistics LLC",
+  "size": "Small",
+  "ohio_hq": "Yes",
+  "hq_where": "OH",
+  "employees_estimate": "about 12-30",
+  "employees_asof": "2024-2026",
+  "confidence": "High",
+  "parent": "MJM Logistics LLC, 1410 Lancaster Road, Chillicothe, Ohio (company officer Jamey Popp; no parent found)",
+  "source": "https://data.transportation.gov/resource/az4n-8mr2.json?phy_city=CHILLICOTHE&phy_state=OH",
+  "notes": "The federal motor carrier census lists MJM Logistics LLC, USDOT 2244155, at 1410 Lancaster Road in Chillicothe with 12 total drivers, all intrastate CDL holders, and 55 power units, filed on its 2026 MCS-150 and first registered in 2011. JobsOhio's own project report counts 20 jobs retained in the 2024 grant year. No parent company appears in the carrier record or anywhere else, so this is a small independent Ohio trucking firm."
+ },
+ {
+  "company": "Nuproduce Solutions LLC",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "MI",
+  "employees_estimate": "over 10,000 group-wide",
+  "employees_asof": "2024",
+  "confidence": "High",
+  "parent": "Gordon Food Service, Inc., Grand Rapids area, Michigan (family operated, founded 1897)",
+  "source": "https://bgindependentmedia.org/bg-brings-jobs-to-community-using-teamwork-planning-creativity-and-at-times-sheer-grit/",
+  "notes": "BG Independent News, reporting Bowling Green Economic Development's 2024 annual figures, says NuProduce Solutions in the John Quinn Innovative Tech Park is a subsidiary of Gordon Food Service and its first U.S. plant of this type, and NuProduce's own site publishes Gordon Food Service's privacy policy covering GFS and its affiliates and subsidiaries. Gordon Food Service calls itself the largest family-operated broad-line food distributor in North America, founded in Grand Rapids in 1897; it publishes no headcount, so the figure is a floor rather than a count."
+ },
+ {
   "company": "Steelite International Ltd",
   "size": "Large",
   "ohio_hq": "No",
@@ -82,18 +130,6 @@
   "parent": "Steelite International Limited, Orme Street, Burslem, Stoke-on-Trent, England (Companies House no. 01697123)",
   "source": "https://find-and-update.company-information.service.gov.uk/company/01697123/filing-history/MzQzNjM5MjIyNGFkaXF6a2N4/document?format=pdf&download=0",
   "notes": "Steelite International Limited's consolidated accounts to 31 December 2023, filed at Companies House, report a monthly average of 916 persons employed by the group in 2023 and 808 in 2022, split 220 management and administration and 696 production. The registered office is Orme Street, Burslem, Stoke-on-Trent, and the grantee Steelite International USA Inc. of New Castle, Pennsylvania is the group's Americas arm, so the 2024 grant year parent is well above 500 and not Ohio-based."
- },
- {
-  "company": "Borgers Group (Borgers SE & Co. KGaA)",
-  "size": "Large",
-  "ohio_hq": "No",
-  "hq_where": "Germany",
-  "employees_estimate": "about 7,100-7,600 group-wide",
-  "employees_asof": "2016-2018",
-  "confidence": "High",
-  "parent": "Borgers SE & Co. KGaA, Borgersstrasse 2-10, 46397 Bocholt, Germany (family owned)",
-  "source": "https://web.archive.org/web/20191118085423/http://www.borgers-group.com/de/unternehmen/borgers-gruppe/umsatz-und-mitarbeiter/",
-  "notes": "The group's own turnover-and-staff page, captured in 2019, charts group employees at 7,249 in 2016, 7,610 in 2017 and 7,097 in 2018, and gives the address as Borgersstrasse 2-10, Bocholt, Germany with sites in Germany, Belgium, England, Sweden, Spain, the Czech Republic, China and the United States. Borgers Ohio, Inc. in Norwalk was that group's U.S. plant through the 2016, 2017 and 2020 grant years; Autoneum of Switzerland only agreed to buy the Borgers automotive business in January 2023, after the grant years, so the parent for those years is the German group."
  },
  {
   "company": "Waltco Lift Corp",
@@ -120,15 +156,27 @@
   "notes": "Logoplaste's own Who We Are page publishes 2023 figures of 2,692 employees and 66 plants across 17 countries and 3 continents, and its history page records new headquarters in Cascais, Portugal in 1999. The grantee Logoplaste Lima LLC is the group's new Lima, Ohio wall-to-wall plant, with 0 jobs retained on JobsOhio's project report, so the size and home country follow the Portuguese group rather than the Ohio site."
  },
  {
-  "company": "Nuproduce Solutions LLC",
+  "company": "Borgers Group (Borgers SE & Co. KGaA)",
   "size": "Large",
   "ohio_hq": "No",
-  "hq_where": "MI",
-  "employees_estimate": "over 10,000 group-wide",
-  "employees_asof": "2024",
+  "hq_where": "Germany",
+  "employees_estimate": "about 7,100-7,600 group-wide",
+  "employees_asof": "2016-2018",
   "confidence": "High",
-  "parent": "Gordon Food Service, Inc., Grand Rapids area, Michigan (family operated, founded 1897)",
-  "source": "https://bgindependentmedia.org/bg-brings-jobs-to-community-using-teamwork-planning-creativity-and-at-times-sheer-grit/",
-  "notes": "BG Independent News, reporting Bowling Green Economic Development's 2024 annual figures, says NuProduce Solutions in the John Quinn Innovative Tech Park is a subsidiary of Gordon Food Service and its first U.S. plant of this type, and NuProduce's own site publishes Gordon Food Service's privacy policy covering GFS and its affiliates and subsidiaries. Gordon Food Service calls itself the largest family-operated broad-line food distributor in North America, founded in Grand Rapids in 1897; it publishes no headcount, so the figure is a floor rather than a count."
+  "parent": "Borgers SE & Co. KGaA, Borgersstrasse 2-10, 46397 Bocholt, Germany (family owned)",
+  "source": "https://web.archive.org/web/20191118085423/http://www.borgers-group.com/de/unternehmen/borgers-gruppe/umsatz-und-mitarbeiter/",
+  "notes": "The group's own turnover-and-staff page, captured in 2019, charts group employees at 7,249 in 2016, 7,610 in 2017 and 7,097 in 2018, and gives the address as Borgersstrasse 2-10, Bocholt, Germany with sites in Germany, Belgium, England, Sweden, Spain, the Czech Republic, China and the United States. Borgers Ohio, Inc. in Norwalk was that group's U.S. plant through the 2016, 2017 and 2020 grant years; Autoneum of Switzerland only agreed to buy the Borgers automotive business in January 2023, after the grant years, so the parent for those years is the German group."
+ },
+ {
+  "company": "Symba & Snap Gourmet Foods (self)",
+  "size": "Small",
+  "ohio_hq": "Yes",
+  "hq_where": "OH",
+  "employees_estimate": "50-200",
+  "employees_asof": "2022",
+  "confidence": "Medium",
+  "parent": "Snap Gourmet Foods, 2275 E. 55th Street, Cleveland, Ohio (founders Jason Chamoun, Allan Lam and Lincoln Yee; no corporate parent)",
+  "source": "https://snapgourmetfoods.com/",
+  "notes": "Snap Gourmet Foods' own site says Jason Chamoun, Allan Lam and Lincoln Yee founded the company in 2020 at 2275 E. 55th Street in Cleveland and that the same founders also started Symba Brand Solutions and International Food Solutions. Those are sister companies under common individual owners, not parents, so Symba & Snap LLC is its own parent. The plant is a single USDA-inspected site with more than 40,000 square feet of production space and no Form 5500 filing, which points well below 500; the range is an estimate because no headcount is published."
  }
 ]
