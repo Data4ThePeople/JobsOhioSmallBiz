@@ -1,0 +1,74 @@
+[
+ {
+  "company": "National Resilience, Inc.",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "CA",
+  "employees_estimate": "over 2,000",
+  "employees_asof": "2024",
+  "confidence": "High",
+  "parent": "National Resilience, Inc. (San Diego, CA)",
+  "source": "https://www.jobsohio.com/newsroom/news-press/resilience-announces-relocation-of-west-coast-headquarters-to-ohio-and-expansion-of-sterile-manufacturing-capabilities",
+  "notes": "JobsOhio's December 2023 release for grantee Resilience US, Inc. lists 476 jobs retained and 440 committed at the West Chester site alone, and JobsOhio's June 2026 release says the corporate headquarters moved from San Diego, California to Blue Ash, Ohio that month. In the fiscal 2024 grant year the parent was still California-based and ran a multi-site US manufacturing network well above 500 people."
+ },
+ {
+  "company": "Hanon Systems Co., Ltd.",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "South Korea",
+  "employees_estimate": "over 20,000",
+  "employees_asof": "2022",
+  "confidence": "High",
+  "parent": "Hanon Systems Co., Ltd. (Daejeon, South Korea)",
+  "source": "https://www.hanonsystems.com/en/",
+  "notes": "Hanon's own site reports more than 20,000 global employees and 50 manufacturing sites, with the company headquartered in Daejeon, South Korea. The US entity that received the grants, Hanon Systems USA LLC in Michigan, is a subsidiary; its Form 5500 plan alone held 548 participants in 2019."
+ },
+ {
+  "company": "Phoenix International S.p.A.",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "Italy",
+  "employees_estimate": "over 700",
+  "employees_asof": "2019",
+  "confidence": "High",
+  "parent": "Phoenix International S.p.A. (Verdello, Italy)",
+  "source": "https://www.youngstowntool.com/about-us/",
+  "notes": "Youngstown Tool & Die's own about page says the company was acquired in 2018 by Phoenix International S.p.A., headquartered in Verdello, Italy. Light Metal Age reported in June 2019 that Phoenix employs over 700 people across eight plants in Europe, the US and the Middle East; its private-equity owner Ambienta is not treated as the parent."
+ },
+ {
+  "company": "Groupe Treves",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "France",
+  "employees_estimate": "about 4,600",
+  "employees_asof": "2024",
+  "confidence": "High",
+  "parent": "Trèves Group (France)",
+  "source": "https://www.treves-group.com/en/",
+  "notes": "The Trèves Group site reports 4,600 employees, 26 plants in 15 countries and 750 million euros of 2024 turnover for the French automotive interiors and acoustics supplier. Treves, Inc. in Fostoria is its Ohio plant, not the parent; the group was already well above 500 people in the 2018 and 2021 grant years."
+ },
+ {
+  "company": "Festo SE & Co. KG",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "Germany",
+  "employees_estimate": "about 20,000",
+  "employees_asof": "2023",
+  "confidence": "High",
+  "parent": "Festo SE & Co. KG (Esslingen-Berkheim, Germany)",
+  "source": "https://www.jobsohio.com/newsroom/ohio-success/festo",
+  "notes": "JobsOhio's own Festo success story says Festo is headquartered in Esslingen-Berkheim, Germany with more than 55 national headquarters serving over 180 countries. Trade coverage of the Mason, Ohio investment puts the group at roughly 20,000 employees worldwide; the US subsidiary's own Form 5500 plan held 1,107 participants in 2023."
+ },
+ {
+  "company": "Stanley Electric Co., Ltd.",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "Japan",
+  "employees_estimate": "16,000-18,000",
+  "employees_asof": "2017",
+  "confidence": "High",
+  "parent": "Stanley Electric Co., Ltd. (Tokyo, Japan)",
+  "source": "https://www.stanley.co.jp/e/company/outline.html",
+  "notes": "Stanley Electric's own company profile gives a head office in Meguro-ku, Tokyo and 18,230 group employees as of March 2026, a figure that has been in the 16,000 to 18,000 band for years. Stanley Electric US Co Inc in London, Ohio is the grantee plant, and its own retirement plan held 996 participants in 2015."
+ }
+]

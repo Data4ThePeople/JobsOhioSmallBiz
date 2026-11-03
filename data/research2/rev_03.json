@@ -1,0 +1,50 @@
+[
+ {
+  "company": "CIC Group, Inc. (via Nooter Construction Company)",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "MO",
+  "employees_estimate": "over 1,000",
+  "employees_asof": "2024",
+  "confidence": "Medium",
+  "parent": "CIC Group, Inc. (1509 Ocello Dr., St. Louis, Missouri)",
+  "source": "https://cicgroup.com/nooter/history-condensed/",
+  "notes": "Nooter's own history page shows that Nooter bought RMF Industrial Contracting in 2003 to form RMF Nooter LLC and rebranded it under the single Nooter name in 2020, and the site is published under cicgroup.com with CIC Group Inc. of St. Louis as the copyright holder. Nooter Construction alone runs offices in St. Louis, Philadelphia, Toledo, Chicago, Los Angeles, Atlanta and Boston, and CIC Group holds five such operating companies, so the group is well above 500 worldwide; no company page states an exact headcount."
+ },
+ {
+  "company": "London Computer Systems, Inc.",
+  "size": "Small",
+  "ohio_hq": "Yes",
+  "hq_where": "OH",
+  "employees_estimate": "300-400",
+  "employees_asof": "2020-2021",
+  "confidence": "Medium",
+  "parent": "London Computer Systems, Inc. (founder-owned; president and CEO Dave Hegemann)",
+  "source": "https://www.lcs.com/about/",
+  "notes": "The company's own About page names Dave Hegemann as founder, president and CEO and places the headquarters on Waterstone Boulevard in Cincinnati, with no parent or outside owner mentioned. Form 5500 participants rose from 255 in 2019 to 437 in 2023, and JobsOhio counted 177 jobs retained, which puts the 2020-2021 grant years in the 300-400 range and below the 500 line."
+ },
+ {
+  "company": "Taiho Kogyo Co., Ltd.",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "Japan",
+  "employees_estimate": "about 4,100 consolidated",
+  "employees_asof": "2025",
+  "confidence": "High",
+  "parent": "Taiho Kogyo Co., Ltd. (3-65 Midorigaoka, Toyota City, Aichi, Japan; Tokyo Stock Exchange Standard Market, code 6470)",
+  "source": "https://www.taihonet.co.jp/company/group/overseas/",
+  "notes": "Taiho Kogyo's own overseas-subsidiary page lists Taiho Corporation of America at 194 Heritage Drive, Tiffin, Ohio 44883, the grantee's address, and its company outline reports 4,089 consolidated employees against 1,885 at the parent alone. The Tiffin plant is the U.S. arm of a listed Japanese group, so the size and home state follow the parent."
+ },
+ {
+  "company": "StandardAero, Inc.",
+  "size": "Large",
+  "ohio_hq": "No",
+  "hq_where": "AZ",
+  "employees_estimate": "about 7,300-7,700",
+  "employees_asof": "2023-2024",
+  "confidence": "High",
+  "parent": "StandardAero, Inc. (Scottsdale, Arizona; majority-owned by Carlyle Group funds during the grant years, publicly traded as NYSE: SARO since October 2024)",
+  "source": "https://www.sec.gov/Archives/edgar/data/2025410/000095017025037939/saro-20241231.htm",
+  "notes": "The Cincinnati grantee, StandardAero Component Services, is a unit of StandardAero, Inc., whose 10-K reports about 7,700 employees worldwide at the end of 2024 and about 7,300 at the end of 2023, and whose business address is 6710 North Scottsdale Road, Scottsdale, Arizona. Carlyle held majority ownership across the 2017, 2021 and 2022 grant years, and a private-equity fund is not counted as the parent, so the parent is StandardAero itself."
+ }
+]
