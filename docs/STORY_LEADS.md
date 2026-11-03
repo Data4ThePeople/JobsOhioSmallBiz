@@ -1062,6 +1062,20 @@ the program in the complaint, and it does not publish the agreements.
   identity of the correct Defendant or Defendants," and asks the court to
   decide "What person and/or entity signed the Amendment to Grant Agreement
   under the name 'Techniplas LLC'."
+- **Republic Steel.** The agreement authorized $500,000, the complaint pleads
+  $300,000 disbursed, the answer denies receiving $300,000, JobsOhio dismissed
+  with prejudice four months later, and the Schedule I row is $500,000. A
+  systematic test (`DATASETS.md`, "Method check") shows Schedule I is cash and
+  not the award, so this is a single-case discrepancy, but nothing reconciles
+  it. Put it to JobsOhio.
+- **INEOS Pigments.** The FY2021 +$54,235 is settled: the complaint says
+  JobsOhio "incurred $54,235 in subcontractor costs" under a services
+  agreement, so the return books JobsOhio's own vendor spending as a grant to
+  the company. The FY2022 **-$61,487** is not settled. No judgment, no
+  settlement, no satisfaction, and nothing in the docket names interest, fees
+  or a second payment. The $7,252 difference is unexplained. The complaint does
+  record a **separate Grant Agreement** with the same company, "not part of
+  this lawsuit," with no amount given, which could carry it. Do not say it does.
 - **Therma-Tru.** The Schedule I row reads "THERMA-TRU CORP CLAWBACK" at
   $200,000 and a suit sits in the list (21CV001186, filed February 25, 2021,
   dismissed six days later before service completed). The docket neither

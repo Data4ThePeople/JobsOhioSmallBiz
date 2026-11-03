@@ -169,7 +169,7 @@ def main():
           f"{sum(1 for r in rows if r['kind'] == 'against JobsOhio')} against JobsOhio")
     print(f"{len(matched)} of {len(suits)} defendants tie to a Schedule I recipient, "
           f"carrying ${sum(int(r['paid'] or 0) for r in matched):,} paid")
-    print(f"dockets read: {sum(1 for r in rows if r['docket_read'])}\n")
+    print(f"dockets read: {sum(1 for r in rows if r['docket_read'])} of {len(suits)} suits\n")
     print(f"{'year':6s} {'suits':>6s} {'tied to a grant':>16s} {'paid to them':>15s}")
     for y, n in sorted(Counter(r["year"] for r in suits).items()):
         m = [r for r in matched if r["year"] == y]

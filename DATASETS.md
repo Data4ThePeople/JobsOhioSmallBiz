@@ -678,3 +678,72 @@ program to label. Any sentence using either must say which.
 with `emp_bucket` or `parent_hq_state`. The analysis reads the latter;
 `18_apply_review.py` merges the former into it. Skipping that merge used to
 mean a changed review answer was silently ignored.
+
+---
+
+## Method check: is Schedule I cash paid, or the award?
+
+**Why this was tested.** The Republic Steel docket (23CV008186) shows a grant
+agreement authorizing $500,000 and a complaint pleading that JobsOhio
+"provided Defendant $300,000.00 in grant funds." The Schedule I row for that
+company is a single FY2022 entry of **$500,000**, which equals the authorized
+amount, not the pleaded disbursement. If Schedule I rows generally reported
+awards rather than cash, the headline dollars in this project would be wrong.
+
+**The test.** 1,119 recipients appear in both JobsOhio's monthly executed
+grants reports (which record the award) and Schedule I (which JobsOhio's own
+Schedule O says is cash). If Schedule I reported awards, the two would agree
+almost always. They do not, and the disagreement is strongly size-dependent:
+
+| Committed | Recipients | Schedule I equals the award | Cash as a share of commitments |
+|---|---|---|---|
+| $50,000 or less | 337 | 84.6% | 169.2% |
+| $50,000 to $250,000 | 359 | 61.8% | 141.4% |
+| $250,000 to $1,000,000 | 247 | 50.2% | 119.0% |
+| Over $1,000,000 | 176 | **17.0%** | **54.5%** |
+
+The large awards, where a partial draw is likely and where most of the money
+is, behave exactly as cash should: only 17% match the award and the group drew
+54.5% of what was committed. Small awards match because a $25,000 or $50,000
+grant is a single lump that is usually drawn in full. Among the 859 recipients
+with exactly one award in the monthly reports, 72.3% match, and the 15.7% that
+drew less drew a median of 67% of the award.
+
+The shares above 100% in the small bands are a limit of the commitments file,
+not of Schedule I: a recipient with several awards may have only some of them
+parsed out of the monthly report PDFs, so its commitment total is understated.
+
+**Conclusion.** Schedule I is cash paid, as the filer states in Schedule O and
+as the Part IX reconciliation shows. Republic Steel is a single-case
+discrepancy, not a systemic one, and it is **not resolved**: the complaint
+pleads $300,000 disbursed, the defendant's answer denies that it received
+$300,000, JobsOhio dismissed with prejudice four months later, and no filing
+reconciles either figure with the $500,000 on the return. Flagged as an open
+item in `docs/STORY_LEADS.md` rather than used.
+
+---
+
+## What a "grant" on Schedule I can actually be
+
+Three of the 63 lawsuits establish that some Schedule I rows are not cash
+handed to the named recipient at all.
+
+Under a **Talent Acquisition Services Agreement**, JobsOhio pays subcontractors
+to perform services for a company, and the company owes the value of those
+services if it misses its metrics. The INEOS complaint (21CV007238) states it
+exactly: JobsOhio "commenced performance of the TAS Agreement and **incurred
+$54,235 in subcontractor costs** necessary to provide the Deliverables and
+Services." That $54,235 is the FY2021 Schedule I figure for INEOS Pigments USA
+Inc. So the return reports as a grant to the company money JobsOhio spent with
+vendors on the company's behalf. Olive AI, Nexient, Candid Care and Candle-Lite
+show the same structure.
+
+This bears directly on the Supply Line International Medical question in
+`docs/STORY_LEADS.md` lead 8: a Schedule I row does not establish that the
+named company received money.
+
+**Also established:** JobsOhio's own form contemplates a company holding more
+than one agreement. Section 9(a)(v) makes it a Breach if "Grantees are in
+default of **any other agreement between Grantor and either Grantee**." So a
+Schedule I row for a company can span a grant, a services agreement and a loan,
+and a lawsuit covers one of them.
