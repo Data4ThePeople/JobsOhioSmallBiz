@@ -122,6 +122,10 @@ July 1, 2023 to June 30, 2024. Grant dates within the year are not given.
 - *Recipient address is not headquarters.* 84% of rows carry an Ohio address.
   This is the grantee entity's mailing address, often the Ohio plant or a
   project LLC. It must not be used as the home-state flag.
+- *One recipient files a foreign address.* British Airways plc (FY2024,
+  $5,681,149) carries `ForeignAddress`, not `USAddress`. The first parser read
+  only `USAddress` and left its street and city blank. Fixed November 3, 2026;
+  a `country` column now carries the country code where there is one.
 - *Recipients include project vehicles.* Rows like "101 WEST FIFTH LLC" and
   "300 CLINTON LLC" are real-estate or single-project entities. Each must be
   resolved to the operating company that benefited before size or home state
@@ -134,7 +138,7 @@ July 1, 2023 to June 30, 2024. Grant dates within the year are not given.
   FY2022, totaling -$26,040,088. They record money returned or reversed:
   Bon-Ton Department Stores (-$200,000 in FY2020, after its 2018
   bankruptcy), Pactiv, Tramec Sloan and others; one payee is literally named
-  "AJM PACKAGING CLAWBACK." 17 recipients net to zero or below. Some negative
+  "AJM PACKAGING CLAWBACK." 16 parents net to zero or below. Some negative
   rows have no positive row under the same EIN (Foundation Software,
   -$750,000 in FY2021; Hynes Industries, -$50,000 in FY2019), so the original
   payment was either before FY2014 or under another name or EIN. Dollar
@@ -163,6 +167,13 @@ July 1, 2023 to June 30, 2024. Grant dates within the year are not given.
   field, so three classifications had inherited the error and were corrected.
 - *Case and punctuation vary* across years for the same recipient
   ("Company, Inc." vs "COMPANY INC"). Dedupe by EIN first, then normalized name.
+  The same problem reappears one level up, in the researched parent name:
+  "McKesson Corporation" and "MCKESSON CORPORATION" were counted as two
+  companies, and research notes written into the name ("First Solar, Inc.
+  (self; public company)") split a parent further. `09_analyze.py` merges
+  parents whose normalized name, size bucket, home state and class all agree,
+  and prints the merges and any same-name pair it refused to merge to
+  `TIEOUT.md`. This moves counts, not dollars.
 
 **Uncertainty.** None stated by the filer. The return is signed under penalty
 of perjury and prepared by an outside firm.
@@ -579,3 +590,67 @@ shares in `grant_conditions.csv` are therefore unchanged.
 
 **License and attribution.** Court filings are public records. Cite the court,
 case number, document and filing date.
+
+---
+
+## Method decisions changed on November 3, 2026
+
+Recorded here because each one moves a published number, and the rule is that a
+method change is documented in the commit that makes it.
+
+**Placeholder parents are no longer parents.** A research pass that could not
+find an owner wrote the word "unknown" or "unresolved" in the parent cell
+instead of leaving it empty, and the analysis keyed on that word, merging 12
+unrelated project LLCs into two companies. A recipient whose owner was not
+found is now its own parent.
+
+**A conflict between two payees of one parent is resolved against the finding,
+not by read order.** Where two researched recipients of the same parent
+disagree, the analysis takes the smaller size band, Ohio for home state, and
+the non-`business` class, and still prints the conflict. Read order used to
+decide. The class rule moved Nationwide Children's Hospital ($13,500,000) out
+of the business denominator, which is why Ohio's share of business dollars fell
+from 36.8% to 35.8%.
+
+**The worst case sweeps on the weakest grade under a parent.** It used to sweep
+on the grade inherited from whichever payee was read first, which let 6 parents
+carrying $16.4 million escape although they had a C-graded payee. The published
+floor is now 61.3% of dollars to large, down from 62.4%, which is the correct
+direction: the old figure was less unfavorable than its own wording promised.
+
+**`data/reversals.csv` is deleted.** Its `paid_before` column matched on exact
+company name, so it missed offsetting positive rows filed under a different
+spelling of the same EIN (BrewDog USA / BREWDOG COLUMBUS; Barclays Services
+Ohio / BARCLAYS SERVICES LLC; THERMA-TRU CORP / THERMA-TRU CORP CLAWBACK; iSqFt
+/ ConstructConnect; Unverferth three ways) and reported 21 net-zero recipients
+for -$1,657,252 instead of 16 for -$757,252. Nothing in the pipeline read it.
+`09_analyze.py` computes the figure correctly from the EIN-keyed join, and
+`TIEOUT.md` carries it.
+
+**`TIEOUT.md` now carries a Sensitivities section,** computed rather than
+asserted. The two that matter:
+
+- *The class boundary is the largest exposure in the project.* 101 parents
+  carrying $117,746,967 were classed out of `business` by hand after the
+  automatic classifier called them businesses, mostly into site_development.
+  96 of them, carrying $97,096,967, would have scored small. Recompute the
+  headline on the automatic class and the small share of business dollars goes
+  from 18.1% to 26.2%. The reclassification is defensible on the merits, since
+  these are project vehicles and industrial developers rather than operating
+  small businesses, but it is a judgment call worth $97 million that moves the
+  headline 8 points toward the thesis, and the published worst case does not
+  cover it. The post states the counterfactual.
+- *One payment carries the home-state finding.* Intel Corporation alone is
+  $124,422,793, 15.2% of business dollars, almost all of it one FY2023 payment.
+  Leave Intel out and Ohio's share of business dollars goes from 35.8% to
+  42.2%. The post names Intel beside the number.
+
+**Two denominators, stated on purpose.** Size and home-state shares run on
+dollars net of the 33 reversed payments ($1,171,884,901). The conditions shares
+run on positive payments only ($1,197,924,989), because a reversal has no
+program to label. Any sentence using either must say which.
+
+**A guard now stops the analysis** if `review_size` or `review_hq` disagrees
+with `emp_bucket` or `parent_hq_state`. The analysis reads the latter;
+`18_apply_review.py` merges the former into it. Skipping that merge used to
+mean a changed review answer was silently ignored.

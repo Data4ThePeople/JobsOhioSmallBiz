@@ -18,7 +18,7 @@ RECON = ROOT / "data" / "reconcile_990.csv"
 NS = {"i": "http://www.irs.gov/efile"}
 
 COLS = ["fiscal_year", "object_id", "row_in_filing", "recipient_name", "recipient_name_2",
-        "recipient_ein", "street", "city", "state", "zip", "irc_section",
+        "recipient_ein", "street", "city", "state", "zip", "country", "irc_section",
         "cash_amt", "noncash_amt", "purpose"]
 
 
@@ -50,10 +50,18 @@ def parse(path):
             "recipient_name": tx(r, "i:RecipientBusinessName/i:BusinessNameLine1Txt||i:RecipientBusinessName/i:BusinessNameLine1"),
             "recipient_name_2": tx(r, "i:RecipientBusinessName/i:BusinessNameLine2Txt||i:RecipientBusinessName/i:BusinessNameLine2"),
             "recipient_ein": tx(r, "i:RecipientEIN"),
-            "street": tx(r, "i:USAddress/i:AddressLine1Txt||i:USAddress/i:AddressLine1"),
-            "city": tx(r, "i:USAddress/i:CityNm||i:USAddress/i:City"),
-            "state": tx(r, "i:USAddress/i:StateAbbreviationCd||i:USAddress/i:State"),
-            "zip": tx(r, "i:USAddress/i:ZIPCd||i:USAddress/i:ZIPCode"),
+            # a recipient can file a foreign address instead: British Airways
+            # (FY2024) carries ForeignAddress, and reading only USAddress left
+            # its street and city blank
+            "street": tx(r, "i:USAddress/i:AddressLine1Txt||i:USAddress/i:AddressLine1"
+                            "||i:ForeignAddress/i:AddressLine1Txt||i:ForeignAddress/i:AddressLine1"),
+            "city": tx(r, "i:USAddress/i:CityNm||i:USAddress/i:City"
+                          "||i:ForeignAddress/i:CityNm||i:ForeignAddress/i:City"),
+            "state": tx(r, "i:USAddress/i:StateAbbreviationCd||i:USAddress/i:State"
+                           "||i:ForeignAddress/i:ProvinceOrStateNm"),
+            "zip": tx(r, "i:USAddress/i:ZIPCd||i:USAddress/i:ZIPCode"
+                         "||i:ForeignAddress/i:ForeignPostalCd"),
+            "country": tx(r, "i:ForeignAddress/i:CountryCd"),
             "irc_section": tx(r, "i:IRCSectionDesc"),
             "cash_amt": int(float(tx(r, "i:CashGrantAmt") or 0)),
             "noncash_amt": int(float(tx(r, "i:NonCashAssistanceAmt") or 0)),

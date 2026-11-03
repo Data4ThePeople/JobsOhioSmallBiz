@@ -27,6 +27,9 @@ import csv, json, sys
 from collections import defaultdict, Counter
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from names import normalize_name
+
 ROOT = Path(__file__).resolve().parent.parent
 GRANTS = ROOT / "data" / "grants_raw.csv"
 PARENTS = ROOT / "data" / "parents.csv"
@@ -57,6 +60,24 @@ def load():
         g["fy"] = int(g["fiscal_year"])
         if g["recipient_id"] not in parents:
             sys.exit(f"grant row without a parents.csv entry: {g['recipient_id']} (run 04 and 05)")
+
+    # The review columns are the record of who decided what, but the analysis
+    # reads emp_bucket and parent_hq_state. 18_apply_review.py merges one into
+    # the other. If that merge is ever skipped, a changed review answer would be
+    # silently ignored and the headline would not move, so check it here.
+    SMALL, LARGE = ("<100", "100-499"), ("500-4999", "5000+")
+    bad = []
+    for p in parents.values():
+        rs, rh, bucket = p.get("review_size", ""), p.get("review_hq", ""), p["emp_bucket"]
+        if rs == "Large" and bucket in SMALL or rs == "Small" and bucket in LARGE:
+            bad.append(f"{p['name']}: review says {rs}, emp_bucket is {bucket}")
+        if rh and bucket:  # home state only; a blank review means not reviewed
+            want = "OH" if rh.strip().lower() in ("yes", "y", "oh") else ""
+            if want and p["parent_hq_state"] and p["parent_hq_state"] != want:
+                bad.append(f"{p['name']}: review says Ohio, parent_hq_state is {p['parent_hq_state']}")
+    if bad:
+        sys.exit("review answers not merged into the analysis columns; rerun "
+                 "scripts/18_apply_review.py:\n  " + "\n  ".join(bad[:10]))
     return grants, parents
 
 
@@ -108,10 +129,18 @@ def build_parents(grants, parents):
         k = parent_key(p)
         a = agg.setdefault(k, {"parent": k, "class": "", "bucket": "", "hq": "", "conf": "", "founded_oh": "",
                                "recipients": set(), "rows": 0, "cash": 0, "years": set(), "by_fy": Counter(),
-                               "sources": set(), "programs": set(), "resolved": False})
+                               "sources": set(), "programs": set(), "resolved": False,
+                               "grades": set(), "auto_class": ""})
         a["recipients"].add(g["recipient_id"]); a["rows"] += 1; a["cash"] += g["cash"]
         a["years"].add(g["fy"]); a["by_fy"][g["fy"]] += g["cash"]
         cls = p["recipient_class"] or p["recipient_class_auto"]
+        # every payee's grade is kept, not just the first one read: the worst
+        # case sweeps on the weakest grade under the parent, so a parent with
+        # one A-graded payee and one C-graded payee is swept
+        if p["confidence"]:
+            a["grades"].add(p["confidence"])
+        if not a["auto_class"]:
+            a["auto_class"] = p["recipient_class_auto"] or cls
         # a parent's attributes come from its researched recipients; the first
         # researched one wins, and any disagreement is reported
         if p["parent"]:
@@ -120,18 +149,21 @@ def build_parents(grants, parents):
                                ("conf", p["confidence"]), ("founded_oh", p["founded_in_ohio"])):
                 if col and not a[field]:
                     a[field] = col
-                elif col and a[field] and a[field] != col and field in ("bucket", "hq"):
+                elif col and a[field] and a[field] != col and field in ("bucket", "hq", "class"):
                     # Two recipients of one parent were researched to different
                     # answers. Rather than let whichever was read first win, the
                     # conflict is resolved against the finding: the smaller size
-                    # band, which moves the dollars into "small", and Ohio, which
-                    # moves them into "homegrown". The conflict is still reported.
+                    # band, which moves the dollars into "small"; Ohio, which
+                    # moves them into "homegrown"; and for class, out of
+                    # "business", which is the headline denominator. The
+                    # conflict is still reported.
                     a.setdefault("conflicts", set()).add(f"{field}: {a[field]} vs {col} ({p['name']})")
                     if field == "bucket":
                         a[field] = min(a[field], col, key=lambda b: BUCKETS.index(b) if b in BUCKETS else 99)
-                    elif "OH" in (a[field], col):
+                    elif field == "hq" and "OH" in (a[field], col):
                         a[field] = "OH"
-                    a["conf"] = max(a["conf"] or "D", p["confidence"] or "D")   # the weaker grade
+                    elif field == "class":
+                        a[field] = next((c for c in (a[field], col) if c != "business"), a[field])
             for s in (p["hq_source"], p["emp_source"]):
                 if s:
                     a["sources"].add(s)
@@ -141,6 +173,52 @@ def build_parents(grants, parents):
             if prog.strip():
                 a["programs"].add(prog.strip())
     return agg
+
+
+def merge_duplicate_names(agg):
+    """Collapse parents that are the same company written two ways.
+
+    "Berkshire Hathaway Inc." appears four times with different parentheticals,
+    "McKesson Corporation" twice in different case. Counting them separately
+    overstated the recipient count by about 22. Two records merge only when the
+    normalized name, size bucket, home state and class all agree, so a genuine
+    disagreement is never papered over; those stay separate and are reported.
+    """
+    groups = defaultdict(list)
+    for k, a in agg.items():
+        groups[(normalize_name(k), a["bucket"], a["hq"], a["class"])].append(k)
+    merged, notes = {}, []
+    by_norm = defaultdict(set)
+    for k in agg:
+        by_norm[normalize_name(k)].add(k)
+    for (norm, *_), keys in groups.items():
+        if len(keys) == 1:
+            merged[keys[0]] = agg[keys[0]]
+            continue
+        # keep the longest spelling, which carries the ownership detail
+        keep = max(keys, key=len)
+        a = agg[keep]
+        for k in keys:
+            if k == keep:
+                continue
+            b = agg[k]
+            a["recipients"] |= b["recipients"]; a["rows"] += b["rows"]; a["cash"] += b["cash"]
+            a["years"] |= b["years"]; a["by_fy"].update(b["by_fy"])
+            a["sources"] |= b["sources"]; a["programs"] |= b["programs"]
+            a["grades"] |= b["grades"]
+            a["conflicts"] = a.get("conflicts", set()) | b.get("conflicts", set())
+        notes.append(f"{keep}  <=  {', '.join(sorted(k for k in keys if k != keep))}")
+        merged[keep] = a
+    # same company name, different attributes, so not merged: report them
+    unmerged = []
+    for norm, keys in by_norm.items():
+        live = sorted(k for k in keys if k in merged)
+        if len(live) < 2:
+            continue
+        unmerged.append(" | ".join(
+            f"{k} [{merged[k]['bucket'] or '?'}, {merged[k]['hq'] or '?'}, "
+            f"{merged[k]['class'] or '?'}, ${merged[k]['cash']:,}]" for k in live))
+    return merged, notes, unmerged
 
 
 def size_group(a, cutoff="500"):
@@ -167,6 +245,7 @@ def shares(items, key, weight):
 def main():
     grants, parents = load()
     agg = build_parents(grants, parents)
+    agg, merge_notes, unmerged = merge_duplicate_names(agg)
     # A parent whose payments net to zero or less (JobsOhio reversed or clawed
     # back everything) is not counted as a recipient. Its negative dollars
     # stay in the net totals.
@@ -202,7 +281,13 @@ def main():
         # worst case for "most recipients are small": unknown and low-confidence -> large
         def wc_size(a, against):
             g = size_group(a)
-            if g == "unknown" or a["conf"] in ("C", "D"):
+            # sweep on the WEAKEST grade among the parent's payees, not the one
+            # inherited from whichever payee was read first. An independent
+            # tie-out found 6 parents escaping the sweep although they had a
+            # C-graded payee, $16.4m of it, which made the published floor less
+            # unfavorable than its own wording promised.
+            weakest = max(a["grades"] or {a["conf"] or "D"})
+            if g == "unknown" or weakest in ("C", "D"):
                 return against
             return g
         b["worst_case"] = {
@@ -289,7 +374,83 @@ def main():
         lines.append(f"- Worst case: dollars to large at least {pct(b['worst_case']['cash_large_min'])}; parents small at least {pct(b['worst_case']['parents_small_min'])}")
         lines.append("- Two-by-two (dollars): " + ", ".join(f"{k} {pct(v['share'])}" for k, v in b["two_by_two"]["cash"].items()))
     if out["conflicts"]:
-        lines += ["", "## Conflicts between recipients of one parent", ""] + [f"- {c}" for c in out["conflicts"]]
+        lines += ["", "## Conflicts between recipients of one parent", "",
+                  "Resolved against the finding, not by read order: the smaller size band, Ohio, "
+                  "and out of the `business` denominator.", ""] + [f"- {c}" for c in out["conflicts"]]
+
+    # Sensitivities. The worst case moves size inside the business set; it never
+    # reconsiders which recipients are businesses, and it never asks what one
+    # payment is carrying. Both of those move the headline more than size does,
+    # so both are computed here and belong in the post.
+    lines += ["", "## Sensitivities", "",
+              "These are not errors. They are the places the headline is most exposed, "
+              "computed so the post can state them before a reader finds them.", ""]
+
+    auto = [a for a in allp if (a["auto_class"] or a["class"]) == "business"]
+    a_small = sum(a["cash"] for a in auto if size_group(a) == "small")
+    a_tot = sum(a["cash"] for a in auto)
+    b_small = sum(a["cash"] for a in biz if size_group(a) == "small")
+    b_tot = sum(a["cash"] for a in biz)
+    moved = [a for a in allp if a["class"] != "business"
+             and (a["auto_class"] or a["class"]) == "business"]
+    moved_small = [a for a in moved if size_group(a) == "small"]
+    lines += [
+        f"**The class boundary, and it is the largest one.** {len(moved)} parents carrying "
+        f"${sum(a['cash'] for a in moved):,} were classed out of `business` by hand after the "
+        f"automatic classifier called them businesses, mostly into site_development: project "
+        f"LLCs and industrial developers rather than operating companies. "
+        f"{len(moved_small)} of them, carrying ${sum(a['cash'] for a in moved_small):,}, would "
+        f"have scored small. Recompute the headline on the automatic class instead and the "
+        f"business universe goes {len(biz):,} parents / ${b_tot:,} to {len(auto):,} / ${a_tot:,}, "
+        f"and the small share of business dollars goes "
+        f"**{pct(b_small / b_tot)} to {pct(a_small / a_tot)}**. The published worst case does not "
+        f"cover this: it reassigns size inside the business set and never reconsiders the class "
+        f"boundary. The post should state this figure itself rather than wait to be asked why a "
+        f"company that builds and leases industrial buildings is not a small business.", ""]
+
+    top = sorted(biz, key=lambda a: -a["cash"])[:3]
+    one = top[0]
+    rest = [a for a in biz if a is not one]
+    r_oh = sum(a["cash"] for a in rest if home_group(a) == "ohio")
+    r_lg = sum(a["cash"] for a in rest if size_group(a) == "large")
+    r_tot = sum(a["cash"] for a in rest)
+    # read these off the business block by name: `b` and `h` are loop variables
+    # above and hold the "all recipients" block by the time we get here
+    bb = out["business"]
+    h_oh = bb["home"]["cash"].get("ohio", {"share": 0})["share"]
+    b_large = bb["500"]["cash"].get("large", {"share": 0})["share"]
+    lines += [
+        f"**One payment carries the home-state finding.** {one['parent']} alone is "
+        f"${one['cash']:,}, {pct(one['cash'] / b_tot)} of all business dollars. The top three "
+        f"({', '.join(a['parent'][:28] for a in top)}) are {pct(sum(a['cash'] for a in top) / b_tot)}. "
+        f"Leave {one['parent']} out and Ohio's share of business dollars goes "
+        f"**{pct(h_oh)} to {pct(r_oh / r_tot)}**, and the large share goes "
+        f"{pct(b_large)} to {pct(r_lg / r_tot)}. "
+        f"Its classification is not in doubt, so this is leverage rather than error. Name it "
+        f"beside the number.", ""]
+
+    sm = sorted((a for a in biz if size_group(a) == "small"), key=lambda a: -a["cash"])[:1]
+    if sm:
+        lines.append(f"**The small side is not outlier-driven,** which is the reassuring half: the "
+                     f"largest small parent is {sm[0]['parent']} at ${sm[0]['cash']:,}, "
+                     f"{pct(sm[0]['cash'] / b_small)} of small dollars.")
+    lines += ["",
+              f"**Two denominators, on purpose.** The size and home-state shares run on dollars "
+              f"net of the 33 reversed payments (${m['cash_total']:,}). The conditions shares in "
+              f"`data/grant_conditions.csv` run on positive payments only "
+              f"(${m['cash_total'] - m['reversal_dollars']:,}), because a reversal has no program "
+              f"to label. The post must say which denominator each number uses.", ""]
+
+    if merge_notes:
+        lines += ["## Parents merged as the same company written two ways", "",
+                  "Merged only where the normalized name, size bucket, home state and class all "
+                  "agree, so a real disagreement is never papered over.", ""]
+        lines += [f"- {n}" for n in sorted(merge_notes)]
+    if unmerged:
+        lines += ["", "### Same normalized name, left separate because an attribute disagrees", "",
+                  "Each of these is worth one look before publishing: either they are genuinely "
+                  "different entities, or one of the two records is wrong.", ""]
+        lines += [f"- {n}" for n in sorted(unmerged)]
     TIEOUT.write_text("\n".join(lines) + "\n")
     print("\n".join(lines))
     print(f"\nwrote {OUT.relative_to(ROOT)} ({OUT.stat().st_size:,} bytes) and {TIEOUT.name}")
