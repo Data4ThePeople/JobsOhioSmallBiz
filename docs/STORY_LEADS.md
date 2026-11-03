@@ -309,17 +309,51 @@ JobsOhio director, year by year, against the recipient list.
 
 ---
 
-## 9. Two of twelve JobsOhio programs publish a clawback
+## 9. Every JobsOhio grant agreement has a clawback. JobsOhio does not publish it.
 
 The question Eric asked: can JobsOhio take the money back if the jobs never
-arrive? We read the published guidelines for every program that paid a
-Schedule I grant, pulled the exact wording on how the grant is paid, what the
-company has to do, what it has to report, and what happens if it falls short,
-and tied each program to the payments it made. The terms are in
-`data/program_terms.json` and the payment labels are in
-`data/grant_conditions.csv`.
+arrive? The answer is yes, it always could, and the clause saying so has not
+changed since 2013. It is just not in anything JobsOhio publishes.
 
-**What the published guidelines say**
+We worked this from two directions. First, the published guidelines for every
+program that paid a Schedule I grant, read for how the grant is paid, what the
+company must do, what it must report, and what happens if it falls short
+(`data/program_terms.json`, labels joined to payments in
+`data/grant_conditions.csv`). Then, when the guidelines turned out to be nearly
+silent, the 63 lawsuits JobsOhio has filed in Franklin County, where the
+complaints quote the agreements and usually attach them (lead 11,
+`data/jobsohio_lawsuits.csv`).
+
+**The clause, from the agreements themselves.** Section 9(b)(ii) of the
+standard JobsOhio Grant Agreement, headed **"Demand Repayment of Grant
+Funds"**:
+
+> In the event of a Breach by Grantee, Grantor may terminate this Agreement and
+> may in addition exercise one or more of the following remedies: *** (ii)
+> **Demand Repayment of Grant Funds. Grantor may demand repayment of all or a
+> portion of Grant Funds disbursed. Grantee shall repay such Grant Funds within
+> thirty (30) days after written demand by Grantor.**
+
+That sentence appears word for word in every grant agreement read so far, in
+agreements dated 2013 through 2023. 49 of the 52 complaints read block-quote
+it, and 47 attach the whole signed agreement as an exhibit. So the text of a
+JobsOhio grant agreement is public, but only in a courthouse, and only for a
+company JobsOhio decided to sue.
+
+Note the two words the post should sit on: **may**, and **all or a portion**.
+Nothing obliges JobsOhio to recover anything, and nothing sets a formula. An
+Ohio judge has already read it that way. In JobsOhio v. MITEC Powertrain
+(20CV004663), the company argued that enforcing the clause "in the midst of a
+global pandemic, is unreasonable and a breach of the implied duty to act in
+good faith." Judge Sheryl Munson rejected it, holding that the agreement
+"clearly and unambiguously provided that Plaintiff may recover the entire
+amount of the grant upon a breach."
+
+The word "clawback" appears nowhere in any of these agreements. Neither does
+"liquidated damages," which belongs only to the Olive AI services agreement, a
+different instrument.
+
+**What the published guidelines say, by contrast**
 
 | Conditions published | Payments | Dollars paid | Share of dollars |
 |---|---|---|---|
@@ -392,25 +426,39 @@ down to retaining the heading "Ineligible Speculative Development Costs," but
 the immediate-and-full-repayment clause is dropped. It is the only JobsOhio
 program whose guidelines are published as a Word document rather than a PDF.
 
-**What we cannot say, and the one case that proves it.** Clawback terms may
-exist in the individual grant agreements, which JobsOhio does not publish. So
-the honest claim is about what is disclosed, not about what is in force: for
-93.2% of the dollars, the public record does not say whether Ohio can get the
-money back.
+**So what is the finding?** Not that the money is unprotected. The money is
+protected, by a clause that has been in the standard agreement since at least
+2013 and that a court has enforced. The finding is the gap between the two
+records:
 
-Three pieces of evidence say the terms are there anyway. The $26.0 million of
-reversed payments in lead 2, including rows literally named "THERMA-TRU CORP
-CLAWBACK" and "AJM PACKAGING CLAWBACK." The 59 recipients with money recorded
-as returned on some Schedule I. And, decisively, the 63 lawsuits JobsOhio has
-filed in Franklin County to get its money back, which are lead 11. The
-complaints quote the agreements. So the terms exist, JobsOhio enforces them,
-and the only public place to read them is a courthouse.
+- What an Ohio resident can read: guidelines that, for 93.2% of the dollars,
+  say nothing about getting the money back.
+- What is actually signed: a repayment clause in every agreement, discretionary
+  as to whether and how much.
+- What connects them: a lawsuit. The agreement becomes public only when
+  JobsOhio sues, and then only for that one company.
 
-The finding is not that the money is unprotected. It is that an Ohio resident
-has no way to check whether it is, unless the company was sued.
+Three other things point the same way. The $26.0 million of reversed payments
+in lead 2, including rows literally named "THERMA-TRU CORP CLAWBACK" and "AJM
+PACKAGING CLAWBACK." The 59 recipients with money recorded as returned on some
+Schedule I. And the fact that a Therma-Tru lawsuit sits in the Franklin County
+list, filed February 25, 2021, which ties the clawback row on the 990 to a case
+number.
 
-**Ask JobsOhio:** do the grant agreements for the Economic Development Grant
-contain repayment terms, and will JobsOhio publish a sample agreement? What
+**The one that does not fit, and it matters.** The Commercial Air Service
+Restoration program is not a grant agreement of this kind. Its published
+guidelines set no reimbursement requirement, no documentation requirement and
+no repayment remedy, and no airline appears among the 63 defendants. That
+program paid $10,073,711, including $5,681,149 to British Airways. We cannot
+say whether those agreements carry Section 9(b)(ii) or anything like it. This
+also corrects what we told Eric earlier: the airline grants are not, on the
+published record, pay-as-you-fly.
+
+**Ask JobsOhio:** will you publish a sample grant agreement, given that 47 of
+them are already filed in Franklin County? How many times has Section 9(b)(ii)
+been invoked, for how much, and how much has actually come back? Why does the
+Economic Development Grant guideline, two pages dated December 10, 2015, not
+mention the repayment clause that is in every agreement it governs? What
 happens under the air service program when a subsidized route ends? Where are
 the Growth Fund guidelines?
 
