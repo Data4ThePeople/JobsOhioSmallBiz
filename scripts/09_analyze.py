@@ -16,7 +16,13 @@ government, university, hospital, nonprofit. The headline denominator is
 class == business; the page can toggle to all classes.
 
 Uncertain rows (confidence C or D, or no bucket) are shown as their own
-group and the worst-case bounds reassign them against the thesis."""
+group and the worst-case bounds reassign them against the thesis.
+
+Two later findings ride along on the parent record so the page can show them
+beside the size and home-state calls: `conditions`, the weakest conditions
+published for any program that paid this parent (19_grant_conditions.py), and
+`failure`, the verified post-grant outcome where there is one
+(21_failures.py). Both are optional inputs: the analysis runs without them."""
 import csv, json, sys
 from collections import defaultdict, Counter
 from pathlib import Path
@@ -24,8 +30,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 GRANTS = ROOT / "data" / "grants_raw.csv"
 PARENTS = ROOT / "data" / "parents.csv"
+CONDITIONS = ROOT / "data" / "grant_conditions.csv"
+FAILURES = ROOT / "data" / "failures.csv"
 OUT = ROOT / "dist" / "data.json"
 TIEOUT = ROOT / "TIEOUT.md"
+
+# weakest published terms win when a parent was paid by several programs,
+# because the payment cannot be tied to one of them
+COND_ORDER = {"Conditional": 3, "Partly conditional": 2, "Unknown": 1, "Program unknown": 0}
 
 BUCKETS = ["<100", "100-499", "500-4999", "5000+"]
 CUTOFFS = {"100": ["<100"], "500": ["<100", "100-499"], "5000": ["<100", "100-499", "500-4999"]}
@@ -50,6 +62,29 @@ def load():
 
 def parent_key(p):
     return p["parent"].strip() if p["parent"].strip() else p["name"].strip()
+
+
+def load_side_findings(parents):
+    """(conditions by parent, failure by parent). Both files are optional."""
+    cond = {}
+    if CONDITIONS.exists():
+        for r in csv.DictReader(CONDITIONS.open()):
+            k = r["parent"].strip() or r["recipient"].strip()
+            call = r["conditions"]
+            if k and (k not in cond or COND_ORDER.get(call, 0) < COND_ORDER.get(cond[k], 0)):
+                cond[k] = call
+    fail = {}
+    if FAILURES.exists():
+        # parents.csv is keyed by recipient, failures.csv by payee name, so the
+        # payee is mapped up to its parent the same way the table is keyed
+        by_name = {p["name"].strip(): parent_key(p) for p in parents.values()}
+        for r in csv.DictReader(FAILURES.open()):
+            if r["verdict"] != "Confirmed failure":
+                continue
+            k = r["parent"].strip() or by_name.get(r["name"].strip()) or r["name"].strip()
+            fail[k] = {"category": r["category"], "event": r["event"],
+                       "date": r["event_date"], "confidence": r["confidence"]}
+    return cond, fail
 
 
 def build_parents(grants, parents):
@@ -163,13 +198,45 @@ def main():
     out["confidence"] = {"parents": shares(allp, lambda a: a["conf"] or "none", lambda a: 1)[0],
                          "cash": shares(allp, lambda a: a["conf"] or "none", lambda a: a["cash"])[0]}
     out["conflicts"] = sorted(c for a in allp for c in a.get("conflicts", set()))
+    cond, fail = load_side_findings(parents)
     out["parents_table"] = sorted([{
         "parent": a["parent"], "class": a["class"], "bucket": a["bucket"], "hq": a["hq"], "conf": a["conf"],
         "founded_oh": a["founded_oh"], "cash": a["cash"], "rows": a["rows"], "recipients": len(a["recipients"]),
         "years": sorted(a["years"]), "programs": sorted(a["programs"]), "sources": sorted(a["sources"])[:3],
         "by_fy": {str(k): v for k, v in sorted(a["by_fy"].items())},
         "payees": " | ".join(sorted({parents[r]["name"] for r in a["recipients"]}))[:400],
+        "conditions": cond.get(a["parent"], ""), "failure": fail.get(a["parent"], None),
     } for a in allp], key=lambda d: -d["cash"])
+    # dollars by published conditions, and the verified post-grant failures,
+    # on the same parent universe the headline uses
+    cond_agg = defaultdict(lambda: {"parents": 0, "cash": 0})
+    for a in allp:
+        c = cond_agg[cond.get(a["parent"], "Program unknown")]
+        c["parents"] += 1; c["cash"] += a["cash"]
+    out["conditions"] = dict(cond_agg)
+    # Two dollar figures, and the post must use the payee one. Rolling a failed
+    # payee up to its parent sweeps in the parent's other payees, which did not
+    # fail: Nestle USA's closed Solon plant took $3.2M, but Nestle S.A. as a
+    # parent took $9.2M across Ohio. The payee figure is the amount paid to the
+    # thing that failed; the parent figure is an upper bound on exposure.
+    fail_agg = defaultdict(lambda: {"parents": 0, "parent_cash": 0, "payee_cash": 0})
+    payee_cash = defaultdict(int)
+    if FAILURES.exists():
+        for r in csv.DictReader(FAILURES.open()):
+            if r["verdict"] == "Confirmed failure":
+                payee_cash[r["parent"].strip() or r["name"].strip()] += int(r["paid"] or 0)
+    matched = 0
+    for a in allp:
+        f = fail.get(a["parent"])
+        if not f:
+            continue
+        matched += 1
+        g = fail_agg[f["category"] or "Uncategorised"]
+        g["parents"] += 1; g["parent_cash"] += a["cash"]; g["payee_cash"] += payee_cash.get(a["parent"], 0)
+    out["failures"] = {"by_category": dict(fail_agg), "confirmed": len(fail),
+                       "matched_to_a_parent": matched,
+                       "payee_cash_total": sum(payee_cash.values()),
+                       "parent_cash_total": sum(g["parent_cash"] for g in fail_agg.values())}
     out["rows"] = [{"fy": g["fy"], "recipient": g["recipient_name"], "city": g["city"], "state": g["state"],
                     "cash": g["cash"], "parent": parent_key(parents[g["recipient_id"]])} for g in grants]
     OUT.parent.mkdir(exist_ok=True)

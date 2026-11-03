@@ -76,6 +76,9 @@
   .jo tbody tr:hover{background:var(--hover)}
   .jo td .key{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:7px;vertical-align:baseline}
   .jo td .conf{display:inline-block;font-size:11px;font-weight:650;padding:0 5px;border-radius:4px;border:1px solid var(--border);color:var(--muted)}
+  /* a few parent names run to a full sentence of ownership; let the name
+     column take the slack so the columns to its right stay on screen */
+  .jo td.name{max-width:34ch;overflow:hidden;text-overflow:ellipsis}
   .jo td a{color:var(--ink2)}
   .jo .more{margin-top:8px;font-size:13px}
   .jo .more button{appearance:none;border:1px solid var(--border);background:var(--surface);color:var(--ink2);border-radius:8px;padding:6px 12px;font:600 13px system-ui,sans-serif;cursor:pointer}
@@ -310,14 +313,21 @@ function renderFY(){
 function niceStep(max){ var raw = max/4, p = Math.pow(10, Math.floor(Math.log10(raw))), n = raw/p; return (n < 1.5 ? 1 : n < 3.5 ? 2 : n < 7.5 ? 5 : 10) * p; }
 
 /* ---- table ---- */
-var PCOLS = [["parent","Parent company",false],["class","Type",false],["bucket","Employees",false],["hq","HQ",false],["conf","Evidence",false],["cash","Paid",true],["recipients","Payees",true],["years","Years",false]];
+var PCOLS = [["parent","Parent company",false],["class","Type",false],["bucket","Employees",false],["hq","HQ",false],["conf","Evidence",false],["cash","Paid",true],["years","Years",false],["conditions","Conditions",false],["failure","After the grant",false]];
 var RCOLS = [["fy","FY",true],["recipient","Payee on the 990",false],["city","City",false],["state","St",false],["parent","Parent company",false],["cash","Paid",true]];
 var CLASS_LABEL = {business:"Business", site_development:"Site developer", government:"Government", university:"University", hospital:"Hospital", nonprofit:"Nonprofit"};
+var COND_LABEL = {"Conditional":"clawback", "Partly conditional":"reimbursement", "Unknown":"none published", "Program unknown":"program unknown"};
+var COND_HELP = {
+  "Conditional":"The program guidelines publish a written clawback or repayment trigger.",
+  "Partly conditional":"The guidelines require reimbursement of documented costs or state job metrics, but publish no repayment remedy.",
+  "Unknown":"The program publishes no payment terms and no repayment terms either way.",
+  "Program unknown":"This payment could not be tied to a named program in JobsOhio's own monthly project reports."
+};
 function tableRows(){
   var q = state.q.trim().toLowerCase();
   if (state.tview === "parents"){
     var items = pool();
-    if (q) items = items.filter(function(p){ return (p.parent + " " + p.hq + " " + p.class + " " + (p.payees||"")).toLowerCase().indexOf(q) >= 0; });
+    if (q) items = items.filter(function(p){ return (p.parent + " " + p.hq + " " + p.class + " " + (p.payees||"") + " " + (p.conditions||"") + " " + (p.failure ? p.failure.category + " " + p.failure.event : "")).toLowerCase().indexOf(q) >= 0; });
     return items;
   }
   var rows = D.rows;
@@ -333,16 +343,29 @@ function renderTable(){
     if (state.sortKey === c[0]) b.setAttribute("aria-sort", state.sortDir > 0 ? "ascending" : "descending");
     b.addEventListener("click", function(){ state.sortDir = state.sortKey === c[0] ? -state.sortDir : (c[2] ? -1 : 1); state.sortKey = c[0]; state.limit = 100; renderTable(); });
   });
-  var rows = tableRows().slice().sort(function(a,b){ var x = a[state.sortKey], y = b[state.sortKey]; if (Array.isArray(x)) { x = x[0]||0; y = y[0]||0; } return (x < y ? -1 : x > y ? 1 : 0) * state.sortDir; });
+  function sortVal(r){
+    var v = r[state.sortKey];
+    if (Array.isArray(v)) return v[0] || 0;                    /* years */
+    if (v && typeof v === "object") return v.category || "";   /* failure */
+    return v == null ? "" : v;
+  }
+  var rows = tableRows().slice().sort(function(a,b){ var x = sortVal(a), y = sortVal(b); return (x < y ? -1 : x > y ? 1 : 0) * state.sortDir; });
   document.getElementById("count").textContent = rows.length.toLocaleString() + (state.tview === "parents" ? " companies" : " payments") + (state.q ? " match" : "");
   rows.slice(0, state.limit).forEach(function(p){
     var tr = el("tr",{},body);
     if (state.tview === "parents"){
-      var td = el("td",{},tr), key = el("span",{class:"key"},td); key.style.background = SIZE_COLORS[sizeGroup(p)];
+      var td = el("td",{class:"name", title:p.parent},tr), key = el("span",{class:"key"},td); key.style.background = SIZE_COLORS[sizeGroup(p)];
       if (p.sources && p.sources.length){ var a = el("a",{href:p.sources[0], target:"_blank", rel:"noopener"},td); a.textContent = p.parent; } else td.appendChild(document.createTextNode(p.parent));
       txt("td","",CLASS_LABEL[p.class] || p.class,tr); txt("td","",p.bucket || "unresolved",tr); txt("td","",p.hq || "",tr);
       var tc = el("td",{},tr); if (p.conf){ var s = el("span",{class:"conf", title:{A:"SEC or IRS filing",B:"JobsOhio, partner release or Form 5500",C:"Website or directory",D:"Unresolved"}[p.conf]||""},tc); s.textContent = p.conf; }
-      txt("td","num",moneyFull(p.cash),tr); txt("td","num",String(p.recipients),tr); txt("td","",p.years.length > 1 ? p.years[0] + " to " + p.years[p.years.length-1] : String(p.years[0]),tr);
+      txt("td","num",moneyFull(p.cash),tr); txt("td","",p.years.length > 1 ? p.years[0] + " to " + p.years[p.years.length-1] : String(p.years[0]),tr);
+      /* the published terms of the program that paid, and the verified
+         post-grant outcome where there is one; both read as text, never as
+         colour alone */
+      var cd = el("td",{},tr);
+      if (p.conditions){ var cs = el("span",{class:"conf", title:COND_HELP[p.conditions] || ""},cd); cs.textContent = COND_LABEL[p.conditions] || p.conditions; }
+      var fd = el("td",{},tr);
+      if (p.failure){ var fs = el("span",{class:"conf", title:(p.failure.event ? p.failure.event + ", " : "") + (p.failure.date || "") + " (" + (p.failure.confidence || "") + " confidence)"},fd); fs.textContent = p.failure.category || "failure"; }
     } else {
       txt("td","num",String(p.fy),tr); txt("td","",p.recipient,tr); txt("td","",p.city,tr); txt("td","",p.state,tr); txt("td","",p.parent,tr); txt("td","num",moneyFull(p.cash),tr);
     }
@@ -366,7 +389,10 @@ document.getElementById("q").addEventListener("input", function(e){ state.q = e.
 document.getElementById("src").textContent =
   "Source: JobsOhio Form 990, Schedule I, fiscal years " + m.fy_min + " to " + m.fy_max + " (IRS e-file data). Schedule I lists grants over $5,000 on a cash basis, so the dollars are what was paid in each year, not what was committed. " +
   "Each payee was traced to its ultimate parent at the time of the grant using SEC filings, Form 5500 plan data, JobsOhio and regional partner releases, and company sources; the evidence grade shows which. " +
-  "Universities, hospitals, governments, nonprofits and site developers are shown separately from operating businesses. Free to use. Built by Data 4 The People, " + m.built + ".";
+  "Universities, hospitals, governments, nonprofits and site developers are shown separately from operating businesses. " +
+  "“Conditions” reads the guidelines JobsOhio publishes for the program that paid each company: “clawback” where a written repayment trigger is published, “reimbursement” where the grant repays documented costs or states job metrics but publishes no remedy, “none published” where the program publishes neither, and “program unknown” where the payment matches no entry in JobsOhio's own monthly project reports. Individual grant agreements are not public, so these are the disclosed terms, not necessarily the terms in force. " +
+  "“After the grant” shows a verified bankruptcy, closure, mass layoff, sale or ended service at the funded operation, found by scanning every recipient for distress headlines and then checking each one against court dockets, SEC filings and local news. It is a floor, not a count: a failure without news coverage is not in it. Hover a label for the date and how firmly it is established. " +
+  "Free to use. Built by Data 4 The People, " + m.built + ".";
 renderAll();
 })();
 </script>

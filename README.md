@@ -2,6 +2,8 @@
 
 An analysis of every grant JobsOhio reported paying on its IRS Form 990, Schedule I, from fiscal year 2014 to fiscal year 2024. It asks what share of recipients and what share of paid dollars went to small businesses (ultimate parent under 500 employees at the time of the grant) and to businesses whose ultimate parent was headquartered in Ohio.
 
+It also asks two follow-on questions: what conditions JobsOhio publishes for each grant, including whether the money can be taken back if the jobs never arrive; and which recipients went bankrupt, closed the funded site or cut it back after being paid.
+
 The analysis is still in progress. Results are not yet published.
 
 ## Live link
@@ -27,6 +29,11 @@ No published page or post yet. The built interactive page is in `dist/index.html
   - `verify_*`: the independent re-check of a random sample of classifications.
   - `research/`: inputs and outputs of the parent-resolution research batches.
   - `air_service_routes.csv`, `breeze_jobsohio_routes.csv`: airline route checks against DOT flight data.
+  - `program_terms.json`: the published guidelines for all 12 JobsOhio programs, read for how the grant is paid, what the company must do, what it must report and what happens if it falls short, each with the exact quote it rests on.
+  - `grant_conditions.csv`: every Schedule I payment labelled with the conditions published for the program that paid it.
+  - `distress_candidates.csv`: every recipient scanned for failure headlines, with the headlines found.
+  - `failures.csv`: the verified outcome for each candidate, including the rejects and why each was rejected.
+  - `research3/`: the per-candidate verification files behind `failures.csv`.
 - `docs/`: the written research method, the verification write-up and research notes.
 - `dist/`: the built page (`index.html`), an embeddable version (`embed.html`) and the data it reads (`data.json`).
 - `posts/images/`: static charts for the post.
@@ -43,6 +50,9 @@ No published page or post yet. The built interactive page is in `dist/index.html
 | Ohio Secretary of State | Business search | Entity type and formation date, to spot project LLCs. |
 | Good Jobs First | Subsidy Tracker | Spot checks of parent companies. |
 | U.S. Department of Transportation, Bureau of Transportation Statistics | T-100 Domestic Segment, U.S. carriers | Checks on routes tied to air service grants. |
+| JobsOhio | Published program guidelines (12 programs) | What each program says about payment, performance, reporting and repayment. |
+| Google | News RSS search | Used only as an index to find candidate failures. Findings rest on the court docket, SEC filing or local story it points to, never on the headline. |
+| Federal and state courts; SEC | Bankruptcy dockets (via CourtListener) and 8-K filings | Confirming or rejecting each candidate failure. |
 
 Full details, including IRS object IDs for each filing, are in `DATASETS.md`.
 
@@ -65,6 +75,16 @@ python scripts/build.py               # dist/index.html and dist/embed.html
 python scripts/static_charts.py       # PNG charts in posts/images/
 ```
 
+The conditions and failures work runs separately and its results are saved in the repo:
+
+```
+python scripts/19_grant_conditions.py # label every payment from data/program_terms.json
+python scripts/17_distress_scan.py    # scan recipients for failure headlines (slow; hits Google News)
+python scripts/21_failures.py         # consolidate data/research3/*.json into data/failures.csv
+```
+
+`09_analyze.py` picks up `grant_conditions.csv` and `failures.csv` if they are present and adds a `Conditions` and an `After the grant` column to the page. Both are optional: the analysis runs without them.
+
 The parent research and checks (`08_research.py`, `10_verify_sample.py`, `11_auto_classify.py`, `13_apply_subsidiary.py`) feed `data/parents.csv`. Their results are already saved in the repo, so a rebuild does not need to rerun them. `15_fetch_t100.py` downloads the DOT flight data used for the air service checks into `data/raw/t100/` (not committed).
 
 ## Method notes
@@ -74,5 +94,7 @@ The parent research and checks (`08_research.py`, `10_verify_sample.py`, `11_aut
 - Totals are net of 33 reversed payments. A parent is counted as a recipient only if its net payment is above zero.
 - The headline uses for-profit businesses as the denominator. Results for all recipients, and at cutoffs of 100 and 5000 employees, are also in `TIEOUT.md`.
 - A seeded random sample of classifications was re-checked by an independent second pass. The method and results are in `docs/VERIFICATION.md`.
+- The conditions columns describe what JobsOhio **publishes**, not what is in force. Individual grant agreements are not public, and at least one case shows terms exist that the guidelines do not print. Only 2 of 12 programs publish a clawback, covering 6.8% of paid dollars.
+- The failure count is a floor, not a count. It is found from news coverage, so a failure without coverage is missing; it treats the payee as the company, so a parent's filing that left the Ohio site running is excluded. 49 of 84 candidates were thrown out because the company was named in somebody else's case. Every reject is kept in `data/failures.csv` with its reason.
 
 Data 4 The People
