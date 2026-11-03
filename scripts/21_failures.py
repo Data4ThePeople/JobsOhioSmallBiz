@@ -39,17 +39,47 @@ for f in sorted(RES.glob("*.json")):
             "ohio_outcome": (x.get("ohio_outcome") or "")[:300],
             "confidence": x.get("confidence", ""), "source": x.get("source", ""),
             "flagged_by": "failure headline" if f.stem.startswith("fail") else "closure or layoff headline",
-            "notes": (x.get("notes") or "")[:300],
+            "notes": (x.get("notes") or "")[:300], "category": "",
         })
-rows.sort(key=lambda r: (r["verdict"] != "Confirmed failure", -r["paid"]))
+# "Confirmed failure" covers several different outcomes, and the post should
+# not call a sale a failure. The set is small enough to categorise by name,
+# which is clearer than keyword rules that misread "sold" in a closure notice.
+CATEGORY = {
+    "Bankruptcy or receivership": ["PETMIN", "80 ACRES", "NOSTRUM", "Express Inc",
+                                   "COLUMBUS STEEL", "MULTI-COLOR", "Zulily"],
+    "Funded site closed": ["NESTLE", "DANA", "ST BERNARD", "P GRAHAM DUNN", "REPUBLIC STEEL", "iMFLUX",
+                           "Mohawk", "NEW HORIZONS", "FedEx Supply Chain", "OLIVE AI"],
+    "Mass layoff at the funded site": ["ULTIUM", "COVERMYMEDS", "HYLAND", "SAREPTA", "SPEEDWAY",
+                                       "Sauder", "Klarna"],
+    "Sold or absorbed": ["FirstMerit", "AK STEEL", "PPG INDUSTRIES"],
+    "Subsidized service ended": ["AVELO", "AIR WISCONSIN"],
+}
+for r in rows:
+    r["category"] = ""
+    if r["verdict"] != "Confirmed failure":
+        continue
+    for cat, names in CATEGORY.items():
+        if any(n.lower() in r["name"].lower() for n in names):
+            r["category"] = cat
+            break
+    if not r["category"]:
+        r["category"] = {"Chapter 7": "Bankruptcy or receivership", "Chapter 11": "Bankruptcy or receivership",
+                         "Receivership": "Bankruptcy or receivership", "Closure": "Funded site closed",
+                         "Layoffs": "Mass layoff at the funded site"}.get(r["event"], "Other")
+
+rows.sort(key=lambda r: (r["verdict"] != "Confirmed failure", r.get("category", ""), -r["paid"]))
 with OUT.open("w", newline="") as fh:
     w = csv.DictWriter(fh, fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows)
 
 conf = [r for r in rows if r["verdict"] == "Confirmed failure"]
 print(f"{len(rows)} candidates checked; verdicts: {dict(Counter(r['verdict'] for r in rows))}")
 print(f"confirmed: {len(conf)} recipients, ${sum(r['paid'] for r in conf):,} paid\n")
-print(f"{'company':34s} {'paid':>11s} {'grant yrs':12s} {'event':12s} {'when':11s} outcome")
-for r in conf:
-    print(f"{r['name'][:34]:34s} {r['paid']:11,} {r['grant_years'][:12]:12s} {r['event'][:12]:12s} "
-          f"{r['event_date'][:11]:11s} {r['ohio_outcome'][:70]}")
+for cat in ("Bankruptcy or receivership", "Funded site closed", "Mass layoff at the funded site",
+            "Sold or absorbed", "Subsidized service ended"):
+    group = [r for r in conf if r["category"] == cat]
+    if not group:
+        continue
+    print(f"\n{cat} ({len(group)}, ${sum(r['paid'] for r in group):,})")
+    for r in group:
+        print(f"  {r['name'][:32]:32s} {r['paid']:11,} {r['grant_years'][:12]:12s} {r['event_date'][:10]:10s} {r['ohio_outcome'][:62]}")
 print(f"\nwrote {OUT.relative_to(ROOT)}")

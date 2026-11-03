@@ -1,5 +1,20 @@
 [
   {
+    "recipient_id": "EIN:320561106",
+    "name": "PETMIN USA INC",
+    "verdict": "Confirmed failure",
+    "event": "Chapter 7",
+    "event_date": "2025-11-03",
+    "entity_filed": "Petmin USA, Inc. (the grant payee) filed its own Chapter 7 petition; a companion case, 25-41333, was filed the same day for the affiliate Petmin USA Property Holdings, Inc. The South African parent, Petmin (Pty) Ltd, did not file.",
+    "court": "Bankr. N.D. Ohio (Youngstown), Judge Tiiara N.A. Patton",
+    "docket": "25-41332 (Petmin USA, Inc.), filed 2025-11-03; companion case 25-41333 (Petmin USA Property Holdings, Inc.)",
+    "same_company_evidence": "The CourtListener docket for 25-41332 names the debtor Petmin USA, Inc. in Bankr. N.D. Ohio, Youngstown division, which covers Ashtabula County, where the payee address is. Debtor's counsel is Richard K. Stovall and James A. Coutinho of Allen Stovall Neuman (Columbus). The same-day companion case covers Petmin USA Property Holdings, Inc., the entity holding the Ashtabula pig iron project property.",
+    "ohio_outcome": "The Ashtabula pig iron plant project ends in liquidation. The case is an asset Chapter 7: the trustee docketed a Notice of Assets and Request for Notice to Creditors on 2025-11-18, secured creditors moved for relief from the automatic stay in December 2025, the trustee filed an interim report on 2026-01-13, and the case was still open with filings as recent as 2026-09-17. No story on the headcount at the site was retrievable; the $474 million plant had been under construction and was 'still a go' as of 2023.",
+    "confidence": "High",
+    "source": "CourtListener docket for Petmin USA, Inc., 25-41332 (Bankr. N.D. Ohio), read in full: 'Chapter 7 Voluntary Petition for Non-Individuals, Fee Amount $338, Filed by Petmin USA, Inc.' on 2025-11-03, Chapter: 7, Trustee: Zellers, Richard G., 341(a) meeting held 2025-12-03, date of last known filing 2026-09-17. CourtListener RECAP search also shows companion case 25-41333 filed 2025-11-03. Google News RSS: 'Petmin USA files for bankruptcy' (Star Beacon and Yahoo Finance, 2025-12-04).",
+    "notes": "Chapter 7, a liquidation, not a reorganization, so the post should not call this a restructuring. The petition is dated 2025-11-03, a month before the 2025-12-04 headlines the scan picked up, so the docket date is the one to use. Filed four to five years after the 2020 and 2021 grant years. Largest grant in the batch at $10,000,000 in cash paid."
+  },
+  {
     "recipient_id": "EIN:134994650",
     "name": "JPMORGAN CHASE BANK NA",
     "verdict": "Not a failure",
@@ -45,6 +60,21 @@
     "notes": "False positive of the report-publisher type: the firm's own marketing content about other companies' bankruptcies triggered the scan. BDO USA did lay off staff in October 2025 amid its Apollo debt repayment, but that is not the flagged event and is not a failure."
   },
   {
+    "recipient_id": "EIN:341827019",
+    "name": "OHIO LOGISTICS LTD",
+    "verdict": "Different company",
+    "event": "",
+    "event_date": "",
+    "entity_filed": "",
+    "court": "",
+    "docket": "",
+    "same_company_evidence": "The payee is Ohio Logistics Ltd of Findlay OH, the warehousing company that operates as Ohio Logistics and is affiliated with Findlay's Tall Timbers Distribution Center, LLC. A CourtListener search for 'Ohio Logistics' returns only employment suits naming Findlay's Tall Timbers Distribution Center LLC d/b/a Ohio Logistics and unrelated debtors (Marelli, Yellow Corporation, H-Food Holdings); there is no bankruptcy petition by the Findlay company or its affiliate.",
+    "ohio_outcome": "Still operating and expanding. It broke ground on a new spec building in Gateway Commerce Park in April 2026, announced an Allen County / Lima project in April 2026, and was still title sponsor of the Ohio Logistics Brad Doty Classic in July 2026; ohiologistics.com is live and advertises 25 locations in seven states.",
+    "confidence": "High",
+    "source": "CourtListener RECAP search for \"Ohio Logistics\" (no petition by the Findlay company); Google News RSS: 'Ohio Logistics Breaks Ground on New Spec Building in Gateway Commerce Park' (JobsOhio, 2026-04-21), 'Ohio Logistics betting on Allen County with new project' (LimaOhio.com, 2026-04-21), World of Outlaws event listing 2026-07-14; www.ohiologistics.com",
+    "notes": "The flag came from a WhatNow aggregator headline, 'Longtime Ohio Logistics Operator Enters Chapter 11 Bankruptcy' (2026-05-08). WhatNow writes deliberately unnamed headlines of this shape ('A Midwest Logistics Company With 10+ Years in Business Files for Chapter 11', 2026-05-29), and the phrase describes a logistics operator located in Ohio, not the company named Ohio Logistics. The Findlay payee was publicly expanding both before and after that date. The specific carrier behind the WhatNow headline could not be identified without web search, but it is not the payee."
+  },
+  {
     "recipient_id": "EIN:208764829",
     "name": "MORGAN STANLEY & CO LLC",
     "verdict": "Not a failure",
@@ -60,18 +90,63 @@
     "notes": "False positive of the fund-and-commentary type. A fund liquidation inside Morgan Stanley Investment Management is the closing of an investment product, not the failure of the grant payee; the other two headlines are about other companies' bankruptcies."
   },
   {
-    "recipient_id": "EIN:341827019",
-    "name": "OHIO LOGISTICS LTD",
-    "verdict": "Different company",
-    "event": "",
-    "event_date": "",
-    "entity_filed": "",
+    "recipient_id": "EIN:464455633",
+    "name": "OLIVE AI INC",
+    "verdict": "Confirmed failure",
+    "event": "Closure",
+    "event_date": "2023-10-31",
+    "entity_filed": "None. Olive AI Inc wound itself down out of court: it sold two business lines and liquidated the rest; no bankruptcy petition was found.",
     "court": "",
     "docket": "",
-    "same_company_evidence": "The payee is Ohio Logistics Ltd of Findlay OH, the warehousing company that operates as Ohio Logistics and is affiliated with Findlay's Tall Timbers Distribution Center, LLC. A CourtListener search for 'Ohio Logistics' returns only employment suits naming Findlay's Tall Timbers Distribution Center LLC d/b/a Ohio Logistics and unrelated debtors (Marelli, Yellow Corporation, H-Food Holdings); there is no bankruptcy petition by the Findlay company or its affiliate.",
-    "ohio_outcome": "Still operating and expanding. It broke ground on a new spec building in Gateway Commerce Park in April 2026, announced an Allen County / Lima project in April 2026, and was still title sponsor of the Ohio Logistics Brad Doty Classic in July 2026; ohiologistics.com is live and advertises 25 locations in seven states.",
+    "same_company_evidence": "Payee is Olive AI Inc of Columbus OH. The coverage is about the same Columbus healthcare-automation startup: Columbus Business First calls it the 'liquidated unicorn' and names CEO Sean Lane, and the asset auction notice describes Olive AI as the largest venture-funded company in Ohio history.",
+    "ohio_outcome": "Columbus headquarters shut down and staff let go. The utilization-management business went to the team that became Humata Health and the clearinghouse business to Waystar; remaining Columbus assets, including office equipment and the 'Oliverse' arcade game, were sold in two online auctions run by Silicon Valley Disposition in November and December 2023. JobsOhio sued over unmet job commitments and in April 2024 asked the court to add Sean Lane to that suit.",
+    "confidence": "Medium",
+    "source": "Google News RSS: 'Scoop: Health automation company Olive AI is shutting down' (Axios, 2023-10-31); 'Once a high-flying unicorn, Olive AI sells two key businesses, winds down operations' (Fierce Healthcare, 2023-10-31); 'Health AI startup Olive to shut down' (Healthcare Dive, 2023-11-01); 'Silicon Valley Disposition (SVD) Has Been Selected to Sell the Tangible Assets of Olive AI...' (Business Wire, 2023-11-21); 'Liquidated unicorn Olive AI had an unnamed third buyer: CEO Sean Lane' (Columbus Business First, 2023-12-13); 'Olive AI aftermath: JobsOhio asks judge to let it add Sean Lane to lawsuit' (Columbus Business First, 2024-04-25)",
+    "notes": "Precise outcome: an out-of-court wind-down and asset liquidation, not a bankruptcy and not a receivership, so the post should not call it a bankruptcy. Shutdown announced 2023-10-31, inside the 2020-2022 grant window's aftermath and well after the first grant year. No court docket exists for the wind-down; the related JobsOhio clawback suit is in Ohio state court and was not pulled for this batch."
+  },
+  {
+    "recipient_id": "EIN:271202150",
+    "name": "Zulily Inc",
+    "verdict": "Confirmed failure",
+    "event": "Assignment for benefit of creditors",
+    "event_date": "2023-12-22",
+    "entity_filed": "Zulily (the operating company) assigned its assets to a liquidator in California state proceedings; no federal bankruptcy petition. The grant record lists Liberty Interactive / Qurate Retail as parent, but Qurate sold Zulily to an investment firm in May 2023, so the former parent did not file.",
+    "court": "California state court (assignment for the benefit of creditors); no federal bankruptcy court",
+    "docket": "",
+    "same_company_evidence": "Payee is Zulily Inc of Seattle WA. Coverage is about the same Seattle online retailer: KOMO, GeekWire, the Seattle Times and Fortune all describe Seattle-based Zulily shutting down, and the Ohio layoffs are at Zulily's Obetz distribution center, the site the JobsOhio grant was tied to.",
+    "ohio_outcome": "The Obetz distribution center near Columbus closed, cutting 274 to roughly 300 jobs there, part of more than 800 Zulily job cuts across three states. Former employees sued in 2024 over missing layoff notice and pay. The Zulily brand was bought out of the liquidation by Beyond Inc for $4.5 million in March 2024, but the Ohio facility did not reopen.",
+    "confidence": "Medium",
+    "source": "Google News RSS: 'Zulily transfers assets to professional liquidator as failed retailer unable to issue refunds' (GeekWire, 2023-12-23); 'Online Retailer Zulily Liquidating in California State Proceedings' (WSJ, 2023-12-26); 'Zulily goes out of business, plans to liquidate' (Retail Dive, 2023-12-26); 'Online retailer Zulily is shutting down, cutting 274 jobs at an Obetz distribution center' (Columbus Dispatch, 2023-12-11); 'Zulily's closure of fulfillment centers in Ohio and Nevada will impact more than 500 workers' (GeekWire, 2023-12-08); 'Zulily to return after sale to Bed Bath & Beyond owner' (Business Journals, 2024-03-07); 'QVC parent company sells Zulily to investment firm' (Retail Dive, 2023-05-26); 'Zulily's downfall: How the high-flying online retailer soared, sank, and shut down' (GeekWire, 2024-01-16)",
+    "notes": "Precise outcome: an assignment for the benefit of creditors under California law, which is a liquidation outside bankruptcy court, so there is no case number to cite. The event date is the asset transfer reported by GeekWire on 2023-12-23; the WSJ described the California proceedings on 2023-12-26. Six to eight years after the 2015 and 2017 grant years. Ohio job losses were announced on 2023-12-11, before the formal assignment."
+  },
+  {
+    "recipient_id": "EIN:061678153",
+    "name": "Columbus Steel Castings Company",
+    "verdict": "Confirmed failure",
+    "event": "Chapter 11",
+    "event_date": "2016-05-16",
+    "entity_filed": "Constellation Enterprises LLC, the New Jersey-based parent that owned Columbus Steel Castings (and Commercial Metal Forming in Youngstown), filed Chapter 11 on Monday 2016-05-16, citing 'significant operational issues in Columbus'. The WSJ reported the filing under the Columbus Steel Castings name.",
+    "court": "Not retrievable",
+    "docket": "",
+    "same_company_evidence": "Payee is Columbus Steel Castings Company, Columbus OH. The coverage is about that foundry: the Parsons Avenue plant on the South Side, formerly Buckeye Steel, the largest single steel foundry in North America, with more than 650 employees.",
+    "ohio_outcome": "The Columbus foundry closed and did not reopen. Workers were laid off around the filing (614NOW reported 800 jobs at risk in April 2016 and more than 650 employed at the plant). After two days and about 100 rounds of bidding, 476 Bridge Street LLC, an affiliate of Reich Brothers of White Plains NY, won the 90-plus-acre property with a $29.7 million bid in August 2016; the site stayed closed, was partly demolished in 2018 and was sold to Stonemont Financial in 2021 for industrial redevelopment.",
+    "confidence": "Medium",
+    "source": "Google News RSS: 'Columbus Steel Castings Files for Bankruptcy' (WSJ, 2016-05-17); 'Columbus Castings' Parent Company Declares Bankruptcy' (WOSU, 2016-05-17); 'Columbus Castings: bankruptcy and backers' (614NOW, 2016-05-17, read in full); 'Commercial Metal Forming's Parent Files Chapter 11' (Business Journal Daily, 2016-05-18, read in full: names Constellation Enterprises LLC and the Monday Chapter 11 filing); 'Columbus Castings (Formerly Buckeye Steel) Will Remain Closed After $29.7M Bid' (614NOW, 2016-08-16, read in full); 'Former Columbus Castings Workers Adapting To Life After the Foundry' (WOSU, 2016-08-29)",
+    "notes": "Two gaps. First, the filing court and case number were not obtained: CourtListener's RECAP search returned no hit for this name and then returned empty pages (throttling), and the 2016 trade coverage naming the court is paywalled. Docket not retrievable; CourtListener returned empty pages. Second, whether the $500,000 was paid before or after the 2016-05-16 filing is not settled: Schedule I carries grant years only, and no source read here dates the payment. It is kept as a confirmed failure because the prompt counts a failure in or after the first grant year, but the within-year order is unverified and should be checked before publishing. Also note the filer was the parent, Constellation Enterprises LLC, not the Ohio payee on its own, though unlike a parent-only filing the Ohio operation did shut down."
+  },
+  {
+    "recipient_id": "EIN:311125853",
+    "name": "MULTI-COLOR CORPORATION",
+    "verdict": "Confirmed failure",
+    "event": "Chapter 11",
+    "event_date": "2026-01-29",
+    "entity_filed": "Multi-Color Corporation (MCC), the grant payee, as lead debtor in a prepackaged Chapter 11. Its private-equity sponsor Clayton Dubilier & Rice LLC, named as a party in the related Third Circuit matter, did not file.",
+    "court": "Bankr. D.N.J. (Chief Judge Michael B. Kaplan)",
+    "docket": "Lead case number for Multi-Color Corporation itself not retrievable (CourtListener returned empty pages before that query ran). Petitions seen for same-day affiliate debtors, all Chapter 11, all filed 2026-01-29 in Bankr. D.N.J. before Judge Michael B. Kaplan, counsel Michael D. Sirota: 26-10919 (Multi-Color Bingen Germany GmbH), 26-10931 (Multi-Color Cwmbran UK Limited), 26-10934 (Multi-Color Daventry England Ltd), 26-10936 (Multi-Color Hann. Muenden Germany GmbH), 26-10945 (Multi-Color Labels Castlebar Ireland Limited), 26-10949 (Multi-Color Labels Ireland Limited), 26-10956 (Multi-Color (New Zealand) Pty Limited), 26-10958 (Multi-Color Warsaw Poland Sp. z o.o.), 26-10961 (Multi-Color Australia Acquisition Pty. Limited). Related: adversary 26-01041 (Bankr. D.N.J.); appeals 3:26-cv-03540, 3:26-cv-03691 and 3:26-cv-03848 (D.N.J.); In re: Cross-Holder Ad Hoc Group, 26-1595 (3d Cir.)",
+    "same_company_evidence": "Payee is Multi-Color Corporation of Batavia OH, the label printer. The bankruptcy coverage is in label and print trade press (Printweek, Ink World, packaging journal, PrintIndustry.news) and concerns the same MCC label business, and the federal court records name MULTI-COLOR CORPORATION as the debtor party in the New Jersey bankruptcy appeals. Clayton Dubilier & Rice led the 2021 merger of Fort Dearborn and Multi-Color, which is the ownership behind the 2026 debtor.",
+    "ohio_outcome": "No Ohio closure reported. This was a balance-sheet restructuring: the company kept operating through the case, told customers in February 2026 that delivery capability was secured, and completed the restructuring on about 2026-05-13.",
     "confidence": "High",
-    "source": "CourtListener RECAP search for \"Ohio Logistics\" (no petition by the Findlay company); Google News RSS: 'Ohio Logistics Breaks Ground on New Spec Building in Gateway Commerce Park' (JobsOhio, 2026-04-21), 'Ohio Logistics betting on Allen County with new project' (LimaOhio.com, 2026-04-21), World of Outlaws event listing 2026-07-14; www.ohiologistics.com",
-    "notes": "The flag came from a WhatNow aggregator headline, 'Longtime Ohio Logistics Operator Enters Chapter 11 Bankruptcy' (2026-05-08). WhatNow writes deliberately unnamed headlines of this shape ('A Midwest Logistics Company With 10+ Years in Business Files for Chapter 11', 2026-05-29), and the phrase describes a logistics operator located in Ohio, not the company named Ohio Logistics. The Findlay payee was publicly expanding both before and after that date. The specific carrier behind the WhatNow headline could not be identified without web search, but it is not the payee."
+    "source": "CourtListener RECAP search for \"Multi-Color\" in Bankr. D.N.J.: nine affiliate Chapter 11 voluntary petitions all filed 2026-01-29 before Judge Michael B. Kaplan (case numbers in the docket field). CourtListener RECAP search for \"Multi-Color Corporation\": bankruptcy appeals 3:26-cv-03540 (filed 2026-04-02), 3:26-cv-03691 (filed 2026-04-08) and 3:26-cv-03848 (filed 2026-04-13) in D.N.J., adversary 26-01041 in Bankr. D.N.J. before Judge Michael B. Kaplan, and In re: Cross-Holder Ad Hoc Group, 26-1595 (3d Cir. 2026). Google News RSS: 'Multi-Color Corporation initiates prepackaged Chapter 11 bankruptcy to restructure balance sheet' (Printweek, 2026-01-29); 'Multi-Color Corporation Files Prepackaged Chapter 11 to Reduce Debt by $3.9 Billion' (chapter11cases.com, 2026-01-30); 'Filing Alert: Multi-Color Corporation Chapter 11' (Bondoro, 2026-01-30); 'Multi-Color Corporation Receives Court Approval of First-Day Motions' (Ink World, 2026-02-10); 'Multi-Color Corporation confirms reorganisation plan' (Printweek, 2026-04-17); 'Multi-Color Corporation completes financial restructuring' (Printweek, 2026-05-13); 'CD&R Leads Merger of Fort Dearborn and Multi-Color Corporation to Create Scaled Global Label Manufacturer' (CD&R, 2021-07-02)",
+    "notes": "A reorganization, not a liquidation: debt cut by a reported $3.9 billion, plan confirmed in April 2026, restructuring complete in May 2026, and the company still trading. Ten years after the first grant year, 2016, and seven after the second, 2019. Venue was contested because the debtor opened a New Jersey bank account shortly before filing; the bankruptcy court kept the case and the challengers appealed. The Chapter 11 petitions, date, court and judge are from court records; only the lead debtor's own case number is missing, because CourtListener began returning empty pages. Docket number for Multi-Color Corporation itself not retrievable; CourtListener returned empty pages."
   }
 ]

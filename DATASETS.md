@@ -359,3 +359,143 @@ separate table (T-100 International Segment).
 
 **License and attribution.** Public domain. Cite as "U.S. Department of
 Transportation, Bureau of Transportation Statistics, T-100 Domestic Segment."
+
+---
+
+## JobsOhio published program guidelines (JobsOhio)
+
+**What it is.** The guideline document JobsOhio publishes for each incentive
+program, read for four things: how the grant is paid, what the company must do,
+what it must report, and what happens if it falls short. Twelve programs cover
+every payment on Schedule I that can be tied to a program at all. Transcribed
+to `data/program_terms.json`, one object per program, each with the exact
+quote it rests on and the URL it came from.
+
+**Where it comes from.** PDFs and pages under `jobsohio.com`, found through the
+site's 1,363-URL sitemap and its incentives pages. One program (Aerospace and
+Defense Opportunity) publishes a Word document instead. Fetched with the
+User-Agent `Data 4 The People research`.
+
+**How a payment gets a label.** `scripts/19_grant_conditions.py` joins each
+Schedule I payment to a program through the program family recorded for that
+recipient in JobsOhio's monthly project reports (`program_family` in
+`scripts/names.py`), then takes the program's published terms. A recipient
+credited with several programs takes the **weakest** published terms of those
+programs, because the payment cannot be tied to one of them. Four labels:
+`Conditional` (a written clawback or repayment trigger), `Partly conditional`
+(reimbursement or stated job metrics, no clawback published), `Unknown`
+(nothing published either way), and `Program unknown` (the payment cannot be
+tied to a program).
+
+**Coverage and its limits, which belong in the post.**
+
+- 22.5% of paid dollars are `Program unknown`. About a quarter of recipients
+  never appear in the monthly reports, and the air service grants appear in
+  none of them, so those are labelled from the payee where it is an airline
+  and left unknown otherwise.
+- These are the **published** terms, not the terms in force. The individual
+  grant agreement is not public, and at least one case shows terms exist that
+  the guidelines do not print: JobsOhio sued Olive AI in Ohio state court over
+  unmet job commitments, and Olive AI's payments match no published program.
+  So the finding is about disclosure, and the post must say so.
+- The Growth Fund Loan guidelines no longer exist anywhere. The old PDF 404s
+  on the live site and the Wayback Machine holds only 404 responses for it, so
+  the text was never archived and the program's terms are unrecoverable.
+- Guideline documents are undated in the file and dated only inside the PDF,
+  and they are revised without a version history. The dates in
+  `program_terms.json` are the dates printed in the document read in 2026, so
+  a 2016 payment may have been made under terms we cannot see.
+- `Conditional` does not mean the money was clawed back, and `Unknown` does not
+  mean it was not. The columns describe documents, not outcomes.
+
+**License and attribution.** Cite as "JobsOhio program guidelines," with the
+program name and the document date.
+
+---
+
+## Google News RSS, used as a distress index (Google)
+
+**What it is.** Not a dataset. A search index used to find candidate failures
+among grant recipients, because no public dataset lists company failures by
+name. `scripts/17_distress_scan.py` queries each recipient's name without its
+legal suffix against bankruptcy, receivership, liquidation, closure and layoff
+terms, and splits the headlines into hard, soft and weak signals. Output:
+`data/distress_candidates.csv`.
+
+**Where it comes from.** `https://news.google.com/rss/search?q=...`, fetched
+with `curl -sL` (the redirect is required) at 1.5 seconds between queries. No
+key, no blocking at that rate. 1,485 distinct recipients scanned: 20 hard
+signals, 64 soft.
+
+**Why not court records as the index.** CourtListener's API now requires an
+account, and its public pages start returning empty replies after roughly 25
+queries, so the full recipient list cannot be swept there. The FJC Integrated
+Database omits debtor names, which makes it unusable for name matching. Court
+dockets are therefore used to **confirm** candidates, not to find them.
+
+**The name test, and why it is strict.** A headline counts only if it carries
+the first two words of the recipient's name with the legal suffix stripped
+("petmin usa", "nostrum laboratories"). For a one-word name the suffix or the
+payee's city must also appear, which is what stops a story about "Intel
+Markets" counting against Intel Corporation. Headlines that match the article
+body rather than the title are kept as weak signals and checked by hand.
+
+**Coverage, and why the published count is a floor.**
+
+- Headline-based, so a company that failed without coverage is missing, as is
+  one whose Ohio site closed quietly.
+- The payee is treated as the company, so a parent's filing that left the Ohio
+  operation running is excluded, and a subsidiary failure under a healthy
+  parent can be missed.
+- Google News coverage thins out before about 2010 and for small local
+  outlets, which biases against early years and small recipients.
+
+**License and attribution.** Headlines are used as pointers to sources, not
+quoted as findings. Cite the originating outlet, never Google News.
+
+---
+
+## Failure verification (court dockets, SEC filings, local news)
+
+**What it is.** The step that turns a distress candidate into a finding or
+throws it out. 84 candidates checked one at a time against the court docket
+where one exists, the company's SEC filings where it is public, and the local
+story where neither is available. Written to `data/research3/*.json` by the
+procedure in `docs/FAILURE_VERIFY_PROMPT.md` and consolidated by
+`scripts/21_failures.py` into `data/failures.csv`.
+
+**What `failures.csv` holds.** Every candidate and every verdict, including the
+rejects and the reason each was rejected, so the published count can be
+audited. Verdicts: `Confirmed failure` (29, $86,537,093 paid), `Not a failure`
+(49), `Different company` (4), `Before the grant` (1), `Unresolved` (1).
+Confirmed rows carry a `category`, because "failure" covers five different
+outcomes and the post should not add a sale to a bankruptcy: Bankruptcy or
+receivership, Funded site closed, Mass layoff at the funded site, Sold or
+absorbed, Subsidized service ended. The categories are assigned from an
+explicit company-name map in `21_failures.py`, not from keywords, because
+keyword rules misread "sold" in a closure notice and "closed" in a sale notice.
+
+**The dominant failure mode, and it is worth stating in the post.** 49 of 84
+candidates were the company appearing in somebody else's case: JPMorgan and
+Morgan Stanley as creditors or fund sponsors, BDO as the author of bankruptcy
+reports, British Airways as a customer of a liquidated Scottish contractor,
+Rocky Brands as a creditor. A bank named in a bankruptcy court is not a bank
+going bankrupt. Three more were a different company sharing a name, found by
+checking city, industry and officers against the payee address.
+
+**What is not settled, and must be caveated where used.**
+
+- Columbus Steel Castings: the filing court and case number were not
+  retrievable, and whether its $500,000 was paid before or after the May 16,
+  2016 filing is unknown, because Schedule I carries fiscal years only.
+- Multi-Color: the lead debtor's case number was not retrievable, though nine
+  same-day affiliate petitions in Bankr. D.N.J. were seen.
+- Goodlevel Enterprises: unresolved.
+- CourtListener began returning empty pages partway through, and
+  `archive.org` returned 429 and 504 throughout, so several paywalled local
+  stories could not be read in full. Rows say in `notes` exactly what could
+  not be obtained.
+
+**License and attribution.** Court dockets and SEC filings are public records;
+cite the court, case number and filing date. News stories are cited to the
+originating outlet with its date.

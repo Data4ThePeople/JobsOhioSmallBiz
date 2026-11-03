@@ -44,6 +44,18 @@ None.
   insider transactions that year (no Schedule L). Open: ask JobsOhio grant or
   purchase; check the state checkbook; run a board-conflict check across all
   years.
+- New (Nov 3, 2026), leads 9 and 10 in `docs/STORY_LEADS.md`:
+  **Only 2 of 12 JobsOhio programs publish a clawback**, and they are the two
+  smallest kinds of award, 6.8% of the dollars. The Economic Development Grant,
+  the largest program and the one that paid Intel $123.2M, runs on a two-page
+  document dated December 10, 2015 with no repayment language. The air service
+  program publishes no reimbursement requirement either, which corrects what
+  we told Eric earlier about the airline grants being pay-as-you-fly.
+  **29 recipients failed after being paid, $86.5M**, including Petmin
+  (Chapter 7 confirmed off the docket), Ultium Cells ($50M, 1,300 jobs cut),
+  and Olive AI, where JobsOhio actually sued to get the money back. Pull the
+  Olive AI suit in Ohio state court; it may be the only public place a JobsOhio
+  grant agreement's terms appear.
 
 ## Log
 
@@ -76,3 +88,17 @@ None.
   grants (-$26.0M) found and documented. Open: Eric's review of
   data/review_for_eric.csv; FY2025 XML and FY2012-13 PDFs; optional
   search-enabled pass on the 146 grade-D parents.
+- 2026-11-03 Three asks closed. (1) The review list was cleared without Eric:
+  all 215 companies answered, with a confidence on each and a range where the
+  employee count is uncertain. (2) Grant conditions: the published guidelines
+  for all 12 programs transcribed to `data/program_terms.json` and joined to
+  every payment in `data/grant_conditions.csv`. Conditional 6.8% of dollars,
+  Partly conditional 68.3%, Program unknown 22.5%, nothing published 2.4%.
+  (3) Failures: 1,485 recipients scanned for distress headlines, 84 candidates
+  verified one at a time against dockets, SEC filings and local news, 29
+  confirmed ($86,537,093) in `data/failures.csv` with every reject and its
+  reason kept. Two new story leads written. Open: pull the JobsOhio v. Olive AI
+  suit; settle Columbus Steel Castings' payment timing and court; Goodlevel
+  Enterprises unresolved; rebuild `dist/` and regenerate
+  `data/review_cleared.csv`; independent tie-out before closing Step 1; FY2025
+  XML and FY2012-13 PDFs still owed from Eric.

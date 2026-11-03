@@ -306,3 +306,230 @@ Still to do: Michigan and Ohio business registries (officers, any Ohio
 registration) and the Ohio checkbook (did the state buy from the same
 company) both blocked automated access; and a systematic check of every
 JobsOhio director, year by year, against the recipient list.
+
+---
+
+## 9. Two of twelve JobsOhio programs publish a clawback
+
+The question Eric asked: can JobsOhio take the money back if the jobs never
+arrive? We read the published guidelines for every program that paid a
+Schedule I grant, pulled the exact wording on how the grant is paid, what the
+company has to do, what it has to report, and what happens if it falls short,
+and tied each program to the payments it made. The terms are in
+`data/program_terms.json` and the payment labels are in
+`data/grant_conditions.csv`.
+
+**What the published guidelines say**
+
+| Conditions published | Payments | Dollars paid | Share of dollars |
+|---|---|---|---|
+| Partly conditional (reimbursement or job metrics, no clawback published) | 1,172 | $818,394,812 | 68.3% |
+| Program not identifiable from JobsOhio's own reports | 478 | $270,103,587 | 22.5% |
+| Conditional (a written clawback or repayment trigger) | 309 | $80,874,542 | 6.8% |
+| Nothing published either way | 46 | $28,552,048 | 2.4% |
+
+Only two of the twelve programs publish a repayment remedy, and they are the
+two smallest kinds of award:
+
+- **Small Business Grant and Inclusion Grant** ($50,000 per project cap).
+  "All project metrics must be attained by the metric evaluation date or funds
+  could be subject to review and claw back as recommended by the Project
+  Performance Team." Guidelines dated May 2025 and May 27, 2020.
+- **Ohio Site Inventory Program (spec development).** "If the property is sold
+  for other government purposes, retail (multi-use not to exceed 20%
+  retail/multi-family), or other non-compliant use then the beneficiary is
+  subject to immediate and full repayment." That trigger is about land use, not
+  about jobs. Guidelines approved May 21, 2025.
+
+Together those two account for 6.8% of the dollars.
+
+**The flagship program publishes none.** The Economic Development Grant is the
+largest single program on the schedule, $249.4 million on its own and another
+$215.9 million where it is paired with a Workforce Grant. Its published
+guidelines are two pages, dated December 10, 2015, the oldest active guideline
+document we found. They say the grant is reimbursement based and requires
+supporting documentation, and that "the program requires the creation of jobs
+within a specified period of time." They contain no repayment, clawback,
+recapture or default language. The Form 990 says only that underperforming
+projects "may be the subject of action" by the compliance team, and never says
+repayment. This is the program that paid Intel $123.2 million in FY2023.
+
+**Reimbursement is the real constraint, and it is not the same thing.** Nine
+programs pay by reimbursing documented costs, so a company that never spends
+the money never collects it. That is a genuine limit, and it is why the paid
+column is far below the committed column across this whole analysis. It is not
+a jobs condition. A company can spend on the building, draw the full grant,
+and employ nobody.
+
+**The air service grants are the opposite of what we assumed, and this
+corrects something we said earlier.** Eric's premise was that the airline
+grants were paid only while the route flew. The published Commercial Air
+Service Restoration guidelines (amended June 16, 2026) do not say that. The
+"Disbursement of Funds" section sets no reimbursement requirement and no
+documentation requirement: "The applicant should propose a preferred budget.
+Actual disbursement schedules will be approved by JobsOhio and communicated to
+the applicant prior to final approval of the application." There is no
+clawback, no report, no certification and no audit. The conditions all sit
+before the award, on the applicant community: prove the route is missing,
+produce an airline commitment, and put up a 20% to 30% local match. Nothing
+published says what happens if the airline takes the subsidy and drops the
+route. That program paid $10,073,711 across eight payments, including
+$5,681,149 to British Airways.
+
+It also contradicts JobsOhio's own blanket statement on Schedule I that
+grantees receive grant funds only on a reimbursement basis. One of the two
+statements is wrong about this program.
+
+**Growth Fund Loan: the guidelines are gone.** There is no current Growth Fund
+guidelines document on jobsohio.com. The old PDF returns 404 on the live site
+and the Wayback Machine holds only 404 responses for it, so the text was never
+archived. The program appears in no page of the 1,363-URL sitemap, and the
+Loans section of the live incentives page names no loan program at all.
+
+**One more gap worth a question.** The Aerospace and Defense Opportunity Grant
+guidelines are copied closely from the Ohio Site Inventory Program guidelines,
+down to retaining the heading "Ineligible Speculative Development Costs," but
+the immediate-and-full-repayment clause is dropped. It is the only JobsOhio
+program whose guidelines are published as a Word document rather than a PDF.
+
+**What we cannot say, and the one case that proves it.** Clawback terms may
+exist in the individual grant agreements, which JobsOhio does not publish. So
+the honest claim is about what is disclosed, not about what is in force: for
+93.2% of the dollars, the public record does not say whether Ohio can get the
+money back.
+
+Three pieces of evidence say the terms are there anyway. The $26.0 million of
+reversed payments in lead 2, including rows literally named "THERMA-TRU CORP
+CLAWBACK" and "AJM PACKAGING CLAWBACK." The 59 recipients with money recorded
+as returned on some Schedule I. And the Olive AI suit: JobsOhio sued the
+company over unmet job commitments after it shut down in October 2023, and in
+April 2024 moved to add founder Sean Lane personally (lead 10). Olive AI's
+three payments, $560,770 across FY2020 to FY2022 under its old name CrossChx
+and then its new one, carry the Schedule I purpose "Economic development" but
+match no entry in JobsOhio's monthly project reports, so we cannot name the
+program and cannot say what the agreement required.
+
+So JobsOhio does enforce repayment terms, at least once in court. Those terms
+are in agreements the public cannot read. The finding is not that the money is
+unprotected. It is that an Ohio resident has no way to check whether it is.
+
+**Ask JobsOhio:** do the grant agreements for the Economic Development Grant
+contain repayment terms, and will JobsOhio publish a sample agreement? What
+happens under the air service program when a subsidized route ends? Where are
+the Growth Fund guidelines?
+
+---
+
+## 10. 29 grant recipients failed after the money was paid: $86.5 million
+
+We scanned all 1,485 distinct recipients for public signs of failure after
+their first grant year, using Google News headlines as the index
+(`scripts/17_distress_scan.py`), then checked each flag one at a time against
+court dockets, SEC filings and local news. 84 candidates went to verification.
+29 are confirmed, 49 turned out to be the company appearing in somebody else's
+case, 4 were a different company with the same name, 1 happened before the
+grant, and 1 is unresolved. Everything, including the rejected flags and why
+they were rejected, is in `data/failures.csv`.
+
+| What happened | Companies | Paid |
+|---|---|---|
+| Bankruptcy or receivership | 7 | $12,350,000 |
+| Funded site closed | 10 | $9,650,770 |
+| Mass layoff at the funded site | 7 | $63,486,323 |
+| Sold or absorbed | 3 | $800,000 |
+| Subsidized service ended | 2 | $250,000 |
+| **Total** | **29** | **$86,537,093** |
+
+**Bankruptcy or receivership.** Petmin USA, $10,000,000, Chapter 7, read off
+the docket: case 25-41332 (Bankr. N.D. Ohio, Youngstown), petition filed
+November 3, 2025, "Chapter 7 Voluntary Petition for Non-Individuals, Fee
+Amount $338, Filed by Petmin USA, Inc.," trustee Richard G. Zellers, with
+companion case 25-41333 for Petmin USA Property Holdings filed the same day.
+The payee filed for itself; the South African parent did not. It is an asset
+case still open in September 2026. See lead 1. 80 Acres Urban Agriculture,
+$500,000, Chapter 7 in August 2026, with the Hamilton farm and headquarters
+closed. Nostrum Laboratories, $250,000, Chapter 11 (Bankr. D.N.J. 24-19611),
+operations ceased by mid-2025. Express Inc, $100,000, Chapter 11 (Bankr. D.
+Del. 24-10831). Columbus Steel Castings, $500,000: the Chapter 11 on May 16,
+2016 was filed by the New Jersey parent, Constellation Enterprises LLC, citing
+"significant operational issues in Columbus," and the Columbus foundry, which
+had more than 650 employees, closed and never reopened. The 90-acre property
+sold for $29.7 million in August 2016 after about 100 rounds of bidding, was
+partly demolished in 2018, and sold again in 2021. Zulily, $500,000, wound down
+in December 2023 through a California assignment for the benefit of creditors
+rather than a bankruptcy case, with the Obetz distribution center closed and
+274 to about 300 jobs gone. Multi-Color, $500,000, a prepackaged Chapter 11 in
+January 2026 in Bankr. D.N.J., but this one is a reorganization: debt cut by a
+reported $3.9 billion, plan confirmed in April 2026, and the company kept
+operating with no Ohio closure reported. It belongs in the table with that
+caveat attached.
+
+**Funded site closed.** Nestlé USA, $3,200,000, closing the Solon factory by
+the end of 2027 and moving the work out of Ohio, 370 jobs. Dana, $3,000,000,
+closing the Lima driveshaft plant, 295 jobs. St. Bernard Soap, $900,000, 118
+jobs. P. Graham Dunn, $790,000. Olive AI, $560,770, Columbus headquarters shut
+down October 31, 2023, out of court rather than in bankruptcy: it sold two
+business lines and auctioned the rest of the Columbus assets in November and
+December 2023, down to the office arcade game. **JobsOhio sued Olive AI over
+unmet job commitments and in April 2024 asked the court to add founder Sean
+Lane to that suit.** That is the one documented case we found of JobsOhio
+going to court to get grant money back, and it matters to lead 9. The suit is
+in Ohio state court and has not been pulled yet; it should be, because it is
+the only place the actual grant agreement terms may be on the record.
+Republic Steel, $500,000, both Ohio mills idled. iMFLUX,
+$350,000, 122 jobs. Mohawk Fine Papers, $200,000, Ashtabula mill closed
+February 2024, 95 jobs. New Horizons Baking, $100,000, 68 jobs. FedEx Supply
+Chain, $50,000, 63 jobs.
+
+**Mass layoff at the funded site.** Ultium Cells, $50,000,000, which is the
+second largest payment in the whole dataset after Intel, cut 1,300 jobs at
+Lordstown starting in January 2026. CoverMyMeds, $6,613,235, cut 815 jobs in
+March 2023. Hyland Software, $2,500,001, cut about 1,000 people, 20% of its
+workforce, in April 2023. Sarepta, $2,348,087, cut 80 Franklin County jobs in
+July 2025. Speedway, $1,700,000. Sauder Woodworking, $200,000, about 150 jobs
+at Archbold. Klarna, $125,000, 102 jobs in Columbus.
+
+**Sold or absorbed.** FirstMerit ($500,000) stopped existing as an Akron
+company two months after the grant year. AK Steel ($250,000) was absorbed by
+Cleveland-Cliffs the year after. PPG ($50,000) sold the Ohio operation.
+
+**Subsidized service ended.** Avelo's $200,000 and the Dayton to Orlando route
+that ran January to September 2023 (lead 6). Air Wisconsin's $50,000 was an
+economic development grant, not air service, and the carrier stopped flying
+scheduled service in 2025.
+
+**What this number is and is not.** It is a floor, not a count. The scan reads
+headlines, so a company that failed quietly, or one whose Ohio site closed
+without a story, is not in it. It also treats the payee as the company, so a
+parent's bankruptcy that left the Ohio plant running is excluded, and a
+subsidiary failure under a healthy parent may be missed. Three of the five
+categories are not failures of the company at all, only of the thing Ohio paid
+for, and the post should say which is which rather than adding them up as one
+number. Six caveats to carry:
+
+- Columbus Steel Castings' parent filed in the same calendar year as the only
+  grant year, 2016, and Schedule I carries years only, so we cannot yet say
+  whether the $500,000 was paid before or after the filing. The filing court
+  and case number were also not retrievable: CourtListener returned no hit and
+  then went to empty pages, and the 2016 trade coverage naming the court is
+  paywalled.
+- Multi-Color's lead case number was not obtained for the same reason. Nine
+  same-day affiliate petitions in Bankr. D.N.J. were seen (26-10919 through
+  26-10961) along with the appeals, but not the lead debtor's own number.
+- Multi-Color reorganized and still operates. It is in the table because the
+  company filed, not because Ohio lost a plant.
+- Speedway was sold to 7-Eleven rather than closed, and the layoffs followed
+  the sale.
+- Ohio Logistics was flagged and thrown out: the headline came from an
+  aggregator that writes deliberately unnamed headlines, and the Ohio company
+  broke ground on a new building in April 2026. Goodlevel Enterprises is the
+  one candidate left unresolved.
+- JPMorgan, British Airways, BDO, Morgan Stanley and Rocky Brands were all
+  flagged and all thrown out, because a company named in a bankruptcy court as
+  a creditor, an adviser or the author of a report is not a company going
+  bankrupt. That is the single biggest source of false positives in work like
+  this, and the post should say we checked for it.
+
+**Ask JobsOhio:** of these 29, which ones repaid anything, and under what
+term? Ultium and CoverMyMeds together took $56.6 million and both cut jobs at
+the funded site; were their metrics met before the cuts?
