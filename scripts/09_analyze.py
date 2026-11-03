@@ -60,16 +60,29 @@ def load():
     return grants, parents
 
 
+# a research pass that could not find an owner wrote the word rather than
+# leaving the cell empty, and keying on it merged 12 unrelated project LLCs
+# into two companies called "unknown" and "unresolved". A recipient whose
+# owner was not found is its own parent, which is also what the page should
+# show the reader.
+NO_PARENT = {"", "unknown", "unresolved", "none", "n/a", "not found"}
+
+
 def parent_key(p):
-    return p["parent"].strip() if p["parent"].strip() else p["name"].strip()
+    name = p["parent"].strip()
+    return name if name.lower() not in NO_PARENT else p["name"].strip()
 
 
 def load_side_findings(parents):
     """(conditions by parent, failure by parent). Both files are optional."""
+    def key(parent, fallback):
+        parent = parent.strip()
+        return parent if parent.lower() not in NO_PARENT else fallback.strip()
+
     cond = {}
     if CONDITIONS.exists():
         for r in csv.DictReader(CONDITIONS.open()):
-            k = r["parent"].strip() or r["recipient"].strip()
+            k = key(r["parent"], r["recipient"])
             call = r["conditions"]
             if k and (k not in cond or COND_ORDER.get(call, 0) < COND_ORDER.get(cond[k], 0)):
                 cond[k] = call
@@ -81,7 +94,7 @@ def load_side_findings(parents):
         for r in csv.DictReader(FAILURES.open()):
             if r["verdict"] != "Confirmed failure":
                 continue
-            k = r["parent"].strip() or by_name.get(r["name"].strip()) or r["name"].strip()
+            k = key(r["parent"], by_name.get(r["name"].strip()) or r["name"].strip())
             fail[k] = {"category": r["category"], "event": r["event"],
                        "date": r["event_date"], "confidence": r["confidence"]}
     return cond, fail
@@ -108,7 +121,17 @@ def build_parents(grants, parents):
                 if col and not a[field]:
                     a[field] = col
                 elif col and a[field] and a[field] != col and field in ("bucket", "hq"):
+                    # Two recipients of one parent were researched to different
+                    # answers. Rather than let whichever was read first win, the
+                    # conflict is resolved against the finding: the smaller size
+                    # band, which moves the dollars into "small", and Ohio, which
+                    # moves them into "homegrown". The conflict is still reported.
                     a.setdefault("conflicts", set()).add(f"{field}: {a[field]} vs {col} ({p['name']})")
+                    if field == "bucket":
+                        a[field] = min(a[field], col, key=lambda b: BUCKETS.index(b) if b in BUCKETS else 99)
+                    elif "OH" in (a[field], col):
+                        a[field] = "OH"
+                    a["conf"] = max(a["conf"] or "D", p["confidence"] or "D")   # the weaker grade
             for s in (p["hq_source"], p["emp_source"]):
                 if s:
                     a["sources"].add(s)
