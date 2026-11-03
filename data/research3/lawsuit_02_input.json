@@ -1,0 +1,92 @@
+[
+  {
+    "case": "24CV004104",
+    "filed": "05/22/2024",
+    "status": "CLOSED",
+    "defendant": "TREVES INC",
+    "recipient": "TREVES INC",
+    "paid": "800000",
+    "grant_years": "2018 2021"
+  },
+  {
+    "case": "21CV004286",
+    "filed": "07/09/2021",
+    "status": "CLOSED",
+    "defendant": "RECLEIM OH LLC",
+    "recipient": "Recleim OH LLC",
+    "paid": "510000",
+    "grant_years": "2018"
+  },
+  {
+    "case": "21CV006432",
+    "filed": "10/08/2021",
+    "status": "CLOSED",
+    "defendant": "CHAMPLAIN ENTERPRISES LLC",
+    "recipient": "CHAMPLAIN ENTERPRISES LLC",
+    "paid": "250000",
+    "grant_years": "2020"
+  },
+  {
+    "case": "25CV009001",
+    "filed": "10/17/2025",
+    "status": "CLOSED",
+    "defendant": "FOR-TECH USA LLC",
+    "recipient": "FOR-TECH USA LLC",
+    "paid": "175000",
+    "grant_years": "2020 2021"
+  },
+  {
+    "case": "23CV008297",
+    "filed": "11/21/2023",
+    "status": "CLOSED",
+    "defendant": "TEST-FUCHS CORPORATION",
+    "recipient": "TEST-FUCHS CORPORATION",
+    "paid": "125000",
+    "grant_years": "2021"
+  },
+  {
+    "case": "25CV010774",
+    "filed": "12/17/2025",
+    "status": "CLOSED",
+    "defendant": "KIRTLEY MOLD INC",
+    "recipient": "KIRTLEY MOLD INC",
+    "paid": "50000",
+    "grant_years": "2022 2023"
+  },
+  {
+    "case": "23CV008049",
+    "filed": "11/10/2023",
+    "status": "CLOSED",
+    "defendant": "MIKE-SELLS POTATO CHIP CO",
+    "recipient": "MIKE-SELL'S POTATO CHIP CO",
+    "paid": "25000",
+    "grant_years": "2021"
+  },
+  {
+    "case": "23CV007658",
+    "filed": "10/26/2023",
+    "status": "CLOSED",
+    "defendant": "JIT PACKAGING CINCINNATI INC",
+    "recipient": "JIT PACKAGING CINCINNATI INC",
+    "paid": "16724",
+    "grant_years": "2022"
+  },
+  {
+    "case": "21CV001185",
+    "filed": "02/25/2021",
+    "status": "CLOSED",
+    "defendant": "SKY CLIMBER FABRICATING LLC",
+    "recipient": "SKY CLIMBER FABRICATING LLC",
+    "paid": "0",
+    "grant_years": "2018 2019"
+  },
+  {
+    "case": "25CV001115",
+    "filed": "02/12/2025",
+    "status": "CLOSED",
+    "defendant": "RM BILTRITE LLC",
+    "recipient": "",
+    "paid": "",
+    "grant_years": ""
+  }
+]

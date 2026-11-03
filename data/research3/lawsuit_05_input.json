@@ -1,0 +1,92 @@
+[
+  {
+    "case": "22CV005976",
+    "filed": "08/26/2022",
+    "status": "CLOSED",
+    "defendant": "KENO KOZIE ASSOCIATES LTD",
+    "recipient": "KENO KOZIE ASSOCIATES LTD",
+    "paid": "640000",
+    "grant_years": "2019 2021"
+  },
+  {
+    "case": "18CV008536",
+    "filed": "10/11/2018",
+    "status": "CLOSED",
+    "defendant": "LEGACY MEASUREMENT SOLUTIONS INC",
+    "recipient": "Legacy Measurement Solutions Inc",
+    "paid": "300000",
+    "grant_years": "2015"
+  },
+  {
+    "case": "24CV004199",
+    "filed": "05/24/2024",
+    "status": "CLOSED",
+    "defendant": "DEDIENNE AEROSPACE LLC",
+    "recipient": "DEDIENNE AEROSPACE",
+    "paid": "200000",
+    "grant_years": "2020"
+  },
+  {
+    "case": "25CV009506",
+    "filed": "11/03/2025",
+    "status": "CLOSED",
+    "defendant": "FUND THAT FLIP INC",
+    "recipient": "FUND THAT FLIP INC",
+    "paid": "150000",
+    "grant_years": "2020"
+  },
+  {
+    "case": "23CV005564",
+    "filed": "08/04/2023",
+    "status": "CLOSED",
+    "defendant": "GRADY MCCAULEY INC",
+    "recipient": "Grady McCauley Inc",
+    "paid": "50000",
+    "grant_years": "2018"
+  },
+  {
+    "case": "21CV004075",
+    "filed": "06/29/2021",
+    "status": "CLOSED",
+    "defendant": "STONECROP TECHNOLOGIES LLC",
+    "recipient": "STONECROP TECHNOLOGIES LLC",
+    "paid": "40000",
+    "grant_years": "2019"
+  },
+  {
+    "case": "26CV003981",
+    "filed": "04/28/2026",
+    "status": "CLOSED",
+    "defendant": "CLEVELAND CYCLEWERKS LLC",
+    "recipient": "CLEVELAND CYCLEWERKS LLC",
+    "paid": "25000",
+    "grant_years": "2022"
+  },
+  {
+    "case": "20CV000832",
+    "filed": "01/29/2020",
+    "status": "CLOSED",
+    "defendant": "GRAPHIC PACKAGING INTERNATIONAL LLC",
+    "recipient": "",
+    "paid": "",
+    "grant_years": ""
+  },
+  {
+    "case": "22CV006664",
+    "filed": "09/26/2022",
+    "status": "CLOSED",
+    "defendant": "CMBF PRODUCTS INC",
+    "recipient": "",
+    "paid": "",
+    "grant_years": ""
+  },
+  {
+    "case": "26CV002817",
+    "filed": "03/25/2026",
+    "status": "CLOSED",
+    "defendant": "KDA ENGINEERING LLC",
+    "recipient": "",
+    "paid": "",
+    "grant_years": ""
+  }
+]

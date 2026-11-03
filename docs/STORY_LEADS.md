@@ -401,17 +401,13 @@ money back.
 Three pieces of evidence say the terms are there anyway. The $26.0 million of
 reversed payments in lead 2, including rows literally named "THERMA-TRU CORP
 CLAWBACK" and "AJM PACKAGING CLAWBACK." The 59 recipients with money recorded
-as returned on some Schedule I. And the Olive AI suit: JobsOhio sued the
-company over unmet job commitments after it shut down in October 2023, and in
-April 2024 moved to add founder Sean Lane personally (lead 10). Olive AI's
-three payments, $560,770 across FY2020 to FY2022 under its old name CrossChx
-and then its new one, carry the Schedule I purpose "Economic development" but
-match no entry in JobsOhio's monthly project reports, so we cannot name the
-program and cannot say what the agreement required.
+as returned on some Schedule I. And, decisively, the 63 lawsuits JobsOhio has
+filed in Franklin County to get its money back, which are lead 11. The
+complaints quote the agreements. So the terms exist, JobsOhio enforces them,
+and the only public place to read them is a courthouse.
 
-So JobsOhio does enforce repayment terms, at least once in court. Those terms
-are in agreements the public cannot read. The finding is not that the money is
-unprotected. It is that an Ohio resident has no way to check whether it is.
+The finding is not that the money is unprotected. It is that an Ohio resident
+has no way to check whether it is, unless the company was sued.
 
 **Ask JobsOhio:** do the grant agreements for the Economic Development Grant
 contain repayment terms, and will JobsOhio publish a sample agreement? What
@@ -470,13 +466,10 @@ closing the Lima driveshaft plant, 295 jobs. St. Bernard Soap, $900,000, 118
 jobs. P. Graham Dunn, $790,000. Olive AI, $560,770, Columbus headquarters shut
 down October 31, 2023, out of court rather than in bankruptcy: it sold two
 business lines and auctioned the rest of the Columbus assets in November and
-December 2023, down to the office arcade game. **JobsOhio sued Olive AI over
-unmet job commitments and in April 2024 asked the court to add founder Sean
-Lane to that suit.** That is the one documented case we found of JobsOhio
-going to court to get grant money back, and it matters to lead 9. The suit is
-in Ohio state court and has not been pulled yet; it should be, because it is
-the only place the actual grant agreement terms may be on the record.
-Republic Steel, $500,000, both Ohio mills idled. iMFLUX,
+December 2023, down to the office arcade game. JobsOhio sued it, won, and was
+paid. The detail is in lead 11; the correction worth carrying here is that
+**JobsOhio sued on August 2, 2023, almost three months before the shutdown,**
+not after it. Republic Steel, $500,000, both Ohio mills idled. iMFLUX,
 $350,000, 122 jobs. Mohawk Fine Papers, $200,000, Ashtabula mill closed
 February 2024, 95 jobs. New Horizons Baking, $100,000, 68 jobs. FedEx Supply
 Chain, $50,000, 63 jobs.
@@ -533,3 +526,115 @@ number. Six caveats to carry:
 **Ask JobsOhio:** of these 29, which ones repaid anything, and under what
 term? Ultium and CoverMyMeds together took $56.6 million and both cut jobs at
 the funded site; were their metrics met before the cuts?
+
+---
+
+## 11. JobsOhio has sued 63 companies to get its money back, and the pace is climbing
+
+This answers the question lead 9 could not. JobsOhio publishes a clawback for
+2 of its 12 programs, covering 6.8% of the dollars, and does not publish the
+individual agreements. But a party-name search of the Franklin County Court of
+Common Pleas returns **89 matters involving JobsOhio since 2011: 63 suits it
+filed, 23 collection proceedings on judgments it won, and 3 brought against
+it.** 52 of the 63 defendants are companies on its own Form 990 grant
+schedule, carrying $12.0 million in payments. The list is in
+`data/jobsohio_lawsuits.csv`.
+
+| Year filed | Suits | Tied to a grant | Paid to them |
+|---|---|---|---|
+| 2018 | 2 | 2 | $352,000 |
+| 2019 | 2 | 1 | $131,911 |
+| 2020 | 4 | 3 | $15,000 |
+| 2021 | 8 | 8 | $1,242,748 |
+| 2022 | 6 | 4 | $1,898,423 |
+| 2023 | 10 | 9 | $2,934,794 |
+| 2024 | 3 | 2 | $1,000,000 |
+| 2025 | 18 | 17 | $3,316,133 |
+| 2026 (through October) | 10 | 6 | $1,116,796 |
+
+Two suits in 2018. Eighteen in 2025. That trend is the story, and it needs one
+more check before publishing: whether it reflects more companies missing their
+numbers, a policy change at JobsOhio, or simply that the 2021 and 2022 awards
+are the first big cohort to reach their metric evaluation dates.
+
+**Defendants include companies in the other leads.** Therma-Tru, whose name
+appears on a Schedule I row as "THERMA-TRU CORP CLAWBACK" (lead 2), was sued
+February 25, 2021. Republic Steel, a confirmed closure (lead 10), was sued
+November 16, 2023. Olive AI (lead 10) was sued twice. Others: Graphic
+Packaging International, Lincoln Electric Automation, Nidec Motor, Candle-Lite,
+Union Metal Industries ($1,250,000 paid, sued October 2025), S&P Data Ohio,
+Treves, Mike-Sell's Potato Chip.
+
+**What the one case read in full establishes** (Olive AI, 23CV005498, filed
+August 2, 2023, Judge Andria C. Noble; read from the filed PDFs on November 3,
+2026):
+
+- JobsOhio pleads itself as "a private non-profit corporation." Not the state.
+- The agreement was a **Talent Acquisition Services Agreement** dated April 8,
+  2020, not a grant agreement. JobsOhio never handed Olive cash. It funded
+  subcontractors (digital advertising, sponsorship events, a coding bootcamp,
+  recruiting) "up to the amount of $645,000.00," and the company owed
+  repayment of the value of those services if it missed its numbers.
+- The complaint block-quotes the agreement. Section 9(b): "In the event of a
+  Breach by Company, JobsOhio may terminate this Agreement and may in addition
+  exercise one or more of the following remedies: (i) Discontinue all
+  Deliverables and Services; (ii) **Liquidated Damages.** As liquidated
+  damages, Company shall pay JobsOhio upon demand the value of each category
+  of Service and/or Deliverable listed on the Talent Acquisition Services Value
+  Allocation in Exhibit A that has been performed, whether or not completed, at
+  the time of the Breach; or (iii) **Other Legal Remedies.**" Section 2(b)(i):
+  the company "Must attain all Metric Commitments no later than the Metric
+  Evaluation Date, and once met, must maintain such Metric Commitments through
+  the Metric Expiration Date."
+- The commitments: create 100 new jobs with payroll of at least $10,000,000,
+  and retain 75 jobs with payroll of at least $6,435,854, by December 31, 2021.
+  Olive reported 65 new jobs and $9,889,289 of payroll. **It missed on jobs by
+  35 and on payroll by about 1%, and the whole amount came due.**
+- Amount sought: $598,420.17, JobsOhio's actual subcontractor spend.
+- **The agreement is not attached, and the complaint says why, twice:** "A copy
+  of the TAS Agreement is not attached as it contains confidential and/or
+  competitive and/or trade secret information, and as Defendant already has a
+  copy in its possession."
+- Olive never appeared. Default judgment November 20, 2023 for $598,420.17 plus
+  costs and statutory interest. Certificate of judgment and about ten bank
+  garnishments followed in early 2024. On **November 19, 2024 JobsOhio filed a
+  Satisfaction of Judgment**: fully satisfied and released.
+- A second suit, 23CV008152, filed November 15, 2023, alleged fraudulent
+  transfer. JobsOhio moved on April 22, 2024 to add founder **Sean Lane**
+  personally, and the amended complaint naming him was filed June 5, 2024, on
+  theories of fraudulent conveyance, civil conspiracy, fraud, veil piercing and
+  unjust enrichment. It was dismissed with prejudice against everyone on
+  November 19, 2024, the same day the judgment was satisfied, each side bearing
+  its own fees. **No finding of liability was ever made against Lane,** and the
+  post must say so plainly.
+
+**Three cautions before any of this is written.**
+
+1. A satisfaction of judgment records that a judgment was paid. It does not
+   state the sum actually paid or the settlement terms, and no settlement
+   agreement was filed. Write "the $598,420.17 judgment was recorded as fully
+   satisfied," never "JobsOhio recovered $598,420.17."
+2. The Olive agreement is a services agreement, not a grant agreement. Do not
+   present Section 9(b) as the text of a JobsOhio grant agreement. Present it
+   as the repayment terms of a JobsOhio incentive agreement, which is what the
+   filing supports. Whether grant agreements carry the same remedy is what the
+   other 62 dockets are being read to find out.
+3. The complaint never names one of the 12 published programs. It says only
+   "one of its incentive offerings." If that holds across the other dockets,
+   then JobsOhio's incentives do not map cleanly onto the programs it
+   publishes, which is a finding in itself and also the likely reason Olive's
+   Schedule I payments match no entry in the monthly project reports.
+
+**Still open.** Olive's three Schedule I receipts total $560,770; JobsOhio
+pleaded $598,420.17 of subcontractor cost. The two are close but not equal,
+cover different periods and different bases, and nothing in the court record
+reconciles them. Do not assert they are the same money.
+
+**Ask JobsOhio:** how many agreements have been enforced, for how much, and
+how much has actually come back? Why are the agreements confidential when the
+guidelines are public? And will JobsOhio publish a sample agreement?
+
+### One running the other way
+
+**Vet Mentor AI Inc. v. JobsOhio et al.**, 26CV006007, filed June 26, 2026,
+still active. Not yet read.

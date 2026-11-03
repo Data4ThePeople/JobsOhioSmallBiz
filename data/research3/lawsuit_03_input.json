@@ -1,0 +1,92 @@
+[
+  {
+    "case": "26CV002103",
+    "filed": "03/04/2026",
+    "status": "CLOSED",
+    "defendant": "CANDLE-LITE COMPANY LLC",
+    "recipient": "CANDLE-LITE COMPANY LLC",
+    "paid": "666796",
+    "grant_years": "2017 2019 2020 2021 2022"
+  },
+  {
+    "case": "23CV008186",
+    "filed": "11/16/2023",
+    "status": "CLOSED",
+    "defendant": "REPUBLIC STEEL",
+    "recipient": "REPUBLIC STEEL INC",
+    "paid": "500000",
+    "grant_years": "2022"
+  },
+  {
+    "case": "22CV006667",
+    "filed": "09/26/2022",
+    "status": "CLOSED",
+    "defendant": "PROTO PRECISION ADDITIVE LLC",
+    "recipient": "PROTO PRECISION ADDITIVE LLC",
+    "paid": "233423",
+    "grant_years": "2021"
+  },
+  {
+    "case": "25CV009814",
+    "filed": "11/12/2025",
+    "status": "ACTIVE",
+    "defendant": "GRIFFON HOLDINGS LLC",
+    "recipient": "GRIFFON HOLDINGS",
+    "paid": "166568",
+    "grant_years": "2022 2023"
+  },
+  {
+    "case": "25CV009801",
+    "filed": "11/12/2025",
+    "status": "CLOSED",
+    "defendant": "IRONHAWK INDUSTRIAL DISTRIBUTION LLC",
+    "recipient": "IRONHAWK INDUSTRIAL DISTRIBUTION LLC",
+    "paid": "120065",
+    "grant_years": "2021"
+  },
+  {
+    "case": "26CV004295",
+    "filed": "05/06/2026",
+    "status": "CLOSED",
+    "defendant": "HEARTLAND ENGINEERED PRODUCTS LLC",
+    "recipient": "HEARTLAND ENGINEERED PRODUCTS LLC",
+    "paid": "50000",
+    "grant_years": "2021"
+  },
+  {
+    "case": "25CV009495",
+    "filed": "11/03/2025",
+    "status": "CLOSED",
+    "defendant": "THE WOODHILL PLATING WORKS COMPANY",
+    "recipient": "WOODHILL PLATING WORKS COMPANY",
+    "paid": "25000",
+    "grant_years": "2024"
+  },
+  {
+    "case": "20CV000473",
+    "filed": "01/17/2020",
+    "status": "CLOSED",
+    "defendant": "THE MEDINA PLATING CORP",
+    "recipient": "THE MEDINA PLATING CORP",
+    "paid": "15000",
+    "grant_years": "2015 2020 2022"
+  },
+  {
+    "case": "21CV005769",
+    "filed": "09/13/2021",
+    "status": "CLOSED",
+    "defendant": "BRIGHTEDGE TECHNOLOGIES INC",
+    "recipient": "BRIGHTEDGE TECHNOLOGIES INC",
+    "paid": "0",
+    "grant_years": "2021 2022"
+  },
+  {
+    "case": "26CV001932",
+    "filed": "02/28/2026",
+    "status": "CLOSED",
+    "defendant": "VEONEER BRAKE SYSTEMS LLC",
+    "recipient": "",
+    "paid": "",
+    "grant_years": ""
+  }
+]

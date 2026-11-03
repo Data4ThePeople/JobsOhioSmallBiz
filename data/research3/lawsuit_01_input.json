@@ -1,0 +1,101 @@
+[
+  {
+    "case": "22CV006725",
+    "filed": "09/28/2022",
+    "status": "CLOSED",
+    "defendant": "LINCOLN ELECTRIC AUTOMATION INC",
+    "recipient": "THE LINCOLN ELECTRIC COMPANY",
+    "paid": "1000000",
+    "grant_years": "2017 2023"
+  },
+  {
+    "case": "25CV009066",
+    "filed": "10/21/2025",
+    "status": "INACTIVE",
+    "defendant": "UNITED CANDLE COMPANY LLC",
+    "recipient": "UNITED CANDLE COMPANY LLC",
+    "paid": "525000",
+    "grant_years": "2021 2022"
+  },
+  {
+    "case": "21CV005964",
+    "filed": "09/20/2021",
+    "status": "CLOSED",
+    "defendant": "TOWER AUTOMOTIVE OPERATIONS USA I LLC",
+    "recipient": "Tower Automotive Operations USA I LLC",
+    "paid": "250000",
+    "grant_years": "2016"
+  },
+  {
+    "case": "25CV009840",
+    "filed": "11/13/2025",
+    "status": "CLOSED",
+    "defendant": "CANDID CARE CO",
+    "recipient": "CANDID CARE CO",
+    "paid": "175839",
+    "grant_years": "2019 2020 2021"
+  },
+  {
+    "case": "19CV001481",
+    "filed": "02/19/2019",
+    "status": "CLOSED",
+    "defendant": "KEYSTONE TAILORED MANUFACTURING LLC",
+    "recipient": "KEYSTONE TAILORED MANUFACTURING LLC",
+    "paid": "131911",
+    "grant_years": "2016 2019"
+  },
+  {
+    "case": "25CV009910",
+    "filed": "11/14/2025",
+    "status": "CLOSED",
+    "defendant": "EMINENT GLOBAL SOLUTIONS LLC",
+    "recipient": "EMINENT GLOBAL SOLUTIONS LLC",
+    "paid": "50000",
+    "grant_years": "2023"
+  },
+  {
+    "case": "22CV007274",
+    "filed": "10/18/2022",
+    "status": "CLOSED",
+    "defendant": "JOSEPH H JAMES",
+    "recipient": "H&H INDUSTRIES INC",
+    "paid": "25000",
+    "grant_years": "2023"
+  },
+  {
+    "case": "25CV010548",
+    "filed": "12/09/2025",
+    "status": "CLOSED",
+    "defendant": "CHIPPEWA INDUSTRIES INC",
+    "recipient": "CHIPPEWA INDUSTRIES INC",
+    "paid": "24295",
+    "grant_years": "2023"
+  },
+  {
+    "case": "20CV004724",
+    "filed": "07/21/2020",
+    "status": "CLOSED",
+    "defendant": "E1 DIGITAL DIRECT INC",
+    "recipient": "E1 DIGITAL DIRECT INC",
+    "paid": "0",
+    "grant_years": "2019 2020"
+  },
+  {
+    "case": "24CV008254",
+    "filed": "10/28/2024",
+    "status": "CLOSED",
+    "defendant": "RM BILTRITE LLC",
+    "recipient": "",
+    "paid": "",
+    "grant_years": ""
+  },
+  {
+    "case": "21CV007238",
+    "filed": "11/16/2021",
+    "status": "CLOSED",
+    "defendant": "INEOS PIGMENTS USA INC",
+    "recipient": "INEOS PIGMENTS USA INC",
+    "paid": "-7252",
+    "grant_years": "2021 2022"
+  }
+]

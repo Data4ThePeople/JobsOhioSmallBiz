@@ -511,3 +511,71 @@ checking city, industry and officers against the payee address.
 **License and attribution.** Court dockets and SEC filings are public records;
 cite the court, case number and filing date. News stories are cited to the
 originating outlet with its date.
+
+---
+
+## Franklin County Court of Common Pleas, JobsOhio party-name search (Ohio)
+
+**What it is.** Every matter JobsOhio is named in, in the court where it is
+headquartered and where its agreements are litigated. 89 matters from 2011 to
+2026: 63 suits JobsOhio filed, 23 collection proceedings on judgments it won,
+and 3 brought against it. This is the only public record of JobsOhio enforcing
+repayment, and the complaints quote the agreements, which are otherwise not
+public.
+
+**Where it comes from.** The clerk's Case Information Online at
+`https://fcdcfcjs.co.franklin.oh.us/CaseInformationOnline/`, by party-name
+search for JOBSOHIO. The same system serves scanned images of the filings once
+its disclaimer is accepted, so the complaints and judgment entries are
+readable, not just the docket lines. Fetched with the User-Agent
+`Data 4 The People research`. Raw list in
+`data/research3/jobsohio_franklin_cases.csv`; per-case readings in
+`data/research3/lawsuit_*.json` and `olive_ai_suit.json`; joined to the grant
+data by `scripts/22_lawsuits.py` into `data/jobsohio_lawsuits.csv`.
+
+**How a defendant is matched to a grant.** By normalized company name first,
+then by distinctive-word overlap with legal suffixes and generic industry
+words removed, and only when exactly one recipient matches. 52 of the 63
+defendants tie to a Schedule I recipient. The 11 that do not were either paid
+under another name, paid $5,000 or less (below the Schedule I threshold), or
+given something other than a reportable grant.
+
+**Coverage, and the limits that belong in the post.**
+
+- **One county only.** JobsOhio is headquartered in Franklin County and sues
+  there, but a suit filed in another Ohio county, in federal court or in
+  another state would not appear. The count is a floor.
+- A collection proceeding (case type CJ, or a case number containing JG) is a
+  garnishment or certificate of judgment on an earlier suit, not a new suit.
+  These are counted separately so the suit count is not doubled.
+- **A satisfaction of judgment records that a judgment was paid. It does not
+  state the sum actually paid,** and settlement agreements are generally not
+  filed. The correct phrasing is "the judgment of $X was recorded as fully
+  satisfied," never "JobsOhio recovered $X."
+- Complaints quote the agreement but do not attach it. In the Olive AI case
+  the complaint says why, twice: the agreement "contains confidential and/or
+  competitive and/or trade secret information." Some material is sealed.
+- Case status on the clerk's system (ACTIVE, CLOSED, INACTIVE) lags and is not
+  a reliable guide to the merits. A judgment matter can read ACTIVE years
+  after the judgment was satisfied.
+- **The agreements sued on are not always grant agreements.** The Olive AI
+  agreement was a Talent Acquisition Services Agreement under which JobsOhio
+  paid subcontractors rather than the company. Each case records what the
+  complaint itself calls the agreement, and the post must not upgrade a
+  services agreement to a grant agreement.
+- Complaints routinely say "one of its incentive offerings" without naming any
+  of the 12 published programs, so these cases usually cannot be mapped onto
+  the program taxonomy used elsewhere in this project.
+
+**Effect on `data/program_terms.json`.** The Talent Acquisition entry had
+inferred that because the benefit is delivered as a service, there is "no
+disbursement to reverse." The Olive AI docket disproves that: the company owes
+the value of the services performed if it misses its metrics, and JobsOhio
+took a $598,420.17 judgment on exactly that clause. The entry is corrected and
+its confidence lowered to Medium. Its `conditional` label stays **Unknown**,
+because that field records what JobsOhio publishes, not what is in force, and
+the published fact sheet still carries no repayment language. The dollar
+shares in `grant_conditions.csv` are therefore unchanged.
+
+**License and attribution.** Court filings are public records. Cite the court,
+case number, document and filing date.

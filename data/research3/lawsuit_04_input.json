@@ -1,0 +1,92 @@
+[
+  {
+    "case": "23CV008583",
+    "filed": "12/01/2023",
+    "status": "CLOSED",
+    "defendant": "S & P DATA OHIO LLC",
+    "recipient": "S&P DATA OHIO LLC",
+    "paid": "650000",
+    "grant_years": "2018 2021"
+  },
+  {
+    "case": "23CV005495",
+    "filed": "08/02/2023",
+    "status": "CLOSED",
+    "defendant": "NEXIENT LLC",
+    "recipient": "NEXIENT LLC",
+    "paid": "446530",
+    "grant_years": "2020 2021"
+  },
+  {
+    "case": "21CV001186",
+    "filed": "02/25/2021",
+    "status": "CLOSED",
+    "defendant": "THERMA-TRU CORP",
+    "recipient": "THERMA-TRU CORP CLAWBACK",
+    "paid": "200000",
+    "grant_years": "2019 2021"
+  },
+  {
+    "case": "25CV009503",
+    "filed": "11/03/2025",
+    "status": "CLOSED",
+    "defendant": "XCESS LIMITED",
+    "recipient": "XCESS LIMITED",
+    "paid": "150000",
+    "grant_years": "2023"
+  },
+  {
+    "case": "18CV008636",
+    "filed": "10/15/2018",
+    "status": "CLOSED",
+    "defendant": "MACA PLASTICS INC",
+    "recipient": "Maca Plastics Inc",
+    "paid": "52000",
+    "grant_years": "2015 2016"
+  },
+  {
+    "case": "25CV009210",
+    "filed": "10/23/2025",
+    "status": "INACTIVE",
+    "defendant": "OBJECTIVE REALITY GAMES LLC",
+    "recipient": "OBJECTIVE REALITY GAMES LLC",
+    "paid": "47775",
+    "grant_years": "2024"
+  },
+  {
+    "case": "25CV009911",
+    "filed": "11/14/2025",
+    "status": "CLOSED",
+    "defendant": "PREMIERE CONCRETE SUPPLY LLC",
+    "recipient": "PREMIERE CONCRETE SUPPLY LLC",
+    "paid": "25000",
+    "grant_years": "2022"
+  },
+  {
+    "case": "19CV007068",
+    "filed": "08/30/2019",
+    "status": "CLOSED",
+    "defendant": "HYNES INDUSTRIES INC",
+    "recipient": "",
+    "paid": "",
+    "grant_years": ""
+  },
+  {
+    "case": "22CV005991",
+    "filed": "08/26/2022",
+    "status": "CLOSED",
+    "defendant": "JBK GROUP INC",
+    "recipient": "",
+    "paid": "",
+    "grant_years": ""
+  },
+  {
+    "case": "26CV001965",
+    "filed": "03/02/2026",
+    "status": "ACTIVE",
+    "defendant": "TECHNIPLAS US LLC",
+    "recipient": "",
+    "paid": "",
+    "grant_years": ""
+  }
+]

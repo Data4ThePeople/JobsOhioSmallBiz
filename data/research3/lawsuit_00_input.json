@@ -1,0 +1,101 @@
+[
+  {
+    "case": "25CV009178",
+    "filed": "10/23/2025",
+    "status": "CLOSED",
+    "defendant": "UNION METAL INDUSTRIES CORPORATION",
+    "recipient": "UNION METAL INDUSTRIES CORPORATION",
+    "paid": "1250000",
+    "grant_years": "2020 2021"
+  },
+  {
+    "case": "23CV008152",
+    "filed": "11/15/2023",
+    "status": "CLOSED",
+    "defendant": "OLIVE AI INC",
+    "recipient": "OLIVE AI INC",
+    "paid": "560770",
+    "grant_years": "2020 2021 2022"
+  },
+  {
+    "case": "25CV009386",
+    "filed": "10/22/2025",
+    "status": "CLOSED",
+    "defendant": "AMERICAN NUTS LLC",
+    "recipient": "AMERICAN NUTS INC",
+    "paid": "300000",
+    "grant_years": "2021"
+  },
+  {
+    "case": "26CV001778",
+    "filed": "02/24/2026",
+    "status": "CLOSED",
+    "defendant": "NIDEC MOTOR CORPORATION",
+    "recipient": "NIDEC MOTOR CORPORATION",
+    "paid": "200000",
+    "grant_years": "2020"
+  },
+  {
+    "case": "26CV003784",
+    "filed": "04/22/2026",
+    "status": "CLOSED",
+    "defendant": "INTERNATIONAL TECHNICAL COATINGS INC",
+    "recipient": "INTERNATIONAL TECHNICAL COATINGS INC",
+    "paid": "150000",
+    "grant_years": "2022"
+  },
+  {
+    "case": "25CV009110",
+    "filed": "10/22/2025",
+    "status": "CLOSED",
+    "defendant": "SOLUTIONS VENDING INTERNATIONAL INC",
+    "recipient": "SOLUTIONS VENDING INTERNATIONAL INC",
+    "paid": "50000",
+    "grant_years": "2023"
+  },
+  {
+    "case": "25CV009900",
+    "filed": "11/14/2025",
+    "status": "CLOSED",
+    "defendant": "THE PAINTING CONTRACTOR LLC",
+    "recipient": "THE PAINTING CONTRACTOR LLC",
+    "paid": "31591",
+    "grant_years": "2022"
+  },
+  {
+    "case": "26CV004307",
+    "filed": "05/06/2026",
+    "status": "CLOSED",
+    "defendant": "PERMA EDGE INDUSTRIES LLC",
+    "recipient": "PERMA EDGE INDUSTRIES",
+    "paid": "25000",
+    "grant_years": "2023"
+  },
+  {
+    "case": "20CV004663",
+    "filed": "07/20/2020",
+    "status": "CLOSED",
+    "defendant": "MITEC POWERTRAIN INC",
+    "recipient": "MITEC POWERTRAIN INC",
+    "paid": "0",
+    "grant_years": "2019 2020"
+  },
+  {
+    "case": "23CV004706",
+    "filed": "06/30/2023",
+    "status": "CLOSED",
+    "defendant": "NASG SEATING RIDGEVILLE CORNERS LLC",
+    "recipient": "",
+    "paid": "",
+    "grant_years": ""
+  },
+  {
+    "case": "26CV005490",
+    "filed": "06/11/2026",
+    "status": "CLOSED",
+    "defendant": "LATERAL GIG LLC",
+    "recipient": "",
+    "paid": "",
+    "grant_years": ""
+  }
+]
