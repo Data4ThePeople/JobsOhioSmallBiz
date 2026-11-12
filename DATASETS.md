@@ -489,7 +489,7 @@ procedure in `docs/FAILURE_VERIFY_PROMPT.md` and consolidated by
 
 **What `failures.csv` holds.** Every candidate and every verdict, including the
 rejects and the reason each was rejected, so the published count can be
-audited. Verdicts: `Confirmed failure` (29, $86,537,093 paid), `Not a failure`
+audited. Verdicts: `Confirmed failure` (31, $90,737,093 paid), `Not a failure`
 (49), `Different company` (4), `Before the grant` (1), `Unresolved` (1).
 Confirmed rows carry a `category`, because "failure" covers five different
 outcomes and the post should not add a sale to a bankruptcy: Bankruptcy or
@@ -611,20 +611,25 @@ column is now **"Can Ohio get it back?"**, computed in
 
 | Grade | Means | Paid dollars |
 |---|---|---|
-| `agreement seen` | this recipient's own signed agreement is in a court file and carries Section 9(b)(ii) | 0.9% |
-| `standard form` | paid under a program whose agreements were obtained from court files, all carrying the identical clause | 69.2% |
-| `published clawback` | no agreement obtained, but the program's guidelines publish a repayment trigger | 6.2% |
-| `loan` | repayable as debt, which is not a performance clawback | 1.3% |
-| `service not cash` | a services agreement: JobsOhio paid subcontractors and can bill the service value as liquidated damages | 0.1% |
-| `none found` | nothing published and no agreement ever obtained | 0.9% |
-| `program unknown` | the payment cannot be tied to a program at all | 21.4% |
+| `agreement seen` | this recipient's own signed agreement is in a court file and carries Section 9(b)(ii) | 0.65% |
+| `standard form` | paid under a program whose agreements were obtained from court files, all carrying the identical clause | 64.38% |
+| `published clawback` | no agreement obtained, but the program's guidelines publish a repayment trigger | 5.63% |
+| `loan` | repayable as debt, which is not a performance clawback | 1.40% |
+| `none found` | nothing published and no agreement ever obtained | 1.27% |
+| `service not cash` | a services agreement: JobsOhio paid subcontractors and can bill the service value as liquidated damages | 0.10% |
+| `program unknown` | the payment cannot be tied to a program at all | 26.57% |
 
-So recourse is established for **76.4% of paid dollars**, nearly all of it on
+**These shares move whenever a year is added, and they did.** The figures above
+are after the FY2025 merge; an earlier draft of this file carried the
+FY2014-2024 shares and was roughly six points out. Anything quoting a recourse
+percentage should be recomputed from `dist/data.json`, not copied from prose.
+
+So recourse is established for **70.7% of paid dollars**, nearly all of it on
 the strength of the form agreement rather than on anything JobsOhio publishes.
 A parent paid under several programs takes the weakest grade of those programs.
 
 `none found` is the finding worth naming: it is almost entirely the Commercial
-Air Service Restoration grants, $10,073,711 including $5,681,149 to British
+Air Service Restoration grants, $17,161,906 including $5,681,149 to British
 Airways. Those guidelines describe a disbursement process and then say nothing
 about what happens if a route ends, and **no airline appears among the 63
 companies JobsOhio has sued**. That contradicts the common assumption, which
@@ -696,7 +701,7 @@ or clean up **its own** facility is that operating company, whatever the payee
 vehicle is called. Decisions, one line of reasoning and a source each, are in
 `data/site_dev_review.csv`; `scripts/25_apply_site_dev.py` folds them in.
 
-**10 of 122 changed, all to `business`, carrying $11,139,868.** The small
+**11 of 122 changed, all to `business`, carrying $11,139,868.** The small
 share of business dollars moved 18.1% to 19.0%. That is the number that
 matters here: the wholesale-reversal counterfactual below implies 8.1 points,
 and the errors actually in the batch are worth about a tenth of that. The
@@ -983,7 +988,7 @@ automatic rules R1 to R4, which read a signal about the payee and never asked
 who owned it. All 211 were re-checked (`data/research_owner/`,
 `scripts/29_apply_ownership.py`): **44 had a parent other than themselves at
 the time of the grant**, 10 were acquired only afterwards and were correctly
-left alone, 8 could not be settled, the rest were independent. Net effect
+left alone, 16 could not be settled, the rest were independent. Net effect
 **$1,520,000 moved out of the Ohio column and $300,000 into it**, on a
 $1.35 billion base. The error was real and its consequence is small.
 
@@ -1053,7 +1058,7 @@ failed. Clicking one filters the table.
 against the **company named on Schedule I**, the payee. The table groups by
 **ultimate parent**. Rolling the payees up to parents loses companies that share
 a parent and sweeps in that parent's other payees, which did not fail. At one
-point in the build that turned 29 companies and $86,537,093 into 26 and
+point in the build that turned 29 companies and $90,737,093 into 26 and
 $96,452,820, a $9.9 million overstatement of a verified figure. **The panel
 therefore reads the verified payee files directly and says on its face which
 unit it counts**, and the filtered table carries a line explaining that its row
@@ -1072,7 +1077,7 @@ every publish. It has already caught two real defects:
 2. **The file was stale after FY2025 was merged.** Dana Limited had taken a
    further $700,000 and Sarepta a further $1,500,000 in FY2025, both in the
    same fiscal year as their reported failures. The confirmed-failure total is
-   **$88,737,093, not $86,537,093**, and any earlier draft citing the lower
+   **$88,737,093, not $90,737,093**, and any earlier draft citing the lower
    figure is out of date.
 
 **The size contrast is stated in bands, not as a median headcount, and that is
@@ -1082,3 +1087,32 @@ deliberate.** The data holds employee bands (`<100`, `100-499`, `500-4999`,
 anyway: of the 51 sued companies on the grant schedule, 19 employ fewer than
 100; **of the 29 that failed after being paid, none does.** Median and mean
 *grant* size are exact and are published instead.
+
+---
+
+## Ohio WARN notices (Ohio Department of Job and Family Services)
+
+**What it is.** The state's own register of mandatory layoff and closure
+notices: employer, city, county, number affected, effective date, and a link to
+the employer's own notice letter. It is the best primary record for a closure
+or a mass layoff, better than the news story that reports it, and it supplied
+the source for 14 of the confirmed failures.
+
+**Where it comes from.** Each year has a page under
+`https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/`,
+and **the current year is served at `current-public-notices-of-layoffs-and-closures`,
+not at a year-numbered path**. Every year page carries a CSV of the whole
+table, which is what to read rather than scraping rows. The file names are
+inconsistent across years (`2020-warn-notice.csv`, `2023-warn-notice_1_9.csv`,
+`2024_warn_notice.csv`, `2025_warn_notice.csv`), so take the CSV URL from the
+year page rather than constructing it.
+
+**A trap worth recording.** `jfs.ohio.gov` returns **404 to a descriptive
+User-Agent and 200 to a browser one**. An automated check that trusts the
+status code will conclude the page does not exist.
+
+**Coverage.** 2020 to the present. Earlier years return 404, which is why the
+pre-2020 failures rest on court dockets and news instead. A WARN notice is
+required only above a size threshold and with 60 days' notice, so a small
+closure or an abrupt one may not appear at all. Its absence is not evidence
+that nothing happened.

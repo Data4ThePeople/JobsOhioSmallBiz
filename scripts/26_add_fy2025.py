@@ -84,11 +84,15 @@ def main(argv):
         rec = found.get(rid)
         existing = by_id.get(rid)
         if existing:
-            # a returning recipient: add the year and the money, keep its research
+            # A returning recipient keeps its research and gains the year. The
+            # totals are RECOMPUTED from the merged grant rows rather than
+            # incremented: incrementing is not idempotent, and re-running this
+            # script after fixing the parser would have doubled the money.
             years = sorted(set(existing["years"].split()) | {str(fy)})
             existing["years"] = " ".join(years)
-            existing["total_cash"] = str(int(existing["total_cash"]) + a["cash"])
-            existing["n_rows"] = str(int(existing["n_rows"] or 0) + a["n"])
+            own = [g for g in merged if recipient_id(g["recipient_name"], g["recipient_ein"]) == rid]
+            existing["total_cash"] = str(sum(int(g["cash_amt"]) for g in own))
+            existing["n_rows"] = str(len(own))
             updated += 1
             continue
         if not rec:

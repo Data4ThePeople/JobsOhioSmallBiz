@@ -375,8 +375,9 @@ var CLASS_LABEL = {business:"Business", site_development:"Site developer", gover
    those were obtained from court files. The hover carries the evidence. */
 /* Whether a clause exists that lets JobsOhio demand the money back, and how we
    know. Deliberately NOT phrased as "can Ohio get it back", because the clause
-   existing says nothing about recovery: JobsOhio has sued 45 of 1,452
-   recipients and 2.2% of the money has come back. Right and outcome are
+   existing says nothing about recovery, and the figures for that are read
+   from the data rather than typed here, because typed ones went stale the
+   moment a year was added. Right and outcome are
    different things and the page keeps them apart. */
 var COND_LABEL = {"agreement seen":"in this agreement", "standard form":"in the standard agreement",
                   "published clawback":"in the guidelines", "loan":"loan, repayable",
@@ -520,7 +521,8 @@ function renderKey(){
   ev.appendChild(document.createTextNode("C and D are counted against the finding in the worst case."));
   var rc = el("p",{class:"key-note"},host);
   var b3 = el("b",{},rc); b3.textContent = "Repayment clause";
-  rc.appendChild(document.createTextNode(" is whether a clause exists letting JobsOhio demand the money back, and how firmly we know it. It is not a statement that money was recovered: 2.2% has come back. "));
+  rc.appendChild(document.createTextNode(" is whether a clause exists letting JobsOhio demand the money back, and how firmly we know it. It is not a statement that money was recovered: "
+    + pct1(D.summary.returned.share_of_paid) + " has come back. "));
   COND_ORDER_KEY.forEach(function(g, i){
     var sp = el("span",{class:"g"},rc); sp.textContent = g;
     rc.appendChild(document.createTextNode(" " + COND_SHORT[g] + (i < COND_ORDER_KEY.length - 1 ? ".  " : ".")));
@@ -595,7 +597,7 @@ function renderBack(){
   cell(L.parents_sued + " of " + m.parents.toLocaleString(), "recipients have ever been sued by JobsOhio to get money back",
        L.suits_filed + " suits in the Franklin County Court of Common Pleas since 2018, seeking " + money(L.sought_total) + " in total. 29 of them ended in dismissal with no terms on the record, so what was recovered is not public.", "var(--unk)");
   cell(pct1(back/out), "of what JobsOhio paid out has come back",
-       money(back) + " of " + money(out) + " across eleven years, recorded as negative rows on the same tax returns. Whether each one is a performance clawback or an accounting correction is not stated.", "var(--large)");
+       money(back) + " of " + money(out) + " across " + (m.fy_max - m.fy_min + 1) + " years, recorded as negative rows on the same tax returns. Whether each one is a performance clawback or an accounting correction is not stated. One reversal, PTT Global Chemical\u2019s $20 million in FY2021, is more than three quarters of it.", "var(--large)");
   txt("p","wc","JobsOhio decides whether a company complied, whether to demand repayment, how much, and whether to waive it. Its standard agreement says so: \u201cNotwithstanding the terms of this Agreement, Grantor has the discretion to determine compliance.\u201d Where a case was dismissed, no filing states what, if anything, was paid.",host);
 }
 function pct1(x){ return (100*x).toFixed(1) + "%"; }
@@ -690,7 +692,7 @@ document.getElementById("src").textContent =
   "Universities, hospitals, governments, nonprofits and site developers are shown separately from operating businesses. " +
   "“Repayment clause” is whether a clause exists that lets JobsOhio demand the money back, and how firmly we know it. Ten of its twelve programs publish no repayment language at all, but 56 signed JobsOhio grant agreements were obtained from Franklin County court files, spanning 2013 to 2023, and every one carries the same Section 9(b)(ii), “Demand Repayment of Grant Funds”: “Grantor may demand repayment of all or a portion of Grant Funds disbursed.” "
   + "“In this agreement” means this company’s own signed contract is in a court file. “In the standard agreement” means it was paid under a program whose agreements were obtained and are identical, so the clause is inferred rather than seen. “None found” means neither: nothing published and no agreement ever obtained, which is where the air service grants to airlines sit. Hover any label for the evidence. "
-  + "A clause is not a recovery. JobsOhio decides whether to demand repayment, how much, and whether to waive it, and the agreement says so: “Grantor has the discretion to determine compliance.” It has sued 45 of these 1,452 recipients, seeking $13.5 million, and $26.0 million has come back across eleven years, 2.2% of what went out. Reimbursement is separate again: the company spends first and JobsOhio repays documented costs, so a company that never spends never collects. That limits what is at risk; it is not a way to recover money already paid. "
+  + "A clause is not a recovery. JobsOhio decides whether to demand repayment, how much, and whether to waive it, and the agreement says so: \u201cGrantor has the discretion to determine compliance.\u201d It has filed " + D.summary.sued.suits + " suits against " + D.lawsuits.parents_sued + " of these " + m.parents.toLocaleString() + " companies, seeking " + money(D.summary.sued.sought) + ", and " + money(D.summary.returned.dollars) + " has come back across " + (m.fy_max - m.fy_min + 1) + " years, " + pct1(D.summary.returned.share_of_paid) + " of what went out. Reimbursement is separate again: the company spends first and JobsOhio repays documented costs, so a company that never spends never collects. That limits what is at risk; it is not a way to recover money already paid. "
   "\u201CSued by JobsOhio\u201D is JobsOhio's own lawsuit against that company in the Franklin County Court of Common Pleas, where it is headquartered, to get grant money back under the repayment clause its published guidelines do not mention. Hover for the case number, what was sought and how it ended. Suits filed in another county, in federal court or in another state would not appear, so this is a floor. " +
   "Free to use. Built by Data 4 The People, " + m.built + ".";
 renderAll();

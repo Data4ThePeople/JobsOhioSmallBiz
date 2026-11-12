@@ -87,7 +87,7 @@ None.
   possible explanations and claim none.
 
 - **Gap to close before publishing (found Nov 12, 2026).** The distress scan
-  that produced the 29 confirmed failures ran over the FY2014-2024 recipients
+  that produced the 31 confirmed failures ran over the FY2014-2024 recipients
   only. The 274 recipients that first appear in FY2025 have never been scanned,
   and at least one of them failed: **AmplifyBio LLC took $1,500,000 in FY2025
   and closed its doors inside the same fiscal year.** JobsOhio's own September
@@ -138,7 +138,7 @@ None.
   Partly conditional 68.3%, Program unknown 22.5%, nothing published 2.4%.
   (3) Failures: 1,485 recipients scanned for distress headlines, 84 candidates
   verified one at a time against dockets, SEC filings and local news, 29
-  confirmed ($86,537,093) in `data/failures.csv` with every reject and its
+  confirmed ($90,737,093) in `data/failures.csv` with every reject and its
   reason kept. Two new story leads written. Open: pull the JobsOhio v. Olive AI
   suit; settle Columbus Steel Castings' payment timing and court; Goodlevel
   Enterprises unresolved; rebuild `dist/` and regenerate

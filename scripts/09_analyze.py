@@ -23,7 +23,7 @@ beside the size and home-state calls: `conditions`, the weakest conditions
 published for any program that paid this parent (19_grant_conditions.py), and
 `failure`, the verified post-grant outcome where there is one
 (21_failures.py). Both are optional inputs: the analysis runs without them."""
-import csv, json, sys
+import csv, json, re, sys
 from collections import defaultdict, Counter
 from pathlib import Path
 
@@ -261,19 +261,38 @@ def merge_duplicate_names(agg):
     normalized name, size bucket, home state and class all agree, so a genuine
     disagreement is never papered over; those stay separate and are reported.
     """
+    # The merge key must ignore the research note a parent name often carries.
+    # "Berkshire Hathaway Inc." and "Berkshire Hathaway Inc. (via Johns
+    # Manville)" are one company, and keying on the full string left Berkshire
+    # as five parents and First Solar as two, which is exactly what this
+    # function's docstring claimed it had fixed.
+    def merge_key(name):
+        base = re.sub(r"\s*\([^)]*\)", " ", name)
+        # Guard: for an unidentified owner the parenthetical IS the identity
+        # ("Unknown (B&T Associates, Navarre, OH)"). Stripping it would reduce
+        # several different companies to the word "unknown" and merge any two
+        # that happened to share a band, state and class.
+        if normalize_name(base) in NO_PARENT:
+            return normalize_name(name)
+        return normalize_name(base)
+
     groups = defaultdict(list)
     for k, a in agg.items():
-        groups[(normalize_name(k), a["bucket"], a["hq"], a["class"])].append(k)
+        groups[(merge_key(k), a["bucket"], a["hq"], a["class"])].append(k)
     merged, notes = {}, []
     by_norm = defaultdict(set)
     for k in agg:
-        by_norm[normalize_name(k)].add(k)
+        by_norm[merge_key(k)].add(k)
     for (norm, *_), keys in groups.items():
         if len(keys) == 1:
             merged[keys[0]] = agg[keys[0]]
             continue
-        # keep the longest spelling, which carries the ownership detail
-        keep = max(keys, key=len)
+        # Prefer the cleanest spelling. A parenthetical is a research note
+        # about ONE payee ("Berkshire Hathaway Inc. (via Johns Manville)"), so
+        # it must not become the label for the merged company; among names
+        # without one, the longest carries the most ownership detail.
+        plain = [k for k in keys if "(" not in k]
+        keep = max(plain or keys, key=len)
         a = agg[keep]
         for k in keys:
             if k == keep:

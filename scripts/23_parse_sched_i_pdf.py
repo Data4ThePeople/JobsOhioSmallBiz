@@ -80,10 +80,11 @@ def parse_page(page):
         purpose = text_at(band, X_PURPOSE, 10_000)
         if not MONEY.match(cash.replace(" ", "")):
             continue
-        m = CITY.match(city_line)
-        city, state, zipc = (m.group(1).strip(), m.group(2), m.group(3)) if m else ("", "", "")
-
-        # walk up for the name and street, stopping at the previous anchor
+        # Collect the whole left column for this recipient: the bands above,
+        # then the anchor band itself. The address wraps, so the city can sit
+        # on the band above while only its ZIP lands beside the EIN (Miami
+        # University reads "... - OXFORD, OH" then "45056"). Reading the anchor
+        # band alone loses the city and swallows the street into the name.
         stop = anchors[n - 1][0] if n else -1
         above = []
         for j in range(i - 1, max(stop, i - 1 - NAME_BANDS), -1):
@@ -92,11 +93,36 @@ def parse_page(page):
                 break
             above.append(line)
         above.reverse()
+        if city_line:
+            above.append(city_line)
+
+        # the form separates name, street and city with " - " when a block
+        # wraps, so split on it and treat the pieces as one ordered list
         parts = []
         for line in above:
-            parts += [p.strip() for p in line.split(" - ") if p.strip()]
-        street = parts.pop() if len(parts) > 1 else ""
-        name = " ".join(parts).strip()
+            parts += [x.strip() for x in line.split(" - ") if x.strip()]
+
+        city = state = zipc = ""
+        for take in (1, 2):                      # the city may span two pieces
+            if len(parts) < take:
+                break
+            cand = " ".join(parts[-take:])
+            m = CITY.match(cand)
+            if m:
+                # "PO BOX 631547 - CINCINNATI, OH 45263" leaves the box number
+                # inside the city capture; the city is the last " - " piece
+                city = m.group(1).split(" - ")[-1].strip()
+                lead = m.group(1)[:len(m.group(1)) - len(city)].strip(" -")
+                state, zipc = m.group(2), m.group(3)
+                parts = parts[:-take] + ([lead] if lead else [])
+                break
+        # "PO BOX" and its number can land on separate bands; rejoin them so
+        # the box number does not become the whole street
+        if len(parts) > 2 and parts[-2].upper().rstrip(".").endswith(("PO BOX", "P O BOX", "P.O. BOX")):
+            parts[-2:] = [" ".join(parts[-2:])]
+        street = parts.pop().strip(" -") if len(parts) > 1 else ""
+        name = " ".join(parts).strip(" -")
+        city = city.strip(" -")
         out.append({"name": name, "street": street, "city": city, "state": state,
                     "zip": zipc, "ein": ein, "irc": irc,
                     "cash": int(float(cash.rstrip(".").replace(",", "") or 0)),

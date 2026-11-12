@@ -482,7 +482,7 @@ they were rejected, is in `data/failures.csv`.
 | Mass layoff at the funded site | 7 | $63,486,323 |
 | Sold or absorbed | 3 | $800,000 |
 | Subsidized service ended | 2 | $250,000 |
-| **Total** | **29** | **$86,537,093** |
+| **Total** | **29** | **$90,737,093** |
 
 **Bankruptcy or receivership.** Petmin USA, $10,000,000, Chapter 7, read off
 the docket: case 25-41332 (Bankr. N.D. Ohio, Youngstown), petition filed
@@ -1107,7 +1107,7 @@ assets "as well as the Market Conditions and Other Factors provided by Grantee
 to JobsOhio." Nothing published says how any of that is weighed, who has asked
 for a waiver, or who has been granted one.
 
-**The pattern.** Of the 29 verified post-grant failures carrying $86,537,093,
+**The pattern.** Of the 29 verified post-grant failures carrying $90,737,093,
 JobsOhio sued **two**, carrying $1,060,770. **$85,476,323 went to companies
 that failed and were never sued.**
 
