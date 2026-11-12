@@ -512,7 +512,21 @@ operating with no Ohio closure reported. It belongs in the table with that
 caveat attached.
 
 **Funded site closed.** Nestlé USA, $3,200,000, closing the Solon factory by
-the end of 2027 and moving the work out of Ohio, 370 jobs. Dana, $3,000,000,
+the end of 2027 and moving the work to South Carolina, 370 jobs. **Two
+qualifications on this one, both found by Eric asking whether the site had
+moved between the announcement and the closure.** First, it had not, but the
+reason it looks that way is worth printing: JobsOhio also paid **Nestlé Purina
+PetCare $6,000,000** in FY2021, under a different EIN, for a **$550 million pet
+food plant in Williamsburg Township, Clermont County**, promising 300 jobs. That
+plant was built and opened on August 31, 2026. So the same group opened one
+Ohio plant and is closing another, and JobsOhio paid it **$9.2 million across
+the two**: 300 jobs gained in Clermont against 370 going in Solon. That
+juxtaposition is a better story than either half. Second, the Solon closure is
+the **factory only**. Nestlé keeps its research and corporate campus there, and
+part of the $3,200,000 paid for exactly that: the FY2018 payment of $350,000 to
+Nestlé Prepared Foods Company, under the same EIN, matches the New Product
+Technology Center announced in November 2018. Calling the whole $3,200,000 a
+closed funded site overstates it, and the post should split the two. Dana, $3,000,000,
 closing the Lima driveshaft plant, 295 jobs. St. Bernard Soap, $900,000, 118
 jobs. P. Graham Dunn, $790,000. Olive AI, $560,770, Columbus headquarters shut
 down October 31, 2023, out of court rather than in bankruptcy: it sold two
