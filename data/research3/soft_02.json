@@ -192,7 +192,7 @@
     "ohio_outcome": "The Columbus operation was cut. Klarna cut 102 jobs, most of them in Columbus, announced Oct. 30 2023 and effective just before Christmas, as it outsourced customer service; about 500 jobs in total were transferred. Klarna listed Columbus as its US base in its IPO filing on Sept. 3 2025 and dropped that reference by Sept. 11 2025.",
     "confidence": "Medium",
     "source": "Business Journals, Oct. 30 2023, Sept. 3 2025 and Sept. 11 2025; Payments Dive, Nov. 2 2023 (Google News RSS)",
-    "notes": "The flagged headline was a generic earnings story. The real Ohio cut is the 2023 outsourcing round, six years after a $125,000 grant."
+    "notes": "The flagged headline was a generic earnings story. The real Ohio cut is the 2023 outsourcing round, six years after a $125,000 grant. | The Ohio WARN notice is dated 2023-10-23, a week before the 2023-10-30 news date used as the event date."
   },
   {
     "recipient_id": "EIN:462903016",
@@ -267,7 +267,7 @@
     "ohio_outcome": "An Ohio operation closed. FedEx Supply Chain stopped running the Procter & Gamble distribution center at 635 N. Cool Rd. in Lima, Ohio and laid off 63 workers by Oct. 31 2025, after P&G switched logistics providers; the notice was reported Sept. 4 2025. FedEx then agreed to sell the whole FedEx Supply Chain unit to CMA CGM for $1.4 billion, reported July 1 2026. No closure of the Columbus grant address itself was found.",
     "confidence": "Medium",
     "source": "Business Journals and LimaOhio.com, Sept. 4 2025; FreightWaves, Sept. 5 2025 and July 1 2026; Supply Chain Dive, March 28 2022 and Sept. 8 2025 (Google News RSS)",
-    "notes": "Two separate things here: a 63-job Ohio closure in 2025, and the sale of the business unit in 2026. The flagged headline was about Memphis."
+    "notes": "Two separate things here: a 63-job Ohio closure in 2025, and the sale of the business unit in 2026. The flagged headline was about Memphis. | CORRECTED: the Ohio WARN notice records 56 affected at 635 N. Cool Rd., Lima, effective 2025-10-31, not the 63 in the earlier reading."
   },
   {
     "recipient_id": "EIN:262898052",
@@ -282,7 +282,7 @@
     "ohio_outcome": "The carrier stopped flying. Air Wisconsin warned of layoffs affecting more than 500 people on Jan. 31 2025 after ending its American Airlines contract, planned another round of more than 100 in April 2025, halted scheduled flights in early April 2025, withdrew from a $10 million Essential Air Service contract in September 2025, and sold its operating assets and fleet in February 2026. Its Ohio activity in DOT T-100 data was Dayton- and Columbus-based regional and charter flying, which ended with the airline. No Ohio site tied to the $50,000 grant was identified.",
     "confidence": "Medium",
     "source": "WPR, Jan. 31 and April 11 2025; Simple Flying, Feb. 2 2025; AirlineGeeks, April 4 and Sept. 9 2025; Post-Crescent, Feb. 3 2026; Business Journals, Feb. 12 2026; DOT T-100 files in data/raw/t100 (Google News RSS)",
-    "notes": "Confirmed at the company level. What the Ohio grant actually paid for is still unknown, so the Ohio link is inferred, not sourced."
+    "notes": "Confirmed at the company level. What the Ohio grant actually paid for is still unknown, so the Ohio link is inferred, not sourced. | The Ohio link is now sourced, not inferred: an Ohio WARN notice for Air Wisconsin Airlines LLC at Dayton, 201 affected, effective 2025-03-31."
   },
   {
     "recipient_id": "EIN:250730780",
@@ -297,6 +297,6 @@
     "ohio_outcome": "The Ohio operation was sold off. PPG agreed on Aug. 29 2024 to sell its silicas products business to Qemetica for $310 million, and the deal completed in late November 2024. Barberton is explicitly part of it: Qemetica took over the silicas manufacturing operations at Barberton, Ohio and the R&D operations at Monroeville, Pennsylvania under lease from PPG, along with owned plants in Lake Charles, Louisiana and Delfzijl, Netherlands. The business has about 400 employees across all sites; no Barberton-only figure was given. The flagged closure, Worwag Coatings in Lafayette, Indiana, 54 jobs, September 2022, was out of state.",
     "confidence": "Medium",
     "source": "CHEManager, Sept. 1 2024, which lists the sites; Manufacturing Dive, Sept. 6 2024; BIC Magazine, Nov. 29 2024; Akron Beacon Journal, March 6 2024; Journal & Courier, Jan. 20 2022 (Google News RSS)",
-    "notes": "A divestiture four years after a $50,000 grant, not an insolvency. The plant kept running under a new owner."
+    "notes": "A divestiture four years after a $50,000 grant, not an insolvency. The plant kept running under a new owner. | CORRECTED: PPG's 10-K states $325 million in proceeds, not the $310 million deal value in the earlier reading, and it does not tie Barberton to the silicas sale. The Ohio link rests on Qemetica's own site listing Barberton as one of three silica plants."
   }
 ]

@@ -12,7 +12,7 @@
     "ohio_outcome": "Ultium Cells cut 1,300 jobs at its Lordstown plant starting January 5, 2026, which the company tied to slower than expected electric vehicle demand. GM had announced the cuts on October 29, 2025 as part of about 3,300 job cuts across Michigan, Tennessee and Ohio. The plant stayed open. Recalls of laid-off workers were pushed from spring to August 2026, and workers began returning in late July and August 2026.",
     "confidence": "Medium",
     "source": "WFMJ 2026-01-05 'Ultium Cells cuts 1,300 jobs at Lordstown plant'; Business Journal Daily 2026-01-05; CNBC 2025-10-29; Reuters 2026-05-29; Business Journal Daily 2026-08-27 'Ultium Cells in Lordstown recalls laid-off workers'",
-    "notes": "Largest cash grant in the batch, $50,000,000 in 2022 and 2023. The cut is a layoff, not a closure, and most of it has since been reversed."
+    "notes": "Largest cash grant in the batch, $50,000,000 in 2022 and 2023. The cut is a layoff, not a closure, and most of it has since been reversed. | The Ohio WARN notice breaks the 1,300 out as 484 permanent plus 850 temporary layoffs, effective 2026-01-05."
   },
   {
     "recipient_id": "EIN:341018992",
@@ -95,14 +95,14 @@
     "verdict": "Confirmed failure",
     "event": "Closure",
     "event_date": "2026-10-19",
-    "entity_filed": "Nestl\u00e9 USA, Inc.",
+    "entity_filed": "Nestlé USA, Inc.",
     "court": "",
     "docket": "",
     "same_company_evidence": "Payee address is the Solon, Ohio campus, which is the site named in the closure announcement.",
-    "ohio_outcome": "Nestl\u00e9 will close its Solon factory by the end of 2027 and move production to South Carolina, announced October 19, 2026, affecting 370 jobs. The company says it will keep some presence in Solon. The Solon campus had already cut 77 jobs announced in November 2023 and about 200 to 216 more announced in late January 2024.",
+    "ohio_outcome": "Nestlé will close its Solon factory by the end of 2027 and move production to South Carolina, announced October 19, 2026, affecting 370 jobs. The company says it will keep some presence in Solon. The Solon campus had already cut 77 jobs announced in November 2023 and about 200 to 216 more announced in late January 2024.",
     "confidence": "Medium",
-    "source": "Cleveland.com 2026-10-19 'Nestl\u00e9 to close Solon factory by end of 2027, move production to South Carolina'; Chagrin Valley Today 2026-10-22 '370 jobs affected'; Crain's Cleveland Business 2026-10-19; Akron Beacon Journal 2024-01-30; Cleveland.com 2023-11-06; Manufacturing Dive 2024-02-02",
-    "notes": "Four grant years, 2016, 2018, 2020 and 2021, $3,200,000 total. The flagged headlines were about an Arlington, Virginia office foreclosure and a Taunton, Massachusetts closure, but the Solon site itself is closing."
+    "source": "Cleveland.com 2026-10-19 'Nestlé to close Solon factory by end of 2027, move production to South Carolina'; Chagrin Valley Today 2026-10-22 '370 jobs affected'; Crain's Cleveland Business 2026-10-19; Akron Beacon Journal 2024-01-30; Cleveland.com 2023-11-06; Manufacturing Dive 2024-02-02",
+    "notes": "Four grant years, 2016, 2018, 2020 and 2021, $3,200,000 total. The flagged headlines were about an Arlington, Virginia office foreclosure and a Taunton, Massachusetts closure, but the Solon site itself is closing. | No Ohio WARN notice exists yet for the 2027 Solon closure, which fits the timeline. Earlier Solon rounds do have notices: 77 jobs (2023-11-01) and 241 jobs (2024-01-29); the earlier reading said 'about 200 to 216' for the second."
   },
   {
     "recipient_id": "EIN:261531856",
@@ -161,7 +161,7 @@
     "same_company_evidence": "Payee is listed in Columbus; Abbott's Ohio project is the Bowling Green nutrition plant.",
     "ohio_outcome": "Nothing closed in Ohio. Abbott announced a $536 million powder formula plant in Bowling Green with 450 jobs in December 2022 and, as of November 2025, was still working on design and engineering with no new timeline. The layoffs in the flagged headlines were in the Bay Area, about 200 jobs, and elsewhere.",
     "confidence": "Medium",
-    "source": "BG Independent News 2025-11-17 'Businesses have slowed at making commitments \u2013 but Abbott Labs is still planning to build in BG'; The Columbus Dispatch 2022-12-15; The Mercury News 2024-04-15",
+    "source": "BG Independent News 2025-11-17 'Businesses have slowed at making commitments – but Abbott Labs is still planning to build in BG'; The Columbus Dispatch 2022-12-15; The Mercury News 2024-04-15",
     "notes": "Grant years 2023 and 2024, $2,500,000. Not a failure, but three years after the announcement the Ohio plant has not been built and has no public timeline."
   },
   {
@@ -177,7 +177,7 @@
     "ohio_outcome": "Sarepta cut 80 jobs in Franklin County, Ohio, announced July 18, 2025, as part of about 500 cuts company-wide after a gene therapy safety setback.",
     "confidence": "Medium",
     "source": "10TV 2025-07-18 'Sarepta Therapeutics laying off nearly 500 employees, including 80 in Franklin County'; WSYX 2025-07-18; The Columbus Dispatch 2025-07-21; The Business Journals 2025-07-16",
-    "notes": "Grant years 2021, 2022 and 2023, $2,348,087. The Ohio site was not closed."
+    "notes": "Grant years 2021, 2022 and 2023, $2,348,087. The Ohio site was not closed. | The Ohio figure of 80 is in the state WARN notice, and the company-wide restructuring is in an 8-K filed the same day under Item 2.05."
   },
   {
     "recipient_id": "EIN:344412691",
@@ -312,7 +312,7 @@
     "ohio_outcome": "P. Graham Dunn announced on October 2, 2024 that it was closing, laying off employees and moving out of Dalton, blaming the retail market. Its Dalton campus was sold to ProVia, which had announced the purchase of two Dalton properties in July 2024 and was building a new facility there by 2025. The business itself was acquired by Creative Brands in October 2024. No job count was published.",
     "confidence": "Medium",
     "source": "Canton Repository 2024-10-02 'P. Graham Dunn closing, lays off employees; property sale to ProVia should close this year'; The Business Journals 2024-10-04; Wooster Daily Record 2024-07-18; Plastics News 2024-07-17; Smart Business Dealmakers 2024-10-08 'Creative Brands Acquires P. Graham Dunn'",
-    "notes": "Grant years 2017 and 2021, $790,000. Both a closure of the Dalton operation and a sale of the company; I could not find a jobs figure in any available source."
+    "notes": "Grant years 2017 and 2021, $790,000. Both a closure of the Dalton operation and a sale of the company; I could not find a jobs figure in any available source. | The jobs figure is now sourced: the Ohio WARN notice gives 92 affected at Dalton, Wayne County, effective 2024-10-20."
   },
   {
     "recipient_id": "EIN:134133473",
