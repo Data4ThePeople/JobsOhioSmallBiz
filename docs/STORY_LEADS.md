@@ -1154,3 +1154,59 @@ missed metric becomes a demand letter?
 data shows which companies were sued and which were not; it does not show the
 reason, and two of the three explanations above are ordinary and defensible.
 The finding is the pattern plus the absence of any public rule governing it.
+
+---
+
+## 13. Someone else is already on the insider beat. Here is what we can add.
+
+Found while classifying an FY2025 recipient, not looked for. **West Warren
+Property 1 LLC** took $800,000 for a speculative industrial building in Warren
+with no tenant committed. Tracing the developer turned up an existing body of
+investigative reporting on JobsOhio and insider dealing in Trumbull County:
+
+| Date | Outlet | Headline |
+|---|---|---|
+| 2024-08-01 | WFMJ | WATCHDOG: JobsOhio and the West Warren Project |
+| 2024-08-12 | Ohio Capital Journal | Ohio economic developer JobsOhio loans $2 million to company headed by insider |
+| 2025-02-19 | WFMJ | WATCHDOG REPORT: Port Authority and its connection to JobsOhio |
+| 2026-03-26 | WFMJ | WATCHDOG REPORT: Tax incentive to benefit Lake to River chair's business |
+| 2026-06-04 | WFMJ | WATCHDOG REPORT: West Warren Industrial Park granted $1.5 million by state |
+
+**Reported by those outlets, not verified by us:** that West Warren Development
+LLC was formed in March 2022, and that one of its managing partners was at the
+time board president of Lake to River Economic Development, a JobsOhio network
+partner, and a Team NEO director. We have not pulled the incorporation record
+or confirmed the role, and the post must not assert it until we do.
+
+**Why this matters editorially.** It is prior art on this beat and Eric should
+know it exists before writing. Two consequences: credit it rather than
+rediscover it, and do not lead with a Trumbull County insider story that WFMJ
+has already run five times.
+
+**What this dataset can add that nobody appears to have done.** Those are
+one-off stories about one county. We hold every recipient JobsOhio has
+disclosed in twelve years, resolved to a parent, and we have already built the
+machinery to check a list of names against a list of companies. A systematic
+conflict check is a different and bigger piece:
+
+1. JobsOhio's board, by year, from the Form 990 Part VII, which we already
+   parse. Lead 8 did this for one year and found no Schedule L.
+2. The boards of the six JobsOhio network partners (Team NEO, One Columbus,
+   REDI Cincinnati, the Regional Growth Partnership, Lake to River, Ohio
+   Southeast), which publish their directors.
+3. Every recipient and its named owners, which is the hard part: for a project
+   LLC the owner is in the Ohio Secretary of State filing, and that search has
+   been down for every attempt this session.
+
+**The honest obstacle.** Step 3 is where this lives or dies, and the Ohio
+Secretary of State business search has blocked or been offline for every
+attempt across this whole project. Without it, an owner can only be found when
+a press release or a news story names one. That is not a systematic check. It
+should be tried again before promising this piece, and if the SOS stays shut
+the fallback is the county recorder's deeds for the handful of spec-building
+LLCs, which is slow but public.
+
+**One more reason to do it carefully.** Lead 8 asked whether any JobsOhio board
+member was connected to Supply Line International Medical and found nothing,
+with no Schedule L filed that year. A systematic check that comes back mostly
+empty is still publishable and is the responsible version of this story.
