@@ -969,3 +969,43 @@ done, and it belongs in the methodology.
 
 **License and attribution.** Public domain. Cite as "SBA size standards, 13 CFR
 121.201," with the date retrieved.
+
+---
+
+## Known limit: a headquarters is recorded as of the grant, and can drift
+
+The method says the home state is the ultimate parent's headquarters **at the
+time of the grant**. Two error classes come out of that, and both have been
+found in this data.
+
+**Ownership drift**, now swept. 211 parents had been classified by the
+automatic rules R1 to R4, which read a signal about the payee and never asked
+who owned it. All 211 were re-checked (`data/research_owner/`,
+`scripts/29_apply_ownership.py`): **44 had a parent other than themselves at
+the time of the grant**, 10 were acquired only afterwards and were correctly
+left alone, 8 could not be settled, the rest were independent. Net effect
+**$1,520,000 moved out of the Ohio column and $300,000 into it**, on a
+$1.35 billion base. The error was real and its consequence is small.
+
+**Headquarters drift**, not swept, and named here as a limitation. A company
+that moved after its grant can be recorded at the address it has now. One
+confirmed case: **P.H. Glatfelter**, $500,000, FY2019, had been recorded in
+North Carolina, which is where the registrant sits today as Magnera Corp of
+Charlotte. Its 10-K for the year ended December 31, 2019 gives a
+principal-executive-offices phone number in the 717 area code, which is York,
+Pennsylvania; the move to Charlotte came in 2022. Corrected. Neither state is
+Ohio, so no published Ohio figure moved.
+
+A cheap scan for more of these — parents whose EDGAR current state differs from
+the recorded state — returns 31 rows carrying $48,719,349, but nearly all are
+the design working rather than failing: `edgar_hq_state` is the *payee's*
+current registrant address while `parent_hq_state` is the *parent's* address at
+the grant. General Electric is recorded Massachusetts for its 2018-2021 grants
+and shows Ohio in EDGAR today because GE Aerospace is now in Evendale. That is
+correct, not wrong.
+
+Three of the 31 are recorded as Ohio and would be worth one look before a
+second edition, because an error there would move a published figure:
+**Milacron** ($1,500,000, FY2016), **Sterigenics US** ($500,000, FY2018) and
+**CBTS Technology Solutions** ($450,023, FY2023). They are listed here rather
+than chased because the signal is mostly noise and the expected yield is low.

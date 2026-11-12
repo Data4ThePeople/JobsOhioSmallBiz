@@ -72,16 +72,16 @@
  {
   "recipient_id": "EIN:311815237",
   "name": "MONTGOMERY COUNTY TRANSPORTION IMPROVEMENT",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none; a public body cannot be owned by a company",
+  "confidence": "C",
+  "hq_source": "https://codes.ohio.gov/ohio-revised-code/chapter-5540",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "Montgomery County Transportation Improvement District is a county transportation improvement district, a political subdivision created by a county under Ohio Revised Code Chapter 5540. A public body has no corporate parent and cannot be acquired, so the question this pass asks does not apply and the record stands for the FY2022 and FY2024 grant years. There is no Form 5500 and no EDGAR record, which is what you would expect. The district's own website did not respond, so the source here is the statute that creates this kind of body rather than the body itself. This row is already outside the business headline as a government recipient."
  },
  {
   "recipient_id": "EIN:043537265",
@@ -100,16 +100,16 @@
  {
   "recipient_id": "EIN:341003685",
   "name": "NORTHWEST STATE COMMUNITY COLLEGE",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none; a public body cannot be owned by a company",
+  "confidence": "C",
+  "hq_source": "https://www.northweststate.edu/about/",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "Northwest State Community College is an Ohio public community college. A public body has no corporate parent and cannot be acquired, so the question this pass asks does not apply and the record stands for the FY2020 grant year. There is no Form 5500 and no EDGAR record, which is what you would expect. This row is already outside the business headline as a government recipient."
  },
  {
   "recipient_id": "EIN:341339938",
@@ -165,7 +165,7 @@
   "confidence": "D",
   "hq_source": "",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "Nothing found either way. CW Partners LLC of Columbus, Ohio has no Form 5500 filing, no EDGAR record, and appears in no public filer's Exhibit 21 subsidiary list, so none of the three signals in the input file says anything. The Ohio Secretary of State business search, which would show the statutory agent and any corporate member, was unreachable, as it has been for every attempt in this project. What this means for the analysis: the row carries 500,000 dollars and is classed as site development, so it sits outside the business denominator and outside the Ohio home-state share either way. If one of these turns out to be a vehicle for an out-of-state operating company, it would change the class question the project has already flagged as open, not the size or home-state headline. A corporate registry lookup is the way to close these."
  },
  {
   "recipient_id": "EIN:852727087",
@@ -179,7 +179,7 @@
   "confidence": "D",
   "hq_source": "",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "Nothing found either way. Reynolds Investment Properties, LLC of Dublin, Ohio has no Form 5500 filing, no EDGAR record, and appears in no public filer's Exhibit 21 subsidiary list, so none of the three signals in the input file says anything. The Ohio Secretary of State business search, which would show the statutory agent and any corporate member, was unreachable, as it has been for every attempt in this project. What this means for the analysis: the row carries 480,000 dollars and is classed as site development, so it sits outside the business denominator and outside the Ohio home-state share either way. If one of these turns out to be a vehicle for an out-of-state operating company, it would change the class question the project has already flagged as open, not the size or home-state headline. A corporate registry lookup is the way to close these."
  },
  {
   "recipient_id": "EIN:208235463",
@@ -221,7 +221,7 @@
   "confidence": "D",
   "hq_source": "",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "Nothing found either way. Pike Realty, LLC of Marietta, Ohio has no Form 5500 filing, no EDGAR record, and appears in no public filer's Exhibit 21 subsidiary list, so none of the three signals in the input file says anything. The Ohio Secretary of State business search, which would show the statutory agent and any corporate member, was unreachable, as it has been for every attempt in this project. What this means for the analysis: the row carries 437,600 dollars and is classed as site development, so it sits outside the business denominator and outside the Ohio home-state share either way. If one of these turns out to be a vehicle for an out-of-state operating company, it would change the class question the project has already flagged as open, not the size or home-state headline. A corporate registry lookup is the way to close these. One trap to note: a different 'Pike Realty, LLC' appears in Mattress Firm's Exhibit 21 subsidiary lists. That is Mattress Firm's own entity and has nothing to do with the Marietta, Ohio payee."
  },
  {
   "recipient_id": "EIN:340655810",
@@ -296,16 +296,16 @@
  {
   "recipient_id": "EIN:346003691",
   "name": "CITY OF BEDFORD HEIGHTS",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none; a public body cannot be owned by a company",
+  "confidence": "C",
+  "hq_source": "https://www.bedfordheights.gov/",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "City of Bedford Heights is an Ohio municipal corporation. A public body has no corporate parent and cannot be acquired, so the question this pass asks does not apply and the record stands for the FY2019 grant year. There is no Form 5500 and no EDGAR record, which is what you would expect. This row is already outside the business headline as a government recipient."
  },
  {
   "recipient_id": "EIN:042801160",
@@ -338,16 +338,16 @@
  {
   "recipient_id": "EIN:341397769",
   "name": "Bellevue Economic Development Corporation",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none; a charity has no owner",
+  "confidence": "C",
+  "hq_source": "https://projects.propublica.org/nonprofits/api/v2/organizations/341397769.json",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "The IRS exempt-organization record for this EIN shows Bellevue Development Corporation, an Ohio 501(c)(3) with a determination letter dated 1984. A charity has no owners and cannot be acquired, so the question this pass asks does not apply and the record stands for the FY2015, FY2016 and FY2018 grant years. Two naming notes: the IRS name is Bellevue Development Corporation rather than the name on the return, and neither is a parent. This row is already outside the business headline as a nonprofit recipient."
  },
  {
   "recipient_id": "EIN:454788036",
@@ -445,7 +445,7 @@
   "confidence": "D",
   "hq_source": "",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "Nothing found either way. KLK Property Holdings LLC of Richfield, Ohio has no Form 5500 filing, no EDGAR record, and appears in no public filer's Exhibit 21 subsidiary list, so none of the three signals in the input file says anything. The Ohio Secretary of State business search, which would show the statutory agent and any corporate member, was unreachable, as it has been for every attempt in this project. What this means for the analysis: the row carries 200,000 dollars and is classed as site development, so it sits outside the business denominator and outside the Ohio home-state share either way. If one of these turns out to be a vehicle for an out-of-state operating company, it would change the class question the project has already flagged as open, not the size or home-state headline. A corporate registry lookup is the way to close these."
  },
  {
   "recipient_id": "EIN:581493818",
@@ -487,7 +487,7 @@
   "confidence": "D",
   "hq_source": "",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "Nothing found either way. Tightline Real Estate Holdings LLC of Milford, Ohio has no Form 5500 filing, no EDGAR record, and appears in no public filer's Exhibit 21 subsidiary list, so none of the three signals in the input file says anything. The Ohio Secretary of State business search, which would show the statutory agent and any corporate member, was unreachable, as it has been for every attempt in this project. What this means for the analysis: the row carries 200,000 dollars and is classed as site development, so it sits outside the business denominator and outside the Ohio home-state share either way. If one of these turns out to be a vehicle for an out-of-state operating company, it would change the class question the project has already flagged as open, not the size or home-state headline. A corporate registry lookup is the way to close these."
  },
  {
   "recipient_id": "EIN:202164234",
@@ -506,16 +506,16 @@
  {
   "recipient_id": "EIN:346003189",
   "name": "City of Youngstown",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none; a public body cannot be owned by a company",
+  "confidence": "C",
+  "hq_source": "https://youngstownohio.gov/",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "City of Youngstown is an Ohio municipal corporation. A public body has no corporate parent and cannot be acquired, so the question this pass asks does not apply and the record stands for the FY2016 grant year. There is no Form 5500 and no EDGAR record, which is what you would expect. This row is already outside the business headline as a government recipient."
  },
  {
   "recipient_id": "EIN:262590893",
@@ -534,16 +534,16 @@
  {
   "recipient_id": "EIN:311778278",
   "name": "CAMBRIDGE-GUERNSEY COUNTY COMMUNITY IMPROVEMENT CORPORATION",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none; a public body cannot be owned by a company",
+  "confidence": "C",
+  "hq_source": "https://www.cambridgeoh.org/",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "Cambridge-Guernsey County Community Improvement Corporation is a community improvement corporation organised under Ohio Revised Code Chapter 1724 as the designated development agency for the city and county. A public body has no corporate parent and cannot be acquired, so the question this pass asks does not apply and the record stands for the FY2020 grant year. There is no Form 5500 and no EDGAR record, which is what you would expect. This row is already outside the business headline as a government recipient."
  },
  {
   "recipient_id": "EIN:250542520",
@@ -562,16 +562,16 @@
  {
   "recipient_id": "EIN:346000504",
   "name": "City of Canton",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none; a public body cannot be owned by a company",
+  "confidence": "C",
+  "hq_source": "https://www.cantonohio.gov/",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "City of Canton is an Ohio municipal corporation. A public body has no corporate parent and cannot be acquired, so the question this pass asks does not apply and the record stands for the FY2018 grant year. There is no Form 5500 and no EDGAR record, which is what you would expect. This row is already outside the business headline as a government recipient."
  },
  {
   "recipient_id": "EIN:831623694",
@@ -590,16 +590,16 @@
  {
   "recipient_id": "EIN:311269601",
   "name": "TRI-COUNTY RURAL WATER AND SEWER DISTRICT",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none; a public body cannot be owned by a company",
+  "confidence": "C",
+  "hq_source": "https://www.tricountywater.org/",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "Tri-County Rural Water and Sewer District is an Ohio regional water and sewer district organised under Ohio Revised Code Chapter 6119. A public body has no corporate parent and cannot be acquired, so the question this pass asks does not apply and the record stands for the FY2015 and FY2019 grant years. There is no Form 5500 and no EDGAR record, which is what you would expect. This row is already outside the business headline as a government recipient."
  },
  {
   "recipient_id": "EIN:753060494",
@@ -632,16 +632,16 @@
  {
   "recipient_id": "EIN:341014060",
   "name": "Fireline Inc",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none found",
+  "confidence": "C",
+  "hq_source": "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/public-disclosure/foia/form-5500-datasets",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "The Department of Labor file shows the plan sponsor for this payee as Fireline, Inc., filed under the payee's own EIN and differing from the name on the return only in punctuation, with 109 participants in 2019. That rules out the specific error this pass is hunting, where a payee turns up in a parent company's benefit plan. The payee also has no EDGAR record and appears in no public filer's Exhibit 21 subsidiary list. Be clear about the limit, though: I could not reach a working company website for this Youngstown business, so the finding is the absence of any sign of a parent rather than positive proof of independence. The record's Ohio headquarters stands for the FY2018 grant year."
  },
  {
   "recipient_id": "EIN:202122306",
@@ -683,7 +683,7 @@
   "confidence": "D",
   "hq_source": "",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "Nothing found either way. Trailhead Property Management LLC of Beachwood, Ohio has no Form 5500 filing, no EDGAR record, and appears in no public filer's Exhibit 21 subsidiary list, so none of the three signals in the input file says anything. The Ohio Secretary of State business search, which would show the statutory agent and any corporate member, was unreachable, as it has been for every attempt in this project. What this means for the analysis: the row carries 88,500 dollars and is classed as site development, so it sits outside the business denominator and outside the Ohio home-state share either way. If one of these turns out to be a vehicle for an out-of-state operating company, it would change the class question the project has already flagged as open, not the size or home-state headline. A corporate registry lookup is the way to close these."
  },
  {
   "recipient_id": "EIN:341165942",
@@ -809,7 +809,7 @@
   "confidence": "D",
   "hq_source": "",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "Nothing found either way. AIP Properties LLC of Columbus, Ohio has no Form 5500 filing, no EDGAR record, and appears in no public filer's Exhibit 21 subsidiary list, so none of the three signals in the input file says anything. The Ohio Secretary of State business search, which would show the statutory agent and any corporate member, was unreachable, as it has been for every attempt in this project. What this means for the analysis: the row carries 50,000 dollars and is classed as site development, so it sits outside the business denominator and outside the Ohio home-state share either way. If one of these turns out to be a vehicle for an out-of-state operating company, it would change the class question the project has already flagged as open, not the size or home-state headline. A corporate registry lookup is the way to close these."
  },
  {
   "recipient_id": "EIN:452605974",
@@ -828,58 +828,58 @@
  {
   "recipient_id": "EIN:311044595",
   "name": "TRANS-STATES EXPRESS",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none found",
+  "confidence": "C",
+  "hq_source": "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/public-disclosure/foia/form-5500-datasets",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "The Department of Labor file shows the plan sponsor for this payee as Trans-States Express, Inc, filed under the payee's own EIN and differing from the name on the return only in punctuation, with 19 participants in 2023. That rules out the specific error this pass is hunting, where a payee turns up in a parent company's benefit plan. The payee also has no EDGAR record and appears in no public filer's Exhibit 21 subsidiary list. Be clear about the limit, though: I could not reach a working company website for this Cincinnati business, so the finding is the absence of any sign of a parent rather than positive proof of independence. The record's Ohio headquarters stands for the FY2024 grant year."
  },
  {
   "recipient_id": "EIN:300609496",
   "name": "THE CLEVELAND FOUNDRY",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none; a charity has no owner",
+  "confidence": "C",
+  "hq_source": "https://projects.propublica.org/nonprofits/api/v2/organizations/300609496.json",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "The IRS exempt-organization record for this EIN shows Cleveland Foundry, an Ohio 501(c)(3) with a determination letter dated 2010. A charity has no owners and cannot be acquired, so the question this pass asks does not apply and the record stands for the FY2020 grant year. Two naming notes: the IRS name is Cleveland Foundry rather than the name on the return, and neither is a parent. This row is already outside the business headline as a nonprofit recipient."
  },
  {
   "recipient_id": "EIN:274865083",
   "name": "CRISTO REY COLUMBUS HIGH SCHOOL PWSP",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none; a charity has no owner",
+  "confidence": "C",
+  "hq_source": "https://projects.propublica.org/nonprofits/api/v2/organizations/274865083.json",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "The IRS exempt-organization record for this EIN shows Cristo Rey Columbus High School Work Study Program, an Ohio 501(c)(3) with a determination letter dated 2016. A charity has no owners and cannot be acquired, so the question this pass asks does not apply and the record stands for the FY2022 grant year. Two naming notes: the IRS name is Cristo Rey Columbus High School Work Study Program rather than the name on the return, and neither is a parent. This row is already outside the business headline as a nonprofit recipient."
  },
  {
   "recipient_id": "EIN:237303509",
   "name": "CHILDREN'S HUNGER ALLIANCE",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none; a charity has no owner",
+  "confidence": "C",
+  "hq_source": "https://projects.propublica.org/nonprofits/api/v2/organizations/237303509.json",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "The IRS exempt-organization record for this EIN shows Childrens Hunger Alliance, an Ohio 501(c)(3) with a determination letter dated 1973. A charity has no owners and cannot be acquired, so the question this pass asks does not apply and the record stands for the FY2020 grant year. Two naming notes: the IRS name is Childrens Hunger Alliance rather than the name on the return, and neither is a parent. This row is already outside the business headline as a nonprofit recipient."
  },
  {
   "recipient_id": "EIN:200096923",
@@ -893,7 +893,7 @@
   "confidence": "D",
   "hq_source": "",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "Nothing found either way. ABEL Enterprises Inc. of Cincinnati has no Form 5500 filing, no EDGAR record, and appears in no public filer's Exhibit 21 list. JobsOhio's monthly report for June 2021 names 'ABEL Enterprises Inc.' in Hamilton County with 7 jobs retained and a 25,000 dollar Inclusion Grant, which fits a very small business. The only abelenterprises.com I could reach is an unrelated information-technology company in North Dakota. The Ohio Secretary of State business search was unreachable, as it has been for every attempt in this project. Leaving this at D rather than calling it independent on no evidence."
  },
  {
   "recipient_id": "EIN:341293786",
@@ -912,44 +912,44 @@
  {
   "recipient_id": "EIN:475207341",
   "name": "CHIPPEWA INDUSTRIES INC",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none found",
+  "confidence": "C",
+  "hq_source": "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/public-disclosure/foia/form-5500-datasets",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "The Department of Labor file shows the plan sponsor for this payee as Chippewa Industries, Inc., filed under the payee's own EIN and differing from the name on the return only in punctuation, with 7 participants in 2019. That rules out the specific error this pass is hunting, where a payee turns up in a parent company's benefit plan. The payee also has no EDGAR record and appears in no public filer's Exhibit 21 subsidiary list. Be clear about the limit, though: I could not reach a working company website for this Toledo business, so the finding is the absence of any sign of a parent rather than positive proof of independence. The record's Ohio headquarters stands for the FY2023 grant year."
  },
  {
   "recipient_id": "EIN:311145986",
   "name": "THE OHIO STATE UNIVERSITY FOUNDATION",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none; a charity has no owner",
+  "confidence": "C",
+  "hq_source": "https://projects.propublica.org/nonprofits/api/v2/organizations/311145986.json",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "The IRS exempt-organization record for this EIN shows Ohio State University Foundation, an Ohio 501(c)(3) with a determination letter dated 1985. A charity has no owners and cannot be acquired, so the question this pass asks does not apply and the record stands for the FY2023 grant year. Two naming notes: the IRS name is Ohio State University Foundation rather than the name on the return, and neither is a parent. This row is already outside the business headline as a nonprofit recipient."
  },
  {
   "recipient_id": "EIN:463754675",
   "name": "DISABILITY IN OHIO",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none; a charity has no owner",
+  "confidence": "C",
+  "hq_source": "https://projects.propublica.org/nonprofits/api/v2/organizations/463754675.json",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "The IRS exempt-organization record for this EIN shows Ohio Business Leadership Network, an Ohio 501(c)(3) with a determination letter dated 2014. A charity has no owners and cannot be acquired, so the question this pass asks does not apply and the record stands for the FY2020 grant year. Two naming notes: the IRS name is Ohio Business Leadership Network rather than the name on the return, and neither is a parent. This row is already outside the business headline as a nonprofit recipient."
  },
  {
   "recipient_id": "EIN:341302396",
