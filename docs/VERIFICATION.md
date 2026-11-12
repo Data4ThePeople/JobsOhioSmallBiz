@@ -138,3 +138,78 @@ the same signals, and the same model family, and both worked without a web
 search engine. Agreement between them shows the method gives the same answer
 twice; it does not prove the answer is right. The hand review of the largest
 recipients and the source links in the published table are the check on that.
+
+---
+
+# Verification of the FY2025 classifications
+
+## What was checked
+
+A random sample of **60** of the 274 recipients that first appear on the FY2025
+return, drawn with a fixed seed (20261112). A second pass classified each one
+from the same signals, with no access to the first pass's answers, following
+the same written method (`docs/RESEARCH_PROMPT.md`). Output:
+`data/research2025/verify25.json`.
+
+The second pass was told explicitly not to open `data/parents.csv`, the
+first-pass batch files, `dist/data.json`, `TIEOUT.md` or `docs/STORY_LEADS.md`,
+and reported two honest leaks: it grepped `DATASETS.md` for two method sections
+(that file was not on the exclusion list), and the session's git context
+displayed a commit subject carrying a first-pass aggregate. Neither conveys a
+per-company answer, so the pass stands, but it is recorded here rather than
+left out.
+
+## Raw disagreement, before anyone judged which pass was right
+
+| Field | Disagreements | Rate |
+|---|---|---|
+| Size band | 2 of 60 | 3.3% |
+| Home state | 1 of 60 | 1.7% |
+| Recipient class | **0 of 60** | **0.0%** |
+| Small/large at the 500 line | 1 of 60 | 1.7% |
+| Ohio / not Ohio | 1 of 60 | 1.7% |
+
+For comparison, the original pass over the FY2014-2024 recipients disagreed on
+**6.7%** of size calls. The FY2025 work is about half that rate, and the class
+call — which decides the headline denominator and is the largest sensitivity in
+the project — agreed on every one of the 60.
+
+## None of the three disagreements moves a published headline figure
+
+Each was adjudicated on the evidence, and each sits outside the business
+denominator or is the same call either way.
+
+1. **NP DWBA LLC, $800,000.** First pass: NorthPoint Development, 500-4999.
+   Second: the payee itself, under 100. **Kept as NorthPoint.** "DWBA" is the
+   Dayton-Wright Brothers Airport; WDTN reported NorthPoint beginning the $146
+   million First Flight Commerce Center at that site in April 2024; and
+   NorthPoint's two other Ohio project vehicles in this file carry the same
+   "NP" prefix. The grade stays D, because that is a naming and location
+   pattern rather than a document naming this LLC. Classed `site_development`
+   by both passes, so the band never enters the business headline.
+2. **Progressive Automations USA, $50,000.** First pass: under 100. Second:
+   100-499. Both grade D, no published headcount exists. **Both are "small" at
+   the 500 line**, so the call is identical where it matters and the
+   disagreement is cosmetic.
+3. **Spring & Main LLC, $60,000.** First pass: Ohio. Second: California.
+   **Kept as Ohio.** The California address on Schedule I is Silicon Valley
+   Bank's Santa Clara office, a lender or escrow address, while the LLC is
+   named for a street corner in Lima and the project is a downtown Lima
+   redevelopment. Classed `site_development` by both passes, so the business
+   home-state figure is unaffected; it does sit in the all-recipients view.
+
+## What the second pass flagged that the first did not
+
+Seven rows it judged unsettlable by any public source, all graded D by both
+passes: NP DWBA, TCG Corrina Owner I, Spring & Main, JT and Sons, Persys
+Engineering, Universal Design and Fabrication, Progressive Automations USA.
+Three near-boundary calls worth knowing: Taikisha Ltd sits at 5,525 employees,
+barely over the 5,000 line, on a figure dated a year after the grant; Pallet
+Distributors is under 100 on 89 Form 5500 participants; Ark Transportation is
+under 100 on 36 retained jobs but committed to 103.
+
+One shared-source warning: JobsOhio's own June 2023 report line reads
+"Universal Design and Fabrication LLC Wika", which looks like two table rows
+run together by the PDF parser. If so, the county tag may belong to the other
+company, and the defect is in `commitments_norm.csv` rather than in either
+research pass.
