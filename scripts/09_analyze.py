@@ -37,6 +37,7 @@ CONDITIONS = ROOT / "data" / "grant_conditions.csv"
 FAILURES = ROOT / "data" / "failures.csv"
 LAWSUITS = ROOT / "data" / "jobsohio_lawsuits.csv"
 FAILURE_SOURCES = ROOT / "data" / "failure_sources.csv"
+PARENT_LINKS = ROOT / "data" / "parent_links.csv"
 OUT = ROOT / "dist" / "data.json"
 TIEOUT = ROOT / "TIEOUT.md"
 
@@ -374,6 +375,13 @@ def main():
                          "cash": shares(allp, lambda a: a["conf"] or "none", lambda a: a["cash"])[0]}
     out["conflicts"] = sorted(c for a in allp for c in a.get("conflicts", set()))
     cond, fail, sued, suit_totals = load_side_findings(parents)
+    # one link per company that was fetched and returned 200. A company with no
+    # link that resolves is shown unlinked rather than sent somewhere broken.
+    links = {}
+    if PARENT_LINKS.exists():
+        for r in csv.DictReader(PARENT_LINKS.open()):
+            if r.get("url"):
+                links[r["parent"]] = {"url": r["url"], "kind": r["kind"], "as_of": r.get("as_of", "")}
     out["parents_table"] = sorted([{
         "parent": a["parent"], "class": a["class"], "bucket": a["bucket"], "hq": a["hq"], "conf": a["conf"],
         "founded_oh": a["founded_oh"], "cash": a["cash"], "rows": a["rows"], "recipients": len(a["recipients"]),
@@ -381,7 +389,7 @@ def main():
         "by_fy": {str(k): v for k, v in sorted(a["by_fy"].items())},
         "payees": " | ".join(sorted({parents[r]["name"] for r in a["recipients"]}))[:400],
         "recourse": cond.get(a["parent"], None), "failure": fail.get(a["parent"], None),
-        "sued": sued.get(a["parent"], None),
+        "sued": sued.get(a["parent"], None), "link": links.get(a["parent"], None),
     } for a in allp], key=lambda d: -d["cash"])
     # dollars by published conditions, and the verified post-grant failures,
     # on the same parent universe the headline uses

@@ -870,3 +870,51 @@ parent, so the home-state conflict rule fires and takes Ohio, which is the
 conservative call against the finding that most dollars leave the state. The
 conflict is printed in `TIEOUT.md` rather than hidden. $300,000 and $250,000
 are the amounts involved.
+
+---
+
+## Company links on the page (various)
+
+**What it is.** One link per company, so a reader can check the company rather
+than take our word for it. `data/parent_links.csv`, built by
+`scripts/27_resolve_links.py`.
+
+**Why it was rebuilt.** The page used to link a company name to the first entry
+in its research `sources`. Those fields record *how* a call was made, not
+*where* a reader can go, so most of them were never URLs at all: "Form 5500
+2023: 86 participants, largest plan, sponsor JAFE DECORATING, INC." A sample of
+60 found **16 that resolved**. Of the 44 failures, 34 were prose rather than a
+URL, four were Google News search queries, and four were SEC filings that
+failed only because they were fetched without the contact User-Agent the SEC
+requires.
+
+**The order, which is the reader's order:**
+
+1. **The company's own 10-K**, where it has an SEC CIK on file. Pulled from the
+   SEC submissions API (`data.sec.gov/submissions/CIK##########.json`) so the
+   link is the actual most recent annual report, not a search page.
+2. **A press release or news report** of the announcement, from the URLs the
+   research already cited.
+3. **The company's own website.**
+
+**Every link was fetched before it was written, and a link that did not resolve
+was not written.** The page shows that company's name as plain text instead. A
+dead link sends a reader nowhere and makes them doubt the rest of the row.
+
+**Coverage.** 860 of 1,719 companies, carrying **$1,137,318,627 of
+$1,346,076,114, or 84.5% of the dollars**: 87 to a 10-K, 78 to another SEC
+filing, 221 to a press release, 224 to a news report, 250 to a company site.
+
+The 859 unlinked companies carry $208,757,487 and are mostly small Inclusion
+and Small Business Grant recipients whose only public record is JobsOhio's own
+project report and a Form 5500 participant count. Leaving them unlinked is a
+deliberate choice: no link is honest, an invented one is not.
+
+**Re-checked independently.** A random 70 of the written links, fetched again
+in a separate pass: **69 returned 200**. The one failure is a local news site
+that serves 403 to automated fetches but loads in a browser.
+
+**Known limits.** A link can rot after it is written, and the file records the
+date nothing. The 10-K is the company's most recent, not the one covering the
+grant year, so it shows the company as it is now rather than when it was paid.
+Both belong in the methodology note.

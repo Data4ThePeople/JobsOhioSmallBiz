@@ -342,6 +342,11 @@ var CONF_HELP = {
   C: "Grade C: the company's own website, a trade directory or a news report. Usually right, but self-reported and not audited.",
   D: "Grade D: the owner could not be established. These are swept into the worst case against the finding."
 };
+var LINK_LABEL = {"10-K": "the company's most recent annual report on Form 10-K (SEC)",
+                  "SEC filing": "a filing with the SEC",
+                  "press release": "the announcement, from the company or the wire",
+                  "news article": "a news report of the project",
+                  "company website": "the company's own site"};
 var CLASS_LABEL = {business:"Business", site_development:"Site developer", government:"Government", university:"University", hospital:"Hospital", nonprofit:"Nonprofit"};
 /* Whether JobsOhio has recourse to recover the money, graded by how strong the
    evidence is. This is not the same as what the guidelines publish, which is
@@ -394,7 +399,18 @@ function renderTable(){
     var tr = el("tr",{},body);
     if (state.tview === "parents"){
       var td = el("td",{class:"name", title:p.parent},tr), key = el("span",{class:"key"},td); key.style.background = SIZE_COLORS[sizeGroup(p)];
-      if (p.sources && p.sources.length){ var a = el("a",{href:p.sources[0], target:"_blank", rel:"noopener"},td); a.textContent = p.parent; } else td.appendChild(document.createTextNode(p.parent));
+      /* The company name links to the best record available for it, in the
+         reader's order: its own 10-K, then a press release or news report of
+         the announcement, then its website. Every one was fetched and returned
+         200 before it was written here. Where nothing resolved the name is
+         plain text, because a dead link sends the reader nowhere and makes
+         them doubt everything else on the row. */
+      if (p.link && p.link.url){
+        var a = el("a",{class:"src", href:p.link.url, target:"_blank", rel:"noopener",
+                        title:p.parent + "\n\u2192 " + (LINK_LABEL[p.link.kind] || p.link.kind)
+                              + (p.link.as_of ? ", filed " + p.link.as_of : "")},td);
+        a.textContent = p.parent;
+      } else td.appendChild(document.createTextNode(p.parent));
       txt("td","",CLASS_LABEL[p.class] || p.class,tr); txt("td","",p.bucket || "unresolved",tr); txt("td","",p.hq || "",tr);
       var tc = el("td",{},tr); if (p.conf){ var s = el("span",{class:"conf", title:(CONF_HELP[p.conf]||"")},tc); s.textContent = p.conf; }
       txt("td","num",moneyFull(p.cash),tr); txt("td","",p.years.length > 1 ? p.years[0] + " to " + p.years[p.years.length-1] : String(p.years[0]),tr);
@@ -483,7 +499,7 @@ function renderKey(){
 
   var pr = el("p",{class:"key-note"},host);
   var b2 = el("b",{},pr); b2.textContent = "Sources";
-  pr.appendChild(document.createTextNode(" open in a new tab where one exists: a case number goes to the Franklin County Clerk of Courts, a failure goes to the docket, filing or news report it rests on. Hover any label for the evidence behind it."));
+  pr.appendChild(document.createTextNode(" open in a new tab where one exists. A company name links to the best record available for it, in that order: its own 10-K, then the announcement, then its website. A case number goes to the Franklin County Clerk of Courts, and a failure goes to the docket, filing or state WARN notice it rests on. Every link was fetched and confirmed to resolve; where nothing did, the name is plain text rather than a dead link. Smaller recipients, whose only public record is JobsOhio's own project report, are mostly unlinked. Hover any label or link for what is behind it."));
 }
 var CONF_SHORT = {A:"a filing under penalty of perjury", B:"an official or partner record",
                   C:"company site, directory or news", D:"owner not established"};
