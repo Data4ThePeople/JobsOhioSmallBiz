@@ -676,14 +676,22 @@ function renderWhat(){
   function under500(b){ return (b["<100"]||0) + (b["100-499"]||0); }
   function over500(b){ return (b["500-4999"]||0) + (b["5000+"]||0); }
   var p2 = el("p",{class:"wc"},host);
+  /* The size contrast is read off employee BANDS, not headcounts, and the two
+     sides are not equally well evidenced: the failures are mostly A and B
+     graded, the sued companies are over a third C or D. State the strength
+     rather than let an absolute claim rest on a guess. */
+  var se = S.sued.evidence || {}, fe = S.failures.evidence || {};
   p2.textContent = "JobsOhio has filed " + S.sued.suits + " suits for a median of "
-    + money(S.sued.median_sought) + ". Of the " + S.sued.recipients_matched
-    + " of them on the grant schedule, " + under500(sb) + " employ fewer than 500 people and "
-    + (sb["<100"]||0) + " fewer than 100. Of the " + S.failures.companies
-    + " companies that failed after being paid, " + over500(fb)
-    + " employ 500 or more and none employs fewer than 100. The companies it sued were paid a mean of "
-    + money(S.sued.mean_paid) + "; the companies that failed were paid a mean of "
-    + money(S.failures.mean_paid) + ".";
+    + money(S.sued.median_sought) + ". On the bands recorded here, " + under500(sb)
+    + " of the " + S.sued.recipients_matched + " sued companies on the grant schedule employ fewer "
+    + "than 500 people and " + (sb["<100"]||0) + " fewer than 100, while " + over500(fb)
+    + " of the " + S.failures.companies + " that failed after being paid employ 500 or more and "
+    + "none is recorded under 100. The two sides are not equally firm: "
+    + fe.a_or_b + " of the " + fe.n + " failures rest on a filing or an official record, against "
+    + se.a_or_b + " of " + se.n + " on the sued side, where " + se.weak
+    + " sit on a company website, a directory or a best guess. What is not in doubt is the money: "
+    + "the companies it sued were paid a mean of " + money(S.sued.mean_paid)
+    + ", the companies that failed a mean of " + money(S.failures.mean_paid) + ".";
 }
 
 /* Why the line sits where it does. The SBA's size standards are the legal

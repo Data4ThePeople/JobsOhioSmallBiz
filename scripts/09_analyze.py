@@ -510,6 +510,13 @@ def main():
         c = Counter(r["emp_bucket"] or "unresolved" for r in rows)
         return {k: c[k] for k in BUCKETS + ["unresolved"] if c.get(k)}
 
+    def weak_grades(rows):
+        """How much of a band mix rests on a company website, a directory or a
+        guess. The size contrast is read off bands, so the reader is owed the
+        strength of the evidence on each side of it."""
+        c = Counter(r["confidence"] for r in rows)
+        return {"n": len(rows), "weak": c["C"] + c["D"], "a_or_b": c["A"] + c["B"]}
+
     by_name = {normalize_name(p2["name"]): p2 for p2 in parents.values()}
     sued_recs = [by_name[normalize_name(r["recipient"])] for r in suit_rows
                  if r.get("recipient") and normalize_name(r["recipient"]) in by_name]
@@ -527,11 +534,11 @@ def main():
                  "paid_to_them": sum(sued_cash),
                  "median_paid": round(statistics.median(sued_cash)) if sued_cash else 0,
                  "mean_paid": round(statistics.mean(sued_cash)) if sued_cash else 0,
-                 "bands": band_mix(sued_recs)},
+                 "bands": band_mix(sued_recs), "evidence": weak_grades(sued_recs)},
         "failures": {"companies": len(fail_rows), "paid": sum(fail_cash),
                      "median_paid": round(statistics.median(fail_cash)) if fail_cash else 0,
                      "mean_paid": round(statistics.mean(fail_cash)) if fail_cash else 0,
-                     "bands": band_mix(fail_recs),
+                     "bands": band_mix(fail_recs), "evidence": weak_grades(fail_recs),
                      "by_category": dict(cat_agg)},
         "returned": {"dollars": abs(out["meta"]["reversal_dollars"]),
                      "share_of_paid": abs(out["meta"]["reversal_dollars"])

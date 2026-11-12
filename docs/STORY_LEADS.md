@@ -486,3 +486,749 @@ they were rejected, is in `data/failures.csv`.
 | Sold or absorbed | 3 | $800,000 |
 | Subsidized service ended | 1 | $200,000 |
 | **Total** | **31** | **$90,737,093** |
+
+**Bankruptcy or receivership.** Petmin USA, $10,000,000, Chapter 7, read off
+the docket: case 25-41332 (Bankr. N.D. Ohio, Youngstown), petition filed
+November 3, 2025, "Chapter 7 Voluntary Petition for Non-Individuals, Fee
+Amount $338, Filed by Petmin USA, Inc.," trustee Richard G. Zellers, with
+companion case 25-41333 for Petmin USA Property Holdings filed the same day.
+The payee filed for itself; the South African parent did not. It is an asset
+case still open in September 2026. See lead 1. 80 Acres Urban Agriculture,
+$500,000, Chapter 7 in August 2026, with the Hamilton farm and headquarters
+closed. Nostrum Laboratories, $250,000, Chapter 11 (Bankr. D.N.J. 24-19611),
+operations ceased by mid-2025. Express Inc, $100,000, Chapter 11 (Bankr. D.
+Del. 24-10831). Columbus Steel Castings, $500,000: the Chapter 11 on May 16,
+2016 was filed by the New Jersey parent, Constellation Enterprises LLC, citing
+"significant operational issues in Columbus," and the Columbus foundry, which
+had more than 650 employees, closed and never reopened. The 90-acre property
+sold for $29.7 million in August 2016 after about 100 rounds of bidding, was
+partly demolished in 2018, and sold again in 2021. Zulily, $500,000, wound down
+in December 2023 through a California assignment for the benefit of creditors
+rather than a bankruptcy case, with the Obetz distribution center closed and
+274 to about 300 jobs gone. Multi-Color, $500,000, a prepackaged Chapter 11 in
+January 2026 in Bankr. D.N.J., but this one is a reorganization: debt cut by a
+reported $3.9 billion, plan confirmed in April 2026, and the company kept
+operating with no Ohio closure reported. It belongs in the table with that
+caveat attached.
+
+**Funded site closed.** Nestlé USA, $3,200,000, closing the Solon factory by
+the end of 2027 and moving the work out of Ohio, 370 jobs. Dana, $3,000,000,
+closing the Lima driveshaft plant, 295 jobs. St. Bernard Soap, $900,000, 118
+jobs. P. Graham Dunn, $790,000. Olive AI, $560,770, Columbus headquarters shut
+down October 31, 2023, out of court rather than in bankruptcy: it sold two
+business lines and auctioned the rest of the Columbus assets in November and
+December 2023, down to the office arcade game. JobsOhio sued it, won, and was
+paid. The detail is in lead 11; the correction worth carrying here is that
+**JobsOhio sued on August 2, 2023, almost three months before the shutdown,**
+not after it. Republic Steel, $500,000, both Ohio mills idled. iMFLUX,
+$350,000, 122 jobs. Mohawk Fine Papers, $200,000, Ashtabula mill closed
+February 2024, 95 jobs. New Horizons Baking, $100,000, 68 jobs. FedEx Supply
+Chain, $50,000, 63 jobs.
+
+**Mass layoff at the funded site.** Ultium Cells, $50,000,000, the second
+largest payment in the dataset after Intel, cut jobs at its **Warren** plant
+from January 5, 2026. **Write this one carefully.** The Ohio WARN notice
+records 1,334 affected and says the layoff is "temporary for approximately 850
+of those employees", so the state index reads 484 permanent and 850 temporary,
+and Business Journal Daily reported recalls under way by August 2026. "Cut
+1,300 jobs" is wrong. CoverMyMeds, $6,613,235, cut 815 jobs in
+March 2023. Hyland Software, $2,500,001, cut about 1,000 people, 20% of its
+workforce, in April 2023. Sarepta, $2,348,087, cut 80 Franklin County jobs in
+July 2025. Speedway, $1,700,000. Sauder Woodworking, $200,000, about 150 jobs
+at Archbold. Klarna, $125,000, 102 jobs in Columbus.
+
+**Sold or absorbed.** FirstMerit ($500,000) stopped existing as an Akron
+company two months after the grant year. AK Steel ($250,000) was absorbed by
+Cleveland-Cliffs the year after. PPG ($50,000) sold the Ohio operation.
+
+**Subsidized service ended.** Avelo's $200,000 and the Dayton to Orlando route
+that ran January to September 2023 (lead 6). Air Wisconsin's $50,000 was an
+economic development grant, not air service, and the carrier stopped flying
+scheduled service in 2025.
+
+**What this number is and is not.** It is a floor, not a count. The scan reads
+headlines, so a company that failed quietly, or one whose Ohio site closed
+without a story, is not in it. It also treats the payee as the company, so a
+parent's bankruptcy that left the Ohio plant running is excluded, and a
+subsidiary failure under a healthy parent may be missed. Three of the five
+categories are not failures of the company at all, only of the thing Ohio paid
+for, and the post should say which is which rather than adding them up as one
+number. Six caveats to carry:
+
+- Columbus Steel Castings' parent filed in the same calendar year as the only
+  grant year, 2016, and Schedule I carries years only, so we cannot yet say
+  whether the $500,000 was paid before or after the filing. The filing court
+  and case number were also not retrievable: CourtListener returned no hit and
+  then went to empty pages, and the 2016 trade coverage naming the court is
+  paywalled.
+- Multi-Color's lead case number is now in hand: **26-10910 (Bankr. D.N.J.)**,
+  filed 2026-01-29, Judge Michael B. Kaplan. Nine
+  same-day affiliate petitions in Bankr. D.N.J. were seen (26-10919 through
+  26-10961) along with the appeals, but not the lead debtor's own number.
+- Multi-Color reorganized and still operates. It is in the table because the
+  company filed, not because Ohio lost a plant.
+- Speedway was sold to 7-Eleven rather than closed, and the layoffs followed
+  the sale.
+- Ohio Logistics was flagged and thrown out: the headline came from an
+  aggregator that writes deliberately unnamed headlines, and the Ohio company
+  broke ground on a new building in April 2026. Goodlevel Enterprises is the
+  one candidate left unresolved.
+- JPMorgan, British Airways, BDO, Morgan Stanley and Rocky Brands were all
+  flagged and all thrown out, because a company named in a bankruptcy court as
+  a creditor, an adviser or the author of a report is not a company going
+  bankrupt. That is the single biggest source of false positives in work like
+  this, and the post should say we checked for it.
+
+**Ask JobsOhio:** of these 29, which ones repaid anything, and under what
+term? Ultium and CoverMyMeds together took $56.6 million and both cut jobs at
+the funded site; were their metrics met before the cuts?
+
+---
+
+## 11. JobsOhio has sued 63 companies to get its money back, and the pace is climbing
+
+This answers the question lead 9 could not. JobsOhio publishes a clawback for
+2 of its 12 programs, covering 6.8% of the dollars, and does not publish the
+individual agreements. But a party-name search of the Franklin County Court of
+Common Pleas returns **89 matters involving JobsOhio since 2011: 63 suits it
+filed, 23 collection proceedings on judgments it won, and 3 brought against
+it.** 51 of the 63 defendants are companies on its own Form 990 grant
+schedule: 50 distinct companies carrying **$11,422,035**. Olive AI was sued
+twice, so a per-suit sum double-counts it. The list is in
+`data/jobsohio_lawsuits.csv`.
+
+| Year filed | Suits | Tied to a grant | Paid to them |
+|---|---|---|---|
+| 2018 | 2 | 2 | $352,000 |
+| 2019 | 2 | 1 | $131,911 |
+| 2020 | 4 | 3 | $15,000 |
+| 2021 | 8 | 8 | $1,242,748 |
+| 2022 | 6 | 4 | $1,898,423 |
+| 2023 | 10 | 9 | $2,934,794 |
+| 2024 | 3 | 2 | $1,000,000 |
+| 2025 | 18 | 17 | $3,316,133 |
+| 2026 (through October) | 10 | 6 | $1,116,796 |
+
+Two suits in 2018. Eighteen in 2025. That trend is the story, and it needs one
+more check before publishing: whether it reflects more companies missing their
+numbers, a policy change at JobsOhio, or simply that the 2021 and 2022 awards
+are the first big cohort to reach their metric evaluation dates.
+
+**Defendants include companies in the other leads.** Therma-Tru, whose name
+appears on a Schedule I row as "THERMA-TRU CORP CLAWBACK" (lead 2), was sued
+February 25, 2021. Republic Steel, a confirmed closure (lead 10), was sued
+November 16, 2023. Olive AI (lead 10) was sued twice. Others: Graphic
+Packaging International, Lincoln Electric Automation, Nidec Motor, Candle-Lite,
+Union Metal Industries ($1,250,000 paid, sued October 2025), S&P Data Ohio,
+Treves, Mike-Sell's Potato Chip.
+
+**What the one case read in full establishes** (Olive AI, 23CV005498, filed
+August 2, 2023, Judge Andria C. Noble; read from the filed PDFs on November 3,
+2026):
+
+- JobsOhio pleads itself as "a private non-profit corporation." Not the state.
+- The agreement was a **Talent Acquisition Services Agreement** dated April 8,
+  2020, not a grant agreement. JobsOhio never handed Olive cash. It funded
+  subcontractors (digital advertising, sponsorship events, a coding bootcamp,
+  recruiting) "up to the amount of $645,000.00," and the company owed
+  repayment of the value of those services if it missed its numbers.
+- The complaint block-quotes the agreement. Section 9(b): "In the event of a
+  Breach by Company, JobsOhio may terminate this Agreement and may in addition
+  exercise one or more of the following remedies: (i) Discontinue all
+  Deliverables and Services; (ii) **Liquidated Damages.** As liquidated
+  damages, Company shall pay JobsOhio upon demand the value of each category
+  of Service and/or Deliverable listed on the Talent Acquisition Services Value
+  Allocation in Exhibit A that has been performed, whether or not completed, at
+  the time of the Breach; or (iii) **Other Legal Remedies.**" Section 2(b)(i):
+  the company "Must attain all Metric Commitments no later than the Metric
+  Evaluation Date, and once met, must maintain such Metric Commitments through
+  the Metric Expiration Date."
+- The commitments: create 100 new jobs with payroll of at least $10,000,000,
+  and retain 75 jobs with payroll of at least $6,435,854, by December 31, 2021.
+  Olive reported 65 new jobs and $9,889,289 of payroll. **It missed on jobs by
+  35 and on payroll by about 1%, and the whole amount came due.**
+- Amount sought: $598,420.17, JobsOhio's actual subcontractor spend.
+- **The agreement is not attached, and the complaint says why, twice:** "A copy
+  of the TAS Agreement is not attached as it contains confidential and/or
+  competitive and/or trade secret information, and as Defendant already has a
+  copy in its possession."
+- Olive never appeared. Default judgment November 20, 2023 for $598,420.17 plus
+  costs and statutory interest. Certificate of judgment and about ten bank
+  garnishments followed in early 2024. On **November 19, 2024 JobsOhio filed a
+  Satisfaction of Judgment**: fully satisfied and released.
+- A second suit, 23CV008152, filed November 15, 2023, alleged fraudulent
+  transfer. JobsOhio moved on April 22, 2024 to add founder **Sean Lane**
+  personally, and the amended complaint naming him was filed June 5, 2024, on
+  theories of fraudulent conveyance, civil conspiracy, fraud, veil piercing and
+  unjust enrichment. It was dismissed with prejudice against everyone on
+  November 19, 2024, the same day the judgment was satisfied, each side bearing
+  its own fees. **No finding of liability was ever made against Lane,** and the
+  post must say so plainly.
+
+**Three cautions before any of this is written.**
+
+1. A satisfaction of judgment records that a judgment was paid. It does not
+   state the sum actually paid or the settlement terms, and no settlement
+   agreement was filed. Write "the $598,420.17 judgment was recorded as fully
+   satisfied," never "JobsOhio recovered $598,420.17."
+2. The Olive agreement is a services agreement, not a grant agreement. Do not
+   present Section 9(b) as the text of a JobsOhio grant agreement. Present it
+   as the repayment terms of a JobsOhio incentive agreement, which is what the
+   filing supports. Whether grant agreements carry the same remedy is what the
+   other 62 dockets are being read to find out.
+3. The complaint never names one of the 12 published programs. It says only
+   "one of its incentive offerings." If that holds across the other dockets,
+   then JobsOhio's incentives do not map cleanly onto the programs it
+   publishes, which is a finding in itself and also the likely reason Olive's
+   Schedule I payments match no entry in the monthly project reports.
+
+**Still open.** Olive's three Schedule I receipts total $560,770; JobsOhio
+pleaded $598,420.17 of subcontractor cost. The two are close but not equal,
+cover different periods and different bases, and nothing in the court record
+reconciles them. Do not assert they are the same money.
+
+**Ask JobsOhio:** how many agreements have been enforced, for how much, and
+how much has actually come back? Why are the agreements confidential when the
+guidelines are public? And will JobsOhio publish a sample agreement?
+
+### What 62 dockets show about how the clause is actually used
+
+All 62 suits read at High confidence, every complaint and every terminating
+filing opened as a scanned image and read page by page. **49 of the 62 complaints block-quote the repayment clause word for word, 58
+block-quote some part of the agreement, and 56 attach the whole signed
+contract.** Eight of the 58 quote Section 5, the metrics clause, not the
+remedy, and six attached agreements carry no recorded 9(b)(ii) text at all.
+Amounts sought run $16,724 to $2,000,000, **$13,494,169 in total**. Outcomes: 30
+dismissed, 22 default judgments, 2 still pending, the rest removed, stayed or
+not stated.
+
+The clause is identical across four drafting generations of the form, 2013
+through 2023. What moves is everything around it: Section 9(a) is headed
+"Default" in the 2014-2018 versions and "Breach" from 2020, the operations
+window narrows from 180 days to 90, the attorney-fee clause slides from 9(f) to
+9(e) to 9(d), and the 2023 version ties the metric test to "the final Annual
+Report." Section 9(b)(ii) never changes a word.
+
+**Three courts have now construed it, and they used different words for it.**
+
+- *JobsOhio v. MITEC Powertrain* (20CV004663). MITEC argued that enforcing the
+  clause "in the midst of a global pandemic, is unreasonable and a breach of
+  the implied duty to act in good faith." Judge Sheryl Munson: "Ohio law holds
+  that an implied duty of good faith cannot be used to prevent a party from
+  exercising remedies expressly afforded it under a contract," and the
+  agreement "clearly and unambiguously provided that Plaintiff may recover the
+  entire amount of the grant upon a breach."
+- *JobsOhio v. The Medina Plating Corp* (20CV000473). Judge Julie M. Lynch,
+  April 7, 2021, the fullest reasoning in the set: the grant agreement is an
+  enforceable contract and the full-repayment term is valid, because
+  "controlling legal precedent holds that a grantee may recover the full amount
+  of its grant funds in the event of a breach if the agreement so specifies,"
+  again citing Matrix Centennial. The facts are a good illustration: a $50,000
+  grant reimbursed a $65,526.65 machine, the company created 10 of 30 promised
+  jobs, then sold the machine with the whole business and closed the site a year
+  before the Metric Expiration Date.
+- *JobsOhio v. RM Biltrite* (25CV001115). Judge Carl A. Aveni, July 16, 2025:
+  "This repayment provision is enforceable as a liquidated damages clause,"
+  citing *State of Ohio Dept. of Dev. v. Matrix Centennial, L.L.C.*, 10th Dist.
+  Franklin No. 14AP-47, 2014-Ohio-3251, ¶ 21, which enforced "a materially
+  identical repayment provision in a grant agreement." So a court calls it
+  liquidated damages although the agreement never uses the phrase, and the
+  precedent predates most of these suits.
+
+**"All or a portion" works as an escalator, and that is the pattern to show.**
+JobsOhio demands part of the grant, the 30 days lapse, and the suit asks for
+all of it. Treves: demanded $50,000, sued for $200,000. Test-Fuchs: demanded
+$62,500, sued for $125,000. Kirtley Mold: demanded $25,000 twice, sued for
+$50,000. International Technical Coatings: demanded $100,000, sued and took
+judgment for $150,000, with the mechanism pleaded outright: the company
+"failed to pay the amount demanded ... thereby constituting a further breach
+... and JobsOhio is therefore entitled to recover the entire amount of its
+Grant." Union Metal: two letters for $200,000, then suit for $1,250,000.
+
+The nearest thing to a formula anywhere in the record is the Treves demand
+letter explaining its reduced figure: it "takes into account the number of
+jobs and payroll Grantee created, the total fixed assets invested in the
+Project, as well as the Market Conditions and Other Factors." Nothing
+published says how those are weighed. One amendment says it plainly:
+"**Notwithstanding the terms of this Agreement, Grantor has the discretion to
+determine compliance.**"
+
+**JobsOhio sues before it knows the numbers.** Five of ten complaints in one
+batch, and several in others, plead no performance figure at all: the breach is
+a missing Annual Report, or metrics missed "based upon information and belief."
+Two were filed before the metric evaluation date they complain of had arrived.
+Mike-Sell's Potato Chip was sued November 10, 2023 over a December 31, 2023
+evaluation date. Stonecrop Technologies was sued about six months early, won
+against by default, and garnished.
+
+**The worst performance figures that are on the record:** For-Tech created 0 of
+20 jobs, after JobsOhio had already amended the agreement to give it another
+year. Cleveland Cyclewerks 0 of 5 created and 0 of 5 retained. KDA 0 of 10.
+Kirtley Mold 1 of 10. Dedienne Aerospace "only created 1 new job with an
+associated payroll of $77,925.49, instead of the required 40 new jobs with an
+associated payroll of $2,000,000.00." Test-Fuchs 13 of 29. Sky Climber 19 of
+35. Treves 75 of 91.
+
+**How much came back is mostly not on the record.** Only a handful of dockets
+show a satisfaction of judgment, and none states the sum actually paid.
+Thirty cases ended in dismissal with no terms filed at all. One clerk financial
+entry does show money moving: in Stonecrop (21CV004075) a garnishment
+disbursement of $41,233.01 to "JOBSOHIO C/O R J MANN" on January 14, 2022,
+against a $40,000 judgment plus $1,025 in fees.
+
+**Three things that complicate the grant data itself.**
+
+- *Grantees get swapped inside one agreement.* Sky Climber's 2014 agreement was
+  with Precision Tower Products LLC; a 2016 amendment substituted Sky Climber
+  Fabricating into the same contract. A Form 990 row and a case caption can
+  carry different names for the same money.
+- *JobsOhio reaches past the grantee.* Recleim's parent was added on unjust
+  enrichment and took a second $510,000 judgment. Several agreements name a
+  related property company as "Grantee 2," jointly and severally liable, and
+  one amendment pulls in a third company as "Grantee Affiliate."
+- *A suit covers one agreement, not a company.* Keno Kozie took $40,000 in
+  FY2019 and $600,000 in FY2021; JobsOhio sued on the $40,000 only. A company
+  can be in court over one grant while another runs on.
+
+**Reimbursement really does hold money back.** JIT Packaging's agreement
+authorized $75,000 and only $16,724 was ever drawn, which is what JobsOhio sued
+for. Champlain's authorized $250,000, and the suit sought only the $108,375.03
+advanced outside the normal reimbursement process, which the company never
+documented. This is the strongest evidence for the point in lead 9 that
+reimbursement is a real constraint even where a jobs condition is not.
+
+### One running the other way
+
+**Vet Mentor AI Inc. v. JobsOhio et al.**, 26CV006007, filed June 26, 2026,
+still active. Not yet read.
+
+### The sentences JobsOhio cuts out of its own quotes
+
+This is the sharpest thing in the dockets. The standard agreement contains two
+discretion clauses that complaints quote around. Section 5(a) ends:
+
+> **Notwithstanding the terms of this Agreement, Grantor has the discretion to
+> determine compliance.**
+
+Section 5(c) contains:
+
+> **Grantor has the discretion to waive non-compliance if, in writing, Grantee
+> submits ... a description of Market Conditions and Other Factors ... and may
+> waive repayment of all or a portion of the Grant Funds disbursed.**
+
+Complaints block-quote Section 5(a) and Section 5(c) and cut both sentences
+with "***". The text is still on the record, because the signed agreement is
+attached as an exhibit in 56 of the 60 cases read. It is just not in the part
+JobsOhio sets out for the court to read.
+
+So the structure is: JobsOhio decides whether a company complied, JobsOhio
+decides whether to waive, JobsOhio decides how much to demand, and the only
+published basis for any of it is a demand letter's phrase, "Market Conditions
+and Other Factors."
+
+### JobsOhio's own words for the thing
+
+The agreements never say "clawback." In sixty dockets the word appears once,
+and it is JobsOhio's General Counsel using it. Don Grubbs, letter of June 14,
+2019, in the Hynes Industries case: "Please note the request for clawback is
+not the full amount of the disbursed grant funds."
+
+In the same case JobsOhio told the court outright that the right is
+discretionary: "While JobsOhio, in accordance with Ohio law, could have
+required repayment of the entire $150,000.00 grant amount due to the breach
+(See *State of Ohio Dept. of Dev. v. Matrix Centennial, L.L.C.*, 2014-Ohio-3251),
+JobsOhio only demanded repayment of $50,000.00." Worth noting that JobsOhio,
+a private nonprofit, reaches for a case about the state Development Department
+to describe its own contract rights.
+
+### Suing before the numbers are due
+
+Three instances now, and this is a pattern rather than a slip:
+
+- **Objective Reality Games** (25CV009210). Metric Evaluation Date December 31,
+  **2026**. JobsOhio sued in October 2025, fourteen months early, for the full
+  $47,774.56, on a missing 2024 Annual Report.
+- **Mike-Sell's Potato Chip** (23CV008049). Sued November 10, 2023 over a
+  December 31, 2023 evaluation date.
+- **Stonecrop Technologies** (21CV004075). Sued about six months early, won by
+  default, garnished $41,233.01.
+
+In these and others the metric failure is pleaded only "based upon information
+and belief." The hard-pleaded breach is a missing form. **Nexient** was sued
+for the entire $429,750.19 of JobsOhio's subcontractor spend on a missing 2024
+Annual Report alone, with no jobs shortfall pleaded at all.
+
+### JobsOhio v. Lateral Gig, 26CV005490: the judgment is $8,000 above the prayer
+
+Read twice, independently, from the filed images. Both readings agree.
+
+- The complaint, filed June 11, 2026, pleads **$17,000.00** as the amount
+  disbursed and says so five times, including the prayer: "**WHEREFORE**,
+  JobsOhio demands judgment against Defendant in the amount of $17,000.00, plus
+  interest, including prejudgment interest, reasonable attorney fees, costs and
+  expenses, and such other relief as the Court may deem appropriate." The only
+  appearance of $25,000 in the complaint is paragraph 4, as the ceiling: "up to
+  $25,000.00 in grant funds."
+- The demand letter of April 14, 2026, attached as Exhibit 2 and signed by
+  General Counsel Don Grubbs, is headed "Demand for Repayment ($17,000)."
+- The motion for default judgment, filed October 1, 2026, asks for
+  **$25,000.00** in all four places, and opens by describing the complaint as
+  "seeking recovery of $25,000.00."
+- The supporting affidavit, sworn by a JobsOhio Senior Managing Director,
+  states that JobsOhio "provided $25,000.00 in grant funds to Defendant" and
+  "therefore demanded repayment of $25,000.00," while expressly incorporating
+  the letter that demands $17,000.
+- The judgment entry of October 26, 2026, signed by Judge Chris M. Brown
+  and submitted by plaintiff's counsel, orders judgment "in the amount of
+  25,000.00" (no dollar sign in the original).
+- The docket runs to 38 entries and contains **no amended complaint, no motion
+  to amend, no Civ.R. 60 motion and no corrective entry.**
+- Both certified mailings, to the company and to its statutory agent, came back
+  "NOT DELIVERABLE AS ADDRESSED." Service was completed on the Ohio Secretary
+  of State under R.C. 1706.09(H) on August 18, 2026. The defendant never
+  appeared and has no attorney of record.
+
+**How to write it.** Say the judgment exceeded the amount demanded in the
+complaint and let the reader weigh it. Ohio Civ.R. 54(C) says a default
+judgment "shall not be different in kind from or exceed in amount that prayed
+for in the demand for judgment," but no court has ruled on this entry and we
+must not call it improper or void. On service, say what the docket shows: both
+mailings came back undeliverable and service was completed on the Secretary of
+State, who forwarded the papers to two addresses. Do not write that the company
+never received notice; the docket does not record what became of those
+forwarded mailings. **Do not name the owner.** She is a private individual, the
+company is the defendant, and the story is about JobsOhio's process. (Her name
+appears three different ways across the filings, which is its own small sign of
+how the papers were assembled.)
+
+**The innocent explanation, which belongs in the piece.** $25,000 is the face
+amount of the grant: it is the first line of the agreement, the ceiling in the
+complaint, and the size of the agreement in the demand letter. $17,000 is what
+was actually disbursed, a number you only reach by consulting the ledger. The
+complaint and the demand letter, drafted when the disbursement was being
+computed, use $17,000 throughout. The motion, memorandum, affidavit and
+proposed entry, drafted four months later, use $25,000 throughout. That looks
+like one wrong figure picked up once and carried through a single drafting
+session. Nothing caught it because the defendant never appeared, so no one
+compared the motion against the prayer, and the court had a sworn affidavit in
+front of it saying $25,000 had been disbursed.
+
+### It is not one instrument. It is at least three.
+
+This matters for every sentence the post writes about "the grant agreement."
+Across 63 dockets JobsOhio sued on:
+
+- **Grant Agreements**, the large majority. Remedy: "Demand Repayment of Grant
+  Funds," Section 9(b)(ii). **The agreement is attached as an exhibit every
+  time.**
+- **Talent Acquisition Services Agreements**, at least four (Olive AI, Nexient,
+  Candid Care, Candle-Lite, and INEOS on a related form). JobsOhio pays
+  subcontractors instead of the company and the company owes the value of the
+  services. Remedy: "**Liquidated Damages**." **The agreement is refused every
+  time,** with the same sentence: "A copy of the TAS Agreement is not attached
+  as it contains confidential and/or competitive and/or trade secret
+  information, and as Defendant already has a copy in its possession." One adds
+  "and as it further contains confidentiality provisions."
+- **A Loan Agreement with a Cognovit Promissory Note** (24CV008254), plus
+  corporate and individual guarantees.
+
+That split is clean and worth stating plainly: **JobsOhio files its grant
+agreements in open court and withholds its services agreements.** Whatever the
+confidentiality reasoning is, it is not applied to the instrument that moves
+actual cash.
+
+### The cognovit note, which is a different animal entirely
+
+In 24CV008254 JobsOhio filed the complaint and a confession of judgment **the
+same day**, and had a judgment of **$587,832.20** against three companies and
+three individuals **23 days later**, at a 10% default rate. A cognovit note is
+an instrument in which the borrower agrees in advance that, on default,
+judgment may be taken against them without notice and without a defense. Ohio
+permits them in commercial lending and forbids them in consumer lending.
+
+The judgment was recorded as satisfied and released on October 1, 2026. No
+filing states the sum actually paid.
+
+This is the clearest evidence in the whole project that **JobsOhio lends as
+well as grants**, and that at least one of its loans is secured by personal
+guarantees and a confession of judgment. Lead 9 notes that the Growth Fund Loan
+guidelines have been removed from jobsohio.com entirely and were never
+archived. This case is what that missing document governs.
+
+**Caveat on this one.** The clerk's docket view truncates long dockets and the
+complaint itself could not be retrieved, so the loan's date, purpose and any
+job commitments are unknown. The judgment entry and the release were read
+directly. Say only what those two documents support.
+
+### Having a lawyer appears to change the outcome
+
+Worth testing further before publishing, but the pattern across 63 cases is
+visible. Every full-amount judgment examined ran against a defendant who never
+appeared or appeared without counsel. The cases where a defendant retained
+counsel ended in dismissal or settlement, and the two settlements with a figure
+on the record are **$391,000 against a $420,000 grant** and **$8,000 against
+$24,295 disbursed**, the latter at about 33 cents on the dollar from a company
+that delivered zero new jobs, zero new payroll and zero fixed-asset investment.
+Republic Steel answered through two national firms and the case was dismissed
+with prejudice. BrightEdge got its default judgment vacated by agreement
+through Littler Mendelson and the case was dismissed.
+
+Set against that: a company served only through the Secretary of State, which
+never appeared, had judgment entered $8,000 above the sum the complaint asked
+for.
+
+### One case that is not about metrics at all
+
+22CV007274. A man signed a $337,180 grant agreement for a company on August 18,
+2016, then two weeks later filed a Certificate of Dissolution **retroactive to
+the company's formation date**, so the grantee "effectively never existed as a
+legal entity," and did not tell JobsOhio. He continued submitting reimbursement
+requests in its name. Summary judgment went against him personally in 2025 on
+non-existent-entity liability and unjust enrichment, not on the repayment
+clause. **Do not name him**; the point is that JobsOhio's reimbursement checks
+did not catch a dissolved grantee for nine years.
+
+### Why a Schedule I figure and a pleaded figure rarely match
+
+31 of the 47 suits where both numbers exist agree exactly. The other 16 differ,
+and the reasons are structural rather than errors:
+
+- A company can hold a grant agreement, a services agreement and a loan at
+  once, and a suit covers one instrument. INEOS held a separate Grant Agreement
+  alongside the TAS Agreement it was sued on. Candle-Lite held both.
+- A suit can cover one of several grants. Keno Kozie took $40,000 in FY2019 and
+  $600,000 in FY2021; JobsOhio sued on the $40,000.
+- The Schedule I row is the parent's total across years and payees, while the
+  complaint pleads what was disbursed under one agreement. Lincoln Electric
+  $1,000,000 against $100,000 pleaded; Treves $800,000 against $200,000;
+  S&P Data $650,000 against $150,000; Republic Steel $500,000 against $300,000.
+- JobsOhio sometimes demands less than the whole: Champlain's agreement
+  authorized $250,000 and the suit sought only the $108,375.03 advanced outside
+  the normal reimbursement process.
+
+`data/jobsohio_lawsuits.csv` carries an `amount_matches_990` column marking
+every row where the two differ, so no sentence in the post can accidentally
+treat a pleaded sum as the grant.
+
+### Two sentences only the attached agreements carry
+
+Because the whole agreement is filed in 56 of 62 cases, two clauses that no
+complaint quotes are nonetheless public. Section 9's opening:
+
+> Except to the extent that this Agreement or applicable law requires
+> otherwise, **the remedies set forth in this Section are the sole and
+> exclusive remedies** available upon a violation, default or Breach of this
+> Agreement.
+
+And the rest of the Section 5(c) waiver:
+
+> Grantor will review and consider such Market Conditions and Other Factors
+> submitted and **may waive repayment of all or a portion of the Grant Funds
+> disbursed.**
+
+So a company that misses its numbers can ask to be let off, in writing, on
+grounds the agreement calls "Market Conditions and Other Factors," and JobsOhio
+decides. Nothing published says how often that is asked for or granted. That is
+a good question to put to JobsOhio.
+
+### Individuals and affiliates can be on the hook
+
+The form is not always company-only. One agreement (Proto Precision Additive,
+22CV006667) names a person as "Grantee 2" and adds a sentence the other
+versions lack: "Upon Breach, Grantees shall be jointly and severally liable for
+repayment of all Grant Funds to be repaid." The $233,423.40 default judgment
+there runs against that person as well as the company. In Medina, JobsOhio
+pleaded fraudulent conveyance against the majority owner over $600,000 said to
+have been diverted from a $6.5 million asset sale; those claims were dismissed
+without prejudice after service failed. In Recleim the parent company was added
+on unjust enrichment and took a second $510,000 judgment. In Olive AI the
+founder was added personally and the case was then dismissed with prejudice
+against everyone, with no finding of liability against him.
+
+**The post should not name any of these individuals.** The companies are the
+defendants, none of the individual claims reached a finding, and the story is
+about JobsOhio's process.
+
+### One more thing the dockets undercut
+
+The agreements name programs even where the complaints do not. Two attached
+Inclusion Grant agreements carry the recital "in accordance with JobsOhio's
+Inclusion Grant guidelines," and one agreement is headed "JOBSOHIO RESEARCH &
+DEVELOPMENT GRANT AGREEMENT." The others carry only a contract number of the
+shape `SFPN_2018_455772-ED`, where the suffix encodes the program: ED, WF, RG,
+IG. So JobsOhio does track grants by program internally. It simply does not put
+the program in the complaint, and it does not publish the agreements.
+
+### Still to settle before publishing
+
+- All 63 dockets have now been read.
+- **Nexient** (23CV005495) was removed to the Southern District of Ohio on
+  March 28, 2024 and the federal outcome is unknown. Note also that Nexient had
+  merged into NTT DATA Americas on January 1, 2023, seven months before
+  JobsOhio sued the dissolved entity, and service failed.
+- **Techniplas** (26CV001965), the largest suit at $2,000,000, is still active
+  and JobsOhio cannot establish who owes it. It pleads that the company
+  "appears to be hiding behind the web of inter-related companies under the
+  Techniplas Group/Techniplas LLC umbrella, creating uncertainty as to the
+  identity of the correct Defendant or Defendants," and asks the court to
+  decide "What person and/or entity signed the Amendment to Grant Agreement
+  under the name 'Techniplas LLC'."
+- **Republic Steel.** The agreement authorized $500,000, the complaint pleads
+  $300,000 disbursed, the answer denies receiving $300,000, JobsOhio dismissed
+  with prejudice four months later, and the Schedule I row is $500,000. A
+  systematic test (`DATASETS.md`, "Method check") shows Schedule I is cash and
+  not the award, so this is a single-case discrepancy, but nothing reconciles
+  it. Put it to JobsOhio.
+- **INEOS Pigments.** The FY2021 +$54,235 is settled: the complaint says
+  JobsOhio "incurred $54,235 in subcontractor costs" under a services
+  agreement, so the return books JobsOhio's own vendor spending as a grant to
+  the company. The FY2022 **-$61,487** is not settled. No judgment, no
+  settlement, no satisfaction, and nothing in the docket names interest, fees
+  or a second payment. The $7,252 difference is unexplained. The complaint does
+  record a **separate Grant Agreement** with the same company, "not part of
+  this lawsuit," with no amount given, which could carry it. Do not say it does.
+- **Therma-Tru.** The Schedule I row reads "THERMA-TRU CORP CLAWBACK" at
+  $200,000 and a suit sits in the list (21CV001186, filed February 25, 2021,
+  dismissed six days later before service completed). The docket neither
+  confirms nor contradicts the 990 row and states no recovered sum. **Do not
+  link the two without separate evidence.**
+- Whether the air service agreements carry Section 9(b)(ii) at all. No airline
+  is among the 63 defendants and the program publishes nothing, so the
+  generalization in lead 9 stops at the edge of that $10.07 million.
+
+---
+
+## 12. JobsOhio sues the small ones. It did not sue the $50 million one.
+
+This came out of a question Eric asked: why were so many of the companies that
+laid people off never sued? There is a clause for that, and there is also a
+pattern the clause does not explain.
+
+**The clause.** Section 5(c) of the standard grant agreement:
+
+> Grantor has the discretion to waive non-compliance if, in writing, Grantee
+> submits ... a description of **Market Conditions and Other Factors** ... and
+> **may waive repayment of all or a portion of the Grant Funds disbursed.**
+
+It is one of two sentences JobsOhio's own complaints quote around, cutting them
+with "***". We only have it because the signed agreement is attached as an
+exhibit in 56 of the 63 cases. We have also seen it used: the Treves demand
+letter explains its reduced figure as taking into account jobs, payroll, fixed
+assets "as well as the Market Conditions and Other Factors provided by Grantee
+to JobsOhio." Nothing published says how any of that is weighed, who has asked
+for a waiver, or who has been granted one.
+
+**The pattern.** Of the 31 verified post-grant failures carrying $90,737,093,
+JobsOhio sued **two**, carrying $1,060,770. **$85,476,323 went to companies
+that failed and were never sued.**
+
+| What happened | Companies | Paid | Sued |
+|---|---|---|---|
+| Mass layoff at the funded site | 8 | $65,036,323 | **0** |
+| Bankruptcy or receivership | 8 | $13,850,000 | **0** |
+| Funded site closed | 11 | $10,850,770 | 2 |
+| Sold or absorbed | 3 | $800,000 | **0** |
+| Subsidized service ended | 1 | $200,000 | **0** |
+| **Total** | **31** | **$90,737,093** | **2** |
+
+Now set that beside who it does sue:
+
+| | Median | Size, on the bands recorded |
+|---|---|---|
+| The 63 it sued | $125,000 sought, smallest $16,724 | 34 of 52 under 500 employees |
+| The 31 that failed | $500,000 paid, largest $50,000,000 | 24 of 31 at 500 or more |
+
+**Hedge the size half, and say why.** These are employee *bands*, not
+headcounts, so there is no median to quote. The two sides are not equally well
+evidenced either: **27 of the 31 failures** rest on a filing
+or an official record, against **33 of 52** on the sued
+side, where **19** sit on a company website, a directory or a best
+guess. Write "none of the failures is recorded under 100 employees", not "none
+employs fewer than 100". The dollar figures carry no such doubt: they are exact
+off the return.
+
+JobsOhio sued a company for **$16,724**. It sued three companies whose only
+hard-pleaded breach was a missing annual report, with the jobs shortfall
+alleged "based upon information and belief." It sued one fourteen months before
+that company's metric evaluation date had even arrived. It did not sue Ultium
+Cells, which took **$50,000,000** and laid off 484 people permanently and
+850 temporarily at Warren.
+
+**Three explanations, and the record cannot separate them.** The post has to
+put all three and claim none.
+
+1. *The waiver.* Market Conditions and Other Factors, applied privately, with
+   no published record of who asked or who was granted.
+2. *Timing.* The obligation runs only to a Metric Expiration Date. Ultium's
+   grants are FY2022 and FY2023; if its window closed before January 2026 there
+   may be nothing left to enforce. Petmin's Chapter 7 is four to five years
+   after its grants.
+3. *Collectability.* Suing a bankrupt company buys a place in the creditor
+   line. Suing a solvent small firm that never appears buys a default judgment
+   and a garnishment, and 22 of the 63 suits ended in exactly that.
+
+**Ask JobsOhio, in these words:** of the 29, which were reviewed for
+compliance, which were waived, and on what grounds? How many waiver requests
+have been made under Section 5(c), and how many granted? What decides whether a
+missed metric becomes a demand letter?
+
+**What not to say.** Do not write that JobsOhio goes easy on big companies. The
+data shows which companies were sued and which were not; it does not show the
+reason, and two of the three explanations above are ordinary and defensible.
+The finding is the pattern plus the absence of any public rule governing it.
+
+---
+
+## 13. Someone else is already on the insider beat. Here is what we can add.
+
+Found while classifying an FY2025 recipient, not looked for. **West Warren
+Property 1 LLC** took $800,000 for a speculative industrial building in Warren
+with no tenant committed. Tracing the developer turned up an existing body of
+investigative reporting on JobsOhio and insider dealing in Trumbull County:
+
+| Date | Outlet | Headline |
+|---|---|---|
+| 2024-08-01 | WFMJ | WATCHDOG: JobsOhio and the West Warren Project |
+| 2024-08-12 | Ohio Capital Journal | Ohio economic developer JobsOhio loans $2 million to company headed by insider |
+| 2025-02-19 | WFMJ | WATCHDOG REPORT: Port Authority and its connection to JobsOhio |
+| 2026-03-26 | WFMJ | WATCHDOG REPORT: Tax incentive to benefit Lake to River chair's business |
+| 2026-06-04 | WFMJ | WATCHDOG REPORT: West Warren Industrial Park granted $1.5 million by state |
+
+**Reported by those outlets, not verified by us:** that West Warren Development
+LLC was formed in March 2022, and that one of its managing partners was at the
+time board president of Lake to River Economic Development, a JobsOhio network
+partner, and a Team NEO director. We have not pulled the incorporation record
+or confirmed the role, and the post must not assert it until we do.
+
+**Why this matters editorially.** It is prior art on this beat and Eric should
+know it exists before writing. Two consequences: credit it rather than
+rediscover it, and do not lead with a Trumbull County insider story that WFMJ
+has already run five times.
+
+**What this dataset can add that nobody appears to have done.** Those are
+one-off stories about one county. We hold every recipient JobsOhio has
+disclosed in twelve years, resolved to a parent, and we have already built the
+machinery to check a list of names against a list of companies. A systematic
+conflict check is a different and bigger piece:
+
+1. JobsOhio's board, by year, from the Form 990 Part VII, which we already
+   parse. Lead 8 did this for one year and found no Schedule L.
+2. The boards of the six JobsOhio network partners (Team NEO, One Columbus,
+   REDI Cincinnati, the Regional Growth Partnership, Lake to River, Ohio
+   Southeast), which publish their directors.
+3. Every recipient and its named owners, which is the hard part: for a project
+   LLC the owner is in the Ohio Secretary of State filing, and that search has
+   been down for every attempt this session.
+
+**The honest obstacle.** Step 3 is where this lives or dies, and the Ohio
+Secretary of State business search has blocked or been offline for every
+attempt across this whole project. Without it, an owner can only be found when
+a press release or a news story names one. That is not a systematic check. It
+should be tried again before promising this piece, and if the SOS stays shut
+the fallback is the county recorder's deeds for the handful of spec-building
+LLCs, which is slow but public.
+
+**One more reason to do it carefully.** Lead 8 asked whether any JobsOhio board
+member was connected to Supply Line International Medical and found nothing,
+with no Schedule L filed that year. A systematic check that comes back mostly
+empty is still publishable and is the responsible version of this story.
