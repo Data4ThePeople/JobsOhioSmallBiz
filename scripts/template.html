@@ -85,6 +85,8 @@
   .jo .outs .k{font-size:12px;color:var(--ink2);margin-top:2px;line-height:1.35}
   .jo .outs .n{font-size:11.5px;color:var(--muted);margin-top:3px}
   .jo .filtbar{font-size:12.5px;color:var(--ink2);margin:8px 0 0}
+  .jo button.linkish{appearance:none;border:0;background:none;padding:0;cursor:pointer;
+                     color:var(--focus);font:inherit;text-decoration:underline;text-underline-offset:2px}
   .jo .filtbar button{appearance:none;border:1px solid var(--border);background:var(--surface);
                       color:var(--ink2);border-radius:6px;padding:2px 8px;font:600 12px system-ui,sans-serif;
                       cursor:pointer;margin-left:6px}
@@ -408,8 +410,32 @@ var COND_LABEL = {"agreement seen":"in this agreement", "standard form":"in the 
    thing, with the date and how firmly it is established, sits on hover */
 var FAIL_LABEL = {"Bankruptcy or receivership":"bankruptcy", "Funded site closed":"site closed",
                   "Mass layoff at the funded site":"mass layoff", "Sold or absorbed":"sold",
-                  "Subsidized service ended":"service ended"};
+                  "Subsidized service ended":"service ended",
+                  "Failed away from the funded site":"failed elsewhere"};
 
+/* What a reader is owed next to a failure claim: which site the money paid for,
+   which site actually failed, and whether Ohio's own record backs it. The
+   absences are spelled out too, because a reader who goes looking for the state
+   notice and finds none should find our account of that first. */
+function provText(prov){
+  if (!prov) return "";
+  var s = "", p = prov.site, w = prov.warn;
+  if (p){
+    s += "\n\nThe site the grant paid for: " + p.funded;
+    if (p.failed) s += "\nThe site that failed: " + p.failed;
+    if (p.survives) s += "\nStill running: " + p.survives;
+    if (p.conf) s += "\n(site check: " + p.verdict + ", " + p.conf + " confidence)";
+  }
+  if (w){
+    s += "\n\nOhio's own record: " + w.employer + ", " + w.place + ", "
+       + w.affected + " affected, notice received " + w.received;
+    if (w.at_funded_site === "no")
+      s += ". This notice is for a county the money never reached.";
+  } else if (prov.warn_none){
+    s += "\n\nOhio has no layoff notice for this company. " + prov.warn_none;
+  }
+  return s;
+}
 function tableRows(){
   var q = state.q.trim().toLowerCase();
   if (state.tview === "parents"){
@@ -419,6 +445,25 @@ function tableRows(){
        where two failed payees share one parent */
     if (state.outcome === "sued") items = items.filter(function(p){ return p.sued && p.sued.length; });
     else if (state.outcome === "returned") items = items.filter(function(p){ return p.returned; });
+    else if (state.outcome === "elsewhere"){
+      return (D.failed_elsewhere || []).map(function(x){
+        return {parent: x.payee, class: "", bucket: x.bucket, hq: x.hq, conf: "",
+                cash: x.cash, years: (x.years||"").split(" ").filter(Boolean).map(Number),
+                recourse: null, link: null, sued: null,
+                failure: {category: "Failed away from the funded site", event: x.event,
+                          date: x.date, confidence: "", caveat: x.caveat, cite: "",
+                          court: "", docket: "", src: x.src, prov: x.prov,
+                          payee: x.payee, payee_paid: x.cash, parent_paid: x.cash,
+                          partial: false}};
+      });
+    }
+    else if (state.outcome === "rejected"){
+      return (D.rejected || []).map(function(x){
+        return {parent: x.payee, class: "", bucket: x.bucket, hq: x.hq, conf: x.confidence,
+                cash: x.cash, years: (x.years||"").split(" ").filter(Boolean).map(Number),
+                recourse: null, link: null, sued: null, failure: null, reject: x};
+      });
+    }
     else if (state.outcome){
       /* Switch to the PAYEE that failed, not its parent group. A finding was
          verified against one company; the parent row can hold others that did
@@ -434,7 +479,7 @@ function tableRows(){
                             confidence: x.confidence, caveat: x.caveat, cite: x.cite,
                             court: x.court, docket: x.docket, src: x.src,
                             payee: x.payee, payee_paid: x.cash, parent_paid: x.parent_cash,
-                            partial: false}};
+                            prov: x.prov, partial: false}};
         });
     }
     if (q) items = items.filter(function(p){ return (p.parent + " " + p.hq + " " + p.class + " " + (p.payees||"") + " " + ((p.recourse&&p.recourse.grade)||"") + " " + (p.failure ? p.failure.category + " " + p.failure.event : "") + " " + (p.sued ? "sued " + p.sued.map(function(c){return c.case;}).join(" ") : "")).toLowerCase().indexOf(q) >= 0; });
@@ -444,6 +489,45 @@ function tableRows(){
   if (state.denom === "business"){ var biz = {}; D.parents_table.forEach(function(p){ if (p.class === "business") biz[p.parent] = 1; }); rows = rows.filter(function(r){ return biz[r.parent]; }); }
   if (q) rows = rows.filter(function(r){ return (r.recipient + " " + r.city + " " + r.parent).toLowerCase().indexOf(q) >= 0; });
   return rows;
+}
+/* The line of explanation above the table when a tile or a link has filtered
+   it. This lives in its own function because it used to sit inside
+   renderTable(), where two of its branches ended in `return` to skip the rest
+   of the bar. Those returns exited renderTable itself, so selecting the
+   rejected view drew the header, set the count, and then rendered no rows at
+   all, leaving the previous view's "show 500 more" button underneath it. */
+function renderFiltBar(){
+  var fb = document.getElementById("filtbar");
+  if (!fb) return;
+  fb.replaceChildren();
+  if (!(state.outcome && state.tview === "parents")) return;
+  function clearBtn(){
+    var b = el("button",{type:"button"},fb); b.textContent = "clear";
+    b.addEventListener("click", function(){
+      state.outcome = ""; state.limit = 100; renderWhat(); renderTable();
+    });
+  }
+  if (state.outcome === "elsewhere"){
+    fb.appendChild(document.createTextNode("These three companies did close an Ohio operation, "
+      + "but not the one the grant paid for. Hover each row for the site the money went to, "
+      + "the site that failed, and the state notice. They are not in the count, and the "
+      + "amount shown is what the funded site was paid, which is still running. "));
+    return clearBtn();
+  }
+  if (state.outcome === "rejected"){
+    fb.appendChild(document.createTextNode("Every candidate the scan flagged that was checked and "
+      + "thrown out, with the reason. Most are the company turning up in somebody else’s "
+      + "bankruptcy, which is the commonest false positive in work like this. Hover a verdict for "
+      + "what the story was actually about. These are not failures and none is in the count. "));
+    return clearBtn();
+  }
+  var o = OUTCOMES.filter(function(x){ return x.key === state.outcome; })[0];
+  var isFail = state.outcome !== "sued" && state.outcome !== "returned";
+  fb.appendChild(document.createTextNode("Filtered to companies that " + (o ? o.label : state.outcome)
+    + (isFail
+        ? ". These rows are the companies named on the Form 990 that actually failed, not their parent groups, because that is the unit each finding was verified against. Where a parent also paid other companies that did not fail, only the failed one is shown and the amount is its own. "
+        : ". These are parent groups, so the count can be lower than the tile where two payees share a parent. ")));
+  clearBtn();
 }
 function renderTable(){
   var cols = state.tview === "parents" ? PCOLS : RCOLS;
@@ -461,20 +545,7 @@ function renderTable(){
   }
   var rows = tableRows().slice().sort(function(a,b){ var x = sortVal(a), y = sortVal(b); return (x < y ? -1 : x > y ? 1 : 0) * state.sortDir; });
   document.getElementById("count").textContent = rows.length.toLocaleString() + (state.tview === "parents" ? " companies" : " payments") + (state.q || state.outcome ? " match" : "");
-  var fb = document.getElementById("filtbar");
-  if (fb){
-    fb.replaceChildren();
-    if (state.outcome && state.tview === "parents"){
-      var o = OUTCOMES.filter(function(x){ return x.key === state.outcome; })[0];
-      var isFail = state.outcome !== "sued" && state.outcome !== "returned";
-      fb.appendChild(document.createTextNode("Filtered to companies that " + (o ? o.label : state.outcome)
-        + (isFail
-            ? ". These rows are the companies named on the Form 990 that actually failed, not their parent groups, because that is the unit each finding was verified against. Where a parent also paid other companies that did not fail, only the failed one is shown and the amount is its own."
-            : ". These are parent groups, so the count can be lower than the tile where two payees share a parent.")));
-      var b = el("button",{type:"button"},fb); b.textContent = "clear";
-      b.addEventListener("click", function(){ state.outcome=""; state.limit=100; renderWhat(); renderTable(); });
-    }
-  }
+  renderFiltBar();
   rows.slice(0, state.limit).forEach(function(p){
     var tr = el("tr",{},body);
     if (state.tview === "parents"){
@@ -500,7 +571,14 @@ function renderTable(){
       var cd = el("td",{},tr);
       if (p.recourse){ var cs = el("span",{class:"conf", title:p.recourse.note || ""},cd); cs.textContent = COND_LABEL[p.recourse.grade] || p.recourse.grade; }
       var fd = el("td",{},tr);
-      if (p.failure){
+      if (p.reject){
+        var rs = el("span",{class:"conf", title:p.reject.verdict + ". " + p.reject.why
+                            + (p.reject.flagged_by ? "\n\nFlagged by: " + p.reject.flagged_by : "")},fd);
+        rs.textContent = {"Not a failure":"not a failure","Different company":"different company",
+                          "Before the grant":"before the grant","Unresolved":"unresolved"}[p.reject.verdict]
+                         || p.reject.verdict;
+      }
+      else if (p.failure){
         var f = p.failure;
         /* A company group can hold a payee that failed and others that did
            not: Nestle closed its Solon factory in the same years Purina's
@@ -515,11 +593,38 @@ function renderTable(){
                           ? " Also paid under this parent: " + f.other_payees.join(", ") + "." : "")
                     : "")
                 + (f.caveat ? "\n\n" + f.caveat : "")
+                + provText(f.prov)
                 + (f.court ? "\nCourt: " + f.court : "") + (f.docket ? "\nDocket: " + f.docket : "")
                 + (f.cite ? "\nSource: " + f.cite : "")
                 + (f.src && f.src.paywalled === "yes" ? "\n(the source is paywalled)" : "");
+        /* Two different caveats can land on one row and only one fits. "part"
+           means the payee is part of a larger parent group; "partly" means a
+           piece of the funded operation survived. Nestle is both, and showing
+           both ran the badge past the edge of the column. "partly" wins,
+           because whether the thing Ohio paid for actually failed is the
+           sharper question, and the hover carries the group split anyway. */
+        var partlyOpen = !!(f.prov && f.prov.site && f.prov.site.verdict === "partly");
         var label = (FAIL_LABEL[f.category] || f.category || "failure")
-                  + (f.partial ? " \u00b7 part" : "");
+                  + (partlyOpen ? " \u00b7 partly" : f.partial ? " \u00b7 part" : "");
+        /* The employer's own notice to Ohio, beside the news source. It is the
+           better record of the two for a closure or a layoff, so where the
+           state has one it is offered as a second link rather than buried in
+           the hover. */
+        var w = f.prov && f.prov.warn;
+        if (w && w.pdf){
+          var wa = el("a",{class:"src", href:w.pdf, target:"_blank", rel:"noopener",
+                           title:"Ohio WARN notice filed by " + w.employer + ", " + w.place
+                                 + ", " + w.affected + " affected, received " + w.received
+                                 + (w.at_funded_site === "no"
+                                     ? ".\n\nThis notice is for a county the grant money never "
+                                       + "reached, so it records a failure somewhere else. It is "
+                                       + "shown because it is the only notice Ohio holds for this "
+                                       + "company, not as evidence about the funded site."
+                                     : ".\n\nThis is the employer's own filing with the state, "
+                                       + "for the county the money was paid into.")},fd);
+          wa.textContent = w.at_funded_site === "no" ? "state notice, other county" : "state notice";
+          fd.appendChild(document.createTextNode(" "));
+        }
         /* link to the record the finding rests on, where one resolved */
         var url = (f.src && f.src.url) || "";
         if (url){
@@ -724,6 +829,51 @@ function renderWhat(){
     + " sit on a company website, a directory or a best guess. What is not in doubt is the money: "
     + "the companies it sued were paid a mean of " + money(S.sued.mean_paid)
     + ", the companies that failed a mean of " + money(S.failures.mean_paid) + ".";
+
+  /* Every confirmed failure was then re-checked on one question: was the
+     operation that failed the operation the grant paid for? Three came back no,
+     and they are the rows most likely to be thrown back at this page, so they
+     get their own view rather than a footnote. They are not in the count. */
+  if ((D.failed_elsewhere || []).length){
+    var fe2 = el("p",{class:"wc"},host);
+    var feCash = D.failed_elsewhere.reduce(function(s,x){ return s + x.cash; }, 0);
+    fe2.appendChild(document.createTextNode("Each of these was then checked again on one question: "
+      + "was the operation that failed the operation the grant paid for? "
+      + D.failed_elsewhere.length + " companies came back no. They closed something in Ohio, "
+      + "but not the site the money went to, so their " + money(feCash)
+      + " is not in the figures above. "));
+    var feb = el("button",{type:"button", class:"linkish"},fe2);
+    feb.textContent = (state.outcome === "elsewhere")
+      ? "hide them" : "show which three, and which site took the money";
+    feb.addEventListener("click", function(){
+      state.outcome = (state.outcome === "elsewhere") ? "" : "elsewhere";
+      state.limit = 100; renderWhat(); renderTable();
+      var t = document.getElementById("tbl");
+      if (state.outcome && t) t.scrollIntoView({behavior:"smooth", block:"start"});
+    });
+  }
+
+  /* The first question a sceptic asks about a count of failures is what was
+     left out. 71 of the 102 candidates were rejected, most because the company
+     turned up in someone else's bankruptcy. Putting that in the tool, with the
+     reason for each, is the difference between a count a reader can audit and
+     one they have to take on trust. */
+  if ((D.rejected || []).length){
+    var rj = el("p",{class:"wc"},host);
+    rj.appendChild(document.createTextNode("Every recipient was scanned for signs of failure, and "
+      + (D.rejected.length + S.failures.companies + (D.failed_elsewhere || []).length)
+      + " candidates were then checked one at a time. "
+      + D.rejected.length + " were thrown out. "));
+    var rb = el("button",{type:"button", class:"linkish"},rj);
+    rb.textContent = (state.outcome === "rejected")
+      ? "hide what was rejected" : "show what was rejected, and why";
+    rb.addEventListener("click", function(){
+      state.outcome = (state.outcome === "rejected") ? "" : "rejected";
+      state.limit = 100; renderWhat(); renderTable();
+      var t = document.getElementById("tbl");
+      if (state.outcome && t) t.scrollIntoView({behavior:"smooth", block:"start"});
+    });
+  }
 }
 
 /* Why the line sits where it does. The SBA's size standards are the legal

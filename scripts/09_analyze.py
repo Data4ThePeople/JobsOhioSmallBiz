@@ -37,6 +37,8 @@ CONDITIONS = ROOT / "data" / "grant_conditions.csv"
 FAILURES = ROOT / "data" / "failures.csv"
 LAWSUITS = ROOT / "data" / "jobsohio_lawsuits.csv"
 FAILURE_SOURCES = ROOT / "data" / "failure_sources.csv"
+FAILURE_WARN = ROOT / "data" / "failure_warn.csv"
+SITECHECK = ROOT / "data" / "research3" / "sitecheck.json"
 PARENT_LINKS = ROOT / "data" / "parent_links.csv"
 OUT = ROOT / "dist" / "data.json"
 TIEOUT = ROOT / "TIEOUT.md"
@@ -171,6 +173,7 @@ def load_side_findings(parents, moved=None):
                        # parent row as failed overstates it by $6m.
                        "payee": r["name"], "payee_paid": int(r["paid"] or 0),
                        "caveat": (r.get("caveat") or "")[:400],
+                       "rid": r.get("recipient_id", ""),
                        "src": fail_url.get(normalize_name(r["name"]))}
     # JobsOhio's own suits against the recipient, keyed the same way. A company
     # can be sued more than once, so they are collected into a list.
@@ -433,6 +436,42 @@ def main():
                          "cash": shares(allp, lambda a: a["conf"] or "none", lambda a: a["cash"])[0]}
     out["conflicts"] = sorted(c for a in allp for c in a.get("conflicts", set()))
     cond, fail, sued, suit_totals, fail_url = load_side_findings(parents, moved)
+
+    # The two files that let a reader check a failure rather than take it on
+    # trust: the funded-site verdict, and the employer's own notice to the
+    # state. Both are keyed on recipient_id, because a name join has already
+    # cost this project 34 grades and 25 links once.
+    site = {x["recipient_id"]: x for x in json.loads(SITECHECK.read_text())} \
+        if SITECHECK.exists() else {}
+    warn = {r["recipient_id"]: r for r in csv.DictReader(FAILURE_WARN.open())} \
+        if FAILURE_WARN.exists() else {}
+
+    def provenance(rid):
+        """What a reader can click to check this row, as the files recorded it."""
+        s, w = site.get(rid, {}), warn.get(rid, {})
+        out = {}
+        if s:
+            out["site"] = {"verdict": s.get("verdict", ""),
+                           "funded": (s.get("funded_site") or "")[:400],
+                           "failed": (s.get("failed_site") or "")[:400],
+                           "survives": (s.get("what_survives") or "")[:300],
+                           "conf": s.get("confidence", "")}
+        if w and w.get("state_notice") == "matched":
+            out["warn"] = {"employer": w["warn_employer"], "place": w["warn_place"],
+                           "affected": w["warn_affected"], "received": w["warn_received"],
+                           "pdf": w["warn_pdf"], "year": w["warn_year"],
+                           # a notice at a site the money never reached is
+                           # evidence about somewhere else, and says so
+                           "at_funded_site": w.get("notice_at_funded_site", ""),
+                           "months": w.get("months_from_event", "")}
+        elif w:
+            out["warn_none"] = (w.get("why_none") or "")[:400]
+        return out
+
+    # the parent table's failure cell gets the same provenance as the payee view
+    for f in fail.values():
+        f["prov"] = provenance(f.get("rid", ""))
+
     # one link per company that was fetched and returned 200. A company with no
     # link that resolves is shown unlinked rather than sent somewhere broken.
     links = {}
@@ -586,7 +625,52 @@ def main():
             "court": r.get("court", ""), "docket": r.get("docket", ""),
             "src": fail_url.get(normalize_name(r["name"])),
             "sued": bool(sued.get(pk)),
+            "prov": provenance(r["recipient_id"]),
         })
+
+    # The three companies that failed somewhere other than the site the money
+    # paid for. They are not in the count and not hidden: "the company closed a
+    # plant in Ohio" is true of all three and is a different claim from "the
+    # plant Ohio paid for closed", which is the claim the count makes.
+    out["failed_elsewhere"] = []
+    for r in (csv.DictReader(FAILURES.open()) if FAILURES.exists() else []):
+        if r["verdict"] != "Failed away from the funded site":
+            continue
+        rec = parents.get(r["recipient_id"], {})
+        out["failed_elsewhere"].append({
+            "payee": r["name"], "cash": int(r["paid"] or 0),
+            "event": r["event"], "date": r["event_date"],
+            "caveat": (r.get("caveat") or "")[:500],
+            "bucket": rec.get("emp_bucket", ""), "hq": rec.get("parent_hq_state", ""),
+            "years": rec.get("years", r["grant_years"]),
+            "src": fail_url.get(normalize_name(r["name"])),
+            "prov": provenance(r["recipient_id"]),
+        })
+    out["failed_elsewhere"].sort(key=lambda x: -x["cash"])
+
+    # Every candidate we checked and threw out, with the reason. A reader's
+    # first question about a count of failures is what was excluded, and the
+    # honest answer has to be in the tool rather than in a CSV in a repo.
+    # 71 of the 102 candidates were rejected, most because the company turned
+    # up in somebody else's bankruptcy.
+    out["rejected"] = []
+    for r in (csv.DictReader(FAILURES.open()) if FAILURES.exists() else []):
+        # the three that failed away from the funded site are not rejects: they
+        # have their own view above, because the company really did fail
+        if r["verdict"] in ("Confirmed failure", "Failed away from the funded site"):
+            continue
+        rec = parents.get(r["recipient_id"], {})
+        out["rejected"].append({
+            "payee": r["name"], "verdict": r["verdict"],
+            "cash": int(r["paid"] or 0),
+            "flagged_by": r.get("flagged_by", ""),
+            "why": (r.get("ohio_outcome") or r.get("notes") or "")[:300],
+            "notes": (r.get("notes") or "")[:300],
+            "confidence": r.get("confidence", ""),
+            "bucket": rec.get("emp_bucket", ""), "hq": rec.get("parent_hq_state", ""),
+            "years": rec.get("years", r.get("grant_years", "")),
+        })
+    out["rejected"].sort(key=lambda x: -x["cash"])
 
     out["rows"] = [{"fy": g["fy"], "recipient": g["recipient_name"], "city": g["city"], "state": g["state"],
                     "cash": g["cash"], "parent": parent_key(parents[g["recipient_id"]])} for g in grants]

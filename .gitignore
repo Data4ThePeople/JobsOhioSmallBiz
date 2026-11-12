@@ -10,3 +10,8 @@ data/raw/f5500/
 /*.html
 /*.json
 data/raw/t100/
+
+# Ohio's WARN year pages are a Next.js app shell, 69KB each and identical
+# bar one string. The only thing read out of them is the CSV address, which
+# data/warn/notices.csv records per row, and the CSVs themselves are committed.
+data/warn/pages/

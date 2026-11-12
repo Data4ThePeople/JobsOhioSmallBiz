@@ -87,7 +87,7 @@ None.
   possible explanations and claim none.
 
 - **Gap to close before publishing (found Nov 12, 2026).** The distress scan
-  that produced the 31 confirmed failures ran over the FY2014-2024 recipients
+  that produced the confirmed failures ran over the FY2014-2024 recipients
   only. The 274 recipients that first appear in FY2025 have never been scanned,
   and at least one of them failed: **AmplifyBio LLC took $1,500,000 in FY2025
   and closed its doors inside the same fiscal year.** JobsOhio's own September
@@ -137,10 +137,42 @@ None.
   every payment in `data/grant_conditions.csv`. Conditional 6.8% of dollars,
   Partly conditional 68.3%, Program unknown 22.5%, nothing published 2.4%.
   (3) Failures: 1,485 recipients scanned for distress headlines, 84 candidates
-  verified one at a time against dockets, SEC filings and local news, 29
-  confirmed ($90,737,093) in `data/failures.csv` with every reject and its
+  verified one at a time against dockets, SEC filings and local news, 28
+  confirmed ($86,887,093) in `data/failures.csv` with every reject and its
   reason kept. Two new story leads written. Open: pull the JobsOhio v. Olive AI
-  suit; settle Columbus Steel Castings' payment timing and court; Goodlevel
+  suit; settle Columbus Steel Castings' payment timing (its court and docket are
+  now resolved off the petition itself); Goodlevel
   Enterprises unresolved; rebuild `dist/` and regenerate
   `data/review_cleared.csv`; independent tie-out before closing Step 1; FY2025
   XML and FY2012-13 PDFs still owed from Eric.
+
+- 2026-11-12 Failure findings audited end to end, which is where the scrutiny
+  will land. `scripts/31_audit_failures.py` checks every claim against the file
+  it was verified against: join key, money tied to `parents.csv`, event against
+  category, funded-site verdict, partial splits, the state's own notice, a
+  resolving source URL, and a stated reason on every reject. It was tested by
+  breaking four things deliberately and confirming it caught all four. What it
+  found, and what changed:
+  (1) **The headline moved: 28 companies and $86,887,093, not 31 and
+  $90,737,093.** A standing check asked of every confirmed failure whether the
+  operation that failed was the operation the grant paid for. Dana, New
+  Horizons Baking and FedEx Supply Chain came back no, each verified against
+  our own payment and commitment records. They keep a row and a view of their
+  own rather than being deleted.
+  (2) Ohio's whole WARN register pulled, 810 notices 2020-2026. 15 of the 19
+  Ohio closures and mass layoffs now cite the employer's own filing. Ultium's
+  notice reads 484 permanent and 850 temporary, not 1,334. Sauder Woodworking
+  has no notice at all where one would be expected, so its 150 figure rests on
+  press reporting alone; worth a call before publishing.
+  (3) Republic Steel's funded site is Lorain and is shuttered, but the 209 jobs
+  and the August 2023 date on the row are Canton, an unfunded site. Caveated.
+  (4) Five rows had an `event` that contradicted their `category`; Columbus
+  Steel Castings' judge was wrong (Sontchi, not Silverstein); Zulily's plant
+  was Lockbourne, not Obetz. All corrected off primary records.
+  (5) **A page bug worth noting: the rejected-candidates view had never
+  rendered its rows.** Two `return`s inside the filter bar were exiting
+  `renderTable` entirely. The filter bar is now its own function and both views
+  were screenshotted to confirm they work.
+  Open: the full WARN-to-recipient join, which would turn the failure count
+  from a floor into something close to a count (lead 14); Sauder; the Olive AI
+  state suit; Goodlevel Enterprises; FY2025 XML and FY2012-13 PDFs from Eric.

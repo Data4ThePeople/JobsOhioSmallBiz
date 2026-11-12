@@ -33,7 +33,9 @@ No published page or post yet. The built interactive page is in `dist/index.html
   - `grant_conditions.csv`: every Schedule I payment labelled with the conditions published for the program that paid it.
   - `distress_candidates.csv`: every recipient scanned for failure headlines, with the headlines found.
   - `failures.csv`: the verified outcome for each candidate, including the rejects and why each was rejected.
-  - `research3/`: the per-candidate verification files behind `failures.csv`.
+  - `research3/`: the per-candidate verification files behind `failures.csv`, including `sitecheck.json`, which records for each confirmed failure whether the operation that failed was the operation the grant paid for.
+  - `warn/`: Ohio's own register of mandatory layoff and closure notices, 810 of them from 2020 to 2026, with each year's page and CSV cached so the parse can be re-checked.
+  - `failure_warn.csv`: each Ohio closure or mass layoff tied to the employer's own notice to the state, or the reason the state has none.
 - `docs/`: the written research method, the verification write-up and research notes.
 - `dist/`: the built page (`index.html`), an embeddable version (`embed.html`) and the data it reads (`data.json`).
 - `posts/images/`: static charts for the post.
@@ -81,6 +83,16 @@ The conditions and failures work runs separately and its results are saved in th
 python scripts/19_grant_conditions.py # label every payment from data/program_terms.json
 python scripts/17_distress_scan.py    # scan recipients for failure headlines (slow; hits Google News)
 python scripts/21_failures.py         # consolidate data/research3/*.json into data/failures.csv
+python scripts/32_fetch_warn.py       # download Ohio's WARN register into data/warn/
+python scripts/33_match_warn.py --write   # tie each closure and layoff to the state's notice
+python scripts/34_apply_sitecheck.py  # apply the funded-site verdicts to data/failures.csv
+```
+
+Two audits run before every publish and exit non-zero on any mismatch:
+
+```
+python scripts/30_audit_summary.py          # recompute all 28 summary figures from source
+python scripts/31_audit_failures.py --fetch # check every failure claim, and that each source resolves
 ```
 
 `09_analyze.py` picks up `grant_conditions.csv` and `failures.csv` if they are present and adds a `Conditions` and an `After the grant` column to the page. Both are optional: the analysis runs without them.
@@ -95,6 +107,8 @@ The parent research and checks (`08_research.py`, `10_verify_sample.py`, `11_aut
 - The headline uses for-profit businesses as the denominator. Results for all recipients, and at cutoffs of 100 and 5000 employees, are also in `TIEOUT.md`.
 - A seeded random sample of classifications was re-checked by an independent second pass. The method and results are in `docs/VERIFICATION.md`.
 - The conditions columns describe what JobsOhio **publishes**, not what is in force. Individual grant agreements are not public, and at least one case shows terms exist that the guidelines do not print. Only 2 of 12 programs publish a clawback, covering 6.8% of paid dollars.
-- The failure count is a floor, not a count. It is found from news coverage, so a failure without coverage is missing; it treats the payee as the company, so a parent's filing that left the Ohio site running is excluded. 49 of 84 candidates were thrown out because the company was named in somebody else's case. Every reject is kept in `data/failures.csv` with its reason.
+- The failure count is a floor, not a count. It is found from news coverage, so a failure without coverage is missing; it treats the payee as the company, so a parent's filing that left the Ohio site running is excluded. Of 102 candidates checked one at a time, 52 were thrown out because the company was named in somebody else's case and 17 were a different company sharing a name. Every reject is kept in `data/failures.csv` with its reason, and the page shows them.
+- A failure counts only if the operation that failed is the operation the grant paid for. Every confirmed failure was re-checked on that question, and three companies came out of the count: they closed an Ohio site, but not one the money went to. They are still shown on the page, under their own heading, with the site that took the money and the site that failed.
+- Where Ohio holds the employer's own layoff notice, that is the source rather than the news story. 15 of the 19 Ohio closures and mass layoffs have one. The four that do not each record why, and one of those four, Sauder Woodworking, is an unexplained gap rather than a threshold: its 150-job figure rests on press reporting alone.
 
 Data 4 The People

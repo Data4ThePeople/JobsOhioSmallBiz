@@ -489,14 +489,48 @@ procedure in `docs/FAILURE_VERIFY_PROMPT.md` and consolidated by
 
 **What `failures.csv` holds.** Every candidate and every verdict, including the
 rejects and the reason each was rejected, so the published count can be
-audited. Verdicts: `Confirmed failure` (31, $90,737,093 paid), `Not a failure`
-(49), `Different company` (4), `Before the grant` (1), `Unresolved` (1).
+audited. Verdicts: `Confirmed failure` (28, $86,887,093 paid), `Not a failure`
+(52), `Different company` (17), `Failed away from the funded site` (3,
+$3,850,000, not in the count), `Before the grant` (1), `Unresolved` (1).
 Confirmed rows carry a `category`, because "failure" covers five different
 outcomes and the post should not add a sale to a bankruptcy: Bankruptcy or
 receivership, Funded site closed, Mass layoff at the funded site, Sold or
 absorbed, Subsidized service ended. The categories are assigned from an
 explicit company-name map in `21_failures.py`, not from keywords, because
 keyword rules misread "sold" in a closure notice and "closed" in a sale notice.
+
+**The funded-site check, which moved three companies out of the count.** Every
+confirmed failure was re-checked on one question: was the operation that failed
+the operation the grant paid for? It is the first question a press office asks,
+and it is not the same question as "did this company fail". The answers are in
+`data/research3/sitecheck.json`, one row per company, with the funded site, the
+failed site, what survives, and a confidence. 24 came back `same site`, 4
+`partly`, and 3 `different site`:
+
+| Company | Paid | Funded | Failed |
+|---|---:|---|---|
+| Dana Limited | $3,700,000 | Lucas and Henry counties, both paid to Maumee | the Lima plant, Allen County |
+| New Horizons Baking | $100,000 | the Norwalk plant, Huron County | the north Toledo plant, Lucas County |
+| FedEx Supply Chain | $50,000 | Columbus, Franklin County | the Lima distribution centre, Allen County |
+
+Each was checked against our own files rather than taken on the research note.
+Dana's $3,700,000 is exactly JobsOhio's two commitments of $3,000,000 and
+$700,000, so no paid dollar can belong to Lima; New Horizons' only Schedule I
+payment matches a 2017 Huron County workforce grant of the same amount, and the
+$75,000 JobsOhio later committed to Toledo was never paid; FedEx's $50,000
+matches JobsOhio's 2016 grant of the same amount to GENCO I in Franklin County,
+the company FedEx bought and renamed.
+
+They are kept in the file and shown in the tool under their own verdict rather
+than deleted, because "the company closed something in Ohio" is true of all
+three and is a different claim from the one the count makes.
+`scripts/34_apply_sitecheck.py` applies this and is idempotent.
+
+The four `partly` rows — Nestle, Multi-Color, FirstMerit, AK Steel — stay in the
+count and carry a caveat naming what survived. Republic Steel stays too, but
+its caveat had to be rewritten: the funded Lorain mill really is shuttered,
+while the 209 jobs and the August 2023 date on the row are the Canton mill, a
+different site Ohio did not fund.
 
 **The dominant failure mode, and it is worth stating in the post.** 49 of 84
 candidates were the company appearing in somebody else's case: JPMorgan and
@@ -508,11 +542,15 @@ checking city, industry and officers against the payee address.
 
 **What is not settled, and must be caveated where used.**
 
-- Columbus Steel Castings: the filing court and case number were not
-  retrievable, and whether its $500,000 was paid before or after the May 16,
-  2016 filing is unknown, because Schedule I carries fiscal years only.
-- Multi-Color: the lead debtor's case number was not retrievable, though nine
-  same-day affiliate petitions in Bankr. D.N.J. were seen.
+- Columbus Steel Castings: **resolved.** The petition itself, mirrored by
+  RECAP at `archive.org/details/gov.uscourts.deb.163957`, carries the CM/ECF
+  stamp "Case 16-11215-CSS Doc 1 Filed 05/16/16", and the docket JSON gives the
+  judge as Christopher S. Sontchi, not Laurie Selber Silverstein as this
+  project previously recorded. Whether its $500,000 was paid before or after
+  the May 16, 2016 filing is still unknown, because Schedule I carries fiscal
+  years only.
+- Multi-Color: **resolved.** The lead case is 26-10910, Bankr. D.N.J., filed
+  2026-01-29 and terminated 2026-06-26, Judge Michael B. Kaplan.
 - Goodlevel Enterprises: unresolved.
 - CourtListener began returning empty pages partway through, and
   `archive.org` returned 429 and 504 throughout, so several paywalled local
@@ -1104,16 +1142,34 @@ every publish. It has already caught two real defects:
    `recipient_id` column was added and every join in the pipeline now uses it.
 2. **The file was stale after FY2025 was merged.** Dana Limited had taken a
    further $700,000 and Sarepta a further $1,500,000 in FY2025, both in the
-   same fiscal year as their reported failures. The confirmed-failure total is
-   **$88,737,093, not $90,737,093**, and any earlier draft citing the lower
-   figure is out of date.
+   same fiscal year as their reported failures. The audit now checks every
+   `paid` figure against `parents.csv` by `recipient_id` on every run.
+3. **`event` and `category` had drifted apart.** Five confirmed rows still
+   carried the word the scan had flagged them with rather than what the
+   verification established: Air Wisconsin, FirstMerit and Avelo all read
+   `Closure` against three different categories, and AK Steel and PPG carried
+   no event at all. `scripts/31_audit_failures.py` now holds the one category
+   each event word is allowed to imply, and an unrecognised event word is
+   itself a failure, so a new one has to be thought about rather than typed in.
+4. **Three failures were at the wrong site.** See the funded-site check above.
+   This is the one that moved the headline: **28 companies and $86,887,093**,
+   not 31 and $90,737,093. Any earlier draft citing the higher figure is out of
+   date.
+5. **Two source links could not be audited and one was in the wrong place.**
+   CourtListener now answers every automated fetch with an empty 202 bot
+   challenge, so three dockets were replaced with the petition PDFs themselves
+   from the RECAP mirror on archive.org, each one checked against the CM/ECF
+   header stamp. Zulily's source was a news page behind a Cloudflare 403 and is
+   now the Ohio WARN notice, which is both fetchable and the better record —
+   and reading it showed the plant was in **Lockbourne**, not Obetz as this
+   project had written.
 
 **The size contrast is stated in bands, not as a median headcount, and that is
 deliberate.** The data holds employee bands (`<100`, `100-499`, `500-4999`,
 `5000+`), not headcounts, so there is no number to take a median of and any
 "median employees" figure would be invented. The bands say it more plainly
-anyway: of the 51 sued companies on the grant schedule, 19 employ fewer than
-100; **of the 29 that failed after being paid, none does.** Median and mean
+anyway: of the 52 sued companies on the grant schedule, 20 employ fewer than
+100; **of the 28 that failed after being paid, none does.** Median and mean
 *grant* size are exact and are published instead.
 
 ---
@@ -1123,17 +1179,31 @@ anyway: of the 51 sued companies on the grant schedule, 19 employ fewer than
 **What it is.** The state's own register of mandatory layoff and closure
 notices: employer, city, county, number affected, effective date, and a link to
 the employer's own notice letter. It is the best primary record for a closure
-or a mass layoff, better than the news story that reports it, and it supplied
-the source for 14 of the confirmed failures.
+or a mass layoff, better than the news story that reports it.
+
+**It is now pulled in full rather than one company at a time.**
+`scripts/32_fetch_warn.py` writes all 810 notices, 2020 to 2026, to
+`data/warn/notices.csv`, with each year's page and CSV cached under
+`data/warn/` so the parse can be re-checked.
+`scripts/33_match_warn.py` then ties each closure and mass layoff to its notice
+and writes `data/failure_warn.csv`. 15 of the 19 match; the other four record
+why the state has none.
 
 **Where it comes from.** Each year has a page under
 `https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/`,
 and **the current year is served at `current-public-notices-of-layoffs-and-closures`,
-not at a year-numbered path**. Every year page carries a CSV of the whole
-table, which is what to read rather than scraping rows. The file names are
-inconsistent across years (`2020-warn-notice.csv`, `2023-warn-notice_1_9.csv`,
-`2024_warn_notice.csv`, `2025_warn_notice.csv`), so take the CSV URL from the
-year page rather than constructing it.
+not at a year-numbered path**. The pages moved: they used to sit under
+`/job-services-and-unemployment/job-seekers/`, and every one of those URLs is
+now a 404, so the fetcher discovers the year pages from the site's own
+`sitemap.xml` rather than hardcoding a path.
+
+**There is no table in the HTML.** The year pages are a Next.js app that renders
+a CSV published on `dam.assets.ohio.gov`, and the CSV's address sits in the
+page's own data payload as `csvUrl`. Read that, not the rows. Three further
+shapes to expect in those CSVs: two junk rows sit above the real header, two
+columns are both headed `Company` (one holds the text, one the hyperlink), and
+the PDF paths carry **raw spaces** (`WARN 2023/Republic Steel.pdf`) which have
+to be percent-encoded or the fetch fails outright.
 
 **A trap worth recording.** `jfs.ohio.gov` returns **404 to a descriptive
 User-Agent and 200 to a browser one**. An automated check that trusts the
@@ -1143,7 +1213,28 @@ status code will conclude the page does not exist.
 pre-2020 failures rest on court dockets and news instead. A WARN notice is
 required only above a size threshold and with 60 days' notice, so a small
 closure or an abrupt one may not appear at all. Its absence is not evidence
-that nothing happened.
+that nothing happened — but it is worth explaining, and each of the four
+absences is explained in `33_match_warn.py`:
+
+- **CoverMyMeds** and **Hyland**: the job cuts were company-wide and the Ohio
+  share was never disclosed, so the 50-at-one-site threshold can be cleared
+  without a notice.
+- **Speedway**: the reported Enon cut was fewer than 35, below the threshold.
+- **Sauder Woodworking**: a real gap rather than a threshold. A permanent cut
+  of about 150 at one Archbold plant would normally require a notice and none
+  exists, by name or by Fulton County, in a window where the state recorded
+  notices for one person and for 39 part-time workers. The likeliest reading is
+  that the layoff was expected to last under six months, which Ohio exempts and
+  which fits the plant staying open. **The 150 figure rests on press reporting
+  alone.**
+
+**A matched notice is not proof the funded site failed.** Each match carries
+`notice_at_funded_site`, set by comparing the notice's county against the
+counties the money was actually paid into, both read off the files. Four come
+back no: Republic Steel (Canton, funded Lorain) and the three companies that
+failed away from the funded site. Matching the notice and reading it as proof
+of the funded site's failure are two different steps and the file keeps them
+apart.
 
 ---
 
@@ -1184,11 +1275,12 @@ Nestlé USA for the Solon campus, which is closing, and $6,000,000 to Nestlé
 Purina for a Clermont County plant, which opened in August 2026.** A reader
 taking the parent row at face value would read $9.2 million as lost.
 
-**Five of the 31 confirmed failures sit inside a parent that was paid more**:
+**Four of the 28 confirmed failures sit inside a parent that was paid more**:
 Nestlé (35% of the group's money failed), Procter & Gamble through iMFLUX
-(20%), Marathon Petroleum through Speedway (76%), McKesson through CoverMyMeds
-(89%) and Dana (94%). Read as whole-parent losses they would overstate by
-**$8,965,727**.
+(20%), Marathon Petroleum through Speedway (76%) and McKesson through
+CoverMyMeds (89%). Read as whole-parent losses they would overstate by
+**$8,715,727**. Dana used to be a fifth, and is no longer in the count at all:
+the plant that closed was not one the money paid for.
 
 **What was rejected, and why.** One option was to recategorise a partial
 closure as a mass layoff, so the group-level label stays true. That changes a

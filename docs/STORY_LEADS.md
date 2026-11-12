@@ -467,25 +467,39 @@ the Growth Fund guidelines?
 
 ---
 
-## 10. 31 grant recipients failed after the money was paid: $90.7 million
+## 10. 28 grant recipients failed after the money was paid: $86.9 million
 
 We scanned all 1,755 distinct recipients for public signs of failure after
 their first grant year, using Google News headlines as the index
 (`scripts/17_distress_scan.py`), then checked each flag one at a time against
 court dockets, SEC filings and local news. 102 candidates went to verification.
-31 are confirmed, 52 turned out to be the company appearing in somebody else's
-case, 17 were a different company with the same name, 1 happened before the
-grant, and 1 is unresolved. Everything, including the rejected flags and why
-they were rejected, is in `data/failures.csv`.
+28 are confirmed, 52 turned out to be the company appearing in somebody else's
+case, 17 were a different company with the same name, 3 failed somewhere other
+than the site the grant paid for, 1 happened before the grant, and 1 is
+unresolved. Everything, including the rejected flags and why they were
+rejected, is in `data/failures.csv`.
 
 | What happened | Companies | Paid |
 |---|---|---|
 | Mass layoff at the funded site | 8 | $65,036,323 |
 | Bankruptcy or receivership | 8 | $13,850,000 |
-| Funded site closed | 11 | $10,850,770 |
+| Funded site closed | 8 | $7,000,770 |
 | Sold or absorbed | 3 | $800,000 |
 | Subsidized service ended | 1 | $200,000 |
-| **Total** | **31** | **$90,737,093** |
+| **Total** | **28** | **$86,887,093** |
+
+**Three companies came out of this count on a second pass, and the reason is
+itself worth a paragraph in the post.** Every confirmed failure was re-checked
+on one question: was the operation that failed the operation the grant paid
+for? Dana closed its Lima plant in Allen County, but its $3,700,000 is exactly
+JobsOhio's two commitments in Lucas and Henry counties, both paid to Maumee,
+and both of those sites are still running. New Horizons Baking closed its north
+Toledo plant; its $100,000 paid for the Norwalk plant in Huron County, which is
+open. FedEx Supply Chain closed a Lima distribution centre; its $50,000 matches
+a 2016 grant to GENCO I in Franklin County. All three are still shown in the
+tool, under their own heading, because "a company that took Ohio money closed
+an Ohio plant" is true of all three and is a different sentence from the one
+this count makes.
 
 **Bankruptcy or receivership.** Petmin USA, $10,000,000, Chapter 7, read off
 the docket: case 25-41332 (Bankr. N.D. Ohio, Youngstown), petition filed
@@ -1132,29 +1146,29 @@ assets "as well as the Market Conditions and Other Factors provided by Grantee
 to JobsOhio." Nothing published says how any of that is weighed, who has asked
 for a waiver, or who has been granted one.
 
-**The pattern.** Of the 31 verified post-grant failures carrying $90,737,093,
-JobsOhio sued **two**, carrying $1,060,770. **$85,476,323 went to companies
+**The pattern.** Of the 28 verified post-grant failures carrying $86,887,093,
+JobsOhio sued **two**, carrying $1,060,770. **$85,826,323 went to companies
 that failed and were never sued.**
 
 | What happened | Companies | Paid | Sued |
 |---|---|---|---|
 | Mass layoff at the funded site | 8 | $65,036,323 | **0** |
 | Bankruptcy or receivership | 8 | $13,850,000 | **0** |
-| Funded site closed | 11 | $10,850,770 | 2 |
+| Funded site closed | 8 | $7,000,770 | 2 |
 | Sold or absorbed | 3 | $800,000 | **0** |
 | Subsidized service ended | 1 | $200,000 | **0** |
-| **Total** | **31** | **$90,737,093** | **2** |
+| **Total** | **28** | **$86,887,093** | **2** |
 
 Now set that beside who it does sue:
 
 | | Median | Size, on the bands recorded |
 |---|---|---|
 | The 63 it sued | $125,000 sought, smallest $16,724 | 34 of 52 under 500 employees |
-| The 31 that failed | $500,000 paid, largest $50,000,000 | 24 of 31 at 500 or more |
+| The 28 that failed | $500,000 paid, largest $50,000,000 | 22 of 28 at 500 or more |
 
 **Hedge the size half, and say why.** These are employee *bands*, not
 headcounts, so there is no median to quote. The two sides are not equally well
-evidenced either: **27 of the 31 failures** rest on a filing
+evidenced either: **24 of the 28 failures** rest on a filing
 or an official record, against **33 of 52** on the sued
 side, where **19** sit on a company website, a directory or a best
 guess. Write "none of the failures is recorded under 100 employees", not "none
@@ -1246,3 +1260,46 @@ LLCs, which is slow but public.
 member was connected to Supply Line International Medical and found nothing,
 with no Schedule L filed that year. A systematic check that comes back mostly
 empty is still publishable and is the responsible version of this story.
+
+---
+
+## 14. Ohio knows exactly how many jobs went, and nobody had put it next to the grants
+
+Pulling the state's whole WARN register, 810 notices from 2020 to 2026
+(`scripts/32_fetch_warn.py`), turns the failure findings from news citations
+into the employers' own filings. 15 of the 19 Ohio closures and mass layoffs in
+this data now carry the letter the company itself sent the state, naming the
+site, the headcount and the date.
+
+That is worth doing for accuracy, and it produced four things worth writing.
+
+**Ultium's number is not the one in the headlines.** The notice reads "484 Perm
+Layoffs/850 Temp Layoffs" at Warren, Trumbull County. The $50,000,000 grant is
+the largest in this failure set by a wide margin, and the permanent figure is
+484, not the 1,334 total. Use the split.
+
+**Four claims have no state record at all, and one of those is a hole.**
+CoverMyMeds, Hyland and Speedway all have an explanation: company-wide cuts
+with the Ohio share undisclosed, or a cut below the 50-person threshold.
+Sauder Woodworking does not. A permanent cut of about 150 at one Archbold plant
+would normally require a notice; none exists, by name or by Fulton County, in a
+window where Ohio recorded notices for a single person and for 39 part-time
+workers. Either the layoff was temporary, which Ohio exempts and which fits the
+plant staying open, or a notice that should exist does not. Worth one call to
+the company and one to the state.
+
+**The register is an index to failures the news never covered.** 810 notices
+against 1,700 recipients is a join nobody has run. Our scan started from Google
+News headlines, which means a closure that was never written up is invisible to
+it. The WARN table is not: it is every qualifying closure in the state,
+reported by the employer. Running the full join is the obvious next pass and
+would turn the failure count from a floor into something much closer to a
+count.
+
+**The state's own publication is fragile.** The year pages moved and every old
+URL now 404s; the site returns 404 to a research User-Agent and 200 to a
+browser; there is no table in the HTML, only a CSV address buried in a
+JavaScript payload; and the links to the filed letters carry raw spaces that
+break an ordinary fetch. None of that is a story on its own, but "the public
+record of every mass layoff in Ohio is a CSV you have to reverse-engineer a
+Next.js app to find" is a sentence that belongs in a method note.
