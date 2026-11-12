@@ -464,12 +464,49 @@ function renderKey(){
     ev.appendChild(document.createTextNode(" " + CONF_SHORT[g] + ".  "));
   });
   ev.appendChild(document.createTextNode("C and D are counted against the finding in the worst case."));
+  var rc = el("p",{class:"key-note"},host);
+  var b3 = el("b",{},rc); b3.textContent = "Repayment clause";
+  rc.appendChild(document.createTextNode(" is whether a clause exists letting JobsOhio demand the money back, and how firmly we know it. It is not a statement that money was recovered: 2.2% has come back. "));
+  COND_ORDER_KEY.forEach(function(g, i){
+    var sp = el("span",{class:"g"},rc); sp.textContent = g;
+    rc.appendChild(document.createTextNode(" " + COND_SHORT[g] + (i < COND_ORDER_KEY.length - 1 ? ".  " : ".")));
+  });
+
+  var ag = el("p",{class:"key-note"},host);
+  var b4 = el("b",{},ag); b4.textContent = "After the grant";
+  ag.appendChild(document.createTextNode(" is a verified outcome at the funded operation, found by scanning every recipient for distress headlines and then checking each one against court dockets, SEC filings, state WARN notices and local news. Three of the five are failures of the thing Ohio paid for rather than of the company, so they should not be added together. "));
+  ["bankruptcy","site closed","mass layoff","sold","service ended"].forEach(function(g, i, a){
+    var sp = el("span",{class:"g"},ag); sp.textContent = g;
+    ag.appendChild(document.createTextNode(" " + FAIL_SHORT[g] + (i < a.length - 1 ? ".  " : ". ")));
+  });
+  ag.appendChild(document.createTextNode("It is a floor, not a count: a failure without coverage is not in it, and a parent\u2019s filing that left the Ohio site running is excluded."));
+
   var pr = el("p",{class:"key-note"},host);
   var b2 = el("b",{},pr); b2.textContent = "Sources";
   pr.appendChild(document.createTextNode(" open in a new tab where one exists: a case number goes to the Franklin County Clerk of Courts, a failure goes to the docket, filing or news report it rests on. Hover any label for the evidence behind it."));
 }
 var CONF_SHORT = {A:"a filing under penalty of perjury", B:"an official or partner record",
                   C:"company site, directory or news", D:"owner not established"};
+/* the repayment-clause grades, shortest form, for the key under the table. The
+   full evidence for each company is on its own cell's hover. */
+var FAIL_SHORT = {
+  "bankruptcy": "a bankruptcy petition, receivership or assignment for the benefit of creditors",
+  "site closed": "the funded Ohio operation shut",
+  "mass layoff": "a large cut at the funded site, with the company still operating",
+  "sold": "the recipient stopped existing as an independent company",
+  "service ended": "the subsidised service, an airline route, stopped running"
+};
+var COND_ORDER_KEY = ["in this agreement","in the standard agreement","in the guidelines",
+                      "loan, repayable","services, not cash","none found","program unknown"];
+var COND_SHORT = {
+  "in this agreement": "this company\u2019s signed contract is in a court file and carries the clause",
+  "in the standard agreement": "paid under a program whose agreements were obtained and are identical, so the clause is inferred, not seen",
+  "in the guidelines": "no agreement obtained, but the published program guidelines carry a repayment trigger",
+  "loan, repayable": "debt, repayable by its nature, which is not a performance clawback",
+  "services, not cash": "JobsOhio paid subcontractors rather than the company, and can bill the service value as liquidated damages",
+  "none found": "nothing published and no signed agreement ever obtained",
+  "program unknown": "the payment cannot be tied to a program, so there is nothing to read either way"
+};
 
 /* ---- controls ---- */
 function seg(id, key, after){

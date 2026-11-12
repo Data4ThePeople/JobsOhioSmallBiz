@@ -57,6 +57,26 @@ None.
   Olive AI suit in Ohio state court; it may be the only public place a JobsOhio
   grant agreement's terms appear.
 
+- Eric asked (Nov 12, 2026) to be reminded to write up **Union Metal
+  Industries** as the case that shows the whole recovery problem in one
+  docket. JobsOhio paid $1,250,000 across three grants under one agreement
+  (Revitalization, Workforce Training and Economic Development, contract
+  SFPN_2018_455827). The company committed to 250 new jobs and $13,000,000 of
+  payroll in Canton; its own 2023 annual report said 137 jobs and $7,400,784.
+  JobsOhio sent two demand letters, February 14 and July 9 2025, each for
+  **$200,000**. When they went unpaid it sued on October 23, 2025 for the
+  **entire $1,250,000**, pleading that not paying the $200,000 was itself a
+  breach. On **January 6, 2026** it filed one sentence: "Now comes Plaintiff
+  JobsOhio and hereby dismisses this action with prejudice." No reason, no
+  figure, no settlement filed, no reversal on any 990. With prejudice means it
+  gave the claim up for good. We cannot tell whether that was a settlement, a
+  payment, or a decision that the case would lose. Case 25CV009178, Franklin
+  County; lead 11 in `docs/STORY_LEADS.md`.
+  One point in its favour as an example: JobsOhio attached the whole grant
+  agreement here, both the 2019 original and the 2020 amendment, so 21 of the
+  complaint's 27 pages are the contract. That is the direct contrast with Olive
+  AI, where it refused to attach the agreement as trade secret.
+
 ## Log
 
 - 2026-09-18 Step 1 opened. Topic: every grant JobsOhio has disclosed on
