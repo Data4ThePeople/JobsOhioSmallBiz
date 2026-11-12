@@ -325,8 +325,13 @@ function renderFY(){
   var host = document.getElementById("c-fy"); host.replaceChildren();
   txt("h2","","Dollars paid each fiscal year, by company size",host);
   txt("p","note","Fiscal years end June 30. Grants are paid as companies submit costs, so one award can span several years.",host);
-  var items = pool(), byfy = {};
-  items.forEach(function(p){ var g = sizeGroup(p); for (var fy in p.by_fy){ byfy[fy] = byfy[fy] || {small:0,large:0,unknown:0}; byfy[fy][g] += p.by_fy[fy]; } });
+  /* A year with a handful of companies has a size split that is noise, and
+     FY2014 is the extreme: four companies and $300,000, so its "share" turns
+     on two $50,000 grants. Naming the thin years is better than drawing them
+     as if they carried the same weight as the rest. */
+  var THIN = 10;
+  var items = pool(), byfy = {}, nfy = {};
+  items.forEach(function(p){ var g = sizeGroup(p); for (var fy in p.by_fy){ byfy[fy] = byfy[fy] || {small:0,large:0,unknown:0}; byfy[fy][g] += p.by_fy[fy]; nfy[fy] = (nfy[fy]||0) + 1; } });
   var fys = Object.keys(byfy).sort(), max = 0;
   fys.forEach(function(fy){ var o = byfy[fy]; max = Math.max(max, o.small+o.large+o.unknown); });
   var W = 600, H = 230, left = 56, right = 8, top = 10, bottom = 26, pw = W-left-right, ph = H-top-bottom;
@@ -346,6 +351,19 @@ function renderFY(){
     });
     var l = el("text",{x:x+barw/2, y:H-8, class:"axis","text-anchor":"middle"},svg,true); l.textContent = (fys.length > 9 && i % 2) ? "" : "FY" + String(fy).slice(2);
   });
+  var thin = fys.filter(function(fy){ return nfy[fy] < THIN; });
+  if (thin.length){
+    var tn = el("p",{class:"wc"},host);
+    tn.textContent = "Read the early years with care. "
+      + thin.map(function(fy){
+          var o = byfy[fy];
+          return "FY" + fy + " holds " + nfy[fy] + " " + (nfy[fy]===1?"company":"companies")
+               + " and " + money(o.small+o.large+o.unknown);
+        }).join("; ")
+      + ". A share computed on that few companies turns on one or two grants, so the bar is shown "
+      + "but the split should not be read as a trend. FY2012 and FY2013 are left out entirely: "
+      + "JobsOhio filed those returns on paper and no machine-readable copy exists.";
+  }
   var lg = el("div",{class:"legend"},host);
   [["small","Small"],["large","Large"],["unknown","Unresolved"]].forEach(function(g){ var b = el("b",{},lg); b.style.color = SIZE_COLORS[g[0]]; b.textContent = g[1]; });
 }

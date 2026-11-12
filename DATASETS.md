@@ -1144,3 +1144,30 @@ pre-2020 failures rest on court dockets and news instead. A WARN notice is
 required only above a size threshold and with 60 days' notice, so a small
 closure or an abrupt one may not appear at all. Its absence is not evidence
 that nothing happened.
+
+---
+
+## Two corrections from the second tie-out
+
+**British Airways and Aer Lingus are one company.** They were carried as two
+parents, `International Consolidated Airlines Group, S.A.` and `International
+Airlines Group (IAG)`, because the de-duplication requires identical normalised
+names and these two spellings are not identical. Together they are
+**$12,361,250**, which makes IAG the 18th largest recipient in the data rather
+than two smaller ones, and the parent count was one too high. Both payees are
+United Kingdom and 5000+, so **no size or home-state share moves**; the
+ranking, the parent count and the air-service total do.
+
+This is the general weakness of name-based de-duplication: it catches
+punctuation and case, and it cannot catch a company trading under two
+different names. The remaining same-company pairs left separate are printed in
+`TIEOUT.md` for exactly this reason.
+
+**FY2014 is too thin to read and now says so.** The year holds 8 payment rows
+and $1,308,000 in total, of which only **4 companies and $300,000** are
+operating businesses. Its small-business share therefore turns on two $50,000
+grants. The bar stays on the by-year chart, because removing a year is worse
+than explaining it, but the chart now carries a note naming any year with
+fewer than ten companies and saying the split should not be read as a trend.
+FY2012 and FY2013 are excluded from the analysis entirely: JobsOhio filed
+those returns on paper and no machine-readable copy exists.
