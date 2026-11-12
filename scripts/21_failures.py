@@ -46,6 +46,9 @@ for f in sorted(list(RES.glob("fail_*.json")) + list(RES.glob("soft_*.json"))):
             "confidence": x.get("confidence", ""), "source": x.get("source", ""),
             "flagged_by": "failure headline" if f.stem.startswith("fail") else "closure or layoff headline",
             "notes": (x.get("notes") or "")[:300], "category": "",
+            # one hand-written sentence where the category alone misleads, e.g.
+            # a closure that takes the factory but leaves the research campus
+            "caveat": (x.get("caveat") or "")[:400],
         })
 # "Confirmed failure" covers several different outcomes, and the post should
 # not call a sale a failure. The set is small enough to categorise by name,

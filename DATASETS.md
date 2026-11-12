@@ -1171,3 +1171,46 @@ than explaining it, but the chart now carries a note naming any year with
 fewer than ten companies and saying the split should not be read as a trend.
 FY2012 and FY2013 are excluded from the analysis entirely: JobsOhio filed
 those returns on paper and no machine-readable copy exists.
+
+---
+
+## When a company group fails only in part
+
+**The problem Eric found.** The table groups by ultimate parent, which is right
+for counting companies and for reading their size and home state. A failure,
+though, happens to one operating company, and a parent group can hold a payee
+that failed and one that did not. Nestlé is the clear case: **$3,200,000 to
+Nestlé USA for the Solon campus, which is closing, and $6,000,000 to Nestlé
+Purina for a Clermont County plant, which opened in August 2026.** A reader
+taking the parent row at face value would read $9.2 million as lost.
+
+**Five of the 31 confirmed failures sit inside a parent that was paid more**:
+Nestlé (35% of the group's money failed), Procter & Gamble through iMFLUX
+(20%), Marathon Petroleum through Speedway (76%), McKesson through CoverMyMeds
+(89%) and Dana (94%). Read as whole-parent losses they would overstate by
+**$8,965,727**.
+
+**What was rejected, and why.** One option was to recategorise a partial
+closure as a mass layoff, so the group-level label stays true. That changes a
+fact to fit a display: the Solon factory is closing, and calling it a layoff
+would be wrong at the site where it happens. Another was to split the failed
+subsidiary into its own row in the data. Every payee in these five groups
+shares its parent's size band, home state and class, so splitting moves no
+dollar share at all, but it **inflates the company count**, which is the one
+thing the parent rollup exists to get right.
+
+**What is done instead, in two parts.**
+
+1. **The badge says so.** A failure label on a mixed group reads "· part", and
+   the hover gives both figures, names the company that actually failed, lists
+   the other payees in the group, and carries a hand-written `caveat` where the
+   category alone still misleads. Nestlé's says the factory is closing while the
+   research campus stays, and that part of the $3,200,000 paid for the campus.
+2. **Clicking a failure tile switches the table to the payee.** The rows then
+   show the companies named on the Form 990 that actually failed, with their
+   own money, because that is the unit each finding was verified against. These
+   rows are a disclosure view: they are never counted as companies anywhere on
+   the page, and the headline aggregation is untouched.
+
+`caveat` is a column in `data/failures.csv`, written by hand per case, for the
+nuance no formula expresses.

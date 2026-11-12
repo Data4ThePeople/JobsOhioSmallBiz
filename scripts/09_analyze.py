@@ -164,6 +164,13 @@ def load_side_findings(parents, moved=None):
                        "date": r["event_date"], "confidence": r["confidence"],
                        "cite": (r.get("source") or "")[:400],
                        "court": r.get("court", ""), "docket": r.get("docket", ""),
+                       # the payee that actually failed, and what it was paid.
+                       # The table groups by parent, so a group can hold a
+                       # failed payee and a thriving one: Nestle closed Solon
+                       # while Purina's Clermont plant opened, and reading the
+                       # parent row as failed overstates it by $6m.
+                       "payee": r["name"], "payee_paid": int(r["paid"] or 0),
+                       "caveat": (r.get("caveat") or "")[:400],
                        "src": fail_url.get(normalize_name(r["name"]))}
     # JobsOhio's own suits against the recipient, keyed the same way. A company
     # can be sued more than once, so they are collected into a list.
@@ -192,7 +199,8 @@ def load_side_findings(parents, moved=None):
                    ) if m else ""
             sued[k].append({"case": r["case"], "filed": r["filed"], "url": url,
                             "sought": r["amount_sought"][:120], "outcome": r["outcome"][:120]})
-    return cond, fail, dict(sued), {"suits_filed": suits_filed, "sought_total": round(sought_total)}
+    return (cond, fail, dict(sued),
+            {"suits_filed": suits_filed, "sought_total": round(sought_total)}, fail_url)
 
 
 def resolve_class(a, b):
@@ -424,7 +432,7 @@ def main():
     out["confidence"] = {"parents": shares(allp, lambda a: a["conf"] or "none", lambda a: 1)[0],
                          "cash": shares(allp, lambda a: a["conf"] or "none", lambda a: a["cash"])[0]}
     out["conflicts"] = sorted(c for a in allp for c in a.get("conflicts", set()))
-    cond, fail, sued, suit_totals = load_side_findings(parents, moved)
+    cond, fail, sued, suit_totals, fail_url = load_side_findings(parents, moved)
     # one link per company that was fetched and returned 200. A company with no
     # link that resolves is shown unlinked rather than sent somewhere broken.
     links = {}
@@ -441,7 +449,13 @@ def main():
         "years": sorted(a["years"]), "programs": sorted(a["programs"]), "sources": sorted(a["sources"])[:3],
         "by_fy": {str(k): v for k, v in sorted(a["by_fy"].items())},
         "payees": " | ".join(sorted({parents[r]["name"] for r in a["recipients"]}))[:400],
-        "recourse": cond.get(a["parent"], None), "failure": fail.get(a["parent"], None),
+        "recourse": cond.get(a["parent"], None),
+        "failure": (dict(fail[a["parent"]],
+                         parent_paid=a["cash"],
+                         partial=a["cash"] > fail[a["parent"]]["payee_paid"] * 1.01,
+                         other_payees=sorted({parents[r]["name"] for r in a["recipients"]}
+                                             - {fail[a["parent"]]["payee"]})[:6])
+                    if a["parent"] in fail else None),
         "sued": sued.get(a["parent"], None), "link": links.get(a["parent"], None),
     } for a in allp], key=lambda d: -d["cash"])
     # dollars by published conditions, and the verified post-grant failures,
@@ -544,6 +558,35 @@ def main():
                      "share_of_paid": abs(out["meta"]["reversal_dollars"])
                                       / (out["meta"]["cash_total"] - out["meta"]["reversal_dollars"])},
     }
+
+    # One row per company that actually failed, at the PAYEE level, because
+    # that is the unit each finding was verified against. The table normally
+    # groups by parent, which is right for counting companies and wrong for
+    # reading an outcome: Nestle S.A. holds the Solon factory that is closing
+    # and the Clermont plant that opened. Clicking a failure tile swaps the
+    # table to these rows so the money lines up with the finding. They are a
+    # disclosure view, never counted as companies.
+    out["failed_payees"] = []
+    for r in (csv.DictReader(FAILURES.open()) if FAILURES.exists() else []):
+        if r["verdict"] != "Confirmed failure":
+            continue
+        rec = parents.get(r["recipient_id"], {})
+        pk = follow(parent_key(rec)) if rec else r["parent"]
+        grp = next((a for a in allp if a["parent"] == pk), None)
+        out["failed_payees"].append({
+            "payee": r["name"], "parent": pk,
+            "cash": int(r["paid"] or 0),
+            "parent_cash": grp["cash"] if grp else int(r["paid"] or 0),
+            "bucket": rec.get("emp_bucket", ""), "hq": rec.get("parent_hq_state", ""),
+            "conf": rec.get("confidence", ""), "class": rec.get("recipient_class", ""),
+            "years": rec.get("years", r["grant_years"]),
+            "category": r["category"], "event": r["event"], "date": r["event_date"],
+            "confidence": r["confidence"], "caveat": r.get("caveat", ""),
+            "cite": (r.get("source") or "")[:400],
+            "court": r.get("court", ""), "docket": r.get("docket", ""),
+            "src": fail_url.get(normalize_name(r["name"])),
+            "sued": bool(sued.get(pk)),
+        })
 
     out["rows"] = [{"fy": g["fy"], "recipient": g["recipient_name"], "city": g["city"], "state": g["state"],
                     "cash": g["cash"], "parent": parent_key(parents[g["recipient_id"]])} for g in grants]

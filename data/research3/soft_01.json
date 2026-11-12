@@ -282,7 +282,8 @@
     "ohio_outcome": "The Ohio site closed. Plastics News reported on April 7, 2023 that iMFLUX was closing its Ohio site and switching to royalty-free licensing, and the Cincinnati Enquirer and WCPO reported on May 1 and 2, 2023 that P&G was shutting the Hamilton subsidiary and laying off 122 workers. In December 2024 WKRC reported that a Cincinnati firm had bought the former P&G manufacturing site.",
     "confidence": "Medium",
     "source": "Google News RSS 'iMFLUX Hamilton Ohio'; Plastics News 2023-04-07 and 2023-04-13; WCPO 2023-05-01; Cincinnati Enquirer 2023-05-02; WKRC 2024-12-21; data/grants_raw.csv",
-    "notes": "Grant in 2015, Ohio site closed in 2023 with 122 jobs lost. Clean case. No court record because this was a parent shutting a subsidiary, not an insolvency."
+    "notes": "Grant in 2015, Ohio site closed in 2023 with 122 jobs lost. Clean case. No court record because this was a parent shutting a subsidiary, not an insolvency.",
+    "caveat": "iMFLUX was a Procter & Gamble subsidiary. The $350,000 is iMFLUX's own; the rest of the group's Ohio money is P&G's and is unaffected."
   },
   {
     "recipient_id": "EIN:311161086",

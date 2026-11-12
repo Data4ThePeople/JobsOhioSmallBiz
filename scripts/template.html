@@ -419,7 +419,24 @@ function tableRows(){
        where two failed payees share one parent */
     if (state.outcome === "sued") items = items.filter(function(p){ return p.sued && p.sued.length; });
     else if (state.outcome === "returned") items = items.filter(function(p){ return p.returned; });
-    else if (state.outcome) items = items.filter(function(p){ return p.failure && p.failure.category === state.outcome; });
+    else if (state.outcome){
+      /* Switch to the PAYEE that failed, not its parent group. A finding was
+         verified against one company; the parent row can hold others that did
+         not fail, and reading the parent's total as the loss overstates it by
+         $9.0m across the five mixed groups. These rows are a disclosure view
+         and are never counted as companies anywhere else on the page. */
+      return (D.failed_payees || []).filter(function(x){ return x.category === state.outcome; })
+        .map(function(x){
+          return {parent: x.payee, class: x.class, bucket: x.bucket, hq: x.hq, conf: x.conf,
+                  cash: x.cash, years: (x.years||"").split(" ").filter(Boolean).map(Number),
+                  recourse: null, link: null, sued: null, payee_view: x,
+                  failure: {category: x.category, event: x.event, date: x.date,
+                            confidence: x.confidence, caveat: x.caveat, cite: x.cite,
+                            court: x.court, docket: x.docket, src: x.src,
+                            payee: x.payee, payee_paid: x.cash, parent_paid: x.parent_cash,
+                            partial: false}};
+        });
+    }
     if (q) items = items.filter(function(p){ return (p.parent + " " + p.hq + " " + p.class + " " + (p.payees||"") + " " + ((p.recourse&&p.recourse.grade)||"") + " " + (p.failure ? p.failure.category + " " + p.failure.event : "") + " " + (p.sued ? "sued " + p.sued.map(function(c){return c.case;}).join(" ") : "")).toLowerCase().indexOf(q) >= 0; });
     return items;
   }
@@ -449,8 +466,11 @@ function renderTable(){
     fb.replaceChildren();
     if (state.outcome && state.tview === "parents"){
       var o = OUTCOMES.filter(function(x){ return x.key === state.outcome; })[0];
+      var isFail = state.outcome !== "sued" && state.outcome !== "returned";
       fb.appendChild(document.createTextNode("Filtered to companies that " + (o ? o.label : state.outcome)
-        + ". These are parent groups, so the count can be lower than the tile where two payees share a parent."));
+        + (isFail
+            ? ". These rows are the companies named on the Form 990 that actually failed, not their parent groups, because that is the unit each finding was verified against. Where a parent also paid other companies that did not fail, only the failed one is shown and the amount is its own."
+            : ". These are parent groups, so the count can be lower than the tile where two payees share a parent.")));
       var b = el("button",{type:"button"},fb); b.textContent = "clear";
       b.addEventListener("click", function(){ state.outcome=""; state.limit=100; renderWhat(); renderTable(); });
     }
@@ -482,12 +502,24 @@ function renderTable(){
       var fd = el("td",{},tr);
       if (p.failure){
         var f = p.failure;
+        /* A company group can hold a payee that failed and others that did
+           not: Nestle closed its Solon factory in the same years Purina's
+           Clermont plant opened. The badge says "part" and the hover gives
+           both figures, so the parent's total is never read as the loss. */
         var tip = (f.category || "") + ". " + (f.event ? f.event + ", " : "") + (f.date || "")
                 + " (" + (f.confidence || "") + " confidence)"
+                + (f.partial
+                    ? "\n\nThis is " + moneyFull(f.payee_paid) + " of the " + moneyFull(f.parent_paid)
+                      + " paid to this group. The company that failed is " + f.payee + "."
+                      + (f.other_payees && f.other_payees.length
+                          ? " Also paid under this parent: " + f.other_payees.join(", ") + "." : "")
+                    : "")
+                + (f.caveat ? "\n\n" + f.caveat : "")
                 + (f.court ? "\nCourt: " + f.court : "") + (f.docket ? "\nDocket: " + f.docket : "")
                 + (f.cite ? "\nSource: " + f.cite : "")
                 + (f.src && f.src.paywalled === "yes" ? "\n(the source is paywalled)" : "");
-        var label = FAIL_LABEL[f.category] || f.category || "failure";
+        var label = (FAIL_LABEL[f.category] || f.category || "failure")
+                  + (f.partial ? " \u00b7 part" : "");
         /* link to the record the finding rests on, where one resolved */
         var url = (f.src && f.src.url) || "";
         if (url){
@@ -556,7 +588,7 @@ function renderKey(){
     var sp = el("span",{class:"g"},ag); sp.textContent = g;
     ag.appendChild(document.createTextNode(" " + FAIL_SHORT[g] + (i < a.length - 1 ? ".  " : ". ")));
   });
-  ag.appendChild(document.createTextNode("It is a floor, not a count: a failure without coverage is not in it, and a parent\u2019s filing that left the Ohio site running is excluded."));
+  ag.appendChild(document.createTextNode("It is a floor, not a count: a failure without coverage is not in it, and a parent\u2019s filing that left the Ohio site running is excluded. A label reading \u201c\u00b7 part\u201d means only some of the money paid to that company group went to the operation that failed; hover for both figures and for which company it was."));
 
   var pr = el("p",{class:"key-note"},host);
   var b2 = el("b",{},pr); b2.textContent = "Sources";
