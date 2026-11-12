@@ -506,6 +506,17 @@ def main():
         f"Its classification is not in doubt, so this is leverage rather than error. Name it "
         f"beside the number.", ""]
 
+    # a single D-graded size band can carry several million dollars into "small";
+    # name the biggest one so the post can caveat it rather than be caught by it
+    weak = sorted((a for a in biz if size_group(a) == "small" and (a["conf"] or "D") in ("C", "D")),
+                  key=lambda a: -a["cash"])[:3]
+    if weak:
+        lines += ["**The small share leans on a few weakly-graded size bands.** " + "; ".join(
+            f"{a['parent'][:46]} (${a['cash']:,}, grade {a['conf']})" for a in weak)
+            + f". Together the C and D graded small parents carry $"
+            + f"{sum(a['cash'] for a in biz if size_group(a) == 'small' and (a['conf'] or 'D') in ('C', 'D')):,} "
+            + f"of the ${b_small:,} in the small column. The worst case already reassigns all of them, "
+            + "but the largest deserves a sentence of its own in the post.", ""]
     sm = sorted((a for a in biz if size_group(a) == "small"), key=lambda a: -a["cash"])[:1]
     if sm:
         lines.append(f"**The small side is not outlier-driven,** which is the reassuring half: the "

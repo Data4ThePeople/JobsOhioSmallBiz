@@ -688,6 +688,37 @@ for -$1,657,252 instead of 16 for -$757,252. Nothing in the pipeline read it.
 **`TIEOUT.md` now carries a Sensitivities section,** computed rather than
 asserted. The two that matter:
 
+**The class boundary was re-checked, and it holds.** All 122 parents classed
+`site_development` were read again against one test: whose business is
+building? A developer who builds and leases to others stays
+`site_development`; an operating company that received money to build, expand
+or clean up **its own** facility is that operating company, whatever the payee
+vehicle is called. Decisions, one line of reasoning and a source each, are in
+`data/site_dev_review.csv`; `scripts/25_apply_site_dev.py` folds them in.
+
+**10 of 122 changed, all to `business`, carrying $11,139,868.** The small
+share of business dollars moved 18.1% to 19.0%. That is the number that
+matters here: the wholesale-reversal counterfactual below implies 8.1 points,
+and the errors actually in the batch are worth about a tenth of that. The
+counterfactual is an upper bound, not a live risk, and the post should say so.
+
+The clearest changes: Ohio-West Virginia Excavating ($4,739,868), a general
+contractor whose own name and EIN are on the 990; CrossCountry Mortgage
+($1,000,000), whose JobsOhio project record names it with 180 jobs created;
+GBQ Partners ($100,000), a Columbus accounting firm classed as a developer by
+a name rule because "Partners" is in the name, which is the same error as
+Tractor Supply.
+
+**21 rows carry a standing caveat.** 12 are marked `OPEN` in the review: left
+as `site_development` but never positively identified, the largest being CW
+Partners LLC at $500,000, which rests on a name rule and nothing else. 9 are
+marked `FLAG`: cases where `site_development` is defensible but a reader could
+reasonably dispute it. The one to know is **Seefried Industrial Properties at
+$17,205,000**, the largest site payment in the data. Seefried is correctly a
+developer, but the beneficiary was Amazon, so a reader may fairly ask why the
+biggest site payment sits outside the business denominator rather than
+counting as large.
+
 - *The class boundary is the largest exposure in the project.* 101 parents
   carrying $117,746,967 were classed out of `business` by hand after the
   automatic classifier called them businesses, mostly into site_development.
