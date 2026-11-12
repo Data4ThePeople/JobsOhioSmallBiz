@@ -2,36 +2,36 @@
 
 Every number below is recomputed from `data/grants_raw.csv` and `data/parents.csv` by `scripts/09_analyze.py`.
 
-- Schedule I rows: 2,038; distinct recipients: 1,515; parents: 1,452; FY2014 to FY2024; cash $1,171,884,901
+- Schedule I rows: 2,415; distinct recipients: 1,789; parents: 1,719; FY2014 to FY2025; cash $1,345,318,862
 - Reversed payments (negative Schedule I rows): 33 rows, $-26,040,088; parents netting to zero or less, not counted as recipients: 16 (net $-757,252)
-- Parents counted (net payment above zero): 1,452; with a classification: 1,452, carrying $1,172,642,153 of the $1,172,642,153 they were paid on net (100.0%)
+- Parents counted (net payment above zero): 1,719; with a classification: 1,719, carrying $1,346,076,114 of the $1,346,076,114 they were paid on net (100.0%)
 
 ## By recipient class (all parents)
 
-- business: 1,246 parents, $833,140,284 (71.1%)
-- site_development: 111 parents, $96,513,402 (8.2%)
-- university: 11 parents, $95,233,751 (8.1%)
-- hospital: 7 parents, $77,635,725 (6.6%)
-- nonprofit: 37 parents, $41,160,782 (3.5%)
-- government: 40 parents, $28,958,209 (2.5%)
+- business: 1,487 parents, $956,764,828 (71.1%)
+- site_development: 131 parents, $109,515,340 (8.1%)
+- university: 12 parents, $104,248,751 (7.7%)
+- hospital: 7 parents, $100,785,000 (7.5%)
+- nonprofit: 39 parents, $42,885,073 (3.2%)
+- government: 43 parents, $31,877,122 (2.4%)
 
 ## Businesses only
 
-- Cutoff 100 employees: parents small 38.8%, large 61.2%, unknown 0.0%; dollars small 7.8%, large 92.2%, unknown 0.0%
-- Cutoff 500 employees: parents small 60.4%, large 39.6%, unknown 0.0%; dollars small 19.0%, large 81.0%, unknown 0.0%
-- Cutoff 5000 employees: parents small 80.7%, large 19.3%, unknown 0.0%; dollars small 35.5%, large 64.5%, unknown 0.0%
-- Home state: parents Ohio 63.0%, other 37.0%, unknown 0.0%; dollars Ohio 36.5%, other 63.5%, unknown 0.0%
-- Worst case: dollars to large at least 60.7%; parents small at least 45.3%
-- Two-by-two (dollars): large|ohio 20.2%, large|other 60.8%, small|ohio 16.3%, small|other 2.7%
+- Cutoff 100 employees: parents small 43.8%, large 56.2%, unknown 0.0%; dollars small 7.8%, large 92.2%, unknown 0.0%
+- Cutoff 500 employees: parents small 64.0%, large 36.0%, unknown 0.0%; dollars small 18.9%, large 81.1%, unknown 0.0%
+- Cutoff 5000 employees: parents small 82.2%, large 17.8%, unknown 0.0%; dollars small 35.4%, large 64.6%, unknown 0.0%
+- Home state: parents Ohio 65.6%, other 34.4%, unknown 0.0%; dollars Ohio 36.3%, other 63.7%, unknown 0.0%
+- Worst case: dollars to large at least 58.2%; parents small at least 47.3%
+- Two-by-two (dollars): large|ohio 20.3%, large|other 60.8%, small|ohio 16.0%, small|other 2.9%
 
 ## All recipients
 
-- Cutoff 100 employees: parents small 40.6%, large 55.0%, unknown 4.4%; dollars small 15.8%, large 82.8%, unknown 1.5%
-- Cutoff 500 employees: parents small 60.4%, large 35.2%, unknown 4.4%; dollars small 25.7%, large 72.9%, unknown 1.5%
-- Cutoff 5000 employees: parents small 78.4%, large 17.2%, unknown 4.4%; dollars small 39.5%, large 59.0%, unknown 1.5%
-- Home state: parents Ohio 66.5%, other 33.5%, unknown 0.0%; dollars Ohio 51.6%, other 48.4%, unknown 0.0%
-- Worst case: dollars to large at least 54.5%; parents small at least 40.4%
-- Two-by-two (dollars): large|ohio 29.5%, large|other 43.4%, small|ohio 20.7%, small|other 5.0%, unknown|ohio 1.5%
+- Cutoff 100 employees: parents small 45.1%, large 51.1%, unknown 3.7%; dollars small 15.3%, large 83.4%, unknown 1.4%
+- Cutoff 500 employees: parents small 63.9%, large 32.4%, unknown 3.7%; dollars small 25.2%, large 73.5%, unknown 1.4%
+- Cutoff 5000 employees: parents small 80.3%, large 15.9%, unknown 3.7%; dollars small 39.0%, large 59.6%, unknown 1.4%
+- Home state: parents Ohio 68.5%, other 31.5%, unknown 0.0%; dollars Ohio 51.7%, other 48.3%, unknown 0.0%
+- Worst case: dollars to large at least 53.7%; parents small at least 42.9%
+- Two-by-two (dollars): large|ohio 30.0%, large|other 43.4%, small|ohio 20.3%, small|other 4.9%, unknown|ohio 1.4%
 
 ## Conflicts between recipients of one parent
 
@@ -41,20 +41,21 @@ Resolved against the finding, not by read order: the smaller size band, Ohio, an
 - bucket: 500-4999 vs 100-499 (NP FTC LLC)
 - class: business vs hospital (THE RESEARCH INSTITUTE AT NATIONWIDE CHILDREN'S HOSPITAL)
 - class: site_development vs business (TRACTOR SUPPLY COMPANY)
+- hq: CA vs OH (AVERY DENNISION CORPORATION)
 
 ## Sensitivities
 
 These are not errors. They are the places the headline is most exposed, computed so the post can state them before a reader finds them.
 
-**The class boundary, and it is the largest one.** 93 parents carrying $104,857,099 were classed out of `business` by hand after the automatic classifier called them businesses, mostly into site_development: project LLCs and industrial developers rather than operating companies. 90 of them, carrying $87,557,099, would have scored small. Recompute the headline on the automatic class instead and the business universe goes 1,246 parents / $833,140,284 to 1,332 / $935,784,008, and the small share of business dollars goes **19.0% to 26.2%**. The published worst case does not cover this: it reassigns size inside the business set and never reconsiders the class boundary. The post should state this figure itself rather than wait to be asked why a company that builds and leases industrial buildings is not a small business.
+**The class boundary, and it is the largest one.** 93 parents carrying $108,342,324 were classed out of `business` by hand after the automatic classifier called them businesses, mostly into site_development: project LLCs and industrial developers rather than operating companies. 90 of them, carrying $91,042,324, would have scored small. Recompute the headline on the automatic class instead and the business universe goes 1,487 parents / $956,764,828 to 1,573 / $1,062,867,177, and the small share of business dollars goes **18.9% to 25.5%**. The published worst case does not cover this: it reassigns size inside the business set and never reconsiders the class boundary. The post should state this figure itself rather than wait to be asked why a company that builds and leases industrial buildings is not a small business.
 
-**One payment carries the home-state finding.** Intel Corporation alone is $124,422,793, 14.9% of all business dollars. The top three (Intel Corporation, Ultium Cells LLC (50/50 join, The Sherwin-Williams Company) are 26.0%. Leave Intel Corporation out and Ohio's share of business dollars goes **36.5% to 42.9%**, and the large share goes 81.0% to 77.7%. Its classification is not in doubt, so this is leverage rather than error. Name it beside the number.
+**One payment carries the home-state finding.** Intel Corporation alone is $125,415,416, 13.1% of all business dollars. The top three (Intel Corporation, Honda Motor Co., Ltd., Ultium Cells LLC (50/50 join) are 23.8%. Leave Intel Corporation out and Ohio's share of business dollars goes **36.3% to 41.8%**, and the large share goes 81.1% to 78.3%. Its classification is not in doubt, so this is leverage rather than error. Name it beside the number.
 
-**The small share leans on a few weakly-graded size bands.** Ohio-West Virginia Excavating Co. (Dennis Hend ($4,739,868, grade D); American Nitrile LLC ($3,303,561, grade C); ALTIVIA Corporation ($3,100,000, grade C). Together the C and D graded small parents carry $56,099,777 of the $158,352,224 in the small column. The worst case already reassigns all of them, but the largest deserves a sentence of its own in the post.
+**The small share leans on a few weakly-graded size bands.** Ohio-West Virginia Excavating Co. (Dennis Hend ($4,739,868, grade D); American Nitrile LLC ($3,327,345, grade C); ALTIVIA Corporation ($3,100,000, grade C). Together the C and D graded small parents carry $64,171,332 of the $180,802,311 in the small column. The worst case already reassigns all of them, but the largest deserves a sentence of its own in the post.
 
-**The small side is not outlier-driven,** which is the reassuring half: the largest small parent is Ohio-West Virginia Excavating Co. (Dennis Hendershot and Roger Lewis) at $4,739,868, 3.0% of small dollars.
+**The small side is not outlier-driven,** which is the reassuring half: the largest small parent is Ohio-West Virginia Excavating Co. (Dennis Hendershot and Roger Lewis) at $4,739,868, 2.6% of small dollars.
 
-**Two denominators, on purpose.** The size and home-state shares run on dollars net of the 33 reversed payments ($1,171,884,901). The conditions shares in `data/grant_conditions.csv` run on positive payments only ($1,197,924,989), because a reversal has no program to label. The post must say which denominator each number uses.
+**Two denominators, on purpose.** The size and home-state shares run on dollars net of the 33 reversed payments ($1,345,318,862). The conditions shares in `data/grant_conditions.csv` run on positive payments only ($1,371,358,950), because a reversal has no program to label. The post must say which denominator each number uses.
 
 ## Parents merged as the same company written two ways
 
@@ -81,4 +82,6 @@ Merged only where the normalized name, size bucket, home state and class all agr
 Each of these is worth one look before publishing: either they are genuinely different entities, or one of the two records is wrong.
 
 - Griffon Corporation [5000+, NY, business, $300,000] | Griffon Holdings LLC [<100, OH, business, $166,568]
+- King's Command Foods LLC [500-4999, WI, business, $250,000] | King's Command Foods, LLC [500-4999, WA, business, $425,000]
+- NorthPoint Development [100-499, MO, site_development, $1,900,000] | NorthPoint Development LLC [500-4999, MO, site_development, $800,000]
 - TEAM, Inc. [5000+, TX, business, $300,000] | THE AKA TEAM INC [<100, OH, business, $50,000]
