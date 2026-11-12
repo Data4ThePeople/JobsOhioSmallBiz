@@ -138,7 +138,12 @@ def load_side_findings(parents):
         for r in csv.DictReader(FAILURES.open()):
             if r["verdict"] != "Confirmed failure":
                 continue
-            k = key(r["parent"], by_name.get(r["name"].strip()) or r["name"].strip())
+            # recipient_id first: two recipients can share a name under
+            # different EINs, and a name join silently picks one of them
+            rec = parents.get(r.get("recipient_id", ""))
+            k = key(r["parent"], (rec or {}).get("parent", "").strip()
+                    or (rec or {}).get("name", "").strip()
+                    or by_name.get(r["name"].strip()) or r["name"].strip())
             fail[k] = {"category": r["category"], "event": r["event"],
                        "date": r["event_date"], "confidence": r["confidence"],
                        "cite": (r.get("source") or "")[:400],
@@ -434,6 +439,61 @@ def main():
                        "matched_to_a_parent": matched,
                        "payee_cash_total": sum(payee_cash.values()),
                        "parent_cash_total": sum(g["parent_cash"] for g in fail_agg.values())}
+    # ---- the summary panel -------------------------------------------------
+    # Every figure here is computed from the file that was actually verified,
+    # NOT from the parent table. Rolling a failed payee up to its parent loses
+    # companies (two failed payees can share one parent) and inflates dollars
+    # (the parent's other payees come along): 29 payees and $86,537,093 become
+    # 26 parents and $96,452,820. The verified payee figure is the publishable
+    # one and the panel says which unit it is counting.
+    import re, statistics
+    fail_rows = [r for r in csv.DictReader(FAILURES.open())
+                 if r["verdict"] == "Confirmed failure"] if FAILURES.exists() else []
+    suit_rows = [r for r in csv.DictReader(LAWSUITS.open())
+                 if r["kind"] == "suit"] if LAWSUITS.exists() else []
+    sought = []
+    for r in suit_rows:
+        hit = re.search(r"\$\s*([\d,]+(?:\.\d{2})?)", r["amount_sought"] or "")
+        if hit:
+            sought.append(float(hit.group(1).replace(",", "")))
+
+    cat_agg = defaultdict(lambda: {"companies": 0, "paid": 0})
+    for r in fail_rows:
+        c = cat_agg[r["category"] or "Uncategorised"]
+        c["companies"] += 1; c["paid"] += int(r["paid"] or 0)
+
+    def band_mix(rows):
+        c = Counter(r["emp_bucket"] or "unresolved" for r in rows)
+        return {k: c[k] for k in BUCKETS + ["unresolved"] if c.get(k)}
+
+    by_name = {normalize_name(p2["name"]): p2 for p2 in parents.values()}
+    sued_recs = [by_name[normalize_name(r["recipient"])] for r in suit_rows
+                 if r.get("recipient") and normalize_name(r["recipient"]) in by_name]
+    # failures carry an explicit recipient_id; use it rather than the name
+    fail_recs = [parents[r["recipient_id"]] for r in fail_rows
+                 if r.get("recipient_id") in parents]
+    sued_cash = [int(r["total_cash"] or 0) for r in sued_recs]
+    fail_cash = [int(r["paid"] or 0) for r in fail_rows]
+
+    out["summary"] = {
+        "unit": "companies as named on Schedule I (the payee), not their parent groups",
+        "sued": {"suits": len(suit_rows), "recipients_matched": len(sued_recs),
+                 "sought": round(sum(sought)),
+                 "median_sought": round(statistics.median(sought)) if sought else 0,
+                 "paid_to_them": sum(sued_cash),
+                 "median_paid": round(statistics.median(sued_cash)) if sued_cash else 0,
+                 "mean_paid": round(statistics.mean(sued_cash)) if sued_cash else 0,
+                 "bands": band_mix(sued_recs)},
+        "failures": {"companies": len(fail_rows), "paid": sum(fail_cash),
+                     "median_paid": round(statistics.median(fail_cash)) if fail_cash else 0,
+                     "mean_paid": round(statistics.mean(fail_cash)) if fail_cash else 0,
+                     "bands": band_mix(fail_recs),
+                     "by_category": dict(cat_agg)},
+        "returned": {"dollars": abs(out["meta"]["reversal_dollars"]),
+                     "share_of_paid": abs(out["meta"]["reversal_dollars"])
+                                      / (out["meta"]["cash_total"] - out["meta"]["reversal_dollars"])},
+    }
+
     out["rows"] = [{"fy": g["fy"], "recipient": g["recipient_name"], "city": g["city"], "state": g["state"],
                     "cash": g["cash"], "parent": parent_key(parents[g["recipient_id"]])} for g in grants]
     OUT.parent.mkdir(exist_ok=True)

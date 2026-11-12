@@ -31,6 +31,9 @@ for f in sorted(list(RES.glob("fail_*.json")) + list(RES.glob("soft_*.json"))):
     for x in json.load(f.open()):
         p = parents.get(x.get("recipient_id"), {})
         rows.append({
+            # join key: two recipients can share a name under different EINs
+            # (there are two Speedway LLCs), so a name-based join is unsafe
+            "recipient_id": x.get("recipient_id", ""),
             "name": x.get("name") or p.get("name", ""),
             "parent": p.get("parent", ""),
             "class": p.get("recipient_class") or p.get("recipient_class_auto", ""),

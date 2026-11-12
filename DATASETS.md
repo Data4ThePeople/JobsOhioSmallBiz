@@ -1039,3 +1039,46 @@ second edition, because an error there would move a published figure:
 **Milacron** ($1,500,000, FY2016), **Sterigenics US** ($500,000, FY2018) and
 **CBTS Technology Solutions** ($450,023, FY2023). They are listed here rather
 than chased because the signal is mostly noise and the expected yield is low.
+
+---
+
+## The summary panel, and how its numbers are audited
+
+**What it is.** Five clickable figures above the table — dollars sued for,
+bankruptcies, closures, mass layoffs, and money recorded as returned — plus the
+size contrast between the companies JobsOhio sued and the companies that
+failed. Clicking one filters the table.
+
+**The unit, which is the whole audit problem.** Every finding was verified
+against the **company named on Schedule I**, the payee. The table groups by
+**ultimate parent**. Rolling the payees up to parents loses companies that share
+a parent and sweeps in that parent's other payees, which did not fail. At one
+point in the build that turned 29 companies and $86,537,093 into 26 and
+$96,452,820, a $9.9 million overstatement of a verified figure. **The panel
+therefore reads the verified payee files directly and says on its face which
+unit it counts**, and the filtered table carries a line explaining that its row
+count can be lower than the tile's company count.
+
+**`scripts/30_audit_summary.py` recomputes all 28 published figures** from
+`failures.csv`, `jobsohio_lawsuits.csv` and `grants_raw.csv`, independently of
+`09_analyze.py`, and exits non-zero on any mismatch. It should be run before
+every publish. It has already caught two real defects:
+
+1. **`failures.csv` had no join key.** Every join fell back to the company
+   name, and there are two different Speedway LLCs under different EINs
+   (27-1287018, paid $1,700,000 across FY2018-2021, and 31-1551430, paid
+   $300,000 in FY2016). The name join silently picked one of them. A
+   `recipient_id` column was added and every join in the pipeline now uses it.
+2. **The file was stale after FY2025 was merged.** Dana Limited had taken a
+   further $700,000 and Sarepta a further $1,500,000 in FY2025, both in the
+   same fiscal year as their reported failures. The confirmed-failure total is
+   **$88,737,093, not $86,537,093**, and any earlier draft citing the lower
+   figure is out of date.
+
+**The size contrast is stated in bands, not as a median headcount, and that is
+deliberate.** The data holds employee bands (`<100`, `100-499`, `500-4999`,
+`5000+`), not headcounts, so there is no number to take a median of and any
+"median employees" figure would be invented. The bands say it more plainly
+anyway: of the 51 sued companies on the grant schedule, 19 employ fewer than
+100; **of the 29 that failed after being paid, none does.** Median and mean
+*grant* size are exact and are published instead.

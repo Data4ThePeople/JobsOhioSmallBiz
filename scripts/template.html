@@ -73,6 +73,21 @@
   .jo .back .b .v{font-size:25px;font-weight:650;letter-spacing:-.01em;font-variant-numeric:tabular-nums;line-height:1.15}
   .jo .back .b .k{font-size:12.5px;color:var(--ink2);margin-top:2px}
   .jo .back .b .s{font-size:12px;color:var(--muted);margin-top:3px;line-height:1.45}
+  /* the outcome tiles: each is a filter, so it has to look pressable */
+  .jo .outs{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:10px 0 0}
+  @container (min-width: 700px){ .jo .outs{grid-template-columns:repeat(5,1fr)} }
+  .jo .outs button{appearance:none;text-align:left;cursor:pointer;background:var(--page);
+                   border:1px solid var(--border);border-radius:10px;padding:10px 12px;
+                   border-left-width:5px;font:inherit;color:inherit}
+  .jo .outs button:hover{background:var(--hover)}
+  .jo .outs button[aria-pressed="true"]{outline:2px solid var(--focus);outline-offset:1px;background:var(--hover)}
+  .jo .outs .v{font-size:19px;font-weight:650;font-variant-numeric:tabular-nums;line-height:1.2}
+  .jo .outs .k{font-size:12px;color:var(--ink2);margin-top:2px;line-height:1.35}
+  .jo .outs .n{font-size:11.5px;color:var(--muted);margin-top:3px}
+  .jo .filtbar{font-size:12.5px;color:var(--ink2);margin:8px 0 0}
+  .jo .filtbar button{appearance:none;border:1px solid var(--border);background:var(--surface);
+                      color:var(--ink2);border-radius:6px;padding:2px 8px;font:600 12px system-ui,sans-serif;
+                      cursor:pointer;margin-left:6px}
   .jo .tablecard{padding:10px 12px 12px;margin-bottom:12px}
   .jo .tablectl{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin-bottom:8px}
   .jo input[type=search]{font:14px system-ui,sans-serif;padding:7px 10px;border:1px solid var(--border);border-radius:8px;background:var(--page);color:var(--ink);min-width:240px;flex:1}
@@ -156,6 +171,7 @@
     <div class="card chart" id="c-fy"></div>
   </div>
   <div class="card chart" id="c-back"></div>
+  <div class="card chart" id="c-what"></div>
   <div class="card tablecard">
     <div class="tablectl">
       <input type="search" id="q" placeholder="Search a company, city or parent" autocomplete="off" aria-label="Search the table">
@@ -166,6 +182,7 @@
       <span class="count" id="count"></span>
     </div>
     <div class="tablewrap"><table id="tbl"><thead><tr></tr></thead><tbody></tbody></table></div>
+    <p class="filtbar" id="filtbar"></p>
     <div class="more" id="more"></div>
     <div id="tkey"></div>
   </div>
@@ -191,7 +208,7 @@ if (framed) root.classList.add("framed");
 var NS = "http://www.w3.org/2000/svg";
 var BUCKETS = ["<100","100-499","500-4999","5000+"];
 var SMALL_AT = {"100":["<100"], "500":["<100","100-499"], "5000":["<100","100-499","500-4999"]};
-var state = { denom:"business", cutoff:"500", tview:"parents", q:"", sortKey:"cash", sortDir:-1, limit:100 };
+var state = { denom:"business", cutoff:"500", tview:"parents", q:"", outcome:"", sortKey:"cash", sortDir:-1, limit:100 };
 
 function el(tag, attrs, parent, ns){ var n = ns ? document.createElementNS(NS, tag) : document.createElement(tag); for (var k in attrs) n.setAttribute(k, attrs[k]); if (parent) parent.appendChild(n); return n; }
 function txt(tag, cls, s, parent){ var n = el(tag, cls ? {class: cls} : {}, parent); n.textContent = s; return n; }
@@ -375,6 +392,12 @@ function tableRows(){
   var q = state.q.trim().toLowerCase();
   if (state.tview === "parents"){
     var items = pool();
+    /* an outcome tile filters to the parent groups holding the payees it
+       counted, so the row count can be lower than the tile's company count
+       where two failed payees share one parent */
+    if (state.outcome === "sued") items = items.filter(function(p){ return p.sued && p.sued.length; });
+    else if (state.outcome === "returned") items = items.filter(function(p){ return p.returned; });
+    else if (state.outcome) items = items.filter(function(p){ return p.failure && p.failure.category === state.outcome; });
     if (q) items = items.filter(function(p){ return (p.parent + " " + p.hq + " " + p.class + " " + (p.payees||"") + " " + ((p.recourse&&p.recourse.grade)||"") + " " + (p.failure ? p.failure.category + " " + p.failure.event : "") + " " + (p.sued ? "sued " + p.sued.map(function(c){return c.case;}).join(" ") : "")).toLowerCase().indexOf(q) >= 0; });
     return items;
   }
@@ -398,7 +421,18 @@ function renderTable(){
     return v == null ? "" : v;
   }
   var rows = tableRows().slice().sort(function(a,b){ var x = sortVal(a), y = sortVal(b); return (x < y ? -1 : x > y ? 1 : 0) * state.sortDir; });
-  document.getElementById("count").textContent = rows.length.toLocaleString() + (state.tview === "parents" ? " companies" : " payments") + (state.q ? " match" : "");
+  document.getElementById("count").textContent = rows.length.toLocaleString() + (state.tview === "parents" ? " companies" : " payments") + (state.q || state.outcome ? " match" : "");
+  var fb = document.getElementById("filtbar");
+  if (fb){
+    fb.replaceChildren();
+    if (state.outcome && state.tview === "parents"){
+      var o = OUTCOMES.filter(function(x){ return x.key === state.outcome; })[0];
+      fb.appendChild(document.createTextNode("Filtered to companies that " + (o ? o.label : state.outcome)
+        + ". These are parent groups, so the count can be lower than the tile where two payees share a parent."));
+      var b = el("button",{type:"button"},fb); b.textContent = "clear";
+      b.addEventListener("click", function(){ state.outcome=""; state.limit=100; renderWhat(); renderTable(); });
+    }
+  }
   rows.slice(0, state.limit).forEach(function(p){
     var tr = el("tr",{},body);
     if (state.tview === "parents"){
@@ -566,6 +600,69 @@ function renderBack(){
 }
 function pct1(x){ return (100*x).toFixed(1) + "%"; }
 
+/* What happened to the money, as five counts a reader can click.
+   Every figure here comes from data.json's `summary`, which is computed from
+   the files that were actually verified, payee by payee. It is NOT the parent
+   table: rolling a failed payee up to its parent loses companies that share a
+   parent and sweeps in that parent's other payees, which would turn 29
+   companies and $86.5m into 26 and $96.5m. The tiles say which unit they count
+   and the table below is filtered to the parent groups holding those payees,
+   which is why its row count can differ from the tile. */
+var OUTCOMES = [
+  {key:"sued",      label:"sued by JobsOhio to get money back", color:"var(--unk)"},
+  {key:"Bankruptcy or receivership",     label:"went bankrupt or into receivership", color:"var(--large)"},
+  {key:"Funded site closed",             label:"closed the funded Ohio site", color:"var(--large)"},
+  {key:"Mass layoff at the funded site", label:"cut jobs at the funded site", color:"var(--large)"},
+  {key:"returned",  label:"recorded as returned to JobsOhio", color:"var(--small)"}
+];
+function renderWhat(){
+  var host = document.getElementById("c-what");
+  if (!host || !D.summary) return;
+  host.replaceChildren();
+  var S = D.summary;
+  txt("h2","","What happened after the money went out",host);
+  txt("p","note","Counted on the company named on the Form 990, not its parent group, because that is the unit each finding was verified against. Click any of these to filter the table below.",host);
+  var g = el("div",{class:"outs"},host);
+  OUTCOMES.forEach(function(o){
+    var v, k, n;
+    if (o.key === "sued"){
+      v = money(S.sued.sought); k = o.label;
+      n = S.sued.suits + " suits, median " + money(S.sued.median_sought) + " sought";
+    } else if (o.key === "returned"){
+      v = money(S.returned.dollars); k = o.label;
+      n = pct1(S.returned.share_of_paid) + " of everything paid out";
+    } else {
+      var c = S.failures.by_category[o.key] || {companies:0, paid:0};
+      v = money(c.paid); k = o.label;
+      n = c.companies + (c.companies === 1 ? " company" : " companies");
+    }
+    var b = el("button",{type:"button", "aria-pressed": String(state.outcome === o.key)},g);
+    b.style.borderLeftColor = o.color;
+    txt("div","v",v,b); txt("div","k",k,b); txt("div","n",n,b);
+    b.addEventListener("click", function(){
+      state.outcome = (state.outcome === o.key) ? "" : o.key;
+      state.limit = 100; renderWhat(); renderTable();
+      var t = document.getElementById("tbl");
+      if (state.outcome && t) t.scrollIntoView({behavior:"smooth", block:"start"});
+    });
+  });
+  /* the size contrast, which is the takeaway and has to be stated in bands
+     rather than a median headcount: the data holds employee bands, not counts,
+     so there is no number to take a median of. */
+  var sb = S.sued.bands || {}, fb = S.failures.bands || {};
+  function under500(b){ return (b["<100"]||0) + (b["100-499"]||0); }
+  function over500(b){ return (b["500-4999"]||0) + (b["5000+"]||0); }
+  var p2 = el("p",{class:"wc"},host);
+  p2.textContent = "JobsOhio sued " + S.sued.suits + " companies for a median of "
+    + money(S.sued.median_sought) + ". Of the " + S.sued.recipients_matched
+    + " of them on the grant schedule, " + under500(sb) + " employ fewer than 500 people and "
+    + (sb["<100"]||0) + " fewer than 100. Of the " + S.failures.companies
+    + " companies that failed after being paid, " + over500(fb)
+    + " employ 500 or more and none employs fewer than 100. The companies it sued were paid a mean of "
+    + money(S.sued.mean_paid) + "; the companies that failed were paid a mean of "
+    + money(S.failures.mean_paid) + ".";
+}
+
 /* Why the line sits where it does. The SBA's size standards are the legal
    definition of a small business, and there is no single employee number in
    them: 13 CFR 121.201 sets a separate threshold for each of 978 industries,
@@ -582,7 +679,7 @@ function renderSbaNote(){
   }[state.cutoff] || "";
   el2.textContent = txt;
 }
-function renderAll(){ renderSbaNote(); renderTiles(); renderSize(); renderHome(); renderTwo(); renderFY(); renderBack(); state.limit = 100; renderTable(); }
+function renderAll(){ renderSbaNote(); renderWhat(); renderTiles(); renderSize(); renderHome(); renderTwo(); renderFY(); renderBack(); state.limit = 100; renderTable(); }
 seg("denom","denom",renderAll); seg("cutoff","cutoff",renderAll);
 seg("tview","tview",function(){ state.sortKey = state.tview === "parents" ? "cash" : "fy"; state.sortDir = -1; state.limit = 100; renderTable(); });
 document.getElementById("q").addEventListener("input", function(e){ state.q = e.target.value; state.limit = 100; renderTable(); });
