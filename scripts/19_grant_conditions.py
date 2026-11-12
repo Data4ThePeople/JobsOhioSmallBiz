@@ -166,6 +166,9 @@ def main():
         key = normalize_name(g["recipient_name"])
         grade = recourse_for(fams, key in seen_agreement, key in on_services)
         rows.append({
+            # the join key: parent NAMES get rewritten by the ownership pass,
+            # and a name join then silently drops the row
+            "recipient_id": g["recipient_id"],
             "fiscal_year": g["fiscal_year"], "recipient": g["recipient_name"],
             "parent": p.get("parent", ""), "class": p.get("recipient_class") or p.get("recipient_class_auto", ""),
             "cash": g["cash_amt"], "programs": prog, "conditions": call,

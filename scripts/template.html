@@ -363,7 +363,10 @@ var CONF_HELP = {
   C: "Grade C: the company's own website, a trade directory or a news report. Usually right, but self-reported and not audited.",
   D: "Grade D: the owner could not be established. These are swept into the worst case against the finding."
 };
-var LINK_LABEL = {"10-K": "the company's most recent annual report on Form 10-K (SEC)",
+var LINK_LABEL = {"10-K": "the company's latest annual report on Form 10-K (SEC). Some are older filings; the date is shown where the SEC gives one",
+                  "reference page": "a reference page about the company (Wikipedia, ProPublica or a business directory), not its own site",
+                  "SEC search result": "an SEC search page for the company rather than one filing",
+                  "JobsOhio report or bulk data": "JobsOhio's own report, or a government bulk file, where this company appears among many others",
                   "SEC filing": "a filing with the SEC",
                   "press release": "the announcement, from the company or the wire",
                   "news article": "a news report of the project",
@@ -595,7 +598,7 @@ function renderBack(){
   cell(pct1(clauseCash/allCash) + " of dollars", "went to a recipient whose agreement lets JobsOhio demand repayment",
        "Ten of twelve programs publish no repayment language. The clause is in the signed agreement instead, and 56 of those were obtained from court files.", "var(--small)");
   cell(L.parents_sued + " of " + m.parents.toLocaleString(), "recipients have ever been sued by JobsOhio to get money back",
-       L.suits_filed + " suits in the Franklin County Court of Common Pleas since 2018, seeking " + money(L.sought_total) + " in total. 29 of them ended in dismissal with no terms on the record, so what was recovered is not public.", "var(--unk)");
+       L.suits_filed + " suits in the Franklin County Court of Common Pleas since 2018, seeking " + money(L.sought_total) + " in total. About half ended in dismissal with no terms on the record, so what was recovered is not public.", "var(--unk)");
   cell(pct1(back/out), "of what JobsOhio paid out has come back",
        money(back) + " of " + money(out) + " across " + (m.fy_max - m.fy_min + 1) + " years, recorded as negative rows on the same tax returns. Whether each one is a performance clawback or an accounting correction is not stated. One reversal, PTT Global Chemical\u2019s $20 million in FY2021, is more than three quarters of it.", "var(--large)");
   txt("p","wc","JobsOhio decides whether a company complied, whether to demand repayment, how much, and whether to waive it. Its standard agreement says so: \u201cNotwithstanding the terms of this Agreement, Grantor has the discretion to determine compliance.\u201d Where a case was dismissed, no filing states what, if anything, was paid.",host);
@@ -655,7 +658,7 @@ function renderWhat(){
   function under500(b){ return (b["<100"]||0) + (b["100-499"]||0); }
   function over500(b){ return (b["500-4999"]||0) + (b["5000+"]||0); }
   var p2 = el("p",{class:"wc"},host);
-  p2.textContent = "JobsOhio sued " + S.sued.suits + " companies for a median of "
+  p2.textContent = "JobsOhio has filed " + S.sued.suits + " suits for a median of "
     + money(S.sued.median_sought) + ". Of the " + S.sued.recipients_matched
     + " of them on the grant schedule, " + under500(sb) + " employ fewer than 500 people and "
     + (sb["<100"]||0) + " fewer than 100. Of the " + S.failures.companies

@@ -56,9 +56,12 @@ CATEGORY = {
     "Funded site closed": ["NESTLE", "DANA", "ST BERNARD", "P GRAHAM DUNN", "REPUBLIC STEEL", "iMFLUX",
                            "Mohawk", "NEW HORIZONS", "FedEx Supply Chain", "OLIVE AI"],
     "Mass layoff at the funded site": ["ULTIUM", "COVERMYMEDS", "HYLAND", "SAREPTA", "SPEEDWAY",
-                                       "Sauder", "Klarna"],
+                                       "Sauder", "Klarna", "AIR WISCONSIN"],
     "Sold or absorbed": ["FirstMerit", "AK STEEL", "PPG INDUSTRIES"],
-    "Subsidized service ended": ["AVELO", "AIR WISCONSIN"],
+    # Air Wisconsin's $50,000 was a 2018 economic development grant for a
+    # Dayton operation, not an air service grant, and the Ohio evidence is a
+    # 201-person Dayton WARN notice. Only Avelo belongs in the air-service row.
+    "Subsidized service ended": ["AVELO"],
 }
 for r in rows:
     r["category"] = ""

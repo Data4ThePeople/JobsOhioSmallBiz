@@ -104,17 +104,33 @@ def parent_key(p):
     return name if name.lower() not in NO_PARENT else p["name"].strip()
 
 
-def load_side_findings(parents):
+def load_side_findings(parents, moved=None):
     """(recourse, failure, suits) by parent. Every input file is optional."""
     import re
     def key(parent, fallback):
         parent = parent.strip()
         return parent if parent.lower() not in NO_PARENT else fallback.strip()
 
+    def follow(k):
+        """A key the merge may have folded into another."""
+        return (moved or {}).get(k, k)
+
+    def parent_of(rid, fallback_parent, fallback_name):
+        """The parent key for a row, by recipient_id where the file carries one.
+
+        Parent NAMES are rewritten by the ownership pass, so a name join
+        silently drops rows. An audit found 34 companies losing their repayment
+        grade, 2 losing their suit, and 25 losing a resolved link, all to this.
+        """
+        rec = parents.get(rid or "")
+        if rec:
+            return follow(parent_key(rec))
+        return follow(key(fallback_parent, fallback_name))
+
     cond = {}
     if CONDITIONS.exists():
         for r in csv.DictReader(CONDITIONS.open()):
-            k = key(r["parent"], r["recipient"])
+            k = parent_of(r.get("recipient_id"), r["parent"], r["recipient"])
             call = r["recourse"]
             # a parent paid under several programs takes the weakest grade, since
             # the payment cannot be tied to one of them
@@ -141,9 +157,9 @@ def load_side_findings(parents):
             # recipient_id first: two recipients can share a name under
             # different EINs, and a name join silently picks one of them
             rec = parents.get(r.get("recipient_id", ""))
-            k = key(r["parent"], (rec or {}).get("parent", "").strip()
-                    or (rec or {}).get("name", "").strip()
-                    or by_name.get(r["name"].strip()) or r["name"].strip())
+            k = follow(key(r["parent"], (rec or {}).get("parent", "").strip()
+                           or (rec or {}).get("name", "").strip()
+                           or by_name.get(r["name"].strip()) or r["name"].strip()))
             fail[k] = {"category": r["category"], "event": r["event"],
                        "date": r["event_date"], "confidence": r["confidence"],
                        "cite": (r.get("source") or "")[:400],
@@ -279,7 +295,7 @@ def merge_duplicate_names(agg):
     groups = defaultdict(list)
     for k, a in agg.items():
         groups[(merge_key(k), a["bucket"], a["hq"], a["class"])].append(k)
-    merged, notes = {}, []
+    merged, notes, moved = {}, [], {}
     by_norm = defaultdict(set)
     for k in agg:
         by_norm[merge_key(k)].add(k)
@@ -304,6 +320,8 @@ def merge_duplicate_names(agg):
             a["grades"] |= b["grades"]
             a["conflicts"] = a.get("conflicts", set()) | b.get("conflicts", set())
         notes.append(f"{keep}  <=  {', '.join(sorted(k for k in keys if k != keep))}")
+        for k in keys:
+            moved[k] = keep
         merged[keep] = a
     # same company name, different attributes, so not merged: report them
     unmerged = []
@@ -314,7 +332,7 @@ def merge_duplicate_names(agg):
         unmerged.append(" | ".join(
             f"{k} [{merged[k]['bucket'] or '?'}, {merged[k]['hq'] or '?'}, "
             f"{merged[k]['class'] or '?'}, ${merged[k]['cash']:,}]" for k in live))
-    return merged, notes, unmerged
+    return merged, notes, unmerged, moved
 
 
 def size_group(a, cutoff="500"):
@@ -341,7 +359,11 @@ def shares(items, key, weight):
 def main():
     grants, parents = load()
     agg = build_parents(grants, parents)
-    agg, merge_notes, unmerged = merge_duplicate_names(agg)
+    agg, merge_notes, unmerged, moved = merge_duplicate_names(agg)
+
+    def follow(k):
+        """A parent key the merge may have folded into another one."""
+        return moved.get(k, k)
     # A parent whose payments net to zero or less (JobsOhio reversed or clawed
     # back everything) is not counted as a recipient. Its negative dollars
     # stay in the net totals.
@@ -402,14 +424,17 @@ def main():
     out["confidence"] = {"parents": shares(allp, lambda a: a["conf"] or "none", lambda a: 1)[0],
                          "cash": shares(allp, lambda a: a["conf"] or "none", lambda a: a["cash"])[0]}
     out["conflicts"] = sorted(c for a in allp for c in a.get("conflicts", set()))
-    cond, fail, sued, suit_totals = load_side_findings(parents)
+    cond, fail, sued, suit_totals = load_side_findings(parents, moved)
     # one link per company that was fetched and returned 200. A company with no
     # link that resolves is shown unlinked rather than sent somewhere broken.
     links = {}
     if PARENT_LINKS.exists():
         for r in csv.DictReader(PARENT_LINKS.open()):
-            if r.get("url"):
-                links[r["parent"]] = {"url": r["url"], "kind": r["kind"], "as_of": r.get("as_of", "")}
+            if not r.get("url"):
+                continue
+            rec = parents.get(r.get("recipient_id") or "")
+            links[follow(parent_key(rec)) if rec else follow(r["parent"])] = {
+                "url": r["url"], "kind": r["kind"], "as_of": r.get("as_of", "")}
     out["parents_table"] = sorted([{
         "parent": a["parent"], "class": a["class"], "bucket": a["bucket"], "hq": a["hq"], "conf": a["conf"],
         "founded_oh": a["founded_oh"], "cash": a["cash"], "rows": a["rows"], "recipients": len(a["recipients"]),

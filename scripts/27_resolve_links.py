@@ -39,6 +39,19 @@ URL = re.compile(r"https?://[^\s,;'\"|)\]<>]+")
 JUNK_HOST = ("news.google.com", "google.com", "bing.com", "duckduckgo.com",
              "linkedin.com", "facebook.com", "twitter.com", "x.com")
 JUNK_PATH = ("/search?", "/search/", "?q=", "&q=")
+# A reference page is not the company's own site, and a shared report is not a
+# record of this company. An audit found Visa's "company website" was
+# cleveland.com, 89 were Wikipedia, and one JobsOhio PDF was the link for 66
+# different companies. Labelling those honestly is the fix; dropping them is not,
+# because a Wikipedia article is still useful to a reader who is told what it is.
+REFERENCE_HOST = ("wikipedia.org", "propublica.org", "bizapedia.com", "crunchbase.com",
+                  "bloomberg.com/profile", "dnb.com", "zoominfo.com", "opencorporates.com")
+# targets that are about JobsOhio or the data, not about one company
+SHARED_TARGET = ("/newsroom/transparency", "/newsroom/reports-publications",
+                 "/files/reports/", "/files/tax-returns/", "askebsa.dol.gov", "efast.dol.gov",
+                 "dam.assets.ohio.gov/raw/upload")
+# an EDGAR browse or Atom feed is a search result, not a filing
+SEC_SEARCH = ("cgi-bin/browse-edgar", "action=getcompany", "&output=atom", "/cgi-bin/srqsb")
 
 
 def ua_for(url):
@@ -62,8 +75,17 @@ def fetch_status(url, timeout=14):
     return code or "000"
 
 
-def tenk_for(cik):
-    """The URL of the company's most recent 10-K, from the SEC submissions API."""
+def tenk_for(cik, want_name=""):
+    """The most recent 10-K for this CIK, but only if the registrant really is
+    this company.
+
+    EINs on Schedule I are self-reported and sometimes belong to another filer,
+    so the CIK on file can point somewhere else entirely. An audit found
+    Charoen Pokphand Foods linked to LUIGINO'S INC and Berkshire Hathaway to
+    NOVEON INC. A link to the wrong company's annual report is worse than no
+    link, so the registrant name has to share a distinctive word with the
+    company before the filing is accepted.
+    """
     cik = re.sub(r"\D", "", cik or "")
     if not cik:
         return None
@@ -71,9 +93,21 @@ def tenk_for(cik):
                         f"https://data.sec.gov/submissions/CIK{int(cik):010d}.json"],
                        capture_output=True, text=True)
     try:
-        recent = json.loads(p.stdout)["filings"]["recent"]
+        sub = json.loads(p.stdout)
+        recent = sub["filings"]["recent"]
     except Exception:
         return None
+    if want_name:
+        STOP = {"inc", "inc.", "corp", "corp.", "corporation", "company", "co", "co.", "llc",
+                "ltd", "ltd.", "limited", "plc", "group", "holdings", "the", "and", "&",
+                "sa", "ag", "nv", "se", "international", "lp", "l.p.", "p.c."}
+        def words(x):
+            return {w.strip(".,").lower() for w in re.split(r"[\s/,()]+", x)
+                    if w.strip(".,").lower() not in STOP and len(w.strip(".,")) > 2}
+        reg = words(sub.get("name", "")) | {w for n in sub.get("formerNames", [])
+                                            for w in words(n.get("name", ""))}
+        if reg and not (reg & words(want_name)):
+            return None
     for form, acc, doc, date in zip(recent.get("form", []), recent.get("accessionNumber", []),
                                     recent.get("primaryDocument", []), recent.get("filingDate", [])):
         if form == "10-K" and doc:
@@ -91,19 +125,31 @@ def candidates(row):
         host = urlsplit(u).netloc.lower()
         if any(j in host for j in JUNK_HOST) or any(j in u for j in JUNK_PATH):
             continue
-        if "sec.gov" in host and ("10-K" in u or "10k" in u.lower()):
+        low = u.lower()
+        if any(t in low for t in SHARED_TARGET):
+            # a JobsOhio report or a DOL bulk file: true, but not about this
+            # company in particular, so say so rather than calling it news
+            kind = "JobsOhio report or bulk data"
+        elif "sec.gov" in host and any(t in low for t in SEC_SEARCH):
+            kind = "SEC search result"
+        elif "sec.gov" in host and ("10-k" in low or "10k" in low):
             kind = "10-K"
         elif "sec.gov" in host:
             kind = "SEC filing"
-        elif any(k in u.lower() for k in ("press", "news", "newsroom", "/release", "prnewswire",
-                                          "businesswire", "globenewswire")):
+        elif any(t in host or t in low for t in REFERENCE_HOST):
+            kind = "reference page"
+        elif any(k in low for k in ("press", "news", "newsroom", "/release", "prnewswire",
+                                    "businesswire", "globenewswire")):
             kind = "press release"
         elif host.count(".") <= 2 and len(urlsplit(u).path.strip("/")) < 40:
             kind = "company website"
         else:
             kind = "news article"
         out.append((u, kind))
-    rank = {"10-K": 0, "SEC filing": 1, "press release": 2, "news article": 3, "company website": 4}
+    # a record of THIS company beats a generic one, whatever its type
+    rank = {"10-K": 0, "SEC filing": 1, "press release": 2, "news article": 3,
+            "company website": 4, "reference page": 5, "SEC search result": 6,
+            "JobsOhio report or bulk data": 7}
     out.sort(key=lambda x: rank.get(x[1], 9))
     # keep the order stable but drop duplicates
     seen, uniq = set(), []
@@ -116,19 +162,22 @@ def candidates(row):
 def resolve(row):
     name = row["parent"].strip() or row["name"].strip()
     # 1. the 10-K, which is the best thing a reader can be handed
-    tk = tenk_for(row.get("edgar_cik", ""))
+    tk = tenk_for(row.get("edgar_cik", ""), name)
     if tk:
         url, date = tk
         if fetch_status(url) == "200":
-            return {"parent": name, "url": url, "kind": "10-K", "as_of": date,
-                    "status": "200", "note": "most recent 10-K from the SEC submissions API"}
+            return {"recipient_id": row["recipient_id"], "parent": name, "url": url,
+                    "kind": "10-K", "as_of": date, "status": "200",
+                    "note": "most recent 10-K from the SEC submissions API"}
     # 2. then whatever real URL the research already cited
     for url, kind in candidates(row)[:6]:
         code = fetch_status(url)
         if code == "200":
-            return {"parent": name, "url": url, "kind": kind, "as_of": "",
-                    "status": code, "note": "from the research sources, fetched and confirmed"}
-    return {"parent": name, "url": "", "kind": "", "as_of": "", "status": "",
+            return {"recipient_id": row["recipient_id"], "parent": name, "url": url, "kind": kind,
+                    "as_of": "", "status": code,
+                    "note": "from the research sources, fetched and confirmed"}
+    return {"recipient_id": row["recipient_id"], "parent": name, "url": "", "kind": "",
+            "as_of": "", "status": "",
             "note": "no link that resolves; the page shows the name unlinked"}
 
 
@@ -145,27 +194,27 @@ def main(argv):
 
     done = {}
     if OUT.exists():
-        done = {r["parent"]: r for r in csv.DictReader(OUT.open())}
+        done = {r.get("recipient_id") or r["parent"]: r for r in csv.DictReader(OUT.open())}
         if "--only-missing" in argv:
             todo = [r for r in todo
-                    if not done.get(r["parent"].strip() or r["name"].strip(), {}).get("url")]
+                    if not done.get(r["recipient_id"], {}).get("url")]
     todo = todo[:limit]
     print(f"{len(by_parent)} parents, resolving {len(todo)}")
 
     out, t0 = dict(done), time.time()
     with cf.ThreadPoolExecutor(workers) as ex:
         for i, res in enumerate(ex.map(resolve, todo), 1):
-            out[res["parent"]] = res
+            out[res["recipient_id"]] = res
             if i % 100 == 0:
                 hit = sum(1 for v in out.values() if v.get("url"))
                 print(f"  {i}/{len(todo)}  {hit} with a working link  "
                       f"({time.time()-t0:.0f}s)", flush=True)
                 with OUT.open("w", newline="") as fh:
-                    w = csv.DictWriter(fh, fieldnames=["parent", "url", "kind", "as_of", "status", "note"])
+                    w = csv.DictWriter(fh, fieldnames=["recipient_id", "parent", "url", "kind", "as_of", "status", "note"])
                     w.writeheader(); w.writerows(out.values())
 
     with OUT.open("w", newline="") as fh:
-        w = csv.DictWriter(fh, fieldnames=["parent", "url", "kind", "as_of", "status", "note"])
+        w = csv.DictWriter(fh, fieldnames=["recipient_id", "parent", "url", "kind", "as_of", "status", "note"])
         w.writeheader(); w.writerows(out.values())
     from collections import Counter
     kinds = Counter(v["kind"] or "none" for v in out.values())

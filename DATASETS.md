@@ -906,14 +906,42 @@ requires.
 was not written.** The page shows that company's name as plain text instead. A
 dead link sends a reader nowhere and makes them doubt the rest of the row.
 
-**Coverage.** 860 of 1,719 companies, carrying **$1,137,318,627 of
-$1,346,076,114, or 84.5% of the dollars**: 87 to a 10-K, 78 to another SEC
-filing, 221 to a press release, 224 to a news report, 250 to a company site.
+**Coverage.** 881 of 1,701 companies. By kind:
+- 196 to company website
+- 169 to press release
+- 130 to JobsOhio report or bulk data
+- 128 to reference page
+- 87 to SEC filing
+- 86 to news article
+- 74 to 10-K
+- 11 to SEC search result
 
-The 859 unlinked companies carry $208,757,487 and are mostly small Inclusion
-and Small Business Grant recipients whose only public record is JobsOhio's own
-project report and a Form 5500 participant count. Leaving them unlinked is a
-deliberate choice: no link is honest, an invented one is not.
+**The labels were wrong and are now honest.** An independent audit sampled 55
+links: all 55 resolved, but **9 were not a record of the named company at all**
+and the page said they were. One JobsOhio report PDF was the link for 66
+different companies, labelled "news article". 89 Wikipedia pages and 16
+ProPublica pages were labelled "company website", so a reader was told a
+Wikipedia article was Visa's own site. Seven "10-K" links were EDGAR search
+pages, four of them Atom feeds that render as raw XML.
+
+Three label kinds were added rather than dropping those links, because a
+Wikipedia page is still useful to a reader who is told what it is:
+`reference page`, `SEC search result`, and `JobsOhio report or bulk data`.
+
+**Twelve 10-K links pointed at the wrong registrant** and were removed. EINs on
+Schedule I are self-reported and sometimes belong to another filer, so the CIK
+on file can lead somewhere else: Charoen Pokphand Foods linked to LUIGINO'S
+INC, Berkshire Hathaway to NOVEON INC, Baxters Food Group to Wornick Co. The
+resolver now requires the SEC registrant's name to share a distinctive word
+with the company before it accepts the filing. A link to the wrong company's
+annual report is worse than no link.
+
+**A known gap.** The 10-K rule reads the **payee's** EIN-matched CIK, not the
+parent's, so where the parent is a larger registrant than the payee its own
+10-K is never found. McKesson gets no link because the CIK on file is
+"McKesson Financing Trust"; Visa's CIK on file is CardinalCommerce;
+Cleveland-Cliffs' is IronUnits LLC. Closing that needs a parent-name lookup
+against EDGAR and is not done.
 
 **Re-checked independently.** A random 70 of the written links, fetched again
 in a separate pass: **69 returned 200**. The one failure is a local news site

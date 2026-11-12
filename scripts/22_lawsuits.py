@@ -122,6 +122,9 @@ def main():
         p, how = match(name)
         d = read.get(c["case"].replace(" ", "").upper(), {})
         rows.append({
+            # join key, for the same reason as failures.csv and
+            # grant_conditions.csv: parent names get rewritten downstream
+            "recipient_id": (p or {}).get("recipient_id", ""),
             "case": c["case"], "filed": c["filed"], "year": c["filed"][-4:],
             "kind": kind, "status": c["status"], "defendant": name,
             "recipient": p["name"] if p else "", "parent": (p or {}).get("parent", ""),
