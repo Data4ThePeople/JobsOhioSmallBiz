@@ -160,6 +160,25 @@ def load_side_findings(parents):
     return cond, fail, dict(sued)
 
 
+def resolve_class(a, b):
+    """The parent's class when two of its payees disagree.
+
+    `site_development` describes a payee: a single-project LLC built to hold a
+    building. It says nothing about who owns it, so it loses to any other class.
+    Tractor Supply Company pays through NAVARRE FACILITY LLC, and Tractor Supply
+    is a retailer, not a developer. Among the rest the more specific class wins
+    over `business`, which both keeps Nationwide Children's Hospital a hospital
+    rather than a business and is the conservative call for a headline whose
+    denominator is operating businesses.
+    """
+    if a == b:
+        return a
+    pair = {a, b}
+    if "site_development" in pair:
+        return (pair - {"site_development"}).pop()
+    return next((c for c in (a, b) if c != "business"), a)
+
+
 def build_parents(grants, parents):
     """One record per parent with class, bucket, home state, confidence, dollars."""
     agg = {}
@@ -202,7 +221,7 @@ def build_parents(grants, parents):
                     elif field == "hq" and "OH" in (a[field], col):
                         a[field] = "OH"
                     elif field == "class":
-                        a[field] = next((c for c in (a[field], col) if c != "business"), a[field])
+                        a[field] = resolve_class(a[field], col)
             for s in (p["hq_source"], p["emp_source"]):
                 if s:
                     a["sources"].add(s)
