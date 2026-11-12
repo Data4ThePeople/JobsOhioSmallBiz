@@ -36,12 +36,16 @@ PARENTS = ROOT / "data" / "parents.csv"
 CONDITIONS = ROOT / "data" / "grant_conditions.csv"
 FAILURES = ROOT / "data" / "failures.csv"
 LAWSUITS = ROOT / "data" / "jobsohio_lawsuits.csv"
+FAILURE_SOURCES = ROOT / "data" / "failure_sources.csv"
 OUT = ROOT / "dist" / "data.json"
 TIEOUT = ROOT / "TIEOUT.md"
 
 # weakest published terms win when a parent was paid by several programs,
 # because the payment cannot be tied to one of them
-COND_ORDER = {"Conditional": 3, "Partly conditional": 2, "Unknown": 1, "Program unknown": 0}
+# strongest evidence of recourse first; a parent paid under several programs
+# takes the weakest, because the payment cannot be tied to one of them
+RECOURSE_ORDER = {"agreement seen": 6, "standard form": 5, "published clawback": 4,
+                  "loan": 3, "service not cash": 2, "none found": 1, "program unknown": 0}
 
 BUCKETS = ["<100", "100-499", "500-4999", "5000+"]
 CUTOFFS = {"100": ["<100"], "500": ["<100", "100-499"], "5000": ["<100", "100-499", "500-4999"]}
@@ -96,7 +100,8 @@ def parent_key(p):
 
 
 def load_side_findings(parents):
-    """(conditions by parent, failure by parent). Both files are optional."""
+    """(recourse, failure, suits) by parent. Every input file is optional."""
+    import re
     def key(parent, fallback):
         parent = parent.strip()
         return parent if parent.lower() not in NO_PARENT else fallback.strip()
@@ -105,9 +110,21 @@ def load_side_findings(parents):
     if CONDITIONS.exists():
         for r in csv.DictReader(CONDITIONS.open()):
             k = key(r["parent"], r["recipient"])
-            call = r["conditions"]
-            if k and (k not in cond or COND_ORDER.get(call, 0) < COND_ORDER.get(cond[k], 0)):
-                cond[k] = call
+            call = r["recourse"]
+            # a parent paid under several programs takes the weakest grade, since
+            # the payment cannot be tied to one of them
+            if k and (k not in cond or RECOURSE_ORDER.get(call, 0) < RECOURSE_ORDER.get(cond[k]["grade"], 0)):
+                cond[k] = {"grade": call, "note": r["recourse_note"]}
+    # a resolved URL for each confirmed failure, where one was found
+    fail_url = {}
+    if FAILURE_SOURCES.exists():
+        for r in csv.DictReader(FAILURE_SOURCES.open()):
+            if r.get("url"):
+                fail_url[normalize_name(r["name"])] = {
+                    "url": r["url"], "kind": r.get("url_kind", ""),
+                    "title": r.get("title", ""), "publisher": r.get("publisher", ""),
+                    "published": r.get("published", ""),
+                    "paywalled": r.get("paywalled", ""), "verified": r.get("verified", "")}
     fail = {}
     if FAILURES.exists():
         # parents.csv is keyed by recipient, failures.csv by payee name, so the
@@ -118,7 +135,10 @@ def load_side_findings(parents):
                 continue
             k = key(r["parent"], by_name.get(r["name"].strip()) or r["name"].strip())
             fail[k] = {"category": r["category"], "event": r["event"],
-                       "date": r["event_date"], "confidence": r["confidence"]}
+                       "date": r["event_date"], "confidence": r["confidence"],
+                       "cite": (r.get("source") or "")[:400],
+                       "court": r.get("court", ""), "docket": r.get("docket", ""),
+                       "src": fail_url.get(normalize_name(r["name"]))}
     # JobsOhio's own suits against the recipient, keyed the same way. A company
     # can be sued more than once, so they are collected into a list.
     sued = defaultdict(list)
@@ -128,7 +148,14 @@ def load_side_findings(parents):
             if r["kind"] != "suit" or not r["recipient"]:
                 continue
             k = key(r["parent"], by_name.get(r["recipient"].strip()) or r["recipient"].strip())
-            sued[k].append({"case": r["case"], "filed": r["filed"],
+            # the clerk serves a case only behind its disclaimer, so the link
+            # goes to the case search with the case already filled in; a reader
+            # accepts the disclaimer once and lands on the docket
+            m = re.match(r"(\d{2})([A-Z]{2})(\d+)", r["case"].replace(" ", ""))
+            url = ("https://fcdcfcjs.co.franklin.oh.us/CaseInformationOnline/caseSearch"
+                   f"?caseYear={m.group(1)}&caseType={m.group(2)}&caseSeq={m.group(3)}&reallySubmit=true"
+                   ) if m else ""
+            sued[k].append({"case": r["case"], "filed": r["filed"], "url": url,
                             "sought": r["amount_sought"][:120], "outcome": r["outcome"][:120]})
     return cond, fail, dict(sued)
 
@@ -325,16 +352,16 @@ def main():
         "years": sorted(a["years"]), "programs": sorted(a["programs"]), "sources": sorted(a["sources"])[:3],
         "by_fy": {str(k): v for k, v in sorted(a["by_fy"].items())},
         "payees": " | ".join(sorted({parents[r]["name"] for r in a["recipients"]}))[:400],
-        "conditions": cond.get(a["parent"], ""), "failure": fail.get(a["parent"], None),
+        "recourse": cond.get(a["parent"], None), "failure": fail.get(a["parent"], None),
         "sued": sued.get(a["parent"], None),
     } for a in allp], key=lambda d: -d["cash"])
     # dollars by published conditions, and the verified post-grant failures,
     # on the same parent universe the headline uses
     cond_agg = defaultdict(lambda: {"parents": 0, "cash": 0})
     for a in allp:
-        c = cond_agg[cond.get(a["parent"], "Program unknown")]
+        c = cond_agg[(cond.get(a["parent"]) or {}).get("grade", "program unknown")]
         c["parents"] += 1; c["cash"] += a["cash"]
-    out["conditions"] = dict(cond_agg)
+    out["recourse"] = dict(cond_agg)
     # Two dollar figures, and the post must use the payee one. Rolling a failed
     # payee up to its parent sweeps in the parent's other payees, which did not
     # fail: Nestle USA's closed Solon plant took $3.2M, but Nestle S.A. as a

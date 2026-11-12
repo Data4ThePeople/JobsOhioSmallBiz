@@ -602,6 +602,40 @@ the text of its services agreements is not.
   of the 12 published programs, so these cases usually cannot be mapped onto
   the program taxonomy used elsewhere in this project.
 
+**What the page shows, and why it changed.** The table column was originally
+"Conditions" and reported what JobsOhio publishes. That was the wrong question.
+A reader wants to know whether Ohio can get the money back, and the published
+guidelines are nearly silent on it while the signed agreements are not. The
+column is now **"Can Ohio get it back?"**, computed in
+`scripts/19_grant_conditions.py` as a `recourse` grade on the evidence:
+
+| Grade | Means | Paid dollars |
+|---|---|---|
+| `agreement seen` | this recipient's own signed agreement is in a court file and carries Section 9(b)(ii) | 0.9% |
+| `standard form` | paid under a program whose agreements were obtained from court files, all carrying the identical clause | 69.2% |
+| `published clawback` | no agreement obtained, but the program's guidelines publish a repayment trigger | 6.2% |
+| `loan` | repayable as debt, which is not a performance clawback | 1.3% |
+| `service not cash` | a services agreement: JobsOhio paid subcontractors and can bill the service value as liquidated damages | 0.1% |
+| `none found` | nothing published and no agreement ever obtained | 0.9% |
+| `program unknown` | the payment cannot be tied to a program at all | 21.4% |
+
+So recourse is established for **76.4% of paid dollars**, nearly all of it on
+the strength of the form agreement rather than on anything JobsOhio publishes.
+A parent paid under several programs takes the weakest grade of those programs.
+
+`none found` is the finding worth naming: it is almost entirely the Commercial
+Air Service Restoration grants, $10,073,711 including $5,681,149 to British
+Airways. Those guidelines describe a disbursement process and then say nothing
+about what happens if a route ends, and **no airline appears among the 63
+companies JobsOhio has sued**. That contradicts the common assumption, which
+this project also started from, that the airline grants were paid only while
+the route flew.
+
+Reimbursement is deliberately **not** a recourse grade. It is how the money
+goes out: the company spends first and JobsOhio repays documented costs, so a
+company that never spends never collects. That limits what is at risk; it is
+not a way to recover money already paid.
+
 **Effect on `data/program_terms.json`.** The Talent Acquisition entry had
 inferred that because the benefit is delivered as a service, there is "no
 disbursement to reverse." The Olive AI docket disproves that: the company owes
