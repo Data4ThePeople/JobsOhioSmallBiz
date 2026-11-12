@@ -2,16 +2,16 @@
  {
   "recipient_id": "EIN:843338280",
   "name": "TENBY PARTNERS LLC",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none found",
+  "confidence": "C",
+  "hq_source": "https://www.tenbypartners.com/",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "Tenby's own site describes 'over 20 years of experience' in 'industrial real estate development and commercial construction across the Midwest' with no parent or group named. JobsOhio's monthly report for June 2022 names Tenby Partners, LLC directly. At 900,000 dollars this is the largest row in the batch, so it deserves the caveat: a developer LLC's members are not public record and the Ohio Secretary of State search was unreachable, so this is the absence of a parent rather than proof of one. The row is classed as site development and sits outside the business headline either way."
  },
  {
   "recipient_id": "EIN:232790930",
@@ -58,16 +58,16 @@
  {
   "recipient_id": "EIN:311313904",
   "name": "THE CONNOR GROUP A REAL ESTATE INVESTMENT FIRM LLC",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none",
+  "confidence": "C",
+  "hq_source": "https://www.connorgroup.com/",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "The Connor Group's own site says the firm was 'founded in 1992' and 'has grown from $0 to more than $5 billion in assets', operating apartment communities in several metros from its Miamisburg, Ohio base. It is privately held by its partners with no corporate parent. The Form 5500 sponsor matches the payee exactly. The record's Ohio headquarters stands for the FY2024 grant year. This row is classed as site development and sits outside the business headline."
  },
  {
   "recipient_id": "EIN:311815237",
@@ -226,30 +226,30 @@
  {
   "recipient_id": "EIN:340655810",
   "name": "The Gent Machine Company",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none found",
+  "confidence": "C",
+  "hq_source": "https://www.gentmachine.com/",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "Gent Machine's own site claims '97 Years Of Excellence' for the Cleveland screw-machine shop and names no parent or group. The Form 5500 sponsor, GENT MACHINE CO, is the payee's name without 'The' and 'Company', filed under the payee's own EIN, so the difference is cosmetic. The plan had 51 participants in 2019. The record's Ohio headquarters and under-100 band stand for the FY2017 grant year."
  },
  {
   "recipient_id": "EIN:341136697",
   "name": "HILLCREST EGG & CHEESE CO",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none found",
+  "confidence": "C",
+  "hq_source": "https://www.hillcrestfoods.com/",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "The payee trades as Hillcrest Foodservice, a Cleveland food distributor, and its site names no parent or group. The Form 5500 sponsor, HILLCREST EGG AND CHEESE COMPANY, is the payee's own name spelled out, filed under the payee's EIN, so the difference is punctuation. The plan had 115 participants in 2019. The record's Ohio headquarters and 100 to 499 band stand for the FY2019 grant year."
  },
  {
   "recipient_id": "EIN:541163725",
@@ -268,30 +268,30 @@
  {
   "recipient_id": "EIN:753164446",
   "name": "ALLIANCE AUTOMATION INC",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none found",
+  "confidence": "C",
+  "hq_source": "https://www.allianceautomation.com/about-us/",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "Alliance Automation's own about page says the company 'began operations in August 2008' and lists exactly two sites, Van Wert, Ohio and Leon, Guanajuato, Mexico. No parent, group or acquirer is named anywhere on the site, and the Form 5500 sponsor differs from the payee only in the LLC suffix, which JobsOhio's monthly report also uses. The record's Ohio headquarters and 100 to 499 band stand for the FY2024 grant year. This rests on the absence of any parent on the company's own site, so it is a C, not better."
  },
  {
   "recipient_id": "EIN:264715674",
   "name": "EVANSTON INVESTMENTS LLC",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none found",
+  "confidence": "C",
+  "hq_source": "https://www.fleckmfg.com/about",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "The Form 5500 sponsor difference here is the kind the task warned about. FLECK MANUFACTURING files under EIN 26-4715674, the payee's own EIN, so it is the same Lima, Ohio business under its operating name rather than a parent. The plan had 5 participants in 2019 and 6 in 2023, and JobsOhio's monthly reports name Evanston Investments LLC in Allen County for all three grant years, FY2017, FY2021 and FY2024. The company's website is a placeholder with no ownership information, so this is thin: nothing points to an outside owner, but nothing positively proves independence either. The record's Ohio headquarters and under-100 band stand."
  },
  {
   "recipient_id": "EIN:346003691",
@@ -366,44 +366,44 @@
  {
   "recipient_id": "EIN:382858208",
   "name": "Freudenberg NOK General Partnership",
-  "verdict": "unresolved",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
-  "emp_source": "",
-  "notes": "Not yet researched."
+  "verdict": "owned",
+  "parent": "Freudenberg-NOK General Partnership, a 50/50 joint venture of Freudenberg & Co. (Weinheim, Germany) and NOK Corporation (Tokyo, Japan); no single ultimate parent",
+  "parent_hq_state": "MI",
+  "emp_bucket": "5000+",
+  "emp_asof": "2015",
+  "acquired_date": "1989 (the partnership was formed by the two parents)",
+  "confidence": "C",
+  "hq_source": "https://www.sec.gov/Archives/edgar/data/815065/000119312507130018/dpre14a.htm",
+  "emp_source": "https://www.freudenberg.com/company/about-us",
+  "notes": "A STERIS proxy statement filed with the SEC describes the payee as 'Freudenberg-NOK General Partnership, a joint venture between Freudenberg & Co. of Germany and NOK Corp. of Japan', and a Noble International filing places it in Plymouth, Michigan and dates the partnership to 1989. So the payee has had two outside owners since long before the FY2016 grant year ended June 30, 2015, and neither owns it outright. This is the same situation the project already handles for Ultium Cells, so the parent headquarters stays at the joint venture's own Michigan location rather than being assigned to Germany or Japan, and only the size band changes. Freudenberg employs roughly 50,000 people and NOK about 35,000, and the payee's own Form 5500 showed 4,847 participants in 2015, so the combined owners are clearly over 5,000. The sources are SEC filings describing a third party rather than either parent's own report, which is why this is a C. A reader could fairly argue the headquarters should be Germany or Japan, and that would move 250,000 dollars out of Michigan; it would not touch the Ohio column either way."
  },
  {
   "recipient_id": "EIN:475676237",
   "name": "CHAMPLAIN ENTERPRISES LLC",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none; United Airlines held a 40 percent minority stake, not control",
+  "confidence": "A",
+  "hq_source": "https://www.sec.gov/Archives/edgar/data/100517/000010051720000010/ual201910k.htm",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "This is the clearest negative in the batch. United Airlines Holdings' 10-K for the year ended December 31, 2019 states: 'Champlain Enterprises, LLC (\"Champlain\"). United owns a 40% minority ownership stake in Champlain. Champlain does business as CommutAir.' A 40 percent stake is not control, so the payee was not owned by a parent during the FY2020 grant year ended June 30, 2020. CommuteAir's own site confirms it is 'a United Airlines partner' and headquartered in metro Cleveland. The Form 5500 sponsor difference, COMMUTEAIR LLC against CHAMPLAIN ENTERPRISES LLC, is the trade name of the same company and not a parent. The record's Ohio headquarters stands."
  },
  {
   "recipient_id": "EIN:205152109",
   "name": "TOTAL QUALITY LOGISTICS LLC",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none found",
+  "confidence": "C",
+  "hq_source": "https://www.tql.com/about-us",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "Total Quality Logistics' own site presents a Cincinnati-area freight brokerage run by its founder and chief executive Ken Oaks, with no parent, group or acquirer named. The Form 5500 sponsor matches the payee, and the company has no EDGAR registration. The record's Ohio headquarters and 5,000-plus band stand for the FY2022 and FY2024 grant years. This rests on the absence of a parent on the company's own site, so a C."
  },
  {
   "recipient_id": "EIN:363104688",
@@ -576,16 +576,16 @@
  {
   "recipient_id": "EIN:831623694",
   "name": "PIXELLE SPECIALTY SOLUTIONS LLC",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "2018-10-31 (Lindsay Goldberg bought the mill business from Glatfelter)",
+  "confidence": "A",
+  "hq_source": "https://www.sec.gov/Archives/edgar/data/41719/000156459018027083/glt-ex991_109.htm",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "Glatfelter's press release filed with the SEC on November 6, 2018 announces that on October 31, 2018 it closed the sale of its Specialty Papers Business Unit, including the Chillicothe, Ohio mill, 'to Pixelle Specialty Solutions LLC, an affiliate of Lindsay Goldberg'. So during the FY2023 grant year ended June 30, 2023 the payee was a private-equity-owned platform. Under this project's stated convention a private-equity fund is never the parent, so the parent is the Pixelle operating group itself, headquartered in Spring Grove, Pennsylvania, and the record stands. One thing to keep straight: Pixelle and the P.H. Glatfelter row elsewhere in this batch are the same Chillicothe mill under two owners at two different times, and both rows are correct as recorded."
  },
  {
   "recipient_id": "EIN:311269601",
@@ -618,16 +618,16 @@
  {
   "recipient_id": "EIN:311014212",
   "name": "MPW Industrial Services Inc",
-  "verdict": "unresolved",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
-  "emp_source": "",
-  "notes": "Not yet researched."
+  "verdict": "owned",
+  "parent": "MPW Industrial Services Group, Inc.",
+  "parent_hq_state": "OH",
+  "emp_bucket": "500-4999",
+  "emp_asof": "2017",
+  "acquired_date": "none; both entities are part of the same Hebron, Ohio group",
+  "confidence": "B",
+  "hq_source": "https://www.mpwservices.com/about-mpw/",
+  "emp_source": "https://www.mpwservices.com/about-mpw/",
+  "notes": "JobsOhio's own monthly report names the company as MPW Industrial Services Group, Inc., while the payee on the return is MPW Industrial Services, Inc. The Department of Labor file carries both as separate filers at the same Ohio address: EIN 31-1014212 for MPW Industrial Services, Inc. with 1,236 participants in 2015 and EIN 31-1567260 for MPW Industrial Services Group, Inc. with 1,844, so the Group is the holding company above the payee. Both are in Hebron, Ohio, the group is privately held by its founder's family, and the 500 to 4,999 band is unchanged. No dollars move; only the parent name is more precise. The FY2017 grant year ended June 30, 2017 and no acquisition is involved."
  },
  {
   "recipient_id": "EIN:341014060",
@@ -646,30 +646,30 @@
  {
   "recipient_id": "EIN:202122306",
   "name": "GBQ PARTNERS LLC",
-  "verdict": "unresolved",
-  "parent": "",
-  "parent_hq_state": "",
-  "emp_bucket": "",
-  "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
-  "emp_source": "",
-  "notes": "Not yet researched."
+  "verdict": "owned",
+  "parent": "GBQ Holdings, LLC",
+  "parent_hq_state": "OH",
+  "emp_bucket": "100-499",
+  "emp_asof": "2021",
+  "acquired_date": "none; both entities are part of the same Columbus firm",
+  "confidence": "B",
+  "hq_source": "https://gbq.com/",
+  "emp_source": "https://gbq.com/",
+  "notes": "JobsOhio's monthly report for February 2017 names the recipient as GBQ Holdings, LLC, while the payee on the return is GBQ Partners LLC, so the operating partnership sits under a holding company of the same accounting firm. GBQ's own site gives Columbus as its base, lists offices in Columbus, Cincinnati, Toledo and Indianapolis, and reports more than 300 associates, which keeps it in the 100 to 499 band. Both entities are Ohio, so no dollars move. The FY2021 grant year ended June 30, 2021 and no acquisition is involved. Worth noting separately: this is the row the project already identified as wrongly classed as a site developer because 'Partners' is in the name."
  },
  {
   "recipient_id": "EIN:341031008",
   "name": "G&J PEPSI COLA BOTTLERS INC",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
-  "emp_source": "",
-  "notes": "Not yet researched."
+  "acquired_date": "none",
+  "confidence": "C",
+  "hq_source": "https://www.gjpepsi.com/",
+  "emp_source": "https://www.gjpepsi.com/",
+  "notes": "G&J Pepsi's own site states it plainly: 'G&J Pepsi is a family-owned, independent Pepsi bottler that produces, sells, and distributes over 30 beverage brands and 600+ products in Ohio and Kentucky,' with the story starting in 1925. A franchise bottling agreement with PepsiCo is not ownership. The Form 5500 sponsor matches the payee apart from a hyphen, and the plan had 1,654 participants in 2023. The record's Ohio headquarters and 500 to 4,999 band stand for the FY2023 grant year."
  },
  {
   "recipient_id": "EIN:863326996",
@@ -688,16 +688,16 @@
  {
   "recipient_id": "EIN:341165942",
   "name": "AMERICAN COLORS INC",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none",
+  "confidence": "C",
+  "hq_source": "https://www.americancolors.com/history",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "American Colors' own history page says the company 'was established in Sandusky, Ohio in 1975' and describes itself as 'a private company, that measures our success over the long term' answering to 'our employee owners'. Its site gives Sandusky as headquarters, with plants in Gallatin and Lebanon, Tennessee, Bergamo, Italy and Shanghai. No parent is named anywhere on the site and the Form 5500 sponsor matches the payee apart from punctuation. The record's Ohio headquarters stands for the FY2023 grant year. The overseas plants are worth a note, since they sit oddly with the under-100 size band on the record, but that is a size question and not an ownership one."
  },
  {
   "recipient_id": "EIN:943196943",
@@ -730,16 +730,16 @@
  {
   "recipient_id": "EIN:111986323",
   "name": "MARCUM LLP",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none during the grant year; CBIZ completed its purchase of Marcum on November 1, 2024",
+  "confidence": "C",
+  "hq_source": "https://www.marcumllp.com/",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "Marcum LLP was an independent accounting partnership during the FY2020 grant year ended June 30, 2020. CBIZ bought it in a deal that closed November 1, 2024, more than four years later, and marcumllp.com now redirects to cbiz.com, which is how the change shows up. The record's New York headquarters and 500 to 4,999 band stand. The redirect plus general coverage of the deal is the basis here rather than the merger filing, so this is a C."
  },
  {
   "recipient_id": "EIN:341876781",
@@ -758,44 +758,44 @@
  {
   "recipient_id": "EIN:270722424",
   "name": "JOURNEY STEEL INC",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
-  "emp_source": "",
-  "notes": "Not yet researched."
+  "acquired_date": "none",
+  "confidence": "B",
+  "hq_source": "https://www.jobsohio.com/newsroom/ohio-success/journey-steel",
+  "emp_source": "https://www.journeysteel.com/",
+  "notes": "JobsOhio's own success story for this recipient is titled 'Woman-Owned Journey Steel Upgrades to Stay Competitive', and the company's site says 'Founded in 2009, Journey Steel, Inc. is a minority owned/ woman owned Structural and Miscellaneous Steel Fabrication, Erection and UAS Company.' Both point to an owner-operated Cincinnati business with no corporate parent during the FY2021 grant year. The record's Ohio headquarters and under-100 band stand."
  },
  {
   "recipient_id": "EIN:383907747",
   "name": "PARADIGM INDUSTRIAL LLC",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
-  "emp_source": "",
-  "notes": "Not yet researched."
+  "acquired_date": "none",
+  "confidence": "C",
+  "hq_source": "https://www.vulcantoolcompany.com/",
+  "emp_source": "https://paradigmindustrial.com/about-us/",
+  "notes": "The two names here belong to one company, not a parent and a child. Vulcan Tool Company's site is headed 'VULCAN TOOL COMPANY, Precision Machinery & Tooling, BY PARADIGM INDUSTRIAL LLC', and a Paradigm news item from March 2025 says 'Vulcan Tool Company, operating under the legal entity Paradigm Industrial'. So Paradigm Industrial LLC is the legal entity and Vulcan Tool is the brand, both in Dayton, Ohio, with a history the company traces to 1916. No outside owner appears anywhere on either site. The record's Ohio headquarters and under-100 band stand for the FY2022 grant year. Note that a different Vulcan Tool Company, Inc. of Union, New Jersey also uses vulcantool.com and is unrelated."
  },
  {
   "recipient_id": "EIN:341458914",
   "name": "AIRMATE COMPANY",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none found",
+  "confidence": "C",
+  "hq_source": "https://www.airmatecompany.com/",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "Airmate Company, Inc.'s own site describes a CNC machining shop in Bryan, Ohio with no parent, group or affiliate named. The Form 5500 sponsor differs from the payee only by the 'Inc.' suffix, and the plan had 23 participants in 2023, which fits a single small shop. The record's Ohio headquarters and under-100 band stand for the FY2023 grant year. Based on the absence of a parent on the company's own site, so a C."
  },
  {
   "recipient_id": "EIN:813197340",
@@ -814,16 +814,16 @@
  {
   "recipient_id": "EIN:452605974",
   "name": "NATURES BEAUTY TREE SERVICE LLC",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none",
+  "confidence": "C",
+  "hq_source": "https://naturesbeautytreeservice.com/",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "The company's own site describes a Cleveland tree service 'since 2002' that is 'Locally Owned & Operated' and 'a proud minority-owned' business. There is no Form 5500 and no EDGAR record, which is what you would expect for a business this size. The record's Ohio headquarters and under-100 band stand for the FY2024 grant year."
  },
  {
   "recipient_id": "EIN:311044595",
@@ -898,16 +898,16 @@
  {
   "recipient_id": "EIN:341293786",
   "name": "AXIS CORPORATION",
-  "verdict": "unresolved",
+  "verdict": "acquired after the grant",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "announced 2024-06-07",
+  "confidence": "C",
+  "hq_source": "https://www.valenceindustrial.com/blog/increased-investment-in-contract-manufacturing/",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "This one is close and worth reading carefully. Valence Industrial, which Blue Skies Operating Corp. owns, announced the purchase on its blog dated June 7, 2024, describing TruRebel as 'a family-owned and operated company'. An Internet Archive capture of axiscorporation.com from February 28, 2024 still read 'We are Family Owned and Operated Since 1958'. The FY2024 grant year ran July 1, 2023 to June 30, 2024, and the 25,000 dollar Inclusion Grant behind it was awarded in March 2021 when the company was family-owned, so the company was independent for all but the last few weeks of the payment year and the record stands. The conflict to know about: TruRebel's own history page says 'In 2023, Axis Corporation was acquired by Blue Skies Operating Corp.', which does not match the June 2024 announcement or the February 2024 website. I could not resolve the month, so a reader could argue the end of FY2024 was already under Blue Skies. Blue Skies is a small Midwestern group with about 79,000 square feet in Lexington, Kentucky and Sidney, Ohio, so even on that reading nothing material moves."
  },
  {
   "recipient_id": "EIN:475207341",
@@ -954,29 +954,29 @@
  {
   "recipient_id": "EIN:341302396",
   "name": "TIFFIN METAL PRODUCTS CO",
-  "verdict": "unresolved",
+  "verdict": "acquired after the grant",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "2022",
+  "confidence": "C",
+  "hq_source": "https://www.steelesolutions.com/company-history/",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "Steele Solutions of Franksville, Wisconsin says on its own company history page: 'In 2022, Steele Solutions acquired Tiffin Metal Products', and the old tiffinmetal.com address now serves the Steele Solutions site. The grant year is FY2019, the fiscal year ended June 30, 2019, about three years before the deal, so Tiffin Metal Products Co. was independent when the 6,648 dollars was paid and the record stands. The year comes from the acquirer's website rather than a dated release, so this is a C; the gap is wide enough that a few months either way would not change the answer."
  },
  {
   "recipient_id": "EIN:381556263",
   "name": "AJM PACKAGING CLAWBACK",
-  "verdict": "unresolved",
+  "verdict": "independent",
   "parent": "",
   "parent_hq_state": "",
   "emp_bucket": "",
   "emp_asof": "",
-  "acquired_date": "",
-  "confidence": "D",
-  "hq_source": "",
+  "acquired_date": "none",
+  "confidence": "C",
+  "hq_source": "https://ajmpack.com/our-story/",
   "emp_source": "",
-  "notes": "Not yet researched."
+  "notes": "AJM Packaging's own story page traces the company to a Detroit grocery store in 1918 and says 'In 1957, Abram, Jack, and Morris founded AJM Packaging Corporation. Headquartered in a red brick building on Dix Avenue in Detroit, where they still manufacture goods today.' It presents itself as family-held with no outside owner. The Form 5500 sponsor is the payee's name spelled out under the payee's own EIN. This row is a clawback with zero net cash across FY2017 and FY2021, so nothing moves in dollar terms either way. The record's Michigan headquarters stands; the Illinois state code on the return looks like a filing error, since Bloomfield Hills is in Michigan."
  }
 ]

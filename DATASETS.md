@@ -918,3 +918,54 @@ that serves 403 to automated fetches but loads in a browser.
 date nothing. The 10-K is the company's most recent, not the one covering the
 grant year, so it shows the company as it is now rather than when it was paid.
 Both belong in the methodology note.
+
+---
+
+## SBA small-business size standards (13 CFR 121.201)
+
+**What it is.** The legal definition of a small business in the United States:
+a table of every six-digit NAICS industry with the threshold below which a firm
+in that industry counts as small. Pulled by
+`scripts/28_sba_size_standards.py` into `data/sba_size_standards.csv`.
+
+**Where it comes from.** The eCFR renderer,
+`https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-13?part=121&section=121.201`,
+rather than SBA's own PDF, because the eCFR is the authoritative current text
+and is machine readable. SBA's PDF link moves with each revision and was 404 at
+the time of writing.
+
+**The finding that matters: there is no single SBA employee number.**
+
+- 978 industries. **500 of them define small by average annual receipts, not by
+  headcount at all** (soybean farming is $2.25 million of receipts).
+- Of the 478 that do count employees, the threshold runs from **100 to 1,500**.
+- The most used value is 1,000 employees (15.1%), then 750 (13.2%), then 1,250
+  (11.1%). **500 employees is the standard for 47 industries, 9.8% of those
+  that count employees and 4.8% of all industries.**
+- For manufacturing (NAICS 31-33), which is most of what JobsOhio funds, all
+  346 industries use an employee test and the **median threshold is 1,000**.
+  500 covers 12.4% of them.
+
+**What this project does with it, and why.** The cutoff stays at 500 by
+default, and the page now says on its face why. Three reasons:
+
+1. No single number can honestly be labelled "the SBA definition," so
+   presenting one as official would be wrong.
+2. The employee bands in this analysis are `<100`, `100-499`, `500-4999` and
+   `5000+`. **A 1,000-employee line falls inside the 500-4999 band**, which
+   holds 272 companies and $158,310,559, so it cannot be drawn from the data
+   without headcounts finer than the bands, which many C and D graded
+   recipients do not have.
+3. 500 is the conservative choice. Because the SBA's manufacturing median is
+   1,000, a 500 line counts **fewer** companies as small than the SBA would,
+   which understates this project's own small-business share rather than
+   flattering it.
+
+Drawing an SBA-faithful line would mean a per-company NAICS code and an exact
+headcount. JobsOhio's own reports give only coarse sector labels (Advanced
+Manufacturing, Automotive, Logistics and Distribution) for 64% of recipients,
+and those do not map to six-digit NAICS. That is the honest reason it is not
+done, and it belongs in the methodology.
+
+**License and attribution.** Public domain. Cite as "SBA size standards, 13 CFR
+121.201," with the date retrieved.

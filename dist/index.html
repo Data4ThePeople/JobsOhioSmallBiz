@@ -30,6 +30,9 @@
   .jo .sub{color:var(--ink2);font-size:15px;margin:0 0 12px;max-width:82ch}
   .jo .ctl{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;margin:0 0 12px}
   .jo .ctl .lab{font-size:13px;color:var(--ink2);margin-right:6px}
+  /* the cutoff is a choice, and the reader is owed the reason it is set where
+     it is rather than being handed a number that looks official */
+  .jo .sbanote{font-size:12px;color:var(--muted);margin:-4px 0 12px;max-width:100ch;line-height:1.5}
   .jo .seg{display:inline-flex;border:1px solid var(--border);border-radius:8px;overflow:hidden;background:var(--surface);vertical-align:middle}
   .jo .seg button{appearance:none;border:0;border-left:1px solid var(--border);background:transparent;color:var(--ink2);
                   font:600 13px/1 system-ui,-apple-system,"Segoe UI",sans-serif;padding:8px 12px;cursor:pointer}
@@ -142,6 +145,7 @@
         <button type="button" data-v="5000" aria-pressed="false">5,000</button>
       </span> <span class="lab">employees at the parent company</span></span>
   </div>
+  <p class="sbanote" id="sbanote"></p>
   <div class="tiles" id="tiles"></div>
   <div class="grid2">
     <div class="card chart" id="c-size"></div>
@@ -562,7 +566,23 @@ function renderBack(){
 }
 function pct1(x){ return (100*x).toFixed(1) + "%"; }
 
-function renderAll(){ renderTiles(); renderSize(); renderHome(); renderTwo(); renderFY(); renderBack(); state.limit = 100; renderTable(); }
+/* Why the line sits where it does. The SBA's size standards are the legal
+   definition of a small business, and there is no single employee number in
+   them: 13 CFR 121.201 sets a separate threshold for each of 978 industries,
+   500 of which are measured by annual receipts rather than headcount at all.
+   Among the 478 that do count employees the threshold runs from 100 to 1,500.
+   Saying so is better than quietly picking one. */
+function renderSbaNote(){
+  var el2 = document.getElementById("sbanote");
+  if (!el2) return;
+  var txt = {
+    "100": "100 employees is below every SBA size standard, so everything counted as small here is small under the law in any industry. It is the strictest line on offer.",
+    "500": "500 is the familiar shorthand, and it is the conservative choice rather than the official one. The SBA sets a separate threshold for each of 978 industries under 13 CFR 121.201: 500 of them are measured by annual receipts rather than headcount at all, and among the 478 that count employees the line runs from 100 to 1,500. Only 47 industries use exactly 500. For manufacturing, which is most of what JobsOhio funds, the median SBA threshold is 1,000 employees, so this setting counts fewer companies as small than the SBA would.",
+    "5000": "5,000 is well above every SBA size standard, the highest of which is 1,500 employees. At this setting \u201csmall\u201d means mid-sized, not small in law."
+  }[state.cutoff] || "";
+  el2.textContent = txt;
+}
+function renderAll(){ renderSbaNote(); renderTiles(); renderSize(); renderHome(); renderTwo(); renderFY(); renderBack(); state.limit = 100; renderTable(); }
 seg("denom","denom",renderAll); seg("cutoff","cutoff",renderAll);
 seg("tview","tview",function(){ state.sortKey = state.tview === "parents" ? "cash" : "fy"; state.sortDir = -1; state.limit = 100; renderTable(); });
 document.getElementById("q").addEventListener("input", function(e){ state.q = e.target.value; state.limit = 100; renderTable(); });

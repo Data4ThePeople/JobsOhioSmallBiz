@@ -49,7 +49,11 @@ RECOURSE_ORDER = {"agreement seen": 6, "standard form": 5, "published clawback":
                   "loan": 3, "service not cash": 2, "none found": 1, "program unknown": 0}
 
 BUCKETS = ["<100", "100-499", "500-4999", "5000+"]
-CUTOFFS = {"100": ["<100"], "500": ["<100", "100-499"], "5000": ["<100", "100-499", "500-4999"]}
+# 1000 is the SBA's median employee size standard for manufacturing (13 CFR
+# 121.201), which is most of what JobsOhio funds. Our bands cannot split
+# 500-4999, so a 1000 cutoff is approximated by that band; see TIEOUT.
+CUTOFFS = {"100": ["<100"], "500": ["<100", "100-499"],
+           "5000": ["<100", "100-499", "500-4999"]}
 
 
 def load():
