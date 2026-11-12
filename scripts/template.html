@@ -313,20 +313,25 @@ function renderFY(){
 function niceStep(max){ var raw = max/4, p = Math.pow(10, Math.floor(Math.log10(raw))), n = raw/p; return (n < 1.5 ? 1 : n < 3.5 ? 2 : n < 7.5 ? 5 : 10) * p; }
 
 /* ---- table ---- */
-var PCOLS = [["parent","Parent company",false],["class","Type",false],["bucket","Employees",false],["hq","HQ",false],["conf","Evidence",false],["cash","Paid",true],["years","Years",false],["conditions","Conditions",false],["failure","After the grant",false],["sued","Sued",false]];
+var PCOLS = [["parent","Parent company",false],["class","Type",false],["bucket","Employees",false],["hq","HQ",false],["conf","Evidence",false],["cash","Paid",true],["years","Years",false],["conditions","Published terms",false],["failure","After the grant",false],["sued","Sued",false]];
 var RCOLS = [["fy","FY",true],["recipient","Payee on the 990",false],["city","City",false],["state","St",false],["parent","Parent company",false],["cash","Paid",true]];
 var CLASS_LABEL = {business:"Business", site_development:"Site developer", government:"Government", university:"University", hospital:"Hospital", nonprofit:"Nonprofit"};
-var COND_LABEL = {"Conditional":"clawback", "Partly conditional":"reimbursement", "Unknown":"none published", "Program unknown":"program unknown"};
+/* This column is about DISCLOSURE, not protection, and the labels have to say
+   so. Every JobsOhio grant agreement read out of a court file carries a
+   repayment clause; the guidelines mostly do not mention it. A label like
+   "reimbursement" read as "weaker than clawback" would mislead. */
+var COND_LABEL = {"Conditional":"repayment published", "Partly conditional":"no repayment published",
+                  "Unknown":"nothing published", "Program unknown":"program unknown"};
 /* the full category is long; the short label goes in the cell and the whole
    thing, with the date and how firmly it is established, sits on hover */
 var FAIL_LABEL = {"Bankruptcy or receivership":"bankruptcy", "Funded site closed":"site closed",
                   "Mass layoff at the funded site":"mass layoff", "Sold or absorbed":"sold",
                   "Subsidized service ended":"service ended"};
 var COND_HELP = {
-  "Conditional":"The program guidelines publish a written clawback or repayment trigger.",
-  "Partly conditional":"The guidelines require reimbursement of documented costs or state job metrics, but publish no repayment remedy.",
-  "Unknown":"The program publishes no payment terms and no repayment terms either way.",
-  "Program unknown":"This payment could not be tied to a named program in JobsOhio's own monthly project reports."
+  "Conditional":"The published program guidelines contain a written clawback or repayment trigger.",
+  "Partly conditional":"The published guidelines require reimbursement of documented costs, or state job metrics, but say nothing about getting the money back. The signed agreement does: every JobsOhio grant agreement obtained from a court file contains a repayment clause.",
+  "Unknown":"The published guidelines say nothing about how the grant is paid or about repayment, either way.",
+  "Program unknown":"This payment could not be tied to a named program in JobsOhio's own monthly project reports, so there are no published terms to read."
 };
 function tableRows(){
   var q = state.q.trim().toLowerCase();
@@ -403,7 +408,7 @@ document.getElementById("src").textContent =
   "Source: JobsOhio Form 990, Schedule I, fiscal years " + m.fy_min + " to " + m.fy_max + " (IRS e-file data). Schedule I lists grants over $5,000 on a cash basis, so the dollars are what was paid in each year, not what was committed. " +
   "Each payee was traced to its ultimate parent at the time of the grant using SEC filings, Form 5500 plan data, JobsOhio and regional partner releases, and company sources; the evidence grade shows which. " +
   "Universities, hospitals, governments, nonprofits and site developers are shown separately from operating businesses. " +
-  "“Conditions” reads the guidelines JobsOhio publishes for the program that paid each company: “clawback” where a written repayment trigger is published, “reimbursement” where the grant repays documented costs or states job metrics but publishes no remedy, “none published” where the program publishes neither, and “program unknown” where the payment matches no entry in JobsOhio's own monthly project reports. Individual grant agreements are not public, so these are the disclosed terms, not necessarily the terms in force. " +
+  "“Published terms” is what JobsOhio discloses for the program that paid each company, and only that. It is not a measure of whether Ohio can recover the money. Two of twelve programs publish a repayment trigger; the rest publish none. But every one of the 56 signed JobsOhio grant agreements obtained from Franklin County court files contains the same clause, Section 9(b)(ii), “Demand Repayment of Grant Funds”: “Grantor may demand repayment of all or a portion of Grant Funds disbursed.” So the repayment right is there whatever the guidelines say. “No repayment published” means the guidelines require reimbursement of documented costs or state job targets and then go silent on getting the money back; reimbursement is how the money goes out, not a way to get it back. " +
   "“After the grant” shows a verified bankruptcy, closure, mass layoff, sale or ended service at the funded operation, found by scanning every recipient for distress headlines and then checking each one against court dockets, SEC filings and local news. It is a floor, not a count: a failure without news coverage is not in it. Hover a label for the date and how firmly it is established. " +
   "\u201CSued by JobsOhio\u201D is JobsOhio's own lawsuit against that company in the Franklin County Court of Common Pleas, where it is headquartered, to get grant money back under the repayment clause its published guidelines do not mention. Hover for the case number, what was sought and how it ended. Suits filed in another county, in federal court or in another state would not appear, so this is a floor. " +
   "Free to use. Built by Data 4 The People, " + m.built + ".";
