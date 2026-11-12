@@ -812,3 +812,61 @@ than one agreement. Section 9(a)(v) makes it a Breach if "Grantees are in
 default of **any other agreement between Grantor and either Grantee**." So a
 Schedule I row for a company can span a grant, a services agreement and a loan,
 and a lawsuit covers one of them.
+
+---
+
+## JobsOhio Form 990 FY2025, from the filer's own PDF (JobsOhio)
+
+**What it is.** Schedule I Part II for the year ending June 30, 2025: 377 rows,
+$173,433,961 in cash grants. The same schedule as every other year, but read
+from a PDF rather than e-file XML.
+
+**Why a PDF.** The FY2025 return is in no machine-readable source. The
+GivingTuesday data lake returns 404, the IRS S3 bucket (`irs-form-990`) returns
+404, and ProPublica's API lists no filing for period 202506 at all. JobsOhio
+posts its own return at
+`https://www.jobsohio.com/files/tax-returns/b200_jobsohio_990_fed_pdc_ty24.pdf`
+("ty24" is tax year 2024, which is the year beginning July 2024, which is this
+project's FY2025). 84 pages, prepared by Deloitte Tax LLP.
+
+**How it is read.** `scripts/23_parse_sched_i_pdf.py`, by word position rather
+than text order. This matters: the first Schedule I page lays its columns out
+in a different reading order from the 42 continuation pages, so
+`extract_text()` returns six names, then six EINs, then six amounts, and
+pairing those by order would be a guess. The geometry is identical on every
+page and is not. Each recipient is one horizontal band holding the city, state
+and ZIP at x<200, the EIN at x≈213, the cash at x≈370, the non-cash at x≈468
+and the purpose at x≈637, with the name and street on the bands above.
+
+**How it is checked.** The parse must equal the filer's own recipient count on
+Schedule I Part I lines 2 and 3. It does: 13 + 364 = 377. **This is the only
+year where that reconciles.** FY2023 (386 against 315 rows) and FY2024 (362
+against 312) do not, as recorded above. The script exits rather than write a
+file that does not foot, and also fails on any row with no recipient name.
+
+**Coverage and limits.**
+
+- A PDF read is a weaker source than XML and the post should say which years
+  came from which. Nothing else in the pipeline treats FY2025 differently.
+- The PDF carries no IRS object ID, so the `object_id` column is empty for
+  these rows and the filing cannot be pinned the way the other eleven are. If
+  the XML appears later, re-run `23_parse_sched_i_pdf.py` against it and the
+  row counts should match exactly.
+- Merged by `scripts/26_add_fy2025.py`, which replaces rather than appends the
+  year's rows, validates every classification value the analysis reads, and
+  refuses to write while any FY2025 recipient is still unresearched.
+
+**The 274 new recipients** were classified by the same method and prompt as the
+original 1,452 (`docs/RESEARCH_PROMPT.md`), in seven batches in
+`data/research2025/`, with the site-developer test from the re-check applied
+from the start.
+
+**One known conflict this year creates.** Avery Dennison appears twice under
+different EINs: Avery Dennison Retail Information Services (26-3306955, FY2022,
+headquarters coded CA) and Avery Dennison Corporation (95-1492269, FY2025,
+coded OH). Both are right at their own time, because the company moved its
+headquarters from Glendale, California to Mentor, Ohio. They resolve to one
+parent, so the home-state conflict rule fires and takes Ohio, which is the
+conservative call against the finding that most dollars leave the state. The
+conflict is printed in `TIEOUT.md` rather than hidden. $300,000 and $250,000
+are the amounts involved.
