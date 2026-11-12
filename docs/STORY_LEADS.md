@@ -1084,3 +1084,73 @@ the program in the complaint, and it does not publish the agreements.
 - Whether the air service agreements carry Section 9(b)(ii) at all. No airline
   is among the 63 defendants and the program publishes nothing, so the
   generalization in lead 9 stops at the edge of that $10.07 million.
+
+---
+
+## 12. JobsOhio sues the small ones. It did not sue the $50 million one.
+
+This came out of a question Eric asked: why were so many of the companies that
+laid people off never sued? There is a clause for that, and there is also a
+pattern the clause does not explain.
+
+**The clause.** Section 5(c) of the standard grant agreement:
+
+> Grantor has the discretion to waive non-compliance if, in writing, Grantee
+> submits ... a description of **Market Conditions and Other Factors** ... and
+> **may waive repayment of all or a portion of the Grant Funds disbursed.**
+
+It is one of two sentences JobsOhio's own complaints quote around, cutting them
+with "***". We only have it because the signed agreement is attached as an
+exhibit in 56 of the 63 cases. We have also seen it used: the Treves demand
+letter explains its reduced figure as taking into account jobs, payroll, fixed
+assets "as well as the Market Conditions and Other Factors provided by Grantee
+to JobsOhio." Nothing published says how any of that is weighed, who has asked
+for a waiver, or who has been granted one.
+
+**The pattern.** Of the 29 verified post-grant failures carrying $86,537,093,
+JobsOhio sued **two**, carrying $1,060,770. **$85,476,323 went to companies
+that failed and were never sued.**
+
+| What happened | Companies | Paid | Sued |
+|---|---|---|---|
+| Mass layoff at the funded site | 7 | $63,486,323 | **0** |
+| Bankruptcy or receivership | 7 | $12,350,000 | **0** |
+| Funded site closed | 10 | $9,650,770 | 2 |
+| Sold or absorbed | 3 | $800,000 | 0 |
+| Subsidized service ended | 2 | $250,000 | 0 |
+
+Now set that beside who it does sue:
+
+| | Median | Size of the company |
+|---|---|---|
+| The 63 it sued | $125,000 sought, smallest $16,724 | 30 of 46 under 500 employees |
+| The 27 that failed, unsued | $500,000 paid, largest $50,000,000 | 22 of 27 over 500 employees |
+
+JobsOhio sued a company for **$16,724**. It sued three companies whose only
+hard-pleaded breach was a missing annual report, with the jobs shortfall
+alleged "based upon information and belief." It sued one fourteen months before
+that company's metric evaluation date had even arrived. It did not sue Ultium
+Cells, which took **$50,000,000** and cut 1,300 jobs at Lordstown.
+
+**Three explanations, and the record cannot separate them.** The post has to
+put all three and claim none.
+
+1. *The waiver.* Market Conditions and Other Factors, applied privately, with
+   no published record of who asked or who was granted.
+2. *Timing.* The obligation runs only to a Metric Expiration Date. Ultium's
+   grants are FY2022 and FY2023; if its window closed before January 2026 there
+   may be nothing left to enforce. Petmin's Chapter 7 is four to five years
+   after its grants.
+3. *Collectability.* Suing a bankrupt company buys a place in the creditor
+   line. Suing a solvent small firm that never appears buys a default judgment
+   and a garnishment, and 22 of the 63 suits ended in exactly that.
+
+**Ask JobsOhio, in these words:** of the 29, which were reviewed for
+compliance, which were waived, and on what grounds? How many waiver requests
+have been made under Section 5(c), and how many granted? What decides whether a
+missed metric becomes a demand letter?
+
+**What not to say.** Do not write that JobsOhio goes easy on big companies. The
+data shows which companies were sued and which were not; it does not show the
+reason, and two of the three explanations above are ordinary and defensible.
+The finding is the pattern plus the absence of any public rule governing it.

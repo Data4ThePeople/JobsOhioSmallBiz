@@ -13,6 +13,58 @@
     "notes": "JobsOhio's own release says Sheetz, Inc. was founded in Altoona, Pennsylvania in 1952, is still family-owned and headquartered there, and employs more than 25,000 people. The payee Sheetz Distribution Services, LLC is Sheetz's own subsidiary building a user-owned distribution and food-prep facility in Findlay (Hancock County, 750 jobs, $150 million investment), so the recipient is an operating convenience-store company, not a developer."
   },
   {
+    "recipient_id": "EIN:932949590",
+    "recipient_class": "site_development",
+    "parent": "Cincinnati Center City Development Corporation (3CDC)",
+    "parent_hq_state": "OH",
+    "hq_source": "https://www.3cdc.org/project/101-w-5th/",
+    "emp_bucket": "100-499",
+    "emp_source": "https://projects.propublica.org/nonprofits/organizations/200446324",
+    "emp_asof": "2025",
+    "confidence": "D",
+    "founded_in_ohio": "yes",
+    "notes": "101 West Fifth LLC is the project vehicle for converting the former Saks Fifth Avenue store at 101 W Fifth Street into Paycor's headquarters; 3CDC lists that building as one of its own completed projects and the 990 pays the LLC at 1203 Walnut Street, 3CDC's Cincinnati office. JobsOhio's May 2025 report shows a $3.5 million Spec Development Loan (OSIP) against a $20.1 million investment. 3CDC is a nonprofit downtown development corporation with $69 million of 2023 revenue; no staff count appears in its Form 990 data, so the employee bucket is unconfirmed."
+  },
+  {
+    "recipient_id": "EIN:990790303",
+    "recipient_class": "site_development",
+    "parent": "unresolved (speculative flex-industrial project LLC)",
+    "parent_hq_state": "OH",
+    "hq_source": "JobsOhio monthly executed grants and loans reports (https://www.jobsohio.com/newsroom/reports-publications), as parsed in data/commitments_norm.csv; https://www.jobsohio.com/incentives-programs/ohio-site-inventory-program",
+    "emp_bucket": "<100",
+    "emp_source": "JobsOhio monthly executed grants and loans reports (https://www.jobsohio.com/newsroom/reports-publications), as parsed in data/commitments_norm.csv",
+    "emp_asof": "2025",
+    "confidence": "D",
+    "founded_in_ohio": "unknown",
+    "notes": "JobsOhio's July 2024 report shows Grove City Flex, LLC in Franklin County with a $1,000,000 Spec Development Grant (OSIP) against a $16.55 million investment and jobs listed as TBD, the signature of a speculative building with no identified end user, so the row is site_development. The developer behind the LLC was not identified: the 990 address is 8400 Industrial Parkway, Plain City, and Google News, the JobsOhio newsroom and the Ohio Secretary of State business search (blocked to this session) produced nothing."
+  },
+  {
+    "recipient_id": "EIN:852487571",
+    "recipient_class": "site_development",
+    "parent": "COhatch",
+    "parent_hq_state": "OH",
+    "hq_source": "https://www.jobsohio.com/newsroom/news-press/cohatch-revitalizing-historic-cincinnati-area-building-with-support-of-jobsohio-grant",
+    "emp_bucket": "100-499",
+    "emp_source": "https://www.cohatch.com/about",
+    "emp_asof": "2025",
+    "confidence": "C",
+    "founded_in_ohio": "yes",
+    "notes": "CRDV Hamilton LLC is the vehicle for renovating the historic Second National Bank building in Hamilton: JobsOhio's release names COhatch, the Ohio-based shared-workspace company, as 'the anchor tenant and lead developer', and JobsOhio's October 2023 report shows 'Hamilton CoHatch - Vibrant Community' in Butler County with an $800,000 Vibrant Community Grant, of which this $640,000 is 80 percent. COhatch's business is leasing workspace to others, so the row is site_development. No employee count for COhatch was found; the bucket is inferred from its locations in ten metro areas and is unconfirmed."
+  },
+  {
+    "recipient_id": "EIN:923490722",
+    "recipient_class": "site_development",
+    "parent": "DuMont Revitalization, LLC (principals of Technicon Design Group)",
+    "parent_hq_state": "OH",
+    "hq_source": "https://www.jobsohio.com/newsroom/news-press/ottawa-announces-plans-to-revitalize-downtown-main-street",
+    "emp_bucket": "<100",
+    "emp_source": "https://www.jobsohio.com/newsroom/news-press/ottawa-announces-plans-to-revitalize-downtown-main-street",
+    "emp_asof": "2025",
+    "confidence": "B",
+    "founded_in_ohio": "yes",
+    "notes": "JobsOhio's release on Ottawa's Main Street Corridor Project names DuMont Revitalization, LLC as the new owner of the 1900 DuMont building at 202 West Main Street, restoring it for dining, event and office space with a JobsOhio Vibrant Community Grant; the owner quoted is Gillian Stechschulte, a principal of the local Technicon Design Group, which will take office space in the building. A single-building redevelopment vehicle in a village of about 4,000 people, so under 100 employees."
+  },
+  {
     "recipient_id": "EIN:465088386",
     "recipient_class": "business",
     "parent": "EASE Logistics Services LLC",
@@ -65,6 +117,32 @@
     "notes": "Protiviti is the consulting subsidiary of Robert Half Inc., whose FY2024 10-K reports approximately 14,700 full-time internal staff and headquarters operations in Menlo Park and San Ramon, California (Protiviti's own administrative support is run from those two offices). The JobsOhio grants back a Hamilton County office with 450 committed jobs."
   },
   {
+    "recipient_id": "EIN:873127118",
+    "recipient_class": "business",
+    "parent": "Starr's Auto Body, LLC",
+    "parent_hq_state": "OH",
+    "hq_source": "JobsOhio monthly executed grants and loans reports (https://www.jobsohio.com/newsroom/reports-publications), as parsed in data/commitments_norm.csv",
+    "emp_bucket": "100-499",
+    "emp_source": "JobsOhio monthly executed grants and loans reports (https://www.jobsohio.com/newsroom/reports-publications), as parsed in data/commitments_norm.csv",
+    "emp_asof": "2025",
+    "confidence": "D",
+    "founded_in_ohio": "unknown",
+    "notes": "JobsOhio's March 2023 report shows Starr's Auto Body, LLC in Ross County, automotive, with a $200,000 Economic Development Grant, 150 jobs created, none retained and a $2.2 million investment, matching this $200,000 payment; the 990 address is McArthur in Vinton County. A collision-repair business building its own new shop, so business. The only size figure in any source is the 150 committed jobs, so the bucket is a floor-based guess."
+  },
+  {
+    "recipient_id": "EIN:455279033",
+    "recipient_class": "site_development",
+    "parent": "unresolved (Argos Capital property LLC)",
+    "parent_hq_state": "OH",
+    "hq_source": "data/grants_fy2025.csv (990 Schedule I address 1335 S Chillicothe Rd, Aurora, OH); JobsOhio monthly executed grants and loans reports (https://www.jobsohio.com/newsroom/reports-publications), as parsed in data/commitments_norm.csv",
+    "emp_bucket": "<100",
+    "emp_source": "JobsOhio monthly executed grants and loans reports (https://www.jobsohio.com/newsroom/reports-publications), as parsed in data/commitments_norm.csv",
+    "emp_asof": "2025",
+    "confidence": "D",
+    "founded_in_ohio": "unknown",
+    "notes": "The name follows the one-LLC-per-address pattern of a real-estate holding entity ('30701' reads as a street number) and the 990 pays it at 1335 S Chillicothe Rd, Aurora, so the row is coded site_development. No owner was identified: Google News returned nothing, the Ohio Secretary of State search and Bizapedia are blocked to this session, and there is no matching row in JobsOhio's executed grants reports. The $150,000 does match, unconfirmed, the April 2024 $150,000 Revitalization Grant to Mytee, Inc. in Cuyahoga County, which would make this the owner of the building behind that project."
+  },
+  {
     "recipient_id": "EIN:943371272",
     "recipient_class": "business",
     "parent": "Welspun India Ltd. (Welspun Living)",
@@ -91,6 +169,19 @@
     "notes": "JobsOhio's release says Plaskolite is headquartered in Columbus, Ohio with over 2,000 employees at 18 locations worldwide; the company's own site says it was founded in Columbus in 1950 by Donald Dunn (https://www.plaskolite.com/about). Privately held and private-equity-backed since at least 2015 (Plastics News, 'Private equity firm buys stake in Ohio-based Plaskolite'); the current owner was not confirmed, so the parent is left as the operating company."
   },
   {
+    "recipient_id": "EIN:341627300",
+    "recipient_class": "business",
+    "parent": "Edge Plastics, Inc.",
+    "parent_hq_state": "OH",
+    "hq_source": "https://www.jobsohio.com/newsroom/news-press/edge-plastics-reinvests-in-ohio-manufacturing-capacity",
+    "emp_bucket": "100-499",
+    "emp_source": "JobsOhio monthly executed grants and loans reports (https://www.jobsohio.com/newsroom/reports-publications), as parsed in data/commitments_norm.csv",
+    "emp_asof": "2025",
+    "confidence": "C",
+    "founded_in_ohio": "yes",
+    "notes": "JobsOhio's release describes Edge Plastics Inc. of Mansfield as a certified woman-owned injection molder, and the company's own site says it was founded in 1975 as D&M Plastics by Marilyn and David Eckstein (edgeplasticsinc.com). JobsOhio's June 2021 report shows 85 jobs retained and 67 committed on a $13.1 million investment, which puts the company just over 100 by the FY2025 grant year; no published employee count was found, so the bucket rests on those two figures."
+  },
+  {
     "recipient_id": "EIN:341693084",
     "recipient_class": "business",
     "parent": "ADENTRA Inc.",
@@ -102,5 +193,96 @@
     "confidence": "C",
     "founded_in_ohio": "no",
     "notes": "Novo Manufacturing LLC shares Novo Building Products' Zeeland, Michigan address, and novobp.com brands itself 'An ADENTRA Company'; Hardwoods Distribution Inc. (renamed ADENTRA in December 2022) completed the purchase of Novo Building Products from Blue Wolf Capital in August 2021, before this grant. ADENTRA's careers page says it has approximately 3,000 employees across 81 North American centers and a corporate office in Langley, British Columbia. The Ohio project is in Harrison County, where Novo owns the former L.J. Smith stair-parts plant in Bowerston (14 jobs created, 61 retained)."
+  },
+  {
+    "recipient_id": "EIN:850945745",
+    "recipient_class": "site_development",
+    "parent": "Black Diamond Development LLC",
+    "parent_hq_state": "OH",
+    "hq_source": "https://news.google.com/rss/search?q=%22Black+Diamond+Development%22+Ohio+Perry+County",
+    "emp_bucket": "<100",
+    "emp_source": "https://news.google.com/rss/search?q=%22Black+Diamond+Development%22+Ohio+Perry+County",
+    "emp_asof": "2025",
+    "confidence": "C",
+    "founded_in_ohio": "unknown",
+    "notes": "Zanesville Times Recorder, Columbus Dispatch and Perry County Tribune headlines describe Black Diamond Development as a private developer buying and restoring buildings and renting lots in the village of Shawnee in Perry County, matching JobsOhio's February 2024 record of a $400,000 Vibrant Community Grant to Black Diamond Development LLC in Perry County with jobs listed as TBD. A small local development firm, so under 100 employees; the owners' names were not confirmed."
+  },
+  {
+    "recipient_id": "EIN:873308158",
+    "recipient_class": "business",
+    "parent": "Doc's Diesel, LLC",
+    "parent_hq_state": "OH",
+    "hq_source": "https://docsdiesel.com/pages/about-us",
+    "emp_bucket": "<100",
+    "emp_source": "JobsOhio monthly executed grants and loans reports (https://www.jobsohio.com/newsroom/reports-publications), as parsed in data/commitments_norm.csv",
+    "emp_asof": "2024",
+    "confidence": "B",
+    "founded_in_ohio": "yes",
+    "notes": "Nihart Real Estate LLC is the Nihart family's property entity in Bryan; Doc's Diesel, LLC, the diesel-parts company at 701 Brunicardi Way in Bryan, was founded by Max Nihart (docsdiesel.com), and JobsOhio's July 2024 report shows Doc's Diesel, LLC in Williams County with a $75,000 Economic Development Grant, 39 jobs created, 10 retained and a $4.075 million investment, matching this $75,000 exactly. The money built Doc's Diesel's own facility, so the class is business, not site_development."
+  },
+  {
+    "recipient_id": "EIN:461254074",
+    "recipient_class": "site_development",
+    "parent": "unresolved (Lima downtown redevelopment project)",
+    "parent_hq_state": "OH",
+    "hq_source": "https://news.google.com/rss/search?q=%22Spring+%26+Main%22+Lima+Ohio+building",
+    "emp_bucket": "<100",
+    "emp_source": "https://news.google.com/rss/search?q=%22Spring+%26+Main%22+Lima+Ohio+building",
+    "emp_asof": "2025",
+    "confidence": "D",
+    "founded_in_ohio": "unknown",
+    "notes": "LimaOhio.com headlines ('Spring & Main building unveiled to Lima community', June 2024) describe Spring & Main as a building in downtown Lima's redevelopment, so the row is site_development, consistent with the FY2024 Spring & Main LLC row in this dataset. Two cautions: the EIN here (46-1254074) differs from the Lima entity's (88-1728901), and the 990 address is Silicon Valley Bank's office at 3003 Tasman Drive, Santa Clara, a lender or escrow address rather than a company location. Most likely a later draw on the same Lima project, but the owner was not confirmed."
+  },
+  {
+    "recipient_id": "EIN:272876315",
+    "recipient_class": "business",
+    "parent": "AMECO USA (American Manufacturing & Engineering Co.)",
+    "parent_hq_state": "OH",
+    "hq_source": "https://ameco-usa.com/",
+    "emp_bucket": "<100",
+    "emp_source": "JobsOhio Small Business/Inclusion Grant eligibility (small business, cap $50,000); JobsOhio monthly executed grants and loans reports (https://www.jobsohio.com/newsroom/reports-publications), as parsed in data/commitments_norm.csv",
+    "emp_asof": "2024",
+    "confidence": "B",
+    "founded_in_ohio": "yes",
+    "notes": "The company's own site says AMECO USA, American Manufacturing & Engineering Co., was established in Cleveland in 1992 and does medium to heavy metal fabrication. JobsOhio's December 2024 report shows a $50,000 Small Business Grant in Cuyahoga County with 24 jobs retained and 3 committed on a $750,000 investment, so under 100 employees."
+  },
+  {
+    "recipient_id": "EIN:990380732",
+    "recipient_class": "business",
+    "parent": "Progressive Automations Inc.",
+    "parent_hq_state": "Canada",
+    "hq_source": "https://www.progressiveautomations.com/pages/about-us",
+    "emp_bucket": "<100",
+    "emp_source": "JobsOhio monthly executed grants and loans reports (https://www.jobsohio.com/newsroom/reports-publications), as parsed in data/commitments_norm.csv",
+    "emp_asof": "2025",
+    "confidence": "D",
+    "founded_in_ohio": "no",
+    "notes": "Progressive Automations USA Inc. is the US arm of Progressive Automations, a linear-actuator maker founded in 2008 by Vlad Kovalyov and Ajay Arora with its head office in Metro Vancouver, British Columbia (company site). JobsOhio's October 2024 report shows a $50,000 Economic Development Grant for a Hamilton County distribution operation, 16 jobs created and none retained, on a $3 million investment. No employee count appears on the company's site or in any news story found, so the bucket is unconfirmed."
+  },
+  {
+    "recipient_id": "EIN:460434058",
+    "recipient_class": "business",
+    "parent": "Scherer Inc.",
+    "parent_hq_state": "SD",
+    "hq_source": "https://www.schererinc.com/",
+    "emp_bucket": "<100",
+    "emp_source": "JobsOhio monthly executed grants and loans reports (https://www.jobsohio.com/newsroom/reports-publications), as parsed in data/commitments_norm.csv",
+    "emp_asof": "2025",
+    "confidence": "D",
+    "founded_in_ohio": "no",
+    "notes": "Scherer Inc. builds custom kernel processors, rolls and roller mills and gives its address as 4940 W Foundation Court, Sioux Falls, South Dakota, matching the 990. JobsOhio's December 2024 report shows a $50,000 Economic Development Grant for a Wayne County food and agribusiness project with 12 jobs created and none retained, so the Ohio site is new and says nothing about company size; no employee figure was found, so the bucket is unconfirmed."
+  },
+  {
+    "recipient_id": "EIN:412282416",
+    "recipient_class": "business",
+    "parent": "INNOMOTIVE Solutions Group LLC",
+    "parent_hq_state": "NY",
+    "hq_source": "https://innomotivesolutions.com/about-us/",
+    "emp_bucket": "100-499",
+    "emp_source": "JobsOhio monthly executed grants and loans reports (https://www.jobsohio.com/newsroom/reports-publications), as parsed in data/commitments_norm.csv",
+    "emp_asof": "2025",
+    "confidence": "C",
+    "founded_in_ohio": "no",
+    "notes": "INNOMOTIVE Solutions Group makes roll-up doors, LED lighting and compartment systems for specialty vehicles under the AMDOR, Whiting Canada, Luma Bar and FMI brands, and its site gives the AMDOR plant address as 4304 Walden Avenue, Lancaster, New York, the same city as the 990 address. JobsOhio's April 2022 report shows 60 jobs retained and 27 committed at the Clark County operation with $150,000 of grants; four brands with plants in New York, Ohio and Canada put the group in the 100-499 band, but no company-wide employee figure was published."
   }
 ]

@@ -77,6 +77,15 @@ None.
   complaint's 27 pages are the contract. That is the direct contrast with Olive
   AI, where it refused to attach the agreement as trade secret.
 
+- New (Nov 12, 2026), lead 12: **JobsOhio sued 2 of the 29 companies that
+  failed after being paid.** $85.5M of the $86.5M went to companies it never
+  sued, including every one of the seven mass layoffs and all seven
+  bankruptcies. Meanwhile the 63 companies it did sue are mostly small: median
+  $125,000 sought, smallest $16,724, and three were sued over a missing annual
+  report alone. The agreement has a waiver clause, "Market Conditions and Other
+  Factors," which JobsOhio's own complaints quote around. Carry all three
+  possible explanations and claim none.
+
 ## Log
 
 - 2026-09-18 Step 1 opened. Topic: every grant JobsOhio has disclosed on
