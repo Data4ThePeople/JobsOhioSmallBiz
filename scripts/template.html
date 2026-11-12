@@ -322,7 +322,7 @@ function renderFY(){
 function niceStep(max){ var raw = max/4, p = Math.pow(10, Math.floor(Math.log10(raw))), n = raw/p; return (n < 1.5 ? 1 : n < 3.5 ? 2 : n < 7.5 ? 5 : 10) * p; }
 
 /* ---- table ---- */
-var PCOLS = [["parent","Parent company",false],["class","Type",false],["bucket","Employees",false],["hq","HQ",false],["conf","Evidence",false],["cash","Paid",true],["years","Years",false],["recourse","Can Ohio get it back?",false],["failure","After the grant",false],["sued","Sued",false]];
+var PCOLS = [["parent","Parent company",false],["class","Type",false],["bucket","Employees",false],["hq","HQ",false],["conf","Evidence",false],["cash","Paid",true],["years","Years",false],["recourse","Repayment clause",false],["failure","After the grant",false],["sued","Sued",false]];
 var RCOLS = [["fy","FY",true],["recipient","Payee on the 990",false],["city","City",false],["state","St",false],["parent","Parent company",false],["cash","Paid",true]];
 /* How strong the evidence is for this company's size and home state. Shown as
    a letter to keep the column narrow, explained in the key under the table and
@@ -338,8 +338,13 @@ var CLASS_LABEL = {business:"Business", site_development:"Site developer", gover
    evidence is. This is not the same as what the guidelines publish, which is
    mostly nothing: the repayment clause lives in the signed agreement, and 56 of
    those were obtained from court files. The hover carries the evidence. */
-var COND_LABEL = {"agreement seen":"yes \u2014 agreement seen", "standard form":"yes \u2014 standard form",
-                  "published clawback":"yes \u2014 published", "loan":"loan, repayable",
+/* Whether a clause exists that lets JobsOhio demand the money back, and how we
+   know. Deliberately NOT phrased as "can Ohio get it back", because the clause
+   existing says nothing about recovery: JobsOhio has sued 45 of 1,452
+   recipients and 2.2% of the money has come back. Right and outcome are
+   different things and the page keeps them apart. */
+var COND_LABEL = {"agreement seen":"in this agreement", "standard form":"in the standard agreement",
+                  "published clawback":"in the guidelines", "loan":"loan, repayable",
                   "service not cash":"services, not cash", "none found":"none found",
                   "program unknown":"program unknown"};
 /* the full category is long; the short label goes in the cell and the whole
@@ -473,10 +478,9 @@ document.getElementById("src").textContent =
   "Source: JobsOhio Form 990, Schedule I, fiscal years " + m.fy_min + " to " + m.fy_max + " (IRS e-file data). Schedule I lists grants over $5,000 on a cash basis, so the dollars are what was paid in each year, not what was committed. " +
   "Each payee was traced to its ultimate parent at the time of the grant using SEC filings, Form 5500 plan data, JobsOhio and regional partner releases, and company sources; the evidence grade shows which. " +
   "Universities, hospitals, governments, nonprofits and site developers are shown separately from operating businesses. " +
-  "“Can Ohio get it back?” is whether JobsOhio has a contractual right to recover the money, which is not the same as what it publishes. Ten of its twelve programs publish no repayment language at all. But 56 signed JobsOhio grant agreements were obtained from Franklin County court files, spanning 2013 to 2023, and every one carries the same Section 9(b)(ii), “Demand Repayment of Grant Funds”: “Grantor may demand repayment of all or a portion of Grant Funds disbursed.” "
-  + "So the column grades the evidence. “Agreement seen” means this company’s own signed contract is in a court file. “Standard form” means it was paid under a program whose agreements were obtained and are identical. “Published” means the guidelines carry a repayment trigger. “None found” means neither: nothing published and no agreement ever obtained, which is where the air service grants to airlines sit. Hover any label for the evidence behind it. "
-  + "Note that this is about recourse, not about whether money was actually recovered, and not about reimbursement. Reimbursement is how the grant goes out: the company spends first and JobsOhio repays documented costs, so a company that never spends never collects. That limits what is at risk; it is not a way to get paid money back. "
-  "“After the grant” shows a verified bankruptcy, closure, mass layoff, sale or ended service at the funded operation, found by scanning every recipient for distress headlines and then checking each one against court dockets, SEC filings and local news. It is a floor, not a count: a failure without news coverage is not in it. Hover a label for the date and how firmly it is established. " +
+  "“Repayment clause” is whether a clause exists that lets JobsOhio demand the money back, and how firmly we know it. Ten of its twelve programs publish no repayment language at all, but 56 signed JobsOhio grant agreements were obtained from Franklin County court files, spanning 2013 to 2023, and every one carries the same Section 9(b)(ii), “Demand Repayment of Grant Funds”: “Grantor may demand repayment of all or a portion of Grant Funds disbursed.” "
+  + "“In this agreement” means this company’s own signed contract is in a court file. “In the standard agreement” means it was paid under a program whose agreements were obtained and are identical, so the clause is inferred rather than seen. “None found” means neither: nothing published and no agreement ever obtained, which is where the air service grants to airlines sit. Hover any label for the evidence. "
+  + "A clause is not a recovery. JobsOhio decides whether to demand repayment, how much, and whether to waive it, and the agreement says so: “Grantor has the discretion to determine compliance.” It has sued 45 of these 1,452 recipients, seeking $13.5 million, and $26.0 million has come back across eleven years, 2.2% of what went out. Reimbursement is separate again: the company spends first and JobsOhio repays documented costs, so a company that never spends never collects. That limits what is at risk; it is not a way to recover money already paid. "
   "\u201CSued by JobsOhio\u201D is JobsOhio's own lawsuit against that company in the Franklin County Court of Common Pleas, where it is headquartered, to get grant money back under the repayment clause its published guidelines do not mention. Hover for the case number, what was sought and how it ended. Suits filed in another county, in federal court or in another state would not appear, so this is a floor. " +
   "Free to use. Built by Data 4 The People, " + m.built + ".";
 renderAll();
