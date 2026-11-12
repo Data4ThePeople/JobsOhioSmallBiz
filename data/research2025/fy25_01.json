@@ -1,0 +1,54 @@
+[
+  {
+    "recipient_id": "EIN:464024951",
+    "recipient_class": "business",
+    "parent": "Metallus Inc.",
+    "parent_hq_state": "OH",
+    "hq_source": "https://www.sec.gov/Archives/edgar/data/1598428/000095017025029085/mtus-20241231.htm",
+    "emp_bucket": "500-4999",
+    "emp_source": "https://www.sec.gov/Archives/edgar/data/1598428/000095017025029085/mtus-20241231.htm",
+    "emp_asof": "2024",
+    "confidence": "A",
+    "founded_in_ohio": "yes",
+    "notes": "Metallus is the public specialty steel maker (NYSE: MTUS) formerly named TimkenSteel; its 10-K for the year ended Dec. 31, 2024 reports about 1,880 employees, an Ohio state of incorporation and headquarters at 1835 Dueber Avenue SW in Canton. The EIN on the 990 matches the EIN in the 10-K exactly. JobsOhio's July 2024 report lists a $3.0 million Economic Development Grant and a $500,000 Workforce Grant for a $112.7 million Stark County project with 1,602 jobs retained; the company was created in Ohio in 2014 as a spinoff of Canton-based Timken."
+  },
+  {
+    "recipient_id": "EIN:316402089",
+    "recipient_class": "university",
+    "parent": "Miami University (State of Ohio public university)",
+    "parent_hq_state": "OH",
+    "hq_source": "https://www.jobsohio.com/newsroom/news-press/miami-university-announces-grand-opening-of-lee-and-rosemary-fisher-innovation-collegeelm",
+    "emp_bucket": "500-4999",
+    "emp_source": "https://dam.assets.ohio.gov/image/upload/development.ohio.gov/research/obs/Ohio-Major-Employers-Report.pdf",
+    "emp_asof": "2022",
+    "confidence": "B",
+    "founded_in_ohio": "yes",
+    "notes": "The $1.5 million is a JobsOhio Vibrant Community Grant for the Lee and Rosemary Fisher Innovation College@Elm, a 39,000-square-foot incubator in Oxford built with the City of Oxford and The Fischer Group. The Ohio Department of Development's Major Employers report ranks Miami University 73rd in the state with 4,442 Ohio employees; the university was founded in Oxford in 1809."
+  },
+  {
+    "recipient_id": "EIN:753242392",
+    "recipient_class": "business",
+    "parent": "Cenovus Energy Inc.",
+    "parent_hq_state": "Canada",
+    "hq_source": "https://www.sec.gov/Archives/edgar/data/1475260/000147526025000006/a2024annualinformationform.htm",
+    "emp_bucket": "5000+",
+    "emp_source": "https://www.sec.gov/Archives/edgar/data/1475260/000147526025000006/a2024annualinformationform.htm",
+    "emp_asof": "2024",
+    "confidence": "A",
+    "founded_in_ohio": "no",
+    "notes": "Cenovus Energy's 2024 Annual Information Form, filed with its Form 40-F, lists Husky Marketing and Supply Company as a wholly owned Delaware material subsidiary and reports 7,150 full-time-equivalent employees at Dec. 31, 2024; Cenovus is headquartered in Calgary, Alberta. The Dublin, Ohio address is the US regional office; JobsOhio's July 2024 report shows a $4.0 million Workforce Grant against a $1.44 billion investment at the Lima and Toledo refineries, with 942 jobs retained."
+  },
+  {
+    "recipient_id": "EIN:863867651",
+    "recipient_class": "business",
+    "parent": "MedShip LLC",
+    "parent_hq_state": "OH",
+    "hq_source": "https://www.jobsohio.com/newsroom/news-press/medship-celebrates-grand-opening-of-new-downtown-camden-headquarters",
+    "emp_bucket": "<100",
+    "emp_source": "https://www.jobsohio.com/newsroom/news-press/medship-celebrates-grand-opening-of-new-downtown-camden-headquarters",
+    "emp_asof": "2025",
+    "confidence": "B",
+    "founded_in_ohio": "yes",
+    "notes": "MedShip is an operating distributor of surgical dressings, not a developer: the $750,000 Vibrant Community Grant paid for its own 12,000-square-foot headquarters in downtown Camden, which it built after demolishing two blighted buildings and into which it invested $2.3 million of its own money. Its COO says 86 of the company's 93 employees work in Camden, and JobsOhio calls MedShip an Ohio-grown startup less than four years old."
+  }
+]

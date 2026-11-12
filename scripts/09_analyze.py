@@ -141,11 +141,20 @@ def load_side_findings(parents):
                        "src": fail_url.get(normalize_name(r["name"]))}
     # JobsOhio's own suits against the recipient, keyed the same way. A company
     # can be sued more than once, so they are collected into a list.
-    sued = defaultdict(list)
+    sued, suits_filed, sought_total = defaultdict(list), 0, 0.0
     if LAWSUITS.exists():
         by_name = {p["name"].strip(): parent_key(p) for p in parents.values()}
         for r in csv.DictReader(LAWSUITS.open()):
-            if r["kind"] != "suit" or not r["recipient"]:
+            if r["kind"] != "suit":
+                continue
+            # every suit counts toward the totals, matched to a 990 recipient
+            # or not: 12 defendants were paid under another name, paid $5,000
+            # or less, or are individuals
+            suits_filed += 1
+            m2 = re.search(r"\$\s*([\d,]+(?:\.\d{2})?)", r["amount_sought"] or "")
+            if m2:
+                sought_total += float(m2.group(1).replace(",", ""))
+            if not r["recipient"]:
                 continue
             k = key(r["parent"], by_name.get(r["recipient"].strip()) or r["recipient"].strip())
             # the clerk serves a case only behind its disclaimer, so the link
@@ -157,7 +166,7 @@ def load_side_findings(parents):
                    ) if m else ""
             sued[k].append({"case": r["case"], "filed": r["filed"], "url": url,
                             "sought": r["amount_sought"][:120], "outcome": r["outcome"][:120]})
-    return cond, fail, dict(sued)
+    return cond, fail, dict(sued), {"suits_filed": suits_filed, "sought_total": round(sought_total)}
 
 
 def resolve_class(a, b):
@@ -364,7 +373,7 @@ def main():
     out["confidence"] = {"parents": shares(allp, lambda a: a["conf"] or "none", lambda a: 1)[0],
                          "cash": shares(allp, lambda a: a["conf"] or "none", lambda a: a["cash"])[0]}
     out["conflicts"] = sorted(c for a in allp for c in a.get("conflicts", set()))
-    cond, fail, sued = load_side_findings(parents)
+    cond, fail, sued, suit_totals = load_side_findings(parents)
     out["parents_table"] = sorted([{
         "parent": a["parent"], "class": a["class"], "bucket": a["bucket"], "hq": a["hq"], "conf": a["conf"],
         "founded_oh": a["founded_oh"], "cash": a["cash"], "rows": a["rows"], "recipients": len(a["recipients"]),
@@ -405,7 +414,9 @@ def main():
         "parents_sued": len(sued_parents),
         "suits": sum(len(sued[a["parent"]]) for a in sued_parents),
         "cash_to_parents_sued": sum(a["cash"] for a in sued_parents),
-        "suits_total": sum(len(v) for v in sued.values()),
+        "suits_matched": sum(len(v) for v in sued.values()),
+        "suits_filed": suit_totals["suits_filed"],
+        "sought_total": suit_totals["sought_total"],
     }
     out["failures"] = {"by_category": dict(fail_agg), "confirmed": len(fail),
                        "matched_to_a_parent": matched,
