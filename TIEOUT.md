@@ -8,8 +8,8 @@ Every number below is recomputed from `data/grants_raw.csv` and `data/parents.cs
 
 ## By recipient class (all parents)
 
-- business: 1,245 parents, $832,890,284 (71.1%)
-- site_development: 112 parents, $96,763,402 (8.3%)
+- business: 1,246 parents, $833,140,284 (71.1%)
+- site_development: 111 parents, $96,513,402 (8.2%)
 - university: 11 parents, $95,233,751 (8.1%)
 - hospital: 7 parents, $77,635,725 (6.6%)
 - nonprofit: 37 parents, $41,160,782 (3.5%)
@@ -17,16 +17,16 @@ Every number below is recomputed from `data/grants_raw.csv` and `data/parents.cs
 
 ## Businesses only
 
-- Cutoff 100 employees: parents small 38.7%, large 61.3%, unknown 0.0%; dollars small 7.8%, large 92.2%, unknown 0.0%
+- Cutoff 100 employees: parents small 38.8%, large 61.2%, unknown 0.0%; dollars small 7.8%, large 92.2%, unknown 0.0%
 - Cutoff 500 employees: parents small 60.4%, large 39.6%, unknown 0.0%; dollars small 19.0%, large 81.0%, unknown 0.0%
-- Cutoff 5000 employees: parents small 80.7%, large 19.3%, unknown 0.0%; dollars small 35.4%, large 64.6%, unknown 0.0%
+- Cutoff 5000 employees: parents small 80.7%, large 19.3%, unknown 0.0%; dollars small 35.5%, large 64.5%, unknown 0.0%
 - Home state: parents Ohio 63.0%, other 37.0%, unknown 0.0%; dollars Ohio 36.5%, other 63.5%, unknown 0.0%
 - Worst case: dollars to large at least 60.7%; parents small at least 45.3%
 - Two-by-two (dollars): large|ohio 20.2%, large|other 60.8%, small|ohio 16.3%, small|other 2.7%
 
 ## All recipients
 
-- Cutoff 100 employees: parents small 40.5%, large 55.1%, unknown 4.4%; dollars small 15.7%, large 82.8%, unknown 1.5%
+- Cutoff 100 employees: parents small 40.6%, large 55.0%, unknown 4.4%; dollars small 15.8%, large 82.8%, unknown 1.5%
 - Cutoff 500 employees: parents small 60.4%, large 35.2%, unknown 4.4%; dollars small 25.7%, large 72.9%, unknown 1.5%
 - Cutoff 5000 employees: parents small 78.4%, large 17.2%, unknown 4.4%; dollars small 39.5%, large 59.0%, unknown 1.5%
 - Home state: parents Ohio 66.5%, other 33.5%, unknown 0.0%; dollars Ohio 51.6%, other 48.4%, unknown 0.0%
@@ -46,11 +46,11 @@ Resolved against the finding, not by read order: the smaller size band, Ohio, an
 
 These are not errors. They are the places the headline is most exposed, computed so the post can state them before a reader finds them.
 
-**The class boundary, and it is the largest one.** 94 parents carrying $105,107,099 were classed out of `business` by hand after the automatic classifier called them businesses, mostly into site_development: project LLCs and industrial developers rather than operating companies. 91 of them, carrying $87,807,099, would have scored small. Recompute the headline on the automatic class instead and the business universe goes 1,245 parents / $832,890,284 to 1,332 / $935,784,008, and the small share of business dollars goes **19.0% to 26.2%**. The published worst case does not cover this: it reassigns size inside the business set and never reconsiders the class boundary. The post should state this figure itself rather than wait to be asked why a company that builds and leases industrial buildings is not a small business.
+**The class boundary, and it is the largest one.** 93 parents carrying $104,857,099 were classed out of `business` by hand after the automatic classifier called them businesses, mostly into site_development: project LLCs and industrial developers rather than operating companies. 90 of them, carrying $87,557,099, would have scored small. Recompute the headline on the automatic class instead and the business universe goes 1,246 parents / $833,140,284 to 1,332 / $935,784,008, and the small share of business dollars goes **19.0% to 26.2%**. The published worst case does not cover this: it reassigns size inside the business set and never reconsiders the class boundary. The post should state this figure itself rather than wait to be asked why a company that builds and leases industrial buildings is not a small business.
 
 **One payment carries the home-state finding.** Intel Corporation alone is $124,422,793, 14.9% of all business dollars. The top three (Intel Corporation, Ultium Cells LLC (50/50 join, The Sherwin-Williams Company) are 26.0%. Leave Intel Corporation out and Ohio's share of business dollars goes **36.5% to 42.9%**, and the large share goes 81.0% to 77.7%. Its classification is not in doubt, so this is leverage rather than error. Name it beside the number.
 
-**The small share leans on a few weakly-graded size bands.** Ohio-West Virginia Excavating Co. (Dennis Hend ($4,739,868, grade D); American Nitrile LLC ($3,303,561, grade C); ALTIVIA Corporation ($3,100,000, grade C). Together the C and D graded small parents carry $55,849,777 of the $158,102,224 in the small column. The worst case already reassigns all of them, but the largest deserves a sentence of its own in the post.
+**The small share leans on a few weakly-graded size bands.** Ohio-West Virginia Excavating Co. (Dennis Hend ($4,739,868, grade D); American Nitrile LLC ($3,303,561, grade C); ALTIVIA Corporation ($3,100,000, grade C). Together the C and D graded small parents carry $56,099,777 of the $158,352,224 in the small column. The worst case already reassigns all of them, but the largest deserves a sentence of its own in the post.
 
 **The small side is not outlier-driven,** which is the reassuring half: the largest small parent is Ohio-West Virginia Excavating Co. (Dennis Hendershot and Roger Lewis) at $4,739,868, 3.0% of small dollars.
 

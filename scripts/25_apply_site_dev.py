@@ -62,17 +62,23 @@ def main():
             skipped.append((r["parent"], verdict))
             continue
         r["recipient_class"] = verdict
+        # idempotent: re-running must not append the note a second time, which
+        # once pushed a row past the 900-character cap and truncated it
         note = f"Class set to {verdict} by the site-developer re-check: {rev['reason']}"
-        r["notes"] = (r.get("notes", "") + " " + note).strip()[:900]
+        old = re.sub(r"\s*Class set to .*$", "", r.get("notes", ""), flags=re.S).strip()
+        r["notes"] = (old + " " + note).strip()[:900]
         if rev.get("source"):
             r["hq_source"] = r["hq_source"] or rev["source"]
         applied += 1
         b = bucket_for(rev.get("employees", ""))
         if b and b != r["emp_bucket"]:
-            r["notes"] = (r["notes"] + f" Size bucket set to {b} from the re-check "
-                          f"({rev['employees']}, {rev.get('employees_asof') or 'date not stated'}).")[:900]
             r["emp_bucket"] = b
             rebucketed += 1
+        if b:
+            tag = (f" Size bucket set to {b} from the re-check "
+                   f"({rev['employees']}, {rev.get('employees_asof') or 'date not stated'}).")
+            if tag.strip() not in r["notes"]:
+                r["notes"] = (r["notes"] + tag)[:900]
 
     with PARENTS.open("w", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=fields); w.writeheader(); w.writerows(rows)
