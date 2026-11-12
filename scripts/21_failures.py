@@ -22,7 +22,10 @@ for r in csv.DictReader((ROOT / "data" / "parents.csv").open()):
     parents[r["recipient_id"]] = r
 
 rows = []
-for f in sorted(RES.glob("*.json")):
+# only the failure-verification files. data/research3/ also holds the lawsuit
+# readings and olive_ai_suit.json, which have a different shape; globbing
+# "*.json" swept those in and iterating a dict yields its keys as strings.
+for f in sorted(list(RES.glob("fail_*.json")) + list(RES.glob("soft_*.json"))):
     if f.stem.endswith("_input"):
         continue
     for x in json.load(f.open()):
