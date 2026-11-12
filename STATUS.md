@@ -86,6 +86,19 @@ None.
   Factors," which JobsOhio's own complaints quote around. Carry all three
   possible explanations and claim none.
 
+- **Gap to close before publishing (found Nov 12, 2026).** The distress scan
+  that produced the 29 confirmed failures ran over the FY2014-2024 recipients
+  only. The 274 recipients that first appear in FY2025 have never been scanned,
+  and at least one of them failed: **AmplifyBio LLC took $1,500,000 in FY2025
+  and closed its doors inside the same fiscal year.** JobsOhio's own September
+  2024 project record has it retaining 155 jobs and committing to 263 more on a
+  $132.75M project; Fierce Biotech reported Ohio layoffs on 2024-12-06, Fierce
+  Pharma reported the closure on 2025-04-07, a former employee sued over the
+  layoffs in May 2025, and Battelle reabsorbed the company through an
+  assignment for the benefit of creditors in October 2025. Run
+  `scripts/17_distress_scan.py` over the FY2025 recipients once they are
+  merged, then verify any candidates the same way the other 84 were.
+
 ## Log
 
 - 2026-09-18 Step 1 opened. Topic: every grant JobsOhio has disclosed on
