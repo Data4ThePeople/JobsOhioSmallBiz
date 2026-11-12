@@ -20,7 +20,7 @@ Every number below is recomputed from `data/grants_raw.csv` and `data/parents.cs
 - Cutoff 100 employees: parents small 43.9%, large 56.1%, unknown 0.0%; dollars small 7.8%, large 92.2%, unknown 0.0%
 - Cutoff 500 employees: parents small 64.2%, large 35.8%, unknown 0.0%; dollars small 18.9%, large 81.1%, unknown 0.0%
 - Cutoff 5000 employees: parents small 81.3%, large 18.7%, unknown 0.0%; dollars small 34.9%, large 65.1%, unknown 0.0%
-- Home state: parents Ohio 65.4%, other 34.6%, unknown 0.0%; dollars Ohio 36.2%, other 63.8%, unknown 0.0%
+- Home state: parents Ohio 65.5%, other 34.5%, unknown 0.0%; dollars Ohio 36.2%, other 63.8%, unknown 0.0%
 - Worst case: dollars to large at least 58.0%; parents small at least 47.5%
 - Two-by-two (dollars): large|ohio 20.2%, large|other 60.9%, small|ohio 16.0%, small|other 2.9%
 
@@ -29,9 +29,9 @@ Every number below is recomputed from `data/grants_raw.csv` and `data/parents.cs
 - Cutoff 100 employees: parents small 45.3%, large 51.0%, unknown 3.7%; dollars small 15.3%, large 83.4%, unknown 1.4%
 - Cutoff 500 employees: parents small 64.1%, large 32.2%, unknown 3.7%; dollars small 25.2%, large 73.5%, unknown 1.4%
 - Cutoff 5000 employees: parents small 79.5%, large 16.7%, unknown 3.7%; dollars small 38.6%, large 60.0%, unknown 1.4%
-- Home state: parents Ohio 68.3%, other 31.7%, unknown 0.0%; dollars Ohio 51.6%, other 48.4%, unknown 0.0%
+- Home state: parents Ohio 68.4%, other 31.6%, unknown 0.0%; dollars Ohio 51.6%, other 48.4%, unknown 0.0%
 - Worst case: dollars to large at least 53.6%; parents small at least 43.1%
-- Two-by-two (dollars): large|ohio 29.9%, large|other 43.5%, small|ohio 20.3%, small|other 4.9%, unknown|ohio 1.4%
+- Two-by-two (dollars): large|ohio 30.0%, large|other 43.5%, small|ohio 20.3%, small|other 4.9%, unknown|ohio 1.4%
 
 ## Conflicts between recipients of one parent
 
@@ -49,7 +49,7 @@ These are not errors. They are the places the headline is most exposed, computed
 
 **The class boundary, and it is the largest one.** 93 parents carrying $108,342,324 were classed out of `business` by hand after the automatic classifier called them businesses, mostly into site_development: project LLCs and industrial developers rather than operating companies. 90 of them, carrying $91,042,324, would have scored small. Recompute the headline on the automatic class instead and the business universe goes 1,482 parents / $956,764,828 to 1,568 / $1,062,867,177, and the small share of business dollars goes **18.9% to 25.5%**. The published worst case does not cover this: it reassigns size inside the business set and never reconsiders the class boundary. The post should state this figure itself rather than wait to be asked why a company that builds and leases industrial buildings is not a small business.
 
-**One payment carries the home-state finding.** Intel Corporation alone is $125,415,416, 13.1% of all business dollars. The top three (Intel Corporation, Honda Motor Co., Ltd., Ultium Cells LLC (50/50 join) are 23.8%. Leave Intel Corporation out and Ohio's share of business dollars goes **36.2% to 41.6%**, and the large share goes 81.1% to 78.3%. Its classification is not in doubt, so this is leverage rather than error. Name it beside the number.
+**One payment carries the home-state finding.** Intel Corporation alone is $125,415,416, 13.1% of all business dollars. The top three (Intel Corporation, Honda Motor Co., Ltd., Ultium Cells LLC (50/50 join) are 23.8%. Leave Intel Corporation out and Ohio's share of business dollars goes **36.2% to 41.7%**, and the large share goes 81.1% to 78.3%. Its classification is not in doubt, so this is leverage rather than error. Name it beside the number.
 
 **The small share leans on a few weakly-graded size bands.** Ohio-West Virginia Excavating Co. (Dennis Hend ($4,739,868, grade D); American Nitrile LLC ($3,327,345, grade C); ALTIVIA Corporation ($3,100,000, grade C). Together the C and D graded small parents carry $64,171,332 of the $180,802,311 in the small column. The worst case already reassigns all of them, but the largest deserves a sentence of its own in the post.
 

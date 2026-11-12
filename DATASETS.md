@@ -996,6 +996,36 @@ principal-executive-offices phone number in the 717 area code, which is York,
 Pennsylvania; the move to Charlotte came in 2022. Corrected. Neither state is
 Ohio, so no published Ohio figure moved.
 
+**A second confirmed case, and this one runs against this project's finding.**
+**Multi-Color Corporation**, $500,000, grant years FY2016 and FY2019, was
+recorded in Illinois. That came from a Form 5500 plan sponsor address dated
+2023, four years after the later grant, reflecting Platinum Equity's ownership.
+Through both grant years Multi-Color was an independent public company
+headquartered in **Batavia, Ohio**: its SEC registrant address is Batavia OH,
+it filed its own 10-K on May 28, 2019 inside FY2019, and the Platinum Equity
+merger closed on July 1, 2019, one day after that fiscal year ended. Corrected.
+**Moves $500,000 into the Ohio column**, which makes the headline finding
+slightly weaker, and is exactly why the check was worth running.
+
+**The bounded exposure, stated rather than swept.** A Form 5500 address is
+dated by construction, so any home state sourced that way for an older grant
+carries this risk. **71 parents took their home state from a Form 5500 address
+at least three years after their last grant, carrying $13,562,349** of
+$1.35 billion. Most are small Ohio manufacturers and distributors that have no
+plausible reason to have moved, and the risk concentrates in the few that were
+acquired, which is how Multi-Color's Illinois address arose. The list is
+reproducible from `parents.csv` by matching `hq_source` against the Form 5500
+address pattern and comparing the cited year to `years`. It is named here
+rather than chased because the expected yield is low and the exposure is 1% of
+the dollars.
+
+Two more flagged by the ownership pass and not acted on: **Charter Next
+Generation** is recorded in Illinois while both Schedule I and the company's
+own site point to Milton, Wisconsin; and **4440 Creek Road Properties LLC**
+($350,000), classed a site developer on a name rule alone, shares its address
+with Graphic Village's headquarters, which JobsOhio separately paid $600,000 at
+the same address. Both are Ohio-neutral or Ohio-internal.
+
 A cheap scan for more of these — parents whose EDGAR current state differs from
 the recorded state — returns 31 rows carrying $48,719,349, but nearly all are
 the design working rather than failing: `edgar_hq_state` is the *payee's*
