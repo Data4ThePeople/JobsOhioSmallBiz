@@ -1370,3 +1370,40 @@ is as good an answer as a date, and either belongs in the piece.
 **Do not write this as "JobsOhio paid after the company failed."** It is not
 established and it would be the easiest sentence in the piece to knock down.
 Write the fiscal year, write what is unknown, and let the reader hold it.
+
+---
+
+## 16. The largest payment in the data has no project behind it
+
+$12,408,019 went to FirstEnergy Corp in FY2017. It is the largest single
+payment JobsOhio discloses on Schedule I across twelve years, and until today
+there was no commitment row for it anywhere in JobsOhio's own monthly project
+reports.
+
+There is one. It is in the November 2016 report, which our parser silently
+dropped because the space character on those two pages is rendered as a dollar
+sign: a **$14,000,000 Revitalization Loan to FirstEnergy Generation, LLC**. The
+whole month is missing, 19 projects and $26,209,640, and 16 of those 19
+companies appear on Schedule I.
+
+Two things to do with this, in order.
+
+**Check the loan.** A revitalization *loan* is not a grant, and this project
+has been careful that the two are different instruments with different
+recourse. If $12.4 million of what the page counts as grant money is really a
+loan draw, the repayment column for that row is wrong and the headline dollar
+base needs a sentence. Read the November 2016 report directly rather than
+waiting for the parser, and check the Schedule I purpose text for FY2017.
+
+**Then ask who it was for.** FirstEnergy Generation LLC in 2016 is the
+subsidiary that filed for bankruptcy in 2018 as FirstEnergy Solutions, and
+FirstEnergy is the company at the centre of the HB6 prosecution. A $14 million
+state-adjacent revitalization loan to that subsidiary in that window is worth
+establishing the facts of carefully and writing conservatively. **Do not reach
+for the HB6 connection in this piece.** The finding here is a $12.4 million
+payment with no public project record, which stands on its own.
+
+**The method note this forces.** Our own tooling hid a month of JobsOhio's
+public record from us for the length of this project. That belongs in the
+piece's account of how hard the data is to use, alongside the WARN register
+being a CSV buried in a JavaScript payload.

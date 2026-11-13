@@ -1327,3 +1327,37 @@ thing the parent rollup exists to get right.
 
 `caveat` is a column in `data/failures.csv`, written by hand per case, for the
 nuance no formula expresses.
+
+### Three defects in the commitments parse, found 2026-11-13 and not yet fixed
+
+`scripts/39_audit_commitments.py` reports these on every run. They do not touch
+a published share, because the headline numbers come from Schedule I and
+`parents.csv`; they touch the funded-county fallback in `35_warn_join.py` and
+the site checks, both of which were hand-verified for every case that mattered.
+
+1. **24 company names are truncated or empty.** The first line of a wrapped
+   company name on the first data row of a page is swallowed by the header
+   block, which stops only at a line carrying a dollar amount. The result is
+   rows reading `Inc.`, `LLC`, `& Rubber Company`. Each is a join that silently
+   misses, and one of them matters: line 2311 is a New Horizons Baking project
+   in Lucas County from October 2017, which the site check for that very
+   company did not know existed.
+2. **November 2016 produced no rows at all**, the only month absent from the
+   2015 to 2026 series. The space glyph on those two pages is `$`, which the
+   parser cannot add to its glyph list without destroying every money field.
+   **19 projects and $26,209,640 of commitments are missing, including a
+   $14,000,000 revitalisation loan to FirstEnergy Generation** whose matching
+   Schedule I payment of $12,408,019 in FY2017 is the largest payment in the
+   data with no commitment row behind it.
+3. **The June 2023 page is shifted by one row** across six merged names, so
+   Speyside Bourbon Cooperage currently reads as a $25,000 Summit County
+   inclusion grant when its project that month is Jackson and Pike counties,
+   food and agribusiness, $125,000.
+
+**Why they are reported rather than fixed.** The obvious fix for the first,
+stopping the header block at a line that is not header vocabulary, cuts the
+file from 2,984 rows to 2,468, because `build_layout` needs those lines to
+find its columns. The real fix is work on the layout builder and should not be
+done against a deadline. The existing `commitments_anomalies.csv` logs the
+November 2016 pages as a font note with no hint that they yielded nothing,
+which is why this went unnoticed.

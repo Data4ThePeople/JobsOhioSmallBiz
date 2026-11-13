@@ -95,7 +95,16 @@ share. The page already discloses that they are excluded.
 These are decisions about what the piece claims, and I should not make them
 alone.
 
-**a. Ultium Cells is recorded as a Michigan company, and that is the single
+**a. Republic Steel is now the sharpest single fact in the piece, and you
+should decide how hard to lead on it.** JobsOhio signed a workforce-training
+agreement in September 2018, committed $500,000 in February 2019 to train 85
+workers and create 125 jobs at the Lorain mill, and paid it in FY2022. Grupo
+Simec, Republic's parent, had told the SEC every year since 2016 that Lorain
+was idled and made no steel, and booked it at zero tons. The EPA agrees twice
+over. JobsOhio then sued in 2023 pleading that 55 of the 125 jobs were
+created. That row has moved from Medium to High confidence.
+
+**b. Ultium Cells is recorded as a Michigan company, and that is the single
 biggest unstated judgment in the piece.** It is a 50/50 GM and LG joint
 venture whose operating base is Lordstown, Ohio, and the project's own note
 concedes there is no single ultimate parent. Counted as Ohio, **the headline
@@ -104,25 +113,25 @@ Intel one the post already names. It is also 52% of all failed dollars. Right
 now it is Michigan and the post does not mention the question. Decide, and
 whichever way you go, say so on the page.
 
-**b. The headline failure number moved twice today.** 31 and $90.7 million
+**c. The headline failure number moved twice today.** 31 and $90.7 million
 this morning, then 28 and $86.9 million when three companies turned out to
 have failed at a site the grant did not pay for, now **43 and $97.0 million**
 after the WARN join. It should be stable: the join is exhaustive over
 2020-2026 and the pre-2020 years have no register to search. Decide whether to
 state a cut-off date on the page.
 
-**c. Sherwin-Williams is 13.1% of all Ohio business dollars by itself.** Drop
+**d. Sherwin-Williams is 13.1% of all Ohio business dollars by itself.** Drop
 it and the Ohio share goes 36% to 33%. The post names only Intel as a
 concentration risk. Decide whether Sherwin-Williams gets named too.
 
-**d. How hard to push the "failed elsewhere" three.** Dana, New Horizons Baking
+**e. How hard to push the "failed elsewhere" three.** Dana, New Horizons Baking
 and FedEx Supply Chain each closed an Ohio operation while the site Ohio paid
 for kept running. That is not the claim the count makes, so they are out of it,
 but it is interesting on its own: it is the kind of thing a press office would
 use to say "we don't count that" if we had counted it. Currently they get their
 own view in the tool. Decide whether they get a paragraph in the post.
 
-**e. Whether the piece says anything about the pandemic cluster.** 46% of
+**f. Whether the piece says anything about the pandemic cluster.** 46% of
 Ohio's entire WARN register is 2020, and March to June 2020 alone is 28% of it.
 That shapes any claim about layoffs at grant recipients and we hold those
 candidates to a higher bar. It is honest and a little technical. Your call
@@ -139,7 +148,7 @@ whether it belongs in the post or only in the method note.
       random. Every one should name the site the money paid for, the site that
       failed, and either Ohio's own notice or why there isn't one.
 - [ ] Confirm the page says 43 companies and $97.0 million, and that it
-      reflects whatever you decided about Ultium in 4a.
+      reflects whatever you decided about Ultium in 4b.
 
 ---
 
@@ -168,11 +177,40 @@ moves a headline:
 
 ---
 
+## 7. One new lead that may need you, and a parser defect that does not
+
+**The largest payment in the data has no project behind it.** $12,408,019 to
+FirstEnergy Corp in FY2017. Its commitment row exists, in a November 2016
+report our parser silently dropped, and it is a **$14,000,000 Revitalization
+*Loan* to FirstEnergy Generation, LLC**. Two things follow. If that money is a
+loan draw rather than a grant, the repayment column for that row is wrong and
+the dollar base needs a sentence. And FirstEnergy Generation is the subsidiary
+that became FirstEnergy Solutions and went bankrupt in 2018. Lead 16 in
+STORY_LEADS says, and I agree, that this piece should report the missing
+project record and not reach for the HB6 connection. **Your call whether it
+goes in at all, because it is the one finding here that could change the
+piece's subject.**
+
+A research pass also found three defects in how we parse JobsOhio's monthly
+project reports: 24 truncated company names, the whole of November 2016
+missing, and a row shift on the June 2023 page. `39_audit_commitments.py`
+reports them on every run and `DATASETS.md` describes them. **None touches a
+published share** — the headline comes from Schedule I, not from these — and I
+have deliberately not fixed them, because the obvious fix cut the file by 516
+rows when I tried it. That is post-publication work.
+
+---
+
 ## Still open, no action from you yet
 
-- Republic Steel's Lorain idling date, AK Steel's funded county, Goodlevel
-  Enterprises, the Olive AI state-court file, Multi-Color's Batavia plant and
-  Nostrum's Bryan plant are with a research pass that has not reported back.
+- The last research pass came back. Republic Steel, AK Steel, Goodlevel,
+  Multi-Color and Avelo are resolved and applied. Nostrum is partly resolved:
+  the Bryan plant's last recorded production is 3 March 2025 and its equipment
+  was auctioned on 14 April, but **no Bryan headcount exists on the reachable
+  record** and the monthly operating reports that would settle it are on
+  PACER at about a dollar each.
+- The Olive AI state-court file was already complete in
+  `data/research3/olive_ai_suit.json`; that item is closed.
 - Eight companies filed a mass-layoff notice **before** Ohio paid them. Most
   are the 2020 shutdown and unremarkable. One is not: **Mobis**, a 210-job
   permanent cut in Toledo in November 2024 and a $700,000 grant in FY2025. The

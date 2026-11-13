@@ -217,6 +217,23 @@ def main(argv):
     rows, unmatched = [], []
     for f in sorted(fails, key=lambda r: -int(r["paid"] or 0)):
         ft, fd = toks(f["name"]), ym(f["event_date"])
+        # A failure that predates the register cannot have a notice in it, and
+        # matching one anyway is worse than matching none: Republic Steel's
+        # funded Lorain mill went idle in March 2016 and the only Republic
+        # notice Ohio holds is Canton in 2023, 89 months later and a different
+        # site. Say there is no notice and why.
+        if fd and fd[0] < FIRST_YEAR:
+            rows.append({"recipient_id": f["recipient_id"], "name": f["name"],
+                         "category": f["category"], "state_notice": "none",
+                         "why_none": f"The failure dates to {f['event_date']}, and Ohio "
+                                     f"publishes these notices only from {FIRST_YEAR}. "
+                                     f"Any notice this company filed at the time is not "
+                                     f"in the register at all.",
+                         "warn_year": "", "warn_employer": "", "warn_place": "",
+                         "warn_affected": "", "warn_received": "", "warn_pdf": "",
+                         "months_from_event": "", "name_rarity": "",
+                         "notice_at_funded_site": "", "other_notices": ""})
+            continue
         cands = []
         for t, w in indexed:
             inter = t & ft
