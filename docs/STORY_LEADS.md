@@ -1407,3 +1407,51 @@ payment with no public project record, which stands on its own.
 public record from us for the length of this project. That belongs in the
 piece's account of how hard the data is to use, alongside the WARN register
 being a CSV buried in a JavaScript payload.
+
+---
+
+## 17. JobsOhio announced the Avelo route, then took the announcement down
+
+**Every link below was fetched and read for this entry, not taken on trust.**
+
+On 3 November 2022 JobsOhio announced that Avelo Airlines would fly Dayton to
+Orlando, its first Ohio route. The release quotes J.P. Nauseef, JobsOhio's
+president and chief executive, by name: "The JobsOhio Air Service Restoration
+Program was designed to bring more routes and seats to Ohio's commercial
+airports. Dayton International Airport serves an important market and draws
+from three Ohio metropolitan population areas." It also quotes Governor DeWine
+and Avelo's chief executive.
+
+The route flew for nine months. It stopped in September 2023.
+
+**The release is no longer on JobsOhio's site.** Its URL returns 404, via a
+redirect to a newsroom path that also returns 404. It survives in the Internet
+Archive, snapshot 20221128123423.
+
+**The programme page changed too, and the change is datable to within four
+months.** JobsOhio's Commercial Air Service Restoration Program page read, on
+1 August 2023, that JobsOhio "has helped attract new carriers, including
+Breeze and Avelo". On 10 December 2023 the same sentence read that it "has
+helped attract new carrier Breeze". Avelo appears 13 times on the August page
+and zero times on the December one. Today the page names neither carrier.
+
+**Set that beside what JobsOhio says about itself.** Its transparency page
+reads: "Although its private nonprofit status means it is not subject to
+public records disclosure, JobsOhio takes transparency seriously", and "Once a
+project is complete, JobsOhio publicly shares all its executed grant
+agreements and loans." This project is complete. The payments appear in no
+monthly executed-agreements report, no agreement is published, and the
+announcement has been removed.
+
+**What is not established, and must not be written as if it were.** Nothing
+shows the removal was a response to the route failing, and pages are rewritten
+for ordinary reasons. Write the sequence and the dates and let the reader hold
+it. And **no public document states the $200,000**, or any figure: the Dayton
+Daily News reported on 24 August 2023 that local and state organisations
+declined to say what the airline was given. The amount comes from Schedule I.
+
+**The one thing that would settle it, and it needs a person.** The City of
+Dayton owns and operates the airport, is a public body under R.C. 149.43, is
+named in JobsOhio's own release, and had to put up a local match. Its file
+should hold the agreement and JobsOhio's commitment letter with the number on
+it. JobsOhio's own copy is beyond reach by design. See `docs/ERIC_TODO.md`.

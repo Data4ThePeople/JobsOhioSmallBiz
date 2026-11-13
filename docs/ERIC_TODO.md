@@ -71,7 +71,47 @@ several of these become much stronger with their number beside ours.
 
 ---
 
-## 3. Two minutes in a browser — the FY2012 and FY2013 returns
+## 3. A public records request, and it should go today
+
+**Time: 20 minutes. It has a clock on it, which is why it is this high.**
+
+JobsOhio announced the Avelo Dayton-Orlando route itself on 3 November 2022,
+in a release quoting J.P. Nauseef by name. The route flew nine months and
+stopped. **That release is no longer on JobsOhio's site** — the URL 404s — and
+its programme page named Avelo in August 2023 and did not in December 2023. I
+verified all of that against the Internet Archive myself.
+
+What we do not have is the money. **No public document states the $200,000**;
+the figure comes off the tax return, and the Dayton Daily News reported that
+local and state organisations declined to say what Avelo was given. JobsOhio
+is not subject to public records law. The City of Dayton is.
+
+Send an Ohio public records request under R.C. 149.43 to the **City of Dayton,
+Clerk of the Commission, and the Department of Aviation** (the named air
+service manager is Linda Hughes). The city owns and operates the airport, is
+named in JobsOhio's own release, and had to put up a local match, so its file
+should hold both the agreement and JobsOhio's commitment letter with the
+figure on it. Ask for:
+
+- any agreement, letter of commitment or term sheet between the City, the
+  airport, JobsOhio or the Dayton Development Coalition and Avelo Airlines,
+  2021 to 2024
+- records of any payment, incentive or revenue guarantee to Avelo
+- the City's own match or contribution for the route
+
+**Say in the request that you will publish whatever comes back, and note the
+date you sent it.** If nothing arrives before Monday, the piece says a request
+is outstanding, which is a fair and ordinary thing to write.
+
+A second, free route if the request stalls: Dayton filed a Small Community Air
+Service Development Program proposal in 2025, DOT-OST-2025-2316-0015. Those
+proposals have to itemise every partner's dollar contribution. It is on
+regulations.gov, which blocked every automated fetch I tried, but it opens in
+a browser.
+
+---
+
+## 4. Two minutes in a browser — the FY2012 and FY2013 returns
 
 JobsOhio filed those two years on paper. ProPublica has the PDFs but its
 download sits behind a security check that refuses an automated fetch, so they
@@ -90,7 +130,7 @@ share. The page already discloses that they are excluded.
 
 ---
 
-## 4. Judgment calls that are yours, not mine
+## 5. Judgment calls that are yours, not mine
 
 These are decisions about what the piece claims, and I should not make them
 alone.
@@ -139,7 +179,7 @@ whether it belongs in the post or only in the method note.
 
 ---
 
-## 5. Before you hit publish
+## 6. Before you hit publish
 
 - [ ] `python3 scripts/30_audit_summary.py` — must print 28 of 28 pass
 - [ ] `python3 scripts/31_audit_failures.py --fetch` — must print no problems,
@@ -148,11 +188,11 @@ whether it belongs in the post or only in the method note.
       random. Every one should name the site the money paid for, the site that
       failed, and either Ohio's own notice or why there isn't one.
 - [ ] Confirm the page says 43 companies and $97.0 million, and that it
-      reflects whatever you decided about Ultium in 4b.
+      reflects whatever you decided about Ultium in 5b.
 
 ---
 
-## 6. Smaller things the independent tie-out raised, if there is time
+## 7. Smaller things the independent tie-out raised, if there is time
 
 `docs/TIEOUT_INDEPENDENT_2.md` reproduces every headline share to seven
 decimal places, which is the main thing. It also found these, none of which
@@ -177,7 +217,7 @@ moves a headline:
 
 ---
 
-## 7. One new lead that may need you, and a parser defect that does not
+## 8. One new lead that may need you, and a parser defect that does not
 
 **The largest payment in the data has no project behind it.** $12,408,019 to
 FirstEnergy Corp in FY2017. Its commitment row exists, in a November 2016
