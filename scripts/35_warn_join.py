@@ -93,7 +93,11 @@ STOP = {"inc", "inc.", "corp", "corporation", "company", "co", "llc", "ltd", "th
         # singular forms of the above: "enterprises" was stopped but
         # "enterprise" was not, which read RL Cole Enterprise as Enterprise
         # Holdings, the car rental company
-        "enterprise", "industry", "product", "solution", "technology", "partner"}
+        "enterprise", "industry", "product", "solution", "technology", "partner",
+        # "doing business as" joins two names for the same company, and counting
+        # it as a third name diluted Technicote below the overlap threshold:
+        # "Technicote Inc dba Beontag" scored 0.33 where it should score 0.50
+        "dba", "fka", "aka", "formerly", "with"}
 RARE = 2          # a word used by this many companies or fewer is distinctive
 COVER = 0.6       # the shared words must cover this much of one name
 UPDATE = re.compile(r"^\s*(update|revised)?\s*\d*\s*(update|revised)?\b[:\s-]*", re.I)
@@ -104,9 +108,28 @@ def words(s):
             if w and w not in STOP and len(w) > 2]
 
 
-def toks(s, places=frozenset()):
+PARENS = re.compile(r"\s*\([^)]*\)")
+
+
+def toks(s, places=frozenset(), strip_parens=False):
     """The identity words in a name: no legal suffixes, no industry nouns, and
-    no Ohio place names, since where a company is gets scored separately."""
+    no Ohio place names, since where a company is gets scored separately.
+
+    `strip_parens` is for THIS PROJECT'S `parent` column only, which carries
+    research prose in brackets. Those words count as part of the name unless
+    they come out: "Bitwise Industries (joint venture with ProMedica Health
+    System)" diluted the one word that identifies it, bitwise, from 1.00 to
+    0.20 and dropped a $1,500,000 recipient out of the join altogether. The
+    project already strips parentheses this way when it merges duplicate
+    parent names, so this makes the two passes agree.
+
+    It is deliberately NOT applied to the employer names in the register,
+    where a bracket usually holds a real alternate name rather than prose
+    ("Shutterfly Lifetouch LLC (Lifetouch Church Directories)"). Stripping
+    those as well read Stride Tool as Stride, Inc., two unrelated companies.
+    """
+    if strip_parens:
+        s = PARENS.sub(" ", s or "")
     return {w for w in words(s) if w not in places}
 
 
@@ -205,14 +228,15 @@ def main(argv):
     if com_path.exists():
         com = []
         for c in csv.DictReader(com_path.open()):
-            t = toks(c["company"], places)
+            t = toks(c["company"], places, strip_parens=True)
             if t and c["county"]:
                 # "Lorain and Cuyahoga" is two counties in one cell
                 cs = {x.strip().lower() for x in re.split(r"\band\b|[,/]", c["county"])
                       if x.strip()}
                 com.append((t, cs))
         for p_ in parents:
-            pt_all = toks(p_["name"], places) | toks(p_.get("parent", ""), places)
+            pt_all = (toks(p_["name"], places)
+                      | toks(p_.get("parent", ""), places, strip_parens=True))
             if not pt_all:
                 continue
             for t, cs in com:
@@ -236,7 +260,8 @@ def main(argv):
         # the payee and its parent are matched separately, so the row can say
         # which name actually matched rather than blurring the two
         cands = {("payee", p["name"]), ("parent", (p.get("parent") or "").strip())}
-        sides = [(lab, toks(n, places)) for lab, n in cands if n]
+        sides = [(lab, toks(n, places, strip_parens=(lab == "parent")))
+                 for lab, n in cands if n]
         sides = [(lab, t) for lab, t in sides if t]
         if not sides:
             continue
