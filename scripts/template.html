@@ -827,8 +827,21 @@ function renderWhat(){
     + fe.a_or_b + " of the " + fe.n + " failures rest on a filing or an official record, against "
     + se.a_or_b + " of " + se.n + " on the sued side, where " + se.weak
     + " sit on a company website, a directory or a best guess. What is not in doubt is the money: "
-    + "the companies it sued were paid a mean of " + money(S.sued.mean_paid)
-    + ", the companies that failed a mean of " + money(S.failures.mean_paid) + ".";
+    /* The median leads, because the mean of the failed grants is one company:
+       Ultium Cells alone is 58% of the failed dollars, and a reader handed
+       only the mean will read $3.1 million as a typical failure when the
+       typical failure is $500,000. Both are shown, and the concentration is
+       named rather than left for someone else to find. */
+    + "the companies it sued were paid a median of " + money(S.sued.median_paid)
+    + ", the companies that failed a median of " + money(S.failures.median_paid) + ".";
+  var p3 = el("p",{class:"wc"},host);
+  p3.textContent = "Read the failed dollars with one company in mind. "
+    + S.failures.largest_name + " alone took " + money(S.failures.largest)
+    + " of the " + money(S.failures.paid) + ", which is "
+    + Math.round(S.failures.largest_share * 100) + "% of everything in this panel. "
+    + "That is why the figure above is a median: the mean of the failed grants is "
+    + money(S.failures.mean_paid) + ", and almost all of the gap between the two is "
+    + "that one grant.";
 
   /* Every confirmed failure was then re-checked on one question: was the
      operation that failed the operation the grant paid for? Three came back no,

@@ -591,6 +591,15 @@ def main():
         "failures": {"companies": len(fail_rows), "paid": sum(fail_cash),
                      "median_paid": round(statistics.median(fail_cash)) if fail_cash else 0,
                      "mean_paid": round(statistics.mean(fail_cash)) if fail_cash else 0,
+                     # The mean of the failed grants is one company. Ultium
+                     # Cells alone is 58% of the failed dollars, so a reader
+                     # given only the mean will take $3.1m for a typical
+                     # failure when the typical failure is $500,000. The page
+                     # leads on the median and names the concentration.
+                     "largest": max(fail_cash) if fail_cash else 0,
+                     "largest_name": (max(fail_rows, key=lambda r: int(r["paid"] or 0))["name"]
+                                      if fail_rows else ""),
+                     "largest_share": (max(fail_cash) / sum(fail_cash)) if fail_cash else 0,
                      "bands": band_mix(fail_recs), "evidence": weak_grades(fail_recs),
                      "by_category": dict(cat_agg)},
         "returned": {"dollars": abs(out["meta"]["reversal_dollars"]),
