@@ -587,8 +587,18 @@ def main():
         return {"n": len(rows), "weak": c["C"] + c["D"], "a_or_b": c["A"] + c["B"]}
 
     by_name = {normalize_name(p2["name"]): p2 for p2 in parents.values()}
-    sued_recs = [by_name[normalize_name(r["recipient"])] for r in suit_rows
-                 if r.get("recipient") and normalize_name(r["recipient"]) in by_name]
+    # One row per COMPANY, not per suit. Olive AI is a defendant in two of the
+    # 63, and counting the suits made the panel say 52 companies where there
+    # are 51, overstating what they were paid by $560,770 and dragging the
+    # median and the band mix with it. An independent recomputation caught
+    # this; the published panel had the wrong number in it.
+    seen_sued, sued_recs = set(), []
+    for r in suit_rows:
+        k = normalize_name(r.get("recipient") or "")
+        if not k or k not in by_name or k in seen_sued:
+            continue
+        seen_sued.add(k)
+        sued_recs.append(by_name[k])
     # failures carry an explicit recipient_id; use it rather than the name
     fail_recs = [parents[r["recipient_id"]] for r in fail_rows
                  if r.get("recipient_id") in parents]

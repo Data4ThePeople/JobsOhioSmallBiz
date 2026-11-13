@@ -489,9 +489,15 @@ procedure in `docs/FAILURE_VERIFY_PROMPT.md` and consolidated by
 
 **What `failures.csv` holds.** Every candidate and every verdict, including the
 rejects and the reason each was rejected, so the published count can be
-audited. Verdicts: `Confirmed failure` (28, $86,887,093 paid), `Not a failure`
+audited. Verdicts: `Confirmed failure` (43, $97,009,323 paid), `Not a failure`
 (52), `Different company` (17), `Failed away from the funded site` (3,
 $3,850,000, not in the count), `Before the grant` (1), `Unresolved` (1).
+
+**15 of the 43 were found by the WARN join, not by the news scan**
+(`scripts/35_warn_join.py`, verified in `data/research3/warncheck_*.json`,
+merged by `scripts/37_merge_warncheck.py`). That is the measure of how much of
+a floor a news-based count is: a third of the confirmed failures had no
+coverage our scan could see.
 Confirmed rows carry a `category`, because "failure" covers five different
 outcomes and the post should not add a sale to a bankruptcy: Bankruptcy or
 receivership, Funded site closed, Mass layoff at the funded site, Sold or
@@ -1157,9 +1163,12 @@ every publish. It has already caught two real defects:
    each event word is allowed to imply, and an unrecognised event word is
    itself a failure, so a new one has to be thought about rather than typed in.
 4. **Three failures were at the wrong site.** See the funded-site check above.
-   This is the one that moved the headline: **28 companies and $86,887,093**,
-   not 31 and $90,737,093. Any earlier draft citing the higher figure is out of
-   date.
+   This moved the headline to 28 companies and $86,887,093, from 31 and
+   $90,737,093.
+6. **The news scan was missing a third of them.** Joining Ohio's whole WARN
+   register against every recipient found 15 more confirmed failures, taking
+   the count to **43 companies and $97,009,323**. Any earlier draft citing a
+   lower figure is out of date.
 5. **Two source links could not be audited and one was in the wrong place.**
    CourtListener now answers every automated fetch with an empty 202 bot
    challenge, so three dockets were replaced with the petition PDFs themselves
@@ -1174,7 +1183,7 @@ deliberate.** The data holds employee bands (`<100`, `100-499`, `500-4999`,
 `5000+`), not headcounts, so there is no number to take a median of and any
 "median employees" figure would be invented. The bands say it more plainly
 anyway: of the 52 sued companies on the grant schedule, 20 employ fewer than
-100; **of the 28 that failed after being paid, none does.** Median and mean
+100; **of the 43 that failed after being paid, none does.** Median and mean
 *grant* size are exact and are published instead.
 
 ---
@@ -1287,7 +1296,7 @@ Nestlé USA for the Solon campus, which is closing, and $6,000,000 to Nestlé
 Purina for a Clermont County plant, which opened in August 2026.** A reader
 taking the parent row at face value would read $9.2 million as lost.
 
-**Four of the 28 confirmed failures sit inside a parent that was paid more**:
+**Four of the 43 confirmed failures sit inside a parent that was paid more**:
 Nestlé (35% of the group's money failed), Procter & Gamble through iMFLUX
 (20%), Marathon Petroleum through Speedway (76%) and McKesson through
 CoverMyMeds (89%). Read as whole-parent losses they would overstate by

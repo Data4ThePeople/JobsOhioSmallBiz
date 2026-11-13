@@ -6,6 +6,14 @@ attack, so each one is recomputed here from the file it should come from,
 independently of `09_analyze.py`, and compared to what `dist/data.json`
 actually carries. Any mismatch is a hard failure.
 
+**What this file cannot do.** It recomputes from the source files, but it is
+written by the same hand as `09_analyze.py` and twice it has reproduced that
+file's mistake instead of catching it: both counted lawsuits where they meant
+companies, so both agreed on 52 sued companies when there are 51. An audit
+that reimplements the logic it audits is not independent. The real check is
+`docs/TIEOUT_INDEPENDENT_2.md`, written against `DATASETS.md` by someone who
+did not read the analysis, and it is what found that error.
+
 The specific trap this guards against: a failure is verified against the
 **payee** named on Schedule I, while the table groups by **parent**. Rolling
 the payees up loses companies that share a parent and sweeps in that parent's
@@ -58,8 +66,18 @@ def main():
     check("every suit has a pleaded sum", len(sought), len(suits),
           "a suit with no amount would silently drop out of the median")
 
-    sued_recs = [by_name[normalize_name(r["recipient"])] for r in suits
-                 if r.get("recipient") and normalize_name(r["recipient"]) in by_name]
+    # DISTINCT companies, not suits. Olive AI is a defendant twice. This audit
+    # had the same bug as the analysis and therefore agreed with it: both
+    # counted 52 companies where there are 51, and the panel published the
+    # wrong figure until an independent recomputation found it. The lesson is
+    # in the file header: a check that reimplements the logic it is checking is
+    # not a check.
+    seen_sued, sued_recs = set(), []
+    for r in suits:
+        k = normalize_name(r.get("recipient") or "")
+        if k and k in by_name and k not in seen_sued:
+            seen_sued.add(k)
+            sued_recs.append(by_name[k])
     check("suits tied to a recipient", S["sued"]["recipients_matched"], len(sued_recs))
     sc = [int(r["total_cash"] or 0) for r in sued_recs]
     check("paid to the sued", S["sued"]["paid_to_them"], sum(sc))
