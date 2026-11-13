@@ -629,9 +629,17 @@ function renderTable(){
            both ran the badge past the edge of the column. "partly" wins,
            because whether the thing Ohio paid for actually failed is the
            sharper question, and the hover carries the group split anyway. */
-        var partlyOpen = !!(f.prov && f.prov.site && f.prov.site.verdict === "partly");
+        /* The badge carries whichever caveat is sharpest. "partly" means a
+           piece of the funded operation survived; "site unclear" means the
+           funded site could not be tied to the failed one at all, which is a
+           bigger warning and had no badge until a tie-out pointed out that
+           Pier 1 was showing as a clean bankruptcy. "part" means the payee is
+           part of a larger parent group. The hover carries all of it. */
+        var sv = (f.prov && f.prov.site && f.prov.site.verdict) || "";
         var label = (FAIL_LABEL[f.category] || f.category || "failure")
-                  + (partlyOpen ? " \u00b7 partly" : f.partial ? " \u00b7 part" : "");
+                  + (sv === "unresolved" ? " \u00b7 site unclear"
+                     : sv === "partly" ? " \u00b7 partly"
+                     : f.partial ? " \u00b7 part" : "");
         /* The employer's own notice to Ohio, beside the news source. It is the
            better record of the two for a closure or a layoff, so where the
            state has one it is offered as a second link rather than buried in
