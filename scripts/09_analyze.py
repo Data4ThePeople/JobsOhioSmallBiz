@@ -524,8 +524,24 @@ def main():
         g = fail_agg[f["category"] or "Uncategorised"]
         g["parents"] += 1; g["parent_cash"] += a["cash"]; g["payee_cash"] += payee_cash.get(a["parent"], 0)
     sued_parents = [a for a in allp if sued.get(a["parent"])]
+    # Suits naming a company that never appears on Schedule I at all. Not the
+    # same as "did not match the parents table": Hynes Industries and JBK Group
+    # are both on the schedule and both net to zero or less because the grant
+    # was clawed back, so the table drops them. An earlier version of this
+    # counted those as absent and the page said 11 where the answer is 9.
+    sched_names = set()
+    for g in grants:
+        for n in (g["recipient_name"], g.get("recipient_name_2") or ""):
+            if n.strip():
+                sched_names.add(normalize_name(n))
+    no_sched = sum(1 for r in (csv.DictReader(LAWSUITS.open()) if LAWSUITS.exists() else [])
+                   if r["kind"] == "suit"
+                   and normalize_name(r.get("recipient") or r.get("defendant") or "")
+                   not in sched_names)
+
     out["lawsuits"] = {
         "parents_sued": len(sued_parents),
+        "suits_not_on_schedule_i": no_sched,
         "suits": sum(len(sued[a["parent"]]) for a in sued_parents),
         "cash_to_parents_sued": sum(a["cash"] for a in sued_parents),
         "suits_matched": sum(len(v) for v in sued.values()),
