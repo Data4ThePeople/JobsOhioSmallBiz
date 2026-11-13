@@ -752,8 +752,19 @@ function renderBack(){
   }
   cell(pct1(clauseCash/allCash) + " of dollars", "went to a recipient whose agreement lets JobsOhio demand repayment",
        "Ten of twelve programs publish no repayment language. The clause is in the signed agreement instead, and 56 of those were obtained from court files.", "var(--small)");
-  cell(L.parents_sued + " of " + m.parents.toLocaleString(), "recipients have ever been sued by JobsOhio to get money back",
-       L.suits_filed + " suits in the Franklin County Court of Common Pleas since 2018, seeking " + money(L.sought_total) + " in total. About half ended in dismissal with no terms on the record, so what was recovered is not public.", "var(--unk)");
+  /* Say which unit each count is in. This tile counts PARENT companies, out of
+     the parent companies in the table, while the sentence under the outcome
+     tiles counts PAYEES as named on the Form 990. Both are right and they are
+     different numbers, and printing them a few lines apart without saying so
+     invites a reader to conclude we cannot count. The suit totals need the
+     same care: of the suits filed, not all name a company that appears on the
+     grant schedule at all. */
+  cell(L.parents_sued + " of " + m.parents.toLocaleString(), "parent companies have ever been sued by JobsOhio to get money back",
+       L.suits_filed + " suits in the Franklin County Court of Common Pleas since 2018, seeking " + money(L.sought_total) + " in total. "
+       + L.suits_matched + " of them name a company on JobsOhio’s own grant schedule, which roll up to these "
+       + L.parents_sued + " parent groups; the other " + (L.suits_filed - L.suits_matched)
+       + " name companies that do not appear on Schedule I at all. About half of all "
+       + L.suits_filed + " ended in dismissal with no terms on the record, so what was recovered is not public.", "var(--unk)");
   cell(pct1(back/out), "of what JobsOhio paid out has come back",
        money(back) + " of " + money(out) + " across " + (m.fy_max - m.fy_min + 1) + " years, recorded as negative rows on the same tax returns. Whether each one is a performance clawback or an accounting correction is not stated. One reversal, PTT Global Chemical\u2019s $20 million in FY2021, is more than three quarters of it.", "var(--large)");
   txt("p","wc","JobsOhio decides whether a company complied, whether to demand repayment, how much, and whether to waive it. Its standard agreement says so: \u201cNotwithstanding the terms of this Agreement, Grantor has the discretion to determine compliance.\u201d Where a case was dismissed, no filing states what, if anything, was paid.",host);
@@ -820,7 +831,7 @@ function renderWhat(){
   var se = S.sued.evidence || {}, fe = S.failures.evidence || {};
   p2.textContent = "JobsOhio has filed " + S.sued.suits + " suits for a median of "
     + money(S.sued.median_sought) + ". On the bands recorded here, " + under500(sb)
-    + " of the " + S.sued.recipients_matched + " sued companies on the grant schedule employ fewer "
+    + " of the " + S.sued.recipients_matched + " sued companies, counted as the Form 990 names them, employ fewer "
     + "than 500 people and " + (sb["<100"]||0) + " fewer than 100, while " + over500(fb)
     + " of the " + S.failures.companies + " that failed after being paid employ 500 or more and "
     + "none is recorded under 100. The two sides are not equally firm: "
@@ -916,7 +927,7 @@ document.getElementById("src").textContent =
   "Universities, hospitals, governments, nonprofits and site developers are shown separately from operating businesses. " +
   "“Repayment clause” is whether a clause exists that lets JobsOhio demand the money back, and how firmly we know it. Ten of its twelve programs publish no repayment language at all, but 56 signed JobsOhio grant agreements were obtained from Franklin County court files, spanning 2013 to 2023, and every one carries the same Section 9(b)(ii), “Demand Repayment of Grant Funds”: “Grantor may demand repayment of all or a portion of Grant Funds disbursed.” "
   + "“In this agreement” means this company’s own signed contract is in a court file. “In the standard agreement” means it was paid under a program whose agreements were obtained and are identical, so the clause is inferred rather than seen. “None found” means neither: nothing published and no agreement ever obtained, which is where the air service grants to airlines sit. Hover any label for the evidence. "
-  + "A clause is not a recovery. JobsOhio decides whether to demand repayment, how much, and whether to waive it, and the agreement says so: \u201cGrantor has the discretion to determine compliance.\u201d It has filed " + D.summary.sued.suits + " suits against " + D.lawsuits.parents_sued + " of these " + m.parents.toLocaleString() + " companies, seeking " + money(D.summary.sued.sought) + ", and " + money(D.summary.returned.dollars) + " has come back across " + (m.fy_max - m.fy_min + 1) + " years, " + pct1(D.summary.returned.share_of_paid) + " of what went out. Reimbursement is separate again: the company spends first and JobsOhio repays documented costs, so a company that never spends never collects. That limits what is at risk; it is not a way to recover money already paid. "
+  + "A clause is not a recovery. JobsOhio decides whether to demand repayment, how much, and whether to waive it, and the agreement says so: \u201cGrantor has the discretion to determine compliance.\u201d It has filed " + D.summary.sued.suits + " suits, " + D.lawsuits.suits_matched + " of them against companies on its own grant schedule, which roll up to " + D.lawsuits.parents_sued + " of these " + m.parents.toLocaleString() + " parent companies, seeking " + money(D.summary.sued.sought) + ", and " + money(D.summary.returned.dollars) + " has come back across " + (m.fy_max - m.fy_min + 1) + " years, " + pct1(D.summary.returned.share_of_paid) + " of what went out. Reimbursement is separate again: the company spends first and JobsOhio repays documented costs, so a company that never spends never collects. That limits what is at risk; it is not a way to recover money already paid. "
   "\u201CSued by JobsOhio\u201D is JobsOhio's own lawsuit against that company in the Franklin County Court of Common Pleas, where it is headquartered, to get grant money back under the repayment clause its published guidelines do not mention. Hover for the case number, what was sought and how it ended. Suits filed in another county, in federal court or in another state would not appear, so this is a floor. " +
   "Free to use. Built by Data 4 The People, " + m.built + ".";
 renderAll();
