@@ -508,7 +508,7 @@ quoted as findings. Cite the originating outlet, never Google News.
 ## Failure verification (court dockets, SEC filings, local news)
 
 **What it is.** The step that turns a distress candidate into a finding or
-throws it out. 84 candidates checked one at a time against the court docket
+throws it out. 117 candidates checked one at a time against the court docket
 where one exists, the company's SEC filings where it is public, and the local
 story where neither is available. Written to `data/research3/*.json` by the
 procedure in `docs/FAILURE_VERIFY_PROMPT.md` and consolidated by
@@ -516,9 +516,10 @@ procedure in `docs/FAILURE_VERIFY_PROMPT.md` and consolidated by
 
 **What `failures.csv` holds.** Every candidate and every verdict, including the
 rejects and the reason each was rejected, so the published count can be
-audited. Verdicts: `Confirmed failure` (43, $97,009,323 paid), `Not a failure`
-(52), `Different company` (17), `Failed away from the funded site` (3,
-$3,850,000, not in the count), `Before the grant` (1), `Unresolved` (1).
+audited. 117 candidates in all. Verdicts: `Confirmed failure` (43,
+$97,009,323 paid), `Not a failure` (53), `Different company` (17), `Failed
+away from the funded site` (3, $3,850,000, not in the count), `Before the
+grant` (1).
 
 **15 of the 43 were found by the WARN join, not by the news scan**
 (`scripts/35_warn_join.py`, verified in `data/research3/warncheck_*.json`,
@@ -537,8 +538,9 @@ confirmed failure was re-checked on one question: was the operation that failed
 the operation the grant paid for? It is the first question a press office asks,
 and it is not the same question as "did this company fail". The answers are in
 `data/research3/sitecheck.json`, one row per company, with the funded site, the
-failed site, what survives, and a confidence. 24 came back `same site`, 4
-`partly`, and 3 `different site`:
+failed site, what survives, and a confidence. Across all 46 rows checked: 37
+`same site`, 5 `partly`, 3 `different site`, 1 `unresolved`. The three
+`different site` rows are:
 
 | Company | Paid | Funded | Failed |
 |---|---:|---|---|
@@ -559,13 +561,13 @@ than deleted, because "the company closed something in Ohio" is true of all
 three and is a different claim from the one the count makes.
 `scripts/34_apply_sitecheck.py` applies this and is idempotent.
 
-The four `partly` rows — Nestle, Multi-Color, FirstMerit, AK Steel — stay in the
-count and carry a caveat naming what survived. Republic Steel stays too, but
+The five `partly` rows — Nestle, Multi-Color, FirstMerit, AK Steel and ATW
+Ohio — stay in the count and carry a caveat naming what survived. Republic Steel stays too, but
 its caveat had to be rewritten: the funded Lorain mill really is shuttered,
 while the 209 jobs and the August 2023 date on the row are the Canton mill, a
 different site Ohio did not fund.
 
-**The dominant failure mode, and it is worth stating in the post.** 49 of 84
+**The dominant failure mode, and it is worth stating in the post.** 53 of 117
 candidates were the company appearing in somebody else's case: JPMorgan and
 Morgan Stanley as creditors or fund sponsors, BDO as the author of bankruptcy
 reports, British Airways as a customer of a liquidated Scottish contractor,
@@ -700,9 +702,19 @@ are after the FY2025 merge; an earlier draft of this file carried the
 FY2014-2024 shares and was roughly six points out. Anything quoting a recourse
 percentage should be recomputed from `dist/data.json`, not copied from prose.
 
-So recourse is established for **70.7% of paid dollars**, nearly all of it on
+So recourse is established for **71.09% of paid dollars**, nearly all of it on
 the strength of the form agreement rather than on anything JobsOhio publishes.
 A parent paid under several programs takes the weakest grade of those programs.
+
+**The denominator here is net cash, not gross payments, and this file used to
+imply otherwise.** The grades are assigned per parent on net cash, so the
+shares divide by $1,346,076,114 rather than the $1,371,358,950 that actually
+went out, and they sum to 100% of the former. Divide by gross and they sum to
+98.1%, the difference being the 16 parents whose grants were fully reversed.
+An independent tie-out also found `meta.cash_positive` in `dist/data.json`
+carrying the net figure under a name that says positive, so anyone reusing it
+was out by $25,282,836. That key is now `cash_counted`, and
+`cash_payments_gross` and `cash_reversals` are published beside it.
 
 `none found` is the finding worth naming: it is almost entirely the Commercial
 Air Service Restoration grants, $17,161,906 including $5,681,149 to British
@@ -1241,8 +1253,11 @@ every publish. It has already caught two real defects:
 deliberate.** The data holds employee bands (`<100`, `100-499`, `500-4999`,
 `5000+`), not headcounts, so there is no number to take a median of and any
 "median employees" figure would be invented. The bands say it more plainly
-anyway: of the 52 sued companies on the grant schedule, 20 employ fewer than
-100; **of the 43 that failed after being paid, none does.** Median and mean
+anyway: of the 51 sued companies on the grant schedule, 20 employ fewer than
+100; **of the 43 that failed after being paid, none does.** Those bands grade
+the employee count and not the finding, which is a separate and weaker thing:
+21 of the 43 failures rest on a court filing or the employer's own notice to
+the state. Median and mean
 *grant* size are exact and are published instead.
 
 ### Ultium Cells is counted as Michigan, and that is a decision
@@ -1289,7 +1304,7 @@ or a mass layoff, better than the news story that reports it.
 `data/warn/notices.csv`, with each year's page and CSV cached under
 `data/warn/` so the parse can be re-checked.
 `scripts/33_match_warn.py` then ties each closure and mass layoff to its notice
-and writes `data/failure_warn.csv`. 15 of the 19 match; the other four record
+and writes `data/failure_warn.csv`. 27 of the 31 match; the other four record
 why the state has none.
 
 **Where it comes from.** Each year has a page under
@@ -1340,9 +1355,11 @@ absences is explained in `33_match_warn.py`:
 
 **A matched notice is not proof the funded site failed.** Each match carries
 `notice_at_funded_site`, set by comparing the notice's county against the
-counties the money was actually paid into, both read off the files. Four come
-back no: Republic Steel (Canton, funded Lorain) and the three companies that
-failed away from the funded site. Matching the notice and reading it as proof
+counties the money was actually paid into, both read off the files. Of the 27
+matched notices, 17 come back yes, 3 come back no, and **7 are blank** because
+every payment went to an out-of-state address and the check could not run at
+all. The page says which of the three a row is, rather than asserting a match
+it has not made. Matching the notice and reading it as proof
 of the funded site's failure are two different steps and the file keeps them
 apart.
 
@@ -1385,11 +1402,11 @@ Nestlé USA for the Solon campus, which is closing, and $6,000,000 to Nestlé
 Purina for a Clermont County plant, which opened in August 2026.** A reader
 taking the parent row at face value would read $9.2 million as lost.
 
-**Four of the 43 confirmed failures sit inside a parent that was paid more**:
+**Five of the 43 confirmed failures sit inside a parent that was paid more**:
 Nestlé (35% of the group's money failed), Procter & Gamble through iMFLUX
-(20%), Marathon Petroleum through Speedway (76%) and McKesson through
-CoverMyMeds (89%). Read as whole-parent losses they would overstate by
-**$8,715,727**. Dana used to be a fifth, and is no longer in the count at all:
+(20%), Marathon Petroleum through Speedway (76%), McKesson through
+CoverMyMeds (89%) and American Trailer World through ATW Ohio (47%). Read as
+whole-parent losses they would overstate by **$9,015,727**. Dana used to be a fifth, and is no longer in the count at all:
 the plant that closed was not one the money paid for.
 
 **What was rejected, and why.** One option was to recategorise a partial
