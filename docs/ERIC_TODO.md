@@ -204,9 +204,12 @@ moves a headline:
   "largest payee's class". Only Tractor Supply discriminates, and applying the
   written rule moves the small share 18.90% to 18.94%. Either fix the doc or
   fix the code; they should not disagree.
-- **The confidence A/B/C/D panel does not reproduce** under any aggregation
-  tried, while the worst-case bounds do. The page may be showing two different
-  gradings of the same companies.
+- ~~The confidence A/B/C/D panel does not reproduce~~ **Fixed.** It was
+  showing whichever payee's grade was read first, while the worst-case bounds
+  swept on the weakest, so the page really was displaying one grading and
+  computing its bounds on another. Evidence now takes the weakest grade among
+  a parent's payees and reproduces 1,700 of 1,700. Ten rows moved, mostly B to
+  C.
 - **The recourse block divides by net dollars** where DATASETS.md says the
   conditions shares use positive payments. "70.7%" is 71.09% on the stated
   rule.

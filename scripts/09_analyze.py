@@ -251,7 +251,15 @@ def build_parents(grants, parents):
             a["resolved"] = True
             for field, col in (("class", cls), ("bucket", p["emp_bucket"]), ("hq", p["parent_hq_state"]),
                                ("conf", p["confidence"]), ("founded_oh", p["founded_in_ohio"])):
-                if col and not a[field]:
+                # Evidence takes the WEAKEST grade among a parent's payees, not
+                # whichever was read first. The worst-case bounds already sweep
+                # on the weakest, so first-wins meant the page displayed one
+                # grading and computed its bounds on another. An independent
+                # tie-out found the Evidence column reproducible under no rule
+                # at all, which is what arbitrary order looks like from outside.
+                if field == "conf" and col:
+                    a[field] = max([x for x in (a[field], col) if x], key="ABCD".index)
+                elif col and not a[field]:
                     a[field] = col
                 elif col and a[field] and a[field] != col and field in ("bucket", "hq", "class"):
                     # Two recipients of one parent were researched to different
