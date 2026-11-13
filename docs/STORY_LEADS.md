@@ -234,7 +234,8 @@ June 2026 (`data/air_service_routes.csv`).
   $25,000,000 (December 2022), for 3,000 new jobs, $405 million in new
   payroll and $20 billion in investment in Licking County.
 - Paid (Schedule I): $123,181,109 in FY2023 and $1,241,684 in FY2024,
-  $124,422,793 total, the largest amount paid to any recipient FY2014-FY2024.
+  $125,415,416 total through FY2025, the largest amount paid to any recipient.
+  (This read $124,422,793 while the data ended at FY2024.)
 - Intel's 10-Q for the quarter ended June 27, 2026 (filed July 24, 2026)
   describes "investing in a new leading-edge manufacturing facility in Ohio in
   the long term." No date.
