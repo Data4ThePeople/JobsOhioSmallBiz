@@ -551,6 +551,11 @@ checking city, industry and officers against the payee address.
   years only.
 - Multi-Color: **resolved.** The lead case is 26-10910, Bankr. D.N.J., filed
   2026-01-29 and terminated 2026-06-26, Judge Michael B. Kaplan.
+- FY2012 and FY2013 are excluded because JobsOhio filed them on paper and
+  ProPublica's PDF download sits behind a security check that refuses an
+  automated fetch. The exclusion is immaterial to every published share:
+  FY2013 total expenses were $7,228,247 against $584,432,476 in FY2023, so the
+  two missing years are on the order of 1% of the organisation's spending.
 - Goodlevel Enterprises: unresolved.
 - CourtListener began returning empty pages partway through, and
   `archive.org` returned 429 and 504 throughout, so several paywalled local
@@ -1208,6 +1213,13 @@ to be percent-encoded or the fetch fails outright.
 **A trap worth recording.** `jfs.ohio.gov` returns **404 to a descriptive
 User-Agent and 200 to a browser one**. An automated check that trusts the
 status code will conclude the page does not exist.
+
+**The pandemic dominates this register and any use of it has to say so.**
+46% of all 810 notices are 2020, and March to June 2020 alone is 225 of them,
+28% of the whole file, against a baseline near six a month. Much of that was
+temporary: plants shut for the shutdown and reopened. A 2020 notice is
+therefore not evidence that a company failed, and `scripts/35_warn_join.py`
+flags that window and holds it to a higher bar rather than counting it.
 
 **Coverage.** 2020 to the present. Earlier years return 404, which is why the
 pre-2020 failures rest on court dockets and news instead. A WARN notice is

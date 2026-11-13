@@ -36,6 +36,7 @@ No published page or post yet. The built interactive page is in `dist/index.html
   - `research3/`: the per-candidate verification files behind `failures.csv`, including `sitecheck.json`, which records for each confirmed failure whether the operation that failed was the operation the grant paid for.
   - `warn/`: Ohio's own register of mandatory layoff and closure notices, 810 of them from 2020 to 2026, with each year's page and CSV cached so the parse can be re-checked.
   - `failure_warn.csv`: each Ohio closure or mass layoff tied to the employer's own notice to the state, or the reason the state has none.
+  - `warn_join.csv`: every WARN notice matched against every recipient, scored and tiered. These are candidates for verification, not findings.
 - `docs/`: the written research method, the verification write-up and research notes.
 - `dist/`: the built page (`index.html`), an embeddable version (`embed.html`) and the data it reads (`data.json`).
 - `posts/images/`: static charts for the post.
@@ -86,6 +87,7 @@ python scripts/21_failures.py         # consolidate data/research3/*.json into d
 python scripts/32_fetch_warn.py       # download Ohio's WARN register into data/warn/
 python scripts/33_match_warn.py --write   # tie each closure and layoff to the state's notice
 python scripts/34_apply_sitecheck.py  # apply the funded-site verdicts to data/failures.csv
+python scripts/35_warn_join.py --write    # join the whole WARN register against every recipient
 ```
 
 Two audits run before every publish and exit non-zero on any mismatch:
