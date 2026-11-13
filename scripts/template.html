@@ -854,15 +854,28 @@ function renderWhat(){
      graded, the sued companies are over a third C or D. State the strength
      rather than let an absolute claim rest on a guess. */
   var se = S.sued.evidence || {}, fe = S.failures.evidence || {};
+  var fy = S.failures.failure_evidence || {};
   p2.textContent = "JobsOhio has filed " + S.sued.suits + " suits for a median of "
     + money(S.sued.median_sought) + ". On the bands recorded here, " + under500(sb)
     + " of the " + S.sued.recipients_matched + " sued companies, counted as the Form 990 names them, employ fewer "
     + "than 500 people and " + (sb["<100"]||0) + " fewer than 100, while " + over500(fb)
     + " of the " + S.failures.companies + " that failed after being paid employ 500 or more and "
-    + "none is recorded under 100. The two sides are not equally firm: "
-    + fe.a_or_b + " of the " + fe.n + " failures rest on a filing or an official record, against "
-    + se.a_or_b + " of " + se.n + " on the sued side, where " + se.weak
-    + " sit on a company website, a directory or a best guess. What is not in doubt is the money: "
+    + "none is recorded under 100. Those bands are not equally well sourced either: "
+    + fe.a_or_b + " of the " + fe.n + " failed companies have a headcount from a filing or an "
+    + "official record, against " + se.a_or_b + " of " + se.n + " on the sued side, where "
+    + se.weak + " sit on a company website, a directory or a best guess. "
+    /* Two different gradings, and the page used to print one as if it were the
+       other. parents.csv A/B grades the EMPLOYEE COUNT; failures.csv
+       High/Medium grades the FINDING. Conflating them said 35 of 43 failures
+       rest on a filing, when Petmin's Chapter 7 docket counted as weak (its
+       headcount came off a South African website) and CoverMyMeds counted as
+       firm (McKesson's 10-K gives a headcount, though its Ohio job loss was
+       never disclosed). On the grade that measures the finding it is 21. */
+    + "How firmly the failures themselves are evidenced is a separate question, and a "
+    + "harder one: " + fy.firm + " of the " + fy.n + " rest on a court filing or the "
+    + "employer's own notice to the state, and the other " + fy.softer
+    + " on reporting that we could not tie to an Ohio document. "
+    + "What is not in doubt is the money: "
     /* The median leads, because the mean of the failed grants is one company:
        Ultium Cells alone is 58% of the failed dollars, and a reader handed
        only the mean will read $3.1 million as a typical failure when the

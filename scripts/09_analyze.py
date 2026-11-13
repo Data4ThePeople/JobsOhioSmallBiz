@@ -588,11 +588,26 @@ def main():
         return {k: c[k] for k in BUCKETS + ["unresolved"] if c.get(k)}
 
     def weak_grades(rows):
-        """How much of a band mix rests on a company website, a directory or a
+        """How much of a BAND MIX rests on a company website, a directory or a
         guess. The size contrast is read off bands, so the reader is owed the
-        strength of the evidence on each side of it."""
+        strength of the evidence on each side of it. A/B/C/D in parents.csv
+        grades the employee count and nothing else."""
         c = Counter(r["confidence"] for r in rows)
         return {"n": len(rows), "weak": c["C"] + c["D"], "a_or_b": c["A"] + c["B"]}
+
+    def failure_grades(rows):
+        """How firmly the FAILURES themselves are evidenced, which is a
+        different question from how firmly the companies are sized.
+
+        The page used the band grade for both and the sentence it produced was
+        wrong in both directions at once: Petmin's Chapter 7 docket counted as
+        weak evidence, because its employee count came off the parent's South
+        African website, while CoverMyMeds counted as firm, because McKesson's
+        10-K gives a headcount, although its Ohio job loss was never disclosed
+        and Ohio holds no notice for it. On the grade that actually measures
+        the finding it is 21 of 43, not 35."""
+        c = Counter(r["confidence"] for r in rows)
+        return {"n": len(rows), "firm": c["High"], "softer": c["Medium"] + c["Low"]}
 
     by_name = {normalize_name(p2["name"]): p2 for p2 in parents.values()}
     # One row per COMPANY, not per suit. Olive AI is a defendant in two of the
@@ -683,6 +698,7 @@ def main():
                                       if fail_rows else ""),
                      "largest_share": (max(fail_cash) / sum(fail_cash)) if fail_cash else 0,
                      "bands": band_mix(fail_recs), "evidence": weak_grades(fail_recs),
+                     "failure_evidence": failure_grades(fail_rows),
                      "by_category": dict(cat_agg)},
         "returned": {"dollars": abs(out["meta"]["reversal_dollars"]),
                      "share_of_paid": abs(out["meta"]["reversal_dollars"])
