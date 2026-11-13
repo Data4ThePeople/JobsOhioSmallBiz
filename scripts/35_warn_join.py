@@ -83,7 +83,11 @@ STOP = {"inc", "inc.", "corp", "corporation", "company", "co", "llc", "ltd", "th
         "north", "america", "american", "supply", "chain", "logistics", "services",
         "service", "health", "care", "system", "energy", "international", "industries",
         "products", "solutions", "technologies", "manufacturing", "enterprises",
-        "partners", "global", "limited", "center", "centers"}
+        "partners", "global", "limited", "center", "centers",
+        # singular forms of the above: "enterprises" was stopped but
+        # "enterprise" was not, which read RL Cole Enterprise as Enterprise
+        # Holdings, the car rental company
+        "enterprise", "industry", "product", "solution", "technology", "partner"}
 RARE = 2          # a word used by this many companies or fewer is distinctive
 COVER = 0.6       # the shared words must cover this much of one name
 UPDATE = re.compile(r"^\s*(update|revised)?\s*\d*\s*(update|revised)?\b[:\s-]*", re.I)
@@ -138,7 +142,10 @@ def headcount(s):
 
 
 def split_place(place):
-    if "/" not in (place or ""):
+    """("city", "county") from Ohio's "Canton/Stark". Whitespace is collapsed
+    first because a few rows carry an embedded newline from the source CSV."""
+    place = re.sub(r"\s+", " ", place or "").strip()
+    if "/" not in place:
         return "", ""
     city, county = place.rsplit("/", 1)
     return city.strip().lower(), county.strip().lower()
@@ -286,16 +293,28 @@ def main(argv):
            and r["notice_after_first_grant"] == "yes" and r["tier"] in ("A", "B")]
 
     def show(group, title):
-        seen = set()
-        print(f"\n{len({r['recipient_id'] for r in group})} {title}")
-        for r in sorted(group, key=lambda x: -int(x["total_cash"] or 0)):
-            if r["recipient_id"] in seen:
-                continue
-            seen.add(r["recipient_id"])
-            print(f"  {r['tier']}  ${int(r['total_cash'] or 0):>10,}  {r['recipient'][:29]:29s} "
-                  f"grants {r['grant_years'][:14]:14s} <- {r['warn_employer'][:32]:32s} "
-                  f"{r['warn_place'][:21]:21s} {r['affected_n']:>5} jobs  "
-                  f"{r['warn_received'][:10]}")
+        """One line per recipient, showing its BIGGEST notice.
+
+        An earlier version showed whichever notice happened to sort first,
+        which badly understated three companies: ProMedica appeared as a
+        6-person notice when it also filed one for 189, INOAC as 1 when it also
+        filed 174, and Sherwin-Williams as 2 when it also filed 51. A triage
+        list that hides the large notice is worse than no triage list.
+        """
+        best = {}
+        for r in group:
+            k = r["recipient_id"]
+            if k not in best or r["affected_n"] > best[k]["affected_n"]:
+                best[k] = r
+        print(f"\n{len(best)} {title}")
+        n_each = Counter(r["recipient_id"] for r in group)
+        for r in sorted(best.values(), key=lambda x: -x["affected_n"]):
+            more = n_each[r["recipient_id"]] - 1
+            print(f"  {r['tier']}  {r['affected_n']:>5} jobs  "
+                  f"${int(r['total_cash'] or 0):>11,}  {r['recipient'][:29]:29s} "
+                  f"grants {r['grant_years'][:14]:14s} <- {r['warn_employer'][:30]:30s} "
+                  f"{r['warn_place'][:20]:20s} {r['warn_received'][:10]}"
+                  + (f"  (+{more} more notices)" if more else ""))
 
     show([r for r in new if not r["covid_window"]],
          "recipients to check: a notice after the grant, outside the pandemic window")
@@ -305,16 +324,8 @@ def main(argv):
     before = [r for r in rows if r["tier"] in ("A", "B")
               and r["notice_after_first_grant"] == "no"]
     if before:
-        print(f"\n{len({r['recipient_id'] for r in before})} have a notice BEFORE their first "
-              f"grant year, which is its own question:")
-        seen = set()
-        for r in before:
-            if r["recipient_id"] in seen:
-                continue
-            seen.add(r["recipient_id"])
-            print(f"  {r['tier']}  ${int(r['total_cash'] or 0):>10,}  {r['recipient'][:28]:28s} "
-                  f"grants {r['grant_years'][:14]:14s} <- notice {r['warn_received'][:10]:10s} "
-                  f"{r['warn_place'][:20]:20s} aff {r['warn_affected'][:10]}")
+        show(before, "filed a mass-layoff notice BEFORE Ohio first paid them, which is "
+                     "its own question (most are the 2020 shutdown; the later ones are not)")
 
     if "--write" not in argv:
         print("\n(not written; pass --write)")
