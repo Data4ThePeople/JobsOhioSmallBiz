@@ -1477,7 +1477,7 @@ declined to say what the airline was given. The amount comes from Schedule I.
 Dayton owns and operates the airport, is a public body under R.C. 149.43, is
 named in JobsOhio's own release, and had to put up a local match. Its file
 should hold the agreement and JobsOhio's commitment letter with the number on
-it. JobsOhio's own copy is beyond reach by design. See `docs/ERIC_TODO.md`.
+it. JobsOhio's own copy is beyond reach by design.
 
 ---
 

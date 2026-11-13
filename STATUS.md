@@ -200,6 +200,7 @@ None.
   catching it. The independent tie-out found it:
   `docs/TIEOUT_INDEPENDENT_2.md`, which otherwise reproduces every headline
   share to seven decimals.
-  Open and in `docs/ERIC_TODO.md`: the Sauder call, the request for comment,
+  Open, tracked in the private to-do outside this repo: the Sauder call,
+  the request for comment,
   and three judgment calls, the largest being whether Ultium Cells counts as
   Ohio, which alone moves the home-state share from 36.2% to 41.4%.

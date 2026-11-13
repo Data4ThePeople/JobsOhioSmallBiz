@@ -93,10 +93,13 @@ Eric
 - **The repo was already public**, and has been throughout. The embargo is a
   courtesy ask on the page and in this email, not a technical control. Anyone
   who finds the repo can read the data and the leads today.
-- **`docs/ERIC_TODO.md` is public and names your strategy**, including the four
-  questions you plan to put to JobsOhio and the recommendation to hand the
-  Dayton records request to a local newsroom. JobsOhio can read that now. Say
-  the word and I will move it out of the repo.
+- **Your to-do list has been moved out of the repo**, to
+  `../JobsOhioSmallBiz-private/ERIC_TODO.md`. It named the four questions you
+  plan to put to JobsOhio and the recommendation to hand the Dayton records
+  request to a local newsroom, and it was public. **It is still readable in the
+  git history**, because the repo has been public and the file was pushed in
+  several commits; removing it from history means a force push that rewrites
+  public history, which I have not done. Say the word if you want that.
 - The page carries "Last verified 13 November 2026" because the failure count
   moved five times in two days. If he quotes 44 in March, that date is how he
   checks whether it is still 44.
