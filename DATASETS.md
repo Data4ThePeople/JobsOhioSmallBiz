@@ -844,18 +844,24 @@ developer, but the beneficiary was Amazon, so a reader may fairly ask why the
 biggest site payment sits outside the business denominator rather than
 counting as large.
 
-- *The class boundary is the largest exposure in the project.* 101 parents
-  carrying $117,746,967 were classed out of `business` by hand after the
+- *The class boundary is the largest exposure in the project.* **92 parents
+  carrying $94,842,324** were classed out of `business` by hand after the
   automatic classifier called them businesses, mostly into site_development.
-  96 of them, carrying $97,096,967, would have scored small. Recompute the
+  **88 of them, carrying $85,842,324**, would have scored small. Recompute the
   headline on the automatic class and the small share of business dollars goes
-  from 18.1% to 26.2%. The reclassification is defensible on the merits, since
-  these are project vehicles and industrial developers rather than operating
-  small businesses, but it is a judgment call worth $97 million that moves the
-  headline 8 points toward the thesis, and the published worst case does not
-  cover it. The post states the counterfactual.
+  **from 18.90% to 25.36%**. The reclassification is defensible on the merits,
+  since these are project vehicles and industrial developers rather than
+  operating small businesses, but it is a judgment call worth $95 million that
+  moves the headline **6.5 points** toward the thesis, and the published worst
+  case does not cover it. The post states the counterfactual.
+
+  (These figures were a fiscal year out of date until an independent tie-out
+  checked them. The direction held; the magnitude was overstated, 101 parents
+  and $117.7 million against 92 and $94.8 million, and 8 points against 6.5.)
 - *One payment carries the home-state finding.* Intel Corporation alone is
-  $124,422,793, 15.2% of business dollars, almost all of it one FY2023 payment.
+  $125,415,416, 13.1% of business dollars. Counting Ultium Cells as Ohio moves
+  the home-state dollar share by almost as much in the other direction; both
+  sensitivities are now printed on the page itself.
   Leave Intel out and Ohio's share of business dollars goes from 35.8% to
   42.2%. The post names Intel beside the number.
 
