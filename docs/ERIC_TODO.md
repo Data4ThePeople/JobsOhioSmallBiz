@@ -138,9 +138,8 @@ whether it belongs in the post or only in the method note.
 - [ ] Read the "After the grant" column on the page and hover three rows at
       random. Every one should name the site the money paid for, the site that
       failed, and either Ohio's own notice or why there isn't one.
-- [ ] Confirm the count on the page matches whatever you decided in 4a.
-
----
+- [ ] Confirm the page says 43 companies and $97.0 million, and that it
+      reflects whatever you decided about Ultium in 4a.
 
 ---
 

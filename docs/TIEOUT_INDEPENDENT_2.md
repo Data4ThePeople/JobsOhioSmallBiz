@@ -1,5 +1,19 @@
 # Independent tie-out #2
 
+> **Read this first: the failure figures below are one revision out of date,
+> deliberately.** This tie-out ran while the failure set was 28 companies and
+> $86,887,093, and it reproduced both exactly. The WARN join landed afterwards
+> and the published figure is now **43 companies and $97,009,323**. Every other
+> figure here — the headline size and home-state shares, the year-by-size
+> cells, the reversals, the concentration — is current and unaffected, because
+> none of it depends on the failure set.
+>
+> Two things it found were live errors and are now fixed: the sued panel
+> counted lawsuits and called them companies, 52 where there are 51, which
+> overstated what the sued were paid by $560,770; and `30_audit_summary.py`
+> shared that bug and so agreed with the analysis rather than catching it.
+> The remaining findings are tracked in `docs/ERIC_TODO.md` section 6.
+
 A second, independent recomputation of the published figures, written from
 `DATASETS.md` alone and run against `data/grants_raw.csv`, `data/parents.csv`,
 `data/failures.csv` and `data/jobsohio_lawsuits.csv`. The analysis code
