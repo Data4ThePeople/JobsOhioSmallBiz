@@ -13,8 +13,11 @@ What it checks, and why each one is here rather than assumed:
   elsewhere   the three companies that failed away from the funded site are
               neither counted nor filed with the rejects, and each one says
               which site took the money and which site failed
-  money       the paid figure ties to parents.csv by recipient_id, because
-              merging a year once left the file stale by $2,200,000
+  money       the paid figure ties to parents.csv by recipient_id, and again
+              to the sum of that payee's Schedule I rows, because parents.csv
+              is built by this pipeline and a check between two derived files
+              would miss an error made in both. Merging a year once left the
+              file stale by $2,200,000
   category    every confirmed failure has exactly one, and the category is
               consistent with the event recorded
   site        the operation that failed is the operation the grant paid for,
@@ -37,7 +40,7 @@ What it checks, and why each one is here rather than assumed:
 Usage: 31_audit_failures.py [--fetch]   (--fetch re-checks that every source URL resolves)
 """
 import csv, json, re, subprocess, sys
-from collections import Counter
+from collections import Counter, defaultdict
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -48,6 +51,7 @@ SOURCES = ROOT / "data" / "failure_sources.csv"
 SITECHECK = ROOT / "data" / "research3" / "sitecheck.json"
 WARNMATCH = ROOT / "data" / "failure_warn.csv"
 PARENTS = ROOT / "data" / "parents.csv"
+GRANTS = ROOT / "data" / "grants_raw.csv"
 DATA = ROOT / "dist" / "data.json"
 
 SEC_UA = "Data 4 The People research connect@data4thepeople.com"
@@ -113,6 +117,24 @@ def main(argv):
         if p and int(r["paid"] or 0) != int(p["total_cash"] or 0):
             bad(f"{r['name']}: paid ${int(r['paid'] or 0):,} but parents.csv says "
                 f"${int(p['total_cash'] or 0):,} (is failures.csv stale?)")
+
+    # And again against the filings themselves, not the file derived from them.
+    # Every dollar published beside a company's name should be re-addable from
+    # Schedule I alone, because parents.csv is built by this pipeline and a
+    # check that only compares the two would miss an error made in both.
+    if GRANTS.exists():
+        raw = defaultdict(int)
+        for g in csv.DictReader(GRANTS.open()):
+            ein = re.sub(r"\D", "", g["recipient_ein"] or "")
+            if len(ein) == 9 and ein.strip("0"):
+                raw[f"EIN:{ein}"] += int(g["cash_amt"])
+        for r in conf + away:
+            rid = r.get("recipient_id", "")
+            if rid.startswith("EIN:") and rid not in raw:
+                bad(f"{r['name']}: {rid} has no rows in grants_raw.csv at all")
+            elif rid in raw and int(r["paid"] or 0) != raw[rid]:
+                bad(f"{r['name']}: paid ${int(r['paid'] or 0):,} but Schedule I sums to "
+                    f"${raw[rid]:,} for {rid}")
 
     # --- category ---------------------------------------------------------
     for r in conf:
