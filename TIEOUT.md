@@ -40,7 +40,6 @@ Resolved against the finding, not by read order: the smaller size band, Ohio, an
 - bucket: 100-499 vs 500-4999 (SFG GEIS SHALERSVILLE LLC)
 - bucket: 500-4999 vs 100-499 (NP FTC LLC)
 - class: business vs hospital (THE RESEARCH INSTITUTE AT NATIONWIDE CHILDREN'S HOSPITAL)
-- class: site_development vs business (TRACTOR SUPPLY COMPANY)
 - hq: CA vs OH (AVERY DENNISION CORPORATION)
 
 ## Sensitivities

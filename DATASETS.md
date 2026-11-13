@@ -746,10 +746,42 @@ found is now its own parent.
 **A conflict between two payees of one parent is resolved against the finding,
 not by read order.** Where two researched recipients of the same parent
 disagree, the analysis takes the smaller size band, Ohio for home state, and
-the non-`business` class, and still prints the conflict. Read order used to
-decide. The class rule moved Nationwide Children's Hospital ($13,500,000) out
-of the business denominator, which is why Ohio's share of business dollars fell
-from 36.8% to 35.8%.
+still prints the conflict. Read order used to decide. The class rule moved
+Nationwide Children's Hospital ($13,500,000) out of the business denominator,
+which is why Ohio's share of business dollars fell from 36.8% to 35.8%.
+
+**The class rule has two halves and this file used to state only one.** It said
+a mixed-class parent "takes the non-`business` class", which is right for most
+pairs and wrong whenever `site_development` is one of them:
+
+1. **`site_development` loses to every other class.** It describes a *payee*, a
+   single-project LLC built to hold a building, and says nothing about who owns
+   it. Tractor Supply Company pays through Navarre Facility LLC, and Tractor
+   Supply is a retailer, not a developer.
+2. **Otherwise the more specific class beats `business`**, which keeps
+   Nationwide Children's a hospital and is the conservative call for a headline
+   whose denominator is operating businesses.
+
+The code (`resolve_class` in `09_analyze.py`) has always done both. An
+independent tie-out read the behaviour as "the largest payee's class" because
+the one case in the data where the halves differ, Tractor Supply, happens to
+have its business payee as the larger. That reading is wrong, but the
+discrepancy it found was real: the doc described half the rule.
+
+**And the row behind it was misclassified.** `NAVARRE FACILITY LLC` was
+automatically classed `business`, hand-moved to `site_development`, and is
+Tractor Supply's own distribution centre, so by the test above it is
+`business`. This file already named that error class and had not fixed the
+row. It is now in `data/site_dev_review.csv` with a verdict of `business`.
+Fixing it removes the only class conflict in the data and moves no money,
+because Tractor Supply Company's own payee is larger and was already
+`business` at the parent level.
+
+**20 site_development recipients carrying $10,252,313 have never been through
+the re-check**, and `25_apply_site_dev.py` reports them as OPEN on every run.
+Nineteen of the twenty were classed `site_development` by the automatic rule as
+well, so the rule and the class agree and the risk is low; Navarre was the one
+where they disagreed.
 
 **The worst case sweeps on the weakest grade under a parent.** It used to sweep
 on the grade inherited from whichever payee was read first, which let 6 parents
