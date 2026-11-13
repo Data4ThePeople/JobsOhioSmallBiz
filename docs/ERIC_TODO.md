@@ -144,14 +144,15 @@ was idled and made no steel, and booked it at zero tons. The EPA agrees twice
 over. JobsOhio then sued in 2023 pleading that 55 of the 125 jobs were
 created. That row has moved from Medium to High confidence.
 
-**b. Ultium Cells is recorded as a Michigan company, and that is the single
-biggest unstated judgment in the piece.** It is a 50/50 GM and LG joint
-venture whose operating base is Lordstown, Ohio, and the project's own note
-concedes there is no single ultimate parent. Counted as Ohio, **the headline
-home-state share goes from 36.2% to 41.4%** — a swing nearly the size of the
-Intel one the post already names. It is also 52% of all failed dollars. Right
-now it is Michigan and the post does not mention the question. Decide, and
-whichever way you go, say so on the page.
+**b. Ultium Cells: decided, and now disclosed on the page.** You asked whether
+a joint venture should count as Ohio. It stays Michigan, because recoding it
+on plant location would force the same treatment on Honda ($47.4m, plants all
+in Ohio, counted to Japan) and Fuyao ($10.6m, Moraine, counted to China), and
+that is the finding itself. Schedule I also shows $20,000,000 of the
+$50,000,000 remitted to 300 Renaissance Center, Detroit, which is GM's head
+office. The page now names it next to Intel and states what the call costs:
+**count Ultium as Ohio and the home-state dollar share goes 36.2% to 41.4%.**
+Nothing more needed from you unless you disagree.
 
 **c. The headline failure number moved twice today.** 31 and $90.7 million
 this morning, then 28 and $86.9 million when three companies turned out to

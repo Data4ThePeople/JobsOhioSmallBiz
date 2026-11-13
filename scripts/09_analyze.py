@@ -605,6 +605,54 @@ def main():
     sued_cash = [int(r["total_cash"] or 0) for r in sued_recs]
     fail_cash = [int(r["paid"] or 0) for r in fail_rows]
 
+    # Two single companies move the home-state share by about five points
+    # each, in opposite directions, and the page has to name both rather than
+    # let a reader find them. Intel is the largest recipient in the data and
+    # is Californian, so dropping it raises Ohio's share. Ultium Cells is a
+    # 50/50 General Motors and LG joint venture recorded as Michigan, and
+    # counting it as Ohio raises the share by almost as much.
+    #
+    # Ultium stays Michigan, and the reason is consistency rather than
+    # preference: its plant is in Warren, but Honda's plants are all in Ohio
+    # and Fuyao's is in Moraine, and both are recorded to their operating
+    # parents abroad. Recoding Ultium on plant location would mean recoding
+    # those too, which is the whole finding. Schedule I also shows $20,000,000
+    # of the $50,000,000 remitted to 300 Renaissance Center, Detroit, which is
+    # GM's head office.
+    biz_rows = [a for a in allp if a["class"] == "business" and a["cash"] > 0]
+    biz_total = sum(a["cash"] for a in biz_rows)
+    oh_now = sum(a["cash"] for a in biz_rows if home_group(a) == "ohio")
+
+    def swing(name):
+        # the LARGEST match, not the first: a bare substring search for "Intel"
+        # finds Intelligrated, Inc. and quietly reports a $1.5m company as the
+        # one carrying the home-state finding
+        hits = [a for a in biz_rows if name.lower() in a["parent"].lower()]
+        hit = max(hits, key=lambda a: a["cash"]) if hits else None
+        if not hit or not biz_total:
+            return None
+        if home_group(hit) == "ohio":          # drop it from the Ohio column
+            after = (oh_now - hit["cash"]) / biz_total
+        elif hit["cash"] >= biz_total:
+            return None
+        else:                                   # count it, or leave it out
+            after = ((oh_now + hit["cash"]) / biz_total if name == "Ultium"
+                     else oh_now / (biz_total - hit["cash"]))
+        # where the money was actually remitted, off Schedule I, so the page
+        # never has to hardcode the split
+        where = defaultdict(int)
+        for g in grants:
+            if name.lower() in g["recipient_name"].lower():
+                where[f"{g['city'].title()}, {g['state']}"] += g["cash"]
+        return {"parent": hit["parent"], "cash": hit["cash"],
+                "share_of_business": hit["cash"] / biz_total,
+                "hq": hit["hq"], "ohio_now": oh_now / biz_total, "ohio_after": after,
+                "paid_at": sorted(where.items(), key=lambda kv: -kv[1])}
+
+    out["concentration"] = {k: v for k, v in
+                            (("intel", swing("Intel")), ("ultium", swing("Ultium")))
+                            if v}
+
     out["summary"] = {
         "unit": "companies as named on Schedule I (the payee), not their parent groups",
         "sued": {"suits": len(suit_rows), "recipients_matched": len(sued_recs),

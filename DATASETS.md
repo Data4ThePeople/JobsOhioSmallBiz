@@ -1186,6 +1186,36 @@ anyway: of the 52 sued companies on the grant schedule, 20 employ fewer than
 100; **of the 43 that failed after being paid, none does.** Median and mean
 *grant* size are exact and are published instead.
 
+### Ultium Cells is counted as Michigan, and that is a decision
+
+$50,000,000, the third largest recipient in the data and 5.2% of all business
+dollars. Ultium Cells LLC is a 50/50 joint venture of General Motors and LG
+Energy Solution, so it has **no single ultimate parent**, which is the thing
+the home-state rule normally reads. Its plant is in Warren.
+
+It is counted as Michigan, and the reason is consistency rather than
+preference. Honda's plants are all in Ohio and Honda is counted to Japan;
+Fuyao Glass America is in Moraine and is counted to China. The rule the page
+states is that "the Ohio plant address does not count". Recoding Ultium on
+plant location would require recoding Honda's $47,433,335 and Fuyao's
+$10,600,000 the same way, and that is the whole finding.
+
+Schedule I supports the call independently: of the $50,000,000, **$30,000,000
+was remitted to 7400 Tod Ave SW, Warren, and $20,000,000 to 300 Renaissance
+Center, Detroit**, which is General Motors' head office.
+
+The line this draws, and it is the line already in the data: an out-of-state
+**financial** owner does not move a company (altafiber is Ohio though Macquarie
+owns it, Ensemble Health is Ohio though Golden Gate owns it), while an
+out-of-state **operating** parent does (Honda, Fuyao). GM and LG are operating
+parents that make the product.
+
+**The sensitivity is published on the page**, next to the Intel one, because
+it is large enough that a reader should not have to find it: counting Ultium
+as Ohio moves the home-state dollar share from 36.2% to 41.4%. Both figures
+are computed in `09_analyze.py` under `out["concentration"]` rather than
+written by hand.
+
 ---
 
 ## Ohio WARN notices (Ohio Department of Job and Family Services)

@@ -289,9 +289,35 @@ function renderSize(){
     ["small","large","unknown"], sizeGroup, SIZE_COLORS, {small:"Small (under " + cut + ")", large:"Large (" + cut + " or more)", unknown:"Unresolved"});
 }
 function renderHome(){
-  stackedBars(document.getElementById("c-home"), "Most recipients are Ohio companies. Most dollars leave the state's headquarters map.",
+  var host = document.getElementById("c-home");
+  stackedBars(host, "Most recipients are Ohio companies. Most dollars leave the state's headquarters map.",
     "Ohio: the ultimate parent was headquartered in Ohio at the time of the grant. The Ohio plant address does not count.",
     ["ohio","other","unknown"], homeGroup, HOME_COLORS, {ohio:"Headquartered in Ohio", other:"Headquartered elsewhere", unknown:"Unresolved"});
+  /* Two companies move this finding by about five points each, in opposite
+     directions, and a reader who finds them unaided will assume we hid them.
+     Intel is the largest recipient and Californian. Ultium is a 50/50 GM and
+     LG joint venture recorded as Michigan, and the call to leave it there is
+     a judgment, so the page states it and shows what it costs. */
+  var C = D.concentration || {};
+  if (!C.intel && !C.ultium) return;
+  var p = el("p",{class:"wc"},host);
+  var bits = [];
+  if (C.intel)
+    bits.push("The largest recipient in the data, " + C.intel.parent + ", is Californian and took "
+      + money(C.intel.cash) + ", " + pct1(C.intel.share_of_business) + " of all business dollars. "
+      + "Leave it out and the Ohio share of dollars goes " + pct1(C.intel.ohio_now)
+      + " to " + pct1(C.intel.ohio_after) + ".");
+  if (C.ultium)
+    bits.push("Ultium Cells is counted as Michigan, and that is a judgment rather than a "
+      + "reading. It is a 50/50 joint venture of General Motors and LG Energy Solution, so it "
+      + "has no single ultimate parent, and its plant is in Warren. It sits here because Honda's "
+      + "plants are all in Ohio and Fuyao's is in Moraine, and both are counted to their "
+      + "operating parents abroad; moving Ultium on plant location would mean moving those too. "
+      + "The money itself was split: "
+      + (C.ultium.paid_at || []).map(function(w){ return money(w[1]) + " to " + w[0]; }).join(" and ")
+      + ", the second of those being General Motors' head office. Count it as Ohio instead and the Ohio "
+      + "share of dollars goes " + pct1(C.ultium.ohio_now) + " to " + pct1(C.ultium.ohio_after) + ".");
+  p.textContent = bits.join(" ");
 }
 
 /* ---- two-by-two ---- */
