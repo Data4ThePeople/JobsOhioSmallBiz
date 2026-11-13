@@ -88,6 +88,7 @@ python scripts/32_fetch_warn.py       # download Ohio's WARN register into data/
 python scripts/33_match_warn.py --write   # tie each closure and layoff to the state's notice
 python scripts/34_apply_sitecheck.py  # apply the funded-site verdicts to data/failures.csv
 python scripts/35_warn_join.py --write    # join the whole WARN register against every recipient
+python scripts/37_merge_warncheck.py --write  # merge the verified candidates into data/failures.csv
 ```
 
 Two audits run before every publish and exit non-zero on any mismatch:
@@ -110,6 +111,7 @@ The parent research and checks (`08_research.py`, `10_verify_sample.py`, `11_aut
 - A seeded random sample of classifications was re-checked by an independent second pass. The method and results are in `docs/VERIFICATION.md`.
 - The conditions columns describe what JobsOhio **publishes**, not what is in force. Individual grant agreements are not public, and at least one case shows terms exist that the guidelines do not print. Only 2 of 12 programs publish a clawback, covering 6.8% of paid dollars.
 - The failure count is a floor, not a count. It is found from news coverage, so a failure without coverage is missing; it treats the payee as the company, so a parent's filing that left the Ohio site running is excluded. Of 102 candidates checked one at a time, 52 were thrown out because the company was named in somebody else's case and 17 were a different company sharing a name. Every reject is kept in `data/failures.csv` with its reason, and the page shows them.
+- The failure count was first built by scanning news headlines, which can only find a closure somebody wrote about. A second pass joined Ohio's whole WARN register, 810 mandatory layoff and closure notices, against every recipient, and found 15 more confirmed failures. A third of the confirmed total had no coverage the news scan could see.
 - A failure counts only if the operation that failed is the operation the grant paid for. Every confirmed failure was re-checked on that question, and three companies came out of the count: they closed an Ohio site, but not one the money went to. They are still shown on the page, under their own heading, with the site that took the money and the site that failed.
 - Where Ohio holds the employer's own layoff notice, that is the source rather than the news story. 15 of the 19 Ohio closures and mass layoffs have one. The four that do not each record why, and one of those four, Sauder Woodworking, is an unexplained gap rather than a threshold: its 150-job figure rests on press reporting alone.
 

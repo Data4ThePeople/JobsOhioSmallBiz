@@ -1,6 +1,10 @@
 # What Eric needs to do personally before publishing
 
-Written 2026-11-13 for a Monday publish. Everything here needs a human: a phone
+Written 2026-11-13 for a Monday publish. **The failure count moved twice today
+and is now 43 companies and $97,009,323**, up from the 28 and $86.9 million it
+was this morning, because joining Ohio's whole WARN register against every
+recipient found 15 confirmed failures the news scan had missed. Everything
+below is written against the new number. Everything here needs a human: a phone
 call, a judgment call, a browser, or a name on a request for comment. Work that
 a script or an agent could do is not on this list; that work is being done.
 
@@ -48,10 +52,10 @@ each tied to a number we can defend:
 1. JobsOhio paid $1.37 billion in grants over twelve years. The returns record
    $26.0 million coming back, 1.9%. Is that the complete figure for repayments
    and clawbacks, and if not, what is?
-2. 28 companies that were paid $86.9 million failed after the money went out:
+2. 43 companies that were paid $97.0 million failed after the money went out:
    the funded site closed, there was a mass layoff there, the company went
-   bankrupt, or it was sold. JobsOhio sued two of them. What determines whether
-   it sues?
+   bankrupt, or it was sold. JobsOhio sued three of them. What determines
+   whether it sues?
 3. It has filed 63 suits in Franklin County since 2018, pleading $13.5 million
    in total, median $125,000. Judgments recorded as satisfied come to $3.2
    million. How much has actually been recovered?
@@ -91,21 +95,34 @@ share. The page already discloses that they are excluded.
 These are decisions about what the piece claims, and I should not make them
 alone.
 
-**a. The headline failure number moved, and may move again.** It is now **28
-companies and $86.9 million**, down from 31 and $90.7 million, because three
-companies turned out to have failed at a site the grant did not pay for. More
-candidates are being verified now and the number may rise. Decide whether you
-want the piece built on a number that is still moving, or whether we freeze the
-count at a stated cut-off date and say so.
+**a. Ultium Cells is recorded as a Michigan company, and that is the single
+biggest unstated judgment in the piece.** It is a 50/50 GM and LG joint
+venture whose operating base is Lordstown, Ohio, and the project's own note
+concedes there is no single ultimate parent. Counted as Ohio, **the headline
+home-state share goes from 36.2% to 41.4%** — a swing nearly the size of the
+Intel one the post already names. It is also 52% of all failed dollars. Right
+now it is Michigan and the post does not mention the question. Decide, and
+whichever way you go, say so on the page.
 
-**b. How hard to push the "failed elsewhere" three.** Dana, New Horizons Baking
+**b. The headline failure number moved twice today.** 31 and $90.7 million
+this morning, then 28 and $86.9 million when three companies turned out to
+have failed at a site the grant did not pay for, now **43 and $97.0 million**
+after the WARN join. It should be stable: the join is exhaustive over
+2020-2026 and the pre-2020 years have no register to search. Decide whether to
+state a cut-off date on the page.
+
+**c. Sherwin-Williams is 13.1% of all Ohio business dollars by itself.** Drop
+it and the Ohio share goes 36% to 33%. The post names only Intel as a
+concentration risk. Decide whether Sherwin-Williams gets named too.
+
+**d. How hard to push the "failed elsewhere" three.** Dana, New Horizons Baking
 and FedEx Supply Chain each closed an Ohio operation while the site Ohio paid
 for kept running. That is not the claim the count makes, so they are out of it,
 but it is interesting on its own: it is the kind of thing a press office would
 use to say "we don't count that" if we had counted it. Currently they get their
 own view in the tool. Decide whether they get a paragraph in the post.
 
-**c. Whether the piece says anything about the pandemic cluster.** 46% of
+**e. Whether the piece says anything about the pandemic cluster.** 46% of
 Ohio's entire WARN register is 2020, and March to June 2020 alone is 28% of it.
 That shapes any claim about layoffs at grant recipients and we hold those
 candidates to a higher bar. It is honest and a little technical. Your call
@@ -125,17 +142,43 @@ whether it belongs in the post or only in the method note.
 
 ---
 
-## Still open, being worked on, no action from you yet
+---
 
-Listed so nothing gets lost, not because you need to do them.
+## 6. Smaller things the independent tie-out raised, if there is time
 
-- Verification of the new candidates the WARN join turned up, including FCA's
-  1,225-job Toledo notice and Pixelle's 780-job Chillicothe mill
-- Whether the March-June 2020 candidates were temporary or permanent
-- Eight companies that filed a mass-layoff notice **before** Ohio paid them;
-  Mobis is the strongest, with a 210-job Toledo notice in November 2024 and a
-  grant in 2025
+`docs/TIEOUT_INDEPENDENT_2.md` reproduces every headline share to seven
+decimal places, which is the main thing. It also found these, none of which
+moves a headline:
+
+- **DATASETS.md states a class rule the code does not implement.** The doc says
+  a mixed-class parent takes the non-business class; the code behaves as
+  "largest payee's class". Only Tractor Supply discriminates, and applying the
+  written rule moves the small share 18.90% to 18.94%. Either fix the doc or
+  fix the code; they should not disagree.
+- **The confidence A/B/C/D panel does not reproduce** under any aggregation
+  tried, while the worst-case bounds do. The page may be showing two different
+  gradings of the same companies.
+- **The recourse block divides by net dollars** where DATASETS.md says the
+  conditions shares use positive payments. "70.7%" is 71.09% on the stated
+  rule.
+- **Roughly a dozen prose figures in DATASETS.md are a fiscal year out of
+  date**, listed in section 3.8 of the tie-out.
+- **10.2% of the small-business dollars rest on no headcount source** — 79
+  business recipients whose `emp_source` is a search URL or nothing, 48 of them
+  counted small.
+
+---
+
+## Still open, no action from you yet
+
 - Republic Steel's Lorain idling date, AK Steel's funded county, Goodlevel
-  Enterprises, the Olive AI state-court file, Multi-Color's Batavia plant,
-  Nostrum's Bryan plant
-- An independent recomputation of the headline shares from the raw filings
+  Enterprises, the Olive AI state-court file, Multi-Color's Batavia plant and
+  Nostrum's Bryan plant are with a research pass that has not reported back.
+- Eight companies filed a mass-layoff notice **before** Ohio paid them. Most
+  are the 2020 shutdown and unremarkable. One is not: **Mobis**, a 210-job
+  permanent cut in Toledo in November 2024 and a $700,000 grant in FY2025. The
+  catch is that the notice is filed by Mobis North America and the grant went
+  to Mobis US Electrified Powertrain, a different entity at a different Toledo
+  plant with the same Hyundai Mobis parent. The accurate sentence is "Ohio paid
+  one Hyundai Mobis company while another cut 210 jobs across town", and
+  JobsOhio could settle it by giving the payment date.

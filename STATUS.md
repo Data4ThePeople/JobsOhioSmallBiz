@@ -137,9 +137,10 @@ None.
   every payment in `data/grant_conditions.csv`. Conditional 6.8% of dollars,
   Partly conditional 68.3%, Program unknown 22.5%, nothing published 2.4%.
   (3) Failures: 1,485 recipients scanned for distress headlines, 84 candidates
-  verified one at a time against dockets, SEC filings and local news, 28
-  confirmed ($86,887,093) in `data/failures.csv` with every reject and its
-  reason kept. Two new story leads written. Open: pull the JobsOhio v. Olive AI
+  verified one at a time against dockets, SEC filings and local news, then a
+  second pass joining Ohio's whole WARN register against every recipient:
+  **43 confirmed ($97,009,323)** in `data/failures.csv` with every reject and
+  its reason kept. Two new story leads written. Open: pull the JobsOhio v. Olive AI
   suit; settle Columbus Steel Castings' payment timing (its court and docket are
   now resolved off the petition itself); Goodlevel
   Enterprises unresolved; rebuild `dist/` and regenerate
@@ -176,3 +177,29 @@ None.
   Open: the full WARN-to-recipient join, which would turn the failure count
   from a floor into something close to a count (lead 14); Sauder; the Olive AI
   state suit; Goodlevel Enterprises; FY2025 XML and FY2012-13 PDFs from Eric.
+
+- 2026-11-13 The WARN join, and what it found. Ohio's whole register, 810
+  notices, joined against all 1,789 recipients (`scripts/35_warn_join.py`),
+  verified in `data/research3/warncheck_*.json`, merged by
+  `scripts/37_merge_warncheck.py`. **The count goes from 28 companies and
+  $86,887,093 to 43 and $97,009,323.** A third of the confirmed failures had
+  no news coverage our scan could see, which is the measure of how much of a
+  floor a news-based count was. The largest new one is Pixelle's Chillicothe
+  mill, 780 jobs, found only once the join scored on where JobsOhio's own
+  records put the project instead of where the cheque was posted; Pixelle's
+  went to Pennsylvania.
+  Rejections mattered as much: ProMedica, ADS Alliance Data and
+  Sherwin-Williams all pass a county test and fail a street test, and 8 of 10
+  pandemic-window candidates drop because the notice letters say "temporary"
+  in terms.
+  Two live errors found and fixed. The sued panel counted lawsuits and called
+  them companies, so it said 52 where there are 51 and overstated what they
+  were paid by $560,770; Olive AI is a defendant twice. And the page said 11
+  suits name companies absent from Schedule I when the answer is 9.
+  `30_audit_summary.py` shared the first bug and so agreed with it rather than
+  catching it. The independent tie-out found it:
+  `docs/TIEOUT_INDEPENDENT_2.md`, which otherwise reproduces every headline
+  share to seven decimals.
+  Open and in `docs/ERIC_TODO.md`: the Sauder call, the request for comment,
+  and three judgment calls, the largest being whether Ultium Cells counts as
+  Ohio, which alone moves the home-state share from 36.2% to 41.4%.
