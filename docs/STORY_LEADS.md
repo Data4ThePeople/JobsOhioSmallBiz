@@ -1326,3 +1326,42 @@ JavaScript payload; and the links to the filed letters carry raw spaces that
 break an ordinary fetch. None of that is a story on its own, but "the public
 record of every mass layoff in Ohio is a CSV you have to reverse-engineer a
 Next.js app to find" is a sentence that belongs in a method note.
+
+---
+
+## 15. For four companies, the money and the failure are in the same fiscal year
+
+**Read the caveat before the finding, because the caveat is load-bearing.**
+Schedule I reports a fiscal year, not a date. Where a payment and a failure
+fall in the same year, the return does not say which came first, and we cannot
+say JobsOhio paid after the thing it funded had already failed. What we can say
+is that the two are not separated by a year of hindsight, and that JobsOhio's
+own records would settle it in a sentence.
+
+JobsOhio's fiscal year ends 30 June.
+
+| Company | Paid in that year | The failure | In the count? |
+|---|---:|---|---|
+| AmplifyBio | $1,500,000, FY2025, its only payment | Chapter 11, 16 May 2025 | yes |
+| Columbus Steel Castings | $500,000, FY2016, its only payment | Chapter 11, 16 May 2016 | yes |
+| Avelo Airlines | $40,000, FY2024, after $160,000 in FY2023 | the subsidised Dayton to Orlando route stopped flying, September 2023 | yes |
+| Dana | $700,000, FY2025 | the Lima plant closed, announced April 2025 | no, it failed away from the funded site |
+
+**AmplifyBio is the one to lead on.** $1,500,000 is its entire Schedule I
+history, paid in the same fiscal year it filed for bankruptcy, on a project
+JobsOhio's own September 2024 record describes as retaining 155 jobs and
+committing to 263 more against a $132.75 million investment. Battelle created
+AmplifyBio as a spinout, was its secured lender going in, and bought the assets
+coming out.
+
+**Avelo is the cleanest to explain.** The grant subsidised one air route. The
+route flew for nine months, 73 flights and about 9,555 passengers, and then
+stopped. $40,000 of the $200,000 was paid in the fiscal year it stopped.
+
+**What would settle all four.** JobsOhio publishes a payment date to nobody,
+but it knows one. Ask for the disbursement dates on these four grants. A refusal
+is as good an answer as a date, and either belongs in the piece.
+
+**Do not write this as "JobsOhio paid after the company failed."** It is not
+established and it would be the easiest sentence in the piece to knock down.
+Write the fiscal year, write what is unknown, and let the reader hold it.
