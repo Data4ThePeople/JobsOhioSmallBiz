@@ -8,6 +8,9 @@ data/raw/edgar/
 data/raw/f5500/
 /*.xml
 /*.html
+# ...except the Pages entry point, which has to live at the root for
+# data4thepeople.github.io/JobsOhioSmallBiz/ to resolve
+!/index.html
 /*.json
 data/raw/t100/
 
