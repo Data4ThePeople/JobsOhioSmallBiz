@@ -36,10 +36,16 @@ How a match is scored, and why each part is here:
            on the word "brands", Carlisle as The Michaels Companies on
            "companies", and the City of Wapakoneta as Murotech Ohio on the
            word "ohio".
-  place    The notice's city and county against the cities Schedule I actually
-           paid into. This is the strongest single signal available and it is
-           what separates a real hit from a national company that happens to
-           share a name with an Ohio employer.
+  place    The notice's county against the counties the grant actually funded.
+           Those come from two places and need both. Schedule I gives the city
+           each payment was sent to, but that is often an out-of-state head
+           office: Pixelle's cheque went to Spring Grove, Pennsylvania, Morgan
+           Truck Body's to New York and Dorel's to Missouri, so on payment
+           address alone all three looked like failures somewhere unconnected.
+           JobsOhio's own project records name the county, and they place
+           Pixelle in Ross, which is exactly where its 780-job notice is. City
+           names are also normalised, because Schedule I writes MT ORAB where
+           the register writes Mount Orab.
   date     A notice before the grant is not a post-grant failure. Compared
            against the FIRST grant year, and anything earlier is reported
            separately rather than dropped, because "Ohio funded a company that
@@ -141,6 +147,20 @@ def headcount(s):
     return int(m.group(0).replace(",", "")) if m else 0
 
 
+ABBREV = {"mt": "mount", "st": "saint", "ft": "fort", "hts": "heights",
+          "twp": "township", "n": "north", "s": "south", "e": "east", "w": "west"}
+
+
+def norm_city(c):
+    """Schedule I and the register spell the same town differently: MT ORAB
+    against Mount Orab, ST MARYS against Saint Marys."""
+    out = []
+    for w in re.split(r"[^a-z0-9]+", (c or "").lower()):
+        if w:
+            out.append(ABBREV.get(w, w))
+    return " ".join(out)
+
+
 def split_place(place):
     """("city", "county") from Ohio's "Canton/Stark". Whitespace is collapsed
     first because a few rows carry an embedded newline from the source CSV."""
@@ -148,7 +168,7 @@ def split_place(place):
     if "/" not in place:
         return "", ""
     city, county = place.rsplit("/", 1)
-    return city.strip().lower(), county.strip().lower()
+    return norm_city(city), county.strip().lower()
 
 
 def main(argv):
@@ -162,7 +182,7 @@ def main(argv):
         ein = re.sub(r"\D", "", g["recipient_ein"] or "")
         rid = f"EIN:{ein}" if len(ein) == 9 and ein.strip("0") else ""
         if rid and g["city"] and (g["state"] or "").upper() == "OH":
-            cities[rid].add(g["city"].strip().lower())
+            cities[rid].add(norm_city(g["city"]))
     # the register doubles as a city -> county table for Ohio
     county_of = {}
     for w in warn:
@@ -176,6 +196,33 @@ def main(argv):
     # "Olive AI, Inc" and "Olive", and counting those as three employers made
     # its own name look three times more common than it is.
     companies = {frozenset(toks(UPDATE.sub("", w["employer"]), places)) for w in warn}
+    # The counties JobsOhio's own project records put each company in. This is
+    # the only source that says where a grant was MEANT to land, as against
+    # where the cheque was posted, and it is matched on the same identity words
+    # the notices are so the two passes cannot disagree about what a name is.
+    funded_counties = defaultdict(set)
+    com_path = ROOT / "data" / "commitments_norm.csv"
+    if com_path.exists():
+        com = []
+        for c in csv.DictReader(com_path.open()):
+            t = toks(c["company"], places)
+            if t and c["county"]:
+                # "Lorain and Cuyahoga" is two counties in one cell
+                cs = {x.strip().lower() for x in re.split(r"\band\b|[,/]", c["county"])
+                      if x.strip()}
+                com.append((t, cs))
+        for p_ in parents:
+            pt_all = toks(p_["name"], places) | toks(p_.get("parent", ""), places)
+            if not pt_all:
+                continue
+            for t, cs in com:
+                inter = t & pt_all
+                if not inter:
+                    continue
+                lo = min(len(inter) / len(t), len(inter) / len(pt_all))
+                if lo >= 0.6:
+                    funded_counties[p_["recipient_id"]] |= cs
+
     weight = Counter()
     for c in companies:
         for t in c:
@@ -194,7 +241,18 @@ def main(argv):
         if not sides:
             continue
         paid_cities = cities.get(rid, set())
-        paid_counties = {county_of[c] for c in paid_cities if c in county_of}
+        # Where the money landed, preferring the payment address and falling
+        # back to JobsOhio's project county only when every payment went out of
+        # state. The fallback has to be a fallback: a commitment is a county
+        # JobsOhio promised money to, not one it paid, and New Horizons Baking
+        # has a Toledo commitment that Schedule I shows was never paid, so
+        # using it unconditionally promoted a known different-site case.
+        if paid_cities:
+            paid_counties = {county_of[c] for c in paid_cities if c in county_of}
+            place_basis = "payment address"
+        else:
+            paid_counties = funded_counties.get(rid, set())
+            place_basis = "JobsOhio project county (paid out of state)"
         first_year = min((int(y) for y in (p.get("years") or "").split() if y.isdigit()),
                          default=None)
         for wt, w in indexed:
@@ -247,6 +305,7 @@ def main(argv):
                 "shared_words": " ".join(sorted(inter)), "rarity": rare,
                 "distinctive_words": distinctive, "matched_on": matched_on,
                 "name_overlap": f"{lo:.2f}-{hi:.2f}",
+                "place_basis": place_basis if tier in ("A", "B") else "",
                 "covid_window": "yes" if covid_window(w["received"]) else "",
                 "affected_n": headcount(w["affected"]),
                 "notice_after_first_grant": ("" if not (ny and first_year)
