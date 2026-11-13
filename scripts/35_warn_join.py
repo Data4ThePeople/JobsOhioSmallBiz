@@ -1,0 +1,328 @@
+#!/usr/bin/env python3
+"""Join Ohio's whole WARN register against every grant recipient.
+
+The failure count in this project is a floor, not a count, because it was found
+by scanning Google News headlines: a closure nobody wrote up is invisible to it.
+Ohio's WARN register has no such gap. It is every qualifying closure and mass
+layoff in the state, reported by the employer, under penalty of being the
+employer's own filing. Joining all 810 notices against all 1,789 recipients is
+the one pass that can turn the floor into something close to a count.
+
+**This script produces candidates, not findings.** A name match is a reason to
+go and check, and every match here still has to be verified the way the
+existing 102 were. Nothing it outputs is published without that.
+
+How a match is scored, and why each part is here:
+
+  rarity   A shared word is weighed by how many distinct companies in the
+           register use it. "ultium" is near proof; "logistics" is nothing. A
+           first attempt at this kind of match, without weighting, paired
+           Ultium Cells with American Energy Corporation on the word "energy"
+           and FedEx with DHL on "supply chain". Counted over companies rather
+           than over filings, because Olive AI filed three notices under three
+           spellings and that made its own name look three times less
+           distinctive than it is.
+  places   Ohio place names are stripped out of the identity words entirely,
+           using the 310 city and county words the register itself supplies.
+           Without that the join reads a shared location as a shared identity
+           and then scores the same signal twice: it matched CITY OF WAPAKONETA
+           to an employer in Wapakoneta, GLOBAL CLEVELAND to United Airlines in
+           Cleveland, and CITY OF FREMONT to a Fremont paper mill, and ranked
+           all three top tier because the city also matched.
+  overlap  The shared words have to cover most of at least one of the two
+           names AND be distinctive. Coverage alone is not enough, because a
+           name that reduces to a single ordinary word covers itself
+           completely: on coverage alone the join read L Brands as Rise Brands
+           on the word "brands", Carlisle as The Michaels Companies on
+           "companies", and the City of Wapakoneta as Murotech Ohio on the
+           word "ohio".
+  place    The notice's city and county against the cities Schedule I actually
+           paid into. This is the strongest single signal available and it is
+           what separates a real hit from a national company that happens to
+           share a name with an Ohio employer.
+  date     A notice before the grant is not a post-grant failure. Compared
+           against the FIRST grant year, and anything earlier is reported
+           separately rather than dropped, because "Ohio funded a company that
+           had just filed a mass-layoff notice here" is its own story.
+  covid    **46% of the whole register is 2020, and March to June 2020 alone is
+           28% of it.** 225 notices in four months against a baseline of about
+           6 a month. Those are the shutdown, and a large share were temporary
+           layoffs that were recalled, so a 2020 notice is not evidence a
+           company failed. Every candidate in that window is flagged and is
+           held to a different standard: it needs evidence the layoff stuck.
+
+Tiers, which are a triage order and not a verdict:
+
+  A  rare name match AND the notice is in a city the money was paid into
+  B  rare name match AND the notice is in a county the money was paid into
+  C  rare name match, somewhere else in Ohio
+  D  the whole name matches but every word in it is common
+
+Writes data/warn_join.csv. Companies already in data/failures.csv are marked
+rather than hidden, so the join can be checked against the hand-verified set:
+if it misses one of those, the matching is too tight.
+
+Usage: 35_warn_join.py [--write] [--min-tier C]
+"""
+import csv, re, sys
+from collections import Counter, defaultdict
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+WARN = ROOT / "data" / "warn" / "notices.csv"
+PARENTS = ROOT / "data" / "parents.csv"
+GRANTS = ROOT / "data" / "grants_raw.csv"
+FAILURES = ROOT / "data" / "failures.csv"
+OUT = ROOT / "data" / "warn_join.csv"
+
+# Words carrying no identifying weight: legal suffixes, plus the industry nouns
+# that a large share of Ohio employers share. Kept identical to 33_match_warn.py
+# so the two passes cannot disagree about what counts as a name.
+STOP = {"inc", "inc.", "corp", "corporation", "company", "co", "llc", "ltd", "the", "of",
+        "and", "usa", "holdings", "group", "us", "incorporated", "lp", "plc", "llp",
+        "north", "america", "american", "supply", "chain", "logistics", "services",
+        "service", "health", "care", "system", "energy", "international", "industries",
+        "products", "solutions", "technologies", "manufacturing", "enterprises",
+        "partners", "global", "limited", "center", "centers"}
+RARE = 2          # a word used by this many companies or fewer is distinctive
+COVER = 0.6       # the shared words must cover this much of one name
+UPDATE = re.compile(r"^\s*(update|revised)?\s*\d*\s*(update|revised)?\b[:\s-]*", re.I)
+
+
+def words(s):
+    return [w for w in re.split(r"[^a-z0-9]+", (s or "").lower())
+            if w and w not in STOP and len(w) > 2]
+
+
+def toks(s, places=frozenset()):
+    """The identity words in a name: no legal suffixes, no industry nouns, and
+    no Ohio place names, since where a company is gets scored separately."""
+    return {w for w in words(s) if w not in places}
+
+
+def year_of(s):
+    m = re.search(r"(\d{4})", s or "")
+    if m:
+        return int(m.group(1))
+    m = re.match(r"\d{1,2}/\d{1,2}/(\d{2})$", (s or "").strip())
+    return 2000 + int(m.group(1)) if m else None
+
+
+def place_words(warn):
+    """Every city and county word the register uses, which is the best list of
+    Ohio place names available here and costs no extra source."""
+    out = set()
+    for w in warn:
+        if "/" in (w["place"] or ""):
+            for part in re.split(r"[^A-Za-z]+", w["place"].replace("/", " ")):
+                if len(part) > 2:
+                    out.add(part.lower())
+    return out
+
+
+def covid_window(received):
+    """March to June 2020, when Ohio took 225 notices against a normal six a
+    month. A notice here says a plant shut for the pandemic, which is not the
+    same claim as a company failing after taking public money."""
+    m = re.match(r"(\d{1,2})/\d{1,2}/(\d{2,4})$", (received or "").strip())
+    if not m:
+        return False
+    y = int(m.group(2))
+    y = y + 2000 if y < 100 else y
+    return y == 2020 and 3 <= int(m.group(1)) <= 6
+
+
+def headcount(s):
+    m = re.search(r"\d[\d,]*", s or "")
+    return int(m.group(0).replace(",", "")) if m else 0
+
+
+def split_place(place):
+    if "/" not in (place or ""):
+        return "", ""
+    city, county = place.rsplit("/", 1)
+    return city.strip().lower(), county.strip().lower()
+
+
+def main(argv):
+    warn = list(csv.DictReader(WARN.open()))
+    parents = list(csv.DictReader(PARENTS.open()))
+    checked = {r["recipient_id"]: r for r in csv.DictReader(FAILURES.open())}
+
+    # every city Schedule I paid each recipient at, and the county it sits in
+    cities = defaultdict(set)
+    for g in csv.DictReader(GRANTS.open()):
+        ein = re.sub(r"\D", "", g["recipient_ein"] or "")
+        rid = f"EIN:{ein}" if len(ein) == 9 and ein.strip("0") else ""
+        if rid and g["city"] and (g["state"] or "").upper() == "OH":
+            cities[rid].add(g["city"].strip().lower())
+    # the register doubles as a city -> county table for Ohio
+    county_of = {}
+    for w in warn:
+        c, k = split_place(w["place"])
+        if c and k and "unknown" not in k:
+            county_of.setdefault(c, k)
+
+    places = place_words(warn)
+
+    # One company, not one filing. Olive AI appears as "Olive AI, Inc.",
+    # "Olive AI, Inc" and "Olive", and counting those as three employers made
+    # its own name look three times more common than it is.
+    companies = {frozenset(toks(UPDATE.sub("", w["employer"]), places)) for w in warn}
+    weight = Counter()
+    for c in companies:
+        for t in c:
+            weight[t] += 1
+
+    indexed = [(toks(UPDATE.sub("", w["employer"]), places), w) for w in warn]
+
+    rows = []
+    for p in parents:
+        rid = p["recipient_id"]
+        # the payee and its parent are matched separately, so the row can say
+        # which name actually matched rather than blurring the two
+        cands = {("payee", p["name"]), ("parent", (p.get("parent") or "").strip())}
+        sides = [(lab, toks(n, places)) for lab, n in cands if n]
+        sides = [(lab, t) for lab, t in sides if t]
+        if not sides:
+            continue
+        paid_cities = cities.get(rid, set())
+        paid_counties = {county_of[c] for c in paid_cities if c in county_of}
+        first_year = min((int(y) for y in (p.get("years") or "").split() if y.isdigit()),
+                         default=None)
+        for wt, w in indexed:
+            if not wt:
+                continue
+            best = None
+            for lab, pt in sides:
+                inter = wt & pt
+                if not inter:
+                    continue
+                rare = min(weight[t] for t in inter)
+                # how much of each name the shared words account for
+                c_emp, c_rec = len(inter) / len(wt), len(inter) / len(pt)
+                hi, lo = max(c_emp, c_rec), min(c_emp, c_rec)
+                # words shared that few companies in the register use at all
+                distinctive = sum(1 for t in inter if weight[t] <= RARE)
+                ok = (
+                    # two distinctive words in common is close to proof
+                    distinctive >= 2
+                    # one distinctive word, and it accounts for most of both
+                    or (distinctive == 1 and hi >= COVER and lo >= 0.5)
+                    # or the two names are the same name, whatever the words
+                    or (hi >= 0.99 and lo >= COVER)
+                )
+                if not ok:
+                    continue
+                score = (distinctive, hi, -rare, len(inter))
+                if best is None or score > best[0]:
+                    best = (score, lab, inter, rare, lo, hi, distinctive)
+            if best is None:
+                continue
+            _, matched_on, inter, rare, lo, hi, distinctive = best
+            city, county = split_place(w["place"])
+            if city and city in paid_cities:
+                tier = "A"
+            elif county and county in paid_counties:
+                tier = "B"
+            elif rare <= RARE:
+                tier = "C"
+            else:
+                tier = "D"
+            ny = year_of(w["received"])
+            rows.append({
+                "tier": tier, "recipient_id": rid, "recipient": p["name"],
+                "parent": p.get("parent", ""), "total_cash": p.get("total_cash", ""),
+                "grant_years": p.get("years", ""),
+                "warn_year": w["year"], "warn_employer": w["employer"],
+                "warn_place": w["place"], "warn_affected": w["affected"],
+                "warn_received": w["received"], "warn_pdf": w["pdf"],
+                "shared_words": " ".join(sorted(inter)), "rarity": rare,
+                "distinctive_words": distinctive, "matched_on": matched_on,
+                "name_overlap": f"{lo:.2f}-{hi:.2f}",
+                "covid_window": "yes" if covid_window(w["received"]) else "",
+                "affected_n": headcount(w["affected"]),
+                "notice_after_first_grant": ("" if not (ny and first_year)
+                                             else "yes" if ny >= first_year else "no"),
+                "already_checked": checked.get(rid, {}).get("verdict", ""),
+            })
+
+    order = {"A": 0, "B": 1, "C": 2, "D": 3}
+    rows.sort(key=lambda r: (order[r["tier"]], -int(r["total_cash"] or 0)))
+
+    # --- report -------------------------------------------------------------
+    by_tier = Counter(r["tier"] for r in rows)
+    print(f"{len(warn)} notices against {len(parents)} recipients: {len(rows)} name matches")
+    print("  " + ", ".join(f"tier {t} {by_tier[t]}" for t in "ABCD" if by_tier[t]))
+
+    # Does the join find the closures that were already verified by hand? If
+    # it misses one, the matching is too tight and the new candidates cannot be
+    # trusted. Tier is NOT the test: four of the verified set are known to have
+    # failed away from the site the money reached, so tier C is the right
+    # answer for them and a tier A would mean the place scoring was broken.
+    want = {r["recipient_id"] for r in checked.values()
+            if r["category"] in ("Funded site closed", "Mass layoff at the funded site",
+                                 "Failed away from the funded site")
+            and year_of(r["event_date"]) and year_of(r["event_date"]) >= 2020}
+    no_notice = {r["recipient_id"] for r in
+                 csv.DictReader((ROOT / "data" / "failure_warn.csv").open())
+                 if r["state_notice"] == "none"} if (ROOT / "data" / "failure_warn.csv").exists() else set()
+    should_find = want - no_notice
+    found = {r["recipient_id"] for r in rows}
+    print(f"\nrecall: {len(should_find & found)} of {len(should_find)} hand-verified "
+          f"closures that have a state notice are found")
+    missed = should_find - found
+    if missed:
+        print("  MISSED, so the matching is too tight: "
+              + ", ".join(checked[m]["name"] for m in missed))
+    if want & no_notice:
+        print(f"  ({len(want & no_notice)} more are verified failures with no notice in the "
+              f"register at all, so nothing here could find them)")
+    at = Counter(min((r["tier"] for r in rows if r["recipient_id"] == k), default="-")
+                 for k in should_find)
+    print("  they land at: " + ", ".join(f"tier {t} {n}" for t, n in sorted(at.items())))
+
+    new = [r for r in rows if not r["already_checked"]
+           and r["notice_after_first_grant"] == "yes" and r["tier"] in ("A", "B")]
+
+    def show(group, title):
+        seen = set()
+        print(f"\n{len({r['recipient_id'] for r in group})} {title}")
+        for r in sorted(group, key=lambda x: -int(x["total_cash"] or 0)):
+            if r["recipient_id"] in seen:
+                continue
+            seen.add(r["recipient_id"])
+            print(f"  {r['tier']}  ${int(r['total_cash'] or 0):>10,}  {r['recipient'][:29]:29s} "
+                  f"grants {r['grant_years'][:14]:14s} <- {r['warn_employer'][:32]:32s} "
+                  f"{r['warn_place'][:21]:21s} {r['affected_n']:>5} jobs  "
+                  f"{r['warn_received'][:10]}")
+
+    show([r for r in new if not r["covid_window"]],
+         "recipients to check: a notice after the grant, outside the pandemic window")
+    show([r for r in new if r["covid_window"]],
+         "more in March-June 2020, which is the shutdown and needs a higher bar")
+
+    before = [r for r in rows if r["tier"] in ("A", "B")
+              and r["notice_after_first_grant"] == "no"]
+    if before:
+        print(f"\n{len({r['recipient_id'] for r in before})} have a notice BEFORE their first "
+              f"grant year, which is its own question:")
+        seen = set()
+        for r in before:
+            if r["recipient_id"] in seen:
+                continue
+            seen.add(r["recipient_id"])
+            print(f"  {r['tier']}  ${int(r['total_cash'] or 0):>10,}  {r['recipient'][:28]:28s} "
+                  f"grants {r['grant_years'][:14]:14s} <- notice {r['warn_received'][:10]:10s} "
+                  f"{r['warn_place'][:20]:20s} aff {r['warn_affected'][:10]}")
+
+    if "--write" not in argv:
+        print("\n(not written; pass --write)")
+        return
+    with OUT.open("w", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows)
+    print(f"\nwrote {OUT.relative_to(ROOT)}")
+
+
+if __name__ == "__main__":
+    main(sys.argv[1:])
