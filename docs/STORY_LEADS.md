@@ -1,7 +1,29 @@
 # Story leads
 
-Findings from the classification work that are worth publishing, with what
-is verified and what is still open. Raise these with Eric at Step 2a.
+**What this is, and who it is for.** Seventeen leads out of the JobsOhio grant
+data, each one written so a reporter can pick it up and work it. Data 4 The
+People is publishing the searchable tool and is not writing these stories. They
+are here to be taken.
+
+**How to read a lead.** Each has a **Verified** part and an open part, and the
+line between them is the point. Where a lead says a thing is not established,
+that is not throat-clearing: it is the work left to do, and usually the lead
+says exactly which document or phone call would settle it. Several say in terms
+how NOT to write the finding, because the overclaim is easier to reach for than
+the claim. Lead 15 is the clearest example of that and lead 17 the sharpest.
+
+**What is underneath all of it.** Every dollar comes from JobsOhio's own IRS
+Form 990 Schedule I, fiscal years 2014 to 2025, and every figure in the tool
+can be re-added from `data/grants_raw.csv`. The method is in `DATASETS.md`, the
+failure findings each cite a source in `data/failure_sources.csv`, and three
+independent recomputations are in `docs/TIEOUT_INDEPENDENT_*.md`. If a lead
+turns out to be wrong, the data that made it is in the repo and the error will
+be ours to correct.
+
+**The two things most worth a reporter's time**, if you only take one: lead 10,
+the 43 companies that failed after being paid, because the tool lets you filter
+to any of them in a click; and lead 17, the route JobsOhio announced and then
+removed from its own website.
 
 ---
 
