@@ -472,6 +472,33 @@ body rather than the title are kept as weak signals and checked by hand.
   parent can be missed.
 - Google News coverage thins out before about 2010 and for small local
   outlets, which biases against early years and small recipients.
+- **A project that was never built produces nothing to detect, and this is the
+  largest hole in the method.** Both passes look for an event: a bankruptcy, a
+  closure, a mass layoff. A grant paid towards a plant that was then abandoned
+  generates none of those, because there was never an operation to close or
+  anyone to lay off. Neither the news scan nor the WARN join can see it, and
+  no amount of further work on either will find it.
+
+  The clearest case is **$28,599,868 paid towards a petrochemical plant in
+  Belmont County that was never built**, across three recipients none of which
+  was ever a candidate:
+
+  | Recipient | Paid | Where |
+  |---|---:|---|
+  | FirstEnergy Generation LLC | $12,408,019 (FY2017) | Akron; the site is the former R.E. Burger plant at Shadyside |
+  | PTTGC America LLC | $11,451,981 net ($30,000,000 paid FY2020, $20,000,000 reversed FY2021, plus $1,451,981 in FY2017) | Houston |
+  | Ohio-West Virginia Excavating Co | $4,739,868 (FY2015-18) | Powhatan Point and Shadyside, both Belmont County |
+
+  The $20,000,000 reversal is itself the evidence: JobsOhio booked the money
+  back rather than the plant opening. It is also 77% of the $26,040,088 the
+  page reports as returned, so the single largest recovery in twelve years is
+  a project that did not happen.
+
+  **Nothing in the published failure count covers this class.** Finding it
+  would mean comparing every commitment in JobsOhio's own monthly reports
+  against what was actually built, which is a different project. Until that is
+  done, the honest statement is the one now on the page: the count finds
+  companies that failed, not projects that never started.
 
 **License and attribution.** Headlines are used as pointers to sources, not
 quoted as findings. Cite the originating outlet, never Google News.

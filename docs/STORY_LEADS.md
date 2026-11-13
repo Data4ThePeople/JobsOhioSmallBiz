@@ -1477,3 +1477,63 @@ Dayton owns and operates the airport, is a public body under R.C. 149.43, is
 named in JobsOhio's own release, and had to put up a local match. Its file
 should hold the agreement and JobsOhio's commitment letter with the number on
 it. JobsOhio's own copy is beyond reach by design. See `docs/ERIC_TODO.md`.
+
+---
+
+## 18. $28.6 million towards a plant that was never built, and nothing in this tool can see it
+
+**This is the largest finding in the data that the failure count does not
+contain, and the reason it does not is worth a paragraph of its own.**
+
+Every method this project uses to find a failure looks for an **event**: a
+bankruptcy filing, a closure notice, a mass layoff. A grant paid towards a
+plant that is then abandoned produces none of those, because there was never
+an operation to close and nobody to lay off. The news scan cannot see it. The
+WARN register cannot see it. No amount of further work on either will find it.
+
+Three recipients, one project, the proposed petrochemical cracker at Dilles
+Bottom in Belmont County, on the site of FirstEnergy's former R.E. Burger
+power plant:
+
+| Recipient | Paid | Fiscal years |
+|---|---:|---|
+| FirstEnergy Generation LLC | $12,408,019 | FY2017 |
+| PTTGC America LLC | $11,451,981 net | FY2017, FY2020, FY2021 |
+| Ohio-West Virginia Excavating Co | $4,739,868 | FY2015 to FY2018 |
+| **Total** | **$28,599,868** | |
+
+**What is verified, straight off Schedule I.** Those are the payments and the
+net figures. PTTGC America was paid $30,000,000 in FY2020 and **$20,000,000
+was reversed in FY2021**. Ohio-West Virginia Excavating was paid at Powhatan
+Point and then at Shadyside, both in Belmont County. FirstEnergy Generation's
+$12,408,019 is the largest single payment in twelve years of returns.
+
+**What the reversal tells you.** JobsOhio booked $20 million back rather than
+the plant opening, and that one reversal is **77% of the $26,040,088 the tool
+reports as money returned**. So the largest recovery JobsOhio has made in
+twelve years is a project that did not happen, and the page's "1.9% has come
+back" figure rests mostly on it.
+
+**Three things to establish, in order.**
+
+1. **What each payment was for, and whether it was a grant at all.**
+   FirstEnergy Generation's commitment row is a **$14,000,000 Revitalization
+   *Loan*** (see lead 16), which is a different instrument with different
+   recourse. If it is a loan draw, it should not sit in a grant total.
+2. **Whether anything was built.** Ohio-West Virginia Excavating's $4.7 million
+   is site preparation and demolition, which presumably happened. Site work for
+   a plant that never came is its own story and a very Ohio one.
+3. **Who decided to reverse the $20 million, when, and on what terms.** That is
+   the single best-documented clawback in the data and nothing published says
+   how it worked.
+
+**Then ask the general question.** If a $28.6 million abandoned project is
+invisible to every failure test, how many more are there? Answering that means
+comparing every commitment in JobsOhio's own monthly project reports against
+what was actually built. Nobody has done it. `data/commitments_norm.csv` in
+this repo is the starting point, with the parser caveats in `DATASETS.md`.
+
+**Do not write that the money was wasted.** Site preparation is real work and
+some of these payments may have bought something. Write what is documented:
+$28.6 million went towards a plant that is not there, $20 million came back,
+and the public record does not say what happened to the rest.

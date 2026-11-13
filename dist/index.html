@@ -731,7 +731,14 @@ function renderKey(){
     var sp = el("span",{class:"g"},ag); sp.textContent = g;
     ag.appendChild(document.createTextNode(" " + FAIL_SHORT[g] + (i < a.length - 1 ? ".  " : ". ")));
   });
-  ag.appendChild(document.createTextNode("It is a floor, not a count: a failure without coverage is not in it, and a parent\u2019s filing that left the Ohio site running is excluded. A label reading \u201c\u00b7 part\u201d means only some of the money paid to that company group went to the operation that failed; hover for both figures and for which company it was."));
+  ag.appendChild(document.createTextNode("It is a floor, not a count: a failure without coverage is not in it, and a parent\u2019s filing that left the Ohio site running is excluded. A label reading \u201c\u00b7 part\u201d means only some of the money paid to that company group went to the operation that failed; hover for both figures and for which company it was. "
+    /* The biggest hole, and it is structural rather than a matter of more
+       work. Both detection passes look for an EVENT. A project abandoned
+       before it opened produces no bankruptcy, no closure and nobody to lay
+       off, so neither pass can see it. $28,599,868 went towards a Belmont
+       County petrochemical plant that was never built and none of the three
+       recipients was ever a candidate. */
+    + "And it counts companies that failed, not projects that never started: a grant paid towards a plant that was then abandoned produces no bankruptcy, no closure and no layoff, so nothing here can find it. $28,599,868 went towards a Belmont County petrochemical plant that was never built, and none of the three recipients is in this count."));
 
   var pr = el("p",{class:"key-note"},host);
   var b2 = el("b",{},pr); b2.textContent = "Sources";
