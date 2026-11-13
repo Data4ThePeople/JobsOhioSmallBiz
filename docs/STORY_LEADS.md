@@ -21,7 +21,7 @@ turns out to be wrong, the data that made it is in the repo and the error will
 be ours to correct.
 
 **The two things most worth a reporter's time**, if you only take one: lead 10,
-the 43 companies that failed after being paid, because the tool lets you filter
+the 44 companies that failed after being paid, because the tool lets you filter
 to any of them in a click; and lead 17, the route JobsOhio announced and then
 removed from its own website.
 
@@ -489,7 +489,7 @@ the Growth Fund guidelines?
 
 ---
 
-## 10. 43 grant recipients failed after the money was paid: $97.0 million
+## 10. 44 grant recipients failed after the money was paid: $97.7 million
 
 We scanned all 1,755 distinct recipients for public signs of failure after
 their first grant year, using Google News headlines as the index
@@ -499,19 +499,19 @@ court dockets, SEC filings and local news. 102 candidates went to verification.
 somebody else's case, 17 were a different company with the same name, 3 failed
 somewhere other than the site the grant paid for, 1 happened before the grant,
 and 1 is unresolved. **A second pass then joined Ohio's whole WARN register
-against every recipient and found 15 more, taking the count to 43.** That is
+against every recipient and found 16 more, taking the count to 44.** That is
 the measure of how much of a floor a news-based count is: a third of the
 confirmed failures had no coverage the scan could see. Everything, including the rejected flags and why they were
 rejected, is in `data/failures.csv`.
 
 | What happened | Companies | Paid |
 |---|---|---|
-| Mass layoff at the funded site | 12 | $72,926,340 |
+| Mass layoff at the funded site | 12 | $71,926,340 |
 | Bankruptcy or receivership | 10 | $14,680,000 |
 | Funded site closed | 17 | $8,402,983 |
-| Sold or absorbed | 3 | $800,000 |
+| Sold or absorbed | 4 | $2,500,000 |
 | Subsidized service ended | 1 | $200,000 |
-| **Total** | **43** | **$97,009,323** |
+| **Total** | **44** | **$97,709,323** |
 
 **Three companies came out of this count on a second pass, and the reason is
 itself worth a paragraph in the post.** Every confirmed failure was re-checked
@@ -1171,20 +1171,20 @@ assets "as well as the Market Conditions and Other Factors provided by Grantee
 to JobsOhio." Nothing published says how any of that is weighed, who has asked
 for a waiver, or who has been granted one.
 
-**The pattern.** Of the 43 verified post-grant failures carrying $97,009,323,
-JobsOhio sued **three**, carrying $1,060,770. **$95,948,553 went to companies
+**The pattern.** Of the 44 verified post-grant failures carrying $97,709,323,
+JobsOhio sued **3**, carrying $1,060,770. **$96,648,553 went to companies
 that failed and were never sued.** The third, Mitec Powertrain, is the
 exception that proves the rule: JobsOhio sued it and recovered the whole
 $200,000, which is why its row carries $0.
 
 | What happened | Companies | Paid | Sued |
 |---|---|---|---|
-| Mass layoff at the funded site | 12 | $72,926,340 | **0** |
+| Mass layoff at the funded site | 12 | $71,926,340 | **0** |
 | Bankruptcy or receivership | 10 | $14,680,000 | **0** |
 | Funded site closed | 17 | $8,402,983 | 3 |
-| Sold or absorbed | 3 | $800,000 | **0** |
+| Sold or absorbed | 4 | $2,500,000 | **0** |
 | Subsidized service ended | 1 | $200,000 | **0** |
-| **Total** | **43** | **$97,009,323** | **3** |
+| **Total** | **44** | **$97,709,323** | **3** |
 
 **What came back through the courts: $3,229,155, against $13,548,404 pleaded.**
 That is 23.8%, and it is an upper bound rather than a receipt. It is the value
@@ -1214,12 +1214,12 @@ Now set that beside who it does sue:
 | | Median | Size, on the bands recorded |
 |---|---|---|
 | The 63 it sued | $125,000 sought, smallest $16,724 | 33 of 51 under 500 employees |
-| The 43 that failed | $500,000 paid, largest $50,000,000 | 36 of 43 at 500 or more |
+| The 44 that failed | $500,000 paid, largest $50,000,000 | 37 of 44 at 500 or more |
 
 **Hedge the size half, and say why.** These are employee *bands*, not
 headcounts, so there is no median to quote. The two sides are not equally well
-evidenced either: **35 of the 43 failures** rest on a filing
-or an official record, against **32 of 51** on the sued
+evidenced either: **35 of the 44 failed companies** have a
+headcount from a filing or an official record, against **32 of 51** on the sued
 side, where **19** sit on a company website, a directory or a best
 guess. Write "none of the failures is recorded under 100 employees", not "none
 employs fewer than 100". The dollar figures carry no such doubt: they are exact

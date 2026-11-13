@@ -508,7 +508,7 @@ quoted as findings. Cite the originating outlet, never Google News.
 ## Failure verification (court dockets, SEC filings, local news)
 
 **What it is.** The step that turns a distress candidate into a finding or
-throws it out. 117 candidates checked one at a time against the court docket
+throws it out. 119 candidates checked one at a time against the court docket
 where one exists, the company's SEC filings where it is public, and the local
 story where neither is available. Written to `data/research3/*.json` by the
 procedure in `docs/FAILURE_VERIFY_PROMPT.md` and consolidated by
@@ -516,12 +516,12 @@ procedure in `docs/FAILURE_VERIFY_PROMPT.md` and consolidated by
 
 **What `failures.csv` holds.** Every candidate and every verdict, including the
 rejects and the reason each was rejected, so the published count can be
-audited. 117 candidates in all. Verdicts: `Confirmed failure` (43,
-$97,009,323 paid), `Not a failure` (53), `Different company` (17), `Failed
+audited. 119 candidates in all. Verdicts: `Confirmed failure` (44,
+$97,709,323 paid), `Not a failure` (53), `Different company` (17), `Failed
 away from the funded site` (3, $3,850,000, not in the count), `Before the
 grant` (1).
 
-**15 of the 43 were found by the WARN join, not by the news scan**
+**16 of the 44 were found by the WARN join, not by the news scan**
 (`scripts/35_warn_join.py`, verified in `data/research3/warncheck_*.json`,
 merged by `scripts/37_merge_warncheck.py`). That is the measure of how much of
 a floor a news-based count is: a third of the confirmed failures had no
@@ -567,7 +567,7 @@ its caveat had to be rewritten: the funded Lorain mill really is shuttered,
 while the 209 jobs and the August 2023 date on the row are the Canton mill, a
 different site Ohio did not fund.
 
-**The dominant failure mode, and it is worth stating in the post.** 53 of 117
+**The dominant failure mode, and it is worth stating in the post.** 53 of 119
 candidates were the company appearing in somebody else's case: JPMorgan and
 Morgan Stanley as creditors or fund sponsors, BDO as the author of bankruptcy
 reports, British Airways as a customer of a liquidated Scottish contractor,
@@ -1238,7 +1238,7 @@ every publish. It has already caught two real defects:
    $90,737,093.
 6. **The news scan was missing a third of them.** Joining Ohio's whole WARN
    register against every recipient found 15 more confirmed failures, taking
-   the count to **43 companies and $97,009,323**. Any earlier draft citing a
+   the count to **44 companies and $97,709,323**. Any earlier draft citing a
    lower figure is out of date.
 5. **Two source links could not be audited and one was in the wrong place.**
    CourtListener now answers every automated fetch with an empty 202 bot
@@ -1254,9 +1254,9 @@ deliberate.** The data holds employee bands (`<100`, `100-499`, `500-4999`,
 `5000+`), not headcounts, so there is no number to take a median of and any
 "median employees" figure would be invented. The bands say it more plainly
 anyway: of the 51 sued companies on the grant schedule, 20 employ fewer than
-100; **of the 43 that failed after being paid, none does.** Those bands grade
+100; **of the 44 that failed after being paid, none does.** Those bands grade
 the employee count and not the finding, which is a separate and weaker thing:
-21 of the 43 failures rest on a court filing or the employer's own notice to
+22 of the 44 failures rest on a court filing or the employer's own notice to
 the state. Median and mean
 *grant* size are exact and are published instead.
 
@@ -1402,7 +1402,7 @@ Nestlé USA for the Solon campus, which is closing, and $6,000,000 to Nestlé
 Purina for a Clermont County plant, which opened in August 2026.** A reader
 taking the parent row at face value would read $9.2 million as lost.
 
-**Five of the 43 confirmed failures sit inside a parent that was paid more**:
+**Five of the 44 confirmed failures sit inside a parent that was paid more**:
 Nestlé (35% of the group's money failed), Procter & Gamble through iMFLUX
 (20%), Marathon Petroleum through Speedway (76%), McKesson through
 CoverMyMeds (89%) and American Trailer World through ATW Ohio (47%). Read as
