@@ -1159,6 +1159,29 @@ that failed and were never sued.**
 | Subsidized service ended | 1 | $200,000 | **0** |
 | **Total** | **28** | **$86,887,093** | **2** |
 
+**What came back through the courts: $3,229,155, against $13,548,404 pleaded.**
+That is 23.8%, and it is an upper bound rather than a receipt. It is the value
+of judgments the Franklin County docket records as satisfied and released, and
+most of those same dockets say in terms that no filing states the sum actually
+paid, who paid it, or whether it was discounted. 20 of the 63 suits have any
+figure at all; the other 43 end with nothing on the record. Whenever this
+number is published it has to carry that sentence.
+
+Two traps in it, both caught in the data. Olive AI has two cases and the
+second one's docket note only *refers* to the first one's $598,420 judgment,
+so a careless read counts that money twice and reports $3.8 million. RM
+Biltrite also has two cases, and those are two genuinely separate satisfied
+judgments, $587,832 and $125,000, so a rule tight enough to drop the Olive
+duplicate must still keep both of these. `scripts/36_recovered.py` does that
+and prints the reconciliation.
+
+**Do not add this to the $26.0 million the page already reports as returned.**
+They are different measures of different things: $26.0 million is the negative
+rows on the tax returns themselves, money JobsOhio booked as coming back from
+any cause, and $3.2 million is judgments in its own lawsuits. The second is
+not a subset of the first that anyone has traced, and nothing published says
+how they overlap.
+
 Now set that beside who it does sue:
 
 | | Median | Size, on the bands recorded |
