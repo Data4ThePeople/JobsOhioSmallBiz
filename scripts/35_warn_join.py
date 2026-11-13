@@ -299,8 +299,14 @@ def main(argv):
                     distinctive >= 2
                     # one distinctive word, and it accounts for most of both
                     or (distinctive == 1 and hi >= COVER and lo >= 0.5)
-                    # or the two names are the same name, whatever the words
-                    or (hi >= 0.99 and lo >= COVER)
+                    # or the two names are the same name, whatever the words,
+                    # as long as at least one of those words is not shared by
+                    # half the state. Without that floor this rule paired
+                    # Gorilla Glue's parent "GG Brands Company LLC" with "L
+                    # Brands Service Company, LLC": both reduce to the single
+                    # word "brands", which 11 companies in the register use, so
+                    # they covered each other completely and matched perfectly.
+                    or (hi >= 0.99 and lo >= COVER and rare <= 5)
                 )
                 if not ok:
                     continue

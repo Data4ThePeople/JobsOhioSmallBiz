@@ -1537,3 +1537,57 @@ this repo is the starting point, with the parser caveats in `DATASETS.md`.
 some of these payments may have bought something. Write what is documented:
 $28.6 million went towards a plant that is not there, $20 million came back,
 and the public record does not say what happened to the rest.
+
+---
+
+## 19. $1.5 million to revive a building for a tenant that collapsed in a $70 million fraud
+
+**This is in the tool as Unresolved rather than as a failure, and the reason
+is the lead.** None of the five failure categories fits it, and a label that
+does not fit is how a tool misleads a reporter.
+
+**Verified, from documents read in full.**
+
+- JobsOhio's March 2022 project record is a **Revitalization Grant of
+  $1,500,000** to Bitwise, Inc. (BW Industries Inc.), Lucas County, for 378
+  jobs created on a $19,980,874 investment, plus a separate $3,000,000
+  Revitalization Loan. The $1,500,000 appears on Schedule I in FY2023, paid to
+  **Toledo Innovation Center Landlord LLC** at a Toledo address.
+- Bitwise Industries and four affiliates filed **Chapter 7** in Delaware on
+  28 June 2023, case **23-10845-TMH**. Liquidation, not reorganisation. The
+  petition carries FEIN 47-1635652.
+- Bitwise's own notice to Ohio (ODJFS 009-23-037, 14 June 2023) terminates
+  **625 employees nationally across 14 sites in 7 states**, of whom **18 were
+  Ohio residents**, named individually as head-office and support roles. The
+  closing Toledo addresses are 1300 Jefferson Avenue and 413 Adams Street.
+- The bankruptcy docket names **SPE PNC Toledo Innovation Center Master Tenant
+  LLC** and three PNC New Markets Tax Credit entities, which shows the shape of
+  the deal: the grant payee is the landlord special-purpose entity inside an
+  NMTC stack.
+- **SEC v. Soberal** (14 pages, read in full) is an investor fraud case,
+  roughly $70 million raised in 2022. **It never mentions Ohio, Toledo or
+  JobsOhio.**
+
+**Why it is not in the failure count.** The building was finished. It opened as
+Innovation Post in February 2025 with tenants and was still letting space at
+the end of that year. The payee filed nothing and is not a debtor. 18 Ohio
+jobs is not a mass layoff by Ohio's own threshold. What collapsed is the anchor
+tenant, not the funded thing.
+
+**The one hole, and a reporter should close it first.** No deed or auditor
+record was reached tying Toledo Innovation Center Landlord LLC to 1300
+Jefferson Avenue. The chain is the entity name, the PNC master-tenant entity in
+the bankruptcy, the Toledo payee address, and the amount matching the Lucas
+County grant to the dollar. Strong, and still inferred. **Pull the Lucas County
+deed.** The Ohio Secretary of State's business search was in maintenance and
+the Internet Archive was offline during this work, so neither the entity filing
+nor an archived auditor page could be checked.
+
+**Three things not to write.** Do not call 18 Ohio jobs a mass layoff. Do not
+say the building failed. Do not imply the fraud touched JobsOhio money: the SEC
+complaint does not mention Ohio, and nothing establishes a link.
+
+**What is worth asking.** JobsOhio bought 378 jobs. The tenant that was to
+provide them liquidated 15 months after the money went out. Who holds the
+building now, did JobsOhio seek any of the $1.5 million back, and does the
+$3,000,000 loan sit anywhere in the Chapter 7?

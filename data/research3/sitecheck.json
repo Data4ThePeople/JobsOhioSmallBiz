@@ -596,5 +596,18 @@
   "confidence": "High",
   "source": "WARN notice dated 2020-02-06, received 2020-02-18, Pier 1 Distribution and Fulfillment Center, Groveport/Franklin, 75 affected (https://jfs.ohio.gov/static/warn/pdf/Pier1DistributionandFulfillmentCenter.pdf); WARN notice dated 2020-06-02, received 2020-06-03, Pier 1 Imports, Inc., Groveport/Franklin, 221 affected (https://jfs.ohio.gov/static/warn/pdf/Pier1ImportsInc.pdf, read by OCR from the scanned image); Schedule I FY2018, Pier 1 Imports (US) Inc, 5701 Meadows Drive, Grove City OH 43123, $30,000 (data/grants_raw.csv).",
   "notes": "From the WARN-join verification, data/research3/warncheck_*.json. Use, but write it as a company liquidation, not as a site-level finding. Say the company is gone and the Franklin County distribution centre closed, and do not assert that the $30,000 paid for the Groveport building. The addresses do not match and JobsOhio has no project record for Pier 1."
+ },
+ {
+  "recipient_id": "EIN:341313085",
+  "name": "TECHNICOTE INC",
+  "verdict": "same site",
+  "funded_site": "6206 Wolf Creek Pike, Trotwood, OH 45426 (Montgomery County), the address JobsOhio's FY2025 payment was remitted to",
+  "failed_site": "6206 Wolf Creek Pike, Trotwood, OH 45426 (Montgomery County), the address on the WARN letter",
+  "same_site": true,
+  "partial": false,
+  "what_survives": "",
+  "confidence": "High",
+  "source": "Ohio Department of Job and Family Services WARN notice, 'Technicote Inc dba Beontag', Trotwood/Montgomery, kind Layoff, 53 affected, received 3/25/2026 at 12:43pm, layoff date 5/24/2026, fetched and read in full at dam.assets.ohio.gov/image/upload/v1774539368/jfs.ohio.gov/warn/WARN%202026/TechnicoteIncdbaBeontag.pdf (2 pages, letter plus the full job-title schedule). data/grants_raw.csv FY2024 row (TECHNICOTE INC, EIN 34-1313085, 222 Mound Ave, Miamisburg, OH, $350,000) and FY2025 row (TECHNICOTE INC, EIN 34-1313085, 6206 Wolf Creek Pike, Trotwood, OH, $350,000). data/commitments_norm.csv 2023-Dec row. data/grant_conditions.csv FY2024 and FY2025 rows, both JobsOhio Economic Development Grant. Corroborating headlines, used for dates only: Dayton Business Journal, 'Beontag to lay off 53 employees at Trotwood facility less than 2 years after opening', 2026-03-30; WHIO TV, 'Trotwood manufacturer to lay off dozens of employees', 2026-03-30; Dayton Daily News, 'Trotwood company will lay off 53 workers', 2026-04-02; Dayton Business Journal, 'Brazilian manufacturer unveils $80 million facility in Trotwood, additional investments on the way', 2024-10-17; Labels & Labeling, 'Beontag acquires Technicote', 2022-09-07.",
+  "notes": "From data/research3/warncheck_c.json. Add to the count as a permanent mass layoff at the funded site, and say the plant stayed open. The sentence to write: JobsOhio paid Technicote the full $700,000 it had committed for 163 new jobs at a new $58.9 million Trotwood plant, and sixteen months after the plant opened the company permanently cut 53 production jobs there. This one is ready to hand to a reporter as it stands."
  }
 ]
