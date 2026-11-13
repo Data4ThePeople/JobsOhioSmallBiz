@@ -163,6 +163,11 @@ def main(argv):
             elif sc.get("verdict") == "partly" and not r.get("caveat"):
                 bad(f"{r['name']}: the site check calls this partial "
                     f"({sc.get('what_survives')}) but the row carries no caveat")
+            elif sc.get("verdict") == "unresolved" and not r.get("caveat"):
+                # counted, but we cannot say the funded site is what failed, so
+                # the row has to say that out loud rather than read as settled
+                bad(f"{r['name']}: the site check could not establish whether the funded "
+                    f"site is what failed, and the row carries no caveat saying so")
     else:
         print("note: data/research3/sitecheck.json is not present, so the "
               "funded-site check is not being enforced\n")

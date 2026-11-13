@@ -59,6 +59,7 @@ ROOT = Path(__file__).resolve().parent.parent
 WARN = ROOT / "data" / "warn" / "notices.csv"
 FAILURES = ROOT / "data" / "failures.csv"
 GRANTS = ROOT / "data" / "grants_raw.csv"
+WARNJOIN = ROOT / "data" / "warn_join.csv"
 OUT = ROOT / "data" / "failure_warn.csv"
 ELSEWHERE = "Failed away from the funded site"
 CATS = ("Funded site closed", "Mass layoff at the funded site", ELSEWHERE)
@@ -185,6 +186,19 @@ def main(argv):
     warn = list(csv.DictReader(WARN.open()))
     fails = [r for r in csv.DictReader(FAILURES.open())
              if r["verdict"] in ("Confirmed failure", ELSEWHERE) and r["category"] in CATS]
+    # the join's answer, for companies whose notice is filed under another name
+    joined = {}
+    if WARNJOIN.exists():
+        by_notice = {(w["employer"], w["place"], w["received"]): w for w in warn}
+        for j in csv.DictReader(WARNJOIN.open()):
+            if j["tier"] not in ("A", "B"):
+                continue
+            k = j["recipient_id"]
+            w = by_notice.get((j["warn_employer"], j["warn_place"], j["warn_received"]))
+            if w and (k not in joined
+                      or headcount(w["affected"]) > headcount(joined[k]["affected"])):
+                joined[k] = w
+
     cmap = county_map(warn)
     # every city each payee's money was sent to, off Schedule I itself
     paid_city = {}
@@ -213,6 +227,15 @@ def main(argv):
             if not (rare <= 2 or cover >= 0.8):
                 continue
             cands.append((gap(fd, ym(w["received"])), rare, w))
+        # Some companies file under a name this pass cannot reach from the
+        # payee: ATW Ohio's notice is filed by its PJ Trailer subsidiary and
+        # William R Hague's by its parent A.O. Smith. 35_warn_join.py searches
+        # the payee AND the parent and a human verified those matches, so where
+        # this pass finds nothing its answer is used rather than recording a
+        # missing notice that is not missing.
+        if not cands and f["recipient_id"] in joined:
+            w = joined[f["recipient_id"]]
+            cands = [(gap(fd, ym(w["received"])), weight.get("", 9) or 9, w)]
         cands.sort(key=lambda x: (x[0], x[1]))
         # a revision loses to the full notice it revises, when one is nearby
         if cands and is_revision(cands[0][2]["employer"]):
