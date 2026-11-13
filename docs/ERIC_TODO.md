@@ -1,15 +1,21 @@
 # What Eric needs to do personally before publishing
 
-Written 2026-11-13 for a Monday publish. **The failure count moved twice today
-and is now 43 companies and $97,009,323**, up from the 28 and $86.9 million it
-was this morning, because joining Ohio's whole WARN register against every
-recipient found 15 confirmed failures the news scan had missed. Everything
-below is written against the new number. Everything here needs a human: a phone
-call, a judgment call, a browser, or a name on a request for comment. Work that
-a script or an agent could do is not on this list; that work is being done.
+**Scope changed 2026-11-13: the post is an announcement of the tool, not a
+story about what is in it.** The leads go to local reporters to work. That
+removes several items from this list and it raises the bar on one thing, so
+read the next paragraph before the list.
 
-Sections are in priority order. The first two are the ones that can change what
-the piece says.
+**A tool is held to a higher standard than a story, not a lower one.** In a
+story a sentence can carry its own hedge. In a table a row either says a
+company had a mass layoff or it does not, and the reader who acts on it is a
+reporter who will ring that company. Every caveat therefore has to live in
+the row, on hover, where someone filtering the table will meet it. That is
+already how the tool is built, and it is why the validation work continues
+rather than stopping here.
+
+**The count is 43 companies and $97,009,323.**
+
+Sections are in priority order.
 
 ---
 
@@ -41,75 +47,50 @@ A call either removes that caveat or removes the row.
 
 ---
 
-## 2. Request for comment from JobsOhio
+## 2. Give JobsOhio notice, and ask four questions
 
-**Time: 30 minutes to send. Needs to go out well before Monday.**
+**Time: 30 minutes to send. It should go before the tool is public.**
 
-The piece makes serious claims about a public-money body. It should go to them
-first, and their refusal to answer is itself publishable. Suggested questions,
-each tied to a number we can defend:
+You are not making an argument about JobsOhio, but the tool asserts that 43
+companies it paid $97,009,323 failed afterwards, and it names every one. That
+is worth putting to them first, and whatever they say belongs in the
+announcement. Four questions, each tied to a number the tool will show:
 
 1. JobsOhio paid $1.37 billion in grants over twelve years. The returns record
    $26.0 million coming back, 1.9%. Is that the complete figure for repayments
    and clawbacks, and if not, what is?
-2. 43 companies that were paid $97.0 million failed after the money went out:
-   the funded site closed, there was a mass layoff there, the company went
-   bankrupt, or it was sold. JobsOhio sued three of them. What determines
-   whether it sues?
+2. On our reading of Schedule I, 43 companies that were paid $97.0 million
+   failed after the money went out: the funded site closed, there was a mass
+   layoff there, the company went bankrupt, or it was sold. We will publish
+   the list. Is any of it wrong?
 3. It has filed 63 suits in Franklin County since 2018, pleading $13.5 million
-   in total, median $125,000. Judgments recorded as satisfied come to $3.2
-   million. How much has actually been recovered?
-4. Its standard agreement says "Notwithstanding the terms of this Agreement,
-   Grantor has the discretion to determine compliance." Who exercises that
-   discretion, how many waivers have been granted, and are any published?
-5. 71% of dollars went to recipients whose agreement lets JobsOhio demand
-   repayment. Ten of twelve programs publish no repayment language at all. Why
-   is the clause not in the published guidelines?
+   and recovering $3.2 million in judgments recorded as satisfied. Three of
+   the 43 were sued. What determines whether JobsOhio sues?
+4. Its transparency page says that once a project is complete it "publicly
+   shares all its executed grant agreements and loans". Several completed
+   projects in this data have no published agreement. What is the rule?
 
-**Give them a real deadline and record the date you asked.** If they answer,
-several of these become much stronger with their number beside ours.
+**Offer them the data before it is public.** If a row is wrong, you would
+rather hear it from them this week than from a reporter next month. Record the
+date you asked.
 
----
+## 3. Decide whether the Dayton records request is yours or a reporter's
 
-## 3. A public records request, and it should go today
+**Time: 5 minutes to decide, 20 to send if you keep it.**
 
-**Time: 20 minutes. It has a clock on it, which is why it is this high.**
+JobsOhio announced the Avelo Dayton route itself, the route flew nine months,
+and the announcement is no longer on its site. **No public document states the
+$200,000**; it comes off the tax return. The City of Dayton owns the airport
+and is subject to public records law where JobsOhio is not, so a request to
+the city should produce the agreement and the figure.
 
-JobsOhio announced the Avelo Dayton-Orlando route itself on 3 November 2022,
-in a release quoting J.P. Nauseef by name. The route flew nine months and
-stopped. **That release is no longer on JobsOhio's site** — the URL 404s — and
-its programme page named Avelo in August 2023 and did not in December 2023. I
-verified all of that against the Internet Archive myself.
+Under the old plan this was yours. Under the new one it is the single best
+thing to hand a Dayton reporter: it is local, it is concrete, and the request
+writes itself. Lead 17 has the addresses and the exact records to ask for.
 
-What we do not have is the money. **No public document states the $200,000**;
-the figure comes off the tax return, and the Dayton Daily News reported that
-local and state organisations declined to say what Avelo was given. JobsOhio
-is not subject to public records law. The City of Dayton is.
-
-Send an Ohio public records request under R.C. 149.43 to the **City of Dayton,
-Clerk of the Commission, and the Department of Aviation** (the named air
-service manager is Linda Hughes). The city owns and operates the airport, is
-named in JobsOhio's own release, and had to put up a local match, so its file
-should hold both the agreement and JobsOhio's commitment letter with the
-figure on it. Ask for:
-
-- any agreement, letter of commitment or term sheet between the City, the
-  airport, JobsOhio or the Dayton Development Coalition and Avelo Airlines,
-  2021 to 2024
-- records of any payment, incentive or revenue guarantee to Avelo
-- the City's own match or contribution for the route
-
-**Say in the request that you will publish whatever comes back, and note the
-date you sent it.** If nothing arrives before Monday, the piece says a request
-is outstanding, which is a fair and ordinary thing to write.
-
-A second, free route if the request stalls: Dayton filed a Small Community Air
-Service Development Program proposal in 2025, DOT-OST-2025-2316-0015. Those
-proposals have to itemise every partner's dollar contribution. It is on
-regulations.gov, which blocked every automated fetch I tried, but it opens in
-a browser.
-
----
+**My recommendation: give it away, and say so in the handoff.** A Dayton
+newsroom will get a faster answer from its own city than you will, and it is a
+better story with a local byline on it.
 
 ## 4. Two minutes in a browser — the FY2012 and FY2013 returns
 
@@ -132,64 +113,56 @@ share. The page already discloses that they are excluded.
 
 ## 5. Judgment calls that are yours, not mine
 
-These are decisions about what the piece claims, and I should not make them
-alone.
+Most of what was here was about how hard to push a story, and the scope change
+retires those. Three remain, because they are about what the tool asserts.
 
-**a. Republic Steel is now the sharpest single fact in the piece, and you
-should decide how hard to lead on it.** JobsOhio signed a workforce-training
-agreement in September 2018, committed $500,000 in February 2019 to train 85
-workers and create 125 jobs at the Lorain mill, and paid it in FY2022. Grupo
-Simec, Republic's parent, had told the SEC every year since 2016 that Lorain
-was idled and made no steel, and booked it at zero tons. The EPA agrees twice
-over. JobsOhio then sued in 2023 pleading that 55 of the 125 jobs were
-created. That row has moved from Medium to High confidence.
+**a. Ultium Cells: decided, nothing needed.** It stays Michigan, because
+recoding it on plant location would force the same on Honda ($47.4m, plants
+all in Ohio, counted to Japan) and Fuyao ($10.6m, Moraine, counted to China).
+Schedule I also shows $20,000,000 of the $50,000,000 remitted to GM's head
+office in Detroit. The page names it next to Intel and states the cost of the
+call: count Ultium as Ohio and the home-state dollar share goes 36.2% to
+41.4%. Only act if you disagree.
 
-**b. Ultium Cells: decided, and now disclosed on the page.** You asked whether
-a joint venture should count as Ohio. It stays Michigan, because recoding it
-on plant location would force the same treatment on Honda ($47.4m, plants all
-in Ohio, counted to Japan) and Fuyao ($10.6m, Moraine, counted to China), and
-that is the finding itself. Schedule I also shows $20,000,000 of the
-$50,000,000 remitted to 300 Renaissance Center, Detroit, which is GM's head
-office. The page now names it next to Intel and states what the call costs:
-**count Ultium as Ohio and the home-state dollar share goes 36.2% to 41.4%.**
-Nothing more needed from you unless you disagree.
+**b. Does the tool state a cut-off date?** The count moved three times today,
+31 to 28 to 43. It should now be stable, because the WARN join is exhaustive
+over 2020 to 2026 and the earlier years have no register to search. But a
+reporter who cites "43" in March should be able to tell whether that was still
+the number. **My recommendation: put the date the data was last verified on
+the page**, next to the count. It costs a line and it makes the figure
+quotable.
 
-**c. The headline failure number moved twice today.** 31 and $90.7 million
-this morning, then 28 and $86.9 million when three companies turned out to
-have failed at a site the grant did not pay for, now **43 and $97.0 million**
-after the WARN join. It should be stable: the join is exhaustive over
-2020-2026 and the pre-2020 years have no register to search. Decide whether to
-state a cut-off date on the page.
+**c. What the announcement says about the pandemic.** 46% of Ohio's entire
+WARN register is 2020, and March to June alone is 28% of it. The tool holds
+those candidates to a higher bar and excludes most of them. A reporter working
+from the tool needs to know that or they will re-derive a different number and
+think we are wrong. **My recommendation: one sentence in the announcement and
+the full account in the method note**, which is where it already is.
 
-**d. Sherwin-Williams is 13.1% of all Ohio business dollars by itself.** Drop
-it and the Ohio share goes 36% to 33%. The post names only Intel as a
-concentration risk. Decide whether Sherwin-Williams gets named too.
-
-**e. How hard to push the "failed elsewhere" three.** Dana, New Horizons Baking
-and FedEx Supply Chain each closed an Ohio operation while the site Ohio paid
-for kept running. That is not the claim the count makes, so they are out of it,
-but it is interesting on its own: it is the kind of thing a press office would
-use to say "we don't count that" if we had counted it. Currently they get their
-own view in the tool. Decide whether they get a paragraph in the post.
-
-**f. Whether the piece says anything about the pandemic cluster.** 46% of
-Ohio's entire WARN register is 2020, and March to June 2020 alone is 28% of it.
-That shapes any claim about layoffs at grant recipients and we hold those
-candidates to a higher bar. It is honest and a little technical. Your call
-whether it belongs in the post or only in the method note.
+Retired by the scope change: how hard to lead on Republic Steel, whether
+Sherwin-Williams gets named as a concentration risk, and whether the three
+"failed elsewhere" companies get a paragraph. All three are now the tool's
+job, and the tool already shows them.
 
 ---
 
 ## 6. Before you hit publish
 
-- [ ] `python3 scripts/30_audit_summary.py` — must print 28 of 28 pass
-- [ ] `python3 scripts/31_audit_failures.py --fetch` — must print no problems,
-      and the `--fetch` run confirms every source link still resolves
-- [ ] Read the "After the grant" column on the page and hover three rows at
-      random. Every one should name the site the money paid for, the site that
-      failed, and either Ohio's own notice or why there isn't one.
-- [ ] Confirm the page says 43 companies and $97.0 million, and that it
-      reflects whatever you decided about Ultium in 5b.
+- [ ] `python3 scripts/30_audit_summary.py` — must print 28 of 28 checks pass
+- [ ] `python3 scripts/31_audit_failures.py --fetch` — must print no problems;
+      the `--fetch` confirms all 43 source links still resolve
+- [ ] `python3 scripts/39_audit_commitments.py` — expect 24 truncated names and
+      the November 2016 gap. These are known, documented, and do not touch a
+      published share. If the numbers have grown, something regressed.
+- [ ] Open the tool, filter to each of the five outcome tiles, and hover three
+      rows at random in each. Every one should name the site the money paid
+      for, the site that failed, and either Ohio's own notice or why there is
+      none. **This is the check that matters most now**, because it is what a
+      reporter will do.
+- [ ] Click "show what was rejected, and why" and confirm 71 rows appear. That
+      view silently rendered nothing for a while.
+- [ ] Read `docs/TIEOUT_INDEPENDENT_3.md` when it lands and act on anything in
+      it before publishing.
 
 ---
 
@@ -221,27 +194,57 @@ moves a headline:
 
 ---
 
-## 8. One new lead that may need you, and a parser defect that does not
+## 8. The FirstEnergy question, which is now a reporter's and not yours
 
 **The largest payment in the data has no project behind it.** $12,408,019 to
-FirstEnergy Corp in FY2017. Its commitment row exists, in a November 2016
+FirstEnergy Corp in FY2017. Its commitment row does exist, in a November 2016
 report our parser silently dropped, and it is a **$14,000,000 Revitalization
-*Loan* to FirstEnergy Generation, LLC**. Two things follow. If that money is a
-loan draw rather than a grant, the repayment column for that row is wrong and
-the dollar base needs a sentence. And FirstEnergy Generation is the subsidiary
-that became FirstEnergy Solutions and went bankrupt in 2018. Lead 16 in
-STORY_LEADS says, and I agree, that this piece should report the missing
-project record and not reach for the HB6 connection. **Your call whether it
-goes in at all, because it is the one finding here that could change the
-piece's subject.**
+*Loan* to FirstEnergy Generation, LLC**.
 
-A research pass also found three defects in how we parse JobsOhio's monthly
-project reports: 24 truncated company names, the whole of November 2016
-missing, and a row shift on the June 2023 page. `39_audit_commitments.py`
-reports them on every run and `DATASETS.md` describes them. **None touches a
-published share** — the headline comes from Schedule I, not from these — and I
-have deliberately not fixed them, because the obvious fix cut the file by 516
-rows when I tried it. That is post-publication work.
+One part of this is yours and one is not.
+
+**Yours, and small:** if that money is a loan draw rather than a grant, the
+repayment column for the row is wrong and the dollar base needs a sentence.
+Worth half an hour before publishing, because the tool shows that row. Read
+the November 2016 report directly and check the Schedule I purpose text.
+
+**Not yours:** FirstEnergy Generation is the subsidiary that became
+FirstEnergy Solutions and went bankrupt in 2018, and FirstEnergy is the
+company at the centre of the HB6 prosecution. Lead 16 says, and I still think,
+that the finding here is a $12.4 million payment with no public project
+record, and that reaching for HB6 needs reporting this project has not done.
+Under the new plan that is exactly the kind of thing to hand over. Give it to
+a reporter who covers that beat.
+
+**The parser defect behind it needs nothing from you.** 24 truncated company
+names, November 2016 missing, a row shift in June 2023.
+`scripts/39_audit_commitments.py` reports them and `DATASETS.md` describes
+them. **None touches a published share.** I deliberately did not fix them: the
+obvious fix cut the file by 516 rows when I tried it. Post-publication work.
+
+---
+
+## 9. The handoff itself, which is now the point
+
+The process has an outreach step (4a, a list of at least twelve reporters and
+advocates for you to confirm; 4b, a tailored email to each, saved as Gmail
+drafts and never sent). Under the old plan that was a step after the story.
+Under the new one it **is** the deliverable, and it should probably be built
+before the announcement rather than after it, so the announcement can say the
+leads are already with people.
+
+Two things I would want from you before drafting that list:
+
+- **Which beats.** The seventeen leads split roughly into economic
+  development and state accountability (Columbus), aviation (Dayton), steel
+  and manufacturing (Youngstown, Lorain, Canton), and bankruptcy or courts.
+  Say which of those you want covered and I will build the list against it.
+- **How much to give each one.** A tailored email naming the one lead that
+  fits that reporter's patch pulls harder than a link to seventeen. It also
+  takes longer. Say which you want.
+
+`docs/STORY_LEADS.md` now opens with a front door written for that audience
+rather than for you, so it can go out as-is.
 
 ---
 
@@ -263,3 +266,5 @@ rows when I tried it. That is post-publication work.
   plant with the same Hyundai Mobis parent. The accurate sentence is "Ohio paid
   one Hyundai Mobis company while another cut 210 jobs across town", and
   JobsOhio could settle it by giving the payment date.
+
+---
