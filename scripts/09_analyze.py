@@ -399,7 +399,15 @@ def main():
                     "net_negative_dollars": sum(a["cash"] for a in clawed),
                     "resolved_parents": sum(1 for a in allp if a["resolved"]),
                     "resolved_cash": sum(a["cash"] for a in allp if a["resolved"]),
-                    "cash_positive": sum(a["cash"] for a in allp)}}
+                    # NOT the sum of positive payments, which is what the old
+                    # name "cash_positive" said and an independent tie-out
+                    # caught. It is net cash across the parents that kept
+                    # something, so it excludes the 16 whose grants were fully
+                    # reversed. Anyone reading the old key as gross payments
+                    # was off by $25,282,836. Both figures are published now.
+                    "cash_counted": sum(a["cash"] for a in allp),
+                    "cash_payments_gross": sum(g["cash"] for g in grants if g["cash"] > 0),
+                    "cash_reversals": sum(g["cash"] for g in grants if g["cash"] < 0)}}
     out["by_class"] = {k: {"parents": v["n"], "cash": 0} for k, v in shares(allp, lambda a: a["class"], lambda a: 1)[0].items()}
     for a in allp:
         out["by_class"][a["class"]]["cash"] += a["cash"]
@@ -791,7 +799,7 @@ def main():
     m = out["meta"]
     lines += [f"- Schedule I rows: {m['rows']:,}; distinct recipients: {m['recipients']:,}; parents: {m['parents']:,}; FY{m['fy_min']} to FY{m['fy_max']}; cash ${m['cash_total']:,}",
               f"- Reversed payments (negative Schedule I rows): {m['reversal_rows']} rows, ${m['reversal_dollars']:,}; parents netting to zero or less, not counted as recipients: {m['parents_net_zero_or_less']} (net ${m['net_negative_dollars']:,})",
-              f"- Parents counted (net payment above zero): {m['parents']:,}; with a classification: {m['resolved_parents']:,}, carrying ${m['resolved_cash']:,} of the ${m['cash_positive']:,} they were paid on net ({pct(m['resolved_cash'] / m['cash_positive'])})", ""]
+              f"- Parents counted (net payment above zero): {m['parents']:,}; with a classification: {m['resolved_parents']:,}, carrying ${m['resolved_cash']:,} of the ${m['cash_counted']:,} they were paid on net ({pct(m['resolved_cash'] / m['cash_counted'])})", ""]
     lines += ["## By recipient class (all parents)", ""]
     for k, v in sorted(out["by_class"].items(), key=lambda kv: -kv[1]["cash"]):
         lines.append(f"- {k}: {v['parents']:,} parents, ${v['cash']:,} ({pct(v['cash'] / m['cash_total'])})")

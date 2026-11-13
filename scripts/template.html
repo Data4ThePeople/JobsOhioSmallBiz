@@ -641,14 +641,26 @@ function renderTable(){
           var wa = el("a",{class:"src", href:w.pdf, target:"_blank", rel:"noopener",
                            title:"Ohio WARN notice filed by " + w.employer + ", " + w.place
                                  + ", " + w.affected + " affected, received " + w.received
+                                 /* Three states, not two. A blank means the county
+                                    check could not run, usually because every payment
+                                    went to an out-of-state head office, and asserting
+                                    a match there would be claiming something nobody
+                                    checked. Seven of the 27 matched notices are blank. */
                                  + (w.at_funded_site === "no"
                                      ? ".\n\nThis notice is for a county the grant money never "
                                        + "reached, so it records a failure somewhere else. It is "
                                        + "shown because it is the only notice Ohio holds for this "
                                        + "company, not as evidence about the funded site."
-                                     : ".\n\nThis is the employer's own filing with the state, "
-                                       + "for the county the money was paid into.")},fd);
-          wa.textContent = w.at_funded_site === "no" ? "state notice, other county" : "state notice";
+                                     : w.at_funded_site === "yes"
+                                     ? ".\n\nThis is the employer's own filing with the state, "
+                                       + "for the county the money was paid into."
+                                     : ".\n\nThis is the employer's own filing with the state. "
+                                       + "Whether it is the county the money was paid into could "
+                                       + "not be checked, because the payments went to an "
+                                       + "out-of-state address.")},fd);
+          wa.textContent = w.at_funded_site === "no" ? "state notice, other county"
+                           : w.at_funded_site === "yes" ? "state notice"
+                           : "state notice, county unchecked";
           fd.appendChild(document.createTextNode(" "));
         }
         /* link to the record the finding rests on, where one resolved */
