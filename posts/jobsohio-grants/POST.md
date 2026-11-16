@@ -41,10 +41,6 @@ To be clear, this visualization doesn't answer that complex guiding question. Ra
 
 This was not an easy project, because there is no clean database we could join that had business size or headquarters location. And so, we studied each grant line by line to come up with our best judgement on where the recipient company belonged in our 2x2 matrix.
 
-What we didn't realize was that as we were going through each public grant line by line, we could start to collect additional information, that is arguably even more valuable for those looking to understand how JobsOhio has performed. We were able to find grants given to companies that, after receiving the grant, announced a mass layoff at the funded site, entered bankruptcy or receivership, closed the funded site, or ended the service the grant paid for. We also track separately which companies JobsOhio sued to get its money back. We call each of these a "failed" grant as it did not perform as expected. Note that we cannot determine if any of the grants were successful as JobsOhio doesn't regularly announce when companies have met their hiring targets. But the data to determine if there was a failure is in the public domain through WARN notices, bankruptcy filings, and court dockets. Wherever we can find one of these documents, it is linked so you can click through as part of your research process.
-
-Note another factor we could not capture is when a facility was simply never built at all. This happened with a petrochemical plant proposed for Belmont County. If JobsOhio does not sue the company, we cannot see the failure unless a filing is mandated by the state. If no jobs were ever added, no jobs are eliminated, leaving a blind spot in the tool.
-
 That said, we still believe this is the best free public tool to allow for research on grant performance in JobsOhio available in the public domain. Our goal is not to provide extensive takeaways on the stories living in this tool, but rather to provide this to local journalists and all Ohioans to better be able to ask questions of JobsOhio to gain confidence that our liquor sales dollars (which before JobsOhio was created used to flow through the state's own audited books) are being invested to help improve the lives of Ohioans.
 
 ## The tool
@@ -64,6 +60,14 @@ Every figure in the frame above is in the full tool, but the full tool also lets
 
 Found a broken link, a company in the wrong place, a number that looks wrong, or something we missed? Email **[connect@data4thepeople.com](mailto:connect@data4thepeople.com)** and we will fix it. We would rather hear it from you than leave it wrong. Corrections are made in public, with a note saying what changed and when.
 :::
+
+## The part we did not plan on
+
+::: spacer 5px
+
+What we didn't realize was that as we were going through each public grant line by line, we could start to collect additional information, that is arguably even more valuable for those looking to understand how JobsOhio has performed. We were able to find grants given to companies that, after receiving the grant, announced a mass layoff at the funded site, entered bankruptcy or receivership, closed the funded site, or ended the service the grant paid for. We also track separately which companies JobsOhio sued to get its money back. We call each of these a "failed" grant as it did not perform as expected. Note that we cannot determine if any of the grants were successful as JobsOhio doesn't regularly announce when companies have met their hiring targets. But the data to determine if there was a failure is in the public domain through WARN notices, bankruptcy filings, and court dockets. Wherever we can find one of these documents, it is linked so you can click through as part of your research process.
+
+Note another factor we could not capture is when a facility was simply never built at all. This happened with a petrochemical plant proposed for Belmont County. If JobsOhio does not sue the company, we cannot see the failure unless a filing is mandated by the state. If no jobs were ever added, no jobs are eliminated, leaving a blind spot in the tool.
 
 ## How to use it
 
