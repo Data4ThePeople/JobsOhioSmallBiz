@@ -1,6 +1,6 @@
 ---
 title: Every JobsOhio grant, in one searchable tool
-subtitle: 2,415 payments, $1.35 billion, 1,700 companies, and what happened to them afterward
+subtitle: Which grants went to small Ohio businesses, which went to large companies based elsewhere, and which companies failed after taking the money. Free for Ohioans and reporters to search.
 slug: jobsohio-grants
 date: 2026-11-17
 section: Data 4 Thought
@@ -128,6 +128,8 @@ JobsOhio's own lawsuit against that company in the Franklin County Court of Comm
 Every dollar starts with one source: Schedule I of JobsOhio's IRS Form 990, fiscal years 2014 through 2025, taken from the IRS e-file data. Schedule I lists grants over $5,000 on a cash basis, so these are dollars actually paid in a year, not dollars committed. Grants of $5,000 or less are not on it.
 
 That is 2,415 payments to 1,789 payees, traced to 1,700 parent companies and organizations, totaling $1,345,318,862 after $26,040,088 of recorded reversals.
+
+That list is already public. Anyone can read the same returns on [ProPublica's Nonprofit Explorer](https://projects.propublica.org/nonprofits/organizations/452798687). What it gives you is a payee name and a dollar figure, one year at a time. What it does not give you is who owns that payee, how big they are, where they are based, or what happened to them after the check cleared. That is the work in this tool, and it is why we did it by hand.
 
 Everything after that is layered on top: SEC filings and Form 5500 plan data for ownership and headcount, JobsOhio's own monthly project reports for the program and the project county, the Ohio WARN register for mass layoffs, federal bankruptcy dockets, and the Franklin County Clerk of Courts for the lawsuits and the grant agreements. Links go to the record, not to a summary of it. Every link was fetched and confirmed to resolve; where nothing resolved, the name is plain text rather than a dead link.
 
