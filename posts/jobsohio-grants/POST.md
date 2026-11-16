@@ -67,8 +67,6 @@ Found a broken link, a company in the wrong place, a number that looks wrong, or
 
 What we didn't realize was that as we were going through each public grant line by line, we could start to collect additional information, that is arguably even more valuable for those looking to understand how JobsOhio has performed. We were able to find grants given to companies that, after receiving the grant, announced a mass layoff at the funded site, entered bankruptcy or receivership, closed the funded site, or ended the service the grant paid for. We also track separately which companies JobsOhio sued to get its money back. We call each of these a "failed" grant as it did not perform as expected. Note that we cannot determine if any of the grants were successful as JobsOhio doesn't regularly announce when companies have met their hiring targets. But the data to determine if there was a failure is in the public domain through WARN notices, bankruptcy filings, and court dockets. Wherever we can find one of these documents, it is linked so you can click through as part of your research process.
 
-Note another factor we could not capture is when a facility was simply never built at all. This happened with a petrochemical plant proposed for Belmont County. If JobsOhio does not sue the company, we cannot see the failure unless a filing is mandated by the state. If no jobs were ever added, no jobs are eliminated, leaving a blind spot in the tool.
-
 ## How to use it
 
 ::: spacer 5px
@@ -160,7 +158,7 @@ We would rather you know the holes than find them later.
 
 **It cannot tell you what worked.** There is no success column, because JobsOhio does not routinely publish whether a company met its hiring targets.
 
-**It cannot see a project that was never built.** A company that takes the money and quietly never breaks ground files no layoff notice, because there were no jobs to eliminate. The clearest case is the petrochemical plant proposed for Belmont County.
+**It cannot see a project that was never built.** A company that takes the money and quietly never breaks ground files no layoff notice, because there were no jobs to eliminate. That leaves two ways for us to see it, a lawsuit from JobsOhio or a filing the state requires, and if neither happens the money is invisible to this tool. The clearest case is the petrochemical plant proposed for Belmont County.
 
 What we know: JobsOhio paid $48,599,868 to three companies for that site and that project, $20,000,000 came back after the developer failed to make an investment decision, as [The Intelligencer reported in March 2022](https://www.theintelligencer.net/news/top-headlines/2022/03/ptt-global-pays-jobsohio-20m-for-failing-to-move-on-belmont-county-cracker-plant/), and the plant was never built. That leaves $28,599,868 out. None of the three companies appears in the failure count, because none of them did anything the method can detect.
 
