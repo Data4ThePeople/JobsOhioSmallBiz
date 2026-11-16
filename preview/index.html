@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Every JobsOhio grant, in one searchable tool</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<style>
+  :root{color-scheme:light dark;
+    --page:#fcfcfb;--surface:#f4f4f1;--ink:#111;--ink2:#3d3c39;--muted:#6b6a66;
+    --border:#dcdbd6;--focus:#1F6F6B;--warn:#8a3b12;--warnbg:#fdf0e6}
+  @media (prefers-color-scheme: dark){:root{
+    --page:#181A1B;--surface:#212425;--ink:#E4E2DC;--ink2:#C8C6C0;--muted:#9A9892;
+    --border:#34383A;--focus:#6FBFB7;--warn:#F0A878;--warnbg:#2A1D14}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--page);color:var(--ink);
+    font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif;
+    -webkit-text-size-adjust:100%}
+  .sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+  .embargo{background:var(--warnbg);border-bottom:3px solid var(--warn);
+    color:var(--warn);padding:16px;text-align:center;
+    font:700 15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    letter-spacing:.06em;text-transform:uppercase;position:sticky;top:0;z-index:9}
+  .embargo span{display:block;text-transform:none;letter-spacing:0;font-weight:400;
+    font-size:13.5px;margin-top:5px;color:var(--ink2)}
+  main{max-width:40rem;margin:0 auto;padding:40px 20px 90px}
+  h1{font-size:34px;line-height:1.2;letter-spacing:-.015em;margin:0 0 10px}
+  .sub{font-size:19px;line-height:1.5;color:var(--ink2);margin:0 0 6px}
+  .meta{font-size:13px;color:var(--muted);margin:0 0 30px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+  h2{font-size:25px;line-height:1.25;letter-spacing:-.01em;margin:36px 0 0}
+  h3{font-size:19px;line-height:1.3;margin:28px 0 0}
+  h4{font-size:16px;margin:0 0 8px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+  p{margin:14px 0}
+  ul{margin:14px 0;padding-left:22px} li{margin:7px 0}
+  a{color:var(--focus)}
+  .dropcap::first-letter{float:left;font-size:58px;line-height:.86;
+    padding:4px 8px 0 0;font-weight:700}
+  .divider{text-align:center;color:var(--muted);letter-spacing:.7em;margin:40px 0}
+  aside.blurb{background:var(--surface);border:1px solid var(--border);
+    border-left:4px solid var(--focus);border-radius:8px;padding:16px 18px;margin:26px 0;
+    font-size:15.5px;line-height:1.55;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+  aside.blurb p{margin:10px 0} aside.blurb p:first-child{margin-top:0}
+  aside.blurb p:last-child{margin-bottom:0}
+  aside.blurb.full{border-left-color:var(--warn)}
+  @media (min-width: 900px){
+    aside.blurb.full{width:calc(100% + 120px);margin-left:-60px}
+  }
+  .frame{margin:24px 0}
+  .frame iframe{width:100%;border:1px solid var(--border);border-radius:8px}
+  @media (min-width: 900px){
+    .frame{width:calc(100% + 160px);margin-left:-80px}
+  }
+</style>
+</head>
+<body>
+<div class="embargo">Embargoed draft, not for publication
+<span>Shared for review before release. Figures and wording may still change.
+Please do not publish, quote or link this page.</span></div>
+<main>
+  <h1>Every JobsOhio grant, in one searchable tool</h1>
+  <p class="sub">Which grants went to small Ohio businesses, which went to large companies based elsewhere, and which companies failed after taking the money. Free for Ohioans and reporters to search.</p>
+  <p class="meta">Data 4 The People · Data 4 Thought · planned for 2026-11-17</p>
+  <aside class="blurb full">
+<h4>If you are a journalist, read this first</h4>
+<p><strong>This is a tool built to aid your research. It is not a tool to pull data from and publish without checking it yourself.</strong></p>
+<p>We have validated it as far as we can. Every method, every judgement call and every candidate we threw out is public, and most findings link to the filing they rest on. But there are twelve years and thousands of records in here, and the detail runs deep.</p>
+<p><strong>Before you publish anything from a row in this tool, fact check that grant yourself.</strong> Open the document it links to. Call the company. Ask JobsOhio. Use this to find the story and to know where to look, not as the only source for a number you put in print.</p>
+<p>If you find something wrong, email <strong><a href="mailto:connect@data4thepeople.com" target="_blank" rel="noopener">connect@data4thepeople.com</a></strong> and we will fix it.</p>
+</aside>
+<div style="height:20px"></div>
+<h2>Purpose</h2>
+<div style="height:5px"></div>
+<p class="dropcap">This visualization on JobsOhio grants has been months in the making. It started as a follow-up to our work <a href="https://www.data4thepeople.com/p/jobsohio-post" target="_blank" rel="noopener">benchmarking JobsOhio performance against other states</a>. We started to think more about the underlying strategies for state-level economic development. Specifically, if Ohio has a fixed amount of cash to invest in economic development and job creation, what strategy will provide the greatest return on investment for Ohioans?</p>
+<p>To be clear, this visualization doesn&#x27;t answer that complex guiding question. Rather, its goal initially was to just collect the data on all the grants given out by JobsOhio and classify them into a 2x2 matrix. Was the grant provided to a small or a large business? Was the grant provided to an Ohio-based company, or a company headquartered outside of Ohio? With this data we could at least reverse engineer JobsOhio&#x27;s strategy. Has it chosen to invest in small local employers within communities, or to attract large corporations to relocate to Ohio?</p>
+<p>This was not an easy project, because there is no clean database we could join that had business size or headquarters location. And so, we studied each grant line by line to come up with our best judgement on where the recipient company belonged in our 2x2 matrix.</p>
+<p>That said, we still believe this is the best free public tool to allow for research on grant performance in JobsOhio available in the public domain. Our goal is not to provide extensive takeaways on the stories living in this tool, but rather to provide this to local journalists and all Ohioans to better be able to ask questions of JobsOhio to gain confidence that our liquor sales dollars (which before JobsOhio was created used to flow through the state&#x27;s own audited books) are being invested to help improve the lives of Ohioans.</p>
+<h2>The tool</h2>
+<div style="height:5px"></div>
+<p>Here is the short version. It carries the same figures as the full tool, in a smaller frame.</p>
+<div class="frame"><iframe src="https://data4thepeople.github.io/JobsOhioSmallBiz/dist/embed.html" height="780" width="100%" style="border:0" title="Where JobsOhio's grant money went"></iframe></div>
+<div style="height:40px"></div>
+<aside class="blurb">
+<h4>Use the full version, and tell us what you find</h4>
+<p>Every figure in the frame above is in the full tool, but the full tool also lets you filter to any outcome, read the source behind each finding, and see every one of the 76 candidates we checked and threw out, with the reason. <strong>If you are going to work from this, use the full version.</strong> Several rows carry caveats that decide whether a number means what it looks like, and those caveats sit on the row rather than in the summary.</p>
+<p><strong><a href="https://data4thepeople.github.io/JobsOhioSmallBiz/" target="_blank" rel="noopener">Open the full tool and the method notes</a></strong></p>
+<p>Found a broken link, a company in the wrong place, a number that looks wrong, or something we missed? Email <strong><a href="mailto:connect@data4thepeople.com" target="_blank" rel="noopener">connect@data4thepeople.com</a></strong> and we will fix it. We would rather hear it from you than leave it wrong. Corrections are made in public, with a note saying what changed and when.</p>
+</aside>
+<h2>The part we did not plan on</h2>
+<div style="height:5px"></div>
+<p>What we didn&#x27;t realize was that as we were going through each public grant line by line, we could start to collect additional information, that is arguably even more valuable for those looking to understand how JobsOhio has performed. We were able to find grants given to companies that, after receiving the grant, announced a mass layoff at the funded site, entered bankruptcy or receivership, closed the funded site, or ended the service the grant paid for. We also track separately which companies JobsOhio sued to get its money back. We call each of these a &quot;failed&quot; grant as it did not perform as expected. Note that we cannot determine if any of the grants were successful as JobsOhio doesn&#x27;t regularly announce when companies have met their hiring targets. But the data to determine if there was a failure is in the public domain through WARN notices, bankruptcy filings, and court dockets. Wherever we can find one of these documents, it is linked so you can click through as part of your research process.</p>
+<h2>How to use it</h2>
+<div style="height:5px"></div>
+<p>Two controls sit at the top and change every number on the page.</p>
+<p><strong>Count</strong> switches between operating businesses only and all recipients. JobsOhio also pays universities, hospitals, local governments, nonprofits and site developers. Those are real grants, but they are not companies, and leaving them in the denominator makes the business picture look different than it is.</p>
+<p><strong>&quot;Small&quot; means under</strong> sets the employee line at 100, 500 or 5,000 workers at the parent company. There is no single legal definition of a small business. The Small Business Administration sets a separate threshold for each of 978 industries. About 500 of those industries are measured by annual revenue rather than headcount at all, and among the ones that do count employees the line runs from 100 to 1,500. We default to 500 because it is the familiar shorthand and because it is the conservative choice: for manufacturing, which is most of what JobsOhio funds, the median SBA threshold is 1,000 employees, so our default counts fewer companies as small than the SBA would.</p>
+<p>Below the controls, the table is the part most people will want. You can search a company, a city or a parent, switch between one row per company and one row per payment, and sort any column. Clicking an outcome anywhere on the page filters the table to those companies and explains in a sentence what you are now looking at.</p>
+<h2>What the words mean</h2>
+<div style="height:5px"></div>
+<h3>Parent company</h3>
+<p>JobsOhio reports a payee name. The payee is often a subsidiary, a plant-level entity or a holding company. We traced each payee to the company that owned it at the time of the grant, and we size that owner by its worldwide employees. A 60-person plant owned by a 90,000-person multinational counts as large here, because the question is who got the money, not how many people work at one address.</p>
+<h3>Evidence grade (A, B, C, D)</h3>
+<p>Every ownership and size call carries a letter saying how firmly it is established.</p>
+<ul><li><strong>A</strong> is a filing made under penalty of perjury: an SEC 10-K or Exhibit 21, or an IRS return.</li><li><strong>B</strong> is an official or semi-official record: a JobsOhio or regional partner release naming the company, or a Department of Labor Form 5500 participant count.</li><li><strong>C</strong> is the company&#x27;s own website, a trade directory or a news report. Usually right, but self-reported and not audited.</li><li><strong>D</strong> is the weakest, and it does not mean we gave up. We still named an owner, almost always from web research: a state business registry, a single local story, a JobsOhio program page, or the company&#x27;s own site. What we could not do is tie it to a filing or an official record, and for some of these the headcount or the home state is an inference rather than something a source states outright. Most are small private companies and single-purpose development LLCs that file nothing public. Read a D as our best reading of what is available, not as a documented fact.</li></ul>
+<p>The worst-case line under the 2x2 matrix shows what happens if every unresolved or low-confidence company were counted the other way, so you can see how much the headline depends on our judgement calls. Both C and D are swept into that worst case.</p>
+<h3>Failed</h3>
+<p>A company we verified did one of four things after taking the money: filed a mass layoff notice for the funded site, entered bankruptcy or receivership, closed the funded site, or ended the subsidized service. Each one is tied to a document where a document exists. &quot;Failed&quot; here is about the grant, not a judgement on the company.</p>
+<p>Being bought is not failing. A company that is acquired and keeps operating has not failed; a company that is acquired and shut down has. Four companies that were acquired or divested with the Ohio operation still running came out of the count on that rule, and you can see all four, with the reason, in the rejected candidates view.</p>
+<p>We cannot tell you which grants succeeded. JobsOhio does not routinely publish whether a company hit its hiring targets, so there is no success column to put beside this one. Read the failure count as a floor on failure, not as the opposite of a success rate.</p>
+<h3>Repayment clause, and what &quot;the standard agreement&quot; means</h3>
+<p>This is the column most likely to be misread, so it is worth slowing down on.</p>
+<p>&quot;Repayment clause&quot; answers a narrow question: does a clause exist that would let JobsOhio demand the money back, and how firmly do we know it exists? It does not say JobsOhio used it, and it does not say any money came back.</p>
+<p>Ten of JobsOhio&#x27;s twelve programs publish no repayment language at all. So we went to the courthouse instead. We pulled 56 signed JobsOhio grant agreements out of Franklin County court files, spanning 2013 to 2023 and covering the Economic Development, Workforce, Revitalization, Research and Development, and Inclusion programs. Every agreement whose remedy clause we could read carries the same Section 9(b)(ii), &quot;Demand Repayment of Grant Funds&quot;: &quot;Grantor may demand repayment of all or a portion of Grant Funds disbursed.&quot;</p>
+<p>That gives three different strengths of answer, and the label tells you which one you have.</p>
+<p><strong>&quot;In this agreement&quot;</strong> is the strong one. This company&#x27;s own signed contract is in a court file and we read the clause in it. That is 38 companies and about $8 million.</p>
+<p><strong>&quot;In the standard agreement&quot;</strong> is an inference, not a reading. It means this company was paid under one of the programs whose agreements we obtained, and every one of those agreements we could read is identical, so we infer that this company&#x27;s contract contains the same clause. <strong>We did not see this company&#x27;s contract.</strong> This is the biggest group in the tool by a wide margin: 987 of the 1,700 companies and about $873 million, which is 65% of all the money. If a single JobsOhio program ever used a different form, or a particular company negotiated a change, this label would be wrong for that company and we would have no way to know. Treat it as a well-supported expectation to check, not as a fact to publish.</p>
+<p><strong>&quot;None found&quot;</strong> means neither. Nothing published and no signed agreement ever obtained. The air service grants to airlines sit here: the guidelines describe how the money goes out and say nothing about what happens if the route ends.</p>
+<p>The remaining labels mark payments where the question works differently: <strong>&quot;loan&quot;</strong> (repayable because it is debt, which is not the same as a performance clawback), <strong>&quot;services, not cash&quot;</strong> (JobsOhio paid vendors rather than the company), <strong>&quot;in the guidelines&quot;</strong> (no agreement seen, but the published program terms contain a repayment trigger), and <strong>&quot;program unknown&quot;</strong> (the payment cannot be tied to a program in JobsOhio&#x27;s own project reports, so there is nothing to read either way).</p>
+<p>One more thing about all of them. <strong>A clause is not a recovery.</strong> The same agreement gives JobsOhio the discretion to decide whether a company complied, whether to demand repayment, how much, and whether to waive it. Across twelve years, $26,040,088 has come back, which is 1.9% of what went out.</p>
+<h3>Sued by JobsOhio</h3>
+<p>JobsOhio&#x27;s own lawsuit against that company in the Franklin County Court of Common Pleas, where JobsOhio is headquartered, to get grant money back. Hover a row for the case number, what was sought and how the case ended. Suits filed in another county, in federal court or in another state would not appear here, so the count is a floor.</p>
+<p><strong>Being sued is not a failure, and the two counts do not add together.</strong> They answer different questions. The failure count asks what happened to the company after the money went out. The sued count asks whether JobsOhio went to court about it. JobsOhio has sued 51 companies on the grant schedule, and 3 of those are also in the failure count. The other 48 are companies it sued that did not fail by any test here, and 37 of the 40 failures were never sued at all.</p>
+<p class="divider">· · ·</p>
+<h2>Where this comes from</h2>
+<div style="height:5px"></div>
+<p>Every dollar starts with one source: Schedule I of JobsOhio&#x27;s IRS Form 990, fiscal years 2014 through 2025, taken from the IRS e-file data. Schedule I lists grants over $5,000 on a cash basis, so these are dollars actually paid in a year, not dollars committed. Grants of $5,000 or less are not on it.</p>
+<p>That is 2,415 payments to 1,789 payees, traced to 1,700 parent companies and organizations, totaling $1,345,318,862 after $26,040,088 of recorded reversals.</p>
+<p>That list is already public. Anyone can read the same returns on <a href="https://projects.propublica.org/nonprofits/organizations/452798687" target="_blank" rel="noopener">ProPublica&#x27;s Nonprofit Explorer</a>. What it gives you is a payee name and a dollar figure, one year at a time. What it does not give you is who owns that payee, how big they are, where they are based, or what happened to them after the check cleared. That is the work in this tool, and it is why we did it by hand.</p>
+<p>Everything after that is layered on top: SEC filings and Form 5500 plan data for ownership and headcount, JobsOhio&#x27;s own monthly project reports for the program and the project county, the Ohio WARN register for mass layoffs, federal bankruptcy dockets, and the Franklin County Clerk of Courts for the lawsuits and the grant agreements. Links go to the record, not to a summary of it. Every link was fetched and confirmed to resolve; where nothing resolved, the name is plain text rather than a dead link.</p>
+<p>The full method, including every judgement call and every number that moved, is in the repository. So is the data, as plain CSV files you can open in a spreadsheet.</p>
+<p><strong><a href="https://github.com/Data4ThePeople/JobsOhioSmallBiz" target="_blank" rel="noopener">Read the full method notes and download the data</a></strong></p>
+<h2>What this tool cannot tell you</h2>
+<div style="height:5px"></div>
+<p>We would rather you know the holes than find them later.</p>
+<p><strong>It cannot tell you what worked.</strong> There is no success column, because JobsOhio does not routinely publish whether a company met its hiring targets.</p>
+<p><strong>It cannot see a project that was never built.</strong> A company that takes the money and quietly never breaks ground files no layoff notice, because there were no jobs to eliminate. That leaves two ways for us to see it, a lawsuit from JobsOhio or a filing the state requires, and if neither happens the money is invisible to this tool. The clearest case is the petrochemical plant proposed for Belmont County.</p>
+<p>What we know: JobsOhio paid $48,599,868 to three companies for that site and that project, $20,000,000 came back after the developer failed to make an investment decision, as <a href="https://www.theintelligencer.net/news/top-headlines/2022/03/ptt-global-pays-jobsohio-20m-for-failing-to-move-on-belmont-county-cracker-plant/" target="_blank" rel="noopener">The Intelligencer reported in March 2022</a>, and the plant was never built. That leaves $28,599,868 out. None of the three companies appears in the failure count, because none of them did anything the method can detect.</p>
+<p>What we do not know: what the site work bought, whether the rest will ever come back, and whether one of the three payments is a loan draw rather than a grant, which would change the total. We also cannot say how many more abandoned projects are in the data, because finding them means checking every commitment JobsOhio made against what was actually built, and nobody has done that.</p>
+<p><strong>The address on the form is where the check went, not where the project was.</strong> About 28.5% of the dollars were mailed to an address outside Ohio, usually a corporate headquarters. Where JobsOhio&#x27;s project reports name a county, we use that instead.</p>
+<p><strong>The failure count is a floor, not a total.</strong> It counts what we could verify from a document. A failure that produced no filing, no notice and no coverage is invisible to the method.</p>
+<p><strong>Most of the repayment labels rest on an inference rather than a document.</strong> 65% of the money carries &quot;in the standard agreement,&quot; which means we read the form and not that company&#x27;s copy of it. See the section above. It is the single largest caveat in the tool.</p>
+<p><strong>Some ownership calls are judgement.</strong> That is what the A through D grade is for, and the worst-case line under the matrix shows how much the headline would move if we were wrong about all of them.</p>
+<h2>Common questions</h2>
+<div style="height:5px"></div>
+<h3>Where does JobsOhio&#x27;s money come from?</h3>
+<p>JobsOhio is funded by the profits from Ohio&#x27;s liquor franchise, which the state leased to it in 2013.</p>
+<h3>Is JobsOhio subject to public records law?</h3>
+<p>JobsOhio is a private nonprofit corporation, so it is not a public office under Ohio&#x27;s public records act. Its IRS Form 990, which is what this tool is built from, is public because federal law requires a nonprofit to disclose it.</p>
+<h3>Does &quot;failed&quot; mean the company did something wrong?</h3>
+<p>No. It means the grant did not produce the lasting result it was paid for. Plants close for reasons that have nothing to do with the grant, and a 2020 layoff notice may say more about the pandemic than about the company.</p>
+<h3>Why does the small business share change when I move the slider?</h3>
+<p>Because &quot;small&quot; has no single legal meaning. Moving the line from 500 to 5,000 employees moves companies across it. Showing you the slider is more honest than picking one number and hiding the choice.</p>
+<h3>Can I use this?</h3>
+<p>Yes. It is free to use and free to republish with credit. If you are a reporter and want the underlying files, they are in the repository, and we are glad to walk you through a specific company. Write to <a href="mailto:connect@data4thepeople.com" target="_blank" rel="noopener">connect@data4thepeople.com</a>.</p>
+<h3>How do I report a broken link or a mistake?</h3>
+<p>Please tell us. Email <a href="mailto:connect@data4thepeople.com" target="_blank" rel="noopener">connect@data4thepeople.com</a> with the company name or the page you were on, and what looked wrong. The repository also takes issues. Corrections get made in public with a note saying what changed and when.</p>
+</main>
+</body>
+</html>
