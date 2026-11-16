@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: jobsohio-grants
-Step: 2b
+Step: 2c
 Since: 2026-11-16
 
 ## Steps
@@ -15,7 +15,7 @@ Since: 2026-11-16
 |---|---|---|---|
 | 1  | Exploration and analysis | 2026-11-16 | Three independent tie-outs plus a words tie-out. 40 failures, $95,209,323. |
 | 2a | Draft with brackets resolved | 2026-11-16 | `posts/jobsohio-grants/POST.md`. Eric's Purpose section, Claude's method, terminology, limits and FAQ. |
-| 2b | Eric's edit, Claude's look-over | | |
+| 2b | Eric's edit, Claude's look-over | 2026-11-16 | Subtitle, journalist warning, Purpose trimmed to 4 paragraphs, Belmont stated once. Every figure tied to `dist/data.json`. |
 | 2c | Slice markup | | |
 | 2d | Hero 1680x1080 + alt text | | |
 | 2e | SEO | | |
@@ -232,3 +232,30 @@ None.
   Open for 2b: Eric's edit. Still outstanding from earlier and not blocking,
   the Sauder Woodworking call, the request for comment, FY2025 XML and
   FY2012-13 PDFs, and the FY2025 distress scan (AmplifyBio) noted above.
+
+- 2026-11-16 **Step 2b confirmed.** What Eric changed on his read:
+  (1) **The subtitle was selling the wrong thing.** It counted payments and
+  dollars, which is the one part that is not new: the same Schedule I rows
+  are on ProPublica's Nonprofit Explorer. It now names the two things that
+  are not there, size and home state, and the verified outcomes. The post
+  says the same in "Where this comes from", with the link, so a reader can
+  check the raw returns and see what was added.
+  (2) **A full-width journalist warning above Purpose.** A tool to aid
+  research, not one to publish from without checking the individual grant.
+  (3) **Purpose before the viz, and shorter.** 6 paragraphs and 560 words
+  down to 4 and 300. The failure-data story moved to its own section below
+  the frame, and the never-built paragraph with it, since it opened "Note
+  another factor" and pointed at the one above it.
+  (4) **Belmont is stated once**, in the limits section, with what we know
+  and what we do not. It was in two places saying the same thing.
+  (5) Two blurbs under the frame merged into one.
+  Two tool fixes came out of Eric's questions rather than any tie-out.
+  **Sued is not a failure category and the panel did not say so**, which
+  invited adding the tiles: 51 sued, 3 of them also in the 40 failures, 48
+  not. And **the panel showed three of the four failure categories**, so the
+  tiles added to 39 of the 40 the same panel claimed. Both fixed, the
+  overlap computed rather than typed.
+  Final tie-out of the post against `dist/data.json`: every figure matches.
+  Also new: `scripts/47_preview_post.py` renders POST.md to an embargoed
+  page at /preview/ for sharing a draft before publication. Not the
+  publishing path; Prismic is.
