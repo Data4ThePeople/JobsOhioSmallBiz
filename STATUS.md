@@ -5,16 +5,16 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 
 ## Current
 
-Post: none yet
-Step: 1
-Since: 2026-09-18
+Post: jobsohio-grants
+Step: 2b
+Since: 2026-11-16
 
 ## Steps
 
 | Step | What | Confirmed | Notes |
 |---|---|---|---|
-| 1  | Exploration and analysis | | |
-| 2a | Draft with brackets resolved | | |
+| 1  | Exploration and analysis | 2026-11-16 | Three independent tie-outs plus a words tie-out. 40 failures, $95,209,323. |
+| 2a | Draft with brackets resolved | 2026-11-16 | `posts/jobsohio-grants/POST.md`. Eric's Purpose section, Claude's method, terminology, limits and FAQ. |
 | 2b | Eric's edit, Claude's look-over | | |
 | 2c | Slice markup | | |
 | 2d | Hero 1680x1080 + alt text | | |
@@ -204,3 +204,31 @@ None.
   the request for comment,
   and three judgment calls, the largest being whether Ultium Cells counts as
   Ohio, which alone moves the home-state share from 36.2% to 41.4%.
+
+- 2026-11-16 **Step 1 and Step 2a confirmed.** Three things moved on the last
+  day before confirming, all of them from Eric reading the output.
+  (1) **Being bought is not failing.** The `Sold or absorbed` category held
+  four companies that were acquired or divested and kept operating. Eric set
+  the rule: acquired and still running is not a failure, acquired and shut
+  down is. All four came out and the category with them
+  (`scripts/46_apply_acquired_rule.py`). **The count goes from 44 companies
+  and $97,709,323 to 40 and $95,209,323.** None is deleted; each is now
+  `Not a failure` with the reason on the row, in the rejected view.
+  (2) **Grade D was described wrongly.** "The owner could not be established"
+  was false for all 186 rows carrying it: every one names a parent, a home
+  state and a size band, and 145 cite a URL. D now says what it is, an owner
+  named from web research rather than a filing. The words tie-out had passed
+  this sentence because it checked the sweep logic and never checked the
+  sentence against the data.
+  (3) **The largest reversal has a published reason.** Eric found The
+  Intelligencer, March 30, 2022: PTTGC America repaid $20,000,000 after
+  failing to make an investment decision on the Belmont County cracker. That
+  is 77% of all money the tool reports as returned, and it was an inference
+  from a negative tax row until now. The tile says it and links the story.
+  The Belmont total stays $28,599,868, which was already net of the reversal.
+  Also: the embed drops the "open the full tool" callout, because Prismic
+  frames it where a link cannot open, and that text moved into the post. The
+  worst-case line under the two-by-two now shows in the embed.
+  Open for 2b: Eric's edit. Still outstanding from earlier and not blocking,
+  the Sauder Woodworking call, the request for comment, FY2025 XML and
+  FY2012-13 PDFs, and the FY2025 distress scan (AmplifyBio) noted above.
