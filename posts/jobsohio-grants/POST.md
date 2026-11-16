@@ -18,10 +18,23 @@ dividers: false
 
 # Every JobsOhio grant, in one searchable tool
 
+::: blurb-full If you are a journalist, read this first
+**This is a tool built to aid your research. It is not a tool to pull data from and publish without checking it yourself.**
+
+We have validated it as far as we can. Every method, every judgement call and every candidate we threw out is public, and most findings link to the filing they rest on. But there are twelve years and thousands of records in here, and the detail runs deep.
+
+**Before you publish anything from a row in this tool, fact check that grant yourself.** Open the document it links to. Call the company. Ask JobsOhio. Use this to find the story and to know where to look, not as the only source for a number you put in print.
+
+If you find something wrong, email **[connect@data4thepeople.com](mailto:connect@data4thepeople.com)** and we will fix it.
+:::
+
+::: spacer 20px
+
 ## Purpose
 
 ::: spacer 5px
 
+::: dropcap
 This visualization on JobsOhio grants has been months in the making. It started as a follow-up to our work [benchmarking JobsOhio performance against other states](https://www.data4thepeople.com/p/jobsohio-post). We started to think more about the underlying strategies for state-level economic development. Specifically, if Ohio has a fixed amount of cash to invest in economic development and job creation, what strategy will provide the greatest return on investment for Ohioans?
 
 To be clear, this visualization doesn't answer that complex guiding question. Rather, its goal initially was to just collect the data on all the grants given out by JobsOhio and classify them into a 2x2 matrix. Was the grant provided to a small or a large business? Was the grant provided to an Ohio-based company, or a company headquartered outside of Ohio? With this data we could at least reverse engineer JobsOhio's strategy. Has it chosen to invest in small local employers within communities, or to attract large corporations to relocate to Ohio?
