@@ -40,7 +40,7 @@
   .jo svg{display:block;width:100%;height:auto}
   .jo .tract{stroke:none}
   .jo .cty{fill:none;stroke:var(--border);stroke-width:.5;pointer-events:none}
-  .jo .bub{stroke:#fff;stroke-width:1.1;cursor:pointer}
+  .jo .bub{stroke:#fff;stroke-width:1.4;cursor:pointer;paint-order:stroke}
   @media (prefers-color-scheme: dark){ .jo:not(.light) .bub{stroke:#13151600} }
   .jo .bub:hover,.jo .bub:focus{stroke:var(--ink);stroke-width:2;outline:none}
   .jo .lg{font-size:12px;color:var(--ink2)}
@@ -168,7 +168,12 @@ function band(v){
   for (var i=0;i<cuts.length;i++) if (v < cuts[i]) return i;
   return 4;
 }
-var RAMP = ["var(--i1)","var(--i2)","var(--i3)","var(--i4)","var(--i5)"];
+/* Dark is POOR. The convention is that darker means more of the measured
+   thing, which would put the dark end on high income, but the question this
+   map asks is where the need is, and the eye should land there. The legend
+   runs dark to light left to right with the dollar labels unchanged, so the
+   inversion is stated rather than left to be inferred. */
+var RAMP = ["var(--i5)","var(--i4)","var(--i3)","var(--i2)","var(--i1)"];
 
 var svg = document.getElementById("map"), NS = "http://www.w3.org/2000/svg";
 function el(n, a, p){ var e = document.createElementNS(NS, n);
@@ -228,8 +233,9 @@ document.getElementById("legend").innerHTML =
   + "<div class='ramp'>" + RAMP.map(function(c){ return "<i style='background:" + c + "'></i>"; }).join("") + "</div>"
   + "<div class='rampx'><span>" + money(incs[0]) + "</span><span>"
   + money(incs[incs.length-1]) + "</span></div>"
-  + "<p class='note' style='margin-top:4px'>By census tract, five equal groups of tracts. "
-  + "Grey is a tract the Census suppressed.</p>"
+  + "<p class='note' style='margin-top:4px'><strong>The stronger the colour, the poorer "
+  + "the tract.</strong> Five equal groups of census tracts. Grey is a tract the Census "
+  + "suppressed.</p>"
   + "<h3 style='margin-top:14px'>JobsOhio investment</h3>"
   + "<div class='key'><b style='background:var(--inv)'></b>"
   + "<span>Money placed in the county. Circle area is the amount.</span></div>"
