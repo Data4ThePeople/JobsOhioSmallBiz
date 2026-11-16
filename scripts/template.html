@@ -427,7 +427,11 @@ var CONF_HELP = {
   A: "Grade A: a filing made under penalty of perjury. An SEC 10-K or Exhibit 21, or an IRS return. The strongest evidence used here.",
   B: "Grade B: an official or semi-official record. A JobsOhio or regional partner release naming the company, or a Department of Labor Form 5500 participant count.",
   C: "Grade C: the company's own website, a trade directory or a news report. Usually right, but self-reported and not audited.",
-  D: "Grade D: the owner could not be established. These are swept into the worst case against the finding."
+  /* This used to read "the owner could not be established", which was wrong
+     about every one of the 186 rows that carry it: each names an owner, a
+     home state and a size band, and 145 of them cite a URL. What is thin is
+     the evidence, not the answer. (Eric Pachman, November 16, 2026.) */
+  D: "Grade D: an owner is named, but from web research rather than a filing: a state business registry, one local story, a JobsOhio program page, or the company's own site. For some of these the headcount or the home state is an inference rather than something a source states outright. Most are small private companies and single-purpose development LLCs that file nothing public. Read it as our best reading of what is available, not as a documented fact. These are swept into the worst case against the finding."
 };
 var LINK_LABEL = {"10-K": "the company's latest annual report on Form 10-K (SEC). Some are older filings; the date is shown where the SEC gives one",
                   "reference page": "a reference page about the company (Wikipedia, ProPublica or a business directory), not its own site",
