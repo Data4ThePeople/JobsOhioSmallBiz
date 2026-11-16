@@ -119,6 +119,8 @@ One more thing about all of them. **A clause is not a recovery.** The same agree
 
 JobsOhio's own lawsuit against that company in the Franklin County Court of Common Pleas, where JobsOhio is headquartered, to get grant money back. Hover a row for the case number, what was sought and how the case ended. Suits filed in another county, in federal court or in another state would not appear here, so the count is a floor.
 
+**Being sued is not a failure, and the two counts do not add together.** They answer different questions. The failure count asks what happened to the company after the money went out. The sued count asks whether JobsOhio went to court about it. JobsOhio has sued 51 companies on the grant schedule, and 3 of those are also in the failure count. The other 48 are companies it sued that did not fail by any test here, and 37 of the 40 failures were never sued at all.
+
 ::: divider
 
 ## Where this comes from

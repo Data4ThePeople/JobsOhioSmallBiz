@@ -81,7 +81,10 @@
   .jo .back .b .s a::after{content:" \2197";font-size:10px;opacity:.65;text-decoration:none;display:inline-block}
   /* the outcome tiles: each is a filter, so it has to look pressable */
   .jo .outs{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:10px 0 0}
-  @container (min-width: 700px){ .jo .outs{grid-template-columns:repeat(5,1fr)} }
+  /* six tiles, so three to a row rather than five and an orphan. The four
+     failure categories come first and fill the first row plus one, which
+     keeps them contiguous in reading order; sued and returned follow. */
+  @container (min-width: 700px){ .jo .outs{grid-template-columns:repeat(3,1fr)} }
   .jo .outs button{appearance:none;text-align:left;cursor:pointer;background:var(--page);
                    border:1px solid var(--border);border-radius:10px;padding:10px 12px;
                    border-left-width:5px;font:inherit;color:inherit}
@@ -876,11 +879,16 @@ function pct1(x){ return (100*x).toFixed(1) + "%"; }
    companies and $86.5m into 26 and $96.5m. The tiles say which unit they count
    and the table below is filtered to the parent groups holding those payees,
    which is why its row count can differ from the tile. */
+/* All four failure categories are here. "Subsidized service ended" is one
+   company and $200,000, and leaving it out to keep the row tidy meant the
+   failure tiles added to 39 of the 40 companies the panel claims. A tile a
+   reader can add up has to add up. */
 var OUTCOMES = [
-  {key:"sued",      label:"sued by JobsOhio to get money back", color:"var(--unk)"},
   {key:"Bankruptcy or receivership",     label:"went bankrupt or into receivership", color:"var(--large)"},
   {key:"Funded site closed",             label:"closed the funded Ohio site", color:"var(--large)"},
   {key:"Mass layoff at the funded site", label:"cut jobs at the funded site", color:"var(--large)"},
+  {key:"Subsidized service ended",       label:"ended the service the grant paid for", color:"var(--large)"},
+  {key:"sued",      label:"sued by JobsOhio to get money back", color:"var(--unk)"},
   {key:"returned",  label:"recorded as returned to JobsOhio", color:"var(--small)"}
 ];
 function renderWhat(){
@@ -889,7 +897,17 @@ function renderWhat(){
   host.replaceChildren();
   var S = D.summary;
   txt("h2","","What happened after the money went out",host);
-  txt("p","note","Counted on the company named on the Form 990, not its parent group, because that is the unit each finding was verified against. Click any of these to filter the table below.",host);
+  /* The panel used to put the sued tile beside the failure tiles with nothing
+     saying they are different kinds of thing, which invites a reader to add
+     them. The first four are the failure count. Being sued is not one of its
+     categories; it is a separate record that happens to overlap it. */
+  var fcats = OUTCOMES.filter(function(o){ return o.key !== "sued" && o.key !== "returned"; }).length;
+  txt("p","note","Counted on the company named on the Form 990, not its parent group, because that is the unit each finding was verified against. "
+    + "The first " + fcats + " tiles are the " + S.failures.companies + " failures and they add up to the total. "
+    + "The last two are not failure categories and do not add to it: being sued is JobsOhio going to court, which it did to "
+    + S.failures.sued_overlap + " of the " + S.failures.companies + " that failed and to "
+    + (S.sued.recipients_matched - S.failures.sued_overlap) + " companies that did not, and money returned is a negative row on a tax return. "
+    + "Click any of these to filter the table below.",host);
   var g = el("div",{class:"outs"},host);
   OUTCOMES.forEach(function(o){
     var v, k, n;

@@ -723,6 +723,13 @@ def main():
                      "bands": band_mix(fail_recs), "evidence": weak_grades(fail_recs),
                      "failure_evidence": failure_grades(fail_rows),
                      "failure_docs": doc_kinds(fail_rows),
+                     # How many of the failures JobsOhio also sued. The two
+                     # sets are different questions and the page shows them
+                     # side by side, so it has to be able to say how far they
+                     # overlap rather than let a reader add the tiles up.
+                     "sued_overlap": len({r["recipient_id"] for r in fail_rows}
+                                         & {s["recipient_id"] for s in suit_rows
+                                            if s.get("recipient_id")}),
                      "by_category": dict(cat_agg)},
         "returned": {"dollars": abs(out["meta"]["reversal_dollars"]),
                      "share_of_paid": abs(out["meta"]["reversal_dollars"])
