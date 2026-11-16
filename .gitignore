@@ -18,3 +18,7 @@ data/raw/t100/
 # bar one string. The only thing read out of them is the CSV address, which
 # data/warn/notices.csv records per row, and the CSVs themselves are committed.
 data/warn/pages/
+
+# Census boundary archives; 44_place_county.py and 45_build_map.py read them,
+# and they are large and re-downloadable
+data/geo/*.zip
