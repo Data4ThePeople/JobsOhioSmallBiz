@@ -264,9 +264,17 @@ function renderTiles(){
   var items = pool(), sp = shares(items, sizeGroup, ones), sc = shares(items, sizeGroup, cash);
   var g = function(o,k){ return (o[k] || {share:0}).share; };
   var who = state.denom === "business" ? "businesses" : "recipients";
+  /* Name whose businesses these are. "Share of businesses that are small"
+     reads as a fact about Ohio businesses in general rather than about the
+     ones JobsOhio paid, which is the whole point of the figure. It counts
+     COMPANIES, one per parent, which is why it cannot be called a share of
+     grants: that would be the tile beside it, which is dollars. */
+  var label = state.denom === "business"
+    ? "Share of the businesses JobsOhio paid that are small"
+    : "Share of everything JobsOhio paid that went to a small recipient";
   var tiles = [
-    ["Share of " + who + " that are small", pct(g(sp,"small")), pct(g(sp,"large")) + " are large" + (g(sp,"unknown") ? ", " + pct(g(sp,"unknown")) + " unresolved" : "") + ". " + items.length.toLocaleString() + " parent companies."],
-    ["Share of dollars that went to small " + who, pct(g(sc,"small")), pct(g(sc,"large")) + " of dollars went to large companies" + (g(sc,"unknown") ? ", " + pct(g(sc,"unknown")) + " unresolved" : "") + ". " + money(sc._total) + " paid."]
+    [label, pct(g(sp,"small")), pct(g(sp,"large")) + " are large" + (g(sp,"unknown") ? ", " + pct(g(sp,"unknown")) + " unresolved" : "") + ". " + items.length.toLocaleString() + " parent companies paid."],
+    ["Share of the dollars that went to small " + who, pct(g(sc,"small")), pct(g(sc,"large")) + " of dollars went to large companies" + (g(sc,"unknown") ? ", " + pct(g(sc,"unknown")) + " unresolved" : "") + ". " + money(sc._total) + " paid."]
   ];
   var box = document.getElementById("tiles"); box.replaceChildren();
   tiles.forEach(function(t){ var c = el("div",{class:"card tile"},box); txt("div","lab",t[0],c); txt("div","val",t[1],c); txt("div","hint",t[2],c); });
