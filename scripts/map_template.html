@@ -48,8 +48,12 @@
   .jo .ramp{display:flex;height:12px;border-radius:3px;overflow:hidden;margin:0 0 4px}
   .jo .ramp i{flex:1}
   .jo .rampx{display:flex;justify-content:space-between;font-size:11.5px;color:var(--muted)}
-  .jo .key{display:flex;align-items:center;gap:7px;margin:7px 0 0}
-  .jo .key b{display:inline-block;border-radius:50%;border:1.1px solid #fff}
+  .jo .key{display:flex;align-items:flex-start;gap:8px;margin:8px 0 0}
+  /* flex-shrink:0, or the text beside it squeezes the circle into an
+     oval, which on a legend for circle-area bubbles is the one shape
+     it must not be. */
+  .jo .key b{flex:0 0 auto;width:18px;height:18px;margin-top:1px;
+    border-radius:50%;border:1.1px solid rgba(255,255,255,.85)}
   .jo table{border-collapse:collapse;width:100%;font-size:12.5px;margin-top:4px}
   .jo th,.jo td{text-align:left;padding:3px 6px 3px 0;border-bottom:1px solid var(--line)}
   .jo td.n,.jo th.n{text-align:right;font-variant-numeric:tabular-nums}
@@ -58,11 +62,16 @@
   .jo .ax{stroke:var(--line);stroke-width:1}
   .jo .axt{font-size:11px;fill:var(--muted)}
   .jo .fit{stroke:var(--fail);stroke-width:2;fill:none}
-  #tip{position:fixed;z-index:99;pointer-events:none;max-width:320px;padding:8px 10px;
-    border-radius:8px;background:var(--surface);color:var(--ink);border:1px solid var(--border);
-    box-shadow:0 6px 20px rgba(0,0,0,.18);font-size:12.5px;line-height:1.45;opacity:0;transition:opacity .08s}
-  #tip.on{opacity:1}
-  #tip b{display:block;margin-bottom:2px}
+  /* Opaque, and it says so twice. A tooltip sits on top of a dense choropleth,
+     so the fill has to be solid; the fallbacks mean it stays solid even if the
+     variables ever go out of scope again. */
+  .jo #tip{position:fixed;z-index:99;pointer-events:none;max-width:320px;padding:9px 11px;
+    border-radius:8px;background:var(--surface,#fcfcfb);color:var(--ink,#0b0b0b);
+    border:1px solid var(--line,#e1e0d9);
+    font:12.5px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    box-shadow:0 8px 24px rgba(0,0,0,.22);display:none}
+  .jo #tip.on{display:block}
+  .jo #tip b{display:block;margin-bottom:3px;font-size:13px}
   .jo .foot{margin-top:12px;color:var(--muted);font-size:11.5px;max-width:92ch}
 </style>
 </head>
@@ -94,9 +103,12 @@
     </div>
   </div>
   <p class="foot" id="foot"></p>
+  <!-- inside .jo on purpose: the colour variables and the font are declared on
+       .jo, and while this sat outside it the tooltip inherited neither, so it
+       drew with no background at all and in the browser's default serif. -->
+  <div id="tip" role="status"></div>
 </div>
 </div>
-<div id="tip" role="status"></div>
 <script>
 (function(){
 "use strict";
@@ -200,8 +212,7 @@ C.slice().sort(function(a,b){ return b.properties.cash - a.properties.cash; })
   var html = "<b>" + p.NAME + " County</b>"
     + dollars(p.cash) + " placed, " + p.n + " recipient" + (p.n === 1 ? "" : "s")
     + (failed ? "<br><span style='color:var(--fail)'>" + p.fn + " later confirmed to have failed, "
-        + dollars(p.fcash) + "</span>" : "")
-    + (p.top ? "<br><span style='color:var(--muted)'>" + p.top + "</span>" : "");
+        + dollars(p.fcash) + "</span>" : "");
   c.addEventListener("mousemove", function(e){ show(e, html); });
   c.addEventListener("mouseleave", hide);
   c.addEventListener("focus", function(){
@@ -220,9 +231,9 @@ document.getElementById("legend").innerHTML =
   + "<p class='note' style='margin-top:4px'>By census tract, five equal groups of tracts. "
   + "Grey is a tract the Census suppressed.</p>"
   + "<h3 style='margin-top:14px'>JobsOhio investment</h3>"
-  + "<div class='key'><b style='width:22px;height:22px;background:var(--inv)'></b>"
+  + "<div class='key'><b style='background:var(--inv)'></b>"
   + "<span>Money placed in the county. Circle area is the amount.</span></div>"
-  + "<div class='key'><b style='width:22px;height:22px;background:var(--fail)'></b>"
+  + "<div class='key'><b style='background:var(--fail)'></b>"
   + "<span>Includes at least one company later confirmed to have failed ("
   + withFail + " counties).</span></div>"
   + "<p class='note' style='margin-top:8px'><strong>The two layers are not at the same "

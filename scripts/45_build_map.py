@@ -90,7 +90,10 @@ def main():
         f2["properties"]["n"] = int(d["recipients"]) if d else 0
         f2["properties"]["fcash"] = int(d["failed_cash"]) if d else 0
         f2["properties"]["fn"] = int(d["failed_recipients"]) if d else 0
-        f2["properties"]["top"] = (d["top"] if d else "")
+        # company names are deliberately not shipped. The map is about where
+        # the money went, naming companies on a county bubble invites reading
+        # the county's failure total as belonging to whichever name is first,
+        # and the full tool is where a reader should meet a company.
         if n in cpop:
             f2["properties"]["c"] = [round(cpop[n][0], 4), round(cpop[n][1], 4)]
         else:
