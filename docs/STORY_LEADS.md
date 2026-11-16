@@ -1521,6 +1521,31 @@ reports as money returned**. So the largest recovery JobsOhio has made in
 twelve years is a project that did not happen, and the page's "1.9% has come
 back" figure rests mostly on it.
 
+**And there is a published account of why, which this project found late.**
+The Intelligencer, March 30, 2022: "The U.S. subsidiary of Thailand-based
+petrochemical giant PTT Global Chemical has repaid Ohio's private economic
+development office $20 million after it failed to make an investment decision
+in 2020 on a proposed petrochemical plant in Belmont County." The same story
+gives the trigger, a partner walking away: "A U.S. subsidiary of South Korea's
+Daelim Industrial Co. withdrew as PTTGCA's partner in July 2020." It also puts
+JobsOhio's site-development money at "an additional $50 million in grants and
+loans," which is more than the $17.1 million Schedule I shows for FirstEnergy
+Generation and Ohio-West Virginia Excavating together, so some of it is
+loans or commitments that never reached a Schedule I cash line. Source:
+<https://www.theintelligencer.net/news/top-headlines/2022/03/ptt-global-pays-jobsohio-20m-for-failing-to-move-on-belmont-county-cracker-plant/>
+
+The dates line up. JobsOhio's FY2021 ran July 1, 2020 to June 30, 2021, and
+the Daelim withdrawal was July 2020, so a repayment booked in FY2021 fits. The
+story ran in March 2022, around when the FY2021 return became public. The
+article does not say how the reporter learned of the payment, so do not write
+that it came off the 990.
+
+**What this does not mean.** JobsOhio did not get the Belmont money back. It
+got back $20 million of the $31,451,981 it paid PTTGC America. The
+$28,599,868 total above is already net of that reversal, and none of
+FirstEnergy Generation's $12,408,019 or Ohio-West Virginia Excavating's
+$4,739,868 has come back.
+
 **Three things to establish, in order.**
 
 1. **What each payment was for, and whether it was a grant at all.**
@@ -1530,9 +1555,12 @@ back" figure rests mostly on it.
 2. **Whether anything was built.** Ohio-West Virginia Excavating's $4.7 million
    is site preparation and demolition, which presumably happened. Site work for
    a plant that never came is its own story and a very Ohio one.
-3. **Who decided to reverse the $20 million, when, and on what terms.** That is
-   the single best-documented clawback in the data and nothing published says
-   how it worked.
+3. **Who decided to reverse the $20 million, and on what terms.** The
+   Intelligencer establishes that it happened and what triggered it. What is
+   still unpublished is who made the call, under which clause, whether
+   interest or a discount was involved, and why the rest of the site money was
+   not pursued. It is the single best-documented clawback in the data and it
+   is still mostly undocumented.
 
 **Then ask the general question.** If a $28.6 million abandoned project is
 invisible to every failure test, how many more are there? Answering that means
@@ -1542,15 +1570,16 @@ this repo is the starting point, with the parser caveats in `DATASETS.md`.
 
 **Do not write that the money was wasted.** Site preparation is real work and
 some of these payments may have bought something. Write what is documented:
-$28.6 million went towards a plant that is not there, $20 million came back,
-and the public record does not say what happened to the rest.
+$28.6 million is still out against a plant that is not there, $20 million of
+what was paid came back and a newspaper says why, and the public record does
+not say what happened to the rest.
 
 ---
 
 ## 19. $1.5 million to revive a building for a tenant that collapsed in a $70 million fraud
 
 **This is in the tool as Unresolved rather than as a failure, and the reason
-is the lead.** None of the five failure categories fits it, and a label that
+is the lead.** None of the four failure categories fits it, and a label that
 does not fit is how a tool misleads a reporter.
 
 **Verified, from documents read in full.**

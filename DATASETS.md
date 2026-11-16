@@ -494,6 +494,34 @@ body rather than the title are kept as weak signals and checked by hand.
   page reports as returned, so the single largest recovery in twelve years is
   a project that did not happen.
 
+  **There is a published account of that reversal, and it is now the source.**
+  The Intelligencer, March 30, 2022: "The U.S. subsidiary of Thailand-based
+  petrochemical giant PTT Global Chemical has repaid Ohio's private economic
+  development office $20 million after it failed to make an investment
+  decision in 2020 on a proposed petrochemical plant in Belmont County." The
+  trigger it gives is a partner walking away: "A U.S. subsidiary of South
+  Korea's Daelim Industrial Co. withdrew as PTTGCA's partner in July 2020."
+  Until this was found, the reason for the largest reversal in the data was
+  an inference from a negative tax-return row. It is now a named, dated,
+  published statement, and the reversal is the one clawback in twelve years
+  with both halves on the record.
+  Source: <https://www.theintelligencer.net/news/top-headlines/2022/03/ptt-global-pays-jobsohio-20m-for-failing-to-move-on-belmont-county-cracker-plant/>
+
+  The dates agree. FY2021 ran July 1, 2020 to June 30, 2021 and the Daelim
+  withdrawal was July 2020, so a repayment booked in FY2021 fits. The story
+  ran in March 2022, around when the FY2021 return became public, but the
+  article does not say how the reporter learned of the payment, so nothing
+  here claims it came off the 990.
+
+  **This does not mean the Belmont money came back.** $20,000,000 of the
+  $31,451,981 paid to PTTGC America came back. The $28,599,868 above is
+  already net of it, and none of FirstEnergy Generation's $12,408,019 or
+  Ohio-West Virginia Excavating's $4,739,868 has been returned. The same
+  article puts JobsOhio's site-development money at "an additional $50
+  million in grants and loans," which is more than the $17.1 million Schedule
+  I shows for those two together, so some of that is loans or commitments
+  that never reached a Schedule I cash line.
+
   **Nothing in the published failure count covers this class.** Finding it
   would mean comparing every commitment in JobsOhio's own monthly reports
   against what was actually built, which is a different project. Until that is

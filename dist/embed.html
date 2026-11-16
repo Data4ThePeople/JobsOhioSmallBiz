@@ -73,6 +73,12 @@
   .jo .back .b .v{font-size:25px;font-weight:650;letter-spacing:-.01em;font-variant-numeric:tabular-nums;line-height:1.15}
   .jo .back .b .k{font-size:12.5px;color:var(--ink2);margin-top:2px}
   .jo .back .b .s{font-size:12px;color:var(--muted);margin-top:3px;line-height:1.45}
+  /* a source link inside a tile, styled like the ones in the table rather
+     than left on the browser default, which is a blue that belongs to no
+     part of this palette */
+  .jo .back .b .s a{color:var(--ink2);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:2px}
+  .jo .back .b .s a:hover{color:var(--focus);text-decoration-style:solid}
+  .jo .back .b .s a::after{content:" \2197";font-size:10px;opacity:.65;text-decoration:none;display:inline-block}
   /* the outcome tiles: each is a filter, so it has to look pressable */
   .jo .outs{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:10px 0 0}
   @container (min-width: 700px){ .jo .outs{grid-template-columns:repeat(5,1fr)} }
@@ -825,9 +831,18 @@ function renderBack(){
   txt("h2","","Does Ohio get the money back?",host);
   txt("p","note","Three numbers that have to be read together. A repayment clause in a contract is not the same as money returned.",host);
   var g = el("div",{class:"back"},host);
-  function cell(v, k, sub, color){
+  function cell(v, k, sub, color, link){
     var b = el("div",{class:"b"},g); b.style.borderLeftColor = color;
-    txt("div","v",v,b); txt("div","k",k,b); txt("div","s",sub,b);
+    txt("div","v",v,b); txt("div","k",k,b);
+    var s = txt("div","s",sub,b);
+    /* one cell carries a source a reader should be able to open, because the
+       reason for the largest reversal is the one thing about it that is not
+       on the tax return */
+    if (link){
+      s.appendChild(document.createTextNode(" "));
+      var a = el("a",{href:link[1], target:"_blank", rel:"noopener"},s);
+      a.textContent = link[0];
+    }
   }
   cell(pct1(clauseCash/allCash) + " of dollars", "went to a recipient whose agreement lets JobsOhio demand repayment",
        "Ten of twelve programs publish no repayment language. The clause is in the signed agreement instead, and 56 of those were obtained from court files.", "var(--small)");
@@ -844,7 +859,11 @@ function renderBack(){
        + "so whatever those are recovering is not in this data. About half of all "
        + L.suits_filed + " ended in dismissal with no terms on the record, so what was recovered is not public.", "var(--unk)");
   cell(pct1(back/out), "of what JobsOhio paid out has come back",
-       money(back) + " of " + money(out) + " across " + (m.fy_max - m.fy_min + 1) + " years, recorded as negative rows on the same tax returns. Whether each one is a performance clawback or an accounting correction is not stated. One reversal, PTT Global Chemical\u2019s $20 million in FY2021, is more than three quarters of it.", "var(--large)");
+       money(back) + " of " + money(out) + " across " + (m.fy_max - m.fy_min + 1) + " years, recorded as negative rows on the same tax returns, which do not say whether each one is a performance clawback or an accounting correction. "
+       + "One reversal, PTTGC America\u2019s $20 million in FY2021, is more than three quarters of it, and that one is on the record: the company repaid it after failing to make an investment decision on a Belmont County petrochemical plant, which was never built.",
+       "var(--large)",
+       ["The Intelligencer, March 30, 2022",
+        "https://www.theintelligencer.net/news/top-headlines/2022/03/ptt-global-pays-jobsohio-20m-for-failing-to-move-on-belmont-county-cracker-plant/"]);
   txt("p","wc","JobsOhio decides whether a company complied, whether to demand repayment, how much, and whether to waive it. Its standard agreement says so: \u201cNotwithstanding the terms of this Agreement, Grantor has the discretion to determine compliance.\u201d Where a case was dismissed, no filing states what, if anything, was paid.",host);
 }
 function pct1(x){ return (100*x).toFixed(1) + "%"; }
