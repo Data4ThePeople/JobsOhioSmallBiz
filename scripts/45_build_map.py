@@ -69,6 +69,11 @@ def main():
             f["properties"]["pop"] = int(d["population"] or 0)
     print(f"{len(feats)} tracts, {kept} with income and health")
 
+    cpops = {}
+    for r in th.values():
+        cpops[r["county"].replace(" County", "")] = \
+            cpops.get(r["county"].replace(" County", ""), 0) + int(r["population"] or 0)
+
     cty = gpd.read_file(GEO / "cb_2023_us_county_20m.zip").to_crs(4326)
     cty = cty[cty.STATEFP == "39"]
     cfeats = shrink(cty, ["NAME"])
@@ -90,6 +95,10 @@ def main():
         f2["properties"]["n"] = int(d["recipients"]) if d else 0
         f2["properties"]["fcash"] = int(d["failed_cash"]) if d else 0
         f2["properties"]["fn"] = int(d["failed_recipients"]) if d else 0
+        # population, so the page can divide. Summed from the county's own
+        # tracts rather than taken from elsewhere, so it matches the income
+        # and health layer exactly.
+        f2["properties"]["pop"] = cpops.get(n, 0)
         # company names are deliberately not shipped. The map is about where
         # the money went, naming companies on a county bubble invites reading
         # the county's failure total as belonging to whichever name is first,
