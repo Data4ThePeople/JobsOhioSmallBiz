@@ -603,6 +603,21 @@ def main():
         c = Counter(r["confidence"] for r in rows)
         return {"n": len(rows), "weak": c["C"] + c["D"], "a_or_b": c["A"] + c["B"]}
 
+    def doc_kinds(rows):
+        """What KIND of document each finding rests on, which is a different
+        question from how firmly it is established. The page conflated them
+        and said 22 findings rest on reporting; 14 of those 22 rest on a
+        government notice or a court filing, and only 6 of all 44 rest on a
+        news report."""
+        hard = {"court filing", "court docket", "state warn notice",
+                "government notice", "sec filing"}
+        k = Counter()
+        for r in rows:
+            kind = (fail_url.get(normalize_name(r["name"]), {}).get("kind") or "").lower()
+            k["document" if kind in hard else "reporting" if kind else "none"] += 1
+        return {"n": len(rows), "document": k["document"],
+                "reporting": k["reporting"] + k["none"]}
+
     def failure_grades(rows):
         """How firmly the FAILURES themselves are evidenced, which is a
         different question from how firmly the companies are sized.
@@ -707,6 +722,7 @@ def main():
                      "largest_share": (max(fail_cash) / sum(fail_cash)) if fail_cash else 0,
                      "bands": band_mix(fail_recs), "evidence": weak_grades(fail_recs),
                      "failure_evidence": failure_grades(fail_rows),
+                     "failure_docs": doc_kinds(fail_rows),
                      "by_category": dict(cat_agg)},
         "returned": {"dollars": abs(out["meta"]["reversal_dollars"]),
                      "share_of_paid": abs(out["meta"]["reversal_dollars"])

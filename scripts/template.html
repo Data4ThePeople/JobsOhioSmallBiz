@@ -343,9 +343,10 @@ function renderHome(){
   if (C.ultium)
     bits.push("Ultium Cells is counted as Michigan, and that is a judgment rather than a "
       + "reading. It is a 50/50 joint venture of General Motors and LG Energy Solution, so it "
-      + "has no single ultimate parent, and its plant is in Warren. It sits here because Honda's "
-      + "plants are all in Ohio and Fuyao's is in Moraine, and both are counted to their "
-      + "operating parents abroad; moving Ultium on plant location would mean moving those too. "
+      + "has no single ultimate parent, and its plant is in Warren. It sits here because the "
+      + "Honda plants in this data are in Ohio and Fuyao's is in Moraine, and both are "
+      + "counted to their operating parents abroad; moving Ultium on plant location would "
+      + "mean moving those too. "
       + "The money itself was split: "
       + (C.ultium.paid_at || []).map(function(w){ return money(w[1]) + " to " + w[0]; }).join(" and ")
       + ", the second of those being General Motors' head office. Count it as Ohio instead and the Ohio "
@@ -575,8 +576,10 @@ function renderFiltBar(){
   }
   if (state.outcome === "rejected"){
     fb.appendChild(document.createTextNode("Every candidate the scan flagged that was checked and "
-      + "thrown out, with the reason. Most are the company turning up in somebody else’s "
-      + "bankruptcy, which is the commonest false positive in work like this. Hover a verdict for "
+      + "thrown out, with the reason. The commonest is a headline using closed or shut for something that was "
+          + "not a business failure; the next is the company turning up in somebody "
+          + "else\u2019s bankruptcy. "
+          + "Hover a verdict for "
       + "what the story was actually about. These are not failures and none is in the count. "));
     return clearBtn();
   }
@@ -794,7 +797,7 @@ var FAIL_SHORT = {
   "site closed": "the funded Ohio operation shut",
   "mass layoff": "a large cut at the funded site, with the company still operating",
   "sold": "the recipient stopped existing as an independent company",
-  "service ended": "the subsidised service, an airline route, stopped running"
+  "service ended": "the subsidized service, an airline route, stopped running"
 };
 var COND_ORDER_KEY = ["in this agreement","in the standard agreement","in the guidelines",
                       "loan, repayable","services, not cash","none found","program unknown"];
@@ -915,6 +918,7 @@ function renderWhat(){
      rather than let an absolute claim rest on a guess. */
   var se = S.sued.evidence || {}, fe = S.failures.evidence || {};
   var fy = S.failures.failure_evidence || {};
+  var fd = S.failures.failure_docs || {};
   p2.textContent = "JobsOhio has filed " + S.sued.suits + " suits for a median of "
     + money(S.sued.median_sought) + ". On the bands recorded here, " + under500(sb)
     + " of the " + S.sued.recipients_matched + " sued companies, counted as the Form 990 names them, employ fewer "
@@ -931,10 +935,16 @@ function renderWhat(){
        headcount came off a South African website) and CoverMyMeds counted as
        firm (McKesson's 10-K gives a headcount, though its Ohio job loss was
        never disclosed). On the grade that measures the finding it is 21. */
-    + "How firmly the failures themselves are evidenced is a separate question, and a "
-    + "harder one: " + fy.firm + " of the " + fy.n + " rest on a court filing or the "
-    + "employer's own notice to the state, and the other " + fy.softer
-    + " on reporting that we could not tie to an Ohio document. "
+    /* Two different questions, and the page answered one with the other. The
+     grade says how firmly a finding is established; the document type says
+     what it rests on. "22 rest on reporting" was wrong twice: 14 of those 22
+     rest on a government notice or a court filing, and only 6 of all 44 rest
+     on a news report. */
+  + "Two separate questions sit behind those findings. " + fd.document + " of the "
+    + fd.n + " rest on a court filing, a government notice or an SEC filing, and "
+    + fd.reporting + " on a news report. Graded on how firmly the finding itself is "
+    + "established, which is a judgment and not a document type, " + fy.firm
+    + " are firm and " + fy.softer + " less so. "
     + "What is not in doubt is the money: "
     /* The median leads, because the mean of the failed grants is one company:
        Ultium Cells alone is 58% of the failed dollars, and a reader handed
@@ -1008,7 +1018,7 @@ function renderSbaNote(){
   var el2 = document.getElementById("sbanote");
   if (!el2) return;
   var txt = {
-    "100": "100 employees is below every SBA size standard, so everything counted as small here is small under the law in any industry. It is the strictest line on offer.",
+    "100": "100 employees is at or below every SBA threshold that counts employees, so a company under it is small under the law in any industry that is measured that way. Half of all industries are measured by annual receipts instead, where a headcount settles nothing. It is the strictest line on offer here.",
     "500": "500 is the familiar shorthand, and it is the conservative choice rather than the official one. The SBA sets a separate threshold for each of 978 industries under 13 CFR 121.201: 500 of them are measured by annual receipts rather than headcount at all, and among the 478 that count employees the line runs from 100 to 1,500. Only 47 industries use exactly 500. For manufacturing, which is most of what JobsOhio funds, the median SBA threshold is 1,000 employees, so this setting counts fewer companies as small than the SBA would.",
     "5000": "5,000 is well above every SBA size standard, the highest of which is 1,500 employees. At this setting \u201csmall\u201d means mid-sized, not small in law."
   }[state.cutoff] || "";
@@ -1031,10 +1041,10 @@ document.getElementById("src").textContent =
   "Source: JobsOhio Form 990, Schedule I, fiscal years " + m.fy_min + " to " + m.fy_max + " (IRS e-file data). Schedule I lists grants over $5,000 on a cash basis, so the dollars are what was paid in each year, not what was committed. " +
   "Each payee was traced to its ultimate parent at the time of the grant using SEC filings, Form 5500 plan data, JobsOhio and regional partner releases, and company sources; the evidence grade shows which. " +
   "Universities, hospitals, governments, nonprofits and site developers are shown separately from operating businesses. " +
-  "“Repayment clause” is whether a clause exists that lets JobsOhio demand the money back, and how firmly we know it. Ten of its twelve programs publish no repayment language at all, but 56 signed JobsOhio grant agreements were obtained from Franklin County court files, spanning 2013 to 2023, and every one carries the same Section 9(b)(ii), “Demand Repayment of Grant Funds”: “Grantor may demand repayment of all or a portion of Grant Funds disbursed.” "
+  "“Repayment clause” is whether a clause exists that lets JobsOhio demand the money back, and how firmly we know it. Ten of its twelve programs publish no repayment language at all, but 56 signed JobsOhio grant agreements were obtained from Franklin County court files, spanning 2013 to 2023. Every agreement whose remedy clause could be read carries the same Section 9(b)(ii), “Demand Repayment of Grant Funds”: “Grantor may demand repayment of all or a portion of Grant Funds disbursed.” The sentence appears word for word in 49 of the 62 complaints, and six of the attached agreements carry no readable 9(b)(ii) text, so it is not established for all 56. "
   + "“In this agreement” means this company’s own signed contract is in a court file. “In the standard agreement” means it was paid under a program whose agreements were obtained and are identical, so the clause is inferred rather than seen. “None found” means neither: nothing published and no agreement ever obtained, which is where the air service grants to airlines sit. Hover any label for the evidence. "
   + "A clause is not a recovery. JobsOhio decides whether to demand repayment, how much, and whether to waive it, and the agreement says so: \u201cGrantor has the discretion to determine compliance.\u201d It has filed " + D.summary.sued.suits + " suits, reaching " + D.lawsuits.parents_sued + " of these " + m.parents.toLocaleString() + " parent companies, seeking " + money(D.summary.sued.sought) + ", and " + money(D.summary.returned.dollars) + " has come back across " + (m.fy_max - m.fy_min + 1) + " years, " + pct1(D.summary.returned.share_of_paid) + " of what went out. Reimbursement is separate again: the company spends first and JobsOhio repays documented costs, so a company that never spends never collects. That limits what is at risk; it is not a way to recover money already paid. "
-  "\u201CSued by JobsOhio\u201D is JobsOhio's own lawsuit against that company in the Franklin County Court of Common Pleas, where it is headquartered, to get grant money back under the repayment clause its published guidelines do not mention. Hover for the case number, what was sought and how it ended. Suits filed in another county, in federal court or in another state would not appear, so this is a floor. " +
+  + "\u201CSued by JobsOhio\u201D is JobsOhio's own lawsuit against that company in the Franklin County Court of Common Pleas, where it is headquartered, to get grant money back under the repayment clause its published guidelines do not mention. Hover for the case number, what was sought and how it ended. Suits filed in another county, in federal court or in another state would not appear, so this is a floor. " +
   "Free to use. Built by Data 4 The People, " + m.built + ".";
 renderAll();
 })();
