@@ -40,9 +40,13 @@
   .jo svg{display:block;width:100%;height:auto}
   .jo .tract{stroke:none}
   .jo .cty{fill:none;stroke:var(--border);stroke-width:.5;pointer-events:none}
-  .jo .bub{stroke:#fff;stroke-width:1.4;cursor:pointer;paint-order:stroke}
-  @media (prefers-color-scheme: dark){ .jo:not(.light) .bub{stroke:#13151600} }
-  .jo .bub:hover,.jo .bub:focus{stroke:var(--ink);stroke-width:2;outline:none}
+  /* The fill is half transparent so the tract colours read through it in the
+     cities, where the bubbles are biggest and the income texture is the most
+     interesting. That means the fill alone can no longer carry which of the
+     two states a bubble is in, so the ring does: it is the bubble's own
+     colour at full strength rather than white. */
+  .jo .bub{stroke-width:1.6;cursor:pointer}
+  .jo .bub:hover,.jo .bub:focus{stroke:var(--ink);stroke-width:2.4;outline:none}
   .jo .lg{font-size:12px;color:var(--ink2)}
   .jo .lg h3{font-size:12.5px;margin:0 0 6px;color:var(--ink);font-weight:600}
   .jo .ramp{display:flex;height:12px;border-radius:3px;overflow:hidden;margin:0 0 4px}
@@ -53,7 +57,7 @@
      oval, which on a legend for circle-area bubbles is the one shape
      it must not be. */
   .jo .key b{flex:0 0 auto;width:18px;height:18px;margin-top:1px;
-    border-radius:50%;border:1.1px solid rgba(255,255,255,.85)}
+    border-radius:50%;opacity:.5}
   .jo table{border-collapse:collapse;width:100%;font-size:12.5px;margin-top:4px}
   .jo th,.jo td{text-align:left;padding:3px 6px 3px 0;border-bottom:1px solid var(--line)}
   .jo td.n,.jo th.n{text-align:right;font-variant-numeric:tabular-nums}
@@ -210,8 +214,9 @@ C.slice().sort(function(a,b){ return b.properties.cash - a.properties.cash; })
   var p = f.properties; if (!p.cash) return;
   var q = px(p.c), failed = p.fn > 0;
   var c = el("circle", {cx: q[0].toFixed(1), cy: q[1].toFixed(1), r: radius(p.cash).toFixed(1),
-    class: "bub", fill: failed ? "var(--fail)" : "var(--inv)", "fill-opacity": .72,
+    class: "bub", fill: failed ? "var(--fail)" : "var(--inv)", "fill-opacity": .5,
     tabindex: "0", role: "img",
+    stroke: failed ? "var(--fail)" : "var(--inv)",
     "aria-label": p.NAME + " County, " + money(p.cash) + " across " + p.n + " recipients"
       + (failed ? ", including " + p.fn + " later confirmed to have failed" : "")}, svg);
   var html = "<b>" + p.NAME + " County</b>"
@@ -237,9 +242,9 @@ document.getElementById("legend").innerHTML =
   + "the tract.</strong> Five equal groups of census tracts. Grey is a tract the Census "
   + "suppressed.</p>"
   + "<h3 style='margin-top:14px'>JobsOhio investment</h3>"
-  + "<div class='key'><b style='background:var(--inv)'></b>"
+  + "<div class='key'><b style='background:var(--inv);border:1.6px solid var(--inv);opacity:1;background-color:color-mix(in srgb, var(--inv) 50%, transparent)'></b>"
   + "<span>Money placed in the county. Circle area is the amount.</span></div>"
-  + "<div class='key'><b style='background:var(--fail)'></b>"
+  + "<div class='key'><b style='background:var(--fail);border:1.6px solid var(--fail);opacity:1;background-color:color-mix(in srgb, var(--fail) 50%, transparent)'></b>"
   + "<span>Includes at least one company later confirmed to have failed ("
   + withFail + " counties).</span></div>"
   + "<p class='note' style='margin-top:8px'><strong>The two layers are not at the same "
