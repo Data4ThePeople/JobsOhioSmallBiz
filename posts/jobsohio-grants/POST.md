@@ -57,16 +57,12 @@ Here is the short version. It carries the same figures as the full tool, in a sm
 
 ::: spacer 40px
 
-::: blurb If you are going to work from this, use the full version
-Every figure in the frame above is in the full tool, but the full tool also lets you filter to any outcome, read the source behind each finding, and see every one of the 76 candidates we checked and threw out, with the reason. **If you are a reporter working from this, use the full version.** Several rows carry caveats that decide whether a number means what it looks like, and those caveats sit on the row rather than in the summary.
+::: blurb Use the full version, and tell us what you find
+Every figure in the frame above is in the full tool, but the full tool also lets you filter to any outcome, read the source behind each finding, and see every one of the 76 candidates we checked and threw out, with the reason. **If you are going to work from this, use the full version.** Several rows carry caveats that decide whether a number means what it looks like, and those caveats sit on the row rather than in the summary.
 
 **[Open the full tool and the method notes](https://data4thepeople.github.io/JobsOhioSmallBiz/)**
-:::
 
-::: spacer 20px
-
-::: blurb Found a broken link or a mistake? Please tell us
-This tool has thousands of links in it and twelve years of records behind it. If you are exploring it and a link does not open, a company is in the wrong place, a number looks wrong, or we have missed something you know about, please email us at **[connect@data4thepeople.com](mailto:connect@data4thepeople.com)** and we will fix it. We would rather hear it from you than leave it wrong. Corrections are made in public, with a note saying what changed and when.
+Found a broken link, a company in the wrong place, a number that looks wrong, or something we missed? Email **[connect@data4thepeople.com](mailto:connect@data4thepeople.com)** and we will fix it. We would rather hear it from you than leave it wrong. Corrections are made in public, with a note saying what changed and when.
 :::
 
 ## How to use it
