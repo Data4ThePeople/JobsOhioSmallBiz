@@ -516,22 +516,37 @@ procedure in `docs/FAILURE_VERIFY_PROMPT.md` and consolidated by
 
 **What `failures.csv` holds.** Every candidate and every verdict, including the
 rejects and the reason each was rejected, so the published count can be
-audited. 119 candidates in all. Verdicts: `Confirmed failure` (44,
-$97,709,323 paid), `Not a failure` (53), `Different company` (17), `Failed
+audited. 119 candidates in all. Verdicts: `Confirmed failure` (40,
+$95,209,323 paid), `Not a failure` (57), `Different company` (17), `Failed
 away from the funded site` (3, $3,850,000, not in the count), `Before the
-grant` (1).
+grant` (1), `Unresolved` (1).
 
-**16 of the 44 were found by the WARN join, not by the news scan**
+**16 of the 40 were found by the WARN join, not by the news scan**
 (`scripts/35_warn_join.py`, verified in `data/research3/warncheck_*.json`,
 merged by `scripts/37_merge_warncheck.py`). That is the measure of how much of
-a floor a news-based count is: a third of the confirmed failures had no
+a floor a news-based count is: 40% of the confirmed failures had no
 coverage our scan could see.
-Confirmed rows carry a `category`, because "failure" covers five different
-outcomes and the post should not add a sale to a bankruptcy: Bankruptcy or
-receivership, Funded site closed, Mass layoff at the funded site, Sold or
-absorbed, Subsidized service ended. The categories are assigned from an
-explicit company-name map in `21_failures.py`, not from keywords, because
-keyword rules misread "sold" in a closure notice and "closed" in a sale notice.
+Confirmed rows carry a `category`, because "failure" covers four different
+outcomes and the post should not add one kind to another: Bankruptcy or
+receivership, Funded site closed, Mass layoff at the funded site, Subsidized
+service ended. The categories are assigned from an explicit company-name map
+in `21_failures.py`, not from keywords, because keyword rules misread "sold"
+in a closure notice and "closed" in a sale notice.
+
+**An acquisition is only a failure if the funded operation stopped**
+(`scripts/46_apply_acquired_rule.py`, Eric Pachman's rule, November 16, 2026).
+There used to be a fifth category, `Sold or absorbed`: four companies and
+$2,500,000, every one bought or divested rather than closed. A company that is
+acquired and keeps operating has not failed; a company that is acquired and
+shut down has. Checked against that, all four came out and the category went
+with them: Speedway ($1,700,000, 7-Eleven cut Enon headquarters staff in 2021
+and 2022 but no source records the campus closing), FirstMerit ($500,000,
+Huntington kept the Akron headquarters operation and said in 2018 it would add
+jobs there), AK Steel ($250,000, Cleveland-Cliffs still runs the Ohio plants
+and the job losses in the coverage were in Kentucky and Michigan) and PPG
+($50,000, the Barberton plant kept running under Qemetica). None is deleted.
+Each is now `Not a failure` with the reason on the row, which puts it in the
+tool's rejected-candidates view alongside every other reject.
 
 **The funded-site check, which moved three companies out of the count.** Every
 confirmed failure was re-checked on one question: was the operation that failed
@@ -1014,7 +1029,8 @@ than take our word for it. `data/parent_links.csv`, built by
 in its research `sources`. Those fields record *how* a call was made, not
 *where* a reader can go, so most of them were never URLs at all: "Form 5500
 2023: 86 participants, largest plan, sponsor JAFE DECORATING, INC." A sample of
-60 found **16 that resolved**. Of the 44 failures, 34 were prose rather than a
+60 found **16 that resolved**. Of the failures as the count then stood, 34
+were prose rather than a
 URL, four were Google News search queries, and four were SEC filings that
 failed only because they were fetched without the contact User-Agent the SEC
 requires.
@@ -1244,8 +1260,7 @@ every publish. It has already caught two real defects:
    $90,737,093.
 6. **The news scan was missing a third of them.** Joining Ohio's whole WARN
    register against every recipient found 15 more confirmed failures, taking
-   the count to **44 companies and $97,709,323**. Any earlier draft citing a
-   lower figure is out of date.
+   the count to 44 companies and $97,709,323.
 5. **Two source links could not be audited and one was in the wrong place.**
    CourtListener now answers every automated fetch with an empty 202 bot
    challenge, so three dockets were replaced with the petition PDFs themselves
@@ -1254,15 +1269,21 @@ every publish. It has already caught two real defects:
    now the Ohio WARN notice, which is both fetchable and the better record —
    and reading it showed the plant was in **Lockbourne**, not Obetz as this
    project had written.
+7. **Being bought is not failing.** The `Sold or absorbed` category held four
+   companies that were acquired or divested and kept operating, which is not
+   the question the count is asking. All four came out
+   (`scripts/46_apply_acquired_rule.py`), taking the count to **40 companies
+   and $95,209,323**. Any earlier draft citing a different figure is out of
+   date.
 
 **The size contrast is stated in bands, not as a median headcount, and that is
 deliberate.** The data holds employee bands (`<100`, `100-499`, `500-4999`,
 `5000+`), not headcounts, so there is no number to take a median of and any
 "median employees" figure would be invented. The bands say it more plainly
 anyway: of the 51 sued companies on the grant schedule, 20 employ fewer than
-100; **of the 44 that failed after being paid, none does.** Those bands grade
+100; **of the 40 that failed after being paid, none does.** Those bands grade
 the employee count and not the finding, which is a separate and weaker thing:
-22 of the 44 failures rest on a court filing or the employer's own notice to
+22 of the 40 failures rest on a court filing or the employer's own notice to
 the state. Median and mean
 *grant* size are exact and are published instead.
 
@@ -1408,11 +1429,11 @@ Nestlé USA for the Solon campus, which is closing, and $6,000,000 to Nestlé
 Purina for a Clermont County plant, which opened in August 2026.** A reader
 taking the parent row at face value would read $9.2 million as lost.
 
-**Five of the 44 confirmed failures sit inside a parent that was paid more**:
+**Four of the 40 confirmed failures sit inside a parent that was paid more**:
 Nestlé (35% of the group's money failed), Procter & Gamble through iMFLUX
-(20%), Marathon Petroleum through Speedway (76%), McKesson through
-CoverMyMeds (89%) and American Trailer World through ATW Ohio (47%). Read as
-whole-parent losses they would overstate by **$9,015,727**. Dana used to be a fifth, and is no longer in the count at all:
+(20%), McKesson through CoverMyMeds (89%) and American Trailer World through
+ATW Ohio (47%). Read as
+whole-parent losses they would overstate by **$8,465,727**. Dana used to be a fifth, and is no longer in the count at all:
 the plant that closed was not one the money paid for.
 
 **What was rejected, and why.** One option was to recategorise a partial

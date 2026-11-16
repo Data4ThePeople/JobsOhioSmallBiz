@@ -21,7 +21,7 @@ turns out to be wrong, the data that made it is in the repo and the error will
 be ours to correct.
 
 **The two things most worth a reporter's time**, if you only take one: lead 10,
-the 44 companies that failed after being paid, because the tool lets you filter
+the 40 companies that failed after being paid, because the tool lets you filter
 to any of them in a click; and lead 17, the route JobsOhio announced and then
 removed from its own website.
 
@@ -490,7 +490,7 @@ the Growth Fund guidelines?
 
 ---
 
-## 10. 44 grant recipients failed after the money was paid: $97.7 million
+## 10. 40 grant recipients failed after the money was paid: $95.2 million
 
 We scanned all 1,755 distinct recipients for public signs of failure after
 their first grant year, using Google News headlines as the index
@@ -500,9 +500,10 @@ court dockets, SEC filings and local news. 102 candidates went to verification.
 somebody else's case, 17 were a different company with the same name, 3 failed
 somewhere other than the site the grant paid for, 1 happened before the grant,
 and 1 is unresolved. **A second pass then joined Ohio's whole WARN register
-against every recipient and found 16 more, taking the count to 44.** That is
-the measure of how much of a floor a news-based count is: a third of the
-confirmed failures had no coverage the scan could see. Everything, including the rejected flags and why they were
+against every recipient and found 16 more.** That is
+the measure of how much of a floor a news-based count is: 40% of the
+confirmed failures had no coverage the scan could see. **A later pass took
+four back out**, because being bought is not failing: see below. Everything, including the rejected flags and why they were
 rejected, is in `data/failures.csv`.
 
 | What happened | Companies | Paid |
@@ -510,9 +511,8 @@ rejected, is in `data/failures.csv`.
 | Mass layoff at the funded site | 12 | $71,926,340 |
 | Bankruptcy or receivership | 10 | $14,680,000 |
 | Funded site closed | 17 | $8,402,983 |
-| Sold or absorbed | 4 | $2,500,000 |
 | Subsidized service ended | 1 | $200,000 |
-| **Total** | **44** | **$97,709,323** |
+| **Total** | **40** | **$95,209,323** |
 
 **Three companies came out of this count on a second pass, and the reason is
 itself worth a paragraph in the post.** Every confirmed failure was re-checked
@@ -588,12 +588,21 @@ and Business Journal Daily reported recalls under way by August 2026. "Cut
 1,300 jobs" is wrong. CoverMyMeds, $6,613,235, cut 815 jobs in
 March 2023. Hyland Software, $2,500,001, cut about 1,000 people, 20% of its
 workforce, in April 2023. Sarepta, $2,348,087, cut 80 Franklin County jobs in
-July 2025. Speedway, $1,700,000. Sauder Woodworking, $200,000, about 150 jobs
+July 2025. Sauder Woodworking, $200,000, about 150 jobs
 at Archbold. Klarna, $125,000, 102 jobs in Columbus.
 
-**Sold or absorbed.** FirstMerit ($500,000) stopped existing as an Akron
-company two months after the grant year. AK Steel ($250,000) was absorbed by
-Cleveland-Cliffs the year after. PPG ($50,000) sold the Ohio operation.
+**Bought, and out of the count.** There used to be a fifth category, "sold or
+absorbed," holding four companies and $2,500,000. All four were acquired or
+divested and kept operating, and a company that is bought and keeps running
+has not failed. Speedway ($1,700,000) was sold to 7-Eleven, which cut Enon
+headquarters staff in 2021 and 2022 but did not close the campus. FirstMerit
+($500,000) merged into Huntington, which kept the Akron headquarters operation
+and said in 2018 it would add jobs there. AK Steel ($250,000) was absorbed by
+Cleveland-Cliffs, which still runs the Ohio plants. PPG ($50,000) sold its
+silicas business to Qemetica and the Barberton plant kept running. All four
+are in `data/failures.csv` as rejects with the reason, and the tool shows
+them. If a reporter can establish that one of these sites did shut down, that
+is a correction we want.
 
 **Subsidized service ended.** Avelo's $200,000 and the Dayton to Orlando route
 that ran January to September 2023 (lead 6). Air Wisconsin's $50,000 was an
@@ -604,10 +613,10 @@ scheduled service in 2025.
 headlines, so a company that failed quietly, or one whose Ohio site closed
 without a story, is not in it. It also treats the payee as the company, so a
 parent's bankruptcy that left the Ohio plant running is excluded, and a
-subsidiary failure under a healthy parent may be missed. Three of the five
+subsidiary failure under a healthy parent may be missed. Two of the four
 categories are not failures of the company at all, only of the thing Ohio paid
 for, and the post should say which is which rather than adding them up as one
-number. Six caveats to carry:
+number. Five caveats to carry:
 
 - Columbus Steel Castings' parent filed in the same calendar year as the only
   grant year, 2016, and Schedule I carries years only, so we cannot yet say
@@ -621,8 +630,6 @@ number. Six caveats to carry:
   26-10961) along with the appeals, but not the lead debtor's own number.
 - Multi-Color reorganized and still operates. It is in the table because the
   company filed, not because Ohio lost a plant.
-- Speedway was sold to 7-Eleven rather than closed, and the layoffs followed
-  the sale.
 - Ohio Logistics was flagged and thrown out: the headline came from an
   aggregator that writes deliberately unnamed headlines, and the Ohio company
   broke ground on a new building in April 2026. Goodlevel Enterprises is the
@@ -1172,8 +1179,8 @@ assets "as well as the Market Conditions and Other Factors provided by Grantee
 to JobsOhio." Nothing published says how any of that is weighed, who has asked
 for a waiver, or who has been granted one.
 
-**The pattern.** Of the 44 verified post-grant failures carrying $97,709,323,
-JobsOhio sued **3**, carrying $1,060,770. **$96,648,553 went to companies
+**The pattern.** Of the 40 verified post-grant failures carrying $95,209,323,
+JobsOhio sued **3**, carrying $1,060,770. **$94,148,553 went to companies
 that failed and were never sued.** The third, Mitec Powertrain, is the
 exception that proves the rule: JobsOhio sued it and recovered the whole
 $200,000, which is why its row carries $0.
@@ -1183,9 +1190,8 @@ $200,000, which is why its row carries $0.
 | Mass layoff at the funded site | 12 | $71,926,340 | **0** |
 | Bankruptcy or receivership | 10 | $14,680,000 | **0** |
 | Funded site closed | 17 | $8,402,983 | 3 |
-| Sold or absorbed | 4 | $2,500,000 | **0** |
 | Subsidized service ended | 1 | $200,000 | **0** |
-| **Total** | **44** | **$97,709,323** | **3** |
+| **Total** | **40** | **$95,209,323** | **3** |
 
 **What came back through the courts: $3,229,155, against $13,548,404 pleaded.**
 That is 23.8%, and it is an upper bound rather than a receipt. It is the value
@@ -1215,11 +1221,11 @@ Now set that beside who it does sue:
 | | Median | Size, on the bands recorded |
 |---|---|---|
 | The 63 it sued | $125,000 sought, smallest $16,724 | 33 of 51 under 500 employees |
-| The 44 that failed | $500,000 paid, largest $50,000,000 | 37 of 44 at 500 or more |
+| The 40 that failed | $500,000 paid, largest $50,000,000 | 33 of 40 at 500 or more |
 
 **Hedge the size half, and say why.** These are employee *bands*, not
 headcounts, so there is no median to quote. The two sides are not equally well
-evidenced either: **35 of the 44 failed companies** have a
+evidenced either: **31 of the 40 failed companies** have a
 headcount from a filing or an official record, against **32 of 51** on the sued
 side, where **19** sit on a company website, a directory or a best
 guess. Write "none of the failures is recorded under 100 employees", not "none

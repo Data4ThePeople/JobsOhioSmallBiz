@@ -455,7 +455,7 @@ var COND_LABEL = {"agreement seen":"in this agreement", "standard form":"in the 
 /* the full category is long; the short label goes in the cell and the whole
    thing, with the date and how firmly it is established, sits on hover */
 var FAIL_LABEL = {"Bankruptcy or receivership":"bankruptcy", "Funded site closed":"site closed",
-                  "Mass layoff at the funded site":"mass layoff", "Sold or absorbed":"sold",
+                  "Mass layoff at the funded site":"mass layoff",
                   "Subsidized service ended":"service ended",
                   "Failed away from the funded site":"failed elsewhere"};
 
@@ -923,8 +923,8 @@ function renderWhat(){
        never disclosed). On the grade that measures the finding it is 21. */
     /* Two different questions, and the page answered one with the other. The
      grade says how firmly a finding is established; the document type says
-     what it rests on. "22 rest on reporting" was wrong twice: 14 of those 22
-     rest on a government notice or a court filing, and only 6 of all 44 rest
+     what it rests on. "22 rest on reporting" was wrong twice: most of those 22
+     rest on a government notice or a court filing, and only 5 of all 40 rest
      on a news report. */
   + "Two separate questions sit behind those findings. " + fd.document + " of the "
     + fd.n + " rest on a court filing, a government notice or an SEC filing, and "
