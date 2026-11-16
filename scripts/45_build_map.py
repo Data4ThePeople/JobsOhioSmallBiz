@@ -100,12 +100,48 @@ def main():
     print(f"{len(cfeats)} counties; {len(cfeats)-missing} placed on a centre of "
           f"population, {missing} on a representative point")
 
+    # Does the money go where the need is? Counties ranked poorest to richest
+    # by the median of their tracts, then dollars per head in each fifth. This
+    # is the question the map exists to ask, so it ships as a figure rather
+    # than left for the reader to eyeball from circle sizes.
+    import statistics
+    from collections import defaultdict as dd
+    byc = dd(list)
+    for r in th.values():
+        byc[r["county"].replace(" County", "")].append(
+            (int(r["median_household_income"]), int(r["population"] or 0),
+             float(r["pct_fair_or_poor_health"])))
+    ranked = []
+    for name, v in byc.items():
+        pop = sum(x[1] for x in v)
+        if not pop:
+            continue
+        d = inv.get(name)
+        ranked.append({"county": name, "pop": pop,
+                       "inc": statistics.median([x[0] for x in v]),
+                       "hl": sum(x[2] * x[1] for x in v) / pop,
+                       "cash": int(d["cash"]) if d else 0})
+    ranked.sort(key=lambda r: r["inc"])
+    n5, step = len(ranked), len(ranked) // 5
+    quint = []
+    for i in range(5):
+        ch = ranked[i * step:(i + 1) * step if i < 4 else n5]
+        pop = sum(r["pop"] for r in ch)
+        cash = sum(r["cash"] for r in ch)
+        quint.append({"counties": len(ch), "pop": pop, "cash": cash,
+                      "per_capita": round(cash / pop, 2),
+                      "health": round(sum(r["hl"] * r["pop"] for r in ch) / pop, 1),
+                      "median_income": round(statistics.median([r["inc"] for r in ch]))})
+    print("\n  dollars per head by county income quintile, poorest first:")
+    for i, q in enumerate(quint):
+        print(f"    Q{i+1}  ${q['per_capita']:>7.2f}   {q['health']:>4.1f}% fair or poor health")
+
     placed = sum(f["properties"]["cash"] for f in cfeats)
     out = {"tracts": feats, "counties": cfeats,
            "meta": {"placed": placed,
                     "counties_with_money": sum(1 for f in cfeats if f["properties"]["cash"]),
                     "counties_with_failure": sum(1 for f in cfeats if f["properties"]["fn"]),
-                    "tracts_with_data": kept}}
+                    "tracts_with_data": kept, "quintiles": quint}}
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(json.dumps(out, separators=(",", ":")))
     print(f"\nplaced ${placed:,} across {out['meta']['counties_with_money']} counties, "

@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Where the money went, and where the need is</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  .jo{
+    --page:#f9f9f7; --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+    --line:#e1e0d9; --border:rgba(11,11,11,.10); --focus:#2a78d6;
+    /* Income, light to dark. Validated with scripts/palette_check.py
+       --sequential: monotonic lightness, span 46.3, worst adjacent step 7.8
+       under colour blindness. */
+    --i1:#EDF2F0; --i2:#C5DBD6; --i3:#93BFB7; --i4:#569B91; --i5:#1F6F6B;
+    --nodata:#e8e6e0;
+    /* The two bubble states. Worst-case separation 18.4 under deuteranopia,
+       well above the 8 the guidance asks for, and both separate from either
+       end of the income ramp. */
+    --inv:#D98324; --fail:#B3202C;
+    background:var(--page); color:var(--ink); padding:18px 16px 14px;
+    font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  @media (prefers-color-scheme: dark){
+    .jo:not(.light){
+      --page:#181A1B; --surface:#1f2223; --ink:#E4E2DC; --ink2:#BBBDC0; --muted:#8C9094;
+      --line:#33373A; --border:rgba(255,255,255,.10); --focus:#6da7ec;
+      --i1:#1d2b2a; --i2:#24423f; --i3:#2f5d58; --i4:#3f7f78; --i5:#5FAFA6;
+      --nodata:#2a2d2f; --inv:#F0A050; --fail:#E05A64;
+    }
+  }
+  .jo *{box-sizing:border-box}
+  .jo .wrap{max-width:1180px;margin:0 auto}
+  .jo h1{font:600 25px/1.2 Georgia,"Times New Roman",serif;margin:0 0 4px}
+  .jo .sub{color:var(--ink2);font-size:14px;margin:0 0 14px;max-width:84ch}
+  .jo .note{color:var(--muted);font-size:12.5px;margin:6px 0 0;max-width:88ch}
+  .jo .cols{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:18px;align-items:start}
+  @container (max-width: 860px){ .jo .cols{grid-template-columns:1fr} }
+  .jo .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px}
+  .jo svg{display:block;width:100%;height:auto}
+  .jo .tract{stroke:none}
+  .jo .cty{fill:none;stroke:var(--border);stroke-width:.5;pointer-events:none}
+  .jo .bub{stroke:#fff;stroke-width:1.1;cursor:pointer}
+  @media (prefers-color-scheme: dark){ .jo:not(.light) .bub{stroke:#13151600} }
+  .jo .bub:hover,.jo .bub:focus{stroke:var(--ink);stroke-width:2;outline:none}
+  .jo .lg{font-size:12px;color:var(--ink2)}
+  .jo .lg h3{font-size:12.5px;margin:0 0 6px;color:var(--ink);font-weight:600}
+  .jo .ramp{display:flex;height:12px;border-radius:3px;overflow:hidden;margin:0 0 4px}
+  .jo .ramp i{flex:1}
+  .jo .rampx{display:flex;justify-content:space-between;font-size:11.5px;color:var(--muted)}
+  .jo .key{display:flex;align-items:center;gap:7px;margin:7px 0 0}
+  .jo .key b{display:inline-block;border-radius:50%;border:1.1px solid #fff}
+  .jo table{border-collapse:collapse;width:100%;font-size:12.5px;margin-top:4px}
+  .jo th,.jo td{text-align:left;padding:3px 6px 3px 0;border-bottom:1px solid var(--line)}
+  .jo td.n,.jo th.n{text-align:right;font-variant-numeric:tabular-nums}
+  .jo .scat circle{fill:var(--i5);fill-opacity:.4}
+  @media (prefers-color-scheme: dark){ .jo:not(.light) .scat circle{fill:var(--i4);fill-opacity:.45} }
+  .jo .ax{stroke:var(--line);stroke-width:1}
+  .jo .axt{font-size:11px;fill:var(--muted)}
+  .jo .fit{stroke:var(--fail);stroke-width:2;fill:none}
+  #tip{position:fixed;z-index:99;pointer-events:none;max-width:320px;padding:8px 10px;
+    border-radius:8px;background:var(--surface);color:var(--ink);border:1px solid var(--border);
+    box-shadow:0 6px 20px rgba(0,0,0,.18);font-size:12.5px;line-height:1.45;opacity:0;transition:opacity .08s}
+  #tip.on{opacity:1}
+  #tip b{display:block;margin-bottom:2px}
+  .jo .foot{margin-top:12px;color:var(--muted);font-size:11.5px;max-width:92ch}
+</style>
+</head>
+<body style="margin:0">
+<div class="jo" id="root" style="container-type:inline-size">
+<div class="wrap">
+  <h1>Where the money went, and where the need is</h1>
+  <p class="sub" id="sub"></p>
+  <div class="cols">
+    <div class="card"><svg id="map" viewBox="0 0 640 680" role="img"
+      aria-label="Ohio census tracts shaded by median household income, with bubbles showing JobsOhio investment by county"></svg></div>
+    <div>
+      <div class="card lg" id="legend"></div>
+      <div class="card lg" style="margin-top:14px">
+        <h3>Income and health move together</h3>
+        <svg id="scat" viewBox="0 0 280 200" role="img"
+          aria-label="Scatter of median household income against the share of adults reporting fair or poor health, by census tract"></svg>
+        <p class="note" id="scatnote"></p>
+      </div>
+      <div class="card lg" style="margin-top:14px">
+        <h3>Does the money go where the need is?</h3>
+        <table id="quint"><tbody></tbody></table>
+        <p class="note" id="qnote"></p>
+      </div>
+      <div class="card lg" style="margin-top:14px">
+        <h3>Where the most money went</h3>
+        <table id="top"><tbody></tbody></table>
+      </div>
+    </div>
+  </div>
+  <p class="foot" id="foot"></p>
+</div>
+</div>
+<div id="tip" role="status"></div>
+<script>
+(function(){
+"use strict";
+var D = __DATA__;
+var T = D.tracts, C = D.counties, M = D.meta;
+
+function money(v){
+  if (v >= 1e9) return "$" + (v/1e9).toFixed(2) + " billion";
+  if (v >= 1e6) return "$" + (v/1e6).toFixed(1) + " million";
+  if (v >= 1e3) return "$" + Math.round(v/1e3) + ",000";
+  return "$" + v;
+}
+function dollars(v){ return "$" + v.toLocaleString(); }
+
+/* ---- projection ---------------------------------------------------------
+   Ohio is small enough that a plate carree with a cos(lat) correction is
+   indistinguishable from a conic here, and it keeps the page dependency
+   free. The correction matters: without it Ohio is noticeably too wide. */
+var W = 640, H = 680, PAD = 10;
+var lats = [], lons = [];
+T.forEach(function(f){ walk(f.geometry.coordinates, function(p){ lons.push(p[0]); lats.push(p[1]); }); });
+var lo0 = Math.min.apply(null, lons), lo1 = Math.max.apply(null, lons);
+var la0 = Math.min.apply(null, lats), la1 = Math.max.apply(null, lats);
+var k = Math.cos((la0 + la1) / 2 * Math.PI / 180);
+var sx = (W - 2*PAD) / ((lo1 - lo0) * k), sy = (H - 2*PAD) / (la1 - la0);
+var s = Math.min(sx, sy);
+var ox = PAD + ((W - 2*PAD) - (lo1 - lo0) * k * s) / 2;
+var oy = PAD + ((H - 2*PAD) - (la1 - la0) * s) / 2;
+function px(p){ return [ox + (p[0] - lo0) * k * s, oy + (la1 - p[1]) * s]; }
+function walk(c, fn){
+  if (typeof c[0] === "number") return fn(c);
+  for (var i=0;i<c.length;i++) walk(c[i], fn);
+}
+function path(geom){
+  var d = "", rings = geom.type === "Polygon" ? [geom.coordinates] : geom.coordinates;
+  rings.forEach(function(poly){
+    poly.forEach(function(ring){
+      for (var i=0;i<ring.length;i++){
+        var q = px(ring[i]);
+        d += (i ? "L" : "M") + q[0].toFixed(1) + " " + q[1].toFixed(1);
+      }
+      d += "Z";
+    });
+  });
+  return d;
+}
+
+/* ---- income bands -------------------------------------------------------
+   Quintiles of the tracts themselves, not even dollar steps, because Ohio
+   income is right-skewed and even steps would put four fifths of the state
+   in one colour. */
+var incs = T.map(function(f){ return f.properties.inc; })
+            .filter(function(v){ return v > 0; }).sort(function(a,b){ return a-b; });
+var cuts = [0.2,0.4,0.6,0.8].map(function(q){ return incs[Math.floor(q*incs.length)]; });
+function band(v){
+  if (!(v > 0)) return -1;
+  for (var i=0;i<cuts.length;i++) if (v < cuts[i]) return i;
+  return 4;
+}
+var RAMP = ["var(--i1)","var(--i2)","var(--i3)","var(--i4)","var(--i5)"];
+
+var svg = document.getElementById("map"), NS = "http://www.w3.org/2000/svg";
+function el(n, a, p){ var e = document.createElementNS(NS, n);
+  for (var k2 in a) e.setAttribute(k2, a[k2]); if (p) p.appendChild(e); return e; }
+
+T.forEach(function(f){
+  var b = band(f.properties.inc);
+  el("path", {d: path(f.geometry), class: "tract",
+              fill: b < 0 ? "var(--nodata)" : RAMP[b]}, svg);
+});
+C.forEach(function(f){ el("path", {d: path(f.geometry), class: "cty"}, svg); });
+
+/* ---- bubbles ------------------------------------------------------------
+   Area proportional to dollars, so a county with ten times the money draws
+   ten times the ink rather than ten times the radius. A county whose money
+   includes a confirmed failure is drawn in the failure colour; the amount
+   that failed is in the tooltip, because colouring a part of the circle
+   would imply the rest is known to have succeeded, and it is not. */
+var maxCash = Math.max.apply(null, C.map(function(f){ return f.properties.cash; }));
+var RMAX = 30;
+function radius(v){ return v > 0 ? Math.max(2.2, RMAX * Math.sqrt(v / maxCash)) : 0; }
+var tip = document.getElementById("tip");
+function show(e, html){
+  tip.innerHTML = html; tip.classList.add("on");
+  var r = tip.getBoundingClientRect();
+  var x = Math.min(e.clientX + 14, window.innerWidth - r.width - 8);
+  var y = Math.min(e.clientY + 14, window.innerHeight - r.height - 8);
+  tip.style.left = x + "px"; tip.style.top = y + "px";
+}
+function hide(){ tip.classList.remove("on"); }
+
+C.slice().sort(function(a,b){ return b.properties.cash - a.properties.cash; })
+ .forEach(function(f){
+  var p = f.properties; if (!p.cash) return;
+  var q = px(p.c), failed = p.fn > 0;
+  var c = el("circle", {cx: q[0].toFixed(1), cy: q[1].toFixed(1), r: radius(p.cash).toFixed(1),
+    class: "bub", fill: failed ? "var(--fail)" : "var(--inv)", "fill-opacity": .72,
+    tabindex: "0", role: "img",
+    "aria-label": p.NAME + " County, " + money(p.cash) + " across " + p.n + " recipients"
+      + (failed ? ", including " + p.fn + " later confirmed to have failed" : "")}, svg);
+  var html = "<b>" + p.NAME + " County</b>"
+    + dollars(p.cash) + " placed, " + p.n + " recipient" + (p.n === 1 ? "" : "s")
+    + (failed ? "<br><span style='color:var(--fail)'>" + p.fn + " later confirmed to have failed, "
+        + dollars(p.fcash) + "</span>" : "")
+    + (p.top ? "<br><span style='color:var(--muted)'>" + p.top + "</span>" : "");
+  c.addEventListener("mousemove", function(e){ show(e, html); });
+  c.addEventListener("mouseleave", hide);
+  c.addEventListener("focus", function(){
+    var r = c.getBoundingClientRect();
+    show({clientX: r.left + r.width/2, clientY: r.top}, html); });
+  c.addEventListener("blur", hide);
+});
+
+/* ---- legend ------------------------------------------------------------- */
+var withFail = C.filter(function(f){ return f.properties.fn > 0; }).length;
+document.getElementById("legend").innerHTML =
+  "<h3>Median household income</h3>"
+  + "<div class='ramp'>" + RAMP.map(function(c){ return "<i style='background:" + c + "'></i>"; }).join("") + "</div>"
+  + "<div class='rampx'><span>" + money(incs[0]) + "</span><span>"
+  + money(incs[incs.length-1]) + "</span></div>"
+  + "<p class='note' style='margin-top:4px'>By census tract, five equal groups of tracts. "
+  + "Grey is a tract the Census suppressed.</p>"
+  + "<h3 style='margin-top:14px'>JobsOhio investment</h3>"
+  + "<div class='key'><b style='width:22px;height:22px;background:var(--inv)'></b>"
+  + "<span>Money placed in the county. Circle area is the amount.</span></div>"
+  + "<div class='key'><b style='width:22px;height:22px;background:var(--fail)'></b>"
+  + "<span>Includes at least one company later confirmed to have failed ("
+  + withFail + " counties).</span></div>"
+  + "<p class='note' style='margin-top:8px'><strong>The two layers are not at the same "
+  + "resolution, deliberately.</strong> Income is by census tract, which is where the data "
+  + "really is. The money is by county, which is as fine as we can honestly place it: the "
+  + "address on the tax return is where the cheque was posted, not where the project was, "
+  + "and 28.5% of the dollars went to an address outside Ohio.</p>";
+
+/* ---- scatter ------------------------------------------------------------ */
+(function(){
+  var s2 = document.getElementById("scat"), w = 280, h = 200, l = 34, b = 26, t = 6, r = 6;
+  var pts = T.map(function(f){ return f.properties; })
+             .filter(function(p){ return p.inc > 0 && p.hl != null; });
+  var xs = pts.map(function(p){ return Math.log(p.inc); });
+  var ys = pts.map(function(p){ return p.hl; });
+  var x0 = Math.min.apply(null, xs), x1 = Math.max.apply(null, xs);
+  var y0 = 0, y1 = Math.max.apply(null, ys);
+  function X(v){ return l + (Math.log(v) - x0) / (x1 - x0) * (w - l - r); }
+  function Y(v){ return h - b - (v - y0) / (y1 - y0) * (h - b - t); }
+  el("line", {x1:l, y1:h-b, x2:w-r, y2:h-b, class:"ax"}, s2);
+  el("line", {x1:l, y1:t, x2:l, y2:h-b, class:"ax"}, s2);
+  var g = el("g", {class:"scat"}, s2);
+  pts.forEach(function(p){ el("circle", {cx:X(p.inc).toFixed(1), cy:Y(p.hl).toFixed(1), r:1.3}, g); });
+  // least squares on log income, the line the correlation describes
+  var n = xs.length, mx = xs.reduce(function(a,v){return a+v;},0)/n,
+      my = ys.reduce(function(a,v){return a+v;},0)/n;
+  var num = 0, den = 0, sy2 = 0;
+  for (var i=0;i<n;i++){ num += (xs[i]-mx)*(ys[i]-my); den += Math.pow(xs[i]-mx,2);
+                         sy2 += Math.pow(ys[i]-my,2); }
+  var slope = num/den, rr = num/Math.sqrt(den*sy2);
+  el("line", {x1:X(Math.exp(x0)), y1:Y(my + slope*(x0-mx)),
+              x2:X(Math.exp(x1)), y2:Y(my + slope*(x1-mx)), class:"fit"}, s2);
+  [20000,50000,120000].forEach(function(v){
+    el("text", {x:X(v), y:h-b+13, class:"axt", "text-anchor":"middle"}, s2)
+      .textContent = "$" + (v/1000) + "k"; });
+  [10,25,40].forEach(function(v){
+    el("text", {x:l-5, y:Y(v)+3, class:"axt", "text-anchor":"end"}, s2)
+      .textContent = v + "%"; });
+  document.getElementById("scatnote").textContent =
+    "Each dot is one of " + n.toLocaleString() + " census tracts. Across is median "
+    + "household income on a log scale, up is the share of adults who say their health "
+    + "is fair or poor. Correlation " + rr.toFixed(2) + ". The line is a fit, not a "
+    + "finding: this says poorer places report worse health, not that money moved into "
+    + "one would change it.";
+})();
+
+/* ---- does the money go where the need is? ------------------------------
+   The map's own question, answered as a figure rather than left to be
+   eyeballed off circle sizes. Counties ranked poorest to richest by the
+   median of their tracts, then dollars per head in each fifth. */
+(function(){
+  var q = M.quintiles || [];
+  if (!q.length) return;
+  var lab = ["Poorest", "Second", "Middle", "Fourth", "Richest"];
+  var tb = document.querySelector("#quint tbody");
+  tb.innerHTML = "<tr><th>Counties by income</th><th class='n'>Per person</th>"
+    + "<th class='n'>Fair/poor health</th></tr>"
+    + q.map(function(x, i){
+        return "<tr><td>" + lab[i] + " fifth</td>"
+          + "<td class='n'>$" + x.per_capita.toFixed(0) + "</td>"
+          + "<td class='n'>" + x.health.toFixed(1) + "%</td></tr>"; }).join("");
+  var hi = q[0].per_capita, lo = Math.min.apply(null, q.map(function(x){ return x.per_capita; }));
+  document.getElementById("qnote").textContent =
+    "Health falls steadily as income rises, from " + q[0].health.toFixed(1) + "% to "
+    + q[4].health.toFixed(1) + "%. The money does not follow that line. The poorest "
+    + "fifth of counties got the most per person, $" + hi.toFixed(0) + ", and the "
+    + "richest got $" + q[4].per_capita.toFixed(0) + ", but the middle fifth got $"
+    + lo.toFixed(0) + ". Spending is close to proportional to population overall, "
+    + "and not ordered by need.";
+})();
+
+/* ---- the table ---------------------------------------------------------- */
+(function(){
+  var rows = C.map(function(f){ return f.properties; })
+              .filter(function(p){ return p.cash > 0; })
+              .sort(function(a,b){ return b.cash - a.cash; }).slice(0, 10);
+  var tb = document.querySelector("#top tbody");
+  tb.innerHTML = "<tr><th>County</th><th class='n'>Placed</th><th class='n'>Failed</th></tr>"
+    + rows.map(function(p){
+        return "<tr><td>" + p.NAME + "</td><td class='n'>" + money(p.cash) + "</td>"
+          + "<td class='n'" + (p.fn ? " style='color:var(--fail)'" : "") + ">"
+          + (p.fn ? money(p.fcash) : "") + "</td></tr>"; }).join("");
+})();
+
+document.getElementById("sub").textContent =
+  "Every Ohio census tract shaded by what households earn, with " + money(M.placed)
+  + " of JobsOhio grant money placed in the county it was spent in. "
+  + "Every one of the 88 counties has some; " + M.counties_with_failure
+  + " have at least one company later confirmed to have failed. Hover a circle.";
+
+document.getElementById("foot").textContent =
+  "Income: American Community Survey 2023 five-year estimates, table B19013, "
+  + M.tracts_with_data.toLocaleString() + " of 3,162 Ohio tracts. Health: CDC PLACES, "
+  + "fair or poor self-rated health among adults, which is modelled from survey data "
+  + "rather than counted, so a single tract carries real uncertainty. Investment: "
+  + "JobsOhio Form 990 Schedule I, fiscal years 2014 to 2025, placed by JobsOhio's own "
+  + "project county where it publishes one and by the payee address otherwise. "
+  + "$88.8 million could not be placed in any county and is not on this map. "
+  + "Work in progress.";
+})();
+</script>
+</body>
+</html>
