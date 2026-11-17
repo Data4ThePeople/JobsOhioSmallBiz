@@ -6,14 +6,23 @@ date: 2026-11-17T07:30:00-05:00
 section: Data 4 Thought
 hero: images/jobsohio-grants-hero-1680x1080.png
 hero_alt: Summary cards from the JobsOhio grants tool, covering 2,415 grants and $1.35 billion to 1,700 companies and organizations, fiscal years 2014 to 2025. Two headline figures: 19% of the dollars went to businesses under 500 employees at the parent company, and 7.8% went to businesses under 100. A grid crossing size with home state, where small means under 500 employees, shows the share of dollars: small Ohio 16%, small elsewhere 2.9%, large Ohio 20%, large elsewhere 61%.
-meta_title:
-description:
-keywords:
-schema_type: article
+meta_title: JobsOhio Grants Database: Every Award, 2014 to 2025
+description: Search every grant JobsOhio paid on its IRS Form 990: 2,415 awards, $1.35 billion, 1,700 companies, by business size, home state and what happened next.
+keywords: JobsOhio, JobsOhio grants, Ohio economic development, JobsOhio grant recipients, Ohio business incentives, JobsOhio accountability, Form 990 Schedule I, Ohio economic development transparency
+schema_type: dataset
 drop_cap: true
 heading_spacer: 20px
 caption_spacer: 20px
 dividers: false
+dataset_name: JobsOhio grants, IRS Form 990 Schedule I, FY2014 to FY2025
+temporal: 2013-07-01/2025-06-30
+spatial: Ohio, United States
+measured: Grant dollars paid|USD; Recipient parent employee band; Recipient parent headquarters state; Verified post-grant outcome
+sources: https://projects.propublica.org/nonprofits/organizations/452798687 | https://www.jobsohio.com/newsroom/reports-publications | https://jfs.ohio.gov/job-services-and-unemployment/job-services/warn | https://www.sec.gov/edgar
+distribution: text/csv|https://raw.githubusercontent.com/Data4ThePeople/JobsOhioSmallBiz/main/data/grants_raw.csv; text/csv|https://raw.githubusercontent.com/Data4ThePeople/JobsOhioSmallBiz/main/data/parents.csv; text/csv|https://raw.githubusercontent.com/Data4ThePeople/JobsOhioSmallBiz/main/data/failures.csv; text/csv|https://raw.githubusercontent.com/Data4ThePeople/JobsOhioSmallBiz/main/data/jobsohio_lawsuits.csv; text/csv|https://raw.githubusercontent.com/Data4ThePeople/JobsOhioSmallBiz/main/data/grant_conditions.csv
+credit: Data 4 The People
+measurement_technique: Each Schedule I payee traced to its ultimate parent at the time of the grant using SEC filings, Department of Labor Form 5500 data and official releases, then checked for post-grant outcomes against court dockets and Ohio WARN notices.
+same_as: https://github.com/Data4ThePeople/JobsOhioSmallBiz
 ---
 
 # Every JobsOhio grant, in one searchable tool
