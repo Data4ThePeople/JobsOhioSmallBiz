@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: ohio-income-health (working slug)
-Step: 2e
+Step: 2f
 Since: 2026-11-17
 
 ## Steps
@@ -18,7 +18,7 @@ Since: 2026-11-17
 | 2b | Eric's edit, Claude's look-over | 2026-11-17 | Link, transition, closing A (series ends, Friday national), items 3-5, 7. |
 | 2c | Slice markup | 2026-11-17 | 11 blocks, converts clean. Publish 2026-11-18T07:30:00-05:00. |
 | 2d | Hero 1680x1080 + alt text | 2026-11-17 | Map, total dollars, `scripts/57_hero_map.py`. Alt 380 chars. |
-| 2e | SEO | | |
+| 2e | SEO | 2026-11-17 | meta_title 52, description 134, 6 keywords, Article. GitHub sentence; README covers post 2. |
 | 2f | Pushed to Prismic (draft) | | |
 | 2g | Mailchimp teaser | | |
 | 3  | Social posts | | |
@@ -488,3 +488,5 @@ None.
 - 2026-11-17: 2d confirmed. 2e opened, waiting for Eric's target searches.
 - 2026-11-17: 2e front matter written from Claude's search list (Eric's call).
 - 2026-11-17: 2e item 1 accepted (GitHub sentence). README: post 2 section added, published link for post 1.
+- 2026-11-17: 2e confirmed. 2f opened.
+- 2026-11-17: Pushed to Prismic as draft avzHBRIAACYALnny, Migration Release. 8 slices, 2 GIFs + hero uploaded. --verify needs a read token that is not in .env.
