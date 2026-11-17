@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: jobsohio-grants
-Step: 2f
+Step: 2g
 Since: 2026-11-16
 
 ## Steps
@@ -19,7 +19,7 @@ Since: 2026-11-16
 | 2c | Slice markup | 2026-11-17 | 98 blocks, converts clean. Publication date 2026-11-17T07:30:00-05:00, embed cache-buster `?v=1.0`. |
 | 2d | Hero 1680x1080 + alt text | 2026-11-17 | `scripts/48_hero.py`, built from `dist/data.json` so it cannot drift from the tool. Alt text 471 characters. |
 | 2e | SEO | 2026-11-17 | `schema_type: dataset`. meta_title 51 chars, description 152, 8 keywords, 6 FAQ entries, 5 CSV downloads in the Dataset graph. |
-| 2f | Pushed to Prismic (draft) | | |
+| 2f | Pushed to Prismic (draft) | 2026-11-17 | Document `avxHXBIAACoALY7g`, 56 slices, Migration Release, not live. Section still to be set by hand. |
 | 2g | Mailchimp teaser | | |
 
 ## Stale
@@ -341,3 +341,20 @@ None.
   breadcrumb read Home > Visualization > title would be a change to the shared
   schema builder in `~/.claude/tools/prismic/`, affecting every future post,
   so it was deliberately not done mid-publish.
+
+- 2026-11-17 **Step 2f confirmed.** Draft `avxHXBIAACoALY7g` created in the
+  Migration Release, type `blog_post`, uid `jobsohio-grants`, 56 slices, hero
+  uploaded as `featured_image` and `meta_image`, tags and author empty. Not
+  live.
+  **The first push was rejected and the lesson is reusable.** Prismic's
+  `published_date` is a **Date** field, not a Timestamp, so the 7:30am EST
+  publication time could not ride on `date:`. The clock goes in a separate
+  `time:` key which the schema builder joins to the date. Prismic now gets
+  `2026-11-17`, the JSON-LD gets `2026-11-17T07:30:00-05:00`.
+  That split also fixed a bug nothing had caught: with a time already on
+  `date:`, the schema builder appended its default clock on top and emitted
+  `2026-11-17T07:30:00-05:00T07:00:00-04:00`, invalid structured data on a
+  page whose whole SEO case is its structured data.
+  **By hand in the Prismic editor, because the importer cannot set either:**
+  the section to Visualization, and a check that the embed renders in preview
+  since Prismic serves it sandboxed.

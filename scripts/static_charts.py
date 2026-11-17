@@ -24,7 +24,12 @@ OUT = ROOT / "posts" / "images"
 
 BG, INK, MUTED, GRID = "#181A1B", "#BBBDC0", "#8C9094", "#2A2E31"
 SMALL, LARGE, UNK, OHIO, OTHER = "#3987e5", "#d95926", "#6b6e70", "#2fa32f", "#9085e9"
-SOURCE = "JobsOhio Form 990 Schedule I, FY2014 to FY2024 (IRS e-file data); Data 4 The People analysis."
+# Read the fiscal-year range from the data rather than typing it here, where
+# it sat at FY2024 for a year after FY2025 was added and every chart in the
+# repo carried the wrong range.
+_M = json.loads((ROOT / "dist" / "data.json").read_text())["meta"]
+SOURCE = (f"JobsOhio Form 990 Schedule I, FY{_M['fy_min']} to FY{_M['fy_max']} "
+          "(IRS e-file data); Data 4 The People analysis.")
 CREDIT = "Built by Data 4 The People"
 
 
