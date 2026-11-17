@@ -1629,11 +1629,15 @@ money by its ACS 2020-2024 population (all residents).
 - `scripts/51_income_health_gif.py` writes `posts/ohio-income-health/social/income-health-ohio.gif`: one
   frame per measure, each a scatter of the 3,115 Ohio tracts with an income, 2.5 seconds a frame. Linear
   income axis to $250,000; each frame's y axis starts at 0 and ends at the next 10 above that measure's
-  highest tract. No trend line.
+  highest tract. No trend line. Each frame shows R² in the top right: the share of the tract-to-tract
+  spread in that measure that income accounts for, from a straight-line fit of the measure on the log of
+  income (the same fit as check A above), rounded to two places: diabetes 0.53, obesity 0.59, smoking
+  0.66, no leisure-time activity 0.69, short sleep 0.64, food insecurity 0.69, loneliness 0.50. The log
+  fit is used because the pattern bends; a straight line on income in dollars gives 0.40 to 0.59.
 - `scripts/52_map_gif.py` writes `posts/ohio-income-health/social/jobsohio-map-total-vs-per-person.gif`:
   tract income in five equal groups of tracts (darker is poorer), and county circles whose area is
-  proportional to total dollars, then dollars per person, 4 seconds a frame. One circle colour; the map
-  page's failure colour is left out of the GIF.
+  proportional to total dollars, then dollars per person, 4 seconds a frame. One circle color; the map
+  page's failure color is left out of the GIF.
 - `dist/map.html` keeps its own fair-or-poor health scatter, which still uses the earlier
   `data/health/tract_income_health_oh.csv` (ACS 2019-2023 and PLACES GHLTH). That scatter is not in this
   post.

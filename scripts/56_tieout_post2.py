@@ -23,6 +23,7 @@ import math
 import subprocess
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -82,6 +83,10 @@ for m in IDS.values():
     check(f"{m}: highest tract / y-axis top", f"{hi} / {10 * math.ceil(hi / 10)}%",
           f"{ext.loc[ext.med_hh_income.notna(), m].max()} / "
           f"{10 * math.ceil(ext.loc[ext.med_hh_income.notna(), m].max() / 10)}%")
+    rr = raw[["med_hh_income", m]].dropna()
+    ee = ext[["med_hh_income", m]].dropna()
+    check(f"{m}: R2, log income", f"{np.corrcoef(np.log(rr.med_hh_income), rr[m])[0, 1] ** 2:.2f}",
+          f"{np.corrcoef(np.log(ee.med_hh_income), ee[m])[0, 1] ** 2:.2f}")
 lo, hi = raw.med_hh_income.min(), raw.med_hh_income.max()
 
 # map

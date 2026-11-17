@@ -474,3 +474,4 @@ None.
   `TIEOUT-ohio-income-health.md`.
 - 2026-11-17: ohio-income-health Step 1 confirmed by Eric. Next: 2a, Eric's draft.
 - 2026-11-17: 2a opened. Slug `ohio-income-health`. POST.md created, waiting for Eric's draft.
+- 2026-11-17: R² added to each scatter frame (log-income fit, 0.50 to 0.69). Tie-out rerun, 0 differences; the independent tie-out had already matched these as check A.

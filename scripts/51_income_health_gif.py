@@ -3,8 +3,10 @@
 
 A sneak peek of the TractEconHealth project, Ohio only. One frame per measure,
 each a scatter of every Ohio tract that has both an income and the measure.
-No health index, so there is nothing to explain, and no trend line or
-annotation, so the chart claims nothing beyond the dots.
+No health index, so there is nothing to explain, and no trend line.
+Each frame shows R2: the share of the tract-to-tract spread in the measure
+that income accounts for, from a straight-line fit on the log of income
+(the same fit as check A in 53_places_input_check.py).
 
 Every frame is real data. Nothing is interpolated between frames.
 
@@ -66,6 +68,17 @@ def load():
     return rows
 
 
+def r2_log_income(pts):
+    xs = [math.log(x) for x, _ in pts]
+    ys = [y for _, y in pts]
+    n = len(xs)
+    mx, my = sum(xs) / n, sum(ys) / n
+    sxy = sum((x - mx) * (y - my) for x, y in zip(xs, ys))
+    sxx = sum((x - mx) ** 2 for x in xs)
+    syy = sum((y - my) ** 2 for y in ys)
+    return sxy * sxy / (sxx * syy)
+
+
 def frame(rows, col, title, definition):
     pts = [(float(r["med_hh_income"]), float(r[col])) for r in rows
            if r["med_hh_income"] and r[col]]
@@ -80,6 +93,9 @@ def frame(rows, col, title, definition):
              fontsize=14.5, color=MUTED)
     ax = fig.add_axes([0.085, 0.16, 0.875, 0.65], facecolor=BG)
     ax.scatter(xs, ys, s=9, color=DOT, alpha=0.35, linewidths=0)
+    r2 = r2_log_income(pts)
+    ax.text(0.985, 0.955, f"R² = {r2:.2f}", transform=ax.transAxes, ha="right",
+            va="top", fontsize=20, fontweight="bold", color=INK)
     ax.set_xlim(0, 255000)
     ax.set_ylim(0, ymax)
     ax.xaxis.set_major_formatter(FuncFormatter(
@@ -95,17 +111,20 @@ def frame(rows, col, title, definition):
     for s in ("left", "bottom"):
         ax.spines[s].set_color("#c9c8c2")
     ax.tick_params(labelsize=12.5, length=0)
-    fig.text(0.04, 0.035,
+    fig.text(0.04, 0.058,
+             "R²: share of the tract-to-tract spread that income accounts for, "
+             "from a fit on the log of income.", fontsize=11.5, color=MUTED)
+    fig.text(0.04, 0.025,
              f"{len(pts):,} tracts. Income: ACS 2020-2024; \\$250k or more shown at \\$250k. "
              "Health: CDC PLACES 2025, model-based estimates.",
              fontsize=11.5, color=MUTED)
-    fig.text(0.96, 0.035, "Data 4 The People", fontsize=12.5, fontweight="bold",
+    fig.text(0.96, 0.025, "Data 4 The People", fontsize=12.5, fontweight="bold",
              ha="right")
     buf = io.BytesIO()
     fig.savefig(buf, format="png", dpi=DPI, facecolor=BG)
     plt.close(fig)
     buf.seek(0)
-    return Image.open(buf).convert("RGB"), len(pts), top
+    return Image.open(buf).convert("RGB"), len(pts), top, r2
 
 
 def main(argv):
@@ -115,10 +134,10 @@ def main(argv):
     rows = load()
     frames = []
     for col, title, d in MEASURES:
-        im, n, top = frame(rows, col, title, d)
+        im, n, top, r2 = frame(rows, col, title, d)
         im.save(out / f"income-health-{col}.png")
         frames.append(im.convert("P", palette=Image.ADAPTIVE, colors=64))
-        print(f"  {col:16s} {n} dots, max {top}")
+        print(f"  {col:16s} {n} dots, max {top}, R2 {r2:.3f}")
     gif = out / "income-health-ohio.gif"
     frames[0].save(gif, save_all=True, append_images=frames[1:],
                    duration=HOLD_MS, loop=0, optimize=True, disposal=2)
