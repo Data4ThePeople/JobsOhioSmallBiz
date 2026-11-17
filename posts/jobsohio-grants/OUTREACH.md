@@ -121,6 +121,8 @@ Data 4 The People
 
 ### 4. Anna Staver, Cleveland.com
 
+**To:** `astaver@cleveland.com` (from Eric)
+
 **Subject** (41): `One Capitol Letter item: the grant record`
 
 ```
@@ -189,6 +191,8 @@ Data 4 The People
 ---
 
 ### 7. The Columbus Dispatch, statehouse desk
+
+**To:** `lbischoff@dispatch.com` (from Eric)
 
 **Subject** (46): `The JobsOhio grant record, free and searchable`
 
@@ -285,6 +289,8 @@ Data 4 The People
 
 ### 11. Good Jobs First
 
+**To:** `info@goodjobsfirst.org` (from Eric)
+
 **Subject** (46): `JobsOhio at payment level, and a Tracker offer`
 
 ```
@@ -355,6 +361,8 @@ Data 4 The People
 
 ### 14. Cincinnati Business Courier
 
+**To:** `cincinnati@bizjournals.com` (from Eric)
+
 **Subject** (45): `The back half of the awards you report weekly`
 
 ```
@@ -381,17 +389,17 @@ Data 4 The People
 |---|---|---|---|---|---|
 | 2 | Nick Evans, Ohio Capital Journal | nevans@ohiocapitaljournal.com (from Eric) | A grant-level record behind the oversight bill | 2026-11-17 | sent by Eric, 2026-11-17 |
 | 3 | Laura Hancock, Cleveland.com | lhancock@cleveland.com (from Eric) | You found one clawback. Here are twelve years | 2026-11-17 | sent by Eric, 2026-11-17 |
-| 4 | Anna Staver, Cleveland.com | needed | One Capitol Letter item: the grant record | 2026-11-17 | yes, 2026-11-17 |
+| 4 | Anna Staver, Cleveland.com | astaver@cleveland.com (from Eric) | One Capitol Letter item: the grant record | 2026-11-17 | yes, 2026-11-17 |
 | 5 | Ian Hicks, The Intelligencer | ihicks@theintelligencer.net | Your 2022 PTT story is the only one of its kind | 2026-11-17 | sent by Eric, 2026-11-17 |
 | 6 | Thomas Gnau, Dayton Daily News | tom.gnau@coxinc.com | Your Fuyao question, asked of 1,700 companies | 2026-11-17 | yes, 2026-11-17 |
-| 7 | Columbus Dispatch statehouse | needed | The JobsOhio grant record, free and searchable | 2026-11-17 | yes, 2026-11-17 |
+| 7 | Columbus Dispatch statehouse | lbischoff@dispatch.com (from Eric) | The JobsOhio grant record, free and searchable | 2026-11-17 | yes, 2026-11-17 |
 | 8 | Signal Cleveland | tips@signalcleveland.org | A free grant database for your reporters | 2026-11-17 | sent by Eric, 2026-11-17 |
 | 9 | Eye on Ohio | info@eyeonohio.com | Grant-level JobsOhio data for partner papers | 2026-11-17 | yes, 2026-11-17 |
 | 10 | Ben Stein, Policy Matters Ohio | bstein@policymattersohio.org | One program, at the payment level, free to use | 2026-11-17 | sent by Eric, 2026-11-17 |
-| 11 | Good Jobs First | needed | JobsOhio at payment level, and a Tracker offer | 2026-11-17 | yes, 2026-11-17 |
+| 11 | Good Jobs First | info@goodjobsfirst.org (from Eric) | JobsOhio at payment level, and a Tracker offer | 2026-11-17 | yes, 2026-11-17 |
 | 12 | WOSU newsroom | needed | The Columbus CoverMyMeds number still is not public | 2026-11-17 | dropped by Eric, draft deleted; Eric had already sent the post to a WOSU producer |
 | 13 | Karen Kasler, Statehouse News Bureau | kkasler@statehousenews.org | A free JobsOhio grant record for the bureau | 2026-11-17 | yes, 2026-11-17 |
-| 14 | Cincinnati Business Courier | needed | The back half of the awards you report weekly | 2026-11-17 | yes, 2026-11-17 |
+| 14 | Cincinnati Business Courier | cincinnati@bizjournals.com (from Eric) | The back half of the awards you report weekly | 2026-11-17 | yes, 2026-11-17 |
 
 **Unverified openers, Nov 17 2026.** A web search could not find the stories
 that drafts 7 (Dispatch, Nov 6), 11 (Good Jobs First, Jan 21) and 14 (Business
