@@ -54,7 +54,7 @@ were opened and read.
 
 ## 4b. Drafts
 
-**All thirteen are saved as Gmail drafts, none sent.** Seven have a To address:
+**All thirteen were saved as Gmail drafts.** Eric sent five himself on Nov 17 (Evans, Hancock, Hicks, Signal, Stein), checked against his Sent folder; see the log. Seven have a To address:
 five verified ones plus Nick Evans and Laura Hancock from Eric. The other six have an empty To line: add
 an address from Eric, or the desk address from the 4a table, before sending.
 
@@ -375,10 +375,10 @@ Data 4 The People
 
 | # | Recipient | Address | Subject | Drafted | In Gmail |
 |---|---|---|---|---|---|
-| 2 | Nick Evans, Ohio Capital Journal | nevans@ohiocapitaljournal.com (from Eric) | A grant-level record behind the oversight bill | 2026-11-17 | yes, 2026-11-17 |
-| 3 | Laura Hancock, Cleveland.com | lhancock@cleveland.com (from Eric) | You found one clawback. Here are twelve years | 2026-11-17 | yes, 2026-11-17 |
+| 2 | Nick Evans, Ohio Capital Journal | nevans@ohiocapitaljournal.com (from Eric) | A grant-level record behind the oversight bill | 2026-11-17 | sent by Eric, 2026-11-17 |
+| 3 | Laura Hancock, Cleveland.com | lhancock@cleveland.com (from Eric) | You found one clawback. Here are twelve years | 2026-11-17 | sent by Eric, 2026-11-17 |
 | 4 | Anna Staver, Cleveland.com | needed | One Capitol Letter item: the grant record | 2026-11-17 | yes, 2026-11-17 |
-| 5 | Ian Hicks, The Intelligencer | ihicks@theintelligencer.net | Your 2022 PTT story is the only one of its kind | 2026-11-17 | yes, 2026-11-17 |
+| 5 | Ian Hicks, The Intelligencer | ihicks@theintelligencer.net | Your 2022 PTT story is the only one of its kind | 2026-11-17 | sent by Eric, 2026-11-17 |
 | 6 | Thomas Gnau, Dayton Daily News | tom.gnau@coxinc.com | Your Fuyao question, asked of 1,700 companies | 2026-11-17 | yes, 2026-11-17 |
 | 7 | Columbus Dispatch statehouse | needed | The JobsOhio grant record, free and searchable | 2026-11-17 | yes, 2026-11-17 |
 | 8 | Signal Cleveland | tips@signalcleveland.org | A free grant database for your reporters | 2026-11-17 | sent by Eric, 2026-11-17 |
