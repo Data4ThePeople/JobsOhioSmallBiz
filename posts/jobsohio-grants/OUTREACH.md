@@ -175,7 +175,7 @@ Tom,
 
 In May you asked whether Fuyao lived up to the incentive deal it got. We have just published a tool that asks that question across every JobsOhio grant.
 
-It is 2,415 payments and $1,345,318,862 from 2014 to 2025, to 1,700 companies and organizations, each traced to the company that owned it at the time. 40 of them failed after being paid, each tied to a document where one exists. The Dayton region appears throughout.
+It is 2,415 payments and $1,345,318,862 from 2014 to 2025, to 1,700 companies and organizations, each traced to the company that owned it at the time. For 40 of them, we have documented and auditable evidence that they underperformed expectations after being paid. The Dayton region appears throughout.
 
 One honest limit we state on the page: we cannot tell you which grants succeeded, because JobsOhio does not routinely publish whether a company met its hiring targets.
 
@@ -215,6 +215,8 @@ Data 4 The People
 **To:** `tips@signalcleveland.org`
 **Subject** (40): `A free grant database for your reporters`
 
+**Sent by Eric 2026-11-17, 10:51am ET, before the "failed" wording change.** The text below is the draft as saved; Eric may have edited it before sending.
+
 ```
 Hello,
 
@@ -243,7 +245,7 @@ Hello,
 
 Eye on Ohio works by handing documented material to local partners. We have built something designed for exactly that and it is free to use or republish.
 
-Every grant JobsOhio reported on its Form 990 from 2014 to 2025: 2,415 payments, $1,345,318,862, 1,700 companies and organizations, each traced to its owner at the time of the grant and checked for what happened afterward. 40 companies failed after being paid, each tied to a document where one exists. We also publish the 76 candidates we checked and threw out, with the reason for each.
+Every grant JobsOhio reported on its Form 990 from 2014 to 2025: 2,415 payments, $1,345,318,862, 1,700 companies and organizations, each traced to its owner at the time of the grant and checked for what happened afterward. For 40 of those companies, we have documented and auditable evidence that they underperformed expectations after being paid. We also publish the 76 candidates we checked and threw out, with the reason for each.
 
 The underlying data downloads as plain CSV files.
 
@@ -260,6 +262,8 @@ Data 4 The People
 
 **To:** `bstein@policymattersohio.org`
 **Subject** (46): `One program, at the payment level, free to use`
+
+**Sent by Eric 2026-11-17, 10:55am ET, before the "failed" wording change.** The text below is the draft as saved; Eric edited it before sending.
 
 ```
 Ben,
@@ -377,9 +381,9 @@ Data 4 The People
 | 5 | Ian Hicks, The Intelligencer | ihicks@theintelligencer.net | Your 2022 PTT story is the only one of its kind | 2026-11-17 | yes, 2026-11-17 |
 | 6 | Thomas Gnau, Dayton Daily News | tom.gnau@coxinc.com | Your Fuyao question, asked of 1,700 companies | 2026-11-17 | yes, 2026-11-17 |
 | 7 | Columbus Dispatch statehouse | needed | The JobsOhio grant record, free and searchable | 2026-11-17 | yes, 2026-11-17 |
-| 8 | Signal Cleveland | tips@signalcleveland.org | A free grant database for your reporters | 2026-11-17 | yes, 2026-11-17 |
+| 8 | Signal Cleveland | tips@signalcleveland.org | A free grant database for your reporters | 2026-11-17 | sent by Eric, 2026-11-17 |
 | 9 | Eye on Ohio | info@eyeonohio.com | Grant-level JobsOhio data for partner papers | 2026-11-17 | yes, 2026-11-17 |
-| 10 | Ben Stein, Policy Matters Ohio | bstein@policymattersohio.org | One program, at the payment level, free to use | 2026-11-17 | yes, 2026-11-17 |
+| 10 | Ben Stein, Policy Matters Ohio | bstein@policymattersohio.org | One program, at the payment level, free to use | 2026-11-17 | sent by Eric, 2026-11-17 |
 | 11 | Good Jobs First | needed | JobsOhio at payment level, and a Tracker offer | 2026-11-17 | yes, 2026-11-17 |
 | 12 | WOSU newsroom | needed | The Columbus CoverMyMeds number still is not public | 2026-11-17 | yes, 2026-11-17 |
 | 13 | Statehouse News Bureau | needed | A free JobsOhio grant record for the bureau | 2026-11-17 | yes, 2026-11-17 |
