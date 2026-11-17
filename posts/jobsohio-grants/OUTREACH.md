@@ -31,7 +31,7 @@ were opened and read.
 | 10 | **Ben Stein** | Policy Matters Ohio, Communications Director (press contact) | Policy Matters' tax expenditure work, covered as "Ohio hands out $12 billion in annual tax breaks with little to show for many, study says," Sep 22, 2025 | They argue Ohio cannot say what its incentives buy. This is one program's record, with the gaps named rather than papered over | **Verified:** bstein@policymattersohio.org |
 | 11 | **Good Jobs First** | National subsidy accountability nonprofit | "Audit Reveals Subsidized Companies in Ohio Failing to Create Jobs," Jan 21, 2026 | Their Subsidy Tracker is a source in this project and we credit it. Our payment-level JobsOhio data is a candidate contribution to it | No address retrievable; goodjobsfirst.org blocks automated requests. Their contact page is at goodjobsfirst.org/contact |
 | 12 | **WOSU Public Media newsroom** | Columbus NPR member station | "Columbus-based CoverMyMeds announces layoffs for more than 800 employees," Mar 29, 2023. **Verified link** | Their CoverMyMeds reporting is the one we lean on, and the Columbus-specific job number still does not exist in public. Lead 20 in our story leads lays out where it would be | No individual address published. Newsroom contact at wosu.org/contact |
-| 13 | **Statehouse News Bureau** | Shared public radio statehouse bureau (Ideastream, WOSU, WVXU and others) | Continuing statehouse coverage carried by every public station in Ohio | One story here reaches every public radio market in the state at once, which suits a tool meant for local reporters | No address published on its about page. Contact via statehousenews.org |
+| 13 | **Statehouse News Bureau** | Shared public radio statehouse bureau (Ideastream, WOSU, WVXU and others) | Continuing statehouse coverage carried by every public station in Ohio | One story here reaches every public radio market in the state at once, which suits a tool meant for local reporters | **Verified:** Karen Kasler, Bureau Chief, kkasler@statehousenews.org, from the statenews.org profile |
 | 14 | **Cincinnati Business Courier** (The Business Journals) | Business weekly, Cincinnati region | "JobsOhio, REDI award more than $6M in grants tied to nearly 1,000 jobs in Cincinnati region," Nov 12, 2026 | They report new JobsOhio awards as they are announced. This is the back half: what happened to the awards announced the same way over twelve years | No address retrievable; bizjournals.com blocks automated requests. Newsroom contacts at bizjournals.com/cincinnati |
 
 ---
@@ -329,12 +329,14 @@ Data 4 The People
 
 ---
 
-### 13. Statehouse News Bureau
+### 13. Karen Kasler, Statehouse News Bureau
+
+**To:** `kkasler@statehousenews.org` (verified: printed on the statenews.org profile, Bureau Chief)
 
 **Subject** (43): `A free JobsOhio grant record for the bureau`
 
 ```
-Hello,
+Karen,
 
 The bureau's work reaches every public radio market in Ohio, which is why I am writing. We have published a free, searchable record of every grant JobsOhio reported on its IRS Form 990 from 2014 to 2025.
 
@@ -388,5 +390,10 @@ Data 4 The People
 | 10 | Ben Stein, Policy Matters Ohio | bstein@policymattersohio.org | One program, at the payment level, free to use | 2026-11-17 | sent by Eric, 2026-11-17 |
 | 11 | Good Jobs First | needed | JobsOhio at payment level, and a Tracker offer | 2026-11-17 | yes, 2026-11-17 |
 | 12 | WOSU newsroom | needed | The Columbus CoverMyMeds number still is not public | 2026-11-17 | dropped by Eric, draft deleted; Eric had already sent the post to a WOSU producer |
-| 13 | Statehouse News Bureau | needed | A free JobsOhio grant record for the bureau | 2026-11-17 | yes, 2026-11-17 |
+| 13 | Karen Kasler, Statehouse News Bureau | kkasler@statehousenews.org | A free JobsOhio grant record for the bureau | 2026-11-17 | yes, 2026-11-17 |
 | 14 | Cincinnati Business Courier | needed | The back half of the awards you report weekly | 2026-11-17 | yes, 2026-11-17 |
+
+**Unverified openers, Nov 17 2026.** A web search could not find the stories
+that drafts 7 (Dispatch, Nov 6), 11 (Good Jobs First, Jan 21) and 14 (Business
+Courier, Nov 12) open on. The January audit itself is widely covered. Eric to
+open each story before sending.
