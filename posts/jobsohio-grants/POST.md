@@ -85,7 +85,7 @@ Below the controls, the table is the part most people will want. You can search 
 
 **Every payment** breaks that back apart. It shows each line on the Form 990 on its own, with the fiscal year, the payee name exactly as JobsOhio filed it, and the city the check went to.
 
-The second view is where the detail lives, and the detail often changes what a number means. One parent total can cover two different subsidiaries, a headquarters and a distribution center two counties apart, or payments to three different cities over six years. A grant you think went to one place may turn out to be four grants that went to three. Search the parent's name in the payment view and all of it comes back on one screen.
+The second view is where the detail lives, and the detail often changes what a number means. Take McKesson Corporation. By company it is one row, $7,413,235. Search the same name in Every payment and it comes apart into seven payments to two different companies, spanning 2017 to 2023 and four addresses: five to CoverMyMeds, $6,613,235, sent to Columbus and to Twinsburg, and two to McKesson itself, $800,000, one of those to a Jeffersonville address in a different county that JobsOhio's own project reports tie to a different project altogether. Anyone working from the $7,413,235 alone would get all of that wrong.
 
 So: find it by company, then open it by payment before you write anything. If only part of a group's money belongs to an outcome on that row, the company view flags it with a "part" label. Hover that label for both figures and for which company actually failed.
 
