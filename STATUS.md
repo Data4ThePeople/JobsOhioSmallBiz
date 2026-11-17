@@ -6,8 +6,8 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: jobsohio-grants
-Step: 4a
-Since: 2026-11-16
+Step: complete
+Since: 2026-11-17
 
 ## Steps
 
@@ -22,6 +22,8 @@ Since: 2026-11-16
 | 2f | Pushed to Prismic (draft) | 2026-11-17 | Document `avxHXBIAACoALY7g`, 56 slices, Migration Release, not live. Section still to be set by hand. |
 | 2g | Mailchimp teaser | 2026-11-17 | `EMAIL.md`. Subject 32 chars, preview 68, hero JPG 152 KB, the 2x2 at the 500 setting as the chart. |
 | 3  | Social posts | 2026-11-17 | `SOCIAL.md`. X 275, Bluesky 294, LinkedIn 1,386 with the link in the first comment. Cutoff GIF, 11s, 141 KB. |
+| 4a | Outreach list | 2026-11-17 | `OUTREACH.md`, 14 names. Schladen dropped by Eric (already in touch). Confirmed when Eric moved to drafts. |
+| 4b | Outreach drafts in Gmail | 2026-11-17 | 13 drafts saved. Eric sent 5 (Evans, Hancock, Hicks, Signal, Stein); WOSU dropped; 7 left in Gmail, all addressed, none sent by Claude. |
 
 ## Stale
 
@@ -408,3 +410,22 @@ None.
   Where every number comes from is written at the top of `SOCIAL.md`,
   including that X and Bluesky round to $1.35 billion to fit the limit, a
   figure already on the hero and in `hero_alt`.
+
+- 2026-11-17 **Step 4a confirmed** (recorded at close of 4b; Eric confirmed
+  by moving to drafts after dropping Schladen).
+
+- 2026-11-17 **Step 4b confirmed, and the post is complete.** Thirteen drafts
+  were saved to Gmail after a relaunch exposed the connector. Eric sent five
+  himself (Evans, Hancock, Hicks, Signal, Stein), checked against his Sent
+  folder, with no duplicates. WOSU dropped because Eric had already sent the
+  post to a WOSU producer. Eric gave addresses for Evans, Hancock, Staver,
+  the Dispatch, Good Jobs First and the Business Courier; Gnau and Kasler
+  were found and read on their own pages.
+  **Wording change:** at Eric's direction, "40 companies failed" became "for
+  40 of those companies, we have documented and auditable evidence that they
+  underperformed expectations after being paid," because the email gives no
+  context for what failure means.
+  **Open for Eric before sending:** a web search could not find the stories
+  the Dispatch, Good Jobs First and Business Courier drafts open on.
+  **Lesson:** the first address search fetched only the outlets' own pages,
+  which block automated requests; a plain web search found more. Search first.
