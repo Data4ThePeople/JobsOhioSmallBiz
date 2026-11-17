@@ -53,9 +53,17 @@ def figures():
             cell[(s, h)] = (100 * sum(p["cash"] for p in g) / tc, 100 * len(g) / tn)
     return {
         "meta": d["meta"], "cell": cell,
-        "small_n": 100 * sum(1 for p in biz if size(p) == "small") / len(biz),
-        "large_cash": 100 * sum(p["cash"] for p in biz if size(p) == "large")
-                      / sum(p["cash"] for p in biz),
+        # Two dollar shares at the two cutoffs, not a count beside a share.
+        # Both cards then answer the same question, "where did the money go",
+        # and the only thing moving between them is the line for small, which
+        # is the honest way to show how much that line decides. The matrix
+        # below stays at 500, the page default. (Eric Pachman, Nov 17, 2026.)
+        "cash_u500": 100 * sum(p["cash"] for p in biz
+                               if (p.get("bucket") or "") in SMALL_BUCKETS)
+                     / sum(p["cash"] for p in biz),
+        "cash_u100": 100 * sum(p["cash"] for p in biz
+                               if (p.get("bucket") or "") == "<100")
+                     / sum(p["cash"] for p in biz),
     }
 
 
@@ -65,18 +73,18 @@ PAGE = """<!doctype html><html><head><meta charset="utf-8"><style>
   html,body{{width:{W}px;height:{H}px}}
   body{{background:#fcfcfb;color:#111;
     font:16px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-    padding:58px 72px;display:flex;flex-direction:column}}
+    padding:52px 72px;display:flex;flex-direction:column}}
   h1{{font-size:68px;line-height:1.06;letter-spacing:-.026em;font-weight:680}}
   .sub{{font-size:29px;color:#52514e;margin-top:18px;max-width:46ch;line-height:1.35}}
-  .cards{{display:grid;grid-template-columns:1fr 1.5fr;gap:28px;margin-top:46px;
+  .cards{{display:grid;grid-template-columns:1fr 1.5fr;gap:22px;margin-top:34px;
     flex:1;align-content:stretch}}
-  .col{{display:flex;flex-direction:column;gap:28px}}
-  .card{{border:1px solid #dcdbd6;border-radius:16px;padding:34px 38px;background:#fff;
+  .col{{display:flex;flex-direction:column;gap:22px}}
+  .card{{border:1px solid #dcdbd6;border-radius:16px;padding:28px 34px;background:#fff;
     display:flex;flex-direction:column;justify-content:center;flex:1}}
-  .lab{{font-size:25px;color:#52514e;line-height:1.3}}
-  .val{{font-size:142px;font-weight:680;letter-spacing:-.03em;line-height:1;margin-top:10px;
+  .lab{{font-size:23px;color:#52514e;line-height:1.3}}
+  .val{{font-size:124px;font-weight:680;letter-spacing:-.03em;line-height:1;margin-top:10px;
     font-variant-numeric:tabular-nums}}
-  .hint{{font-size:22px;color:#6b6a66;margin-top:14px;line-height:1.35}}
+  .hint{{font-size:20px;color:#6b6a66;margin-top:12px;line-height:1.35}}
   h2{{font-size:32px;font-weight:650;letter-spacing:-.012em}}
   .note{{font-size:21px;color:#6b6a66;margin-top:7px;line-height:1.35}}
   .two{{display:grid;grid-template-columns:auto 1fr 1fr;gap:16px;margin-top:26px}}
@@ -86,8 +94,8 @@ PAGE = """<!doctype html><html><head><meta charset="utf-8"><style>
   .cell .v{{font-size:62px;font-weight:660;letter-spacing:-.025em;line-height:1.05;
     font-variant-numeric:tabular-nums}}
   .cell .s{{font-size:22px;color:#6b6a66;margin-top:6px}}
-  .foot{{display:flex;justify-content:space-between;align-items:flex-end;margin-top:40px;
-    font-size:21px;color:#6b6a66}}
+  .foot{{display:flex;justify-content:space-between;align-items:flex-end;margin-top:28px;
+    font-size:20px;color:#6b6a66}}
   .foot b{{color:#111;font-weight:650}}
 </style></head><body>
   <h1>Where JobsOhio's grant money went</h1>
@@ -96,14 +104,14 @@ PAGE = """<!doctype html><html><head><meta charset="utf-8"><style>
   <div class="cards">
     <div class="col">
       <div class="card">
-        <div class="lab">Share of the businesses JobsOhio paid that are small</div>
-        <div class="val">{small_n:.0f}%</div>
-        <div class="hint">Under 500 employees at the parent company</div>
+        <div class="lab">Share of the dollars that went to businesses under 500 employees</div>
+        <div class="val">{cash_u500:.0f}%</div>
+        <div class="hint">Counting employees at the parent company, not the site</div>
       </div>
       <div class="card">
-        <div class="lab">Share of the dollars that went to large businesses</div>
-        <div class="val">{large_cash:.0f}%</div>
-        <div class="hint">Most of the companies are small. Most of the money is not.</div>
+        <div class="lab">Share that went to businesses under 100 employees</div>
+        <div class="val">{cash_u100:.1f}%</div>
+        <div class="hint">Where the line for "small" sits changes who counts, so the tool lets you move it</div>
       </div>
     </div>
     <div class="col">
@@ -140,7 +148,7 @@ def main(argv):
     html = PAGE.format(
         W=W, H=H, rows=f"{m['rows']:,}", cash=money(m["cash_total"]),
         parents=f"{m['parents']:,}", fy0=m["fy_min"], fy1=m["fy_max"],
-        small_n=f["small_n"], large_cash=f["large_cash"],
+        cash_u500=f["cash_u500"], cash_u100=f["cash_u100"],
         so_c=c[("small", "ohio")][0], so_n=c[("small", "ohio")][1],
         sx_c=c[("small", "other")][0], sx_n=c[("small", "other")][1],
         lo_c=c[("large", "ohio")][0], lo_n=c[("large", "ohio")][1],
