@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: jobsohio-grants
-Step: 2c
+Step: 2e
 Since: 2026-11-16
 
 ## Steps
@@ -16,8 +16,8 @@ Since: 2026-11-16
 | 1  | Exploration and analysis | 2026-11-16 | Three independent tie-outs plus a words tie-out. 40 failures, $95,209,323. |
 | 2a | Draft with brackets resolved | 2026-11-16 | `posts/jobsohio-grants/POST.md`. Eric's Purpose section, Claude's method, terminology, limits and FAQ. |
 | 2b | Eric's edit, Claude's look-over | 2026-11-17 | Two rounds. Subtitle, journalist warning, Purpose trimmed, Belmont stated once; then the repayment panel pulled, versioning added, both-views guidance written. Every figure tied to `dist/data.json`. |
-| 2c | Slice markup | | |
-| 2d | Hero 1680x1080 + alt text | | |
+| 2c | Slice markup | 2026-11-17 | 98 blocks, converts clean. Publication date 2026-11-17T07:30:00-05:00, embed cache-buster `?v=1.0`. |
+| 2d | Hero 1680x1080 + alt text | 2026-11-17 | `scripts/48_hero.py`, built from `dist/data.json` so it cannot drift from the tool. Alt text 471 characters. |
 | 2e | SEO | | |
 | 2f | Pushed to Prismic (draft) | | |
 | 2g | Mailchimp teaser | | |
@@ -293,3 +293,33 @@ None.
   worked example in the post's how-to-use section.
   Final tie-out: every figure stated in the post matches `dist/data.json` or
   `grants_raw.csv`. Both audits pass.
+
+- 2026-11-17 **Steps 2c and 2d confirmed.**
+  2c converted clean at 98 blocks: the journalist warning as
+  `highlited_page_blurb` defaultFullWidth, the drop cap on the first Purpose
+  paragraph rather than the blurb, the embed as `html_embed` fullWidth with
+  its 40px spacer, `divider_dots` once above "Where this comes from", and a
+  5px spacer under all eight `##` headings. Publication date set to
+  2026-11-17T07:30:00-05:00. The embed carries `?v=1.0` so a reader cannot
+  get a stale copy of a page that changed all week.
+  2d is `scripts/48_hero.py`, which lays out a selection of the tool's cards
+  at hero scale instead of screenshotting the page, because a screenshot is
+  unreadable at 1680x1080 and cropping one cuts the cards in half. Every
+  figure is read from `dist/data.json`, so the hero cannot drift from the
+  tool, and the script checks the output is exactly 1680x1080 before
+  accepting it.
+  **Three rounds of Eric's edits on it, and two of them were the same
+  mistake.** The first cut used the page's type sizes and the page's density,
+  so nothing read at thumbnail size, and it carried "40 companies failed
+  after being paid" and "63 lawsuits", using words the post has not defined
+  at the point someone meets the image. The matrix then read "Small" and
+  "Large" with nothing defining either, which is fine on the page where the
+  control sits above the chart and meaningless on a hero where it does not.
+  **A label that depends on a control is not portable**; anything lifted out
+  of the tool has to carry its own definition.
+  Eric also replaced the two left cards, which had been a count beside a
+  dollar share, with two dollar shares at the two cutoffs, 19% under 500 and
+  7.8% under 100, so the only thing moving between them is the line for
+  small. The matrix stays at 500, the page default.
+  Edge padding went up twice, to 84px by 112px, measured on the rendered
+  image rather than trusted from the CSS.
