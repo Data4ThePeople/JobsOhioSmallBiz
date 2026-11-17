@@ -20,7 +20,12 @@ tool. Run build.py first.
 Writes posts/<slug>/images/<slug>-hero-source.html, screenshots it with
 headless Chrome, and saves <slug>-hero-1680x1080.png beside it.
 
-Usage: 48_hero.py [slug]
+--matrix renders only the size-by-home-state card, at the 500-employee
+setting the page opens on, as posts/images/04-size-and-home-state.png. The
+email uses it. It is the same card and the same figures as the tool, drawn
+once at a size that survives an email client.
+
+Usage: 48_hero.py [slug] [--matrix]
 """
 import json
 import subprocess
@@ -139,11 +144,87 @@ PAGE = """<!doctype html><html><head><meta charset="utf-8"><style>
 </body></html>"""
 
 
+MATRIX_W, MATRIX_H = 1600, 900
+
+MATRIX_PAGE = """<!doctype html><html><head><meta charset="utf-8"><style>
+  *{{box-sizing:border-box;margin:0;padding:0}}
+  html,body{{width:{W}px;height:{H}px}}
+  body{{background:#fcfcfb;color:#111;
+    font:16px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    padding:56px 64px;display:flex;flex-direction:column}}
+  h2{{font-size:42px;font-weight:660;letter-spacing:-.018em}}
+  .note{{font-size:24px;color:#6b6a66;margin-top:10px;line-height:1.35}}
+  .two{{display:grid;grid-template-columns:auto 1fr 1fr;gap:20px;margin-top:38px;flex:1}}
+  .hd{{font-size:26px;color:#52514e;text-align:center;align-self:end;padding-bottom:6px}}
+  .rh{{font-size:28px;color:#52514e;align-self:center;padding-right:20px;
+    text-align:right;line-height:1.2}}
+  .rh span{{display:block;font-size:21px;color:#8a8781;margin-top:4px}}
+  .cell{{border:1px solid #dcdbd6;border-left-width:12px;border-radius:14px;
+    padding:28px 32px;background:#fff;display:flex;flex-direction:column;justify-content:center}}
+  .cell .v{{font-size:76px;font-weight:660;letter-spacing:-.028em;line-height:1;
+    font-variant-numeric:tabular-nums}}
+  .cell .s{{font-size:25px;color:#6b6a66;margin-top:10px}}
+  .foot{{display:flex;justify-content:space-between;align-items:flex-end;margin-top:34px;
+    font-size:21px;color:#6b6a66}}
+  .foot b{{color:#111;font-weight:650}}
+</style></head><body>
+  <h2>Size and home state together</h2>
+  <p class="note">Share of the dollars in each cell, with the share of companies underneath.
+     Business recipients only.</p>
+  <div class="two">
+    <div></div><div class="hd">Headquartered in Ohio</div><div class="hd">Headquartered elsewhere</div>
+    <div class="rh">Small<span>under 500</span></div>
+    <div class="cell" style="border-left-color:#2a6fdb"><div class="v">{so_c:.0f}%</div><div class="s">{so_n:.0f}% of companies</div></div>
+    <div class="cell" style="border-left-color:#2a6fdb"><div class="v">{sx_c:.1f}%</div><div class="s">{sx_n:.1f}% of companies</div></div>
+    <div class="rh">Large<span>500 or more</span></div>
+    <div class="cell" style="border-left-color:#d4661e"><div class="v">{lo_c:.0f}%</div><div class="s">{lo_n:.1f}% of companies</div></div>
+    <div class="cell" style="border-left-color:#d4661e"><div class="v">{lx_c:.0f}%</div><div class="s">{lx_n:.0f}% of companies</div></div>
+  </div>
+  <div class="foot">
+    <div>Source: JobsOhio Form 990, Schedule I, fiscal years {fy0} to {fy1}.</div>
+    <div><b>Data 4 The People</b></div>
+  </div>
+</body></html>"""
+
+
+def shoot(html, src, png, w, h):
+    src.parent.mkdir(parents=True, exist_ok=True)
+    src.write_text(html)
+    subprocess.run([CHROME, "--headless", "--disable-gpu", "--hide-scrollbars",
+                    f"--screenshot={png}", f"--window-size={w},{h}",
+                    "--default-background-color=FFFFFFFF", src.as_uri()],
+                   check=True, capture_output=True)
+    from PIL import Image
+    im = Image.open(png)
+    if im.size != (w, h):
+        raise SystemExit(f"{png.name} is {im.size}, expected ({w}, {h})")
+    return im
+
+
+def matrix():
+    f = figures()
+    c, m = f["cell"], f["meta"]
+    html = MATRIX_PAGE.format(
+        W=MATRIX_W, H=MATRIX_H, fy0=m["fy_min"], fy1=m["fy_max"],
+        so_c=c[("small", "ohio")][0], so_n=c[("small", "ohio")][1],
+        sx_c=c[("small", "other")][0], sx_n=c[("small", "other")][1],
+        lo_c=c[("large", "ohio")][0], lo_n=c[("large", "ohio")][1],
+        lx_c=c[("large", "other")][0], lx_n=c[("large", "other")][1])
+    out = ROOT / "posts" / "images"
+    png = out / "04-size-and-home-state.png"
+    im = shoot(html, out / "04-size-and-home-state-source.html", png,
+               MATRIX_W, MATRIX_H)
+    print(f"wrote {png.relative_to(ROOT)}  {im.size[0]}x{im.size[1]}  "
+          f"{png.stat().st_size/1024:.0f} KB")
+
+
 def money(v):
     return f"${v/1e9:.2f} billion" if v >= 1e9 else f"${v/1e6:.0f} million"
 
 
 def main(argv):
+    if "--matrix" in argv:
+        return matrix()
     slug = argv[0] if argv and not argv[0].startswith("-") else "jobsohio-grants"
     f = figures()
     m, c = f["meta"], f["cell"]

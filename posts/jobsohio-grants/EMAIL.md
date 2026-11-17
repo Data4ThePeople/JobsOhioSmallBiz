@@ -30,11 +30,11 @@ Alt text:
 Summary cards from the JobsOhio grants tool, covering 2,415 grants and $1.35 billion to 1,700 companies and organizations, fiscal years 2014 to 2025. Two headline figures: 19% of the dollars went to businesses under 500 employees at the parent company, and 7.8% went to businesses under 100. A grid crossing size with home state, where small means under 500 employees, shows the share of dollars: small Ohio 16%, small elsewhere 2.9%, large Ohio 20%, large elsewhere 61%.
 ```
 
-*The six percentages in that alt text, 19%, 7.8%, 16%, 2.9%, 20% and 61%,
-are not in the post's text. They are on the hero image itself, and this is
-the post's own `hero_alt`, so a reader clicking through meets the same
-picture with the same description. No number in the email's own copy is
-absent from the post.*
+*The percentages in that alt text are not in the post's text. They are on the
+hero image itself, and this is the post's own `hero_alt`, so a reader
+clicking through meets the same picture with the same description. Every
+number in the email's own prose is in the post: 2,415, $1,345,318,862,
+1,700 and 40.*
 
 ---
 
@@ -49,39 +49,40 @@ Every JobsOhio grant, in one searchable tool
 ## 3. Body, part one
 
 ```
-JobsOhio is funded by the profits from Ohio's liquor franchise. It is a private nonprofit, so it is not subject to the state's public records law. What it does publish is an IRS Form 990, and buried in that form is a list of every grant it paid over $5,000.
+This started with one question. If Ohio has a fixed amount of cash to invest in economic development, what strategy gives Ohioans the greatest return? We cannot answer that. But we could at least work out which strategy JobsOhio has been running.
 
-We pulled twelve years of those lists: 2,415 payments, $1,345,318,862, to 1,700 companies and organizations. Then we spent months on the part nobody had done. We traced each recipient to the company that actually owned it at the time, sized that owner, found where it was headquartered, and checked what happened to it afterward.
+So we set out to do one narrow thing: take every grant JobsOhio has given out and sort it into a 2x2 matrix. Was the grant provided to a small or a large business? Was it provided to an Ohio-based company, or to a company headquartered outside of Ohio? With that, we could reverse engineer the strategy. Has JobsOhio chosen to invest in small local employers within communities, or to attract large corporations to relocate to Ohio?
+
+This was not an easy project, because there is no clean database we could join that had business size or headquarters location. So we studied each grant line by line, twelve years of them, 2,415 payments and $1,345,318,862 to 1,700 companies and organizations, and came to our best judgement on where each recipient belonged.
 ```
 
 ---
 
 ## 4. Chart
 
-`posts/images/01-recipients-vs-dollars.png` (1680x720)
+`posts/images/04-size-and-home-state.png` (1600x900)
 
 Alt text:
 
 ```
-A bar chart titled "JobsOhio business grants: recipients vs. dollars, by company size." The top bar splits recipients: 65% small, meaning under 500 employees at the parent company, and 35% large. The bottom bar splits the dollars the other way: 19% to small companies and 81% to large ones. Source: JobsOhio Form 990 Schedule I, fiscal years 2014 to 2025.
+A grid crossing business size with home state, showing the share of JobsOhio's grant dollars in each cell. Small companies, under 500 employees at the parent, headquartered in Ohio took 16% of the dollars and are 57% of the companies. Small companies based elsewhere took 2.9% and are 7.2%. Large Ohio companies took 20% and are 8.4%. Large companies based elsewhere took 61% of the dollars and are 27% of the companies. Source: JobsOhio Form 990 Schedule I, fiscal years 2014 to 2025.
 ```
 
-*This chart is in the email only. Eric's call, November 17, 2026: the four
-figures on it, 65%, 35%, 19% and 81%, do not appear in the post's text, and
-that is accepted. The chart is built from the same `dist/data.json` as the
-tool, so a reader who opens the tool at its default settings sees the same
-split, but they will not find these four numbers written out in the post.*
+*The 2x2 itself, at the 500-employee setting the tool opens on, built from the
+same data file as the tool by `scripts/48_hero.py --matrix`. The four dollar
+shares are also on the post's hero image. The four company shares are in the
+email only.*
 
 ## 5. Body, part two
 
 ```
-The raw list is not the hard part. Anyone can read the same returns on ProPublica. What the form gives you is a payee name and a dollar figure, one year at a time. What it does not give you is who owns that payee, how big they are, where they are based, or what happened after the check cleared.
+What we didn't realize was that as we were going through each public grant line by line, we could start to collect additional information, that is arguably even more valuable for anyone trying to understand how JobsOhio has performed.
 
-That work turned up things the form alone cannot show you. Take McKesson Corporation. By company it is one row, $7,413,235. Open it by payment and it comes apart into seven payments to two different companies, across four addresses, one of them a project in a different county entirely. Anyone working from the $7,413,235 alone would get all of that wrong.
+We were able to find grants given to companies that, after receiving the grant, announced a mass layoff at the funded site, entered bankruptcy or receivership, closed the funded site, or ended the service the grant paid for. We call each of these a "failed" grant, because it did not perform as expected. There are 40 of them.
 
-It also turned up 40 companies that failed after being paid: a mass layoff at the funded site, a bankruptcy, a closed site, or a service that stopped running. Each one is tied to a document where a document exists. And it turned up the thing we did not expect. Across twelve years, $26,040,088 has come back to JobsOhio. That is 1.9% of what went out.
+Note that we cannot tell you which grants succeeded. JobsOhio does not regularly announce when companies have met their hiring targets, so there is no success column to put beside this one. But whether a grant failed is in the public domain, through WARN notices, bankruptcy filings and court dockets. Wherever we could find one of those documents, it is linked, so you can click straight through to it.
 
-We are not writing the stories in here. We built the tool so Ohioans and local reporters can.
+That is the point of this. We are not writing the stories in here. We built the tool so Ohioans and local reporters can.
 ```
 
 ---

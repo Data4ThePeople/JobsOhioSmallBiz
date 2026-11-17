@@ -1,0 +1,39 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1600px;height:900px}
+  body{background:#fcfcfb;color:#111;
+    font:16px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    padding:56px 64px;display:flex;flex-direction:column}
+  h2{font-size:42px;font-weight:660;letter-spacing:-.018em}
+  .note{font-size:24px;color:#6b6a66;margin-top:10px;line-height:1.35}
+  .two{display:grid;grid-template-columns:auto 1fr 1fr;gap:20px;margin-top:38px;flex:1}
+  .hd{font-size:26px;color:#52514e;text-align:center;align-self:end;padding-bottom:6px}
+  .rh{font-size:28px;color:#52514e;align-self:center;padding-right:20px;
+    text-align:right;line-height:1.2}
+  .rh span{display:block;font-size:21px;color:#8a8781;margin-top:4px}
+  .cell{border:1px solid #dcdbd6;border-left-width:12px;border-radius:14px;
+    padding:28px 32px;background:#fff;display:flex;flex-direction:column;justify-content:center}
+  .cell .v{font-size:76px;font-weight:660;letter-spacing:-.028em;line-height:1;
+    font-variant-numeric:tabular-nums}
+  .cell .s{font-size:25px;color:#6b6a66;margin-top:10px}
+  .foot{display:flex;justify-content:space-between;align-items:flex-end;margin-top:34px;
+    font-size:21px;color:#6b6a66}
+  .foot b{color:#111;font-weight:650}
+</style></head><body>
+  <h2>Size and home state together</h2>
+  <p class="note">Share of the dollars in each cell, with the share of companies underneath.
+     Business recipients only.</p>
+  <div class="two">
+    <div></div><div class="hd">Headquartered in Ohio</div><div class="hd">Headquartered elsewhere</div>
+    <div class="rh">Small<span>under 500</span></div>
+    <div class="cell" style="border-left-color:#2a6fdb"><div class="v">16%</div><div class="s">57% of companies</div></div>
+    <div class="cell" style="border-left-color:#2a6fdb"><div class="v">2.9%</div><div class="s">7.2% of companies</div></div>
+    <div class="rh">Large<span>500 or more</span></div>
+    <div class="cell" style="border-left-color:#d4661e"><div class="v">20%</div><div class="s">8.4% of companies</div></div>
+    <div class="cell" style="border-left-color:#d4661e"><div class="v">61%</div><div class="s">27% of companies</div></div>
+  </div>
+  <div class="foot">
+    <div>Source: JobsOhio Form 990, Schedule I, fiscal years 2014 to 2025.</div>
+    <div><b>Data 4 The People</b></div>
+  </div>
+</body></html>
