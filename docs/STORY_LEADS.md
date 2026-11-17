@@ -1576,6 +1576,86 @@ not say what happened to the rest.
 
 ---
 
+## 20. CoverMyMeds: $5.5 million against 1,032 promised jobs, then 815 cut
+
+**Why this is a lead and not a finding.** The tool shows McKesson Corporation
+at $7,413,235 with a failure attached. Only $6,613,235 of that is CoverMyMeds,
+and the rest is a different project in a different county. The Columbus job
+number, the one that would make this a story, does not exist in public.
+
+**The payee split, straight off Schedule I.**
+
+| FY | Payee, as filed | Paid | Where the cheque went |
+|---|---|---:|---|
+| 2017 | CoverMyMeds LLC | $150,000 | Columbus |
+| 2019 | COVERMYMEDS LLC | $155,255 | Twinsburg |
+| 2020 | COVERMYMEDS LLC | $460,742 | Twinsburg |
+| 2021 | COVERMYMEDS | $313,685 | Twinsburg |
+| 2022 | COVERMYMEDS LLC | $5,533,553 | Columbus |
+| | **CoverMyMeds total** | **$6,613,235** | |
+| 2021 | MCKESSON CORPORATION | $738,462 | Jeffersonville |
+| 2023 | MCKESSON CORPORATION | $61,538 | Houston, TX |
+| | **McKesson total** | **$800,000** | |
+| | **Group total** | **$7,413,235** | |
+
+**The $800,000 is a different project and should not be read against the
+layoffs.** JobsOhio's own project record for February 2020 puts McKesson
+Corporation in **Fayette County**, Western region, on an Economic Development
+Grant of $500,000 and a Workforce Grant of $300,000, which is exactly the
+$800,000, against 42 jobs created and 129 retained on a $109,600,000
+investment. That is the Jeffersonville distribution centre, about 50 miles from
+Franklinton.
+
+**What was promised for the Columbus money.** Two commitment records:
+
+- **January 2015**, Franklin County, Workforce Grant **$150,000**: 116 jobs
+  created, 57 retained, $1,120,000 investment. The FY2017 payment matches.
+- **January 2019**, Franklin County, Economic Development Grant **$1,000,000**
+  plus Workforce Grant **$4,500,000**, so **$5,500,000**: **1,032 jobs
+  created**, 592 retained, $75,300,000 payroll, $8,000,000 investment. The
+  FY2022 payment of $5,533,553 matches.
+
+So JobsOhio paid out the $5.5 million in the fiscal year ending June 2022, and
+the company announced 815 job cuts on **March 29, 2023**, inside the next
+fiscal year.
+
+**Two things in that table nobody has explained.**
+
+1. **$929,682 went to a Twinsburg address** across FY2019, FY2020 and FY2021.
+   Twinsburg is Summit County, where CoverMyMeds was founded, and it is not
+   Franklin County. Neither commitment record covers it. What programme paid
+   it and for which site is an open question for JobsOhio.
+2. A **third** McKesson project exists in the commitment reports and has no
+   Schedule I payment at all: **May 2023, McKesson Medical-Surgical Inc.,
+   Pickaway County**, Workforce Grant $100,000, 35 jobs created, 307 retained,
+   $115,350,000 investment. Either it has not been drawn or it has not reached
+   a return yet.
+
+**The Columbus job number is not public, and we checked.** The 815 is
+company-wide. WOSU's March 29, 2023 report gives the total and nothing by
+location. Ohio holds no WARN notice for CoverMyMeds or McKesson in any
+published year, because Ohio's threshold is 50 or more at a single site and no
+filing was made. When the company cut again in a restructuring announced
+**March 30, 2026**, it declined to give any number at all, saying only that
+"the employment of some individuals within our CoverMyMeds will be impacted."
+What is documented in Ohio is the sublease of part of the Franklinton
+headquarters.
+
+**Where the Columbus number would be, if anywhere.** The city's own incentive
+agreements require annual employment reporting, and the Columbus **Tax
+Incentive Review Council** publishes what each company reported against what it
+promised. The Dispatch reported on March 31, 2023 that CoverMyMeds' city tax
+breaks were challenged after the layoffs, which suggests those filings exist and
+somebody has already looked at them. That is the next call to make, and it is a
+records request rather than more searching.
+
+**Do not write** that JobsOhio paid $7.4 million to a company that cut 815
+Columbus jobs. Three separate things are wrong with that sentence: $800,000 of
+it was a different county, $929,682 of it was a different city, and the 815 is
+not a Columbus figure.
+
+---
+
 ## 19. $1.5 million to revive a building for a tenant that collapsed in a $70 million fraud
 
 **This is in the tool as Unresolved rather than as a failure, and the reason
