@@ -5,11 +5,27 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 
 ## Current
 
-Post: jobsohio-grants
-Step: complete
+Post: ohio-income-health (working slug)
+Step: 1
 Since: 2026-11-17
 
 ## Steps
+
+| Step | What | Confirmed | Notes |
+|---|---|---|---|
+| 1  | Exploration and analysis | | |
+| 2a | Draft with brackets resolved | | |
+| 2b | Eric's edit, Claude's look-over | | |
+| 2c | Slice markup | | |
+| 2d | Hero 1680x1080 + alt text | | |
+| 2e | SEO | | |
+| 2f | Pushed to Prismic (draft) | | |
+| 2g | Mailchimp teaser | | |
+| 3  | Social posts | | |
+| 4a | Outreach list | | |
+| 4b | Outreach drafts in Gmail | | |
+
+## Completed: jobsohio-grants (published 2026-11-17)
 
 | Step | What | Confirmed | Notes |
 |---|---|---|---|
@@ -429,3 +445,11 @@ None.
   the Dispatch, Good Jobs First and Business Courier drafts open on.
   **Lesson:** the first address search fetched only the outlets' own pages,
   which block automated requests; a plain web search found more. Search first.
+
+- 2026-11-17 **Step 1 opened for the next post** (publishing 2026-11-18).
+  Two GIFs. One: Ohio tracts only, median household income against seven
+  PLACES measures (diabetes, obesity, smoking, no leisure-time physical
+  activity, short sleep, food insecurity, loneliness), cycling one measure
+  per frame, a sneak peek of TractEconHealth. No health index, so there is
+  nothing to explain. Two: the existing Ohio map (income by tract, JobsOhio
+  money by county) cycling between total dollars and dollars per person.
