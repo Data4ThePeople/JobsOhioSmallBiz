@@ -67,18 +67,6 @@
   .jo .wc{font-size:13px;color:var(--ink2);margin:10px 0 0}
   /* the recovery panel: three numbers that have to be read together, because
      each one alone gives the wrong impression */
-  .jo .back{display:grid;grid-template-columns:1fr;gap:10px;margin:10px 0 0}
-  @container (min-width: 760px){ .jo .back{grid-template-columns:repeat(3,1fr)} }
-  .jo .back .b{border:1px solid var(--border);border-radius:10px;padding:11px 13px;border-left-width:5px}
-  .jo .back .b .v{font-size:25px;font-weight:650;letter-spacing:-.01em;font-variant-numeric:tabular-nums;line-height:1.15}
-  .jo .back .b .k{font-size:12.5px;color:var(--ink2);margin-top:2px}
-  .jo .back .b .s{font-size:12px;color:var(--muted);margin-top:3px;line-height:1.45}
-  /* a source link inside a tile, styled like the ones in the table rather
-     than left on the browser default, which is a blue that belongs to no
-     part of this palette */
-  .jo .back .b .s a{color:var(--ink2);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:2px}
-  .jo .back .b .s a:hover{color:var(--focus);text-decoration-style:solid}
-  .jo .back .b .s a::after{content:" \2197";font-size:10px;opacity:.65;text-decoration:none;display:inline-block}
   /* the outcome tiles: each is a filter, so it has to look pressable */
   .jo .outs{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:10px 0 0}
   /* six tiles, so three to a row rather than five and an orphan. The four
@@ -192,7 +180,6 @@
     <div class="card chart" id="c-two"></div>
     <div class="card chart" id="c-fy"></div>
   </div>
-  <div class="card chart" id="c-back"></div>
   <div class="card chart" id="c-what"></div>
   <div class="card tablecard">
     <div class="tablectl">
@@ -824,58 +811,6 @@ function seg(id, key, after){
     b.addEventListener("click", function(){ state[key] = b.getAttribute("data-v"); Array.prototype.forEach.call(box.children, function(c){ c.setAttribute("aria-pressed", String(c === b)); }); after(); });
   });
 }
-/* "Does Ohio get the money back?" is the question readers arrive with, and the
-   answer is three numbers that mislead on their own. The clause is nearly
-   universal, the suits are rare, and the money that comes back is about 2%. */
-function renderBack(){
-  var host = document.getElementById("c-back");
-  if (!host) return;
-  host.replaceChildren();
-  var R = D.recourse || {}, L = D.lawsuits || {}, m = D.meta;
-  var clauseCash = 0, allCash = 0;
-  Object.keys(R).forEach(function(k){
-    allCash += R[k].cash;
-    if (k === "agreement seen" || k === "standard form" || k === "published clawback") clauseCash += R[k].cash;
-  });
-  var back = Math.abs(m.reversal_dollars), out = m.cash_total - m.reversal_dollars;
-  txt("h2","","Does Ohio get the money back?",host);
-  txt("p","note","Three numbers that have to be read together. A repayment clause in a contract is not the same as money returned.",host);
-  var g = el("div",{class:"back"},host);
-  function cell(v, k, sub, color, link){
-    var b = el("div",{class:"b"},g); b.style.borderLeftColor = color;
-    txt("div","v",v,b); txt("div","k",k,b);
-    var s = txt("div","s",sub,b);
-    /* one cell carries a source a reader should be able to open, because the
-       reason for the largest reversal is the one thing about it that is not
-       on the tax return */
-    if (link){
-      s.appendChild(document.createTextNode(" "));
-      var a = el("a",{href:link[1], target:"_blank", rel:"noopener"},s);
-      a.textContent = link[0];
-    }
-  }
-  cell(pct1(clauseCash/allCash) + " of dollars", "went to a recipient whose agreement lets JobsOhio demand repayment",
-       "Ten of twelve programs publish no repayment language. The clause is in the signed agreement instead, and 56 of those were obtained from court files.", "var(--small)");
-  /* Say which unit each count is in. This tile counts PARENT companies, out of
-     the parent companies in the table, while the sentence under the outcome
-     tiles counts PAYEES as named on the Form 990. Both are right and they are
-     different numbers, and printing them a few lines apart without saying so
-     invites a reader to conclude we cannot count. The suit totals need the
-     same care: of the suits filed, not all name a company that appears on the
-     grant schedule at all. */
-  cell(L.parents_sued + " of " + m.parents.toLocaleString(), "parent companies have ever been sued by JobsOhio to get money back",
-       L.suits_filed + " suits in the Franklin County Court of Common Pleas since 2018, seeking " + money(L.sought_total) + " in total. "
-       + L.suits_not_on_schedule_i + " of them name a company that never appears on the grant schedule at all, "
-       + "so whatever those are recovering is not in this data. About half of all "
-       + L.suits_filed + " ended in dismissal with no terms on the record, so what was recovered is not public.", "var(--unk)");
-  cell(pct1(back/out), "of what JobsOhio paid out has come back",
-       money(back) + " of " + money(out) + " across " + (m.fy_max - m.fy_min + 1) + " years, recorded as negative rows on the same tax returns, which do not say whether each one is a performance clawback or an accounting correction. "
-       + "One reversal, PTTGC America\u2019s $20 million in FY2021, is more than three quarters of it, and that one is on the record: the company repaid it after failing to make an investment decision on a Belmont County petrochemical plant, which was never built.",
-       "var(--large)",
-       ["The Intelligencer, March 30, 2022",
-        "https://www.theintelligencer.net/news/top-headlines/2022/03/ptt-global-pays-jobsohio-20m-for-failing-to-move-on-belmont-county-cracker-plant/"]);
-  txt("p","wc","JobsOhio decides whether a company complied, whether to demand repayment, how much, and whether to waive it. Its standard agreement says so: \u201cNotwithstanding the terms of this Agreement, Grantor has the discretion to determine compliance.\u201d Where a case was dismissed, no filing states what, if anything, was paid.",host);
-}
 function pct1(x){ return (100*x).toFixed(1) + "%"; }
 
 /* What happened to the money, as five counts a reader can click.
@@ -1058,7 +993,7 @@ function renderSbaNote(){
   }[state.cutoff] || "";
   el2.textContent = txt;
 }
-function renderAll(){ renderSbaNote(); renderWhat(); renderTiles(); renderSize(); renderHome(); renderTwo(); renderFY(); renderBack(); state.limit = 100; renderTable(); }
+function renderAll(){ renderSbaNote(); renderWhat(); renderTiles(); renderSize(); renderHome(); renderTwo(); renderFY(); state.limit = 100; renderTable(); }
 seg("denom","denom",renderAll); seg("cutoff","cutoff",renderAll);
 seg("tview","tview",function(){ state.sortKey = state.tview === "parents" ? "cash" : "fy"; state.sortDir = -1; state.limit = 100; renderTable(); });
 document.getElementById("q").addEventListener("input", function(e){ state.q = e.target.value; state.limit = 100; renderTable(); });

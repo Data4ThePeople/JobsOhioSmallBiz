@@ -178,6 +178,19 @@ July 1, 2023 to June 30, 2024. Grant dates within the year are not given.
 **Uncertainty.** None stated by the filer. The return is signed under penalty
 of perjury and prepared by an outside firm.
 
+**The "Does Ohio get the money back?" panel was removed from the tool**
+(November 17, 2026). It led on one figure: 71% of dollars went to a recipient
+whose agreement lets JobsOhio demand repayment, which is `agreement seen` plus
+`standard form` plus `published clawback`, $956,922,204 of $1,346,076,114.
+$872,942,441 of that, 65% of all dollars, is `standard form`: the programme's
+agreements were obtained and are identical, so the clause is inferred for that
+company rather than read. A headline percentage carries a firmness that
+inference does not, and a three-cell panel has no room to say so. The figure
+now lives in the post, next to the paragraph that explains what is under it.
+The per-company column stays, with its grade and its hover, because there the
+label travels with its own evidence. The panel's other two cells said nothing
+the outcome tiles do not already say.
+
 **Court links take two clicks, and it is the clerk's site doing it.** Every
 case number in the tool links to the Franklin County Clerk of Courts with the
 year, type and sequence in the query string. The clerk gates every deep link

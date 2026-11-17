@@ -124,6 +124,10 @@ That gives three different strengths of answer, and the label tells you which on
 
 The remaining labels mark payments where the question works differently: **"loan"** (repayable because it is debt, which is not the same as a performance clawback), **"services, not cash"** (JobsOhio paid vendors rather than the company), **"in the guidelines"** (no agreement seen, but the published program terms contain a repayment trigger), and **"program unknown"** (the payment cannot be tied to a program in JobsOhio's own project reports, so there is nothing to read either way).
 
+Put the first three together and 71% of all the dollars went to a recipient whose agreement would let JobsOhio demand the money back. **Read that number with the paragraph above in mind.** Most of it is the inferred group. We read the form for those programs; we did not read those companies' copies of it. The part we can show a signed contract for is about $8 million, which is less than 1% of the money.
+
+The tool used to carry that 71% as a headline figure. We took it out, because a percentage that size implies a firmness the evidence underneath it does not have, and a panel has no room to say so. The number is here instead, with the caveat attached to it.
+
 One more thing about all of them. **A clause is not a recovery.** The same agreement gives JobsOhio the discretion to decide whether a company complied, whether to demand repayment, how much, and whether to waive it. Across twelve years, $26,040,088 has come back, which is 1.9% of what went out.
 
 ### Sued by JobsOhio
