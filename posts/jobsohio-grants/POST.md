@@ -79,6 +79,16 @@ Two controls sit at the top and change every number on the page.
 
 Below the controls, the table is the part most people will want. You can search a company, a city or a parent, switch between one row per company and one row per payment, and sort any column. Clicking an outcome anywhere on the page filters the table to those companies and explains in a sentence what you are now looking at.
 
+**Use both table views, not one.** This is the single most useful habit if you are chasing a specific grant, and it is easy to miss.
+
+**By company** is the overview. It rolls every payment up to the parent group that owned the recipient at the time. That is the right unit for asking who got the money, and it is what the charts above count.
+
+**Every payment** breaks that back apart. It shows each line on the Form 990 on its own, with the fiscal year, the payee name exactly as JobsOhio filed it, and the city the check went to.
+
+The second view is where the detail lives, and the detail often changes what a number means. One parent total can cover two different subsidiaries, a headquarters and a distribution center two counties apart, or payments to three different cities over six years. A grant you think went to one place may turn out to be four grants that went to three. Search the parent's name in the payment view and all of it comes back on one screen.
+
+So: find it by company, then open it by payment before you write anything. If only part of a group's money belongs to an outcome on that row, the company view flags it with a "part" label. Hover that label for both figures and for which company actually failed.
+
 ## What the words mean
 
 ::: spacer 5px
