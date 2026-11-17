@@ -65,8 +65,11 @@
   .jo .two .cell .v{font-size:19px;font-weight:650;font-variant-numeric:tabular-nums}
   .jo .two .cell .s{font-size:12px;color:var(--muted)}
   .jo .wc{font-size:13px;color:var(--ink2);margin:10px 0 0}
-  /* the recovery panel: three numbers that have to be read together, because
-     each one alone gives the wrong impression */
+  /* a source link in a note under a panel, styled like the ones in the table
+     rather than left on the browser's default blue */
+  .jo .wc a.src{color:var(--ink2);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:2px}
+  .jo .wc a.src:hover{color:var(--focus);text-decoration-style:solid}
+  .jo .wc a.src::after{content:" \2197";font-size:10px;opacity:.65;text-decoration:none;display:inline-block}
   /* the outcome tiles: each is a filter, so it has to look pressable */
   .jo .outs{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:10px 0 0}
   /* six tiles, so three to a row rather than five and an orphan. The four
@@ -930,6 +933,26 @@ function renderWhat(){
     + "That is why the figure above is a median: the mean of the failed grants is "
     + money(S.failures.mean_paid) + ", and almost all of the gap between the two is "
     + "that one grant.";
+
+  /* Same trap as the failed dollars, and worse. The returned tile reads like
+     a rate of recovery when it is mostly a single repayment, and the tax
+     return does not say why any reversal happened. For this one a newspaper
+     does, so the reason and the source sit here rather than nowhere. */
+  var R = S.returned;
+  if (R.largest_name){
+    var p4 = el("p",{class:"wc"},host);
+    p4.appendChild(document.createTextNode("Read the returned dollars the same way. "
+      + R.largest_name + " repaying " + money(R.largest) + " in FY" + R.largest_fy
+      + " is " + Math.round(R.largest_share * 100) + "% of the " + money(R.dollars)
+      + " above, so that tile is close to one company rather than a pattern. "
+      + "The tax returns record the money coming back and never say why. For this one "
+      + "there is a published reason: the company repaid it after failing to make an "
+      + "investment decision on a Belmont County petrochemical plant, which was never "
+      + "built. "));
+    var ia = el("a",{class:"src", target:"_blank", rel:"noopener",
+      href:"https://www.theintelligencer.net/news/top-headlines/2022/03/ptt-global-pays-jobsohio-20m-for-failing-to-move-on-belmont-county-cracker-plant/"},p4);
+    ia.textContent = "The Intelligencer, March 30, 2022";
+  }
 
   /* Every confirmed failure was then re-checked on one question: was the
      operation that failed the operation the grant paid for? Three came back no,

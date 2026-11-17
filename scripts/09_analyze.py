@@ -731,9 +731,20 @@ def main():
                                          & {s["recipient_id"] for s in suit_rows
                                             if s.get("recipient_id")}),
                      "by_category": dict(cat_agg)},
+        # The returned figure is one company wearing a trend's clothes. The
+        # largest single reversal is most of it, so the page has to be able to
+        # name it and say how much of the total it is, computed here rather
+        # than typed into the template where it would go stale.
         "returned": {"dollars": abs(out["meta"]["reversal_dollars"]),
                      "share_of_paid": abs(out["meta"]["reversal_dollars"])
-                                      / (out["meta"]["cash_total"] - out["meta"]["reversal_dollars"])},
+                                      / (out["meta"]["cash_total"] - out["meta"]["reversal_dollars"]),
+                     **(lambda g: {"largest": abs(g["cash"]),
+                                   "largest_name": g["recipient_name"],
+                                   "largest_fy": g["fy"],
+                                   "largest_share": abs(g["cash"])
+                                                    / abs(out["meta"]["reversal_dollars"])}
+                        )(min((g for g in grants if g["cash"] < 0),
+                              key=lambda g: g["cash"]))},
     }
 
     # One row per company that actually failed, at the PAYEE level, because
