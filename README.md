@@ -117,4 +117,12 @@ The parent research and checks (`08_research.py`, `10_verify_sample.py`, `11_aut
 - A failure counts only if the operation that failed is the operation the grant paid for. Every confirmed failure was re-checked on that question, and three companies came out of the count: they closed an Ohio site, but not one the money went to. They are still shown on the page, under their own heading, with the site that took the money and the site that failed.
 - Where Ohio holds the employer's own layoff notice, that is the source rather than the news story. 15 of the 19 Ohio closures and mass layoffs have one. The four that do not each record why, and one of those four, Sauder Woodworking, is an unexplained gap rather than a threshold: its 150-job figure rests on press reporting alone.
 
+## Versions
+
+Every published version is listed in [`CHANGELOG.md`](CHANGELOG.md), newest
+first, with what moved and why. The version in the tool's footer is the top
+entry there: `scripts/build.py` reads it from that file and refuses to build
+if the entry is missing, so the tool cannot show a version number that nothing
+explains.
+
 Data 4 The People

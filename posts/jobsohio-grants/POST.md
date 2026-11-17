@@ -128,6 +128,14 @@ Put the first three together and 71% of all the dollars went to a recipient whos
 
 One more thing about all of them. **A clause is not a recovery.** The same agreement gives JobsOhio the discretion to decide whether a company complied, whether to demand repayment, how much, and whether to waive it. Across twelve years, $26,040,088 has come back, which is 1.9% of what went out.
 
+**So how do you use this?** If you are chasing one grant, here is what each answer is worth.
+
+- If the row says **"in the standard agreement,"** read it as: to the best of our ability, we believe JobsOhio had the power to try to claw this money back. We did not see this company's contract. It is our best read, not something to publish as fact.
+- If the row also shows a **lawsuit**, you can see documentation of JobsOhio actually trying. The case number links to the Franklin County docket, and in most of these the complaint attaches the signed agreement itself, which is the one place the real terms for that company appear.
+- For every other grant where the company did not deliver, **we have no public evidence that JobsOhio tried to get Ohio's money back.** Be careful with that sentence. It does not mean JobsOhio did nothing. A demand letter is not filed anywhere public, so one could have gone out years ago and nothing we can reach would show it. Check the returned filter too, because money has come back from companies that were never sued.
+
+None of these is a finding on its own. Each one is a place to start, and the grant needs to be researched on its own before anyone writes about it.
+
 ### Sued by JobsOhio
 
 JobsOhio's own lawsuit against that company in the Franklin County Court of Common Pleas, where JobsOhio is headquartered, to get grant money back. Hover a row for the case number, what was sought and how the case ended. Suits filed in another county, in federal court or in another state would not appear here, so the count is a floor.

@@ -234,9 +234,14 @@ def build_parents(grants, parents):
         a = agg.setdefault(k, {"parent": k, "class": "", "bucket": "", "hq": "", "conf": "", "founded_oh": "",
                                "recipients": set(), "rows": 0, "cash": 0, "years": set(), "by_fy": Counter(),
                                "sources": set(), "programs": set(), "resolved": False,
-                               "grades": set(), "auto_class": ""})
+                               "grades": set(), "auto_class": "", "returned": 0})
         a["recipients"].add(g["recipient_id"]); a["rows"] += 1; a["cash"] += g["cash"]
         a["years"].add(g["fy"]); a["by_fy"][g["fy"]] += g["cash"]
+        # Money this parent gave back, summed off the raw negative rows
+        # rather than read off by_fy, which nets within a fiscal year and so
+        # hides a reversal that lands in the same year as a payment.
+        if g["cash"] < 0:
+            a["returned"] += -g["cash"]
         cls = p["recipient_class"] or p["recipient_class_auto"]
         # every payee's grade is kept, not just the first one read: the worst
         # case sweeps on the weakest grade under the parent, so a parent with
@@ -335,6 +340,7 @@ def merge_duplicate_names(agg):
             b = agg[k]
             a["recipients"] |= b["recipients"]; a["rows"] += b["rows"]; a["cash"] += b["cash"]
             a["years"] |= b["years"]; a["by_fy"].update(b["by_fy"])
+            a["returned"] += b["returned"]
             a["sources"] |= b["sources"]; a["programs"] |= b["programs"]
             a["grades"] |= b["grades"]
             a["conflicts"] = a.get("conflicts", set()) | b.get("conflicts", set())
@@ -511,6 +517,11 @@ def main():
                          other_payees=sorted({parents[r]["name"] for r in a["recipients"]}
                                              - {fail[a["parent"]]["payee"]})[:6])
                     if a["parent"] in fail else None),
+        # The "recorded as returned" tile filters the table on this. It was
+        # never emitted, so clicking that tile showed an empty table. Only the
+        # 17 parents that gave money back carry the key; emitting a null on
+        # the other 1,683 rows put 29 KB of nothing in every page.
+        **({"returned": a["returned"]} if a["returned"] else {}),
         "sued": sued.get(a["parent"], None), "link": links.get(a["parent"], None),
     } for a in allp], key=lambda d: -d["cash"])
     # dollars by published conditions, and the verified post-grant failures,

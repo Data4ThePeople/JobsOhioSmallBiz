@@ -120,6 +120,8 @@
   .jo .more button{appearance:none;border:1px solid var(--border);background:var(--surface);color:var(--ink2);border-radius:8px;padding:6px 12px;font:600 13px system-ui,sans-serif;cursor:pointer}
   .jo .foot{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between;margin-top:12px;font-size:12px;color:var(--muted)}
   .jo .foot .src{max-width:95ch}
+  .jo .foot .src a.src{color:var(--ink2);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:2px}
+  .jo .foot .src a.src:hover{color:var(--focus);text-decoration-style:solid}
   .jo .brand{display:block;flex:none}
   .jo .brand img{height:22px;display:block}
   .jo .brand img.logo-on-dark{display:none}
@@ -578,6 +580,19 @@ function renderFiltBar(){
     + (isFail
         ? ". These rows are the companies named on the Form 990 that actually failed, not their parent groups, because that is the unit each finding was verified against. Where a parent also paid other companies that did not fail, only the failed one is shown and the amount is its own. "
         : ". These are parent groups, so the count can be lower than the tile where two payees share a parent. ")));
+  /* The returned tile and this filtered table do not show the same dollars,
+     and a reader who adds the rows up will find that out. A parent whose
+     payments net to zero or less is not a recipient in this table at all, so
+     its reversal is in the tile and its row is not. Say so rather than let it
+     read as an error. */
+  if (state.outcome === "returned"){
+    var rb = (D.parents_table || []).filter(function(p){ return p.returned; });
+    var rtot = rb.reduce(function(s,p){ return s + p.returned; }, 0);
+    fb.appendChild(document.createTextNode("These " + rb.length + " parent groups hold "
+      + money(rtot) + " of the " + money(D.summary.returned.dollars)
+      + " in the tile. The rest sits with payees whose payments net to zero or "
+      + "less across all years, which are not recipients in this table. "));
+  }
   clearBtn();
 }
 function renderTable(){
@@ -1029,7 +1044,19 @@ document.getElementById("src").textContent =
   + "“In this agreement” means this company’s own signed contract is in a court file. “In the standard agreement” means it was paid under a program whose agreements were obtained and are identical, so the clause is inferred rather than seen. “None found” means neither: nothing published and no agreement ever obtained, which is where the air service grants to airlines sit. Hover any label for the evidence. "
   + "A clause is not a recovery. JobsOhio decides whether to demand repayment, how much, and whether to waive it, and the agreement says so: \u201cGrantor has the discretion to determine compliance.\u201d It has filed " + D.summary.sued.suits + " suits, reaching " + D.lawsuits.parents_sued + " of these " + m.parents.toLocaleString() + " parent companies, seeking " + money(D.summary.sued.sought) + ", and " + money(D.summary.returned.dollars) + " has come back across " + (m.fy_max - m.fy_min + 1) + " years, " + pct1(D.summary.returned.share_of_paid) + " of what went out. Reimbursement is separate again: the company spends first and JobsOhio repays documented costs, so a company that never spends never collects. That limits what is at risk; it is not a way to recover money already paid. "
   + "\u201CSued by JobsOhio\u201D is JobsOhio's own lawsuit against that company in the Franklin County Court of Common Pleas, where it is headquartered, to get grant money back under the repayment clause its published guidelines do not mention. Hover for the case number, what was sought and how it ended. Suits filed in another county, in federal court or in another state would not appear, so this is a floor. " +
-  "Free to use. Built by Data 4 The People, " + m.built + ".";
+  "Free to use. Built by Data 4 The People, " + m.built + ". ";
+
+/* The version, so a figure quoted from this tool can be tied to the state it
+   was in when it was quoted. It is the newest entry in CHANGELOG.md, injected
+   by build.py, which refuses to build if that entry is missing. */
+(function(){
+  var f = document.getElementById("src");
+  if (!f) return;
+  f.appendChild(document.createTextNode("Version __VERSION__, __VERSION_DATE__. "));
+  var a = el("a",{class:"src", target:"_blank", rel:"noopener",
+    href:"https://github.com/Data4ThePeople/JobsOhioSmallBiz/blob/main/CHANGELOG.md"},f);
+  a.textContent = "What changed in each version";
+})();
 renderAll();
 })();
 </script>
