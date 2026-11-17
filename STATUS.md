@@ -481,3 +481,4 @@ None.
 - 2026-11-17: Title, subtitle and CDC-estimates sentence added on Eric's call.
 - 2026-11-17: Opening lead-in added (who yesterday, where today).
 - 2026-11-17: 2a confirmed. 2b opened: Eric edits POST.md, then Claude looks it over.
+- 2026-11-17: Eric's 2b edit in. Link bracket resolved; look-over sent with transition and closing options.
