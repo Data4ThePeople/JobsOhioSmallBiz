@@ -128,7 +128,7 @@ Anna,
 
 You wrote in April about lawmakers pushing for JobsOhio transparency. We have published something that might be one Capitol Letter item.
 
-It is a free, searchable record of every grant JobsOhio reported on its Form 990 from 2014 to 2025: 2,415 payments, $1,345,318,862, 1,700 companies and organizations, each traced to its owner at the time of the grant and checked for what happened afterward. 40 companies failed after being paid, each tied to a document where one exists.
+It is a free, searchable record of every grant JobsOhio reported on its Form 990 from 2014 to 2025: 2,415 payments, $1,345,318,862, 1,700 companies and organizations, each traced to its owner at the time of the grant and checked for what happened afterward. For 40 of those companies, we have documented and auditable evidence that they underperformed expectations after being paid.
 
 It is built for reporters to work from rather than to quote. The limits are stated on the page.
 
@@ -197,7 +197,7 @@ Hello,
 
 Your statehouse team has been covering what an incoming administration might do about JobsOhio oversight. Whatever comes of that, the existing record is worth having in one place, so we built it.
 
-Every grant JobsOhio reported on its Form 990 from 2014 to 2025: 2,415 payments, $1,345,318,862, 1,700 companies and organizations, each traced to its owner at the time of the grant. Franklin County carries more of that money than anywhere else. 40 companies failed after being paid, each tied to a document where one exists.
+Every grant JobsOhio reported on its Form 990 from 2014 to 2025: 2,415 payments, $1,345,318,862, 1,700 companies and organizations, each traced to its owner at the time of the grant. Franklin County carries more of that money than anywhere else. For 40 of those companies, we have documented and auditable evidence that they underperformed expectations after being paid.
 
 Free to use, and every judgement call is published with it.
 
@@ -288,7 +288,7 @@ Hello,
 
 Your January piece on subsidized companies in Ohio failing to create jobs is close to what we have been working on. Subsidy Tracker is also a source in our method notes, and we credit it.
 
-We have published every grant JobsOhio reported on its Form 990 from 2014 to 2025: 2,415 payments, $1,345,318,862, 1,700 companies and organizations, each traced to its owner at the time of the grant and checked for what happened afterward. 40 failed after being paid.
+We have published every grant JobsOhio reported on its Form 990 from 2014 to 2025: 2,415 payments, $1,345,318,862, 1,700 companies and organizations, each traced to its owner at the time of the grant and checked for what happened afterward. For 40 of them, we have documented and auditable evidence that they underperformed expectations after being paid.
 
 The data downloads as plain CSV files. If any of it is useful to Subsidy Tracker, it is yours.
 
@@ -310,7 +310,7 @@ Hello,
 
 Your March 2023 story on CoverMyMeds cutting 815 jobs is the one we lean on in a tool we have just published. The Columbus share of that cut still does not appear anywhere public, and Ohio holds no layoff notice for the company, so we say in the tool that the site-level figure is unknown.
 
-The tool is every grant JobsOhio reported on its Form 990 from 2014 to 2025: 2,415 payments, $1,345,318,862, 1,700 companies and organizations. 40 companies failed after being paid.
+The tool is every grant JobsOhio reported on its Form 990 from 2014 to 2025: 2,415 payments, $1,345,318,862, 1,700 companies and organizations. For 40 of those companies, we have documented and auditable evidence that they underperformed expectations after being paid.
 
 Our research notes say where a Columbus number would be, if anyone wanted to chase it.
 
@@ -332,7 +332,7 @@ Hello,
 
 The bureau's work reaches every public radio market in Ohio, which is why I am writing. We have published a free, searchable record of every grant JobsOhio reported on its IRS Form 990 from 2014 to 2025.
 
-2,415 payments, $1,345,318,862, to 1,700 companies and organizations, each traced to the company that owned it at the time and checked for what happened afterward. 40 companies failed after being paid, each tied to a document where one exists.
+2,415 payments, $1,345,318,862, to 1,700 companies and organizations, each traced to the company that owned it at the time and checked for what happened afterward. For 40 of those companies, we have documented and auditable evidence that they underperformed expectations after being paid.
 
 It is built for local reporters to research with rather than to quote, and the limits are stated on the page.
 
@@ -354,7 +354,7 @@ Hello,
 
 You reported this month on JobsOhio and REDI awarding more than $6 million in grants across the Cincinnati region. We have just published the back half of that story.
 
-It is every grant JobsOhio actually paid, from its Form 990, 2014 to 2025: 2,415 payments, $1,345,318,862, to 1,700 companies and organizations, each traced to the company that owned it at the time. 40 of them failed after being paid, each tied to a document where one exists.
+It is every grant JobsOhio actually paid, from its Form 990, 2014 to 2025: 2,415 payments, $1,345,318,862, to 1,700 companies and organizations, each traced to the company that owned it at the time. For 40 of them, we have documented and auditable evidence that they underperformed expectations after being paid.
 
 Announcements are commitments. This is the cash that moved, and what happened next. Free to use.
 
