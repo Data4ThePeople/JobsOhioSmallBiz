@@ -6,14 +6,14 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: ohio-income-health (working slug)
-Step: 1
+Step: 2a (not started)
 Since: 2026-11-17
 
 ## Steps
 
 | Step | What | Confirmed | Notes |
 |---|---|---|---|
-| 1  | Exploration and analysis | | |
+| 1  | Exploration and analysis | 2026-11-17 | Two GIFs (income vs seven PLACES measures; JobsOhio map total vs per person). PLACES input checks, county counted-deaths check. Both tie-outs clean, `TIEOUT-ohio-income-health.md`. |
 | 2a | Draft with brackets resolved | | |
 | 2b | Eric's edit, Claude's look-over | | |
 | 2c | Slice markup | | |
@@ -472,3 +472,4 @@ None.
   fixing 8 tracts the map had dropped) and the independent one (every number
   matched; food insecurity subtitle corrected). Both in
   `TIEOUT-ohio-income-health.md`.
+- 2026-11-17: ohio-income-health Step 1 confirmed by Eric. Next: 2a, Eric's draft.
