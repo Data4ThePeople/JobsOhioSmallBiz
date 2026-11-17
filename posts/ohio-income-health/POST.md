@@ -3,6 +3,7 @@ title: Where JobsOhio's grant money landed in Ohio
 subtitle: A county map of 12 years of grants, set against income in 3,115 census tracts, and a question: should economic development and public health be planned together?
 slug: ohio-income-health
 date: 2026-11-18
+time: 07:30:00-05:00
 section: Data 4 Thought
 hero: images/ohio-income-health-hero-1680x1080.png
 hero_alt:

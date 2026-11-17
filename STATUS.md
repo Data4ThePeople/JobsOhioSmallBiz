@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: ohio-income-health (working slug)
-Step: 2b
+Step: 2c
 Since: 2026-11-17
 
 ## Steps
@@ -15,7 +15,7 @@ Since: 2026-11-17
 |---|---|---|---|
 | 1  | Exploration and analysis | 2026-11-17 | Two GIFs (income vs seven PLACES measures; JobsOhio map total vs per person). PLACES input checks, county counted-deaths check. Both tie-outs clean, `TIEOUT-ohio-income-health.md`. |
 | 2a | Draft with brackets resolved | 2026-11-17 | Eric's draft, 15 edits accepted, both GIFs placed, title, CDC-estimates sentence, who/where lead-in. |
-| 2b | Eric's edit, Claude's look-over | | |
+| 2b | Eric's edit, Claude's look-over | 2026-11-17 | Link, transition, closing A (series ends, Friday national), items 3-5, 7. |
 | 2c | Slice markup | | |
 | 2d | Hero 1680x1080 + alt text | | |
 | 2e | SEO | | |
@@ -483,3 +483,4 @@ None.
 - 2026-11-17: 2a confirmed. 2b opened: Eric edits POST.md, then Claude looks it over.
 - 2026-11-17: Eric's 2b edit in. Link bracket resolved; look-over sent with transition and closing options.
 - 2026-11-17: 2b items 1, 2A, 3, 4, 5, 7 accepted (6 moot). Friday is the national tract study; this is the last JobsOhio post.
+- 2026-11-17: 2b confirmed. 2c opened.

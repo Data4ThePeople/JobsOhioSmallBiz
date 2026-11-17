@@ -1,0 +1,175 @@
+{
+  "page_title": "Where JobsOhio's grant money landed in Ohio",
+  "page_subtitle": "A county map of 12 years of grants, set against income in 3,115 census tracts, and a question: should economic development and public health be planned together?",
+  "published_date": "2026-11-18",
+  "updated_date": "2026-11-18",
+  "make_this_main_post": false,
+  "slices": [
+    {
+      "slice_type": "drop_cap",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "drop_cap_text": [
+          {
+            "type": "paragraph",
+            "text": "Yesterday we focused on who got JobsOhio's grants. Today we focus on where.",
+            "spans": [
+              {
+                "start": 24,
+                "end": 49,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.data4thepeople.com/p/jobsohio-grants",
+                  "target": "_blank"
+                }
+              }
+            ],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "paragraph",
+            "text": "But before we get to that, we need some additional context to fully appreciate why it matters so much where Ohio makes its investments. This context comes from a single question: Should economic development be a separate initiative from public health? Ohio\u2019s decision to carve its economic development arm out from state government suggests it views these as separate and distinct tasks. But are they?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "We will explore the link between income and health in much more depth this Friday, across the whole country. But today, we are releasing a sneak peek of this work, specifically for Ohio. The GIF below cycles through a handful of scatter plots comparing a health measure to median household income for 3,115 census tracts in Ohio. The health numbers are CDC estimates built partly from each tract's makeup, not counts. These charts suggest a strong link between community health outcomes and community income.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "blog_body_content_image",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "image": {
+          "alt": "Animated scatter plot that cycles through seven health measures for 3,115 Ohio census tracts, with median household income on the horizontal axis and the share of adults on the vertical axis. In every frame the dots are highest at low incomes and fall as income rises, flattening above about $100,000. R\u00b2 by measure: food insecurity 0.69, no leisure-time physical activity 0.69, smoking 0.66, short sleep 0.64, obesity 0.59, diabetes 0.53, loneliness 0.50.",
+          "copyright": null
+        },
+        "source_text": [
+          {
+            "type": "paragraph",
+            "text": "Income: Census Bureau, American Community Survey 2020-2024. Health: CDC PLACES 2025, model-based estimates. R\u00b2 is from a fit on the log of income.",
+            "spans": [
+              {
+                "start": 0,
+                "end": 146,
+                "type": "em"
+              }
+            ],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "paragraph",
+            "text": "To be clear, we are not trying to prove this today (even though to us, the connection between income and health seems very logical) but rather pose this question. Should a program like JobsOhio consider that there could be health benefits to its economic development efforts? Could lifting up our most vulnerable communities by making investments in them to bring jobs, and higher incomes, improve health outcomes, and in turn lower the health care burden for the state?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "It\u2019s at least a question worth asking. And if the answer is yes, where the money goes matters as much as who gets it. The map below shows median household income by census tract, with JobsOhio's grants by county on top. By total dollars, the big circles are where you would expect them to be if economic development was done in isolation: in and around the big cities, where large employers (who, as we learned yesterday, are getting the lion's share of the grants) are more likely to want to locate.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "blog_body_content_image",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "image": {
+          "alt": "Animated map of Ohio. Census tracts are shaded by median household income in five equal groups, darker for poorer. Orange circles on each county show JobsOhio grant dollars, alternating between total dollars and dollars per person. By total, the largest are Cuyahoga at $227.7 million, Franklin at $150.3 million and Licking at $145.9 million. Per person, the largest are Licking at $802, Belmont at $566 and Logan at $456.",
+          "copyright": null
+        },
+        "source_text": [
+          {
+            "type": "paragraph",
+            "text": "$1.26 billion placed in an Ohio county, FY2014 to FY2025. Source: JobsOhio Form 990, Schedule I. Income and population: Census Bureau, American Community Survey 2020-2024.",
+            "spans": [
+              {
+                "start": 0,
+                "end": 171,
+                "type": "em"
+              }
+            ],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "paragraph",
+            "text": "A different approach could be to aim at the communities most in need of help, and to bring industry where Ohio wants it to go, where it can add the most value. That is easier said than done. Money and health may go hand in hand, at least up to a point. If they do, Ohio needs a way to aim economic development with precision. That leaves a question for Ohio: does JobsOhio's current structure allow for that, or are changes needed so that Ohio's economic development is not blind to its effect on public health? On Friday we take the income and health question national, with a study of census tracts across the country.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    }
+  ],
+  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"Where JobsOhio's grant money landed in Ohio\",\n  \"description\": \"\",\n  \"datePublished\": \"2026-11-18T07:30:00-05:00\",\n  \"dateModified\": \"2026-11-18T07:30:00-05:00\",\n  \"articleSection\": \"Data 4 Thought\",\n  \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n  \"inLanguage\": \"en-US\",\n  \"isAccessibleForFree\": true,\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Eric Pachman\",\n    \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Data 4 The People\",\n    \"url\": \"https://data4thepeople.com\"\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.data4thepeople.com/p/ohio-income-health\"\n  }\n}"
+}
