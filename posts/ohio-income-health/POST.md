@@ -1,6 +1,6 @@
 ---
-title:
-subtitle:
+title: Where JobsOhio's grant money landed in Ohio
+subtitle: A county map of 12 years of grants, set against income in 3,115 census tracts, and a question: should economic development and public health be planned together?
 slug: ohio-income-health
 date: 2026-11-18
 section: Data 4 Thought
@@ -16,7 +16,7 @@ caption_spacer: 20px
 dividers: false
 ---
 
-# Title
+# Where JobsOhio's grant money landed in Ohio
 
 Yesterday we published [a tool](https://www.data4thepeople.com/p/jobsohio-grants) that lets you explore every JobsOhio grant between 2014 and 2025, and where there are public records, see how it performed versus its initial expectations. The tool was designed for researchers, journalists, and the general public, to explore these grants, understand how many went to small vs. large companies, and understand when the projects didn’t perform. We will leave the exploration of the tool to these folks, and welcome feedback or questions on how to use the tool to better understand these grants.
 
@@ -24,7 +24,7 @@ Today we flip to the next chapter in this story, which we expect to fully unfold
 
 This chapter starts with a single question: Should economic development be a separate initiative from public health? Ohio’s decision to carve its economic development arm out from state government suggests it views these as separate and distinct tasks. But are they? 
 
-This is a question we will explore in much more depth this Friday. But today, we will release a sneak peek of this work, specifically for Ohio. The GIF below cycles through a handful of scatter plots comparing a health measure to median household income for 3,115 census tracts in Ohio. These charts suggest a strong link between community health outcomes and community income.
+This is a question we will explore in much more depth this Friday. But today, we will release a sneak peek of this work, specifically for Ohio. The GIF below cycles through a handful of scatter plots comparing a health measure to median household income for 3,115 census tracts in Ohio. The health numbers are CDC estimates built partly from each tract's makeup, not counts. These charts suggest a strong link between community health outcomes and community income.
 
 ![Animated scatter plot that cycles through seven health measures for 3,115 Ohio census tracts, with median household income on the horizontal axis and the share of adults on the vertical axis. In every frame the dots are highest at low incomes and fall as income rises, flattening above about $100,000. R² by measure: food insecurity 0.69, no leisure-time physical activity 0.69, smoking 0.66, short sleep 0.64, obesity 0.59, diabetes 0.53, loneliness 0.50.](images/01-income-health-ohio.gif)
 *Income: Census Bureau, American Community Survey 2020-2024. Health: CDC PLACES 2025, model-based estimates. R² is from a fit on the log of income.*
