@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: jobsohio-grants
-Step: 2g
+Step: 3
 Since: 2026-11-16
 
 ## Steps
@@ -20,7 +20,7 @@ Since: 2026-11-16
 | 2d | Hero 1680x1080 + alt text | 2026-11-17 | `scripts/48_hero.py`, built from `dist/data.json` so it cannot drift from the tool. Alt text 471 characters. |
 | 2e | SEO | 2026-11-17 | `schema_type: dataset`. meta_title 51 chars, description 152, 8 keywords, 6 FAQ entries, 5 CSV downloads in the Dataset graph. |
 | 2f | Pushed to Prismic (draft) | 2026-11-17 | Document `avxHXBIAACoALY7g`, 56 slices, Migration Release, not live. Section still to be set by hand. |
-| 2g | Mailchimp teaser | | |
+| 2g | Mailchimp teaser | 2026-11-17 | `EMAIL.md`. Subject 32 chars, preview 68, hero JPG 152 KB, the 2x2 at the 500 setting as the chart. |
 
 ## Stale
 
@@ -356,5 +356,39 @@ None.
   `2026-11-17T07:30:00-05:00T07:00:00-04:00`, invalid structured data on a
   page whose whole SEO case is its structured data.
   **By hand in the Prismic editor, because the importer cannot set either:**
+  the section to Visualization, and a check that the embed renders in preview
+  since Prismic serves it sandboxed.
+
+- 2026-11-17 **Step 2g confirmed, and Step 2 is closed.** `EMAIL.md` is the
+  Mailchimp teaser: subject 32 characters, preview 68 and not a repeat, hero
+  exported to JPG at 152 KB.
+  Eric rejected the first draft of both body halves and pointed at his own
+  post text instead. Part one is now the guiding question and the narrow
+  thing the project set out to do, sorting every grant into the 2x2. Part two
+  is "The part we did not plan on", condensed, in his words. Together they
+  tell one story: we set out to do a small thing and the big thing fell out
+  of it, which the first draft did not.
+  The chart is the 2x2 itself at the 500-employee setting, rendered by a new
+  `scripts/48_hero.py --matrix` from the same `dist/data.json` as the tool,
+  so it cannot drift. It replaced the recipients-vs-dollars bars, which
+  answered a question the new copy no longer asks.
+  **A rule was deliberately relaxed and the decision is recorded in
+  `EMAIL.md`.** The process says the email carries no number that is not in
+  the post. The chart and the hero alt text carry eight percentages that are
+  not in the post's prose. Eric's call: acceptable, because they are
+  descriptions of images rather than claims in copy. Every number in the
+  email's own prose is in the post.
+  **Two overclaims caught in the closing line**, which Eric rewrote twice.
+  "Understand how well JobsOhio has performed" contradicted the paragraph two
+  sentences above it saying we cannot tell which grants succeeded; it became
+  "ask better questions about how JobsOhio has performed". And "we are not
+  writing the stories in here" read as a permanent position, which post two
+  would break; it became "we are not writing any of the stories on these
+  grants today".
+  Also fixed during 2g: `scripts/static_charts.py` had its source line
+  hard-coded to "FY2014 to FY2024" and had been stamping the wrong range on
+  every chart in the repo since FY2025 was added. It reads the range from the
+  data now.
+  **Still to do by hand in Prismic, neither of which the importer can set:**
   the section to Visualization, and a check that the embed renders in preview
   since Prismic serves it sandboxed.
