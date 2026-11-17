@@ -15,7 +15,7 @@ Since: 2026-11-16
 |---|---|---|---|
 | 1  | Exploration and analysis | 2026-11-16 | Three independent tie-outs plus a words tie-out. 40 failures, $95,209,323. |
 | 2a | Draft with brackets resolved | 2026-11-16 | `posts/jobsohio-grants/POST.md`. Eric's Purpose section, Claude's method, terminology, limits and FAQ. |
-| 2b | Eric's edit, Claude's look-over | 2026-11-16 | Subtitle, journalist warning, Purpose trimmed to 4 paragraphs, Belmont stated once. Every figure tied to `dist/data.json`. |
+| 2b | Eric's edit, Claude's look-over | 2026-11-17 | Two rounds. Subtitle, journalist warning, Purpose trimmed, Belmont stated once; then the repayment panel pulled, versioning added, both-views guidance written. Every figure tied to `dist/data.json`. |
 | 2c | Slice markup | | |
 | 2d | Hero 1680x1080 + alt text | | |
 | 2e | SEO | | |
@@ -259,3 +259,37 @@ None.
   Also new: `scripts/47_preview_post.py` renders POST.md to an embargoed
   page at /preview/ for sharing a draft before publication. Not the
   publishing path; Prismic is.
+
+- 2026-11-17 **Step 2b confirmed a second time**, after a round Eric drove by
+  reading the tool rather than the draft.
+  (1) **Court links take two clicks.** The Franklin County clerk gates every
+  deep link behind a disclaimer and discards the case number when it fires, so
+  the first click lands on the clerk's home page. Verified directly: a cold
+  request returns the disclaimer page with the case number nowhere in it.
+  Nothing we can do, so it is said on every case hover, in the Sources key and
+  in the post's limits.
+  (2) **The "Does Ohio get the money back?" panel is gone**, Eric's call. Its
+  headline was 71% of dollars going to a recipient whose agreement allows
+  repayment, and two thirds of that 71% is inferred from the standard form
+  rather than read from the company's own contract. The figure moved to the
+  post where the caveat can travel with it. The per-company column stays.
+  (3) **The returned tile's explanation came back** as a note under the
+  outcome tiles, with the Intelligencer link, and its numbers are now computed
+  in `09_analyze.py` instead of typed into the template.
+  (4) **The returned filter had never worked.** It filtered on `p.returned`,
+  which was never emitted, so clicking that tile showed an empty table. 17
+  parents carry it now, holding $23,263,601 of the $26,040,088 in the tile;
+  the gap is payees netting to zero or less and the filter bar says so.
+  (5) **Versioning.** `CHANGELOG.md` is the single source. `build.py` reads
+  the newest entry into the footer and refuses to build without one, so the
+  tool cannot show a version nothing explains. v1.0 is this release.
+  (6) **README brought current** for publication: it still said the analysis
+  was in progress with no published page.
+  (7) **Lead 20 written**, the McKesson and CoverMyMeds split, after Eric
+  could not get the detail he wanted out of the tool. $6,613,235 to
+  CoverMyMeds and $800,000 to a Fayette County distribution project; the
+  Columbus job number does not exist in public and the Tax Incentive Review
+  Council filings are where it would be. The shape of that case is now the
+  worked example in the post's how-to-use section.
+  Final tie-out: every figure stated in the post matches `dist/data.json` or
+  `grants_raw.csv`. Both audits pass.
