@@ -73,18 +73,18 @@ PAGE = """<!doctype html><html><head><meta charset="utf-8"><style>
   html,body{{width:{W}px;height:{H}px}}
   body{{background:#fcfcfb;color:#111;
     font:16px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-    padding:66px 90px;display:flex;flex-direction:column}}
-  h1{{font-size:68px;line-height:1.06;letter-spacing:-.026em;font-weight:680}}
-  .sub{{font-size:29px;color:#52514e;margin-top:18px;max-width:46ch;line-height:1.35}}
-  .cards{{display:grid;grid-template-columns:1fr 1.5fr;gap:20px;margin-top:28px;
+    padding:84px 112px;display:flex;flex-direction:column}}
+  h1{{font-size:62px;line-height:1.06;letter-spacing:-.026em;font-weight:680}}
+  .sub{{font-size:26px;color:#52514e;margin-top:16px;max-width:46ch;line-height:1.35}}
+  .cards{{display:grid;grid-template-columns:1fr 1.5fr;gap:18px;margin-top:24px;
     flex:1;align-content:stretch}}
-  .col{{display:flex;flex-direction:column;gap:20px}}
-  .card{{border:1px solid #dcdbd6;border-radius:16px;padding:26px 30px;background:#fff;
+  .col{{display:flex;flex-direction:column;gap:18px}}
+  .card{{border:1px solid #dcdbd6;border-radius:16px;padding:24px 28px;background:#fff;
     display:flex;flex-direction:column;justify-content:center;flex:1}}
-  .lab{{font-size:23px;color:#52514e;line-height:1.3}}
-  .val{{font-size:114px;font-weight:680;letter-spacing:-.03em;line-height:1;margin-top:10px;
+  .lab{{font-size:22px;color:#52514e;line-height:1.3}}
+  .val{{font-size:100px;font-weight:680;letter-spacing:-.03em;line-height:1;margin-top:10px;
     font-variant-numeric:tabular-nums}}
-  .hint{{font-size:20px;color:#6b6a66;margin-top:12px;line-height:1.35}}
+  .hint{{font-size:19px;color:#6b6a66;margin-top:10px;line-height:1.35}}
   h2{{font-size:32px;font-weight:650;letter-spacing:-.012em}}
   .note{{font-size:21px;color:#6b6a66;margin-top:7px;line-height:1.35}}
   .two{{display:grid;grid-template-columns:auto 1fr 1fr;gap:16px;margin-top:26px}}
@@ -93,11 +93,11 @@ PAGE = """<!doctype html><html><head><meta charset="utf-8"><style>
     text-align:right;line-height:1.2}}
   .rh span{{display:block;font-size:17px;color:#8a8781;margin-top:2px}}
   .cell{{border:1px solid #dcdbd6;border-left-width:10px;border-radius:12px;padding:22px 24px}}
-  .cell .v{{font-size:62px;font-weight:660;letter-spacing:-.025em;line-height:1.05;
+  .cell .v{{font-size:56px;font-weight:660;letter-spacing:-.025em;line-height:1.05;
     font-variant-numeric:tabular-nums}}
   .cell .s{{font-size:22px;color:#6b6a66;margin-top:6px}}
-  .foot{{display:flex;justify-content:space-between;align-items:flex-end;margin-top:22px;
-    font-size:20px;color:#6b6a66}}
+  .foot{{display:flex;justify-content:space-between;align-items:flex-end;margin-top:20px;
+    font-size:19px;color:#6b6a66}}
   .foot b{{color:#111;font-weight:650}}
 </style></head><body>
   <h1>Where JobsOhio's grant money went</h1>
