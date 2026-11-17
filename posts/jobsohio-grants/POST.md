@@ -5,7 +5,7 @@ slug: jobsohio-grants
 date: 2026-11-17T07:30:00-05:00
 section: Data 4 Thought
 hero: images/jobsohio-grants-hero-1680x1080.png
-hero_alt:
+hero_alt: Summary cards from the JobsOhio grants tool. Two headline figures: 65% of the businesses JobsOhio paid are small, under 500 employees at the parent company, and 81% of the dollars went to large businesses. A grid crossing size with home state shows the share of dollars: small Ohio 16%, small elsewhere 2.9%, large Ohio 20%, large elsewhere 61%. Three outcome figures: 40 companies failed after being paid, 63 lawsuits JobsOhio filed to get money back, and 1.9% of what was paid has come back.
 meta_title:
 description:
 keywords:
