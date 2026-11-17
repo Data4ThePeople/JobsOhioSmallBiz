@@ -307,6 +307,8 @@ Data 4 The People
 
 ### 12. WOSU Public Media newsroom
 
+**Dropped by Eric, Nov 17 2026.** Eric had already sent the post to a WOSU producer that morning. Draft deleted from Gmail.
+
 **Subject** (51): `The Columbus CoverMyMeds number still is not public`
 
 ```
@@ -385,6 +387,6 @@ Data 4 The People
 | 9 | Eye on Ohio | info@eyeonohio.com | Grant-level JobsOhio data for partner papers | 2026-11-17 | yes, 2026-11-17 |
 | 10 | Ben Stein, Policy Matters Ohio | bstein@policymattersohio.org | One program, at the payment level, free to use | 2026-11-17 | sent by Eric, 2026-11-17 |
 | 11 | Good Jobs First | needed | JobsOhio at payment level, and a Tracker offer | 2026-11-17 | yes, 2026-11-17 |
-| 12 | WOSU newsroom | needed | The Columbus CoverMyMeds number still is not public | 2026-11-17 | yes, 2026-11-17 |
+| 12 | WOSU newsroom | needed | The Columbus CoverMyMeds number still is not public | 2026-11-17 | dropped by Eric, draft deleted; Eric had already sent the post to a WOSU producer |
 | 13 | Statehouse News Bureau | needed | A free JobsOhio grant record for the bureau | 2026-11-17 | yes, 2026-11-17 |
 | 14 | Cincinnati Business Courier | needed | The back half of the awards you report weekly | 2026-11-17 | yes, 2026-11-17 |
