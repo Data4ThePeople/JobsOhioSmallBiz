@@ -4,7 +4,7 @@
 Two layers at two resolutions, and the mismatch is deliberate rather than
 sloppy, so the page says so.
 
-  tracts    3,162 census tracts, each with median household income (ACS 2023
+  tracts    3,162 census tracts, each with median household income (ACS 2020-2024
             five-year, B19013) and the share of adults reporting fair or poor
             health (CDC PLACES, GHLTH). This is the real resolution of both
             measures and it is where the correlation lives.
@@ -52,8 +52,19 @@ def shrink(gdf, keep):
 
 
 def main():
-    th = {r["geoid"]: r for r in
-          csv.DictReader((ROOT / "data" / "health" / "tract_income_health_oh.csv").open())}
+    # Income: ACS 2020-2024 5-year, the same release as the TractEconHealth
+    # scatter, so a tract shows one income across the post. Fair-or-poor
+    # health (used only by this page's own scatter, not the GIFs) still comes
+    # from the earlier file, joined on GEOID.
+    hl_old = {r["geoid"]: r["pct_fair_or_poor_health"] for r in
+              csv.DictReader((ROOT / "data" / "health" / "tract_income_health_oh.csv").open())}
+    th = {}
+    for r in csv.DictReader((ROOT / "data" / "health" / "oh_tracts_2024.csv").open()):
+        if r["med_hh_income"]:
+            th[r["GEOID"]] = {"median_household_income": float(r["med_hh_income"]),
+                              "pct_fair_or_poor_health": hl_old.get(r["GEOID"]) or None,
+                              "population": r["pop"],
+                              "county": r["countyname"]}
     inv = {r["county"]: r for r in
            csv.DictReader((GEO / "investment_by_county.csv").open())}
 
@@ -64,15 +75,17 @@ def main():
         d = th.get(f["properties"]["GEOID"])
         if d:
             kept += 1
-            f["properties"]["inc"] = int(d["median_household_income"])
-            f["properties"]["hl"] = float(d["pct_fair_or_poor_health"])
-            f["properties"]["pop"] = int(d["population"] or 0)
-    print(f"{len(feats)} tracts, {kept} with income and health")
+            f["properties"]["inc"] = int(float(d["median_household_income"]))
+            if d["pct_fair_or_poor_health"]:
+                f["properties"]["hl"] = float(d["pct_fair_or_poor_health"])
+            f["properties"]["pop"] = int(float(d["population"] or 0))
+    print(f"{len(feats)} tracts, {kept} with income, "
+          f"{sum(1 for f in feats if 'hl' in f['properties'])} with health")
 
-    cpops = {}
-    for r in th.values():
-        cpops[r["county"].replace(" County", "")] = \
-            cpops.get(r["county"].replace(" County", ""), 0) + int(r["population"] or 0)
+    # County population for dollars per person: ACS 2020-2024 county totals,
+    # all residents, so tracts dropped by the tract filters still count.
+    cpops = {r["county"]: int(r["pop"]) for r in
+             csv.DictReader((ROOT / "data" / "health" / "oh_counties_2024.csv").open())}
 
     cty = gpd.read_file(GEO / "cb_2023_us_county_20m.zip").to_crs(4326)
     cty = cty[cty.STATEFP == "39"]
@@ -121,8 +134,8 @@ def main():
     byc = dd(list)
     for r in th.values():
         byc[r["county"].replace(" County", "")].append(
-            (int(r["median_household_income"]), int(r["population"] or 0),
-             float(r["pct_fair_or_poor_health"])))
+            (int(float(r["median_household_income"])), int(float(r["population"] or 0)),
+             float(r["pct_fair_or_poor_health"]) if r["pct_fair_or_poor_health"] else None))
     ranked = []
     for name, v in byc.items():
         pop = sum(x[1] for x in v)
@@ -131,7 +144,8 @@ def main():
         d = inv.get(name)
         ranked.append({"county": name, "pop": pop,
                        "inc": statistics.median([x[0] for x in v]),
-                       "hl": sum(x[2] * x[1] for x in v) / pop,
+                       "hl": (sum(x[2] * x[1] for x in v if x[2] is not None)
+                              / sum(x[1] for x in v if x[2] is not None)),
                        "cash": int(d["cash"]) if d else 0})
     ranked.sort(key=lambda r: r["inc"])
     n5, step = len(ranked), len(ranked) // 5

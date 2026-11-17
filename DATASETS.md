@@ -1548,3 +1548,92 @@ find its columns. The real fix is work on the layout builder and should not be
 done against a deadline. The existing `commitments_anomalies.csv` logs the
 November 2016 pages as a font note with no hint that they yielded nothing,
 which is why this went unnoticed.
+
+## Post 2 (ohio-income-health): income, health and where the money went in Ohio
+
+Two GIFs for the post published 2026-11-18. Everything in this section is Ohio only.
+
+### American Community Survey, 2020-2024 5-year estimates (U.S. Census Bureau)
+
+**What it is.** Survey estimates for every Ohio census tract and county, pooled from responses collected
+January 2020 through December 2024. Published January 29, 2026. Not revised.
+
+**Where it comes from.** Tract median household income (B19013, 2024 dollars) and population (B01003) come
+from the TractEconHealth project's pull of `https://api.census.gov/data/2024/acs/acs5`
+(`~/PycharmProjects/TractEconHealth/data/raw/acs/2024/`), through its built table
+`data/processed/tracts.parquet`. `scripts/50_oh_tract_extract.py` copies the Ohio rows to
+`data/health/oh_tracts_2024.csv`. County population (B01003, all 88 counties, no filters) comes from the same
+project's `counties.parquet` and is written to `data/health/oh_counties_2024.csv`. The inputs for the PLACES
+check (B01001, B03002, B15003, C17002, tract and county) are pulled by `scripts/53_places_input_check.py`
+into `data/health/checks/acs_inputs_oh_2024.csv`.
+
+**Filters.** TractEconHealth drops tracts under 500 people and tracts where group quarters are 50% or more of
+the population. That leaves 3,125 Ohio tracts, 3,115 of them with a published median income.
+
+**Quirks.** Median income is top-coded at $250,001 (3 Ohio tracts) and shown at the cap. Values are
+estimates with margins of error; a small tract's median can be far off.
+
+### CDC PLACES 2025, tract estimates (Centers for Disease Control and Prevention)
+
+**What it is.** Model-based estimates of the share of adults with each health measure, for every census
+tract. Seven are used, by PLACES measure ID: DIABETES (diagnosed diabetes), OBESITY (body mass index of 30
+or more), CSMOKING (current cigarette smoking), LPA (no leisure-time physical activity), SLEEP (usually less
+than 7 hours), FOODINSECU (food insecurity in the past 12 months), LONELINESS. In the 2025 release, SLEEP
+is from 2022 survey data and the other six from 2023. All are crude prevalence.
+
+**Where it comes from.** data.cdc.gov dataset `cwsq-ngmh`, pulled by TractEconHealth
+(`data/raw/places/`), carried into `tracts.parquet`, and copied for Ohio by `scripts/50_oh_tract_extract.py`.
+All seven are published for every one of the 3,125 Ohio tracts.
+
+**How the estimates are made.** CDC fits a model to individual survey answers (BRFSS) using age, sex, race
+and ethnicity, education, and county poverty, with state and county effects, and uses tract poverty in the
+prediction step. It applies the model to each tract's population. No tract is surveyed directly. So a tract
+value is what the model expects for a tract with that makeup.
+
+**What this means for the post, measured.** `scripts/53_places_input_check.py` rebuilds those inputs for
+every Ohio tract from ACS 2020-2024 and fits each measure on them, with county effects and a curve in tract
+poverty. The inputs explain 89% to 96% of the differences between tracts. Income alone explains 50% to 69%,
+and adds at most 0.2 points once the inputs are known. This is a simplified, tract-level version of CDC's
+person-level model, so the 89% to 96% is a floor. `scripts/55_places_input_shapley.py` splits the explained
+part among five groups of inputs (age and sex, race and ethnicity, education, poverty, county) by Shapley
+value; poverty, education and race and ethnicity carry most of it, and the order changes by measure. Results
+in `data/health/checks/`.
+
+### County Health Rankings, 2025 analytic file and March 2026 supplement (University of Wisconsin)
+
+**What it is.** County measures. Used here only for counted deaths, which are not modelled: premature death
+(years of life lost before 75, per 100,000), premature age-adjusted mortality, life expectancy, and drug
+overdose and suicide rates.
+
+**Where it comes from.** `~/PycharmProjects/TractEconHealth/data/raw/chr/analytic_data2025_v3.csv` and that
+project's `counties.parquet` (overdose and suicide, from the supplement). `scripts/54_county_counted_check.py`
+ranks Ohio's 88 counties by ACS 2020-2024 median household income and reports the Spearman rank correlation
+with each counted measure, next to the PLACES county estimates for the seven GIF measures. Results in
+`data/health/checks/county_counted_check.csv`. Overdose is blank for 3 counties and suicide for 2.
+
+### Census cartographic boundaries, 2023 (U.S. Census Bureau)
+
+`data/geo/cb_2023_39_tract_500k.zip` (Ohio tracts) and `cb_2023_us_county_20m.zip` (counties), drawn by
+`scripts/45_build_map.py` into `dist/map_data.json`. County circles sit at the 2020 county centre of
+population (`data/geo/CenPop2020_Mean_CO.txt`).
+
+### JobsOhio money by county
+
+`scripts/43_investment_by_county.py` places each Schedule I payment in an Ohio county: JobsOhio's own project
+county first, then the payee address county if it is in Ohio, otherwise unplaced. Multi-county projects are
+split evenly. $1,257,313,860 of the $1,345,318,862 is placed. Dollars per person divide a county's placed
+money by its ACS 2020-2024 population (all residents).
+
+### The two GIFs
+
+- `scripts/51_income_health_gif.py` writes `posts/ohio-income-health/social/income-health-ohio.gif`: one
+  frame per measure, each a scatter of the 3,115 Ohio tracts with an income, 2.5 seconds a frame. Linear
+  income axis to $250,000; each frame's y axis starts at 0 and ends at the next 10 above that measure's
+  highest tract. No trend line.
+- `scripts/52_map_gif.py` writes `posts/ohio-income-health/social/jobsohio-map-total-vs-per-person.gif`:
+  tract income in five equal groups of tracts (darker is poorer), and county circles whose area is
+  proportional to total dollars, then dollars per person, 4 seconds a frame. One circle colour; the map
+  page's failure colour is left out of the GIF.
+- `dist/map.html` keeps its own fair-or-poor health scatter, which still uses the earlier
+  `data/health/tract_income_health_oh.csv` (ACS 2019-2023 and PLACES GHLTH). That scatter is not in this
+  post.

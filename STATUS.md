@@ -453,3 +453,22 @@ None.
   per frame, a sneak peek of TractEconHealth. No health index, so there is
   nothing to explain. Two: the existing Ohio map (income by tract, JobsOhio
   money by county) cycling between total dollars and dollars per person.
+
+- 2026-11-17 **Step 1 work, ohio-income-health.** Both GIFs built and approved
+  by Eric: `income-health-ohio.gif` (7 frames, 3,115 Ohio tracts) and
+  `jobsohio-map-total-vs-per-person.gif`. Map income moved to ACS 2020-2024 so
+  the post uses one income release; per person now divides by full ACS county
+  population. Circles redrawn round after Eric caught ovals.
+  **PLACES checks** (scripts 53-55): CDC's own inputs explain 89% to 96% of
+  tract differences and income adds at most 0.2 points, so the tight tract
+  pattern is the model; income stands in for who lives there. Poverty,
+  education and race and ethnicity carry most of it, order varies by measure.
+  Counted county deaths move with income about as strongly (premature death
+  -0.81, life expectancy +0.79), so the direction holds.
+  **Eric's framing for the post:** a teaser asking whether economic
+  development and public health should be handled separately given the
+  overlap; the deeper look goes in Friday's TractEconHealth post.
+  **Tie-outs:** Claude's (`scripts/56_tieout_post2.py`, 0 differences after
+  fixing 8 tracts the map had dropped) and the independent one (every number
+  matched; food insecurity subtitle corrected). Both in
+  `TIEOUT-ohio-income-health.md`.
