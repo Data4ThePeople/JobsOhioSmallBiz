@@ -58,21 +58,19 @@ We pulled twelve years of those lists: 2,415 payments, $1,345,318,862, to 1,700 
 
 ## 4. Chart
 
-**Left out on purpose.** The structure calls for a chart here and
-`posts/images/01-recipients-vs-dollars.png` is the obvious one, but it carries
-65%, 35%, 19% and 81%, and none of those four figures appears anywhere in the
-post. A reader who clicks through from a chart and cannot find its numbers has
-been misled by us, not informed.
+`posts/images/01-recipients-vs-dollars.png` (1680x720)
 
-Two ways to fix it, both Eric's call:
+Alt text:
 
-1. Put that chart in the post, under "How to use it", where the cutoff slider
-   is already explained. It is the project's primary finding and the post
-   currently has no static chart at all. Then it can go in the email too.
-2. Leave the email with the hero only. The hero already carries the headline
-   figures and sits at the top, so the email is not short of a picture.
+```
+A bar chart titled "JobsOhio business grants: recipients vs. dollars, by company size." The top bar splits recipients: 65% small, meaning under 500 employees at the parent company, and 35% large. The bottom bar splits the dollars the other way: 19% to small companies and 81% to large ones. Source: JobsOhio Form 990 Schedule I, fiscal years 2014 to 2025.
+```
 
-Until then the hero is the only image.
+*This chart is in the email only. Eric's call, November 17, 2026: the four
+figures on it, 65%, 35%, 19% and 81%, do not appear in the post's text, and
+that is accepted. The chart is built from the same `dist/data.json` as the
+tool, so a reader who opens the tool at its default settings sees the same
+split, but they will not find these four numbers written out in the post.*
 
 ## 5. Body, part two
 
