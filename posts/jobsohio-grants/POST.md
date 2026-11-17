@@ -2,7 +2,8 @@
 title: Every JobsOhio grant, in one searchable tool
 subtitle: Which grants went to small Ohio businesses, which went to large companies based elsewhere, and which companies failed after taking the money. Free for Ohioans and reporters to search.
 slug: jobsohio-grants
-date: 2026-11-17T07:30:00-05:00
+date: 2026-11-17
+time: 07:30:00-05:00
 section: Visualization
 hero: images/jobsohio-grants-hero-1680x1080.png
 hero_alt: Summary cards from the JobsOhio grants tool, covering 2,415 grants and $1.35 billion to 1,700 companies and organizations, fiscal years 2014 to 2025. Two headline figures: 19% of the dollars went to businesses under 500 employees at the parent company, and 7.8% went to businesses under 100. A grid crossing size with home state, where small means under 500 employees, shows the share of dollars: small Ohio 16%, small elsewhere 2.9%, large Ohio 20%, large elsewhere 61%.
