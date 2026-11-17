@@ -82,7 +82,7 @@ We were able to find grants given to companies that, after receiving the grant, 
 
 Note that we cannot tell you which grants succeeded. JobsOhio does not regularly announce when companies have met their hiring targets, so there is no success column to put beside this one. But whether a grant failed is in the public domain, through WARN notices, bankruptcy filings and court dockets. Wherever we could find one of those documents, it is linked, so you can click straight through to it.
 
-That is the point of this. We are not writing the stories in here. We built the tool so Ohioans and local reporters can.
+That is the point of this work: to organize and present data that has been hiding in the public domain, so we can all ask better questions about how JobsOhio has performed. We are not writing the stories in here. We built the tool so Ohioans and local reporters can.
 ```
 
 ---
