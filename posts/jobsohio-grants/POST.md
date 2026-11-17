@@ -21,7 +21,7 @@ dividers: false
 ::: blurb-full If you are a journalist, read this first
 **This is a tool built to aid your research. It is not a tool to pull data from and publish without checking it yourself.**
 
-We have validated it as far as we can. Every method, every judgement call and every candidate we threw out is public, and most findings link to the filing they rest on. But there are twelve years and thousands of records in here, and the detail runs deep.
+We have validated it as far as we can. The method behind every number is public, down to the judgement calls, and most findings link to the document they rest on. But there are twelve years and thousands of records in here, and the detail runs deep.
 
 **Before you publish anything from a row in this tool, fact check that grant yourself.** Open the document it links to. Call the company. Ask JobsOhio. Use this to find the story and to know where to look, not as the only source for a number you put in print.
 
