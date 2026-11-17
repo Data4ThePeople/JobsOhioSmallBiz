@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: jobsohio-grants
-Step: 2e
+Step: 2f
 Since: 2026-11-16
 
 ## Steps
@@ -18,7 +18,7 @@ Since: 2026-11-16
 | 2b | Eric's edit, Claude's look-over | 2026-11-17 | Two rounds. Subtitle, journalist warning, Purpose trimmed, Belmont stated once; then the repayment panel pulled, versioning added, both-views guidance written. Every figure tied to `dist/data.json`. |
 | 2c | Slice markup | 2026-11-17 | 98 blocks, converts clean. Publication date 2026-11-17T07:30:00-05:00, embed cache-buster `?v=1.0`. |
 | 2d | Hero 1680x1080 + alt text | 2026-11-17 | `scripts/48_hero.py`, built from `dist/data.json` so it cannot drift from the tool. Alt text 471 characters. |
-| 2e | SEO | | |
+| 2e | SEO | 2026-11-17 | `schema_type: dataset`. meta_title 51 chars, description 152, 8 keywords, 6 FAQ entries, 5 CSV downloads in the Dataset graph. |
 | 2f | Pushed to Prismic (draft) | | |
 | 2g | Mailchimp teaser | | |
 
@@ -323,3 +323,21 @@ None.
   small. The matrix stays at 500, the page default.
   Edge padding went up twice, to 84px by 112px, measured on the rendered
   image rather than trusted from the CSS.
+
+- 2026-11-17 **Step 2e confirmed.** The page is published as a schema.org
+  `Dataset` rather than an `Article`, which is the one structured-data lever a
+  tool page has that a news story does not: Dataset is what Google Dataset
+  Search indexes. The Prismic custom type is unchanged and still `blog_post`.
+  The optional Dataset fields are filled rather than left blank, because they
+  are the ones that get read: temporal coverage FY2014 to FY2025, spatial
+  Ohio, four variables measured, four upstream sources, and five CSV
+  downloads straight off the repo, every URL fetched and returning 200. Six
+  FAQ entries harvest from the Common questions section.
+  **Two things found while doing it, both worth remembering.** `section:` in
+  front matter reaches Prismic through no field at all, and `articleSection`
+  is only emitted by the Article schema builder, so moving to Dataset dropped
+  it. Setting `section: Visualization` therefore does nothing on this post and
+  **the section has to be set by hand in the Prismic editor.** Making the
+  breadcrumb read Home > Visualization > title would be a change to the shared
+  schema builder in `~/.claude/tools/prismic/`, affecting every future post,
+  so it was deliberately not done mid-publish.
