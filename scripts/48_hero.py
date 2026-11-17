@@ -89,7 +89,9 @@ PAGE = """<!doctype html><html><head><meta charset="utf-8"><style>
   .note{{font-size:21px;color:#6b6a66;margin-top:7px;line-height:1.35}}
   .two{{display:grid;grid-template-columns:auto 1fr 1fr;gap:16px;margin-top:26px}}
   .hd{{font-size:22px;color:#52514e;text-align:center;align-self:end;padding-bottom:4px}}
-  .rh{{font-size:22px;color:#52514e;align-self:center;padding-right:12px}}
+  .rh{{font-size:22px;color:#52514e;align-self:center;padding-right:14px;
+    text-align:right;line-height:1.2}}
+  .rh span{{display:block;font-size:17px;color:#8a8781;margin-top:2px}}
   .cell{{border:1px solid #dcdbd6;border-left-width:10px;border-radius:12px;padding:22px 24px}}
   .cell .v{{font-size:62px;font-weight:660;letter-spacing:-.025em;line-height:1.05;
     font-variant-numeric:tabular-nums}}
@@ -120,10 +122,10 @@ PAGE = """<!doctype html><html><head><meta charset="utf-8"><style>
         <p class="note">Share of dollars in each cell, with the share of companies underneath</p>
         <div class="two">
           <div></div><div class="hd">Headquartered in Ohio</div><div class="hd">Headquartered elsewhere</div>
-          <div class="rh">Small</div>
+          <div class="rh">Small<span>under 500</span></div>
           <div class="cell" style="border-left-color:#2a6fdb"><div class="v">{so_c:.0f}%</div><div class="s">{so_n:.0f}% of companies</div></div>
           <div class="cell" style="border-left-color:#2a6fdb"><div class="v">{sx_c:.1f}%</div><div class="s">{sx_n:.1f}% of companies</div></div>
-          <div class="rh">Large</div>
+          <div class="rh">Large<span>500 or more</span></div>
           <div class="cell" style="border-left-color:#d4661e"><div class="v">{lo_c:.0f}%</div><div class="s">{lo_n:.1f}% of companies</div></div>
           <div class="cell" style="border-left-color:#d4661e"><div class="v">{lx_c:.0f}%</div><div class="s">{lx_n:.0f}% of companies</div></div>
         </div>
