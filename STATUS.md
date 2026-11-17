@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: ohio-income-health (working slug)
-Step: 2f
+Step: 2g
 Since: 2026-11-17
 
 ## Steps
@@ -19,7 +19,7 @@ Since: 2026-11-17
 | 2c | Slice markup | 2026-11-17 | 11 blocks, converts clean. Publish 2026-11-18T07:30:00-05:00. |
 | 2d | Hero 1680x1080 + alt text | 2026-11-17 | Map, total dollars, `scripts/57_hero_map.py`. Alt 380 chars. |
 | 2e | SEO | 2026-11-17 | meta_title 52, description 134, 6 keywords, Article. GitHub sentence; README covers post 2. |
-| 2f | Pushed to Prismic (draft) | | |
+| 2f | Pushed to Prismic (draft) | 2026-11-17 | Document `avzHBRIAACYALnny`, Migration Release. Rank correlation, 1200x900 scatter, fair or poor health frame, GitHub blurb. |
 | 2g | Mailchimp teaser | | |
 | 3  | Social posts | | |
 | 4a | Outreach list | | |
@@ -494,3 +494,5 @@ None.
 - 2026-11-17: Scatter GIF switched from R² to rank correlation (Spearman), to match the TractEconHealth tool. Tie-out 0 differences; DATASETS, README, caption, alt text updated; Prismic draft updated.
 - 2026-11-17: Scatter GIF resized to 1200x900 (4:3); map GIF unchanged. Prismic draft updated.
 - 2026-11-17: Scatter dots restyled to match TractEconHealth (#3076D4, 60%, larger). Fair or poor health (GHLTH) added as first frame, rank corr -0.86. Tie-out 0 differences. Prismic draft updated.
+- 2026-11-17: 2f confirmed. 2g opened.
+- 2026-11-17: EMAIL.md drafted; hero JPG 197 KB.
