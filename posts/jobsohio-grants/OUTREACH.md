@@ -24,7 +24,7 @@ were opened and read.
 | 3 | **Laura Hancock** | Cleveland.com / The Plain Dealer, statehouse | "JobsOhio reviews $60,000 clawback from podcast tied to OSU president resignation," Mar 13, 2026 | She reported an actual clawback. Our repayment column is the systematic version of that question across twelve years, including that $26,040,088 has come back, which is 1.9% of what went out | No individual address published and the site blocks automated requests. Cleveland.com runs a tips form at cleveland.com/tips |
 | 4 | **Anna Staver** | Cleveland.com, Capitol Letter newsletter | "Lawmakers push for JobsOhio transparency after OSU scandal," Apr 14, 2026 | Capitol Letter is where statehouse people read one item a day. The tool is one item: here is the whole grant record, free | Same as above |
 | 5 | **Ian Hicks** | The Intelligencer (Wheeling), News Editor | "PTT Global pays JobsOhio $20M for failing to move on Belmont County cracker plant," Mar 30, 2022. **Verified link** | His paper broke the only published explanation of the largest repayment in the data. We cite it in the tool. He may want to know $28,599,868 is still out against that site | **Verified:** ihicks@theintelligencer.net |
-| 6 | **Dayton Daily News business desk** | Dayton Daily News | "Incentives fueled Fuyao: Did company live up to the deal?" May 14, 2026 | That is this project's question asked about one company. We have it asked about 1,700, and the Dayton region appears throughout | Byline not retrievable; the site rate-limits automated requests. Newsroom contacts are at daytondailynews.com/contact-us |
+| 6 | **Thomas Gnau** | Dayton Daily News, staff writer | "Incentives fueled Fuyao: Did company live up to the deal?" May 14, 2026 | That is this project's question asked about one company. We have it asked about 1,700, and the Dayton region appears throughout | **Verified:** tom.gnau@coxinc.com, printed on the story and his newsletter |
 | 7 | **Columbus Dispatch statehouse desk** | The Columbus Dispatch | "Acton promises 'hard look' as first Dem governor to oversee JobsOhio," Nov 6, 2026 | An incoming administration that has said it will look at JobsOhio makes the existing record newly relevant. Franklin County is also where most of the money lands | Byline not retrievable; the site returned a paywall response. Newsroom contacts at dispatch.com/contact |
 | 8 | **Signal Ohio / Signal Cleveland** | Nonprofit local newsroom, Cleveland and statewide | "American Electric Power wants in on nuclear power. Ohioans could foot the long-term bill," Mar 2, 2026 | Their beat is public money and who pays. Cuyahoga and Lorain both carry JobsOhio dollars and confirmed failures | **Verified:** tips@signalcleveland.org |
 | 9 | **Eye on Ohio** (Ohio Center for Investigative Journalism) | Nonprofit investigative newsroom, statewide | Ongoing statewide accountability reporting, distributed to partner papers | They work by handing documented material to local partners, which is exactly what this is built to be | **Verified:** info@eyeonohio.com |
@@ -54,8 +54,8 @@ were opened and read.
 
 ## 4b. Drafts
 
-**All thirteen are saved as Gmail drafts, none sent.** Six have a To address:
-the four verified ones plus Nick Evans and Laura Hancock from Eric. The other seven have an empty To line: add
+**All thirteen are saved as Gmail drafts, none sent.** Seven have a To address:
+five verified ones plus Nick Evans and Laura Hancock from Eric. The other six have an empty To line: add
 an address from Eric, or the desk address from the 4a table, before sending.
 
 **No URL appears in any draft.** The connector rewrites every address into a
@@ -164,14 +164,16 @@ Data 4 The People
 
 ---
 
-### 6. Dayton Daily News, business desk
+### 6. Thomas Gnau, Dayton Daily News
+
+**To:** `tom.gnau@coxinc.com` (verified: printed on his May 13, 2026 Fuyao newsletter and the May 14 story)
 
 **Subject** (45): `Your Fuyao question, asked of 1,700 companies`
 
 ```
-Hello,
+Tom,
 
-In May your paper asked whether Fuyao lived up to the incentive deal it got. We have just published a tool that asks that question across every JobsOhio grant.
+In May you asked whether Fuyao lived up to the incentive deal it got. We have just published a tool that asks that question across every JobsOhio grant.
 
 It is 2,415 payments and $1,345,318,862 from 2014 to 2025, to 1,700 companies and organizations, each traced to the company that owned it at the time. 40 of them failed after being paid, each tied to a document where one exists. The Dayton region appears throughout.
 
@@ -373,7 +375,7 @@ Data 4 The People
 | 3 | Laura Hancock, Cleveland.com | lhancock@cleveland.com (from Eric) | You found one clawback. Here are twelve years | 2026-11-17 | yes, 2026-11-17 |
 | 4 | Anna Staver, Cleveland.com | needed | One Capitol Letter item: the grant record | 2026-11-17 | yes, 2026-11-17 |
 | 5 | Ian Hicks, The Intelligencer | ihicks@theintelligencer.net | Your 2022 PTT story is the only one of its kind | 2026-11-17 | yes, 2026-11-17 |
-| 6 | Dayton Daily News business desk | needed | Your Fuyao question, asked of 1,700 companies | 2026-11-17 | yes, 2026-11-17 |
+| 6 | Thomas Gnau, Dayton Daily News | tom.gnau@coxinc.com | Your Fuyao question, asked of 1,700 companies | 2026-11-17 | yes, 2026-11-17 |
 | 7 | Columbus Dispatch statehouse | needed | The JobsOhio grant record, free and searchable | 2026-11-17 | yes, 2026-11-17 |
 | 8 | Signal Cleveland | tips@signalcleveland.org | A free grant database for your reporters | 2026-11-17 | yes, 2026-11-17 |
 | 9 | Eye on Ohio | info@eyeonohio.com | Grant-level JobsOhio data for partner papers | 2026-11-17 | yes, 2026-11-17 |
