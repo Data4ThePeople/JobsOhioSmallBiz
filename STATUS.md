@@ -487,3 +487,4 @@ None.
 - 2026-11-17: 2c confirmed. 2d opened: hero from the map, total dollars, re-rendered at hero scale.
 - 2026-11-17: 2d confirmed. 2e opened, waiting for Eric's target searches.
 - 2026-11-17: 2e front matter written from Claude's search list (Eric's call).
+- 2026-11-17: 2e item 1 accepted (GitHub sentence). README: post 2 section added, published link for post 1.

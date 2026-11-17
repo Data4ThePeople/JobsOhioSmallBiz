@@ -166,6 +166,23 @@
         "paragraph_text": [
           {
             "type": "paragraph",
+            "text": "The data and code behind both charts are free on GitHub.",
+            "spans": [
+              {
+                "start": 49,
+                "end": 55,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://github.com/Data4ThePeople/JobsOhioSmallBiz",
+                  "target": "_blank"
+                }
+              }
+            ],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
             "text": "A different approach could be to aim at the communities most in need of help, and to bring industry where Ohio wants it to go, where it can add the most value. That is easier said than done. Money and health may go hand in hand, at least up to a point. If they do, Ohio needs a way to aim economic development with precision. That leaves a question for Ohio: does JobsOhio's current structure allow for that, or are changes needed so that Ohio's economic development is not blind to its effect on public health? On Friday we take the income and health question national, with a study of census tracts across the country.",
             "spans": [],
             "direction": "ltr"

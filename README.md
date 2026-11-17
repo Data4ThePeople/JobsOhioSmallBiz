@@ -8,7 +8,7 @@ It is built for other people to research with. It is not a source to publish fro
 
 ## Live link
 
-**[Open the tool](https://data4thepeople.github.io/JobsOhioSmallBiz/)**, or the [embeddable version](https://data4thepeople.github.io/JobsOhioSmallBiz/dist/embed.html). The post is not published yet; this line will carry the link when it is.
+**[Open the tool](https://data4thepeople.github.io/JobsOhioSmallBiz/)**, or the [embeddable version](https://data4thepeople.github.io/JobsOhioSmallBiz/dist/embed.html). The post: [Every JobsOhio grant, in one searchable tool](https://www.data4thepeople.com/p/jobsohio-grants).
 
 Found a broken link or a mistake? Email connect@data4thepeople.com and we will fix it. Corrections are made in public, with a note in [`CHANGELOG.md`](CHANGELOG.md) saying what changed and when.
 
@@ -122,6 +122,23 @@ The parent research and checks (`08_research.py`, `10_verify_sample.py`, `11_aut
 - A failure counts only if the operation that failed is the operation the grant paid for. Every confirmed failure was re-checked on that question, and three companies came out of the count: they closed an Ohio site, but not one the money went to. They are still shown on the page, under their own heading, with the site that took the money and the site that failed.
 - Where Ohio holds the employer's own layoff notice, that is the source rather than the news story. 25 of the 29 Ohio closures and mass layoffs have one. The four that do not each record why in `data/failure_warn.csv`: two were company-wide cuts whose Ohio share was never broken out, one predates 2020, which is as far back as Ohio publishes. The fourth, Sauder Woodworking, is an unexplained gap rather than a threshold: its 150-job figure rests on press reporting alone.
 - **Court links take two clicks.** The Franklin County Clerk of Courts gates every deep link behind a disclaimer and discards the case number when it fires, so the first click on any case lands on the clerk's home page and the second opens the case. Nothing in this repo can change that.
+
+## Second post: where the money landed
+
+The follow-up post, "Where JobsOhio's grant money landed in Ohio" (slug `ohio-income-health`), uses two animated charts built in this repo:
+
+- **Income and health, Ohio census tracts.** Median household income (Census ACS 2020-2024) against seven CDC PLACES 2025 measures for 3,115 Ohio census tracts: diabetes, obesity, smoking, no leisure-time physical activity, short sleep, food insecurity and loneliness. Each frame shows R², the share of the tract-to-tract spread that income accounts for, from a fit on the log of income. It runs from 0.50 (loneliness) to 0.69 (food insecurity). The health numbers are CDC estimates built partly from each tract's makeup, not counts.
+- **JobsOhio money by county.** Tract income in five equal groups, with circles for each county's JobsOhio grant dollars, total and per person. $1.26 billion of the $1.35 billion could be placed in an Ohio county.
+
+Files:
+
+- `scripts/50_oh_tract_extract.py`: the Ohio tracts and counties, from the TractEconHealth project's processed data.
+- `scripts/51_income_health_gif.py` and `scripts/52_map_gif.py`: the two GIFs, in `posts/ohio-income-health/social/`.
+- `scripts/53_places_input_check.py`, `54_county_counted_check.py`, `55_places_input_shapley.py`: checks on how much of the PLACES pattern comes from CDC's own model inputs.
+- `scripts/56_tieout_post2.py` writes `TIEOUT-ohio-income-health.md`, which also records an independent tie-out.
+- `scripts/57_hero_map.py`: the post's hero image.
+
+The method is in the "Post 2 (ohio-income-health)" section of `DATASETS.md`.
 
 ## Versions
 
