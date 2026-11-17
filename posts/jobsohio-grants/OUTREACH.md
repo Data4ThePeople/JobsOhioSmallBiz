@@ -54,10 +54,15 @@ were opened and read.
 
 ## 4b. Drafts
 
-**The Gmail connector is not available in this session.** I checked for it and
-there is no Gmail tool connected, so I could not save these into your drafts.
-All thirteen are written below, ready to paste. Connect the connector and say
-the word and I will save them; otherwise paste them yourself.
+**Not yet in Gmail.** The connector is active on Eric's account but no Gmail
+tool was exposed to this session. The fix, which worked once before, is to
+quit Claude Code and relaunch: MCP connectors load at session start, so one
+that is turned on mid-session is not visible until the next one.
+
+**On relaunch, do this:** read this file, check a Gmail tool is available, then
+save all thirteen drafts below exactly as written. Nine still need an address
+from Eric, or the desk address from the 4a table. Update the last column of
+the draft log as each one is saved.
 
 **No URL appears in any draft.** The connector rewrites every address into a
 `google.com/url?q=` redirect that the recipient sees, so the post title is
