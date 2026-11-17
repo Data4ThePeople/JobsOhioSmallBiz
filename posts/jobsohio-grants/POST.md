@@ -2,7 +2,7 @@
 title: Every JobsOhio grant, in one searchable tool
 subtitle: Which grants went to small Ohio businesses, which went to large companies based elsewhere, and which companies failed after taking the money. Free for Ohioans and reporters to search.
 slug: jobsohio-grants
-date: 2026-11-17
+date: 2026-11-17T07:30:00-05:00
 section: Data 4 Thought
 hero: images/jobsohio-grants-hero-1680x1080.png
 hero_alt:
@@ -49,7 +49,7 @@ That said, we still believe this is the best free public tool to allow for resea
 
 Here is the short version. It carries the same figures as the full tool, in a smaller frame.
 
-<iframe src="https://data4thepeople.github.io/JobsOhioSmallBiz/dist/embed.html" height="780" width="100%" style="border:0" title="Where JobsOhio's grant money went"></iframe>
+<iframe src="https://data4thepeople.github.io/JobsOhioSmallBiz/dist/embed.html?v=1.0" height="780" width="100%" style="border:0" title="Where JobsOhio's grant money went"></iframe>
 
 ::: spacer 40px
 
