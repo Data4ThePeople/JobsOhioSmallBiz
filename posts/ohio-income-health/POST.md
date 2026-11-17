@@ -7,9 +7,9 @@ time: 07:30:00-05:00
 section: Data 4 Thought
 hero: images/ohio-income-health-hero-1680x1080.png
 hero_alt: Map of Ohio with census tracts shaded by median household income in five equal groups, darker for poorer, from $7,000 to $250,000. Orange circles on each county show total JobsOhio grant dollars from fiscal years 2014 to 2025. The largest are Cuyahoga at $227.7 million, Franklin at $150.3 million and Licking at $145.9 million. In all, $1.26 billion was placed in an Ohio county.
-meta_title:
-description:
-keywords:
+meta_title: JobsOhio Grants by County: Income and Health in Ohio
+description: A map of where 12 years of JobsOhio grants landed by county, set against income and CDC health estimates for 3,115 Ohio census tracts.
+keywords: JobsOhio grants by county, where JobsOhio money goes, JobsOhio map, Ohio income and health by census tract, Ohio economic development and public health, CDC PLACES Ohio
 schema_type: article
 drop_cap: true
 heading_spacer: 20px

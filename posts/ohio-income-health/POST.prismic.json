@@ -3,6 +3,9 @@
   "page_subtitle": "A county map of 12 years of grants, set against income in 3,115 census tracts, and a question: should economic development and public health be planned together?",
   "published_date": "2026-11-18",
   "updated_date": "2026-11-18",
+  "meta_title": "JobsOhio Grants by County: Income and Health in Ohio",
+  "meta_description": "A map of where 12 years of JobsOhio grants landed by county, set against income and CDC health estimates for 3,115 Ohio census tracts.",
+  "meta_keywords": "JobsOhio grants by county, where JobsOhio money goes, JobsOhio map, Ohio income and health by census tract, Ohio economic development and public health, CDC PLACES Ohio",
   "make_this_main_post": false,
   "slices": [
     {
@@ -171,5 +174,5 @@
       }
     }
   ],
-  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"Where JobsOhio's grant money landed in Ohio\",\n  \"description\": \"\",\n  \"datePublished\": \"2026-11-18T07:30:00-05:00\",\n  \"dateModified\": \"2026-11-18T07:30:00-05:00\",\n  \"articleSection\": \"Data 4 Thought\",\n  \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n  \"inLanguage\": \"en-US\",\n  \"isAccessibleForFree\": true,\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Eric Pachman\",\n    \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Data 4 The People\",\n    \"url\": \"https://data4thepeople.com\"\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.data4thepeople.com/p/ohio-income-health\"\n  }\n}"
+  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"Where JobsOhio's grant money landed in Ohio\",\n  \"description\": \"A map of where 12 years of JobsOhio grants landed by county, set against income and CDC health estimates for 3,115 Ohio census tracts.\",\n  \"datePublished\": \"2026-11-18T07:30:00-05:00\",\n  \"dateModified\": \"2026-11-18T07:30:00-05:00\",\n  \"articleSection\": \"Data 4 Thought\",\n  \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n  \"inLanguage\": \"en-US\",\n  \"isAccessibleForFree\": true,\n  \"keywords\": [\n    \"JobsOhio grants by county\",\n    \"where JobsOhio money goes\",\n    \"JobsOhio map\",\n    \"Ohio income and health by census tract\",\n    \"Ohio economic development and public health\",\n    \"CDC PLACES Ohio\"\n  ],\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Eric Pachman\",\n    \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Data 4 The People\",\n    \"url\": \"https://data4thepeople.com\"\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.data4thepeople.com/p/ohio-income-health\"\n  }\n}"
 }
