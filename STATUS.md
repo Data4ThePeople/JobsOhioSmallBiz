@@ -479,3 +479,4 @@ None.
 - 2026-11-17: Eric accepted edits 1-15.
 - 2026-11-17: Link to yesterday's post added.
 - 2026-11-17: Title, subtitle and CDC-estimates sentence added on Eric's call.
+- 2026-11-17: Opening lead-in added (who yesterday, where today).
