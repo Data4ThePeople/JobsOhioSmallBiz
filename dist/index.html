@@ -722,7 +722,15 @@ function renderTable(){
       var sd = el("td",{},tr);
       if (p.sued && p.sued.length){
         var t = p.sued.map(function(c){ return c.case + ", filed " + c.filed + (c.sought ? ", sought " + c.sought : "") + (c.outcome ? ". " + c.outcome : ""); }).join("\n\n")
-              + "\n\nOpens the Franklin County Clerk of Courts. The clerk asks you to accept a disclaimer first.";
+              /* The clerk's site gates every deep link behind a disclaimer
+                 and drops the query string when it does, so the first click
+                 lands on its front page however good our URL is. Checked: a
+                 cold request to a case URL returns the disclaimer page and
+                 the case number is not in the response. Nothing we can do
+                 from this side, so say what will happen instead. */
+              + "\n\nOpens the Franklin County Clerk of Courts. Expect to click twice: "
+              + "the clerk makes you accept a disclaimer first and drops the case number when it does, "
+              + "so the first click lands on its home page. Come back, click again, and the case opens.";
         var first = p.sued[0];
         if (first.url){
           var sa = el("a",{class:"src", href:first.url, target:"_blank", rel:"noopener", title:t},sd);
@@ -769,8 +777,8 @@ function renderKey(){
 
   var ag = el("p",{class:"key-note"},host);
   var b4 = el("b",{},ag); b4.textContent = "After the grant";
-  ag.appendChild(document.createTextNode(" is a verified outcome at the funded operation, found by scanning every recipient for distress headlines and then checking each one against court dockets, SEC filings, state WARN notices and local news. Three of the five are failures of the thing Ohio paid for rather than of the company, so they should not be added together. "));
-  ["bankruptcy","site closed","mass layoff","sold","service ended"].forEach(function(g, i, a){
+  ag.appendChild(document.createTextNode(" is a verified outcome at the funded operation, found by scanning every recipient for distress headlines and then checking each one against court dockets, SEC filings, state WARN notices and local news. Two of the four are failures of the thing Ohio paid for rather than of the company, so they should not be added together. "));
+  ["bankruptcy","site closed","mass layoff","service ended"].forEach(function(g, i, a){
     var sp = el("span",{class:"g"},ag); sp.textContent = g;
     ag.appendChild(document.createTextNode(" " + FAIL_SHORT[g] + (i < a.length - 1 ? ".  " : ". ")));
   });
@@ -781,21 +789,20 @@ function renderKey(){
        off, so neither pass can see it. $28,599,868 went towards a Belmont
        County petrochemical plant that was never built and none of the three
        recipients was ever a candidate. */
-    + "And it counts companies that failed, not projects that never started: a grant paid towards a plant that was then abandoned produces no bankruptcy, no closure and no layoff, so nothing here can find it. $28,599,868 went towards a Belmont County petrochemical plant that was never built, and none of the three recipients is in this count."));
+    + "And it counts companies that failed, not projects that never started: a grant paid towards a plant that was then abandoned produces no bankruptcy, no closure and no layoff, so nothing here can find it. $28,599,868 is still out against a Belmont County petrochemical plant that was never built, and none of the three recipients is in this count."));
 
   var pr = el("p",{class:"key-note"},host);
   var b2 = el("b",{},pr); b2.textContent = "Sources";
-  pr.appendChild(document.createTextNode(" open in a new tab where one exists. A company name links to the best record available for it, in that order: its own 10-K, then the announcement, then its website. A case number goes to the Franklin County Clerk of Courts, and a failure goes to the docket, filing or state WARN notice it rests on. Every link was fetched and confirmed to resolve; where nothing did, the name is plain text rather than a dead link. Smaller recipients, whose only public record is JobsOhio's own project report, are mostly unlinked. Hover any label or link for what is behind it."));
+  pr.appendChild(document.createTextNode(" open in a new tab where one exists. A company name links to the best record available for it, in that order: its own 10-K, then the announcement, then its website. A case number goes to the Franklin County Clerk of Courts, and a failure goes to the docket, filing or state WARN notice it rests on. Every link was fetched and confirmed to resolve; where nothing did, the name is plain text rather than a dead link. One exception worth knowing before you start: the clerk’s site makes you accept a disclaimer and throws the case number away when it does, so the first click on any case lands on its home page. Come back here and click the same case again and it opens. That is the clerk’s site, not this one, and there is nothing we can do about it from here. Smaller recipients, whose only public record is JobsOhio's own project report, are mostly unlinked. Hover any label or link for what is behind it."));
 }
 var CONF_SHORT = {A:"a filing under penalty of perjury", B:"an official or partner record",
-                  C:"company site, directory or news", D:"owner not established"};
+                  C:"company site, directory or news", D:"owner from web research, not a filing"};
 /* the repayment-clause grades, shortest form, for the key under the table. The
    full evidence for each company is on its own cell's hover. */
 var FAIL_SHORT = {
   "bankruptcy": "a bankruptcy petition, receivership or assignment for the benefit of creditors",
   "site closed": "the funded Ohio operation shut",
   "mass layoff": "a large cut at the funded site, with the company still operating",
-  "sold": "the recipient stopped existing as an independent company",
   "service ended": "the subsidized service, an airline route, stopped running"
 };
 var COND_ORDER_KEY = ["in this agreement","in the standard agreement","in the guidelines",

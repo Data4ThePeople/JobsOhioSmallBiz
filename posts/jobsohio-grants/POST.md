@@ -170,6 +170,8 @@ What we do not know: what the site work bought, whether the rest will ever come 
 
 **Most of the repayment labels rest on an inference rather than a document.** 65% of the money carries "in the standard agreement," which means we read the form and not that company's copy of it. See the section above. It is the single largest caveat in the tool.
 
+**Court links take two clicks, and that is not our bug.** The Franklin County Clerk of Courts makes you accept a disclaimer before it shows you anything, and it throws away the case number when it does. So the first time you click a case in this tool, you will accept the disclaimer and land on the clerk's home page instead of the case. Come back, click the same case again, and it opens. We checked whether we could link around it and we cannot.
+
 **Some ownership calls are judgement.** That is what the A through D grade is for, and the worst-case line under the matrix shows how much the headline would move if we were wrong about all of them.
 
 ## Common questions

@@ -178,6 +178,19 @@ July 1, 2023 to June 30, 2024. Grant dates within the year are not given.
 **Uncertainty.** None stated by the filer. The return is signed under penalty
 of perjury and prepared by an outside firm.
 
+**Court links take two clicks, and it is the clerk's site doing it.** Every
+case number in the tool links to the Franklin County Clerk of Courts with the
+year, type and sequence in the query string. The clerk gates every deep link
+behind a disclaimer and discards the query string when it fires, so a cold
+click lands on its home page with no case loaded. Verified: a request to
+`.../CaseInformationOnline/caseSearch?caseYear=25&caseType=CV&caseSeq=009178&reallySubmit=true`
+with no session returns the disclaimer page, 8 KB, and the case number appears
+nowhere in the response. Once the session accepts, the same URL opens the case,
+which is why clicking the same link a second time works. There is no parameter
+on our side that avoids it and routing a reader through the clerk's acceptance
+on their behalf is not something this project will do. The tool says what will
+happen instead, in the Sources key and on every case link's hover.
+
 **License and attribution.** Public record under IRC 6104. Cite as "JobsOhio
 Form 990, Schedule I, fiscal years 2012 to 2025, via IRS e-file data
 (GivingTuesday 990 Data Lake) and ProPublica Nonprofit Explorer."
