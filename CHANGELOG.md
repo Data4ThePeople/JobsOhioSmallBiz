@@ -17,7 +17,7 @@ without moving a published figure.
 
 First public release. Every grant JobsOhio disclosed on IRS Form 990
 Schedule I, fiscal years 2014 to 2025: 2,415 payments, $1,345,318,862, traced
-to 1,700 parent companies and organisations, each sized and placed by
+to 1,700 parent companies and organizations, each sized and placed by
 headquarters, with verified post-grant outcomes where they exist.
 
 - 40 companies confirmed to have failed after being paid, $95,209,323, in four
@@ -25,7 +25,7 @@ headquarters, with verified post-grant outcomes where they exist.
 - 76 candidates checked and rejected, each with its reason, shown in the tool
   rather than kept in a file.
 - 63 JobsOhio lawsuits reaching 51 companies on the grant schedule.
-- Repayment terms for all 12 programmes, plus 56 signed grant agreements
+- Repayment terms for all 12 programs, plus 56 signed grant agreements
   obtained from Franklin County court files.
 
 Method, every judgement call, and every number that moved during the work are

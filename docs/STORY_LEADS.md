@@ -1457,7 +1457,7 @@ The route flew for nine months. It stopped in September 2023.
 redirect to a newsroom path that also returns 404. It survives in the Internet
 Archive, snapshot 20221128123423.
 
-**The programme page changed too, and the change is datable to within four
+**The program page changed too, and the change is datable to within four
 months.** JobsOhio's Commercial Air Service Restoration Program page read, on
 1 August 2023, that JobsOhio "has helped attract new carriers, including
 Breeze and Avelo". On 10 December 2023 the same sentence read that it "has
@@ -1476,7 +1476,7 @@ announcement has been removed.
 shows the removal was a response to the route failing, and pages are rewritten
 for ordinary reasons. Write the sequence and the dates and let the reader hold
 it. And **no public document states the $200,000**, or any figure: the Dayton
-Daily News reported on 24 August 2023 that local and state organisations
+Daily News reported on 24 August 2023 that local and state organizations
 declined to say what the airline was given. The amount comes from Schedule I.
 
 **The one thing that would settle it, and it needs a person.** The City of

@@ -1,14 +1,16 @@
 # JobsOhio Grants by Business Size and Home State
 
-An analysis of every grant JobsOhio reported paying on its IRS Form 990, Schedule I, from fiscal year 2014 to fiscal year 2024. It asks what share of recipients and what share of paid dollars went to small businesses (ultimate parent under 500 employees at the time of the grant) and to businesses whose ultimate parent was headquartered in Ohio.
+A searchable record of every grant JobsOhio reported paying on its IRS Form 990, Schedule I, from fiscal year 2014 to fiscal year 2025: 2,415 payments, $1,345,318,862, traced to 1,700 parent companies and organizations. It asks what share of recipients and what share of paid dollars went to small businesses (ultimate parent under 500 employees at the time of the grant) and to businesses whose ultimate parent was headquartered in Ohio.
 
-It also asks two follow-on questions: what conditions JobsOhio publishes for each grant, including whether the money can be taken back if the jobs never arrive; and which recipients went bankrupt, closed the funded site or cut it back after being paid.
+It also asks two follow-on questions: what conditions JobsOhio publishes for each grant, including whether the money can be taken back if the jobs never arrive; and which recipients went bankrupt, closed the funded site or cut it back after being paid. 40 companies are confirmed to have failed after being paid, $95,209,323 between them, each tied to a document where one exists.
 
-The analysis is still in progress. Results are not yet published.
+It is built for other people to research with. It is not a source to publish from without checking the individual grant: see the limits below and the caveats on each row.
 
 ## Live link
 
-No published page or post yet. The built interactive page is in `dist/index.html`.
+**[Open the tool](https://data4thepeople.github.io/JobsOhioSmallBiz/)**, or the [embeddable version](https://data4thepeople.github.io/JobsOhioSmallBiz/dist/embed.html). The post is not published yet; this line will carry the link when it is.
+
+Found a broken link or a mistake? Email connect@data4thepeople.com and we will fix it. Corrections are made in public, with a note in [`CHANGELOG.md`](CHANGELOG.md) saying what changed and when.
 
 ## What's here
 
@@ -30,16 +32,18 @@ No published page or post yet. The built interactive page is in `dist/index.html
   - `research/`: inputs and outputs of the parent-resolution research batches.
   - `air_service_routes.csv`, `breeze_jobsohio_routes.csv`: airline route checks against DOT flight data.
   - `program_terms.json`: the published guidelines for all 12 JobsOhio programs, read for how the grant is paid, what the company must do, what it must report and what happens if it falls short, each with the exact quote it rests on.
-  - `grant_conditions.csv`: every Schedule I payment labelled with the conditions published for the program that paid it.
+  - `grant_conditions.csv`: every Schedule I payment labeled with the conditions published for the program that paid it.
   - `distress_candidates.csv`: every recipient scanned for failure headlines, with the headlines found.
   - `failures.csv`: the verified outcome for each candidate, including the rejects and why each was rejected.
   - `research3/`: the per-candidate verification files behind `failures.csv`, including `sitecheck.json`, which records for each confirmed failure whether the operation that failed was the operation the grant paid for.
   - `warn/`: Ohio's own register of mandatory layoff and closure notices, 810 of them from 2020 to 2026, with each year's page and CSV cached so the parse can be re-checked.
   - `failure_warn.csv`: each Ohio closure or mass layoff tied to the employer's own notice to the state, or the reason the state has none.
   - `warn_join.csv`: every WARN notice matched against every recipient, scored and tiered. These are candidates for verification, not findings.
-- `docs/`: the written research method, the verification write-up and research notes.
+- `CHANGELOG.md`: every published version of the tool and what moved in it.
+- `docs/`: the written research method, the verification write-ups, the independent tie-outs and the story leads.
 - `dist/`: the built page (`index.html`), an embeddable version (`embed.html`) and the data it reads (`data.json`).
-- `posts/images/`: static charts for the post.
+- `posts/<slug>/`: the post itself (`POST.md`) and its images.
+- `preview/`: a rendered draft of the post, for review before publication.
 - `assets/`: Data 4 The People logos used on the page.
 
 ## Data sources
@@ -66,7 +70,7 @@ Requirements: Python 3 with `pdfplumber`, `pypdf` and `matplotlib` (`pip install
 Run from the repo root, in order:
 
 ```
-python scripts/01_fetch_990.py        # download Form 990 XMLs (FY2014 to FY2024 are already in data/raw/990/)
+python scripts/01_fetch_990.py        # download Form 990 XMLs (FY2014 to FY2025 are already in data/raw/990/)
 python scripts/02_parse_sched_i.py    # Schedule I to data/grants_raw.csv, plus reconcile_990.csv
 python scripts/03_parse_metrics.py    # monthly report PDFs in data/raw/metrics/ to data/commitments.csv
 python scripts/04_normalize.py        # data/recipients.csv and metrics matching
@@ -89,12 +93,13 @@ python scripts/33_match_warn.py --write   # tie each closure and layoff to the s
 python scripts/34_apply_sitecheck.py  # apply the funded-site verdicts to data/failures.csv
 python scripts/35_warn_join.py --write    # join the whole WARN register against every recipient
 python scripts/37_merge_warncheck.py --write  # merge the verified candidates into data/failures.csv
+python scripts/46_apply_acquired_rule.py  # drop acquisitions where the funded operation kept running
 ```
 
 Two audits run before every publish and exit non-zero on any mismatch:
 
 ```
-python scripts/30_audit_summary.py          # recompute all 28 summary figures from source
+python scripts/30_audit_summary.py          # recompute all 26 summary figures from source
 python scripts/31_audit_failures.py --fetch # check every failure claim, and that each source resolves
 ```
 
@@ -109,13 +114,14 @@ The parent research and checks (`08_research.py`, `10_verify_sample.py`, `11_aut
 - Totals are net of 33 reversed payments. A parent is counted as a recipient only if its net payment is above zero.
 - The headline uses for-profit businesses as the denominator. Results for all recipients, and at cutoffs of 100 and 5000 employees, are also in `TIEOUT.md`.
 - A seeded random sample of classifications was re-checked by an independent second pass. The method and results are in `docs/VERIFICATION.md`.
-- The conditions columns describe what JobsOhio **publishes**, not what is in force. Individual grant agreements are not public, and at least one case shows terms exist that the guidelines do not print. Only 2 of 12 programs publish a clawback, covering 6.8% of paid dollars.
+- The conditions columns describe what JobsOhio **publishes**, not what is in force. Individual grant agreements are not public, and at least one case shows terms exist that the guidelines do not print. Only 2 of 12 programs publish a clawback in their guidelines: the Inclusion Grant and the Ohio Site Inventory Program. What recourse exists elsewhere rests on the 56 signed agreements obtained from Franklin County court files, every one of which carries the same Section 9(b)(ii) repayment clause where the clause could be read. Extending that to a company whose own contract was not obtained is an inference rather than a reading, and it is the label on 65% of the dollars. Treat it as a well-supported expectation to check, not a fact to publish. See `DATASETS.md`.
 - **The failure count finds companies that failed, not projects that never started.** Both detection passes look for an event: a bankruptcy, a closure, a mass layoff. A grant paid towards a plant that was then abandoned produces none of those. $28,599,868 is still out against a Belmont County petrochemical plant that was never built, across three recipients none of which was ever a candidate. A further $20,000,000 paid to one of them came back, which is 77% of all the money the page reports as returned, and [The Intelligencer reported in March 2022](https://www.theintelligencer.net/news/top-headlines/2022/03/ptt-global-pays-jobsohio-20m-for-failing-to-move-on-belmont-county-cracker-plant/) that PTTGC America repaid it after failing to make an investment decision on the plant. That makes it the one reversal in twelve years with a published reason. See `DATASETS.md`.
 - The failure count is a floor, not a count. It is found from news coverage, so a failure without coverage is missing; it treats the payee as the company, so a parent's filing that left the Ohio site running is excluded. Of 119 candidates checked one at a time, 57 were thrown out as not a failure and 17 were a different company sharing a name. Every reject is kept in `data/failures.csv` with its reason, and the page shows them.
 - The failure count was first built by scanning news headlines, which can only find a closure somebody wrote about. A second pass joined Ohio's whole WARN register, 810 mandatory layoff and closure notices, against every recipient, and found 16 more confirmed failures. 40% of the confirmed total had no coverage the news scan could see.
 - **Being bought is not failing.** A company that is acquired and keeps operating has not failed; a company that is acquired and shut down has. Four companies that were acquired or divested with the funded operation still running came out of the count on that rule: Speedway, FirstMerit, AK Steel and PPG, $2,500,000 between them. They are kept in `data/failures.csv` as rejects with the reason, and the page shows them.
 - A failure counts only if the operation that failed is the operation the grant paid for. Every confirmed failure was re-checked on that question, and three companies came out of the count: they closed an Ohio site, but not one the money went to. They are still shown on the page, under their own heading, with the site that took the money and the site that failed.
-- Where Ohio holds the employer's own layoff notice, that is the source rather than the news story. 15 of the 19 Ohio closures and mass layoffs have one. The four that do not each record why, and one of those four, Sauder Woodworking, is an unexplained gap rather than a threshold: its 150-job figure rests on press reporting alone.
+- Where Ohio holds the employer's own layoff notice, that is the source rather than the news story. 25 of the 29 Ohio closures and mass layoffs have one. The four that do not each record why in `data/failure_warn.csv`: two were company-wide cuts whose Ohio share was never broken out, one predates 2020, which is as far back as Ohio publishes. The fourth, Sauder Woodworking, is an unexplained gap rather than a threshold: its 150-job figure rests on press reporting alone.
+- **Court links take two clicks.** The Franklin County Clerk of Courts gates every deep link behind a disclaimer and discards the case number when it fires, so the first click on any case lands on the clerk's home page and the second opens the case. Nothing in this repo can change that.
 
 ## Versions
 

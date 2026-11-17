@@ -182,7 +182,7 @@ of perjury and prepared by an outside firm.
 (November 17, 2026). It led on one figure: 71% of dollars went to a recipient
 whose agreement lets JobsOhio demand repayment, which is `agreement seen` plus
 `standard form` plus `published clawback`, $956,922,204 of $1,346,076,114.
-$872,942,441 of that, 65% of all dollars, is `standard form`: the programme's
+$872,942,441 of that, 65% of all dollars, is `standard form`: the program's
 agreements were obtained and are identical, so the clause is inferred for that
 company rather than read. A headline percentage carries a firmness that
 inference does not, and a three-cell panel has no room to say so. The figure
@@ -440,7 +440,7 @@ tied to a program).
 
 - 22.5% of paid dollars are `Program unknown`. About a quarter of recipients
   never appear in the monthly reports, and the air service grants appear in
-  none of them, so those are labelled from the payee where it is an airline
+  none of them, so those are labeled from the payee where it is an airline
   and left unknown otherwise.
 - These are the **published** terms, not the terms in force. The individual
   grant agreement is not public, and at least one case shows terms exist that
@@ -659,7 +659,7 @@ checking city, industry and officers against the payee address.
   ProPublica's PDF download sits behind a security check that refuses an
   automated fetch. The exclusion is immaterial to every published share:
   FY2013 total expenses were $7,228,247 against $584,432,476 in FY2023, so the
-  two missing years are on the order of 1% of the organisation's spending.
+  two missing years are on the order of 1% of the organization's spending.
 - Goodlevel Enterprises: unresolved.
 - CourtListener began returning empty pages partway through, and
   `archive.org` returned 429 and 504 throughout, so several paywalled local
@@ -1115,8 +1115,8 @@ dead link sends a reader nowhere and makes them doubt the rest of the row.
 **The labels were wrong and are now honest.** An independent audit sampled 55
 links: all 55 resolved, but **9 were not a record of the named company at all**
 and the page said they were. One JobsOhio report PDF was the link for 66
-different companies, labelled "news article". 89 Wikipedia pages and 16
-ProPublica pages were labelled "company website", so a reader was told a
+different companies, labeled "news article". 89 Wikipedia pages and 16
+ProPublica pages were labeled "company website", so a reader was told a
 Wikipedia article was Visa's own site. Seven "10-K" links were EDGAR search
 pages, four of them Atom feeds that render as raw XML.
 
@@ -1178,7 +1178,7 @@ the time of writing.
 **What this project does with it, and why.** The cutoff stays at 500 by
 default, and the page now says on its face why. Three reasons:
 
-1. No single number can honestly be labelled "the SBA definition," so
+1. No single number can honestly be labeled "the SBA definition," so
    presenting one as official would be wrong.
 2. The employee bands in this analysis are `<100`, `100-499`, `500-4999` and
    `5000+`. **A 1,000-employee line falls inside the 500-4999 band**, which
