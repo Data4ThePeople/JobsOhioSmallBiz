@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: ohio-income-health (working slug)
-Step: 2d
+Step: 2e
 Since: 2026-11-17
 
 ## Steps
@@ -17,7 +17,7 @@ Since: 2026-11-17
 | 2a | Draft with brackets resolved | 2026-11-17 | Eric's draft, 15 edits accepted, both GIFs placed, title, CDC-estimates sentence, who/where lead-in. |
 | 2b | Eric's edit, Claude's look-over | 2026-11-17 | Link, transition, closing A (series ends, Friday national), items 3-5, 7. |
 | 2c | Slice markup | 2026-11-17 | 11 blocks, converts clean. Publish 2026-11-18T07:30:00-05:00. |
-| 2d | Hero 1680x1080 + alt text | | |
+| 2d | Hero 1680x1080 + alt text | 2026-11-17 | Map, total dollars, `scripts/57_hero_map.py`. Alt 380 chars. |
 | 2e | SEO | | |
 | 2f | Pushed to Prismic (draft) | | |
 | 2g | Mailchimp teaser | | |
@@ -485,3 +485,4 @@ None.
 - 2026-11-17: 2b items 1, 2A, 3, 4, 5, 7 accepted (6 moot). Friday is the national tract study; this is the last JobsOhio post.
 - 2026-11-17: 2b confirmed. 2c opened.
 - 2026-11-17: 2c confirmed. 2d opened: hero from the map, total dollars, re-rendered at hero scale.
+- 2026-11-17: 2d confirmed. 2e opened, waiting for Eric's target searches.
