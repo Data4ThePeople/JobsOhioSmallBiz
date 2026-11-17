@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: ohio-income-health (working slug)
-Step: 2a
+Step: 2b
 Since: 2026-11-17
 
 ## Steps
@@ -14,7 +14,7 @@ Since: 2026-11-17
 | Step | What | Confirmed | Notes |
 |---|---|---|---|
 | 1  | Exploration and analysis | 2026-11-17 | Two GIFs (income vs seven PLACES measures; JobsOhio map total vs per person). PLACES input checks, county counted-deaths check. Both tie-outs clean, `TIEOUT-ohio-income-health.md`. |
-| 2a | Draft with brackets resolved | | |
+| 2a | Draft with brackets resolved | 2026-11-17 | Eric's draft, 15 edits accepted, both GIFs placed, title, CDC-estimates sentence, who/where lead-in. |
 | 2b | Eric's edit, Claude's look-over | | |
 | 2c | Slice markup | | |
 | 2d | Hero 1680x1080 + alt text | | |
@@ -480,3 +480,4 @@ None.
 - 2026-11-17: Link to yesterday's post added.
 - 2026-11-17: Title, subtitle and CDC-estimates sentence added on Eric's call.
 - 2026-11-17: Opening lead-in added (who yesterday, where today).
+- 2026-11-17: 2a confirmed. 2b opened: Eric edits POST.md, then Claude looks it over.
