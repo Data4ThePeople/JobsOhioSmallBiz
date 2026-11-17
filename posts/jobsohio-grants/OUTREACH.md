@@ -54,15 +54,9 @@ were opened and read.
 
 ## 4b. Drafts
 
-**Not yet in Gmail.** The connector is active on Eric's account but no Gmail
-tool was exposed to this session. The fix, which worked once before, is to
-quit Claude Code and relaunch: MCP connectors load at session start, so one
-that is turned on mid-session is not visible until the next one.
-
-**On relaunch, do this:** read this file, check a Gmail tool is available, then
-save all thirteen drafts below exactly as written. Nine still need an address
-from Eric, or the desk address from the 4a table. Update the last column of
-the draft log as each one is saved.
+**All thirteen are saved as Gmail drafts, none sent.** The four with verified
+addresses have the To line filled. The other nine have an empty To line: add
+an address from Eric, or the desk address from the 4a table, before sending.
 
 **No URL appears in any draft.** The connector rewrites every address into a
 `google.com/url?q=` redirect that the recipient sees, so the post title is
@@ -371,16 +365,16 @@ Data 4 The People
 
 | # | Recipient | Address | Subject | Drafted | In Gmail |
 |---|---|---|---|---|---|
-| 2 | Nick Evans, Ohio Capital Journal | needed | A grant-level record behind the oversight bill | 2026-11-17 | no, connector unavailable |
-| 3 | Laura Hancock, Cleveland.com | needed | You found one clawback. Here are twelve years | 2026-11-17 | no, connector unavailable |
-| 4 | Anna Staver, Cleveland.com | needed | One Capitol Letter item: the grant record | 2026-11-17 | no, connector unavailable |
-| 5 | Ian Hicks, The Intelligencer | ihicks@theintelligencer.net | Your 2022 PTT story is the only one of its kind | 2026-11-17 | no, connector unavailable |
-| 6 | Dayton Daily News business desk | needed | Your Fuyao question, asked of 1,700 companies | 2026-11-17 | no, connector unavailable |
-| 7 | Columbus Dispatch statehouse | needed | The JobsOhio grant record, free and searchable | 2026-11-17 | no, connector unavailable |
-| 8 | Signal Cleveland | tips@signalcleveland.org | A free grant database for your reporters | 2026-11-17 | no, connector unavailable |
-| 9 | Eye on Ohio | info@eyeonohio.com | Grant-level JobsOhio data for partner papers | 2026-11-17 | no, connector unavailable |
-| 10 | Ben Stein, Policy Matters Ohio | bstein@policymattersohio.org | One program, at the payment level, free to use | 2026-11-17 | no, connector unavailable |
-| 11 | Good Jobs First | needed | JobsOhio at payment level, and a Tracker offer | 2026-11-17 | no, connector unavailable |
-| 12 | WOSU newsroom | needed | The Columbus CoverMyMeds number still is not public | 2026-11-17 | no, connector unavailable |
-| 13 | Statehouse News Bureau | needed | A free JobsOhio grant record for the bureau | 2026-11-17 | no, connector unavailable |
-| 14 | Cincinnati Business Courier | needed | The back half of the awards you report weekly | 2026-11-17 | no, connector unavailable |
+| 2 | Nick Evans, Ohio Capital Journal | needed | A grant-level record behind the oversight bill | 2026-11-17 | yes, 2026-11-17 |
+| 3 | Laura Hancock, Cleveland.com | needed | You found one clawback. Here are twelve years | 2026-11-17 | yes, 2026-11-17 |
+| 4 | Anna Staver, Cleveland.com | needed | One Capitol Letter item: the grant record | 2026-11-17 | yes, 2026-11-17 |
+| 5 | Ian Hicks, The Intelligencer | ihicks@theintelligencer.net | Your 2022 PTT story is the only one of its kind | 2026-11-17 | yes, 2026-11-17 |
+| 6 | Dayton Daily News business desk | needed | Your Fuyao question, asked of 1,700 companies | 2026-11-17 | yes, 2026-11-17 |
+| 7 | Columbus Dispatch statehouse | needed | The JobsOhio grant record, free and searchable | 2026-11-17 | yes, 2026-11-17 |
+| 8 | Signal Cleveland | tips@signalcleveland.org | A free grant database for your reporters | 2026-11-17 | yes, 2026-11-17 |
+| 9 | Eye on Ohio | info@eyeonohio.com | Grant-level JobsOhio data for partner papers | 2026-11-17 | yes, 2026-11-17 |
+| 10 | Ben Stein, Policy Matters Ohio | bstein@policymattersohio.org | One program, at the payment level, free to use | 2026-11-17 | yes, 2026-11-17 |
+| 11 | Good Jobs First | needed | JobsOhio at payment level, and a Tracker offer | 2026-11-17 | yes, 2026-11-17 |
+| 12 | WOSU newsroom | needed | The Columbus CoverMyMeds number still is not public | 2026-11-17 | yes, 2026-11-17 |
+| 13 | Statehouse News Bureau | needed | A free JobsOhio grant record for the bureau | 2026-11-17 | yes, 2026-11-17 |
+| 14 | Cincinnati Business Courier | needed | The back half of the awards you report weekly | 2026-11-17 | yes, 2026-11-17 |
