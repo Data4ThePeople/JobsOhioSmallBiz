@@ -14,25 +14,25 @@ Written by `scripts/56_tieout_post2.py`. Recomputed from the raw ACS and PLACES 
 | Tracts where income differs from extract | 0 | 0 | match |
 | diabetes: tracts where value differs | 0 | 0 | match |
 | diabetes: highest tract / y-axis top | 39.0 / 40% | 39.0 / 40% | match |
-| diabetes: R2, log income | 0.53 | 0.53 | match |
+| diabetes: rank correlation with income | -0.74 | -0.74 | match |
 | obesity: tracts where value differs | 0 | 0 | match |
 | obesity: highest tract / y-axis top | 57.7 / 60% | 57.7 / 60% | match |
-| obesity: R2, log income | 0.59 | 0.59 | match |
+| obesity: rank correlation with income | -0.74 | -0.74 | match |
 | smoking: tracts where value differs | 0 | 0 | match |
 | smoking: highest tract / y-axis top | 41.9 / 50% | 41.9 / 50% | match |
-| smoking: R2, log income | 0.66 | 0.66 | match |
+| smoking: rank correlation with income | -0.80 | -0.80 | match |
 | inactivity: tracts where value differs | 0 | 0 | match |
 | inactivity: highest tract / y-axis top | 57.5 / 60% | 57.5 / 60% | match |
-| inactivity: R2, log income | 0.69 | 0.69 | match |
+| inactivity: rank correlation with income | -0.82 | -0.82 | match |
 | short_sleep: tracts where value differs | 0 | 0 | match |
 | short_sleep: highest tract / y-axis top | 57.0 / 60% | 57.0 / 60% | match |
-| short_sleep: R2, log income | 0.64 | 0.64 | match |
+| short_sleep: rank correlation with income | -0.78 | -0.78 | match |
 | food_insecurity: tracts where value differs | 0 | 0 | match |
 | food_insecurity: highest tract / y-axis top | 75.3 / 80% | 75.3 / 80% | match |
-| food_insecurity: R2, log income | 0.69 | 0.69 | match |
+| food_insecurity: rank correlation with income | -0.87 | -0.87 | match |
 | loneliness: tracts where value differs | 0 | 0 | match |
 | loneliness: highest tract / y-axis top | 50.7 / 60% | 50.7 / 60% | match |
-| loneliness: R2, log income | 0.50 | 0.50 | match |
+| loneliness: rank correlation with income | -0.70 | -0.70 | match |
 
 ## GIF 2: the map
 

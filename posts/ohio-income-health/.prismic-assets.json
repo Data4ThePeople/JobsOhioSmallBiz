@@ -1,11 +1,4 @@
 {
-  "images/01-income-health-ohio.gif": {
-    "id": "PlVhRpgjc77YLjI5",
-    "width": 1200,
-    "height": 675,
-    "url": "https://images.prismic.io/data4thepeople/PlVhRpgjc77YLjI5_01-income-health-ohio.gif?auto=format,compress",
-    "stamp": "387982:1794949096"
-  },
   "images/02-jobsohio-map.gif": {
     "id": "ct4AF_5aD76wv8Yk",
     "width": 1200,
@@ -19,5 +12,12 @@
     "height": 1080,
     "url": "https://images.prismic.io/data4thepeople/vKUCr09tan2wnDJC_ohio-income-health-hero-1680x1080.png?auto=format,compress",
     "stamp": "467274:1794950277"
+  },
+  "images/01-income-health-ohio.gif": {
+    "id": "HXA9wYWvMPiO9fFd",
+    "width": 1200,
+    "height": 675,
+    "url": "https://images.prismic.io/data4thepeople/HXA9wYWvMPiO9fFd_01-income-health-ohio.gif?auto=format,compress",
+    "stamp": "404546:1794951761"
   }
 }

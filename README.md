@@ -127,7 +127,7 @@ The parent research and checks (`08_research.py`, `10_verify_sample.py`, `11_aut
 
 The follow-up post, "Where JobsOhio's grant money landed in Ohio" (slug `ohio-income-health`), uses two animated charts built in this repo:
 
-- **Income and health, Ohio census tracts.** Median household income (Census ACS 2020-2024) against seven CDC PLACES 2025 measures for 3,115 Ohio census tracts: diabetes, obesity, smoking, no leisure-time physical activity, short sleep, food insecurity and loneliness. Each frame shows R², the share of the tract-to-tract spread that income accounts for, from a fit on the log of income. It runs from 0.50 (loneliness) to 0.69 (food insecurity). The health numbers are CDC estimates built partly from each tract's makeup, not counts.
+- **Income and health, Ohio census tracts.** Median household income (Census ACS 2020-2024) against seven CDC PLACES 2025 measures for 3,115 Ohio census tracts: diabetes, obesity, smoking, no leisure-time physical activity, short sleep, food insecurity and loneliness. Each frame shows the rank correlation between income and the measure, from -1 to 1, where 0 means no pattern. It runs from -0.70 (loneliness) to -0.87 (food insecurity). The health numbers are CDC estimates built partly from each tract's makeup, not counts.
 - **JobsOhio money by county.** Tract income in five equal groups, with circles for each county's JobsOhio grant dollars, total and per person. $1.26 billion of the $1.35 billion could be placed in an Ohio county.
 
 Files:
