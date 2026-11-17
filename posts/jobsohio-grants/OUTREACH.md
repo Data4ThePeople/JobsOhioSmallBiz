@@ -54,8 +54,8 @@ were opened and read.
 
 ## 4b. Drafts
 
-**All thirteen are saved as Gmail drafts, none sent.** Five have a To address:
-the four verified ones plus Nick Evans from Eric. The other eight have an empty To line: add
+**All thirteen are saved as Gmail drafts, none sent.** Six have a To address:
+the four verified ones plus Nick Evans and Laura Hancock from Eric. The other seven have an empty To line: add
 an address from Eric, or the desk address from the 4a table, before sending.
 
 **No URL appears in any draft.** The connector rewrites every address into a
@@ -96,6 +96,8 @@ Data 4 The People
 ---
 
 ### 3. Laura Hancock, Cleveland.com
+
+**To:** `lhancock@cleveland.com` (from Eric)
 
 **Subject** (45): `You found one clawback. Here are twelve years`
 
@@ -368,7 +370,7 @@ Data 4 The People
 | # | Recipient | Address | Subject | Drafted | In Gmail |
 |---|---|---|---|---|---|
 | 2 | Nick Evans, Ohio Capital Journal | nevans@ohiocapitaljournal.com (from Eric) | A grant-level record behind the oversight bill | 2026-11-17 | yes, 2026-11-17 |
-| 3 | Laura Hancock, Cleveland.com | needed | You found one clawback. Here are twelve years | 2026-11-17 | yes, 2026-11-17 |
+| 3 | Laura Hancock, Cleveland.com | lhancock@cleveland.com (from Eric) | You found one clawback. Here are twelve years | 2026-11-17 | yes, 2026-11-17 |
 | 4 | Anna Staver, Cleveland.com | needed | One Capitol Letter item: the grant record | 2026-11-17 | yes, 2026-11-17 |
 | 5 | Ian Hicks, The Intelligencer | ihicks@theintelligencer.net | Your 2022 PTT story is the only one of its kind | 2026-11-17 | yes, 2026-11-17 |
 | 6 | Dayton Daily News business desk | needed | Your Fuyao question, asked of 1,700 companies | 2026-11-17 | yes, 2026-11-17 |
