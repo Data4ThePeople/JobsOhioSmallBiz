@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: jobsohio-grants
-Step: 3
+Step: 4a
 Since: 2026-11-16
 
 ## Steps
@@ -21,6 +21,7 @@ Since: 2026-11-16
 | 2e | SEO | 2026-11-17 | `schema_type: dataset`. meta_title 51 chars, description 152, 8 keywords, 6 FAQ entries, 5 CSV downloads in the Dataset graph. |
 | 2f | Pushed to Prismic (draft) | 2026-11-17 | Document `avxHXBIAACoALY7g`, 56 slices, Migration Release, not live. Section still to be set by hand. |
 | 2g | Mailchimp teaser | 2026-11-17 | `EMAIL.md`. Subject 32 chars, preview 68, hero JPG 152 KB, the 2x2 at the 500 setting as the chart. |
+| 3  | Social posts | 2026-11-17 | `SOCIAL.md`. X 275, Bluesky 294, LinkedIn 1,386 with the link in the first comment. Cutoff GIF, 11s, 141 KB. |
 
 ## Stale
 
@@ -392,3 +393,18 @@ None.
   **Still to do by hand in Prismic, neither of which the importer can set:**
   the section to Visualization, and a check that the embed renders in preview
   since Prismic serves it sandboxed.
+
+- 2026-11-17 **Step 3 confirmed.** `SOCIAL.md`: X 275 characters with the link
+  counted at 23, Bluesky 294 with the full URL, LinkedIn 1,386 with the link
+  held back to the first comment and the hook in the first two lines.
+  The animation is the two-by-two as the "small" line moves, 100 to 500 to
+  5,000 and back to 500 held five seconds, so the loop ends on the page
+  default and the published figures. `scripts/49_social_gif.py`, four frames,
+  11 seconds, 141 KB, read from the same `dist/data.json` as the tool, every
+  frame a real setting with nothing interpolated. Chosen because it is the one
+  thing a still cannot show: small Ohio companies take 7.2%, 16% and 23% of
+  the dollars across the three settings, so the tool's own argument is the
+  animation.
+  Where every number comes from is written at the top of `SOCIAL.md`,
+  including that X and Bluesky round to $1.35 billion to fit the limit, a
+  figure already on the hero and in `hero_alt`.
