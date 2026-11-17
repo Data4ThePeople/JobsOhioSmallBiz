@@ -37,10 +37,12 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parent.parent
 W, H, DPI = 1200, 900, 100
 HOLD_MS = 2500
-BG, INK, MUTED, DOT, GRID = "#fcfcfb", "#111111", "#6b6a66", "#1F6F6B", "#e6e5e0"
+BG, INK, MUTED, DOT, GRID = "#fcfcfb", "#111111", "#6b6a66", "#3076D4", "#e6e5e0"
 
 # column, title, plain-words definition (CDC PLACES measure definitions)
 MEASURES = [
+    ("fair_poor_health", "Fair or poor health",
+     "Share of adults who rate their own health as fair or poor"),
     ("diabetes", "Diabetes",
      "Share of adults ever told by a doctor or other health professional they have diabetes"),
     ("obesity", "Obesity",
@@ -108,7 +110,7 @@ def frame(rows, col, title, definition):
     fig.text(0.04, 0.898, definition + ". Each dot is one census tract.",
              fontsize=14.5, color=MUTED)
     ax = fig.add_axes([0.085, 0.135, 0.875, 0.72], facecolor=BG)
-    ax.scatter(xs, ys, s=9, color=DOT, alpha=0.35, linewidths=0)
+    ax.scatter(xs, ys, s=38, color=DOT, alpha=0.6, linewidths=0)
     rho = spearman(pts)
     ax.text(0.985, 0.955, f"Rank correlation: {rho:.2f}".replace("-", "\u2212"), transform=ax.transAxes, ha="right",
             va="top", fontsize=20, fontweight="bold", color=INK)

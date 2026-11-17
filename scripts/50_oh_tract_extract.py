@@ -20,7 +20,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = Path.home() / "PycharmProjects/TractEconHealth/data/processed/tracts.parquet"
-MEASURES = ["diabetes", "obesity", "smoking", "inactivity",
+MEASURES = ["fair_poor_health", "diabetes", "obesity", "smoking", "inactivity",
             "short_sleep", "food_insecurity", "loneliness"]
 
 t = pd.read_parquet(SRC)

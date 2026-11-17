@@ -493,3 +493,4 @@ None.
 - 2026-11-17: GitHub sentence moved to an end blurb; Prismic draft updated.
 - 2026-11-17: Scatter GIF switched from R² to rank correlation (Spearman), to match the TractEconHealth tool. Tie-out 0 differences; DATASETS, README, caption, alt text updated; Prismic draft updated.
 - 2026-11-17: Scatter GIF resized to 1200x900 (4:3); map GIF unchanged. Prismic draft updated.
+- 2026-11-17: Scatter dots restyled to match TractEconHealth (#3076D4, 60%, larger). Fair or poor health (GHLTH) added as first frame, rank corr -0.86. Tie-out 0 differences. Prismic draft updated.

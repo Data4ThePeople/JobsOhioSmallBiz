@@ -12,6 +12,9 @@ Written by `scripts/56_tieout_post2.py`. Recomputed from the raw ACS and PLACES 
 | Tracts with income (dots per frame) | 3115 | 3115 | match |
 | Tracts top-coded at $250,001 | 3 | 3 | match |
 | Tracts where income differs from extract | 0 | 0 | match |
+| fair_poor_health: tracts where value differs | 0 | 0 | match |
+| fair_poor_health: highest tract / y-axis top | 51.7 / 60% | 51.7 / 60% | match |
+| fair_poor_health: rank correlation with income | -0.86 | -0.86 | match |
 | diabetes: tracts where value differs | 0 | 0 | match |
 | diabetes: highest tract / y-axis top | 39.0 / 40% | 39.0 / 40% | match |
 | diabetes: rank correlation with income | -0.74 | -0.74 | match |

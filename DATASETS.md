@@ -1576,14 +1576,14 @@ estimates with margins of error; a small tract's median can be far off.
 ### CDC PLACES 2025, tract estimates (Centers for Disease Control and Prevention)
 
 **What it is.** Model-based estimates of the share of adults with each health measure, for every census
-tract. Seven are used, by PLACES measure ID: DIABETES (diagnosed diabetes), OBESITY (body mass index of 30
+tract. Eight are used, by PLACES measure ID: GHLTH (fair or poor self-rated health), DIABETES (diagnosed diabetes), OBESITY (body mass index of 30
 or more), CSMOKING (current cigarette smoking), LPA (no leisure-time physical activity), SLEEP (usually less
 than 7 hours), FOODINSECU (food insecurity in the past 12 months), LONELINESS. In the 2025 release, SLEEP
-is from 2022 survey data and the other six from 2023. All are crude prevalence.
+is from 2022 survey data and the other seven from 2023. All are crude prevalence.
 
 **Where it comes from.** data.cdc.gov dataset `cwsq-ngmh`, pulled by TractEconHealth
 (`data/raw/places/`), carried into `tracts.parquet`, and copied for Ohio by `scripts/50_oh_tract_extract.py`.
-All seven are published for every one of the 3,125 Ohio tracts.
+All eight are published for every one of the 3,125 Ohio tracts.
 
 **How the estimates are made.** CDC fits a model to individual survey answers (BRFSS) using age, sex, race
 and ethnicity, education, and county poverty, with state and county effects, and uses tract poverty in the
@@ -1608,7 +1608,7 @@ overdose and suicide rates.
 **Where it comes from.** `~/PycharmProjects/TractEconHealth/data/raw/chr/analytic_data2025_v3.csv` and that
 project's `counties.parquet` (overdose and suicide, from the supplement). `scripts/54_county_counted_check.py`
 ranks Ohio's 88 counties by ACS 2020-2024 median household income and reports the Spearman rank correlation
-with each counted measure, next to the PLACES county estimates for the seven GIF measures. Results in
+with each counted measure, next to the PLACES county estimates for seven of the GIF measures (all but fair or poor health, which was added to the GIF later; the checks in scripts 53 to 55 cover the same seven). Results in
 `data/health/checks/county_counted_check.csv`. Overdose is blank for 3 counties and suicide for 2.
 
 ### Census cartographic boundaries, 2023 (U.S. Census Bureau)
@@ -1629,8 +1629,8 @@ money by its ACS 2020-2024 population (all residents).
 - `scripts/51_income_health_gif.py` writes `posts/ohio-income-health/social/income-health-ohio.gif`: one
   frame per measure, each a scatter of the 3,115 Ohio tracts with an income, 1200x900, 2.5 seconds a frame. Linear
   income axis to $250,000; each frame's y axis starts at 0 and ends at the next 10 above that measure's
-  highest tract. No trend line. Each frame shows the rank correlation (Spearman) between tract income and that
-  measure, from -1 to 1, rounded to two places: diabetes -0.74, obesity -0.74, smoking -0.80, no
+  highest tract. Dots are #3076D4 at 60% opacity, to match the TractEconHealth tool. No trend line. Each frame shows the rank correlation (Spearman) between tract income and that
+  measure, from -1 to 1, rounded to two places: fair or poor health -0.86, diabetes -0.74, obesity -0.74, smoking -0.80, no
   leisure-time activity -0.82, short sleep -0.78, food insecurity -0.87, loneliness -0.70. It compares
   the order of tracts, so a single extreme tract has less pull, and it is the statistic the
   TractEconHealth tool uses, so the two posts report the same thing.

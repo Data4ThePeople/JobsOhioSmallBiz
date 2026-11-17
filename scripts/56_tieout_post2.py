@@ -30,7 +30,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parent.parent
 RAW = Path.home() / "PycharmProjects/TractEconHealth/data/raw"
 PY = str(Path.home() / "PycharmProjects/TractEconHealth/.venv/bin/python")
-IDS = {"DIABETES": "diabetes", "OBESITY": "obesity", "CSMOKING": "smoking",
+IDS = {"GHLTH": "fair_poor_health", "DIABETES": "diabetes", "OBESITY": "obesity", "CSMOKING": "smoking",
        "LPA": "inactivity", "SLEEP": "short_sleep", "FOODINSECU": "food_insecurity",
        "LONELINESS": "loneliness"}
 lines, fails = [], 0
