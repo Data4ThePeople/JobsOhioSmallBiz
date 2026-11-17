@@ -490,3 +490,4 @@ None.
 - 2026-11-17: 2e item 1 accepted (GitHub sentence). README: post 2 section added, published link for post 1.
 - 2026-11-17: 2e confirmed. 2f opened.
 - 2026-11-17: Pushed to Prismic as draft avzHBRIAACYALnny, Migration Release. 8 slices, 2 GIFs + hero uploaded. --verify needs a read token that is not in .env.
+- 2026-11-17: GitHub sentence moved to an end blurb; Prismic draft updated.

@@ -35,6 +35,8 @@ It’s at least a question worth asking. And if the answer is yes, where the mon
 ![Animated map of Ohio. Census tracts are shaded by median household income in five equal groups, darker for poorer. Orange circles on each county show JobsOhio grant dollars, alternating between total dollars and dollars per person. By total, the largest are Cuyahoga at $227.7 million, Franklin at $150.3 million and Licking at $145.9 million. Per person, the largest are Licking at $802, Belmont at $566 and Logan at $456.](images/02-jobsohio-map.gif)
 *$1.26 billion placed in an Ohio county, FY2014 to FY2025. Source: JobsOhio Form 990, Schedule I. Income and population: Census Bureau, American Community Survey 2020-2024.*
 
-The data and code behind both charts are free on [GitHub](https://github.com/Data4ThePeople/JobsOhioSmallBiz).
-
 A different approach could be to aim at the communities most in need of help, and to bring industry where Ohio wants it to go, where it can add the most value. That is easier said than done. Money and health may go hand in hand, at least up to a point. If they do, Ohio needs a way to aim economic development with precision. That leaves a question for Ohio: does JobsOhio's current structure allow for that, or are changes needed so that Ohio's economic development is not blind to its effect on public health? On Friday we take the income and health question national, with a study of census tracts across the country.
+
+::: blurb
+The data and code behind both charts are free on [GitHub](https://github.com/Data4ThePeople/JobsOhioSmallBiz).
+:::
