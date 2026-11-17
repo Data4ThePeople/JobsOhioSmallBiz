@@ -477,3 +477,4 @@ None.
 - 2026-11-17: R² added to each scatter frame (log-income fit, 0.50 to 0.69). Tie-out rerun, 0 differences; the independent tie-out had already matched these as check A.
 - 2026-11-17: Eric's first draft in POST.md verbatim. XXXX = 3,115, both GIFs placed. County check: money vs county income Spearman 0.13 total, 0.00 per person; poorest quarter of counties $127 per person, richest $97. Edits proposed.
 - 2026-11-17: Eric accepted edits 1-15.
+- 2026-11-17: Link to yesterday's post added.

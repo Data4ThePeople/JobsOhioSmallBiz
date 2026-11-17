@@ -18,7 +18,7 @@ dividers: false
 
 # Title
 
-Yesterday we published a tool that lets you explore every JobsOhio grant between 2014 and 2025, and where there are public records, see how it performed versus its initial expectations. The tool was designed for researchers, journalists, and the general public, to explore these grants, understand how many went to small vs. large companies, and understand when the projects didn’t perform. We will leave the exploration of the tool to these folks, and welcome feedback or questions on how to use the tool to better understand these grants.
+Yesterday we published [a tool](https://www.data4thepeople.com/p/jobsohio-grants) that lets you explore every JobsOhio grant between 2014 and 2025, and where there are public records, see how it performed versus its initial expectations. The tool was designed for researchers, journalists, and the general public, to explore these grants, understand how many went to small vs. large companies, and understand when the projects didn’t perform. We will leave the exploration of the tool to these folks, and welcome feedback or questions on how to use the tool to better understand these grants.
 
 Today we flip to the next chapter in this story, which we expect to fully unfold over the next two and a half weeks.
 
