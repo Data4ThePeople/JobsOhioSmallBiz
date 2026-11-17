@@ -1627,7 +1627,7 @@ money by its ACS 2020-2024 population (all residents).
 ### The two GIFs
 
 - `scripts/51_income_health_gif.py` writes `posts/ohio-income-health/social/income-health-ohio.gif`: one
-  frame per measure, each a scatter of the 3,115 Ohio tracts with an income, 2.5 seconds a frame. Linear
+  frame per measure, each a scatter of the 3,115 Ohio tracts with an income, 1200x900, 2.5 seconds a frame. Linear
   income axis to $250,000; each frame's y axis starts at 0 and ends at the next 10 above that measure's
   highest tract. No trend line. Each frame shows the rank correlation (Spearman) between tract income and that
   measure, from -1 to 1, rounded to two places: diabetes -0.74, obesity -0.74, smoking -0.80, no

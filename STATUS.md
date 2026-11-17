@@ -492,3 +492,4 @@ None.
 - 2026-11-17: Pushed to Prismic as draft avzHBRIAACYALnny, Migration Release. 8 slices, 2 GIFs + hero uploaded. --verify needs a read token that is not in .env.
 - 2026-11-17: GitHub sentence moved to an end blurb; Prismic draft updated.
 - 2026-11-17: Scatter GIF switched from R² to rank correlation (Spearman), to match the TractEconHealth tool. Tie-out 0 differences; DATASETS, README, caption, alt text updated; Prismic draft updated.
+- 2026-11-17: Scatter GIF resized to 1200x900 (4:3); map GIF unchanged. Prismic draft updated.

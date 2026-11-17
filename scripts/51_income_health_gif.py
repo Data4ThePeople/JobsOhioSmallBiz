@@ -35,7 +35,7 @@ from matplotlib.ticker import FuncFormatter
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent
-W, H, DPI = 1200, 675, 100
+W, H, DPI = 1200, 900, 100
 HOLD_MS = 2500
 BG, INK, MUTED, DOT, GRID = "#fcfcfb", "#111111", "#6b6a66", "#1F6F6B", "#e6e5e0"
 
@@ -103,11 +103,11 @@ def frame(rows, col, title, definition):
     ymax = 10 * math.ceil(top / 10)
 
     fig = plt.figure(figsize=(W / DPI, H / DPI), dpi=DPI, facecolor=BG)
-    fig.text(0.04, 0.925, f"Income and {title.lower()}, Ohio census tracts",
+    fig.text(0.04, 0.94, f"Income and {title.lower()}, Ohio census tracts",
              fontsize=25, fontweight="bold")
-    fig.text(0.04, 0.868, definition + ". Each dot is one census tract.",
+    fig.text(0.04, 0.898, definition + ". Each dot is one census tract.",
              fontsize=14.5, color=MUTED)
-    ax = fig.add_axes([0.085, 0.16, 0.875, 0.65], facecolor=BG)
+    ax = fig.add_axes([0.085, 0.135, 0.875, 0.72], facecolor=BG)
     ax.scatter(xs, ys, s=9, color=DOT, alpha=0.35, linewidths=0)
     rho = spearman(pts)
     ax.text(0.985, 0.955, f"Rank correlation: {rho:.2f}".replace("-", "\u2212"), transform=ax.transAxes, ha="right",
@@ -127,15 +127,15 @@ def frame(rows, col, title, definition):
     for s in ("left", "bottom"):
         ax.spines[s].set_color("#c9c8c2")
     ax.tick_params(labelsize=12.5, length=0)
-    fig.text(0.04, 0.058,
+    fig.text(0.04, 0.045,
              "Rank correlation runs from \u22121 to 1; 0 means no pattern. "
              "It compares the order of tracts on income and on the health measure.",
              fontsize=11.5, color=MUTED)
-    fig.text(0.04, 0.025,
+    fig.text(0.04, 0.019,
              f"{len(pts):,} tracts. Income: ACS 2020-2024; \\$250k or more shown at \\$250k. "
              "Health: CDC PLACES 2025, model-based estimates.",
              fontsize=11.5, color=MUTED)
-    fig.text(0.96, 0.025, "Data 4 The People", fontsize=12.5, fontweight="bold",
+    fig.text(0.96, 0.019, "Data 4 The People", fontsize=12.5, fontweight="bold",
              ha="right")
     buf = io.BytesIO()
     fig.savefig(buf, format="png", dpi=DPI, facecolor=BG)
