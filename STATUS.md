@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: ohio-income-health (working slug)
-Step: 2a (not started)
+Step: 2a
 Since: 2026-11-17
 
 ## Steps
@@ -473,3 +473,4 @@ None.
   matched; food insecurity subtitle corrected). Both in
   `TIEOUT-ohio-income-health.md`.
 - 2026-11-17: ohio-income-health Step 1 confirmed by Eric. Next: 2a, Eric's draft.
+- 2026-11-17: 2a opened. Slug `ohio-income-health`. POST.md created, waiting for Eric's draft.
