@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: ohio-income-health (working slug)
-Step: 2g
+Step: 3
 Since: 2026-11-17
 
 ## Steps
@@ -20,7 +20,7 @@ Since: 2026-11-17
 | 2d | Hero 1680x1080 + alt text | 2026-11-17 | Map, total dollars, `scripts/57_hero_map.py`. Alt 380 chars. |
 | 2e | SEO | 2026-11-17 | meta_title 52, description 134, 6 keywords, Article. GitHub sentence; README covers post 2. |
 | 2f | Pushed to Prismic (draft) | 2026-11-17 | Document `avzHBRIAACYALnny`, Migration Release. Rank correlation, 1200x900 scatter, fair or poor health frame, GitHub blurb. |
-| 2g | Mailchimp teaser | | |
+| 2g | Mailchimp teaser | 2026-11-18 | `EMAIL.md`, static fair or poor health chart (GIF did not play in Mailchimp). Sent by Eric. |
 | 3  | Social posts | | |
 | 4a | Outreach list | | |
 | 4b | Outreach drafts in Gmail | | |
@@ -497,3 +497,4 @@ None.
 - 2026-11-17: 2f confirmed. 2g opened.
 - 2026-11-17: EMAIL.md drafted; hero JPG 197 KB.
 - 2026-11-17: Email chart swapped from GIF to the static fair or poor health frame (GIF did not play in Mailchimp).
+- 2026-11-18: 2g confirmed, email sent. Step 3 opened; SOCIAL.md drafted, existing GIFs reused.
