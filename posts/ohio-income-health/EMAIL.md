@@ -51,19 +51,19 @@ Yesterday we focused on who got JobsOhio's grants. Today we focus on where.
 
 But before we get to that, we need some additional context to fully appreciate why it matters so much where Ohio makes its investments. This context comes from a single question: Should economic development be a separate initiative from public health? Ohio's decision to carve its economic development arm out from state government suggests it views these as separate and distinct tasks. But are they?
 
-Today we are releasing a sneak peek of a larger study, specifically for Ohio. The GIF below cycles through a handful of scatter plots comparing a health measure to median household income for 3,115 census tracts in Ohio. The health numbers are CDC estimates built partly from each tract's makeup, not counts. These charts suggest a strong link between community health outcomes and community income.
+Today we are releasing a sneak peek of a larger study, specifically for Ohio. The chart below compares one health measure, adults in fair or poor health, to median household income for 3,115 census tracts in Ohio. The full post cycles through eight measures. The health numbers are CDC estimates built partly from each tract's makeup, not counts. These charts suggest a strong link between community health outcomes and community income.
 ```
 
 ---
 
 ## 4. Chart
 
-`posts/ohio-income-health/images/01-income-health-ohio.gif` (590 KB, 8 frames). Mailchimp plays GIFs; Outlook on Windows shows only the first frame, which is fair or poor health.
+`posts/ohio-income-health/images/email-income-fair-poor-health.png` (173 KB, 1200x900), the fair or poor health frame of the post's GIF, linked to the post.
 
 Alt text:
 
 ```
-Animated scatter plot of 3,115 Ohio census tracts, cycling through eight health measures, with median household income across and the share of adults up. In every frame the dots are highest at low incomes and fall as income rises, flattening above about $100,000. Rank correlation with income: food insecurity −0.87, fair or poor health −0.86, no leisure-time activity −0.82, smoking −0.80, short sleep −0.78, diabetes −0.74, obesity −0.74, loneliness −0.70.
+Scatter plot of 3,115 Ohio census tracts, with median household income across and the share of adults who rate their own health as fair or poor up. The dots are highest at low incomes, near 50% in the poorest tracts, and fall as income rises, flattening near 10% above about $150,000. Rank correlation with income: −0.86.
 ```
 
 ---

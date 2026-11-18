@@ -496,3 +496,4 @@ None.
 - 2026-11-17: Scatter dots restyled to match TractEconHealth (#3076D4, 60%, larger). Fair or poor health (GHLTH) added as first frame, rank corr -0.86. Tie-out 0 differences. Prismic draft updated.
 - 2026-11-17: 2f confirmed. 2g opened.
 - 2026-11-17: EMAIL.md drafted; hero JPG 197 KB.
+- 2026-11-17: Email chart swapped from GIF to the static fair or poor health frame (GIF did not play in Mailchimp).
