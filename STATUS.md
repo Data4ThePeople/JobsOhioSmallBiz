@@ -5,9 +5,9 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 
 ## Current
 
-Post: ohio-income-health (working slug)
-Step: 3
-Since: 2026-11-17
+Post: none open (ohio-income-health complete 2026-11-18)
+Step: -
+Since: 2026-11-18
 
 ## Steps
 
@@ -21,9 +21,9 @@ Since: 2026-11-17
 | 2e | SEO | 2026-11-17 | meta_title 52, description 134, 6 keywords, Article. GitHub sentence; README covers post 2. |
 | 2f | Pushed to Prismic (draft) | 2026-11-17 | Document `avzHBRIAACYALnny`, Migration Release. Rank correlation, 1200x900 scatter, fair or poor health frame, GitHub blurb. |
 | 2g | Mailchimp teaser | 2026-11-18 | `EMAIL.md`, static fair or poor health chart (GIF did not play in Mailchimp). Sent by Eric. |
-| 3  | Social posts | | |
-| 4a | Outreach list | | |
-| 4b | Outreach drafts in Gmail | | |
+| 3  | Social posts | 2026-11-18 | `SOCIAL.md`. X 257, Bluesky 275, LinkedIn 1,030 with the link in the first comment. Existing GIFs reused. |
+| 4a | Outreach list | skipped | Eric, 2026-11-18: skip Step 4 for this post. |
+| 4b | Outreach drafts in Gmail | skipped | Eric, 2026-11-18: skip Step 4 for this post. |
 
 ## Completed: jobsohio-grants (published 2026-11-17)
 
@@ -498,3 +498,4 @@ None.
 - 2026-11-17: EMAIL.md drafted; hero JPG 197 KB.
 - 2026-11-17: Email chart swapped from GIF to the static fair or poor health frame (GIF did not play in Mailchimp).
 - 2026-11-18: 2g confirmed, email sent. Step 3 opened; SOCIAL.md drafted, existing GIFs reused.
+- 2026-11-18: Step 3 confirmed. Step 4 skipped at Eric's call. ohio-income-health complete; last JobsOhio post in the series.
