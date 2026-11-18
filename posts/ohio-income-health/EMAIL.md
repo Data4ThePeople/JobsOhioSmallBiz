@@ -63,7 +63,7 @@ Today we are releasing a sneak peek of a larger study, specifically for Ohio. Th
 Alt text:
 
 ```
-Scatter plot of 3,115 Ohio census tracts, with median household income across and the share of adults who rate their own health as fair or poor up. The dots are highest at low incomes, near 50% in the poorest tracts, and fall as income rises, flattening near 10% above about $150,000. Rank correlation with income: −0.86.
+Scatter plot of 3,115 Ohio census tracts, with median household income across and the share of adults who rate their own health as fair or poor up. The dots are highest at low incomes and fall as income rises, flattening above about $100,000. Rank correlation with income: −0.86.
 ```
 
 ---
